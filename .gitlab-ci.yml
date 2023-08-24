@@ -1,0 +1,28 @@
+image: condaforge/mambaforge:latest
+
+variables:
+  BASE_URL: "/m2-npac-cosmology"
+
+cache:
+  paths:
+    - .cache/pip
+
+stages:
+  - pages
+
+before_script:
+    - python -V               # Print out python version for debugging
+
+pages:
+  stage: pages
+  script:
+    - mamba install -y -c conda-forge nodejs
+    - node -v
+    - npm install -g mystmd
+    - myst build --html
+    - mv _build/html/ public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
