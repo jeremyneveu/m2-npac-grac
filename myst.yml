@@ -5,7 +5,7 @@ project:
   # description:
   keywords: []
   authors: []
-  github: https://github.com/executablebooks/mystmd-quickstart
+  github: https://gitlab.in2p3.fr/jeremy.neveu/m2-npac-cosmology
   # bibliography: []
   thebe:
     lite: true
@@ -14,9 +14,6 @@ site:
   template: book-theme
   # title:
   # logo:
-  projects:
-    - slug: myst
-      path: .
   nav: []
   actions:
     - title: Learn More
