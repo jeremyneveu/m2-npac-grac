@@ -1,0 +1,24 @@
+# See docs at: https://myst-tools.org/docs/mystjs/frontmatter
+version: 1
+project:
+  # title:
+  # description:
+  keywords: []
+  authors: []
+  github: https://github.com/executablebooks/mystmd-quickstart
+  # bibliography: []
+  thebe:
+    lite: true
+  # binder: https://mybinder.org/v2/git/https%3A%2F%2Fgitlab.dsi.universite-paris-saclay.fr%2FMethNum%2FComputerLab/HEAD
+site:
+  template: book-theme
+  # title:
+  # logo:
+  projects:
+    - slug: myst
+      path: .
+  nav: []
+  actions:
+    - title: Learn More
+      url: https://myst-tools.org/docs/mystjs
+  domains: []
