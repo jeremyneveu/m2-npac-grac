@@ -11,7 +11,7 @@ project:
     #lite: true
     binder:
       url: https://mybinder.org/
-      repo: https://gitlab.dsi.universite-paris-saclay.fr/MethNum/ComputerLab
+      repo: https://gitlab.in2p3.fr/jeremy.neveu/m2-npac-cosmology
       ref: main
       provider: git  # binder: https://mybinder.org/v2/git/https%3A%2F%2Fgitlab.dsi.universite-paris-saclay.fr%2FMethNum%2FComputerLab/HEAD
 site:
