@@ -40,8 +40,8 @@ docker:
     - docker build -t $IMAGE_TAG . --file Dockerfile-CI
     - docker push $IMAGE_TAG
     - cd ../
-  rules:
-    - changes:
-        - docker/*
+#  rules:
+#    - changes:
+#        - docker/*
 
 
