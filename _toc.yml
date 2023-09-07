@@ -21,3 +21,4 @@ chapters:
   - file: chapters/introduction
   - file: chapters/friedmann
   - file: chapters/cosmology
+  - file: TD1.ipynb
