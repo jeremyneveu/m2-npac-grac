@@ -8,13 +8,13 @@ cache:
     - .cache/pip
 
 stages:
-  - pages
+  - build
 
 before_script:
     - python -V               # Print out python version for debugging
 
 pages:
-  stage: pages
+  stage: build
   script:
     - mamba install -y -c conda-forge nodejs
     - node -v
@@ -42,5 +42,8 @@ docker:
     - docker build -t $IMAGE_TAG . --file Dockerfile-CI
     - docker push $IMAGE_TAG
     - cd ../
+  rules:
+    - changes:
+        - docker/*
 
 
