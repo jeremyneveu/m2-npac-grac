@@ -38,7 +38,7 @@ docker:
 #    - docker login -u $CI_REGISTRY_USER --password-stdin $CI_REGISTRY_PASSWORD $CI_REGISTRY
 #    - docker build -t $IMAGE_TAG . --file Dockerfile-CI
 #    - docker push $IMAGE_TAG
-    - docker login gitlab-registry.in2p3.fr
+    - docker login -u $CI_REGISTRY_USER --password-stdin $CI_REGISTRY_PASSWORD gitlab-registry.in2p3.fr
     - docker build -t gitlab-registry.in2p3.fr/jeremy.neveu/m2-npac-cosmology . --file Dockerfile-CI
     - docker push $IMAGE_TAG
     - cd ../
