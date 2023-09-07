@@ -8,12 +8,14 @@ project:
   # github: https://gitlab.in2p3.fr/jeremy.neveu/m2-npac-cosmology
   # bibliography: []
   thebe:
-    lite: true
-#    binder:
-#      url: https://mybinder.org/
-#      repo: https://gitlab.in2p3.fr/jeremy.neveu/m2-npac-cosmology
-#      ref: main
-#      provider: git  # binder: https://mybinder.org/v2/git/https%3A%2F%2Fgitlab.dsi.universite-paris-saclay.fr%2FMethNum%2FComputerLab/HEAD
+    # lite: true
+    binder:
+      url: https://mybinder.org/
+      repo: https://gitlab.in2p3.fr/jeremy.neveu/m2-npac-cosmology
+      ref: main
+      provider: git
+    server:
+      url: https://jupyterhub.ijclab.in2p3.fr/
 site:
   template: book-theme
   # title:
