@@ -33,7 +33,6 @@ docker:
   variables:
     IMAGE_TAG: $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
   script:
-    - cd docker
     - ls -la .
 #    - docker login -u $CI_REGISTRY_USER --password-stdin $CI_REGISTRY_PASSWORD $CI_REGISTRY
 #    - docker build -t $IMAGE_TAG . --file Dockerfile-CI
@@ -41,7 +40,6 @@ docker:
     - docker login gitlab-registry.in2p3.fr -u $CI_REGISTRY_USER --password-stdin $CI_REGISTRY_PASSWORD
     - docker build -t $IMAGE_TAG . --file Dockerfile-CI
     - docker push $IMAGE_TAG
-    - cd ../
 
 #  rules:
 #    - changes:
