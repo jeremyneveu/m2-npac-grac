@@ -10,12 +10,10 @@ cache:
 stages:
   - build
 
-before_script:
-    - python -V               # Print out python version for debugging
-
 pages:
   stage: build
   script:
+    - python -V               # Print out python version for debugging
     - mamba install -y -c conda-forge nodejs
     - node -v
     - npm install -g mystmd
