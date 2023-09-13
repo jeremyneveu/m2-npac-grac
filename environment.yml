@@ -16,3 +16,4 @@ dependencies:
 - pillow#==6.0.0
 - astropy
 - pyccl
+- camb
