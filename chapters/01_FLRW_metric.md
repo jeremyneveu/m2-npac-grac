@@ -15,17 +15,14 @@ Principes cosmologiques
 
 
 
-```{figure} ../images/sdss_pie2.jpg
+```{iframe} https://www.youtube.com/embed/UTlYUxucEZA?si=WZpcAuL1ElZuyvf6
 :name: fig:sdss
 :align: center
 :width: 60%
 
-Répartition des galaxies détectées par l'expérience Sloan Digital Sky
-Survey (SDSS), en fonction du redshift $z$ (cette notion sera définie
-plus loin, mais peut être liée à une notion de distance, $z=0$ étant
-notre position).
+Galaxy distribution compiled by the eBOSS survey. Every dot in this "pie" diagram is a galaxy, color coded by type: green for nearby galaxies, magenta and red for old red galaxies, 
+blue for young blue galaxies, yellow and white for quasars. Credit: A. Raichoor (EPFL) / A. Ross (Ohio State Univ.) / SDSS Collaboration
 ```
-
 
 ```{figure} ../images/CMB_planck.jpg
 :name: fig:cmb_planck
