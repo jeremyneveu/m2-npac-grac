@@ -346,7 +346,7 @@ dimension que $\sigma$ donc est sans unité.
 ```{figure} ../images/distances2.svg
 :name: fig:distances_croquis
 :align: center
-:width: 50%
+:width: 100%
 
 Notations pour le calcul du redshift et des distances cosmologiques en coordonnées comobiles.
 ```
