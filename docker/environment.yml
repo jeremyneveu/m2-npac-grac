@@ -1,0 +1,27 @@
+# Logiciels requis pour utiliser et travailler sur les documents du cours MethNum
+name: m2-cosmo
+
+channels:
+- conda-forge
+
+dependencies:
+- git
+  # - mamba
+- python=3.11 # <3.9,>=3.8
+- pip
+- pandas#==0.24.2
+- numpy#==1.16.2
+- matplotlib#==3.0.3
+- scipy#==1.2.1
+- pillow#==6.0.0
+- astropy
+- pyccl
+- camb
+- ipywidgets
+- ipympl
+- jupyter
+- jupyterlab
+
+- pip:
+  - jupyterlab_myst
+

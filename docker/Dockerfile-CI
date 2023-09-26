@@ -1,0 +1,9 @@
+# A docker file for building the image on GitLab's CI
+# FROM continuumio/miniconda3:latest
+FROM mambaorg/micromamba:latest
+COPY --chown=$MAMBA_USER:$MAMBA_USER . /tmp/binder
+RUN cd /tmp/binder && \
+    micromamba install -y -n base -f environment.yml && \
+    micromamba clean --all --yes && \
+    /usr/local/bin/_entrypoint.sh pip cache purge
+RUN rm -rf /tmp/binder
