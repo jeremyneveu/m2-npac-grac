@@ -241,7 +241,7 @@ R_{\mu\nu} & =R^\alpha_{\ \mu\alpha\nu}.
 $$
 
 $G_{\mu\nu}$ apparaît être de divergence nulle car :
-$$G^{\mu\nu}_{\ \ ;\mu}=0$ (identité de Bianchi).$$
+$$G^{\mu\nu}_{\ \ ;\mu}=0 \text{(identité de Bianchi)}.$$
 
 :::{important}
 
@@ -296,7 +296,6 @@ accurately computed (they have a well known peak luminosity). The original and m
 See equation [](#eq:olbers).
 
 See Hubble's paper [](10.1007/s00016-020-00263-z)
-
 
 
 ```{figure} fig/hubble.png
