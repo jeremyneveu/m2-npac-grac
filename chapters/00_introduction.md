@@ -15,7 +15,7 @@ La Relativité Générale est la théorie de la gravitation à la base de la
 cosmologie moderne. Elle donne une explication géométrique à la force
 gravitationnelle introduite par Newton trois siècles auparavant. Dans
 cette théorie, une chute n'est plus due à un vecteur force
-malheureusement orienté vers le sol, mais à la déformation de
+malheureusement orienté vers un sol dur, mais à la déformation de
 l'espace-temps engendrée par la Terre. Formulée ainsi, la Relativité
 Générale semble bien compliquée pour peu de choses. Mais les principes
 généraux à la base de cette théorie et la richesse de ses implications
@@ -25,28 +25,26 @@ plusieurs concepts de la Relativité Générale tels que la dérivée
 covariante et le tenseur de Riemann, pour aboutir à l'équation
 d'Einstein de la Relativité Générale, base de la cosmologie moderne.
 Cette introduction est largement inspirée de {cite:t}`Weinberg1972` et
-{cite:t}`Gourgoulhon2013`. La convention usuelle $\hbar=c=1$ sera suivie sauf
-si nécessaire.
+{cite:t}`Gourgoulhon2013`. 
 
 ### Le Principe d'Équivalence
 
 Dans le principe fondamental de la dynamique énoncé par Newton, pourquoi
 la masse intervenant dans le terme d'inertie est-elle rigoureusement la
-même que celle intervenant dans la gravitation newtonienne? Cette
+même que celle intervenant dans la gravitation newtonienne ? Cette
 coïncidence troublante singularise la gravitation par rapport aux autres
 interactions, et suggère qu'elle n'est pas une propriété des corps
 eux-mêmes mais de l'espace dans lequel ils se meuvent. Considérons une
 masse ponctuelle de masse $m$ soumise à un champ gravitationnel externe
 uniforme et constant $\vec g$ et à aucune autre force. Alors le principe
 fondamental de la dynamique appliqué dans un référentiel galiléen à cet
-objet nous permet de prédire sa position $\vec x$ à un instant $t$:
+objet nous permet de prédire sa position $\vec x$ à un instant $t$ par une équation différentielle à intégrer :
 $$m\frac{\dd^2\vec x}{\dd t^2} = m\vec g$$ 
 Plaçons nous dans le référentiel
-(non galiléen) de l'objet par la transformation de coordonnées suivante:
+(non galiléen) de l'objet par la transformation de coordonnées suivante :
 $$\vec x' = \vec x - \frac{1}{2}\vec g t^2, \qquad t'=t$$ 
-Alors dans ce
-référentiel la force gravitationnelle est comme \"absorbée\" par le
-terme inertiel:
+Alors dans ce référentiel la force gravitationnelle est comme \"absorbée\" par le
+terme inertiel :
 $$m\frac{\dd^2\vec x}{\dd t^2} = m\vec g \Leftrightarrow m\frac{\dd ^2\vec x'}{\dd t'^2} = 0.$$
 Les lois de la physique apparaissent donc identiques pour un observateur
 lié à un référentiel galiléen considérant que l'objet subit une force de
@@ -76,15 +74,15 @@ que si le référentiel était non accéléré et sans gravitation :
 \begin{equation}\label{eq:eqm1}
 \frac{\dd^2 x^\mu}{\dd\tau^2}=0,
 \end{equation}
-avec $\dd\tau$ le temps propre[^1]:
+avec $\dd\tau$ le temps propre[^1] :
 $$\label{eq:proper-time}
 \dd\tau^2 \equiv -\eta_{\mu\nu} \dd x^\mu \dd x^\nu.
 $$ 
-$\eta_{\mu\nu}$ est la métrique de Minkowski utilisée en Relativité Restreinte. D'après le
+Le tenseur $\eta_{\mu\nu}$ est la métrique de Minkowski utilisée en Relativité Restreinte. D'après le
 Principe d'Équivalence, cette équation est aussi valable dans un certain
 voisinage de l'objet en question. Il existe donc un autre système de
 coordonnées plus général $x'^\mu$ dans lequel réécrire cette équation.
-Cherchons la forme qu'elle prendrait pour ces coordonnées $x'^\mu$:
+Cherchons la forme qu'elle prendrait pour ces coordonnées $x'^\mu$ :
 $$0=\frac{\dd^2 x^\mu}{\dd\tau^2}=\frac{d}{\dd\tau}\left(\frac{\partial x^\mu}{\partial x'^\nu} \frac{\dd x'^\nu}{\dd\tau}\right) = \frac{\partial x^\mu}{\partial x'^\nu} \frac{\dd^2x'^\nu}{\dd\tau^2} + \frac{\partial^2 x^\mu}{\partial x'^\nu \partial x'^\rho}\frac{\dd x'^\nu}{\dd\tau}\frac{\dd x'^\rho}{\dd\tau}.$$
 Après multiplication par $\partial x'^\nu/\partial x^\mu$, on obtient la
 nouvelle équation du mouvement dans le système de coordonnées $x'^\mu$ :
@@ -107,7 +105,7 @@ $$\label{eq:connexion}
 $$
 
 Pour une particule sans masse, comme le photon ou le neutrino, le temps propre défini par l'équation [](#eq:proper-time) s'annule. A 
-la place de $\tau$ on peut alors utiliser la coordonnée $ s = x^0$ pour paramétrer la trajectoire de la courbe et par un raisonnement 
+la place de $\tau$ on peut alors utiliser la coordonnée $s = x^0$ pour paramétrer la trajectoire de la courbe et par un raisonnement 
 similaire on aboutit à cette équation du mouvement :
 $$\label{eq:eqm3}
 \frac{\dd^2x'^\nu}{\dd s^2} + \Gamma^\nu_{\ \mu\rho}\frac{\dd x'^\mu}{\dd s}\frac{\dd x'^\rho}{\dd s}=0.
@@ -136,11 +134,12 @@ $$\frac{DV^\mu}{D\tau} \equiv \frac{\dd V^\mu}{\dd\tau} + \Gamma^\mu_{\ \nu\lamb
 L'équation du mouvement [](#eq:eqm2) s'écrit alors très simplement
 $$\frac{DU^\mu}{D\tau}=0,$$ 
 avec $U^\mu$ le vecteur vitesse $\dd x^\mu/\dd\tau$. Cette équation ainsi écrite rappelle fortement
-l'équation du mouvement initiale
-[](#eq:eqm1). La notion de dérivée covariante est donc bien appropriée aux calculs de
-Relativité Générale et remplace bien la dérivée usuelle dans ce cadre. Notons que pour un vecteur covariant, la dérivée covariante s'écrit :
+l'équation du mouvement initiale [](#eq:eqm1). La notion de dérivée covariante est donc bien appropriée aux calculs de
+Relativité Générale et remplace bien la dérivée usuelle dans ce cadre. 
+Notons que pour un vecteur covariant, la dérivée covariante s'écrit :
 $$\label{eq:dcov-cov}
-\frac{DV_\mu}{D\tau} \equiv \frac{\dd V_\mu}{\dd\tau} - \Gamma^\nu_{\ \mu\lambda}\frac{\dd x^\lambda}{\dd\tau} V_\nu.$$
+\frac{DV_\mu}{D\tau} \equiv \frac{\dd V_\mu}{\dd\tau} - \Gamma^\nu_{\ \mu\lambda}\frac{\dd x^\lambda}{\dd\tau} V_\nu.
+$$
 :::
 
 
@@ -162,7 +161,7 @@ $$
 $$
 
 Dans l'hypothèse d'un champ gravitationnel faible, on peut adopter une
-métrique presque cartésienne:
+métrique presque cartésienne :
 $$g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu},\qquad \vert h_{\mu\nu}\vert\ll 1,$$
 et on obtient au premier ordre : 
 $$\left\lbrace
@@ -174,7 +173,8 @@ $$\left\lbrace
 D'après la deuxième équation on en déduit que $\dd t/\dd\tau$ est
 une constante et donc la première équation donne :
 $$\label{eq:vers_einstein}
-\frac{\dd^2\vec x'}{\dd t^2} = \frac{1}{2}\vec{\nabla} h_{00}.$$ 
+\frac{\dd^2\vec x'}{\dd t^2} = \frac{1}{2}\vec{\nabla} h_{00}.
+$$ 
 Or on sait que dans la limite newtonienne on a :
 $$\frac{\dd^2\vec x'}{\dd t^2} = -\vec{\nabla} \phi, \qquad \phi=-\frac{G_N M}{r},$$
 avec $\phi$ le potentiel gravitationnel engendré par une masse $M$ à une
@@ -185,15 +185,14 @@ le système de coordonnées choisi doit être cartésien à l'infini
 $$\label{eq:g00}
 g_{00}=-(1+2\phi),
 $$ 
-$g_{00}$ correspondant à la composante temporelle
+L'élément $g_{00}$ correspondant à la composante temporelle
 de la métrique, le battement des horloges dépend par conséquent de
 l'intensité du champ gravitationnel. Ceci correspond à l'effet Einstein,
 la seule conséquence de la Relativité Générale aujourd'hui utilisée
-technologiquement (dans le GPS, voir
-[](#fig:effet_einstein)).
+technologiquement (dans le GPS, voir [](#fig:effet_einstein)).
 
 
-```{figure} ../images/effet_eintein.png
+```{figure} ../images/effet_eintein.svg
 :name: fig:effet_einstein
 :align: center
 :width: 90%
@@ -203,8 +202,7 @@ gravitationnel gagne de l'énergie donc sa fréquence augmente. De façon
 équivalente, on peut dire que les horloges dans un champ gravitationnel
 retardent par rapport à des horloges identiques situées en dehors. Les
 récepteurs GPS doivent prendre en compte cet effet pour en déduire leur
-position par rapport aux
-satellites.
+position par rapport aux satellites.
 ```
 
 Cet exercice sur une particule ponctuelle nous apprend que le champ
@@ -212,7 +210,7 @@ gravitationnel est finalement contenu dans la métrique, et que cette
 métrique dépend donc de la présence de matière. Il est donc possible
 d'imaginer une généralisation de ce constat. Le potentiel newtonien est
 déterminé par l'équation de Poisson $\nabla^2\phi = 4\pi G_N \rho$, où
-$\rho$ est la densité massique. Cette dernière correspond à la densité
+$\rho$ est la densité volumique de masse. Cette dernière correspond à la densité
 d'énergie du tenseur énergie-impulsion de la matière $T_{00}$ (voir
 encadré: $T_{00} = -\rho g_{00} \approx \rho$), donc avec l'équation
 [](#eq:g00) on peut obtenir  :
@@ -225,8 +223,7 @@ secondes de la métrique $g_{\mu\nu}$ généralisant cette dernière
 $$\label{eq:einstein1}
 G_{\mu\nu}=-8\pi G_N T_{\mu\nu}.
 $$ 
-Cette dernière équation correspond à
-une première version de l'équation d'Einstein. Ce raisonnement ne nous a
+Cette dernière équation correspond à une première version de l'équation d'Einstein. Ce raisonnement ne nous a
 permis que d'intuiter sa forme, mais une autre démonstration plus
 rigoureuse permet d'obtenir l'expression du tenseur d'Einstein
 $G_{\mu\nu}$ : 
@@ -243,18 +240,22 @@ R_{\mu\nu} & =R^\alpha_{\ \mu\alpha\nu}.
 \end{aligned}
 $$
 
-$G_{\mu\nu}$ apparaît être de divergence nulle car
-$G^{\mu\nu}_{\ \ ;\mu}=0$ (identité de Bianchi). Une conséquence de
-cette propriété et de l'équation d'Einstein
-[](#eq:einstein1) est la conservation de l'énergie, par
+$G_{\mu\nu}$ apparaît être de divergence nulle car :
+$$G^{\mu\nu}_{\ \ ;\mu}=0$ (identité de Bianchi).$$
+
+:::{important}
+
+L'identité de Bianchi et l'équation d'Einstein
+[](#eq:einstein1) impose la conservation de l'énergie, par
 conséquent directement issue de propriétés géométriques :
 $$\label{eq:conservation_energie_tenseur}
 T^{\mu\nu}_{\ \ ;\mu}=0
 $$
-On voit alors que l'équation d'Einstein peut
-être définie à une constante près[^3], aujourd'hui appelée constante
-cosmologique, tout en satisfaisant la conservation de l'énergie. Voici
-l'équation d'Einstein sous sa forme définitive {cite:p}`Einstein1917` :
+:::
+
+Par l'identité de Bianchi, on voit aussi que l'équation d'Einstein peut
+être définie à une constante près[^3] tout en gardant la conservation de l'énergie. Cette constante est 
+aujourd'hui appelée constante cosmologique. Voici l'équation d'Einstein sous sa forme définitive {cite:p}`Einstein1917` :
 $$\label{eq:einstein2}
 \fbox{$ G_{\mu\nu}-\Lambda g_{\mu\nu} = -8\pi G_N T_{\mu\nu} $}
 $$
