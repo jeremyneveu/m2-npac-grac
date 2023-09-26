@@ -1,7 +1,7 @@
 image: condaforge/mambaforge:latest
 
 variables:
-  BASE_URL: "/"  # "/m2-npac-ac"
+  BASE_URL: "https://m2-npac-ac.pages.in2p3.fr/"  # "/m2-npac-ac"
 
 cache:
   paths:
