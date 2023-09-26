@@ -1,7 +1,7 @@
 image: condaforge/mambaforge:latest
 
 variables:
-  BASE_URL: "https://m2-npac-ac.pages.in2p3.fr/"  # "/m2-npac-ac"
+  BASE_URL: "https://m2-npac-ac.pages.in2p3.fr"  # "/m2-npac-ac"
 
 cache:
   paths:
@@ -36,8 +36,7 @@ docker:
     - cd docker
     - ls -la .
     # - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
-    - docker build --tag=gitlab-registry.in2p3.fr/m2-npac-ac/m2-npac-ac  . --file Dockerfile-CI
-    # - docker build -t $IMAGE_TAG . --file Dockerfile-CI
+    - docker build -t $IMAGE_TAG . --file Dockerfile-CI
     - docker push $IMAGE_TAG
   #rules:
   #  - changes:
