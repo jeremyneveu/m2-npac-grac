@@ -21,7 +21,7 @@ Le tenseur énergie-impulsion
 Le tenseur énergie-impulsion $T^\mu\nu$ de l'équation d'Einstein décrit la densité d'énergie et les flux de quantités de mouvements en mécanique relativiste. C'est un tenseur d'ordre 2, construit à partir du vecteur 4-impulsion, qui prend la forme suivante :
 \begin{equation}
 T^{\mu\nu}=\begin{pmatrix} 
-T^{00}= \text{energy density}\,\,\,\,
+T^{00}= c^2\text{energy density}\,\,\,\,
 & cT^{01}=\text{energy flux  through }x_1=\text{cst}\,\,\,\,\,
 & cT^{02}=\text{energy flux  through }x_2=\text{cst}\,\,\,\,\,
 & cT^{03}=\text{energy flux through }x_3=\text{cst}
@@ -50,7 +50,7 @@ Dans un espace de symétrie maximale, les tenseurs d'ordre 2 de forme invariante
 Par conséquent, mathématiquement on peut introduire $\rho(t)$ et $p(t)$ deux fonctions telles que le tenseur énergie-impulsion se simplifie en :
 $$ T_{tt} =  \rho(t) c^2, \quad T_{it} = 0, \quad T_{ij} =  p(t) \gamma_{ij}$$
 De manière plus élégante, on peut introduire le vecteur 4-vitesse $U^\mu$ comobile défini par :
-$$ U^t = 1, \quad U^i = 0 $$
+$$ U^0 = 1, \quad U^i = 0 $$
 et obtenir une écriture compacte pour le tenseur énergie-impulsion d'un Univers homogène et isotrope :
 :::{math}
 :label: eq:def-Tmunu
@@ -187,25 +187,39 @@ l'évolution du facteur d'échelle $a(t)$ au contenu énergétique de
 l'Univers. De plus, en soustrayant ces deux équations et en combinant le
 résultat avec la dérivée temporelle de la première, on peut obtenir
 l'équation de conservation de l'énergie que l'on obtiendrait aussi
-directement en calculant $T^{\mu\nu}_{\;\;;\mu}=0$ dans la métrique
+directement en calculant $T^{\mu\nu}_{\;\;\;;\mu}=0$ dans la métrique
 FLRW : 
 $$\label{eq:conservation_energie}
-\dot{\rho} = -3 H(c^2 \rho  + p )
+\dot{\rho} = -3 H( \rho c^2  + p )
 $$
+
+Inventaire cosmologique
+-----------------------
 
 Le tenseur énergie-impulsion inclut la matière non-relativiste et
 relativiste. La matière relativiste est généralement nommée rayonnement
 car aujourd'hui le rayonnement de photons du CMB est largement dominant
-dans cette composante. La matière non relativiste n'exerce pas de
-pression donc $p_m=0$ et : 
+dans cette composante. 
+
+### Matière
+
+La matière non relativiste n'exerce pas de
+pression donc 
+$$p_m=0,$$
+et : 
 $$
 \label{eq:conservation_energie_matiere}
 \dot{\rho}_m = -3 H\rho_m \Rightarrow \rho_m = \rho_m^0 a^{-3}.
 $$
 Cette  dernière relation traduit bien le fait que si une boîte de côté $a$
 contenant une certaine quantité de matière voit la longueur de ses côtés
-doubler, alors la densité de matière est bien divisée par $2^3$. Pour le
-rayonnement, $\rho_r = 3 p_r$ donc :
+doubler, alors la densité de matière est bien divisée par $2^3$. 
+
+### Photons et neutrinos
+
+Pour la matière relativiste (photons, neutrinos), 
+$$p_r = \rho_r / 3,$$
+donc :
 $$\label{eq:conservation_energie_radiation}
 \dot{\rho}_r = -4 H\rho_r \Rightarrow \rho_r = \rho_r^0 a^{-4}.
 $$ 
@@ -213,6 +227,65 @@ Le raisonnement avec une boîte cubique de côté $a$ s'applique aussi ici,
 mais si toutes les longueurs doublent, alors la longueur d'onde du
 rayonnement aussi donc son énergie est divisée par 2. On retrouve bien
 une diminution de la densité d'énergie de rayonnement en $2^4$.
+
+
+:::{note} Equation d'état du gaz parfait
+Pour un gaz parfait, on rappelle que l'équation d'état est :
+$$ p = \rho_n k_B T  $$
+avec $T$ sa température, $\rho_n$ la densité particulaire et $k_B$ la constante de Boltzmann.
+S'il est à basse température (i.e. non relativiste) alors on a $\rho \approx m c^2 \rho_n$ et on veut $p / \rho = k_B T \ll 1/3$ soit :
+$$ T \ll m c^2 / 3 k_B $$
+Pour un gaz d'hydrogène, $T \ll 10^{12}\,$K. Donc on voit que la matière telle qu'on la connait est non relativiste aujourd'hui et même bien avant le CMB.
+
+:::
+
+### Courbure
+
+
+Dans les équations de Friedmann
+[](#eq:friedmann), il est possible d'interpréter la constante
+cosmologique $\Lambda$ et la courbure $k$ en terme de densités d'énergie
+au même titre que la densité d'énergie $\rho$ du tenseur
+énergie-impulsion. La densité d'énergie associée à l'énergie de
+courbure s'identifie à : 
+$$\rho_k(t) = - \frac{3k}{8\pi G_N a^2(t)}.$$
+
+
+### Constante cosmologique
+
+La densité d'énergie associée à la constante
+cosmologique est parfois appelée densité d'énergie noire, en raison des
+étranges propriétés associées à cette dernière :
+$$\rho_\Lambda(t) = \frac{\Lambda}{8\pi G_N} = \text{ constante }.$$ 
+On voit que la densité d'énergie associée à la constante cosmologique étant constante
+dans le temps, cette dernière possède un comportement bien singulier : quelque
+soit la taille de l'Univers, il y a toujours autant d'énergie par unité
+de volume. Elle n'est donc pas diluée comme toute énergie ordinaire
+lorsque celui-ci est en expansion. De plus, grâce à la seconde équation
+de Friedmann, on voit que la pression associée à la constante
+cosmologique serait 
+$$p_\Lambda = - \rho_\Lambda,$$
+soit une pression négative ! Dans la physique ordinaire, un des rares phénomènes où interviennent des pressions négatives
+est la cavitation (<wiki:Pressure#Negative_pressures). En posant $\rho_{\mathrm{tot}}=\rho + \rho_\Lambda$ (et
+$p_{\mathrm{tot}}=p + p_\Lambda$) puis en combinant les deux équations
+de Friedmann [](#eq:friedmann) de façon à éliminer le terme de courbure, on
+obtient :
+$$
+2\dot{H} + 2H^2 = \frac{2\ddot{a}}{a} = -\frac{8\pi G_N}{3}\left( \rho _{\mathrm{tot}}c^2 + 3p_{\mathrm{tot}}\right).
+$$
+On constate que l'expansion de l'Univers s'accélère ($\ddot{a}>0$) si
+$p_{\mathrm{tot}}<-\rho_{\mathrm{tot}}/3$. L'Univers étant constitué
+essentiellement de matière non relativiste et de rayonnement, on a
+$\rho = \rho_m + \rho_r$, et la condition précédente devient équivalente
+à $\rho_\Lambda > \rho_r + \rho_m/2$. En conclusion, si la constante
+cosmologique domine le contenu en énergie de l'Univers, alors elle
+engendre une telle pression négative que ce dernier entre en _expansion accélérée_.
+
+Les paramètres cosmologiques
+----------------------------
+
+### Paramètres d'équation d'état
+
 
 L'équation d'état $w(z)$ associée à une composante de l'Univers est
 définie par le rapport de sa pression et de sa densité d'énergie
@@ -222,7 +295,7 @@ $w=p/\rho$.
     extérieur d'où $p_m=0$ donc $w_m=0$.
 
 -   La matière relativiste exerce quant à elle une pression sur son
-    milieu de valeur $p_r = c^2 \rho_r / 3 $ d'où $w_r=1/3$.
+    milieu de valeur $p_r =  \rho_r c^2 / 3 $ d'où $w_r=1/3$.
 
 -   Pour la constante cosmologique, on identifie dans
     l'équation [](#eq:friedmann) une densité d'énergie
@@ -231,58 +304,21 @@ $w=p/\rho$.
     constante et négative $w_\Lambda = -1$.
 
 
-
-Les paramètres cosmologiques
-----------------------------
+### Paramètres de densité d'énergie
 
 On peut définir une densité critique, qui correspondrait à la densité
 que l'on doit avoir dans un univers homogène et isotrope en expansion de
-courbure spatiale nulle (cf
-équation [](#eq:friedmann)): 
+courbure spatiale nulle (cf équation [](#eq:friedmann)) : 
 $$\rho_c(t) = \frac{3H^2(t)}{8\pi G_N}.$$ 
-Il est commode de définir aussi sa valeur actuelle:
+Il est commode de définir aussi sa valeur actuelle :
 $$\rho_{c}^0 = \frac{3H^2_0}{8\pi G_N} = 1.1 \times 10^{-29} \left( \frac{H_0}{75\text{ km/s/Mpc}}\right)^2\text{ g/cm}^3 \approx 6 \text{ protons/m}^3.$$
 où $H_0$ est la constante de Hubble.
 
-Dans les équations de Friedmann
-[](#eq:friedmann), il est possible d'interpréter la constante
-cosmologique $\Lambda$ et la courbure $k$ en terme de densités d'énergie
-au même titre que la densité d'énergie $\rho$ du tenseur
-énergie-impulsion. La densité d'énergie associée à la constante
-cosmologique est parfois appelée densité d'énergie noire, en raison des
-étranges propriétés associées à cette dernière:
-$$\rho_\Lambda(t) = \frac{\Lambda}{8\pi G_N} = \text{ constante },$$ et
-celle associée à la variable $k$ est appelée densité d'énergie de
-courbure: 
-$$\rho_k(t) = - \frac{3k}{8\pi G_N a^2(t)}.$$
-On voit que la densité d'énergie associée à la constante cosmologique étant constante
-dans le temps, cette dernière a un comportement bien singulier: quelque
-soit la taille de l'Univers, il y a toujours autant d'énergie par unité
-de volume. Elle n'est donc pas diluée comme toute énergie ordinaire
-lorsque celui-ci est en expansion. De plus, grâce à la seconde équation
-de Friedmann, on voit que la pression associée à la constante
-cosmologique serait $p_\Lambda = - \rho_\Lambda$, soit une pression
-négative! En posant $\rho_{\mathrm{tot}}=\rho + \rho_\Lambda$ (et
-$p_{\mathrm{tot}}=p + p_\Lambda$) puis en combinant les deux équations
-de Friedmann [](#eq:friedmann) de façon à éliminer le terme de courbure, on
-obtient:
-$$
-2\dot{H} + 2H^2 = \frac{2\ddot{a}}{a} = -\frac{8\pi G_N}{3}\left(c^2 \rho _{\mathrm{tot}} + 3p_{\mathrm{tot}}\right).
-$$
-On constate que l'expansion de l'Univers s'accélère ($\ddot{a}>0$) si
-$p_{\mathrm{tot}}<-\rho_{\mathrm{tot}}/3$. L'Univers étant constitué
-essentiellement de matière non relativiste et de rayonnement, on a
-$\rho = \rho_m + \rho_r$, et la condition précédente devient équivalente
-à $\rho_\Lambda > \rho_r + \rho_m/2$. En conclusion, si la constante
-cosmologique domine le contenu en énergie de l'Univers, alors elle
-engendre une telle pression négative que ce dernier entre en expansion
-accélérée.
-
 On définit les paramètres de densité en normalisant les densités
-d'énergie par la densité critique, soit
+d'énergie par la densité critique, soit :
 $$\Omega_m(t) = \frac{\rho_m(t)}{\rho_c(t)},\quad \Omega_\Lambda(t) = \frac{\Lambda}{3H^2(t)}, \quad \Omega_k(t) = -\frac{k}{a^2(t)H^2(t)}$$
 $$\Omega_m^0 = \frac{\rho_m^0}{\rho_c^0},\quad \Omega_\Lambda^0 = \frac{\Lambda}{3H^2_0}, \quad \Omega_k^0 = -\frac{k}{H^2_0}.$$
-La première équation de Friedmann s'écrit alors simplement avec $\rho=\rho_m+\rho_r$:
+La première équation de Friedmann s'écrit alors simplement avec $\rho=\rho_m+\rho_r$ :
 $$1 = \Omega_m(t) + \Omega_r(t) + \Omega_\Lambda(t) + \Omega_k(t)$$
 
 ```{math}
@@ -292,14 +328,147 @@ $$1 = \Omega_m(t) + \Omega_r(t) + \Omega_\Lambda(t) + \Omega_k(t)$$
 Ce modèle d'Univers liant la prédiction de son expansion $\bar H(z)$ à
 son contenu composé d'une constante cosmologique, de matière et de
 radiation, est appelé modèle $\Lambda$CDM ($\Lambda$ pour la constante
-cosmologique et CDM pour *Cold Dark Matter*).
+cosmologique et CDM pour *Cold Dark Matter*) dans le cas $k=0$ (Univers plat). C'est le modèle standard de la cosmologie.
+
+Dans le cadre d'un Univers plat, les valeurs mesurées par le satellite _Planck_  combinées aux supernovae de type Ia et les oscillations acoustiques de baryons donnent [](doi:10.1051/0004-6361/201833910) :
+$$\Omega_m^0 = 0.3111 \pm 0.0056, \quad \Omega_\Lambda^0 = 0.6889 \pm 0.0056$$
+pour un Univers plat. Si la courbure est un paramètre libre (on parle d'extension au modèle standard $\Lambda$CDM), on mesure :
+$$\Omega_k^0 = 0.0007\pm 0.0037$$
+donc l'Univers semble essentiellement plat.
+
+### Modélisations de l'énergie noire
+
+Quelle est la véritable nature de l'énergie noire ? Est-ce la manifestation de l'énergie du vide ? Une seconde constante fondamentale de la gravitation ?
+Ou bien une nouvelle cinquième force ? La manifestation de dimensions spatiales supplémentaires ? Ces questions sur la nature
+de l'énergie noire n'ont pour le moment pas de réponses, mais depuis la découverte de l'expansion accélérée en 1998 {cite:p}`Riess1998,Perlmutter1999`
+de nouveaux relevés cosmologiques sont en cours pour mesurer précisément l'équation d'état de l'énergie noire : tant qu'on mesure
+$w_\Lambda=-1$ alors l'accélération de l'expansion peut s'expliquer avec un unique paramètre qui est la valeur de $\Lambda$. 
+Si les mesures s'écartent significativement de $-1$, alors des modèles plus complexes seront à tester.
+
+C'est pourquoi aujourd'hui, en plus du modèle standard $\Lambda$CDM, les cosmologistes testent des modèles empiriques qui cherchent
+des écarts au modèle standard :
+- Flat $w$CDM : modèle d'Univers plat avec comme paramètres  libres $\Omega_m^0$, $\Omega_r^0$ et  $w_\Lambda$;
+- $w$CDM : modèle de courbure quelconque avec comme paramètres  libres $\Omega_m^0$, $\Omega_r^0$, $\Omega_\Lambda^0$ et  $w_\Lambda$;
+- $w_0w_a$CDM : modèle où le paramètre d'équation d'état de l'énergie noire est donnée par deux paramètres libres :
+$$w_\Lambda(a) = w_0 + (1 - a)w_a$$
+dont les valeurs mesurées par le satellite _Planck_ combinées aux supernovae de type Ia et les oscillations acoustiques de baryons donnent [](doi:10.1051/0004-6361/201833910):
+$$w_0 = −0.957 \pm 0.080, \quad w_a = −0.29^{+0.32}_{ −0.26}$$ 
+L'enjeu majeur pour les relevés cosmologiques futurs est de mesurer $w_a$ avec une meilleure précision, 
+afin de mesurer les variations de l'accélération de l'expansion de l'Univers.
 
 
 
-Paramètre de décélération
--------------------------
+:::{exercise} Evolution des densités d'énergie et interprétation
+:label: exo:rhos
+
+1. Démontrer la formule [](#eq:conservation_energie).
+2. Trouver l'évolution de la densité de matière $\rho_m$ en fonction de $a$. Même question pour la densité de rayonnement $\rho_r$. 
+On rappelle que $p_m=0$ pour la matière non relativiste et $p_r=\rho_r c^2/3$ pour le rayonnement.
+3. A partir d'un raisonnement sur un cube comobile qui se dilate, avec des arguments physiques sur des nombres de galaxies,
+retrouvez le même résultat.
+4. Pour un fluide parfait dont l'équation d'état $w$ est constante ($p=w\rho c^2$), donner l'évolution de sa densité d'énergie.
+5. Identifier le terme $\Lambda g_{\mu\nu}$ avec le tenseur énergie-contrainte d'un fluide parfait. Trouver la densité d'énergie $\rho_\Lambda$ 
+et la pression $p_\Lambda$ exercées par la constante cosmologique ainsi que son équation d'état.
+6. À partir de ces dernières questions, réfléchissez au comportement de la densité d'énergie liée au vide. Considérons une chambre à piston cylindrique de section $A$ "remplie" d'énergie du vide. Le piston est tiré sur une distance linéaire $\dd x$.
+Montrez que l'énergie créée par le retrait du piston est égale au travail effectué par le vide, à condition que :}
+\begin{equation}
+ p_{\rm vac} = - \rho_{\rm vac} c^2 
+ \end{equation} % voir Hobson exo piston 15,5 p422
+Cette équation d'état du vide peut être établie à l'aide de la théorie quantique des champs. Elle montre donc que, dans ce cas, la densité d'énergie du vide est constante lorsque le piston se retire.
+
+:::
+
+:::{solution} exo:rhos
+:class: dropdown
+
+1. \begin{align}
+8\pi G \dot{\rho} & = 6\dot{H}H - \frac{6c^2 k \dot{a}}{a^3} \\
+& = 3H \left[-8\pi G P / c^2 + c^2 \Lambda - 3 H^2 - \frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
+& = 3H \left[-8\pi G P / c^2 -8 \pi G \rho + 2\frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
+& = 3H \left[-8\pi G P / c^2 -8 \pi G \rho \right]
+\end{align}
+et $\dot{\rho} c^2 = -3 H(\rho c^2 + P )$. 
 
 
+2. En utilisant la définition du paramètre de Hubble $H = (\dd a/\dd t)/a$, nous pouvons transformer les dérivées temporelles 
+en dérivées par rapport au facteur d'échelle $a$ (ou décalage vers le rouge $z$) :
+\begin{equation}
+\frac{\dd}{\dd t}=Ha\frac{\dd}{\dd a}
+\end{equation}
+La formule de conservation de l'énergie se transforme en :
+\begin{equation}
+a\frac{\dd\rho}{da} = -3 (\rho c^2 + p)
+\end{equation}
+En ce qui concerne la matière non relativiste, $p_m=0$ donc :
+\begin{equation}
+\frac{\dd\rho_m}{\rho_m} = -3 \frac{\dd a}{a} \Rightarrow \rho_m(a) = \rho_m^0 \left(\frac{a_0}{a}\right)^3
+\end{equation}
+En ce qui concerne le rayonnement, $p_r=\rho_r c^2 / 3$ donc :
+\begin{equation}
+\frac{\dd\rho_r}{\rho_r} = -4 \frac{\dd a}{a} \Rightarrow \rho_r(a) = \rho_r^0 \left(\frac{a_0}{a}\right)^4
+\end{equation}
 
-Modélisations de l'énergie noire
--------------------------------
+
+3. 
+```{list-table} Conservation de l'énergie pour la matière et le rayonnement dans un univers en expansion.
+:header-rows: 0
+:name: fig:cubes
+
+* - ```{image} ../images/cube_galaxies.svg
+    :alt: galaxies
+    :width: 100%
+    :align: center
+    ```
+  - ```{image} ../images/cube_waves.svg
+    :alt: light
+    :width: 100%
+    :align: center
+```
+
+Dans le cube isolé, l'énergie et la matière se conservent. Ainsi, en ce qui concerne les galaxies présentes dans un cube en expansion, nous pouvons écrire que leur nombre est conservé par l'expansion de la manière suivante :
+\begin{equation}
+N_{\rm gal} = \rho_m^0 a_0^3 = \rho_m(a) a^3 \Rightarrow \rho_m(a) = \rho_m^0 \left(\frac{a_0}{a}\right)^3
+\end{equation}
+Considérons une onde électromagnétique dans un cube en expansion. La longueur d'onde physique $\lambda$ augmente mais la longueur d'onde en coordonnées $\lambda/a$ est conservée. La conservation de l'énergie de rayonnement dans un cube en mouvement s'écrit :
+\begin{equation}
+a_0 \frac{h c}{\lambda_0} = a \frac{h c}{\lambda}
+\end{equation}
+La densité d'énergie est alors
+\begin{equation}
+\rho_r(a) = \frac{(hc/\lambda)}{a^3} = \frac{a_0(hc/\lambda_0)}{a^4} = \rho_r^0 \left(\frac{a_0}{a}\right)^4
+\end{equation}
+Le comportement en $a^{-4}$ est donc dû à la dilatation de la longueur d'onde du photon.
+
+4. On montre que
+\begin{align}
+\dot{\rho}c +3\frac{\dot{a}}{ac}(\rho c^2+p)=0 & \Leftrightarrow \dot{\rho}c =-3\frac{\dot{a}}{ac}(1+w)\rho c^2=0 \\
+& \Leftrightarrow \frac{d\rho}{\rho} = -3(1+w) \frac{da}{a} \\
+& \Rightarrow \rho = \rho_0 \left( \frac{a}{a_0}\right)^{-3(1+w)}
+\end{align}
+
+5. En utilisant l'équation d'Einstein, en passant le terme $\Lambda$ du côté du tenseur énergie-contrainte de l'équation, nous identifions cette contribution comme un fluide parfait :
+\begin{equation}
+\Lambda g_{\mu\nu} = \frac{8\pi G}{c^4} \begin{pmatrix} \rho_\Lambda c^2 & 0 & 0 & 0 \\ 0 &a^2 p_\Lambda & 0 & 0 \\ 0&0&a^2 p_\Lambda &0 \\ 0&0&0&a^2 p_\Lambda \end{pmatrix}
+\end{equation}
+Nous obtenons :
+\begin{align}
+\Lambda & = \frac{8\pi G}{c^4} \rho_\Lambda c^2 \Leftrightarrow \rho_\Lambda c^2 = c^4 \Lambda / 8\pi G \\
+-a^2 \Lambda & = \frac{8\pi G}{c^4} a^2 p_\Lambda \Leftrightarrow p_\Lambda = - c^4 \Lambda / 8 \pi G = - \rho_\Lambda c^2
+\end{align}
+Pour la constante cosmologique, l'équation d'état est constante et sa valeur est $w=-1$. En utilisant la question précédente, nous avons :
+\begin{equation}
+\rho = \rho_0 \left( \frac{a}{a_0}\right)^{-3(1+w)} = \rho_0
+\end{equation}
+La densité d'énergie associée à la constante cosmologique est constante tout au long de l'expansion de l'univers.
+
+6. L'énergie créée par le retrait du piston est :
+\begin{equation}
+dU = d\left(\rho_{\rm vac} c^2 V\right) = c^2 V d\rho_{\rm vac} + \rho_{\rm vac} c^2 dV
+\end{equation}
+Pour une transformation adiabatique, le premier principe de la thermodynamique donne :
+\begin{equation}
+dU = \delta W = -p_{\rm vac} dV
+\end{equation}
+En supposant que $p_{\rm vac}= - \rho_{\rm vac} c^2$, pour la densité d'énergie du vide nous avons $d\rho_{\rm vac} = 0$ et le premier principe $ dU = \delta W$ est vérifié.
+
+:::
