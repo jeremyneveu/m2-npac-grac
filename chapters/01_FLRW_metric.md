@@ -89,6 +89,9 @@ une difficulté potentielle : l'homogénéisation ne devrait être possible que 
 Univers de symétrie maximale
 ------------------
 
+Etant donné le principe cosmologique, on cherche à déterminer la forme que doit prendre la métrique d'un Univers de symétrie maximale, c'est-à-dire un Univers dont les propriétés sont invariantes par rotation et translation {cite:p}`Weinberg1972`[p. 379].
+
+
 ### Métrique d'un Univers isotrope
 
 Une définition mathématique précise d'un espace-temps spatialement homogène et isotrope est qu'il peut être folié avec une famille d'hyper-surfaces de type espace à un paramètre, homogènes et isotropes. 
@@ -225,7 +228,8 @@ et isotrope s'écrit finalement :
 
 La métrique de Friedmann-Lemaître-Robertson-Walker (FLRW) constitue le cadre de base du modèle cosmologique standard. Les hypothèses d'homogénéité
 et d'isotropie ont directement conduit à une métrique décrivant un univers avec seulement trois géométries possibles 
-(plat, 3-sphère, 3-hyperboloid) et un facteur d'échelle $a(t)$ affectant les distances.
+(plat, 3-sphère, 3-hyperboloid) et un facteur d'échelle $a(t)$ affectant les distances. Notez que, grâce à l'imposition des symétries d'homogénéité et d'isotropie, nous avons réduit l'écriture de la
+métrique $g_{\mu\nu}$ (qui est un tenseur symétrique) constituée a priori de 10 composantes indépendantes inconnues à un tenseur possédant une seule fonction inconnue $a(t)$.
 
 
 :::{important} Où sont les unités ?
@@ -347,7 +351,7 @@ $$ K(t) = \frac{k}{a^2(t)}$$
 La 3-hyperboloïde et le plan sont d'extension infinie. En revanche, la 3-sphère est d'extension finie mais reste non bornée : une particule ne rencontrera jamais 
 de bord mais on peut définir un volume :
 $$V(t) = 2 \pi^2 a^3(t)$$
-et un périmètre (longueur d'un mérdien) :
+et un périmètre (longueur d'un méridien) :
 $$L(t) = 2 \pi a(t)$$
 :::
 

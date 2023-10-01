@@ -1,6 +1,9 @@
 Distances en cosmologie
 ==========
 
+Distance propre
+---------------
+
 La distance propre est la distance que l'on pourrait mesurer
 effectivement à un instant $t$ entre deux objets situés en $r_1$ et
 $r_2$. Elle est donc homogène à une longueur. Sans perdre en généralité,
@@ -30,6 +33,9 @@ $a(t) r$. (c) Distance propre dans un espace
 sphérique.
 ```
 
+Distance de luminosité 
+-----------------------
+
 Considérons une source située en $r_E$, émettant à l'instant $t_E$ $n_E$
 photons de fréquence moyenne $\nu_E$ (se reporter encore à la
 [](#fig:distances_croquis)). Sa luminosité est:
@@ -55,6 +61,9 @@ $$\Phi_0 = \frac{L_E}{4 \pi d_L^2(z)} \Rightarrow d_L(z) = a_0 r_E (1+z) = a_0 (
     \text{sh } \chi(z) & \text{ si } k=-1 
 \end{array}
 \right. .$$
+
+Distances angulaires
+------------------
 
 Dernière distance importante en cosmologie, la distance angulaire d'un
 objet $D_A(z)$. Soit un objet de taille transverse $D$ situé en

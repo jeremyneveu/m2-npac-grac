@@ -26,3 +26,18 @@ Evolution des paramètres cosmologiques
 ------------------------------------
 
 
+
+![](#omegas) 
+
+
+This will embed the output of a notebook cell
+
+:::{note} Test
+![](#om-slider)
+
+:::
+
+
+
+
+
