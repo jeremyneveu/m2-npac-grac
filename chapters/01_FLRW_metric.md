@@ -328,7 +328,7 @@ sans mouvements propres, dont les distances relatives n'augmentent qu'avec le fa
 Dans la métrique FLRW où l'expansion de l'Univers est factorisée par un facteur d'échelle $a(t)$, les coordonnées 
 spatiales $\vec \sigma$ sont appelées _coordonnées comobiles_. 
 Il existe une grande liberté dans le choix des coordonnées comobiles. On privilégie souvent
-les coordonnées sphériques $(t, r, \theta, \phi)$ avec l'observateur (nous-mêmes) à l'origine, telles que :
+les coordonnées sphériques $(ct, r, \theta, \phi)$ avec l'observateur (nous-mêmes) à l'origine, telles que :
 ```{math}
 
 \begin{aligned}
@@ -362,14 +362,14 @@ Le cas de l'univers plat simplifie beaucoup les calculs qui suivront. Étant don
 avec les contraintes de plus en plus fortes des observations cosmologiques
 nous concentrerons désormais nos développements analytiques sur l'univers plat, en mentionnant des résultats pour le cas général 
 lorsque cela est nécessaire. 
-Dans le cas de courbure nulle, on peut aussi utiliser les coordonnées comobiles euclidiennes $(t, x, y, z)$, telles que :
+Dans le cas de courbure nulle, on peut aussi utiliser les coordonnées comobiles euclidiennes $(ct, x, y, z)$, telles que :
 ```{math}
 
 \sigma_1  = x,\quad \sigma_2  = y,\quad\sigma_3  = z,\quad\sigma^2  = x^2 + y^2 + z^2
 ```
 La métrique FLRW s'écrit dans un univers plat :
 \begin{equation}
-g_{\mu\nu}=\begin{pmatrix} -c^2 & 0 & 0 & 0 \\ 0 & a^2(t) & 0 & 0 \\ 0&0& a^2(t)&0 \\ 0&0&0&a^2(t) \end{pmatrix}
+g_{\mu\nu}=\begin{pmatrix} -1 & 0 & 0 & 0 \\ 0 & a^2(t) & 0 & 0 \\ 0&0& a^2(t)&0 \\ 0&0&0&a^2(t) \end{pmatrix}
 \end{equation}
 
 ### Distance propre et distance comobile

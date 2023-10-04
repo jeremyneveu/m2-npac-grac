@@ -272,8 +272,8 @@ gravitationnel est finalement contenu dans la métrique, et que cette
 métrique dépend donc de la présence de matière. Il est donc possible
 d'imaginer une généralisation de ce constat. Le potentiel newtonien est
 déterminé par l'équation de Poisson $\nabla^2\phi = 4\pi G_N \rho$, où
-$\rho$ est la densité volumique de masse. Cette dernière correspond à la densité
-d'énergie du tenseur énergie-impulsion de la matière $T_{00}$: $T_{00} = \rho c^2$ (voir chapitre [](./02_friedmann_equations.md)), donc avec l'équation
+$\rho$ est la densité volumique de masse. Cette dernière est associée à la densité
+d'énergie $\epsilon$ du tenseur énergie-impulsion de la matière $T_{00} = \epsilon = \rho c^2 $ (voir chapitre [](./02_friedmann_equations.md)), donc avec l'équation
 [](#eq:g00) on peut obtenir :
 $$
 \nabla^2 g_{00}=-\frac{8\pi G_N}{c^4} T_{00}.
