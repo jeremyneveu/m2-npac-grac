@@ -2,32 +2,31 @@
 # Math frontmatter:
 math:
   # Note the 'single quotes'
-  '\dd': '\mathrm{d}'
+  \dd': '\mathrm{d}'
 ---
 
-Introduction succincte à la Relativité Générale
+A brief introduction to General Relativity
 =============================================
 
-Rappels de Relativité Restreinte
+Reminders of Special Relativity
 --------------------------------
 
-Le principe sous-jacent à la théorie de la Relativité Restreinte est que les lois de la physique doivent être invariantes par changement de 
-système de coordonnées d'espace-temps. Dans le cas spécial de la théorie de l'électromagnétisme de Maxwell, il apparaît une vitesse invariante par changement
-de système de coordonnées. Cette vitesse s'identifie à la célérité de la lumière, vitesse maximale pouvant être atteinte par une particule de masse nulle. Si 
-la théorie électromagnétique n'avait pas été écrite en 1905, un argument aurait aussi pu être qu'il doit exister une vitesse maximale dans l'Univers si on pense qu'aucun 
-transport d'information ne peut être instantané. A ce moment là, la vitesse pivot de la théorie de la Relativité Restreinte aurait été la vitesse de l'interaction
-qui se propage le plus rapidement. Ce qui dans notre Univers revient à l'interaction électromagnétique {cite:p}`landau1989théorie`.
+The underlying principle of the theory of Special Relativity is that the laws of physics must be invariant to changes in the space-time coordinate system. 
+space-time coordinate system. In the special case of Maxwell's theory of electromagnetism, a velocity appears that is invariant to changes in the
+coordinate system. This speed is identified with the celerity of light, the maximum speed that can be reached by a particle of zero mass. If 
+electromagnetic theory had not been written in 1905, one argument might also have been that there must be a maximum velocity in the Universe if we believe that no 
+transport of information can be instantaneous. At that point, the pivotal speed of the theory of Special Relativity would have been the speed of the fastest-propagating interaction.
+which propagates the fastest. In our Universe, this would be the electromagnetic interaction {cite:p}`landau1989theory`.
 
-Soit un système de coordonnées $x^\alpha$, où la coordonnée $\alpha=0$ correspond au temps $ct$ et les coordonnées $\alpha=1,2,3$ correspondent
-aux coordonnées cartésiennes $x^1,x^2, x^3$.  Dans ce cours, nous emploierons les lettres grecques pour les composantes allant de 0 à 3 et les 
-lettres latines pour les composantes spatiales allant de 1 à 3. Pour passer à un autre système de coordonnées $x'^\alpha$, on introduit la transformation de 
-Lorentz $\Lambda^\alpha_\beta$ définie par :
-```{math}
+Consider a coordinate system $x^\alpha$, where coordinate $\alpha=0$ corresponds to time $ct$ and coordinates $\alpha=1,2,3$ correspond to Cartesian coordinates $x^\alpha$.
+Cartesian coordinates $x^1,x^2, x^3$.  In this course, we'll use Greek letters for components from 0 to 3 and Latin letters for spatial components from 1 to 3. To switch to another coordinate system $x'^\alpha$, we introduce the Lorentz transformation 
+Lorentz transformation $\Lambda^\alpha_\beta$ defined by :
+``{math}
 :label: eq:boost
 
 x'^{\alpha} = \Lambda^\alpha_{\;\beta} x^\alpha + a^\alpha,
 ```
-où $a^\alpha$ est une simple translation temporelle et spatiale. On définit la métrique de Minkowski :
+where $a^\alpha$ is a simple temporal and spatial translation. We define the Minkowski metric:
 ```{math}
 :label: eq:minkowski
 
@@ -38,310 +37,307 @@ où $a^\alpha$ est une simple translation temporelle et spatiale. On définit la
 0 & 0 &0 & 1 \end{pmatrix}
 
 ```
-de telle sorte qu'en coordonnées cartésiennes on puisse définir l'intervalle espace-temps ainsi entre deux coordonnées spatio-temporelles proches :
+so that in Cartesian coordinates we can define the space-time interval between two nearby space-time coordinates as follows:
 $$ \dd s^2 = - c^2 \dd t^2 + \dd \vec x^2 = \eta_{\alpha}\dd x^\alpha \dd x^\beta $$
-Pour assurer que $c$ est invariant par changement de système de coordonnées, la transformation de Lorentz doit assurer la conservation de l'intervalle espace-temps[^consc] donc :
+To ensure that $c$ is invariant to a change of coordinate system, the Lorentz transformation must conserve the space-time interval [^consc]:
 $$\label{eq:dscons}
-\dd s'^2 =  \eta_{\alpha\beta}\dd x'^\alpha \dd x'^\beta = \eta_{\alpha\beta} \Lambda^{\alpha}_{\;\gamma} \Lambda^{\beta}_{\;\delta} \eta_{\alpha\beta} \dd x'^\gamma \dd x'^\delta = \eta_{\gamma\delta} $$
+\dd s'^2 = \eta_{\alpha\beta}\dd x'^\alpha \dd x'^\beta = \eta_{\alpha\beta} \Lambda^{\alpha}_{\;\gamma} \Lambda^{\beta}_{\;\delta} \eta_{alpha\beta} \dd x'^\gamma \dd x'^\delta = \eta_{\gamma\delta} $$
 
-De la symétrie [](#eq:dscons} on peut démontrer que la transformation de Lorentz entre deux référentiels dont l'un se déplace à la vitesse $\vec v = v \vec e_{1}$ par rapport à l'autre doit s'écrire :
+From the symmetry [](#eq:dscons} it can be shown that the Lorentz transformation between two reference frames, one of which is moving at the speed $\vec v = v \vec e_{1}$ with respect to the other, must be written :
 ```{math}
 :label: eq:lorentz
 
-\Lambda^{\alpha}_{\;\beta} = \begin{pmatrix}
-\gamma & -\beta\gamma & 0& 0 \\
--\beta\gamma & \gamma & 0 & 0 \\
+\Lambda^{alpha}_{\;\beta} = \begin{pmatrix}
+\gamma & -\beta\gamma & 0& 0 \
+\betagamma & \gamma & 0 & 0 \
 0 & 0 & 1 & 0 \\
 0 & 0 &0 & 1 \end{pmatrix},\quad \beta = \frac{v}{c},\quad \gamma = \frac{1}{\sqrt{1 - \beta^2}}
 
 ```
-Si on inclus des rotations de l'espace, avec un référentiel se déplaçant à la vitesse $\vec v$ constante par rapport à un autre référentiel,
-le tenseur $\Lambda^\alpha_{\;\beta}$ s'écrit :
+If we include space rotations, with one frame of reference moving at a constant $\vec v$ velocity relative to another frame of reference,
+the $\Lambda^\alpha_{\;\beta}$ tensor is written :
 ```{math}
 :label: eq:lorentz2
 
 \Lambda^0_{\;0} = \gamma,\quad \Lambda^i_{\;0} = \gamma v_i / c,\quad \Lambda^0_{\;j} = \gamma v_j / c,\quad \Lambda^i_{\;j} = \delta_{ij} + v_i v_j \frac{\gamma - 1}{v^2}
 ```
 
-De Newton à la Relativité Générale
+From Newton to General Relativity
 ----------------------------------
 
-La Relativité Générale est la théorie de la gravitation à la base de la
-cosmologie moderne. Elle donne une explication géométrique à la force
-gravitationnelle introduite par Newton trois siècles auparavant. Dans
-cette théorie, une chute n'est plus due à un vecteur force
-malheureusement orienté vers un sol dur, mais à la déformation de
-l'espace-temps engendrée par la Terre. Formulée ainsi, la Relativité
-Générale semble bien compliquée pour peu de choses. Mais les principes
-généraux à la base de cette théorie et la richesse de ses implications
-(dont la théorie newtonienne) en font la théorie phare pour décrire la
-gravitation. Le long de cette section, nous allons introduire pas à pas
-plusieurs concepts de la Relativité Générale tels que la dérivée
-covariante et le tenseur de Riemann, pour aboutir à l'équation
-d'Einstein de la Relativité Générale, base de la cosmologie moderne.
-Cette introduction est largement inspirée de {cite:t}`Weinberg1972` et
+General Relativity is the theory of gravitation that is the basis of modern
+cosmology. It gives a geometrical explanation to the gravitational force
+introduced by Newton three centuries earlier. In
+this theory, a fall is no longer due to a force vector
+unfortunately directed towards the ground, but to the deformation of space-time
+of space-time caused by the Earth. Formulated in this way, General Relativity
+seems complicated for very little. But the general principles
+theory and the wealth of its implications (including Newtonian theory) make it the leading theory for describing
+gravitation. In this section, we will introduce step by step
+General Relativity concepts such as the covariant derivative
+and the Riemann tensor, culminating in Einstein's equation of General Relativity, the basis of modern cosmology.
+This introduction is largely inspired by {cite:t}`Weinberg1972` and
 {cite:t}`Gourgoulhon2013`. 
 
-### Le Principe d'Équivalence
+### The Equivalence Principle
 
-Dans le principe fondamental de la dynamique énoncé par Newton, pourquoi
-la masse intervenant dans le terme d'inertie est-elle rigoureusement la
-même que celle intervenant dans la gravitation newtonienne ? Cette
-coïncidence troublante singularise la gravitation par rapport aux autres
-interactions, et suggère qu'elle n'est pas une propriété des corps
-eux-mêmes mais de l'espace dans lequel ils se meuvent. Considérons une
-masse ponctuelle de masse $m$ soumise à un champ gravitationnel externe
-uniforme et constant $\vec g$ et à aucune autre force. Alors le principe
-fondamental de la dynamique appliqué dans un référentiel galiléen à cet
-objet nous permet de prédire sa position $\vec x$ à un instant $t$ par une équation différentielle à intégrer :
+In Newton's fundamental principle of dynamics, why is it that
+is the mass involved in the inertia term strictly the same as that involved in gravitation?
+Newtonian gravitation? This
+disturbing coincidence sets gravitation apart from other interactions
+interactions, and suggests that gravitation is not a property of the bodies
+but of the space in which they move. Let's consider a
+point mass of mass $m$ subject to a uniform and constant external
+and no other force. Then the
+fundamental principle of dynamics applied to this object in a galilean
+allows us to predict its position $x$ at time $t$ by means of a differential equation to be integrated:
 $$m\frac{\dd^2\vec x}{\dd t^2} = m\vec g$$ 
-Plaçons nous dans le référentiel
-(non galiléen) de l'objet par la transformation de coordonnées suivante :
-$$\vec x' = \vec x - \frac{1}{2}\vec g t^2, \qquad t'=t$$ 
-Alors dans ce référentiel la force gravitationnelle est comme \"absorbée\" par le
-terme inertiel :
+Let's place ourselves in the
+(non-galilean) frame of reference by the following coordinate transformation:
+$$$vec x' = \vec x - \frac{1}{2}\vec g t^2, \qquad t'=t$$ 
+Then, in this frame of reference, the gravitational force is "absorbed" by the inertial term
+inertial term:
 $$m\frac{\dd^2\vec x}{\dd t^2} = m\vec g \Leftrightarrow m\frac{\dd ^2\vec x'}{\dd t'^2} = 0.$$
-Les lois de la physique apparaissent donc identiques pour un observateur
-lié à un référentiel galiléen considérant que l'objet subit une force de
-gravité et pour un observateur lié à un référentiel uniformément
-accéléré et considérant que l'objet ne subit pas de force
-gravitationnelle. La force de gravité ressentie par une masse ponctuelle
-est donc (localement) équivalente au choix d'un référentiel uniformément
-accéléré par rapport à un référentiel galiléen. Pourtant les deux
-référentiels ne sont pas équivalents par une transformation de
-référentiel galiléen. Le Principe d'Équivalence formulé par Einstein
-prend acte de ce constat, et l'étend à des champs gravitationnels qui
-varient faiblement dans le temps et l'espace. Il stipule que *à chaque
-point de l'espace-temps dans un champ gravitationnel arbitraire il est
-possible de choisir un système local de coordonnées inertielles tel que,
-dans une région suffisamment petite autour du point en question, toutes
-les lois de la nature prennent la même forme que dans un système de
-coordonnées cartésien non accéléré et sans gravitation* {cite:p}`Weinberg1972`.
-Ce principe est vérifié expérimentalement avec une très bonne précision,
-notamment par le *Lunar Laser Ranging* {cite:p}`Williams2004`.
+The laws of physics therefore appear identical for an observer
+observer bound to a galilean reference frame, considering that the object is subject to a gravitational force.
+and for an observer linked to a uniformly accelerated frame of reference
+accelerated frame of reference, assuming the object is not subject to
+gravitational force. The force of gravity felt by a point mass
+is therefore (locally) equivalent to the choice of a uniformly accelerated frame of reference
+accelerated relative to a Galilean reference frame. However, the two
+reference frames are not equivalent through a transformation from a
+Galilean reference frame. The Principle of Equivalence formulated by Einstein
+takes note of this observation, and extends it to gravitational fields that
+vary only slightly in time and space. It states that *at every
+point of space-time in an arbitrary gravitational field, it is possible to
+possible to choose a local system of inertial coordinates such that,
+in a sufficiently small region around the point in question, all laws of nature
+laws of nature take on the same form as in a non-accelerated and
+Cartesian coordinate system* {cite:p}`Weinberg1972`.
+This principle has been verified experimentally to a very high degree of accuracy,
+by the *Lunar Laser Ranging* {cite:p}`Williams2004`.
 
-### Équations du mouvement
+### Equations of motion
 
-Appliquons le Principe d'Équivalence à un objet massif en chute libre. Pour cet
-objet, il existe donc localement un système de coordonnées *particulier*
-$x^\mu$ tel que l'équation de son mouvement s'écrive de la même manière
-que si le référentiel était non accéléré et sans gravitation :
+Let's apply the Equivalence Principle to a massive object in free fall. For this
+object, there exists a *particular* local coordinate system
+$x^\mu$ such that the equation of motion can be written in the same way
+as if the frame of reference were unaccelerated and gravitation-free:
 \begin{equation}\label{eq:eqm1}
 \frac{\dd^2 x^\mu}{\dd\tau^2}=0,
 \end{equation}
-avec $\dd\tau$ le temps propre[^1] :
+with $$dd\tau$ the proper time[^1] :
 $$\label{eq:proper-time}
 \dd\tau^2 \equiv -\eta_{\mu\nu} \dd x^\mu \dd x^\nu.
 $$ 
-Le tenseur $\eta_{\mu\nu}$ est la métrique de Minkowski utilisée en Relativité Restreinte. D'après le
-Principe d'Équivalence, cette équation est aussi valable dans un certain
-voisinage de l'objet en question. Il existe donc un autre système de
-coordonnées plus général $x'^\mu$ dans lequel réécrire cette équation.
-Cherchons la forme qu'elle prendrait pour ces coordonnées $x'^\mu$ :
-$$0=\frac{\dd^2 x^\mu}{\dd\tau^2}=\frac{d}{\dd\tau}\left(\frac{\partial x^\mu}{\partial x'^\nu} \frac{\dd x'^\nu}{\dd\tau}\right) = \frac{\partial x^\mu}{\partial x'^\nu} \frac{\dd^2x'^\nu}{\dd\tau^2} + \frac{\partial^2 x^\mu}{\partial x'^\nu \partial x'^\rho}\frac{\dd x'^\nu}{\dd\tau}\frac{\dd x'^\rho}{\dd\tau}.$$
-Après multiplication par $\partial x'^\nu/\partial x^\mu$, on obtient la
-nouvelle équation du mouvement dans le système de coordonnées $x'^\mu$ :
+The $\eta_{\mu\nu}$ tensor is the Minkowski metric used in Special Relativity. According to the
+Equivalence Principle, this equation is also valid within a certain
+neighborhood of the object in question. So there's another, more general
+coordinate system in which to rewrite this equation.
+Let's find the form it would take for these $x'^\mu$ coordinates:
+$$0=\frac{\dd^2 x^\mu}{\dd\tau^2}=\frac{\d}{\dd\tau}\left(\frac{\partial x^\mu}{\partial x'^\nu} \frac{\dd x'^\nu}{\dd\tau}\right) = \frac{\partial x^\mu}{\partial x'^\nu} \frac{\dd^2x'^\nu}{\dd\tau^2} + \frac{\partial^2 x^\mu}{\partial x'^\nu}{\partial x'^\rho}\frac{\dd x'^\nu}{\dd\tau}\frac{\dd x'^\rho}{\dd\tau}. $$
+After multiplying by $\partial x'^\nu/\partial x^\mu$, we obtain the new
+new equation of motion in the $x'^\mu$ coordinate system:
 $$\label{eq:eqm2}
 \frac{\dd^2x'^\nu}{\dd\tau^2} + \Gamma^\nu_{\ \mu\rho}\frac{\dd x'^\mu}{\dd\tau}\frac{\dd x'^\rho}{\dd\tau}=0,
 $$
-où $\Gamma^\nu_{\ \mu\rho}$ est la connexion affine définie par:
-$$\Gamma^\nu_{\ \mu\rho} \equiv \frac{\partial x'^\nu}{\partial x^\lambda}\frac{\partial^2 x^\lambda}{\partial x'^\mu \partial x'^\rho}.$$
-Le temps propre se réécrit :
-$$\dd\tau^2=-\eta_{\mu\nu} \dd x^\mu \dd x^\nu = -g_{\mu\nu} \dd x'^\mu \dd x'^\nu$$
-ce qui définit ainsi le tenseur métrique $g_{\mu\nu}$ :
+where $$Gamma^\nu_{\mu\rho}$ is the affine connection defined by:
+$$Gamma^\nu_{\ \mu\rho} \equiv \frac{\partial x'^\nu}{\partial x^\lambda}\frac{\partial^2 x^\lambda}{\partial x'^\mu \partial x'^\rho}.$$
+The proper time is rewritten:
+$$dd\tau^2=-\eta_{\mu\nu} \dd x^\mu \dd x^\nu = -g_{\mu\nu} \dd x'^\mu \dd x'^\nu$$
+which defines the metric tensor $g_{\mu\nu}$ :
 $$g_{\mu\nu} = \eta_{\alpha\beta} \frac{\partial x^\alpha}{\partial x'^\mu} \frac{\partial x^\beta}{\partial x'^\nu}$$
-$g_{\mu\nu}$ décrit la géométrie de l'espace-temps dans le nouveau
-système de coordonnées $x'^\mu$ et remplace la métrique cartésienne
-$\eta_{\mu\nu}$. Le tenseur métrique inverse est défini par:
+$g_{\mu\nu}$ describes the geometry of space-time in the new
+coordinate system $x'^\mu$ and replaces the Cartesian metric
+$\eta_{\mu\nu}$. The inverse metric tensor is defined by:
 $$g^{\mu\nu} = \eta^{\alpha\beta} \frac{\partial x'^\mu}{\partial x^\alpha} \frac{\partial x'^\nu}{\partial x^\beta}.$$
-En effet, par définition on a bien: 
-$$\begin{aligned}
-g^{\nu\rho}g_{\mu\nu} & = \eta^{\alpha\beta} \frac{\partial x'^\nu}{\partial x^\alpha} \frac{\partial x'^\rho }{\partial x^\beta} \eta_{\gamma\delta} \frac{\partial x^\gamma}{\partial x'^\mu} \frac{\partial x^\delta}{\partial x'^\nu} \\
-& = \delta^\delta_\alpha  \eta^{\alpha\beta} \frac{\partial x'^\rho }{\partial x^\beta} \eta_{\gamma\delta} \frac{\partial x^\gamma}{\partial x'^\mu} \text{ avec } \frac{\partial x'^\nu}{\partial x^\alpha}\frac{\partial x^\delta}{\partial x'^\nu} = \delta^\delta_\alpha \\
-& = \frac{\partial x'^\rho}{\partial x^\beta}\frac{\partial x^\beta}{\partial x'^\mu} = \delta^\rho_\mu,\end{aligned}$$
-où $\delta^\rho_\mu$ est le symbole de Kronecker ($\delta^\rho_\mu=1$ si $\rho=\mu$, 0 sinon).
-On pourrait par la suite montrer que  $\Gamma^\nu_{\ \mu\rho}$ peut ne s'écrire qu'à l'aide d'un seul système
-de coordonnées et du tenseur métrique : 
-$$\label{eq:connexion}
-\Gamma^\nu_{\ \mu\rho} = \frac{1}{2}g^{\lambda\nu}\left( \frac{\partial g_{\lambda\rho}}{\partial x'^\mu} + \frac{\partial g_{\mu\lambda}}{\partial x'^\rho}  - \frac{\partial g_{\mu\rho}}{\partial x'^\lambda} \right)
+Indeed, by definition we have: 
+$$begin{aligned}
+g^{\nu\rho}g_{\mu\nu} & = \eta^{\alpha\beta} \frac{partial x'^\nu}{partial x^\alpha} \frac{partial x'^\rho }{partial x^\beta} \eta_{gammadelta} \frac{\partial x^\gamma}{\partial x'^\mu} \frac{\partial x^\delta}{\partial x'^\nu} \\\
+& = \delta^\delta_\alpha \eta^{alpha\beta} \frac{partial x'^\rho }{partial x^\beta} \eta_{\gamma\delta} \frac{\partial x^\gamma}{\partial x'^\mu} \text{ with } \frac{\partial x'^\nu}{\partial x^\alpha}{\frac{\partial x^\delta}{\partial x'^\nu} = \delta^\delta_\alpha
+& = \frac{\partial x'^\rho}{\partial x^\beta}\frac{\partial x^\beta}{\partial x'^\mu} = \delta^rho_\mu,\end{aligned}$$
+where $\delta^\rho_\mu$ is the Kronecker symbol ($\delta^\rho_\mu=1$ if $\rho=\mu$, 0 otherwise).
+We could then show that $\Gamma^\nu_{\ \mu\rho}$ can only be written using a single coordinate system and the metric tensor.
+and the metric tensor: 
+$$\label{eq:connection}
+\Gamma^\nu_{\mu\rho} = \frac{1}{2}g^{\lambda\nu}\left( \frac{\partial g_{\lambda\rho}}{\partial x'^\mu} + \frac{\partial g_{\mu\lambda}}{\partial x'^\rho} - \frac{\partial g_{\mu\rho}}{\partial x'^\lambda} \right)
 $$
 
-Pour une particule sans masse, comme le photon ou le neutrino, le temps propre défini par l'équation [](#eq:proper-time) s'annule. A 
-la place de $\tau$ on peut alors utiliser la coordonnée $s = x^0$ pour paramétrer la trajectoire de la courbe et par un raisonnement 
-similaire on aboutit à cette équation du mouvement :
-$$\label{eq:eqm3}
-\frac{\dd^2x'^\nu}{\dd s^2} + \Gamma^\nu_{\ \mu\rho}\frac{\dd x'^\mu}{\dd s}\frac{\dd x'^\rho}{\dd s}=0.
+For a massless particle, such as a photon or neutrino, the proper time defined by equation [](#eq:proper-time) cancels out. A 
+instead of $\tau$ we can then use the coordinate $s = x^0$ to parameterize the trajectory of the curve, and by a similar 
+equation of motion:
+$$label{eq:eqm3}
+\frac{\dd^2x'^\nu}{\dd s^2} + \Gamma^\nu_{\mu\rho}\frac{\dd x'^\mu}{\dd s}\frac{\dd x'^\rho}{\dd s}=0.
 $$
-Si elles sont présentes, les forces autres que la gravitation s'appliquant à la particule test peuvent s'ajouter au membre de droite 
-de l'équation [](#eq:eqm3).
+If present, the forces other than gravitation applying to the test particle can be added to the right-hand member 
+of equation [](#eq:eqm3).
 
-:::{note} Dérivée covariante
+:::{note} Covariant derivative
 
-La connexion affine $\Gamma^\nu_{\ \mu\rho}$ intervient par ailleurs
-dans la définition de la dérivée covariante $V^\nu{}_{;\mu}$ d'un
-vecteur $V^\nu$ par rapport à la coordonnée $x'^\mu$ :
+The affine connection $\Gamma^\nu_{\ \mu\rho}$ is also involved in the definition of the covariant derivative.
+in the definition of the covariant derivative $V^\nu{}_{;\mu}$ of a vector $V^\nu{}_{;\mu}$.
+vector $V^\nu$ with respect to the $x'^\mu$ coordinate:
 $$
 V^\nu{}_{;\mu} \equiv \partial_\mu V^\nu + \Gamma^\nu_{\ \mu\rho}V^\rho
 $$
-Cette définition de la dérivée en Relativité Générale exprime
-correctement la variation d'un vecteur le long d'une coordonnée dans un
-espace non plat. Elle se transforme de la même manière qu'un vecteur par
-un changement de coordonnées, contrairement à la dérivée usuelle: le
-vecteur variation est donc correctement défini. Pour illustrer toute sa
-profondeur, voici la définition de la dérivée covariante $DV^\mu/D\tau$
-non pas par rapport à une coordonnée, mais le long d'une courbe
-quelconque paramétrée par le temps propre $\tau$ (invariant par
-changement de coordonnées) :
-$$\frac{DV^\mu}{D\tau} \equiv \frac{\dd V^\mu}{\dd\tau} + \Gamma^\mu_{\ \nu\lambda}\frac{\dd x^\lambda}{\dd\tau} V^\nu.$$
-L'équation du mouvement [](#eq:eqm2) s'écrit alors très simplement
+This definition of the derivative in General Relativity expresses
+the variation of a vector along a coordinate in non-flat space.
+non-flat space. It is transformed in the same way as a vector by a
+a change of coordinates, unlike the usual derivative: the
+variation vector is therefore correctly defined. To illustrate its depth
+depth, here's the definition of the covariant derivative $DV^\mu/D\tau$.
+not with respect to a coordinate, but along any curve
+curve parametrized by the proper time $\tau$ (invariant to coordinate
+change of coordinates):
+$$frac{DV^\mu}{D\tau} \equiv \frac{\dd V^\mu}{\dd\tau} + \Gamma^\mu_{\ \nu\lambda}\frac{\dd x^\lambda}{\dd\tau} V^\nu.$$
+The equation of motion [](#eq:eqm2) is then written very simply
 $$\frac{DU^\mu}{D\tau}=0,$$ 
-avec $U^\mu$ le vecteur vitesse $\dd x^\mu/\dd\tau$. Cette équation ainsi écrite rappelle fortement
-l'équation du mouvement initiale [](#eq:eqm1). La notion de dérivée covariante est donc bien appropriée aux calculs de
-Relativité Générale et remplace bien la dérivée usuelle dans ce cadre. 
-Notons que pour un vecteur covariant, la dérivée covariante s'écrit :
+with $U^\mu$ the velocity vector $\dd x^\mu/\dd\tau$. This equation is strongly reminiscent of
+the initial equation of motion [](#eq:eqm1). The notion of covariant derivative is therefore well suited to General Relativity
+General Relativity and replaces the usual derivative in this context. 
+Note that for a covariant vector, the covariant derivative is written :
 $$\label{eq:dcov-cov}
 \frac{DV_\mu}{D\tau} \equiv \frac{\dd V_\mu}{\dd\tau} - \Gamma^\nu_{\ \mu\lambda}\frac{\dd x^\lambda}{\dd\tau} V_\nu.
 $$
 :::
 
 
-### Vers l'équation d'Einstein
+### Towards the Einstein equation
 
-Armés de ces outils, allons maintenant vers une dérivation simple de
-l'équation d'Einstein qui résume la gravitation à une déformation de
-l'espace-temps par la matière. Commençons par nous intéresser à une
-particule massive se déplaçant lentement dans un champ gravitationnel
-faible, constant mais quelconque cette fois. L'hypothèse de vitesse
-faible nous permet de négliger $\dd\vec x/\dd\tau$ devant $c\dd t/\dd\tau$.
-D'après le Principe d'Équivalence, on a vu qu'il existe un système de
-coordonnées inertielles $\left(ct,\vec x'\right)$[^2] tel que l'équation
-du mouvement [](#eq:eqm2) soit aussi valable dans cette nouvelle situation
-avec champ gravitationnel. On a alors au premier ordre dans un champ de
-gravité faible et quasi-stationnaire :
+Armed with these tools, let's move on to a simple derivation of the
+Einstein's equation, which reduces gravitation to a deformation of
+space-time by matter. Let's start with a massive particle
+massive particle moving slowly through a weak gravitational field
+gravitational field. The weak velocity
+allows us to neglect $x in front of $t.
+According to the Equivalence Principle, we have seen that there exists a system of inertial coordinates
+coordinates $\left(ct,\with x'\right)$[^2] such that the equation of motion
+of motion [](#eq:eqm2) is also valid in this new situation
+with gravitational field. We then have, to first order in a weak, quasi-stationary
+quasi-stationary gravity field:
 $$
 \frac{\dd^2x'^\mu}{\dd\tau^2} + \Gamma^\mu_{\ 00}\left(c\frac{\dd t}{\dd\tau}\right)^2=0, \qquad \Gamma^\mu_{\ 00} \approx -\frac{1}{2}g^{\mu\nu}\frac{\partial g_{00}}{\partial x'^\nu}.
 $$
 
-Dans l'hypothèse d'un champ gravitationnel faible, on peut adopter une
-métrique presque cartésienne :
-$$g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu},\qquad \vert h_{\mu\nu}\vert\ll 1,$$
-et on obtient au premier ordre : 
-$$\left\lbrace
+Assuming a weak gravitational field, we can adopt an almost Cartesian
+Cartesian metric:
+$$g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu},\qquad \vert h_{\mu\nu}$ 1,$$
+and we obtain to first order: 
+$$left\lbrace
 \begin{array}{rl}
     \mu=1,2,3\ : & \displaystyle{\frac{\dd^2\vec x'}{\dd\tau^2} = \frac{1}{2}\left(\frac{\dd t}{\dd\tau}\right)^2\vec{\nabla} h_{00} } \\
-    \mu=0\ : &  \displaystyle{\frac{\dd^2t}{\dd\tau^2} = 0.}
+    \mu=0\ : & \displaystyle{\frac{\dd^2t}{\dd\tau^2} = 0.}
 \end{array}
 \right.$$ 
-D'après la deuxième équation on en déduit que $\dd t/\dd\tau$ est
-une constante et donc la première équation donne :
-$$\label{eq:vers_einstein}
+From the second equation we deduce that $\dd t/\dd\tau$ is
+a constant and so the first equation gives :
+$$label{eq:vers_einstein}
 \frac{\dd^2\vec x'}{\dd t^2} = \frac{1}{2}c^2\vec{\nabla} h_{00}.
 $$ 
-Or on sait que dans la limite newtonienne on a :
-$$\frac{\dd^2\vec x'}{\dd t^2} = -\vec{\nabla} \phi, \qquad \phi=-\frac{G_N M}{r},$$
-avec $\phi$ le potentiel gravitationnel engendré par une masse $M$ à une
-distance $r$ ($G_N$ étant la constante de Newton). En comparant avec
-[](#eq:vers_einstein), on a $h_{00}=-2\phi/c^2+\text{constante}$. Or
-le système de coordonnées choisi doit être cartésien à l'infini
-(hypothèse de faible perturbation), donc $h_{00}=-2\phi/c^2$ et :
+Now, we know that in the Newtonian limit we have :
+$$frac{dd^2\vec x'}{dd t^2} = -\vec{nabla} \phi, \qquad \phi=-\frac{G_N M}{r},$$
+with $\phi$ the gravitational potential generated by a mass $M$ at a distance
+distance $r$ ($G_N$ being Newton's constant). Comparing with
+[](#eq:vers_einstein), we have $h_{00}=-2\phi/c^2+\text{constant}$. Now
+the chosen coordinate system must be Cartesian at infinity
+(low perturbation assumption), so $h_{00}=-2\phi/c^2$ and :
 $$\label{eq:g00}
 g_{00}=-\left(1+\frac{2\phi}{c^2}\right),
 $$ 
-L'élément $g_{00}$ correspondant à la composante temporelle
-de la métrique, le battement des horloges dépend par conséquent de
-l'intensité du champ gravitationnel. Ceci correspond à l'effet Einstein,
-la seule conséquence de la Relativité Générale aujourd'hui utilisée
-technologiquement (dans le GPS, voir [](#fig:effet_einstein)).
+The $g_{00}$ element corresponds to the time component
+of the metric, the beat of the clocks therefore depends on the
+intensity of the gravitational field. This corresponds to the Einstein effect,
+the only consequence of General Relativity in use today
+(in GPS, see [](#fig:effet_einstein)).
 
 
-```{figure} ../images/effet_eintein.svg
+``{figure} ../images/effet_eintein.svg
 :name: fig:effet_einstein
 :align: center
 :width: 90%
 
-Illustration de l'effet Einstein. Un photon tombant dans un puits
-gravitationnel gagne de l'énergie donc sa fréquence augmente. De façon
-équivalente, on peut dire que les horloges dans un champ gravitationnel
-retardent par rapport à des horloges identiques situées en dehors. Les
-récepteurs GPS doivent prendre en compte cet effet pour en déduire leur
-position par rapport aux satellites.
+Illustration of the Einstein effect. A photon falling into a gravitational well
+gains energy, so its frequency increases. equivalently
+equivalently, we can say that clocks in a gravitational field
+delay compared to identical clocks outside. The
+GPS receivers have to take this effect into account to deduce their position
+position relative to the satellites.
 ```
 
-Cet exercice sur une particule ponctuelle nous apprend que le champ
-gravitationnel est finalement contenu dans la métrique, et que cette
-métrique dépend donc de la présence de matière. Il est donc possible
-d'imaginer une généralisation de ce constat. Le potentiel newtonien est
-déterminé par l'équation de Poisson $\nabla^2\phi = 4\pi G_N \rho$, où
-$\rho$ est la densité volumique de masse. Cette dernière est associée à la densité
-d'énergie $\epsilon$ du tenseur énergie-impulsion de la matière $T_{00} = \epsilon = \rho c^2 $ (voir chapitre [](./02_friedmann_equations.md)), donc avec l'équation
-[](#eq:g00) on peut obtenir :
+This exercise on a point particle teaches us that the gravitational field
+is ultimately contained within the metric, and that this metric therefore
+depends on the presence of matter. It is therefore possible
+a generalization of this observation. The Newtonian potential is
+determined by the Poisson equation $\nabla^2\phi = 4\pi G_N \rho$, where
+is the bulk density. The latter is associated with the energy density
+energy density $\epsilon$ of the energy-impulsion tensor of matter $T_{00} = \epsilon = \rho c^2 $ (see chapter [](./02_friedmann_equations.md)), so with equation
+[](#eq:g00) we can obtain :
 $$
 \nabla^2 g_{00}=-\frac{8\pi G_N}{c^4} T_{00}.
 $$ 
-On peut alors imaginer qu'il existe un tenseur $G_{\mu\nu}$ combinant des dérivées premières et
-secondes de la métrique $g_{\mu\nu}$ généralisant cette dernière
-équation à toutes les coordonnées tel que 
-$$\label{eq:einstein1}
+We can then imagine that there exists a tensor $G_{\mu\nu}$ combining first and second derivatives of the metric $g_{00}.
+second derivatives of the metric $g_{\mu\nu}$ generalizing the latter
+equation to all coordinates such that 
+$$label{eq:einstein1}
 G_{\mu\nu}=-\frac{8\pi G_N}{c^4} T_{\mu\nu}.
 $$ 
-Cette dernière équation correspond à une première version de l'équation d'Einstein. Ce raisonnement ne nous a
-permis que d'intuiter sa forme, mais une autre démonstration plus
-rigoureuse permet d'obtenir l'expression du tenseur d'Einstein
+This last equation corresponds to a first version of Einstein's equation. This line of reasoning
+only allowed us to intuit its form, but a more rigorous
+rigorous demonstration gives us the expression of the Einstein tensor
 $G_{\mu\nu}$ : 
 $$
 G_{\mu\nu} = R_{\mu\nu} - \frac{1}{2} g_{\mu\nu} R
 $$
-avec $R_{\mu\nu}$ le tenseur de Ricci et $R$ la courbure scalaire (trace
-du tenseur de Ricci $R^\mu_\mu$), eux-mêmes obtenus par le tenseur de
-Riemann $R^\mu_{\ \nu\alpha\beta}$ : 
+with $R_{\mu\nu}$ the Ricci tensor and $R$ the scalar curvature (trace
+of the Ricci tensor $R^\mu_\mu$), themselves obtained by the Riemann tensor
+Riemann tensor $R^\mu_\nu\alpha\beta}$ : 
 $$
 \begin{aligned}
-R^\mu_{\ \nu\alpha\beta} & = -\partial_\alpha \Gamma^\mu_{\ \nu\beta} +  \partial_\beta \Gamma^\mu_{\ \nu\alpha} - \Gamma^\mu_{\ \alpha\sigma}\Gamma^\sigma_{\ \nu\beta} + \Gamma^\mu_{\ \beta\sigma}\Gamma^\sigma_{\ \nu\alpha} \\
+R^\mu_{\ \nu\alpha\beta} & = -\partial_\alpha \Gamma^\mu_{\ \nu\alpha\beta} + \partial_\beta \Gamma^\mu_{\ \nu\alpha\beta} -. \Gamma^\mu_{\ \alpha\sigma}\Gamma^\sigma_{\ \nu\beta} + \Gamma^\mu_{\ \beta\sigma}\Gamma^\sigma_{\ \nu\alpha} \\
 R_{\mu\nu} & =R^\alpha_{\ \mu\alpha\nu}.
 \end{aligned}
 $$
 
-$G_{\mu\nu}$ apparaît être de divergence nulle car :
-$$G^{\mu\nu}_{\;\;\;;\mu}=0\quad\text{(identité de Bianchi)}.$$
+$G_{\mu\nu}$ appears to have zero divergence because :
+$$G^{\mu\nu}_{\;\;;\mu}=0\quad\text{(Bianchi identity)}.$$
 
 :::{important}
 
-L'identité de Bianchi et l'équation d'Einstein
-[](#eq:einstein1) impose la conservation de l'énergie, par
-conséquent directement issue de propriétés géométriques :
+The Bianchi identity and the Einstein equation
+[](#eq:einstein1) imposes the conservation of energy, therefore
+directly from geometric properties:
 $$\label{eq:conservation_energie_tenseur}
 T^{\mu\nu}_{\;\;\;;\mu}=0
 $$
 :::
 
-Par l'identité de Bianchi, on voit aussi que l'équation d'Einstein peut
-être définie à une constante près[^3] tout en gardant la conservation de l'énergie. Cette constante est 
-aujourd'hui appelée constante cosmologique. Voici l'équation d'Einstein sous sa forme définitive {cite:p}`Einstein1917` :
+Using the Bianchi identity, we can also see that Einstein's equation can be
+be defined to within one constant[^3] while retaining the conservation of energy. This constant is 
+called the cosmological constant. Here's Einstein's equation in its definitive form {cite:p}`Einstein1917` :
 $$\label{eq:einstein2}
 \fbox{$ G_{\mu\nu}-\Lambda g_{\mu\nu} = -\frac{8\pi G_N}{c^4} T_{\mu\nu} $}
 $$
 
 
 
-[^consc]: On doit conserver $\vert \dd \vec x' / \dd t'\vert = c$ pour la propagation d'un rayon lumineux donc $\dd s^2 = 0$.
+[^consc]: We must keep $\vert \dd \vec x' / \dd t'\vert = c$ for the propagation of a light ray so $\dd s^2 = 0$.
 
-[^1]: A travers cette définition, on a choisi une métrique de signature
-    $(-,+,+,+)$ que nous garderons par la suite.
+[^1]: Through this definition, we have chosen a signature metric
+    $(-,+,+,+)$ which we'll keep hereafter.
 
-[^2]: Par la suite, l'indice $0$ des tenseurs correspondra donc à la
-    coordonnée temporelle, tandis que les indices suivants
-    correspondront aux coordonnées spatiales.
+[^2]: Hereafter, the $0$ index of the tensors will correspond to the time
+    time coordinates, while the following indices
+    correspond to the spatial coordinates.
 
-[^3]: Car on a aussi $g^{\mu\nu}_{\;\;;\mu}=0$.
+[^3]: Because we also have $g^{\mu\nu}_{\;\;;\mu}=0$.
 
-[^4]: 1 parsec (pc) = 3.262 années-lumière = 3.086e16 m. 100 $\approx$
-    années-lumière.
+[^4]: 1 parsec (pc) = 3.262 light-years = 3.086e16 m. 100 $\approx$
+    light-years.
 
-[^5]: Ces considérations historiques sont développées dans la référence
+[^5]: These historical considerations are developed in reference
     {cite:t}`Astier2012`.
 
-[^6]: Des calculs plus précis tenant compte des problèmes de
-    renormalisation montrent que le désaccord peut être ramener de 120 à
-    une cinquantaine d'ordres de grandeur, ce qui reste énorme
+[^6]: More precise calculations taking into account renormalization
+    renormalization problems show that the detuning can be reduced from 120 to
+    about fifty orders of magnitude, which is still enormous.
     {cite:p}`Martin2012`.
-

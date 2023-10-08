@@ -23,4 +23,5 @@ chapters:
   - file: chapters/02_friedmann_equations
   - file: chapters/03_cosmological_models
   - file: chapters/04_distances
-  # - file: notebooks/astropy_cosmo.ipynb
+  - file: notebooks/mechanical_analogy.ipynb
+  - file: notebooks/astropy_cosmo.ipynb
