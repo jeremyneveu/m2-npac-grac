@@ -49,8 +49,8 @@ From the symmetry [](#eq:dscons} it can be shown that the Lorentz transformation
 :label: eq:lorentz
 
 \Lambda^{alpha}_{\;\beta} = \begin{pmatrix}
-\gamma & -\beta\gamma & 0& 0 \
-\beta\gamma & \gamma & 0 & 0 \
+\gamma & -\beta\gamma & 0& 0 \\
+\beta\gamma & \gamma & 0 & 0 \\
 0 & 0 & 1 & 0 \\
 0 & 0 &0 & 1 \end{pmatrix},\quad \beta = \frac{v}{c},\quad \gamma = \frac{1}{\sqrt{1 - \beta^2}}
 
