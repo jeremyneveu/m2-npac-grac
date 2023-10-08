@@ -2,8 +2,9 @@
 # Math frontmatter:
 math:
   # Note the 'single quotes'
-  \dd': '\mathrm{d}'
+  '\dd': '\mathrm{d}'
 ---
+
 
 A brief introduction to General Relativity
 =============================================
@@ -21,7 +22,7 @@ which propagates the fastest. In our Universe, this would be the electromagnetic
 Consider a coordinate system $x^\alpha$, where coordinate $\alpha=0$ corresponds to time $ct$ and coordinates $\alpha=1,2,3$ correspond to Cartesian coordinates $x^\alpha$.
 Cartesian coordinates $x^1,x^2, x^3$.  In this course, we'll use Greek letters for components from 0 to 3 and Latin letters for spatial components from 1 to 3. To switch to another coordinate system $x'^\alpha$, we introduce the Lorentz transformation 
 Lorentz transformation $\Lambda^\alpha_\beta$ defined by :
-``{math}
+```{math}
 :label: eq:boost
 
 x'^{\alpha} = \Lambda^\alpha_{\;\beta} x^\alpha + a^\alpha,
@@ -49,7 +50,7 @@ From the symmetry [](#eq:dscons} it can be shown that the Lorentz transformation
 
 \Lambda^{alpha}_{\;\beta} = \begin{pmatrix}
 \gamma & -\beta\gamma & 0& 0 \
-\betagamma & \gamma & 0 & 0 \
+\beta\gamma & \gamma & 0 & 0 \
 0 & 0 & 1 & 0 \\
 0 & 0 &0 & 1 \end{pmatrix},\quad \beta = \frac{v}{c},\quad \gamma = \frac{1}{\sqrt{1 - \beta^2}}
 
@@ -94,7 +95,7 @@ allows us to predict its position $x$ at time $t$ by means of a differential equ
 $$m\frac{\dd^2\vec x}{\dd t^2} = m\vec g$$ 
 Let's place ourselves in the
 (non-galilean) frame of reference by the following coordinate transformation:
-$$$vec x' = \vec x - \frac{1}{2}\vec g t^2, \qquad t'=t$$ 
+$$vec x' = \vec x - \frac{1}{2}\vec g t^2, \qquad t'=t$$ 
 Then, in this frame of reference, the gravitational force is "absorbed" by the inertial term
 inertial term:
 $$m\frac{\dd^2\vec x}{\dd t^2} = m\vec g \Leftrightarrow m\frac{\dd ^2\vec x'}{\dd t'^2} = 0.$$
@@ -126,7 +127,7 @@ as if the frame of reference were unaccelerated and gravitation-free:
 \begin{equation}\label{eq:eqm1}
 \frac{\dd^2 x^\mu}{\dd\tau^2}=0,
 \end{equation}
-with $$dd\tau$ the proper time[^1] :
+with $\dd\tau$ the proper time[^1] :
 $$\label{eq:proper-time}
 \dd\tau^2 \equiv -\eta_{\mu\nu} \dd x^\mu \dd x^\nu.
 $$ 
@@ -135,15 +136,15 @@ Equivalence Principle, this equation is also valid within a certain
 neighborhood of the object in question. So there's another, more general
 coordinate system in which to rewrite this equation.
 Let's find the form it would take for these $x'^\mu$ coordinates:
-$$0=\frac{\dd^2 x^\mu}{\dd\tau^2}=\frac{\d}{\dd\tau}\left(\frac{\partial x^\mu}{\partial x'^\nu} \frac{\dd x'^\nu}{\dd\tau}\right) = \frac{\partial x^\mu}{\partial x'^\nu} \frac{\dd^2x'^\nu}{\dd\tau^2} + \frac{\partial^2 x^\mu}{\partial x'^\nu}{\partial x'^\rho}\frac{\dd x'^\nu}{\dd\tau}\frac{\dd x'^\rho}{\dd\tau}. $$
+$$0=\frac{\dd^2 x^\mu}{\dd\tau^2}=\frac{\dd}{\dd\tau}\left(\frac{\partial x^\mu}{\partial x'^\nu} \frac{\dd x'^\nu}{\dd\tau}\right) = \frac{\partial x^\mu}{\partial x'^\nu} \frac{\dd^2x'^\nu}{\dd\tau^2} + \frac{\partial^2 x^\mu}{\partial x'^\nu}{\partial x'^\rho}\frac{\dd x'^\nu}{\dd\tau}\frac{\dd x'^\rho}{\dd\tau}. $$
 After multiplying by $\partial x'^\nu/\partial x^\mu$, we obtain the new
 new equation of motion in the $x'^\mu$ coordinate system:
 $$\label{eq:eqm2}
 \frac{\dd^2x'^\nu}{\dd\tau^2} + \Gamma^\nu_{\ \mu\rho}\frac{\dd x'^\mu}{\dd\tau}\frac{\dd x'^\rho}{\dd\tau}=0,
-$$
-where $$Gamma^\nu_{\mu\rho}$ is the affine connection defined by:
+$$ 
+where $Gamma^\nu_{\mu\rho}$ is the affine connection defined by:
 $$Gamma^\nu_{\ \mu\rho} \equiv \frac{\partial x'^\nu}{\partial x^\lambda}\frac{\partial^2 x^\lambda}{\partial x'^\mu \partial x'^\rho}.$$
-The proper time is rewritten:
+The proper time is rewritten: 
 $$dd\tau^2=-\eta_{\mu\nu} \dd x^\mu \dd x^\nu = -g_{\mu\nu} \dd x'^\mu \dd x'^\nu$$
 which defines the metric tensor $g_{\mu\nu}$ :
 $$g_{\mu\nu} = \eta_{\alpha\beta} \frac{\partial x^\alpha}{\partial x'^\mu} \frac{\partial x^\beta}{\partial x'^\nu}$$
@@ -152,21 +153,22 @@ coordinate system $x'^\mu$ and replaces the Cartesian metric
 $\eta_{\mu\nu}$. The inverse metric tensor is defined by:
 $$g^{\mu\nu} = \eta^{\alpha\beta} \frac{\partial x'^\mu}{\partial x^\alpha} \frac{\partial x'^\nu}{\partial x^\beta}.$$
 Indeed, by definition we have: 
-$$begin{aligned}
-g^{\nu\rho}g_{\mu\nu} & = \eta^{\alpha\beta} \frac{partial x'^\nu}{partial x^\alpha} \frac{partial x'^\rho }{partial x^\beta} \eta_{gammadelta} \frac{\partial x^\gamma}{\partial x'^\mu} \frac{\partial x^\delta}{\partial x'^\nu} \\\
-& = \delta^\delta_\alpha \eta^{alpha\beta} \frac{partial x'^\rho }{partial x^\beta} \eta_{\gamma\delta} \frac{\partial x^\gamma}{\partial x'^\mu} \text{ with } \frac{\partial x'^\nu}{\partial x^\alpha}{\frac{\partial x^\delta}{\partial x'^\nu} = \delta^\delta_\alpha
-& = \frac{\partial x'^\rho}{\partial x^\beta}\frac{\partial x^\beta}{\partial x'^\mu} = \delta^rho_\mu,\end{aligned}$$
+$$\begin{aligned}
+g^{\nu\rho}g_{\mu\nu} & = \eta^{\alpha\beta} \frac{\partial x'^\nu}{\partial x^\alpha} \frac{\partial x'^\rho }{\partial x^\beta} \eta_{\gamma\delta} \frac{\partial x^\gamma}{\partial x'^\mu} \frac{\partial x^\delta}{\partial x'^\nu} \\
+& = \delta^\delta_\alpha \eta^{\alpha\beta} \frac{\partial x'^\rho }{\partial x^\beta} \eta_{\gamma\delta} \frac{\partial x^\gamma}{\partial x'^\mu} \text{ with } \frac{\partial x'^\nu}{\partial x^\alpha}\frac{\partial x^\delta}{\partial x'^\nu} = \delta^\delta_\alpha \\
+& = \frac{\partial x'^\rho}{\partial x^\beta}\frac{\partial x^\beta}{\partial x'^\mu} = \delta^rho_\mu,
+\end{aligned}$$
 where $\delta^\rho_\mu$ is the Kronecker symbol ($\delta^\rho_\mu=1$ if $\rho=\mu$, 0 otherwise).
 We could then show that $\Gamma^\nu_{\ \mu\rho}$ can only be written using a single coordinate system and the metric tensor.
 and the metric tensor: 
-$$\label{eq:connection}
+$$\label{eq:connexion}
 \Gamma^\nu_{\mu\rho} = \frac{1}{2}g^{\lambda\nu}\left( \frac{\partial g_{\lambda\rho}}{\partial x'^\mu} + \frac{\partial g_{\mu\lambda}}{\partial x'^\rho} - \frac{\partial g_{\mu\rho}}{\partial x'^\lambda} \right)
 $$
 
 For a massless particle, such as a photon or neutrino, the proper time defined by equation [](#eq:proper-time) cancels out. A 
 instead of $\tau$ we can then use the coordinate $s = x^0$ to parameterize the trajectory of the curve, and by a similar 
 equation of motion:
-$$label{eq:eqm3}
+$$\label{eq:eqm3}
 \frac{\dd^2x'^\nu}{\dd s^2} + \Gamma^\nu_{\mu\rho}\frac{\dd x'^\mu}{\dd s}\frac{\dd x'^\rho}{\dd s}=0.
 $$
 If present, the forces other than gravitation applying to the test particle can be added to the right-hand member 
@@ -211,7 +213,7 @@ massive particle moving slowly through a weak gravitational field
 gravitational field. The weak velocity
 allows us to neglect $x in front of $t.
 According to the Equivalence Principle, we have seen that there exists a system of inertial coordinates
-coordinates $\left(ct,\with x'\right)$[^2] such that the equation of motion
+coordinates $\left(ct,\vec x'\right)$[^2] such that the equation of motion
 of motion [](#eq:eqm2) is also valid in this new situation
 with gravitational field. We then have, to first order in a weak, quasi-stationary
 quasi-stationary gravity field:
@@ -221,19 +223,18 @@ $$
 
 Assuming a weak gravitational field, we can adopt an almost Cartesian
 Cartesian metric:
-$$g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu},\qquad \vert h_{\mu\nu}$ 1,$$
+$$g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu},\qquad \vert h_{\mu\nu} 1,$$
 and we obtain to first order: 
-$$left\lbrace
+$$\left\lbrace
 \begin{array}{rl}
     \mu=1,2,3\ : & \displaystyle{\frac{\dd^2\vec x'}{\dd\tau^2} = \frac{1}{2}\left(\frac{\dd t}{\dd\tau}\right)^2\vec{\nabla} h_{00} } \\
     \mu=0\ : & \displaystyle{\frac{\dd^2t}{\dd\tau^2} = 0.}
-\end{array}
-\right.$$ 
+\end{array}\right.$$ 
 From the second equation we deduce that $\dd t/\dd\tau$ is
 a constant and so the first equation gives :
-$$label{eq:vers_einstein}
+$$\label{eq:vers_einstein}
 \frac{\dd^2\vec x'}{\dd t^2} = \frac{1}{2}c^2\vec{\nabla} h_{00}.
-$$ 
+$$
 Now, we know that in the Newtonian limit we have :
 $$frac{dd^2\vec x'}{dd t^2} = -\vec{nabla} \phi, \qquad \phi=-\frac{G_N M}{r},$$
 with $\phi$ the gravitational potential generated by a mass $M$ at a distance
@@ -251,7 +252,7 @@ the only consequence of General Relativity in use today
 (in GPS, see [](#fig:effet_einstein)).
 
 
-``{figure} ../images/effet_eintein.svg
+```{figure} ../images/effet_eintein.svg
 :name: fig:effet_einstein
 :align: center
 :width: 90%
@@ -278,7 +279,7 @@ $$
 We can then imagine that there exists a tensor $G_{\mu\nu}$ combining first and second derivatives of the metric $g_{00}.
 second derivatives of the metric $g_{\mu\nu}$ generalizing the latter
 equation to all coordinates such that 
-$$label{eq:einstein1}
+$$\label{eq:einstein1}
 G_{\mu\nu}=-\frac{8\pi G_N}{c^4} T_{\mu\nu}.
 $$ 
 This last equation corresponds to a first version of Einstein's equation. This line of reasoning
