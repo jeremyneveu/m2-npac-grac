@@ -291,7 +291,7 @@ G_{\mu\nu} = R_{\mu\nu} - \frac{1}{2} g_{\mu\nu} R
 $$
 with $R_{\mu\nu}$ the Ricci tensor and $R$ the scalar curvature (trace
 of the Ricci tensor $R^\mu_\mu$), themselves obtained by the Riemann tensor
-Riemann tensor $R^\mu_\nu\alpha\beta}$ : 
+Riemann tensor $R^\mu_{\nu\alpha\beta}$ : 
 $$
 \begin{aligned}
 R^\mu_{\ \nu\alpha\beta} & = -\partial_\alpha \Gamma^\mu_{\ \nu\alpha\beta} + \partial_\beta \Gamma^\mu_{\ \nu\alpha\beta} -. \Gamma^\mu_{\ \alpha\sigma}\Gamma^\sigma_{\ \nu\beta} + \Gamma^\mu_{\ \beta\sigma}\Gamma^\sigma_{\ \nu\alpha} \\
