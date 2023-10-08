@@ -276,7 +276,7 @@ energy density $\epsilon$ of the energy-impulsion tensor of matter $T_{00} = \ep
 $$
 \nabla^2 g_{00}=-\frac{8\pi G_N}{c^4} T_{00}.
 $$ 
-We can then imagine that there exists a tensor $G_{\mu\nu}$ combining first and second derivatives of the metric $g_{00}.
+We can then imagine that there exists a tensor $G_{\mu\nu}$ combining first and second derivatives of the metric $g_{00}$.
 second derivatives of the metric $g_{\mu\nu}$ generalizing the latter
 equation to all coordinates such that 
 $$\label{eq:einstein1}
