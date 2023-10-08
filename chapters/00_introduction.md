@@ -95,7 +95,7 @@ allows us to predict its position $x$ at time $t$ by means of a differential equ
 $$m\frac{\dd^2\vec x}{\dd t^2} = m\vec g$$ 
 Let's place ourselves in the
 (non-galilean) frame of reference by the following coordinate transformation:
-$$vec x' = \vec x - \frac{1}{2}\vec g t^2, \qquad t'=t$$ 
+$$\vec x' = \vec x - \frac{1}{2}\vec g t^2, \qquad t'=t$$ 
 Then, in this frame of reference, the gravitational force is "absorbed" by the inertial term
 inertial term:
 $$m\frac{\dd^2\vec x}{\dd t^2} = m\vec g \Leftrightarrow m\frac{\dd ^2\vec x'}{\dd t'^2} = 0.$$
@@ -142,8 +142,8 @@ new equation of motion in the $x'^\mu$ coordinate system:
 $$\label{eq:eqm2}
 \frac{\dd^2x'^\nu}{\dd\tau^2} + \Gamma^\nu_{\ \mu\rho}\frac{\dd x'^\mu}{\dd\tau}\frac{\dd x'^\rho}{\dd\tau}=0,
 $$ 
-where $Gamma^\nu_{\mu\rho}$ is the affine connection defined by:
-$$Gamma^\nu_{\ \mu\rho} \equiv \frac{\partial x'^\nu}{\partial x^\lambda}\frac{\partial^2 x^\lambda}{\partial x'^\mu \partial x'^\rho}.$$
+where $\Gamma^\nu_{\mu\rho}$ is the affine connection defined by:
+$$\Gamma^\nu_{\ \mu\rho} \equiv \frac{\partial x'^\nu}{\partial x^\lambda}\frac{\partial^2 x^\lambda}{\partial x'^\mu \partial x'^\rho}.$$
 The proper time is rewritten: 
 $$dd\tau^2=-\eta_{\mu\nu} \dd x^\mu \dd x^\nu = -g_{\mu\nu} \dd x'^\mu \dd x'^\nu$$
 which defines the metric tensor $g_{\mu\nu}$ :
@@ -156,7 +156,7 @@ Indeed, by definition we have:
 $$\begin{aligned}
 g^{\nu\rho}g_{\mu\nu} & = \eta^{\alpha\beta} \frac{\partial x'^\nu}{\partial x^\alpha} \frac{\partial x'^\rho }{\partial x^\beta} \eta_{\gamma\delta} \frac{\partial x^\gamma}{\partial x'^\mu} \frac{\partial x^\delta}{\partial x'^\nu} \\
 & = \delta^\delta_\alpha \eta^{\alpha\beta} \frac{\partial x'^\rho }{\partial x^\beta} \eta_{\gamma\delta} \frac{\partial x^\gamma}{\partial x'^\mu} \text{ with } \frac{\partial x'^\nu}{\partial x^\alpha}\frac{\partial x^\delta}{\partial x'^\nu} = \delta^\delta_\alpha \\
-& = \frac{\partial x'^\rho}{\partial x^\beta}\frac{\partial x^\beta}{\partial x'^\mu} = \delta^rho_\mu,
+& = \frac{\partial x'^\rho}{\partial x^\beta}\frac{\partial x^\beta}{\partial x'^\mu} = \delta^\rho_\mu,
 \end{aligned}$$
 where $\delta^\rho_\mu$ is the Kronecker symbol ($\delta^\rho_\mu=1$ if $\rho=\mu$, 0 otherwise).
 We could then show that $\Gamma^\nu_{\ \mu\rho}$ can only be written using a single coordinate system and the metric tensor.
