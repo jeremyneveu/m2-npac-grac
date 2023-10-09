@@ -41,10 +41,14 @@ où $a^\alpha$ est une simple translation temporelle et spatiale. On définit la
 de telle sorte qu'en coordonnées cartésiennes on puisse définir l'intervalle espace-temps ainsi entre deux coordonnées spatio-temporelles proches :
 $$ \dd s^2 = - c^2 \dd t^2 + \dd \vec x^2 = \eta_{\alpha}\dd x^\alpha \dd x^\beta $$
 Pour assurer que $c$ est invariant par changement de système de coordonnées, la transformation de Lorentz doit assurer la conservation de l'intervalle espace-temps[^consc] donc :
+$$
+\dd s'^2 =  \eta_{\alpha\beta}\dd x'^\alpha \dd x'^\beta = \eta_{\alpha\beta} \Lambda^{\alpha}_{\;\gamma} \Lambda^{\beta}_{\;\delta}  \dd x'^\gamma \dd x'^\delta = \eta_{\gamma\delta} \dd x^\gamma \dd x^\beta = \dd s^2
+$$
 $$\label{eq:dscons}
-\dd s'^2 =  \eta_{\alpha\beta}\dd x'^\alpha \dd x'^\beta = \eta_{\alpha\beta} \Lambda^{\alpha}_{\;\gamma} \Lambda^{\beta}_{\;\delta} \eta_{\alpha\beta} \dd x'^\gamma \dd x'^\delta = \eta_{\gamma\delta} $$
+\Rightarrow \eta_{\alpha\beta} \Lambda^{\alpha}_{\;\gamma} \Lambda^{\beta}_{\;\delta} =  \eta_{\gamma\delta}
+$$
 
-De la symétrie [](#eq:dscons} on peut démontrer que la transformation de Lorentz entre deux référentiels dont l'un se déplace à la vitesse $\vec v = v \vec e_{1}$ par rapport à l'autre doit s'écrire :
+De la symétrie [](#eq:dscons) on peut démontrer que la transformation de Lorentz entre deux référentiels dont l'un se déplace à la vitesse $\vec v = v \vec e_{1}$ par rapport à l'autre doit s'écrire :
 ```{math}
 :label: eq:lorentz
 
@@ -60,7 +64,7 @@ le tenseur $\Lambda^\alpha_{\;\beta}$ s'écrit :
 ```{math}
 :label: eq:lorentz2
 
-\Lambda^0_{\;0} = \gamma,\quad \Lambda^i_{\;0} = \gamma v_i / c,\quad \Lambda^0_{\;j} = \gamma v_j / c,\quad \Lambda^i_{\;j} = \delta_{ij} + v_i v_j \frac{\gamma - 1}{v^2}
+\Lambda^0_{\;0} = \gamma,\quad \Lambda^i_{\;0} = \gamma v_i / c,\quad \Lambda^0_{\;j} = \gamma v_j / c,\quad \Lambda^i_{\;j} = \delta_{ij} +  (\gamma - 1)  \frac{v_i v_j}{v^2}
 ```
 
 De Newton à la Relativité Générale
@@ -133,7 +137,7 @@ avec $\dd\tau$ le temps propre[^1] :
 $$\label{eq:proper-time}
 \dd\tau^2 \equiv -\eta_{\mu\nu} \dd x^\mu \dd x^\nu.
 $$ 
-Le tenseur $\eta_{\mu\nu}$ est la métrique de Minkowski utilisée en Relativité Restreinte. D'après le
+D'après le
 Principe d'Équivalence, cette équation est aussi valable dans un certain
 voisinage de l'objet en question. Il existe donc un autre système de
 coordonnées plus général $x'^\mu$ dans lequel réécrire cette équation.
@@ -211,12 +215,12 @@ Armés de ces outils, allons maintenant vers une dérivation simple de
 l'équation d'Einstein qui résume la gravitation à une déformation de
 l'espace-temps par la matière. Commençons par nous intéresser à une
 particule massive se déplaçant lentement dans un champ gravitationnel
-faible, constant mais quelconque cette fois. L'hypothèse de vitesse
-faible nous permet de négliger $\dd\vec x/\dd\tau$ devant $c\dd t/\dd\tau$.
+faible, constant mais quelconque cette fois. 
 D'après le Principe d'Équivalence, on a vu qu'il existe un système de
 coordonnées inertielles $\left(ct,\vec x'\right)$[^2] tel que l'équation
 du mouvement [](#eq:eqm2) soit aussi valable dans cette nouvelle situation
-avec champ gravitationnel. On a alors au premier ordre dans un champ de
+avec champ gravitationnel. L'hypothèse de vitesse
+faible nous permet de négliger $\dd\vec x/\dd\tau$ devant $c\dd t/\dd\tau$. On a alors au premier ordre dans un champ de
 gravité faible et quasi-stationnaire :
 $$
 \frac{\dd^2x'^\mu}{\dd\tau^2} + \Gamma^\mu_{\ 00}\left(c\frac{\dd t}{\dd\tau}\right)^2=0, \qquad \Gamma^\mu_{\ 00} \approx -\frac{1}{2}g^{\mu\nu}\frac{\partial g_{00}}{\partial x'^\nu}.
@@ -228,7 +232,7 @@ $$g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu},\qquad \vert h_{\mu\nu}\vert\ll 1,$$
 et on obtient au premier ordre : 
 $$\left\lbrace
 \begin{array}{rl}
-    \mu=1,2,3\ : & \displaystyle{\frac{\dd^2\vec x'}{\dd\tau^2} = \frac{1}{2}\left(\frac{\dd t}{\dd\tau}\right)^2\vec{\nabla} h_{00} } \\
+    \mu=1,2,3\ : & \displaystyle{\frac{\dd^2\vec x'}{\dd\tau^2} = \frac{1}{2}\left(c\frac{\dd t}{\dd\tau}\right)^2\vec{\nabla} h_{00} } \\
     \mu=0\ : &  \displaystyle{\frac{\dd^2t}{\dd\tau^2} = 0.}
 \end{array}
 \right.$$ 
@@ -292,7 +296,7 @@ $$
 G_{\mu\nu} = R_{\mu\nu} - \frac{1}{2} g_{\mu\nu} R
 $$
 avec $R_{\mu\nu}$ le tenseur de Ricci et $R$ la courbure scalaire (trace
-du tenseur de Ricci $R^\mu_\mu$), eux-mêmes obtenus par le tenseur de
+du tenseur de Ricci $R^\mu_{\;\mu}$), eux-mêmes obtenus par le tenseur de
 Riemann $R^\mu_{\ \nu\alpha\beta}$ : 
 $$
 \begin{aligned}

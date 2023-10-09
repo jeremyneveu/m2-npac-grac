@@ -13,14 +13,14 @@ Reminders of Special Relativity
 --------------------------------
 
 The underlying principle of the theory of Special Relativity is that the laws of physics must be invariant to changes in the space-time coordinate system. 
-space-time coordinate system. In the special case of Maxwell's theory of electromagnetism, a velocity appears that is invariant to changes in the
+In the special case of Maxwell's theory of electromagnetism, a velocity appears that is invariant to changes in the
 coordinate system. This speed is identified with the celerity of light, the maximum speed that can be reached by a particle of zero mass. If 
 electromagnetic theory had not been written in 1905, one argument might also have been that there must be a maximum velocity in the Universe if we believe that no 
-transport of information can be instantaneous. At that point, the pivotal speed of the theory of Special Relativity would have been the speed of the fastest-propagating interaction.
+transport of information can be instantaneous. At that point, the pivotal speed of the theory of Special Relativity would have been the speed of the interaction
 which propagates the fastest. In our Universe, this would be the electromagnetic interaction {cite:p}`landau1989theory`.
 
 Consider a coordinate system $x^\alpha$, where coordinate $\alpha=0$ corresponds to time $ct$ and coordinates $\alpha=1,2,3$ correspond to Cartesian coordinates $x^\alpha$.
-Cartesian coordinates $x^1,x^2, x^3$.  In this course, we'll use Greek letters for components from 0 to 3 and Latin letters for spatial components from 1 to 3. To switch to another coordinate system $x'^\alpha$, we introduce the Lorentz transformation 
+In this course, we'll use Greek letters for components from 0 to 3 and Latin letters for spatial components from 1 to 3. To switch to another coordinate system $x'^\alpha$, we introduce the Lorentz transformation 
 Lorentz transformation $\Lambda^\alpha_\beta$ defined by :
 ```{math}
 :label: eq:boost
@@ -41,14 +41,18 @@ where $a^\alpha$ is a simple temporal and spatial translation. We define the Min
 so that in Cartesian coordinates we can define the space-time interval between two nearby space-time coordinates as follows:
 $$ \dd s^2 = - c^2 \dd t^2 + \dd \vec x^2 = \eta_{\alpha}\dd x^\alpha \dd x^\beta $$
 To ensure that $c$ is invariant to a change of coordinate system, the Lorentz transformation must conserve the space-time interval [^consc]:
+$$
+\dd s'^2 =  \eta_{\alpha\beta}\dd x'^\alpha \dd x'^\beta = \eta_{\alpha\beta} \Lambda^{\alpha}_{\;\gamma} \Lambda^{\beta}_{\;\delta}  \dd x'^\gamma \dd x'^\delta = \eta_{\gamma\delta} \dd x^\gamma \dd x^\beta = \dd s^2
+$$
 $$\label{eq:dscons}
-\dd s'^2 = \eta_{\alpha\beta}\dd x'^\alpha \dd x'^\beta = \eta_{\alpha\beta} \Lambda^{\alpha}_{\;\gamma} \Lambda^{\beta}_{\;\delta} \eta_{alpha\beta} \dd x'^\gamma \dd x'^\delta = \eta_{\gamma\delta} $$
+\Rightarrow \eta_{\alpha\beta} \Lambda^{\alpha}_{\;\gamma} \Lambda^{\beta}_{\;\delta} =  \eta_{\gamma\delta}
+$$
 
-From the symmetry [](#eq:dscons} it can be shown that the Lorentz transformation between two reference frames, one of which is moving at the speed $\vec v = v \vec e_{1}$ with respect to the other, must be written :
+From the symmetry [](#eq:dscons) it can be shown that the Lorentz transformation between two reference frames, one of which is moving at the speed $\vec v = v \vec e_{1}$ with respect to the other, must be written :
 ```{math}
 :label: eq:lorentz
 
-\Lambda^{alpha}_{\;\beta} = \begin{pmatrix}
+\Lambda^{\alpha}_{\;\beta} = \begin{pmatrix}
 \gamma & -\beta\gamma & 0& 0 \\
 \beta\gamma & \gamma & 0 & 0 \\
 0 & 0 & 1 & 0 \\
@@ -60,7 +64,7 @@ the $\Lambda^\alpha_{\;\beta}$ tensor is written :
 ```{math}
 :label: eq:lorentz2
 
-\Lambda^0_{\;0} = \gamma,\quad \Lambda^i_{\;0} = \gamma v_i / c,\quad \Lambda^0_{\;j} = \gamma v_j / c,\quad \Lambda^i_{\;j} = \delta_{ij} + v_i v_j \frac{\gamma - 1}{v^2}
+\Lambda^0_{\;0} = \gamma,\quad \Lambda^i_{\;0} = \gamma v_i / c,\quad \Lambda^0_{\;j} = \gamma v_j / c,\quad \Lambda^i_{\;j} = \delta_{ij} + (\gamma - 1)  \frac{v_i v_j}{v^2}
 ```
 
 From Newton to General Relativity
@@ -131,21 +135,21 @@ with $\dd\tau$ the proper time[^1] :
 $$\label{eq:proper-time}
 \dd\tau^2 \equiv -\eta_{\mu\nu} \dd x^\mu \dd x^\nu.
 $$ 
-The $\eta_{\mu\nu}$ tensor is the Minkowski metric used in Special Relativity. According to the
+According to the
 Equivalence Principle, this equation is also valid within a certain
 neighborhood of the object in question. So there's another, more general
 coordinate system in which to rewrite this equation.
 Let's find the form it would take for these $x'^\mu$ coordinates:
-$$0=\frac{\dd^2 x^\mu}{\dd\tau^2}=\frac{\dd}{\dd\tau}\left(\frac{\partial x^\mu}{\partial x'^\nu} \frac{\dd x'^\nu}{\dd\tau}\right) = \frac{\partial x^\mu}{\partial x'^\nu} \frac{\dd^2x'^\nu}{\dd\tau^2} + \frac{\partial^2 x^\mu}{\partial x'^\nu}{\partial x'^\rho}\frac{\dd x'^\nu}{\dd\tau}\frac{\dd x'^\rho}{\dd\tau}. $$
+$$0=\frac{\dd^2 x^\mu}{\dd\tau^2}=\frac{d}{\dd\tau}\left(\frac{\partial x^\mu}{\partial x'^\nu} \frac{\dd x'^\nu}{\dd\tau}\right) = \frac{\partial x^\mu}{\partial x'^\nu} \frac{\dd^2x'^\nu}{\dd\tau^2} + \frac{\partial^2 x^\mu}{\partial x'^\nu \partial x'^\rho}\frac{\dd x'^\nu}{\dd\tau}\frac{\dd x'^\rho}{\dd\tau}.$$
 After multiplying by $\partial x'^\nu/\partial x^\mu$, we obtain the new
 new equation of motion in the $x'^\mu$ coordinate system:
-$$\label{eq:eqm2}
+$$\label{eq:eqm2} 
 \frac{\dd^2x'^\nu}{\dd\tau^2} + \Gamma^\nu_{\ \mu\rho}\frac{\dd x'^\mu}{\dd\tau}\frac{\dd x'^\rho}{\dd\tau}=0,
 $$ 
 where $\Gamma^\nu_{\mu\rho}$ is the affine connection defined by:
 $$\Gamma^\nu_{\ \mu\rho} \equiv \frac{\partial x'^\nu}{\partial x^\lambda}\frac{\partial^2 x^\lambda}{\partial x'^\mu \partial x'^\rho}.$$
 The proper time is rewritten: 
-$$dd\tau^2=-\eta_{\mu\nu} \dd x^\mu \dd x^\nu = -g_{\mu\nu} \dd x'^\mu \dd x'^\nu$$
+$$\dd\tau^2=-\eta_{\mu\nu} \dd x^\mu \dd x^\nu = -g_{\mu\nu} \dd x'^\mu \dd x'^\nu$$
 which defines the metric tensor $g_{\mu\nu}$ :
 $$g_{\mu\nu} = \eta_{\alpha\beta} \frac{\partial x^\alpha}{\partial x'^\mu} \frac{\partial x^\beta}{\partial x'^\nu}$$
 $g_{\mu\nu}$ describes the geometry of space-time in the new
@@ -177,21 +181,20 @@ of equation [](#eq:eqm3).
 :::{note} Covariant derivative
 
 The affine connection $\Gamma^\nu_{\ \mu\rho}$ is also involved in the definition of the covariant derivative.
-in the definition of the covariant derivative $V^\nu{}_{;\mu}$ of a vector $V^\nu{}_{;\mu}$.
-vector $V^\nu$ with respect to the $x'^\mu$ coordinate:
+$V^\nu{}_{;\mu}$ of a vector $V^\nu$ with respect to the $x'^\mu$ coordinate:
 $$
 V^\nu{}_{;\mu} \equiv \partial_\mu V^\nu + \Gamma^\nu_{\ \mu\rho}V^\rho
 $$
 This definition of the derivative in General Relativity expresses
 the variation of a vector along a coordinate in non-flat space.
-non-flat space. It is transformed in the same way as a vector by a
+It is transformed in the same way as a vector by a
 a change of coordinates, unlike the usual derivative: the
-variation vector is therefore correctly defined. To illustrate its depth
-depth, here's the definition of the covariant derivative $DV^\mu/D\tau$.
+variation vector is therefore correctly defined. To illustrate its depth, 
+here's the definition of the covariant derivative $DV^\mu/D\tau$,
 not with respect to a coordinate, but along any curve
 curve parametrized by the proper time $\tau$ (invariant to coordinate
 change of coordinates):
-$$frac{DV^\mu}{D\tau} \equiv \frac{\dd V^\mu}{\dd\tau} + \Gamma^\mu_{\ \nu\lambda}\frac{\dd x^\lambda}{\dd\tau} V^\nu.$$
+$$\frac{DV^\mu}{D\tau} \equiv \frac{\dd V^\mu}{\dd\tau} + \Gamma^\mu_{\ \nu\lambda}\frac{\dd x^\lambda}{\dd\tau} V^\nu.$$
 The equation of motion [](#eq:eqm2) is then written very simply
 $$\frac{DU^\mu}{D\tau}=0,$$ 
 with $U^\mu$ the velocity vector $\dd x^\mu/\dd\tau$. This equation is strongly reminiscent of
@@ -208,14 +211,13 @@ $$
 
 Armed with these tools, let's move on to a simple derivation of the
 Einstein's equation, which reduces gravitation to a deformation of
-space-time by matter. Let's start with a massive particle
-massive particle moving slowly through a weak gravitational field
-gravitational field. The weak velocity
-allows us to neglect $x in front of $t.
+space-time by matter. Let's start with a  
+massive particle moving slowly through a weak gravitational field. 
 According to the Equivalence Principle, we have seen that there exists a system of inertial coordinates
 coordinates $\left(ct,\vec x'\right)$[^2] such that the equation of motion
 of motion [](#eq:eqm2) is also valid in this new situation
-with gravitational field. We then have, to first order in a weak, quasi-stationary
+with gravitational field. The weak velocity
+allows us to neglect $\dd\vec x/\dd\tau$ in front of $c\dd t/\dd\tau$. We then have, to first order in a weak, quasi-stationary
 quasi-stationary gravity field:
 $$
 \frac{\dd^2x'^\mu}{\dd\tau^2} + \Gamma^\mu_{\ 00}\left(c\frac{\dd t}{\dd\tau}\right)^2=0, \qquad \Gamma^\mu_{\ 00} \approx -\frac{1}{2}g^{\mu\nu}\frac{\partial g_{00}}{\partial x'^\nu}.
@@ -223,11 +225,11 @@ $$
 
 Assuming a weak gravitational field, we can adopt an almost Cartesian
 Cartesian metric:
-$$g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu},\qquad \vert h_{\mu\nu} 1,$$
+$$g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu},\qquad \vert h_{\mu\nu}\vert \ll 1,$$
 and we obtain to first order: 
 $$\left\lbrace
 \begin{array}{rl}
-    \mu=1,2,3\ : & \displaystyle{\frac{\dd^2\vec x'}{\dd\tau^2} = \frac{1}{2}\left(\frac{\dd t}{\dd\tau}\right)^2\vec{\nabla} h_{00} } \\
+    \mu=1,2,3\ : & \displaystyle{\frac{\dd^2\vec x'}{\dd\tau^2} = \frac{1}{2}\left(c\frac{\dd t}{\dd\tau}\right)^2\vec{\nabla} h_{00} } \\
     \mu=0\ : & \displaystyle{\frac{\dd^2t}{\dd\tau^2} = 0.}
 \end{array}\right.$$ 
 From the second equation we deduce that $\dd t/\dd\tau$ is
@@ -236,7 +238,7 @@ $$\label{eq:vers_einstein}
 \frac{\dd^2\vec x'}{\dd t^2} = \frac{1}{2}c^2\vec{\nabla} h_{00}.
 $$
 Now, we know that in the Newtonian limit we have :
-$$frac{dd^2\vec x'}{dd t^2} = -\vec{nabla} \phi, \qquad \phi=-\frac{G_N M}{r},$$
+$$\frac{\dd^2\vec x'}{dd t^2} = -\vec{\nabla} \phi, \qquad \phi=-\frac{G_N M}{r},$$
 with $\phi$ the gravitational potential generated by a mass $M$ at a distance
 distance $r$ ($G_N$ being Newton's constant). Comparing with
 [](#eq:vers_einstein), we have $h_{00}=-2\phi/c^2+\text{constant}$. Now
@@ -290,15 +292,14 @@ $$
 G_{\mu\nu} = R_{\mu\nu} - \frac{1}{2} g_{\mu\nu} R
 $$
 with $R_{\mu\nu}$ the Ricci tensor and $R$ the scalar curvature (trace
-of the Ricci tensor $R^\mu_\mu$), themselves obtained by the Riemann tensor
+of the Ricci tensor $R^\mu_{\;\mu}$), themselves obtained by the Riemann tensor
 Riemann tensor $R^\mu_{\nu\alpha\beta}$ : 
 $$
 \begin{aligned}
-R^\mu_{\ \nu\alpha\beta} & = -\partial_\alpha \Gamma^\mu_{\ \nu\alpha\beta} + \partial_\beta \Gamma^\mu_{\ \nu\alpha\beta} -. \Gamma^\mu_{\ \alpha\sigma}\Gamma^\sigma_{\ \nu\beta} + \Gamma^\mu_{\ \beta\sigma}\Gamma^\sigma_{\ \nu\alpha} \\
+R^\mu_{\ \nu\alpha\beta} & = -\partial_\alpha \Gamma^\mu_{\ \nu\beta} +  \partial_\beta \Gamma^\mu_{\ \nu\alpha} - \Gamma^\mu_{\ \alpha\sigma}\Gamma^\sigma_{\ \nu\beta} + \Gamma^\mu_{\ \beta\sigma}\Gamma^\sigma_{\ \nu\alpha} \\
 R_{\mu\nu} & =R^\alpha_{\ \mu\alpha\nu}.
 \end{aligned}
 $$
-
 $G_{\mu\nu}$ appears to have zero divergence because :
 $$G^{\mu\nu}_{\;\;;\mu}=0\quad\text{(Bianchi identity)}.$$
 
