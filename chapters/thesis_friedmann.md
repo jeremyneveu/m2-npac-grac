@@ -319,7 +319,7 @@ rajouter deux hypothèses.
     milieu de larges vides. Cependant l'observation de l'Univers à
     grande échelle montre que l'Univers est bien globalement homogène à
     des échelles plus grandes que la distance moyenne
-    inter-galactique[^4] 100 (voir
+    inter-galactique[^4] 100Mpc (voir
     figure [](#fig:sdss) et par exemple {cite:t}`Scrimgeour2012` pour une
     mesure de l'homogénéité de l'Univers par comptage de galaxies).
 

@@ -53,15 +53,14 @@ de la Relativité Générale.
     milieu de larges vides. Cependant l'observation de l'Univers à
     grande échelle montre que l'Univers est bien globalement homogène à
     des échelles plus grandes que la distance moyenne
-    inter-galactique[^4] 100 (voir
-    figure [](#fig:sdss) et par exemple {cite:t}`Scrimgeour2012` pour une
+    inter-galactique[^4] $100\,$Mpc (voir [](#fig:sdss) et par exemple {cite:t}`Scrimgeour2012` pour une
     mesure de l'homogénéité de l'Univers par comptage de galaxies).
 
 2.  l'Univers est isotrope: aucune direction n'est privilégiée. Ainsi,
     des observations effectuées dans deux directions différentes du ciel
     sont équivalentes. Ceci est bien vérifié par l'observation du fond
     diffus cosmologique micro-onde (CMB) dont la température est mesurée
-    identique  à $2.725\pm0.002$ {cite:p}`Mather1999` dans toutes les directions de l'espace. Seules des fluctuations 
+    identique  à $2.725\pm0.002\,$K {cite:p}`Mather1999` dans toutes les directions de l'espace. Seules des fluctuations 
     de température de l'ordre de $10^{-5}$ sont détectés sur cette image de l'Univers jeune (voir
     figure [](#fig:cmb_planck) et par exemple
     {cite:t}`ThePlanckCollaboration2013XIII` pour une vérification du principe
@@ -94,13 +93,13 @@ Etant donné le principe cosmologique, on cherche à déterminer la forme que do
 
 ### Métrique d'un Univers isotrope
 
-Une définition mathématique précise d'un espace-temps spatialement homogène et isotrope est qu'il peut être folié avec une famille d'hyper-surfaces de type espace à un paramètre, homogènes et isotropes. 
+XXX A REPRENDRE XXXX Une définition mathématique précise d'un espace-temps spatialement homogène et isotrope est qu'il peut être folié avec une famille d'hyper-surfaces de type espace à un paramètre, homogènes et isotropes. 
 La définition d'une foliation impose que chaque feuille de la foliation, une hyper-surface de type espace dans notre cas, soit une classe d'équivalence où l'équivalence peut être énoncée comme ayant la même valeur du paramètre. 
 Si nous appelons ce paramètre le temps, nous voyons que nous avons un temps universel en tout point de l'espace. 
 Le terme $g_{00}$ de la métrique ne dépend alors pas des coordonnées spatiales, mais seulement du temps. 
 
-De plus, il est facile de vérifier que la ligne du monde de tout observateur qui peut vérifier
-est _perpendiculaire_ (telle que définie par la métrique) aux surfaces spatiales. En effet, en simplifiant à un espace-temps 2D, si la métrique a la forme 
+De plus, on peut vérifier que la ligne du monde de tout observateur qui peut vérifier
+est _perpendiculaire_ (telle que définie par la métrique) aux surfaces spatiales. En effet, en simplifiant à un espace-temps 2D, si la métrique a la forme :
 \begin{equation}
 g=\begin{pmatrix} g_{00} & g_{01}  \\ g_{01} & g_{11} \end{pmatrix}
 \end{equation}
@@ -110,19 +109,20 @@ $$\dd s^2=0=g_{00}c^2\dd t^2+2g_{01}\,c\,\dd x\,\dd t+g_{11}\dd x^2$$
 
 On peut alors vérifier, en résolvant l'équation de $\dd t$, que si $g_{01} \neq 0$, deux $\dd x$ opposés donnent deux valeurs différentes de $\dd t$ positif. 
 C'est-à-dire qu'un observateur recevra à des moments différents les impulsions lumineuses émises 
-simultanément par deux sources situées à la même distance dans des directions opposées. Cela 
+simultanément par deux sources situées à la même distance dans des directions opposées.
 Cela rompt évidemment l'isotropie. Les termes $g_{0i}$ et $g_{i0}$ de la métrique sont donc nuls.
 
 En combinant les deux résultats précédents, l'intervalle espace-temps peut être écrit sous la forme suivante :
 \begin{equation}
-\dd s^2= -g_{00}(t) c^2 \dd t^2 + \dd l^2
+\dd s^2= g_{00}(t) c^2 \dd t^2 + \dd \vec l^2
 \end{equation}
-où $\dd l$ est un élément de longueur ne dépendant que des coordonnées spatiales. La métrique prend donc la forme :
+où $\dd \vec l$ est un vecteur élémentaire ne dépendant que des coordonnées spatiales. Il est alors possible de fixer $g_{00}$ à $-1$ quitte à redéfinir la variable temps[^g00]. 
+La métrique prend donc la forme :
 \begin{equation}
-g_{\mu\nu}=\begin{pmatrix} -g_{00}(t) c^2& 0 & 0 & 0 \\ 0 & \gamma_{11} & \gamma_{12} & \gamma_{13} \\ 
-0&\gamma_{21} & \gamma_{22} & \gamma_{23} \\ 0&\gamma_{31} & \gamma_{32} & \gamma_{33} \end{pmatrix}
+g_{\mu\nu}=\begin{pmatrix} -1& 0 & 0 & 0 \\ 0 & \gamma_{11} & \gamma_{12} & \gamma_{13} \\ 
+0&\gamma_{12} & \gamma_{22} & \gamma_{23} \\ 0&\gamma_{13} & \gamma_{23} & \gamma_{33} \end{pmatrix}
 \end{equation}
-où $\gamma_{ij}$ est la métrique spatiale, qui peut dépendre du temps et de la position.
+où $\gamma_{ij}$ est la métrique spatiale, qui peut dépendre du temps et de la position, et comportant 6 composantes indépendantes inconnues (une métrique est symétrique).
 
 :::{attention} Convention de signature pour la métrique
 Dans ce cours, comme dans beaucoup de cours de cosmologie, la [signature](https://en.wikipedia.org/wiki/Metric_signature) choisie pour la métrique est $(-,+,+,+)$. 
@@ -135,65 +135,73 @@ des hautes énergies, la métrique $(+,-,-,-)$ est souvent préférée. Une comp
 
 ### Géométrie d'un Univers maximallement symétrique
 
-Trouvons maintenant une forme explicite pour $\dd l^2$. Un Univers de symétrie maximale (homogène et isotrope) doit posséder une courbure constante.
-Cela se comprend assez intuitivement mais aussi se démontre en Relativité Générale  {cite:p}`Weinberg1972` [p. 381].
-Notons $a$ le rayon de courbure associé, et soit $\vec x = (x^1, x^2, x^3)$ un vecteur position
-dans l'espace 3D, de norme :
-$$r^2 = \Vert \vec x \Vert^2 = \gamma_{ij} x^i x^j$$
-On a donc :
+Trouvons maintenant une forme explicite pour $\dd \vec l^2$. Un Univers de symétrie maximale (homogène et isotrope) doit posséder une courbure constante.
+Cela se comprend assez intuitivement mais aussi se démontre en Relativité Générale {cite:p}`Weinberg1972` [p. 381].
+Notons $a$ le rayon de courbure associé, et soit $\vec \xi = (\xi^1, \xi^2, \xi^3)$ un vecteur position
+dans l'espace 3D :
 \begin{equation}
-\dd l^2 = \gamma_{ij} \dd x^i \dd x^j, \quad \text{avec}\quad i=1,2,3
+\dd \vec l^2 = \gamma_{ij} \dd \xi^i \dd \xi^j, \quad \text{avec}\quad i=1,2,3
 \end{equation}
 
 
-Tout d'abord, si cet espace possède une courbure nulle, alors l'élément de métrique $\dd l$ s'écrit simplement :
+Tout d'abord, si cet espace possède une courbure nulle, alors la distance élémentaire $\dd \vec l$ s'écrit simplement :
 \begin{equation}
-\dd l^2 =   \delta_{ij}\dd x^i \dd x^j  = \dd \vec x^2 
+\dd \vec l^2 =   \delta_{ij}\dd x^i \dd x^j  = \dd \vec \xi^2 
 \end{equation}
 
 Travaillons maintenant sur le cas où la courbure est non nulle. Pour décrire la courbure d'une surface avec des notions de géométries habituelles, 
 étudions-la dans un espace avec une dimension supplémentaire.
-Si nous plaçons cet espace 3D non euclidien dans un espace 4D _euclidien_ (non courbé) avec des coordonnées $(x^1, x^2, x^3, w)$, 
-l'hyper-surface 3D non euclidienne de courbure gaussienne positive constante $a^{-2}$ peut être décrite par l'équation suivante :
+Si nous plaçons cet espace 3D non euclidien (courbé) dans un espace 4D _euclidien_ (non courbé) avec des coordonnées $\vec X = (x^1, x^2, x^3, w)$, 
+l'hyper-surface 3D non euclidienne de courbure gaussienne constante $a^{-2}$ peut être décrite par :
 - pour une 3-sphère de rayon $a$ : 
 \begin{equation}
-r^2 + w^2= a^2
+x^2 + w^2= a^2
 \end{equation}
-- pour un 3-hyperboloïde de courbure $a$ :
+- pour une 3-hyperboloïde de courbure $a$ :
 \begin{equation}
-r^2 - w^2= -a^2
+x^2 - w^2= -a^2
 \end{equation}
 
 Les deux derniers cas de courbures strictement positive ou négative sont donc définis par _l'équation de contrainte_ :
 ```{math}
 :label: eq_hyp_sph
-r^2 \pm w^2= \pm a^2 
+x^2 \pm w^2= \pm a^2(t) 
 ```
+où on autorise ici le rayon $a(t)$ à dépendre du temps, car a priori $\gamma_{ij}$ peut dépendre du temps.
 
 :::{tip} Notion de courbure
 :class: dropdown
 
 Si ces raisonnements vous troublent, rappelez-vous que c'est comme décrire la courbure d'un cercle de rayon $R$ 
-(objet à une dimension car il n'y a qu'une seule direction de déplacement sur cet objet)
-dans un plan à l'aide d'une second dimension, donc deux coordonnées $x$ et $y$ telles que :
+(objet à une dimension car il n'y a qu'une seule direction de déplacement sur cet objet, paramétré par un angle $\theta$ par exemple)
+dans un plan à l'aide d'une seconde dimension, donc deux coordonnées $x$ et $y$ telles que :
 $$x^2 + y^2 = R^2$$ 
 ou celle d'une sphère (deux dimensions) dans un espace avec une troisième dimension, donc trois coordonnées $(x,y,z)$ telles que :
 $$x^2 + y^2 + z^2 = R^2$$
+
+La notion de courbure peut se calculer soit intrinsèquement soit à l'aide d'une dimension supplémentaire.
+Intrinsèquement, un être vivant sur un cercle peut mesurer sa courbure en mesurant le chemin parcouru lors d'un tour : il en déduira que la 
+courbure de son cercle est $1/R^2$ avec $R$ déduit du périmètre parcouru $l = 2\pi R$. S'il est capable de voyager dans une seconde dimension, 
+il pourra observer la courbure de son Univers.
+
 :::
 
-La distance infinitésimale entre deux points dans l'espace 4D euclidien peut être écrite :
+La distance infinitésimale $\dd \vec l^2$ entre deux points de l'hypersurface définie dans l'espace 3D courbe de métrique $\gamma_{ij}$ 
+est égale à celle définie dans l'espace 4D _euclidien_ :
 \begin{equation}
-\dd l^2=\dd \vec x^2 \pm \dd w^2
+\dd \vec l^2= \gamma_{ij} \dd \xi^i \dd x^j =  \dd \vec x^2 \pm \dd w^2
 \end{equation}
+où le cas $+$ correspond à une géométrie sphérique, le cas $-$ à une géométrie hyperbolique {cite:p}`Weinberg1972` [p. 390-391].
 
-Si ces deux points sont contraints d'être positionné sur notre espace 3D non euclidien, la différentiation de l'équation
-eq. [](#eq_hyp_sph) donne la relation $r\dd r \pm w\dd w=0$, donc, en injectant de nouveau l'équation [](#eq_hyp_sph), on obtient :
+Or, la différentiation de l'équation eq. [](#eq_hyp_sph) donne la relation 
+$$(\vec x \cdot \dd \vec x) \pm w\dd w=0,$$
+donc, en injectant de nouveau l'équation [](#eq_hyp_sph), on obtient :
 \begin{equation}
-(\vec x \cdot \dd \vec x)^2=(w\dd w)^2 \Rightarrow (\dd w)^2= \frac{(\vec x \cdot \dd \vec x)^2}{w^2} = \frac{(\vec x \cdot \dd \vec x)^2}{a^2 \mp r^2}
+(\vec x \cdot \dd \vec x)^2=(w\dd w)^2 \Rightarrow (\dd w)^2= \frac{(\vec x \cdot \dd \vec x)^2}{w^2} = \frac{(\vec x \cdot \dd \vec x)^2}{a^2(t) \mp x^2}
 \end{equation}
 La distance infinitésimale entre 2 points de l'espace 3D non euclidien de courbure non nulle constante $a^{-2}$ est alors :
 \begin{equation}
-\dd l^2= \dd \vec x^2 \pm \frac{(\vec x \cdot \dd \vec x)^2}{a^2\mp r^2} 
+\dd \vec l^2= \dd \vec x^2 \pm \frac{(\vec x \cdot \dd \vec x)^2}{a^2(t)\mp x^2} 
 \end{equation}
 
 A cette étape, nous pouvons maintenant combiner le résultat obtenu pour les deux courbures non nulles avec le cas euclidien en introduisant
@@ -210,15 +218,15 @@ k = \left\lbrace
 ```
 On a ainsi pour les trois géométries possibles d'un Univers maximallement symétrique :
 \begin{equation}
-\dd l^2= \dd \vec x^2 + k\frac{ (\vec x \cdot \dd \vec x)^2}{a^2 - k r^2}
+\dd \vec l^2= \dd \vec x^2 + k\frac{ (\vec x \cdot \dd \vec x)^2}{a^2(t) - k x^2}
 \end{equation}
 
-Enfin, notons que le rayon de courbure peut a priori être une fonction du temps[^gammat]. On introduit la variable rééchelonnée $\sigma=r/a(t)$, et nous obtenons une nouvelle expression :
+Enfin, introduisons la variable rééchelonnée $\vec\sigma=\vec x/a(t)$, et nous obtenons une nouvelle expression :
 \begin{equation}
-\dd l^2= a^2(t) \left(\dd \vec \sigma^2 + k\frac{(\vec \sigma \cdot \dd \vec \sigma)^2}{1 - k \sigma^2} \right)
+\dd \vec l^2= a^2(t) \left(\dd \vec \sigma^2 + k\frac{(\vec \sigma \cdot \dd \vec \sigma)^2}{1 - k \sigma^2} \right)
 \end{equation}
 
-Il est alors possible de fixer $g_{00}$ à 1 quitte à redéfinir la variable temps[^g00]. La métrique de Friedmann-Lemaître-Robertson-Walker décrivant un Univers homogène 
+La métrique de Friedmann-Lemaître-Robertson-Walker décrivant un Univers homogène 
 et isotrope s'écrit finalement :
 ```{math}
 :label: FLRW-metric
@@ -247,8 +255,11 @@ Le paramètre de courbure $k$ est alors sans dimension également.
 
 
 Il est important de comprendre la signification physique du facteur d'expansion $a(t)$. Tout d'abord, d'après l'équation [](#FLRW-metric), ce facteur
-relie la distance propre (physique) $r$ et la distance de coordonnées $\sigma$ par $\dd r=a(t)\dd \sigma$. 
+relie la distance propre (physique) $x$ et la distance de coordonnées $\sigma$ par $x=a(t)\sigma$. 
 Deux particules dont les coordonnées spatiales sont fixes verront leur distance physique augmenter (ou diminuer) avec le temps. 
+
+XXX RAJOUTER PETIT MOT SUR LOI DE HUBBLE XX
+
 
 Pour un Univers sphérique, le facteur d'échelle $a(t)$ représente également son rayon de
 courbure. Un Univers sphérique dynamique correspond donc à un univers
@@ -323,11 +334,13 @@ galaxie (et de notre groupe de galaxies). Si on pouvait retrancher ce mouvement 
 ferait de nous des observateurs comobiles. Ainsi, on peut définir un système de coordonnées associés à des observateurs
 sans mouvements propres, dont les distances relatives n'augmentent qu'avec le facteur d'échelle $a(t)$ {cite:p}`Weinberg1972`[p. 409].
 
-### Coordonnées sphériques
-
 Dans la métrique FLRW où l'expansion de l'Univers est factorisée par un facteur d'échelle $a(t)$, les coordonnées 
 spatiales $\vec \sigma$ sont appelées _coordonnées comobiles_. 
-Il existe une grande liberté dans le choix des coordonnées comobiles. On privilégie souvent
+Il existe une grande liberté dans le choix des coordonnées comobiles. 
+
+### Coordonnées sphériques
+
+On privilégie souvent
 les coordonnées sphériques $(ct, r, \theta, \phi)$ avec l'observateur (nous-mêmes) à l'origine, telles que :
 ```{math}
 
@@ -478,12 +491,12 @@ avec $f_k(\chi)$ une fonction de $k$ et $\chi$ à définir.
 On commence par la définition de la métrique FLRW :
 \begin{align}
 \dd s^2 & = -c^2\dd t^2 + a^2(t) \left[ \frac{\dd\sigma^2}{1-k\sigma^2} + \sigma^2\dd\theta^2 + \sigma^2 \sin^2\theta \dd\phi^2 \right]  \\
-& = -c^2\dd t^2 + a^2(t) \left[ \dd\chi^2 + r^2\dd\theta^2 +\sigma^2 \sin^2\theta \dd\phi^2 \right] \\
+& = -c^2\dd t^2 + a^2(t) \left[ \dd\chi^2 + \sigma^2\dd\theta^2 + \sigma^2 \sin^2\theta \dd\phi^2 \right] \\
 & = -c^2\dd t^2 + a^2(t) \left[ \dd\chi^2 + f_k^2(\chi)\dd\theta^2 +f_k^2(\chi) \sin^2\theta \dd\phi^2 \right]
 \end{align}
 avec $\dd\chi = \dd\sigma/\sqrt{1-k\sigma^2}$ et :
 \begin{equation}
-\sigma = f_k(\chi) = \left\lbrace\begin{array}{cl}
+f_k(\chi) = \left\lbrace\begin{array}{cl}
     \sin\chi & \text{ si } k=+1  \\
     \chi  & \text{ si } k=0 \\
     \sinh\chi & \text{ si } k=-1 
@@ -673,4 +686,4 @@ z = \frac{\lambda_0-\lambda_E}{\lambda_E} = \frac{5000-4861}{4861} = 0.028
 
 [^gammat]: Rien ne l'interdit, puisque $\gamma_{ij}$ peut dépendre du temps
 [^g00]: On peut introduire une nouvelle variable temps $t'$ telle que $\dd t' = \sqrt{g_{00}}\dd t$.
-
+[^4]:  1 parsec (pc) $= 3.262$ années-lumière $= 3.086\times 10^{16}\,$m. $100\,\text{Mpc}\approx 3\times 10^8\;$ années-lumière.

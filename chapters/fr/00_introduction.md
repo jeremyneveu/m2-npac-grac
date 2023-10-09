@@ -242,9 +242,9 @@ $$\label{eq:vers_einstein}
 \frac{\dd^2\vec x'}{\dd t^2} = \frac{1}{2}c^2\vec{\nabla} h_{00}.
 $$ 
 Or on sait que dans la limite newtonienne on a :
-$$\frac{\dd^2\vec x'}{\dd t^2} = -\vec{\nabla} \phi, \qquad \phi=-\frac{G_N M}{r},$$
-avec $\phi$ le potentiel gravitationnel engendré par une masse $M$ à une
-distance $r$ ($G_N$ étant la constante de Newton). En comparant avec
+$$\frac{\dd^2\vec x'}{\dd t^2} = -\vec{\nabla} \phi$$
+avec $\phi$ le potentiel gravitationnel (i.e. $\phi=-G_N M /r$ s'il est engendré par une masse $M$ à une
+distance $r$, $G_N$ étant la constante de Newton). En comparant avec
 [](#eq:vers_einstein), on a $h_{00}=-2\phi/c^2+\text{constante}$. Or
 le système de coordonnées choisi doit être cartésien à l'infini
 (hypothèse de faible perturbation), donc $h_{00}=-2\phi/c^2$ et :
@@ -275,8 +275,9 @@ Cet exercice sur une particule ponctuelle nous apprend que le champ
 gravitationnel est finalement contenu dans la métrique, et que cette
 métrique dépend donc de la présence de matière. Il est donc possible
 d'imaginer une généralisation de ce constat. Le potentiel newtonien est
-déterminé par l'équation de Poisson $\nabla^2\phi = 4\pi G_N \rho$, où
-$\rho$ est la densité volumique de masse. Cette dernière est associée à la densité
+déterminé par l'équation de Poisson 
+$$\nabla^2\phi = 4\pi G_N \rho,$$
+où $\rho$ est la densité volumique de masse et $G_N$ la constante de Newton. Cette dernière est associée à la densité
 d'énergie $\epsilon$ du tenseur énergie-impulsion de la matière $T_{00} = \epsilon = \rho c^2 $ (voir chapitre [](./02_friedmann_equations.md)), donc avec l'équation
 [](#eq:g00) on peut obtenir :
 $$
