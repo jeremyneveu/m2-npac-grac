@@ -10,7 +10,7 @@ L'Univers en expansion
 
 Dans le chapitre précédent, par de simples considérations géométriques, nous sommes parvenus à écrire la forme de la métrique solution de l'équation 
 d'Einstein pour un Univers homogène et isotrope. D'un tenseur inconnu à 10 composantes (car la métrique est un 
-tenseur symétrique) nous avons abouti à la métrique FLRW qui ne contient qu'une seule fonction inconnue $a(t)$. 
+tenseur symétrique), par des arguments de symétrie nous avons abouti à la métrique FLRW qui ne contient qu'une seule fonction inconnue $a(t)$. 
 Pour maintenant décrire la dynamique de l'Univers, et non plus sa géométrie, il faut résoudre l'équation d'Einstein pour comprendre comment
 le contenu en matière et en énergie agit sur l'expansion l'Univers via le facteur d'échelle $a(t)$.
 
@@ -18,7 +18,7 @@ le contenu en matière et en énergie agit sur l'expansion l'Univers via le fact
 Le tenseur énergie-impulsion
 ----------------------------
 
-Le tenseur énergie-impulsion $T^\mu\nu$ de l'équation d'Einstein décrit la densité d'énergie et les flux de quantités de mouvements en mécanique relativiste. C'est un tenseur d'ordre 2, construit à partir du vecteur 4-impulsion, qui prend la forme suivante :
+Le tenseur énergie-impulsion $T^{\mu\nu}$ de l'équation d'Einstein décrit la densité d'énergie et les flux de quantités de mouvements en mécanique relativiste. C'est un tenseur d'ordre 2, construit à partir du vecteur 4-impulsion, qui prend la forme suivante :
 \begin{equation}
 T^{\mu\nu}=\begin{pmatrix} 
 T^{00}= \text{energy density}\,\,\,\,
@@ -41,33 +41,52 @@ T^{00}= \text{energy density}\,\,\,\,
 \label{stress-energy-tensor-meaning}
 \end{equation}
 
-Or dans notre hypothèse d'Univers de symétrie maximale, on peut démontrer une propriété importante concernant les tenseurs d'ordre 2 {cite:p}`Weinberg1972`[p. 392].
+Or dans notre hypothèse d'Univers de symétrie maximale, rappelons tout d'abord qu'on peut définir un temps cosmique, universel,
+en utilisant l'évolution de l'Univers comme une horloge (densité de matière, température du CMB...).
+Les hypersurfaces de l'espace-temps paramétrées par ce temps universel sont alors eux-mêmes des sous-espaces de symétrie maximale.
+Les tenseurs représentants des observables cosmologiques de tels sous-espaces de symétrie maximale doivent alors être de _forme invariante_ 
+c'est-à-dire qu'ils doivent prendre les mêmes valeurs à une date $t$ quelque soit le choix du système de coordonnées choisi 
+(si on passe de $x^\mu$ à $x'^\mu$, on doit retrouver $T_{\mu\nu} = T'_{\mu\nu}$ pour retrouver la même densité d'énergie) {cite:p}`Weinberg1972`[p. 408].
+On peut démontrer alors une propriété importante concernant la forme que doivent prendre les tenseurs de ces sous-espaces {cite:p}`Weinberg1972`[p. 392].
 
-:::{prf:property} Symétrie des tenseurs d'ordre 2
-Dans un espace de symétrie maximale, les tenseurs d'ordre 2 de forme invariante par une isométrie de l'espace sont proportionnels au tenseur métrique.
+:::{prf:property} Forme des tenseurs de forme invariante
+Un tenseur de forme invariante dans un espace de symétrie maximale :
+- est constant si c'est un scalaire,
+- est nul si c'est un vecteur,
+- est proportionnel au tenseur métrique si c'est un tenseur d'ordre 2.
 :::
 
 Par conséquent, mathématiquement on peut introduire $\epsilon(t)$ et $p(t)$ deux fonctions telles que le tenseur énergie-impulsion se simplifie en :
-$$ T_{00} =  \epsilon(t), \quad T_{it} = 0, \quad T_{ij} =  p(t) \gamma_{ij}$$
-De manière plus élégante, on peut introduire le vecteur 4-vitesse $U^\mu$ comobile défini par :
+$$\begin{align}
+T_{00} & =  \epsilon(t)\quad  \text{(scalaire)} \\
+T_{i0} & = T_{0i} = 0 \quad  \text{(vecteur)} \\
+T_{ij} & =  p(t) \gamma_{ij}\quad \text{(tenseur d'ordre 2)}
+\end{align}$$
+
+De manière plus élégante, on peut introduire le vecteur $U^\mu$ défini par :
 $$ U^0 = 1, \quad U^i = 0 $$
 et obtenir une écriture compacte pour le tenseur énergie-impulsion d'un Univers homogène et isotrope :
 :::{math}
+:label: eq:def-Tmunu2
+T_{\mu\nu} = (\epsilon + p) U_\mu U_\nu + p g_{\mu\nu}
+:::
+
+:::{math}
 :label: eq:def-Tmunu
-T_{\mu\nu} = (\epsilon + p) U_\mu U_\nu + p g_{\mu\nu} = \begin{pmatrix}
--\epsilon g_{00} & 0 & 0 & 0 \\
-0 & p g_{11} & 0 & 0 \\ 
-0 & 0 & p g_{22} & 0 \\ 
-0 & 0 & 0 & p g_{33}  \\ 
+T^{\mu\nu} = (\epsilon + p) U^\mu U^\nu + p g^{\mu\nu} = \begin{pmatrix}
+-\epsilon g^{00} & 0 & 0 & 0 \\
+0 & p g^{11} & 0 & 0 \\ 
+0 & 0 & p g^{22} & 0 \\ 
+0 & 0 & 0 & p g^{33}  \\ 
 \end{pmatrix} 
 :::
 
-Comment interpréter ces considérations mathématiques ? Tout d'abord, le fait que $U^i = 0$ montre que le système physique étudié est au repos dans les coordonnées comobiles, 
-comme attendu. Puis si on compare l'équation [](#eq:def-Tmunu) avec [](#stress-energy-tensor-meaning) alors on identifie $\epsilon$
+Comment interpréter ces considérations mathématiques ? Tout d'abord, si on compare l'équation [](#eq:def-Tmunu) avec [](#stress-energy-tensor-meaning) alors on identifie $\epsilon$
 à la densité d'énergie et $p$ à la pression cinétique (flux de quantité de mouvement à travers une surface).
 Enfin, le tenseur énergie-impulsion $T^{\mu\nu}$ s'identifie à celui d'un <wiki:perfect_fluide>. Cela signifie que dans un Univers homogène
 et isotrope la matière peut être décrite comme un milieu continu, dont le mouvement peut être décrit sans prendre en compte
-des effets de viscosité et de conduction thermique (il est donc adiabatique).
+des effets de viscosité et de conduction thermique (il est donc adiabatique). Aussi $U^\mu$ s'identifie alors à la 4-vitesse comobile du fluide, donc le fait que $U^i = 0$ montre que 
+le système physique étudié est au repos dans les coordonnées comobiles, comme attendu. 
 
 :::{note} Tenseur énergie-impulsion d'un fluide parfait {cite:p}`Weinberg1972`[p. 48]
 
@@ -83,7 +102,7 @@ $$ T^{ij} = p \delta^{ij} + (p + \rho c^2) \frac{v^i v^j}{c^2- v^2}, \quad T^{i0
 Définissons la quatre vitesse en coordonnées comobiles ainsi :
 $$ \vec U =\frac{ \dd \vec x }{c \dd \tau} = \frac{\vec v / c }{ \sqrt{1-v^2}}, \quad U^0 = \frac{\dd t }{\dd  \tau} =  \frac{1 }{ \sqrt{1-v^2}}, \quad U_ \mu U ^\mu = -c^2  $$
 alors le tenseur s'écrit :
-$$T_{\mu\nu} = (\rho c^2 + p) U_\mu U_\nu + p \eta_{\mu\nu}$$
+$$T^{\mu\nu} = (\rho c^2 + p) U^\mu U^\nu + p \eta^{\mu\nu}$$
 
 L'équation [](#eq:def-Tmunu) correspond donc bien à la définition d'un tenseur énergie-impulsion pour un fluide parfait dans le cadre relativiste.
 
@@ -130,21 +149,6 @@ $$
 où $a(t)$ est une fonction inconnue. Le paramètre d'échelle $a(t)$ peut être obtenu en résolvant
 l'équation d'Einstein connaissant le contenu du tenseur
 énergie-impulsion de l'Univers $T^{\mu\nu}$ et la valeur de $k$. 
-
-
-
-En utilisant la métrique FLRW
-[](#eq:flrw),
-calculons pour l'exemple la connexion affine suivante à partir de
-l'équation [](#eq:connexion):
-$$\begin{aligned}
-\Gamma^1_{\ 01} & = \frac{1}{2} g^{1 \mu} \left( \partial_0 g_{1\mu} + \partial_1 g_{0 \mu} - \partial_\mu g_{01} \right) \\
-& = \frac{1}{2} g^{1 1} \left( \partial_t g_{11} + \partial_r g_{01} - 0 \right) \text{ car }\forall \mu \neq 1, g^{1\mu}=0\\
-& = \frac{1}{2} \frac{1-k\sigma^2}{a^2} \left( \frac{2 \dot{a} a}{1-k\sigma^2} + 0 \right) \\
-& = \frac{\dot a}{ca} = \frac{H}{c}.
-\end{aligned}$$
-
-
 Pour la métrique FLRW, son inverse est simplement:
 $$
 g^{\mu\nu} = \begin{pmatrix}
@@ -154,6 +158,18 @@ g^{\mu\nu} = \begin{pmatrix}
 0 & 0 & 0 & \frac{1}{a^2(t) \sigma^2 \sin^2 \theta}   \\ 
 \end{pmatrix}.
 $$
+
+En utilisant la métrique FLRW
+[](#eq:flrw),
+calculons pour l'exemple la connexion affine suivante à partir de
+l'équation [](#eq:connexion):
+$$\begin{aligned}
+\Gamma^1_{\ 01} & = \frac{1}{2} g^{1 \mu} \left( \partial_0 g_{1\mu} + \partial_1 g_{0 \mu} - \partial_\mu g_{01} \right) \\
+& = \frac{1}{2} g^{1 1} \left(\frac{\partial g_{11}}{c\partial t} + \partial_\sigma g_{01} - 0 \right) \text{ car }\forall \mu \neq 1, g^{1\mu}=0\\
+& = \frac{1}{2} \frac{1-k\sigma^2}{a^2} \left( \frac{2 \dot{a} a}{c(1-k\sigma^2)} + 0 \right) \\
+& = \frac{\dot a}{ca} = \frac{H}{c}.
+\end{aligned}$$
+
 
 De la même manière, on obtient les autres connexions affines, puis les
 tenseurs de Riemann et Ricci. Au final, le tenseur d'Einstein est
@@ -194,6 +210,148 @@ FLRW :
 $$\label{eq:conservation_energie}
 \fbox{$\dot{\epsilon} = -3 H( \epsilon  + p )$}
 $$
+
+
+
+:::{exercise}
+
+In this exercise, we use the FLRW metric in cartesian coordinates, and the corresponding stress energy tensor for a perfect fluid:
+\begin{equation}
+g_{\mu\nu} = \begin{pmatrix}
+-1 & 0 & 0 & 0 \\
+0 & a^2(t) & 0 & 0 \\
+0 & 0& a^2(t) & 0 \\
+0 & 0& 0& a^2(t)  \\
+\end{pmatrix}\qquad 
+T_{\mu\nu}=\begin{pmatrix} \rho c^2 & 0 & 0 & 0 \\ 0 &a^2 p & 0 & 0 \\ 0&0&a^2 p &0 \\ 0&0&0&a^2 p \end{pmatrix}
+\label{stress-energy-cosmo-tensor}
+\end{equation}
+We recall the following formula for the Christoffel and Riemann tensors:
+\begin{align}
+\Gamma^\kappa_{\ \mu\nu} &= \frac{1}{2}g^{\kappa\lambda}\left( g_{\mu\lambda,\nu}+g_{\lambda\nu,\mu}-g_{\mu\nu,\lambda} \right) \\
+R^{\mu}_{\ \nu\alpha\beta} &= -\Gamma^\mu_{\ \nu\beta,\alpha} + \Gamma^\mu_{\ \nu\alpha,\beta} - \Gamma^\lambda_{\ \nu\beta}\Gamma^\mu_{\ \lambda\alpha} + \Gamma^\lambda_{\ \nu\alpha}\Gamma^\mu_{\ \lambda\beta} \\
+R_{\mu\nu}& = R^\rho_{\ \mu\rho\nu} = -\Gamma^\rho_{\ \mu\nu,\rho} + \Gamma^\rho_{\ \mu\rho,\nu} - \Gamma^\rho_{\ \rho\lambda}\Gamma^\lambda_{\ \mu\nu} + \Gamma^\rho_{\ \nu\lambda}\Gamma^\lambda_{\ \mu\rho} \\
+R &= g^{\mu\nu}R_{\mu\nu}
+\end{align}
+with $_{,\mu}$ the derivative $\partial / \partial x^\mu$.
+
+
+Show that $\Gamma^0_{\ ij} = \dot{a}a/c \delta_{ij}$ and $\Gamma^j_{\ 0i}=\dot{a}/(ac)\delta^j_i$, with the latin index standing for the spatial coordinates $i=1,2,3$. The other Christoffel symbols are null.
+
+\begin{align}
+\Gamma^{0}_{\mu\nu} & = \frac{1}{2}g^{0\lambda}\left( g_{\mu\lambda,\nu}+g_{\lambda\nu,\mu}-g_{\mu\nu,\lambda} \right) \\
+ & = \frac{1}{2}g^{00}\left( g_{\mu 0,\nu}+g_{0\nu,\mu}-g_{\mu\nu,0} \right) \\
+  & = \frac{1}{2}g^{00}\left( g_{0 0,\nu}+g_{00,\mu}-g_{\mu\nu,0} \right) \\
+  & = \frac{1}{2}(-1)\times\left( 0+ 0 -g_{\mu\nu,0} \right) \\
+  & = \frac{1}{2}g_{\mu\nu,0}
+\end{align}
+We find:
+\begin{equation}
+\Gamma^{0}_{ij} =  -\frac{1}{2}g_{ij,0} =   -\frac{1}{2}\frac{\partial (-a^2(t))}{c\partial t} \delta_{ij}= \frac{\dot{a}a}{c} \delta_{ij}
+\end{equation}
+with $\delta_{ij}$ the Kronecker symbol such that $\delta_{ij}=1$ only if $j=i$. It is a number (not a matrix). Then:
+\begin{align}
+\Gamma^{j}_{0i} & = \frac{1}{2}g^{j\lambda}\left( g_{0\lambda,i}+g_{\lambda i,0}-g_{0i,\lambda} \right) \\
+ & = \frac{1}{2}g^{jk}\left( g_{0k,i}+g_{ki,0}-g_{0i,k} \right) \\
+  & = \frac{1}{2}g^{jk}\left( 0+g_{ki,0}-0 \right) \\
+  & = \frac{1}{2}g^{jk}\times\left( \frac{-2a\dot{a}}{c}\delta_{ik} \right)  \\
+  & = g^{jk}\times\left( +\frac{\dot{a}}{ac}g_{ik} \right)  \\
+  & = \frac{\dot{a}}{ac}\delta^j_i
+\end{align}
+with $\delta^j_i$ the identity matrix ($\delta^i_i = 3$, but $\delta_{ii}=1$).
+
+
+Show that $R_{00}=3\ddot{a}/(ac^2)$ and $R_{ij}=-(\ddot{a}a+2\dot{a}^2)\delta_{ij}/c^2$.
+
+\begin{align}
+R_{00} & = -\Gamma^\rho_{\ 00,\rho} + \Gamma^\rho_{\ 0\rho,0} - \Gamma^\rho_{\ \rho\lambda}\Gamma^\lambda_{\ 00} + \Gamma^\rho_{\ 0\lambda}\Gamma^\lambda_{\ 0\rho} \\
+& = 0 + \Gamma^\rho_{\ 0\rho,0} + 0 + \Gamma^\rho_{\ 0\lambda}\Gamma^\lambda_{\ 0\rho} \\
+& =  + \Gamma^i_{\ 0i,0} + 0 + \Gamma^i_{\ 0j}\Gamma^j_{\ 0i} \\
+& = 3\frac{\ddot{a}a-\dot{a}^2}{a^2 c^2} +  \left(\frac{\dot{a}}{ac}\right)^2 \delta^i_j \delta^j_i\\
+& = 3\frac{\ddot{a}a-\dot{a}^2}{a^2 c^2} + 3 \left(\frac{\dot{a}}{ac}\right)^2\\
+& = 3 \frac{\ddot{a}}{ac^2}
+\end{align}
+\begin{align}
+R_{ij} & = -\Gamma^\rho_{\ ij,\rho} + \Gamma^\rho_{\ i\rho,j} - \Gamma^\rho_{\ \rho\lambda}\Gamma^\lambda_{\ ij} + \Gamma^\rho_{\ i\lambda}\Gamma^\lambda_{\ j\rho} \\
+& = -\Gamma^0_{\ ij,0} + 0 -\Gamma^k_{\ k0}\Gamma^0_{\ ij}+\Gamma^0_{\ ik}\Gamma^k_{\ j0} + \Gamma^k_{\ i0} \Gamma^0_{\ jk} \\
+& = -\frac{\ddot{a}a+\dot{a}^2}{c^2}\delta_{ij} -\frac{\dot{a}}{ac}\frac{\dot{a}a}{c}\delta^k_k \delta_{ij} +  \frac{\dot{a}}{ac}\frac{\dot{a}a}{c} \delta_{ik}\delta^k_j +  \frac{\dot{a}}{ac}\frac{\dot{a}a}{c} \delta_{jk}\delta^k_i\\
+& = -\frac{\ddot{a}a+\dot{a}^2}{c^2}\delta_{ij} -3\frac{\dot{a}}{ac}\frac{\dot{a}a}{c} \delta_{ij} + 2 \frac{\dot{a}}{ac}\frac{\dot{a}a}{c} \delta_{ij}\\
+& = -\frac{a^2}{c^2}\left(\frac{\ddot{a}}{a}+2\frac{\dot{a}^2}{a^2}\right)\delta_{ij}
+\end{align}
+with $\delta_{ik}\delta^k_j=\delta_{ij}$ and $\delta^k_k=3$.
+
+Show that $R=-6\left(\ddot{a}/a+(\dot{a}/a)^2\right)/c^2$ and finally that $G_{\mu\nu}=R_{\mu\nu}-g_{\mu\nu}R/2$ is:
+\begin{equation}
+G_{\mu\nu}={1 \over c^2}\begin{pmatrix} 3{\dot{a}^2\over a^2} & 0 & 0 & 0 \\ 0 &-2\ddot{a}a-\dot{a}^2 & 0 & 0 \\ 0&0& -2\ddot{a}a-\dot{a}^2 &0 \\ 0&0&0&-2\ddot{a}a-\dot{a}^2  \end{pmatrix}
+\label{Einstein-cosmo-tensor}
+\end{equation}
+
+From the Einstein equation $G_{\mu\nu} - \Lambda g_{\mu\nu} = -8\pi G T_{\mu\nu}/c^4$ write the Friedmann equations:
+\begin{equation} \left\lbrace
+\begin{array}{l}
+   \displaystyle{3 \left( \frac{\dot{a}^2}{a^2}+ \frac{c^2k}{a^2} \right) = 8\pi G_N \rho + c^2 \Lambda} \\
+    \displaystyle{\frac{2\ddot{a}a + \dot{a}^2 + c^2 k}{a^2} = - 8\pi G_N P/c^2 + c^2 \Lambda }
+\end{array}
+\right.
+\end{equation}
+(here we admit the Friedmann equations with an arbitrary curvature $k$).
+
+\begin{align}
+R &= g^{\mu\nu}R_{\mu\nu} \\
+& = g^{00}R_{00} + g^{ij}R_{ij}\\
+& = -1\times\left( 3 \frac{\ddot{a}}{ac^2}\right) -  g^{ij}\delta_{ij} \frac{a^2}{c^2}\left(\frac{\ddot{a}}{a}+2\frac{\dot{a}^2}{a^2}\right) \\
+& = -1\times\left( - 3 \frac{\ddot{a}}{ac^2}\right)  -\frac{\delta^i_i}{a^2} \frac{a^2}{c^2}\left(\frac{\ddot{a}}{a}+2\frac{\dot{a}^2}{a^2}\right) \\
+& = -6 \left(\frac{\ddot{a}}{ac^2} + \frac{\dot{a}^2}{a^2c^2}\right) \\
+\end{align}
+with $g^{ij}=\delta^{ij}/a^2$ and $\delta^i_i=3$.
+\begin{align}
+G_{00} &= R_{00}-g_{00}R/2 \\
+& = 3 \frac{\ddot{a}}{ac^2} - \frac{6}{2}\left(\frac{\ddot{a}}{ac^2} + \frac{\dot{a}^2}{a^2c^2}\right) \\
+& =- 3 \frac{\dot{a}^2}{a^2c^2} 
+\end{align}
+\begin{align}
+G_{ij} &= R_{ij}-g_{ij}R/2 \\
+& =-\frac{a^2}{c^2}\left(\frac{\ddot{a}}{a}+2\frac{\dot{a}^2}{a^2}\right)\delta_{ij} -(a^2\delta_{ij})\times \frac{-6}{2}\left(\frac{\ddot{a}}{ac^2} + \frac{\dot{a}^2}{a^2c^2}\right) \\
+& = a^2\left(2\frac{\ddot{a}}{ac^2}+ \frac{\dot{a}^2}{a^2c^2}\right) \delta_{ij}
+\end{align}
+Using the definition of $ T_{\mu\nu}$, we obtain directly the two Friedmann equations:
+\begin{equation}
+G_{\mu\nu} - \Lambda g_{\mu\nu}  = -\frac{8\pi G_N}{c^4}T_{\mu\nu}
+\end{equation}
+\begin{align}
+\label{Friedmann1}
+3{\dot{a}^2 \over a^2}&=& 8 \pi G_N \rho + c^2 \Lambda\\
+2{\ddot{a} \over a} + {\dot{a}^2 \over a^2}& =& - {8 \pi G_N \over c^2}p + c^2 \Lambda
+\label{align}
+\end{align}
+
+
+Write the two Friedmann equations in term of the Hubble parameter $H=\dot{a}/a$ instead of $a$.
+\begin{equation} \left\lbrace
+\begin{array}{l}
+   \displaystyle{3 H^2+ \frac{3kc^2}{a^2} = 8\pi G_N \rho + c^2\Lambda} \\
+    \displaystyle{2\dot{H} + 3H^2 + \frac{c^2k}{a^2} = - 8\pi G_N p/c^2 + c^2\Lambda }
+\end{array}
+\right.
+\end{equation}
+using $\ddot{a}/a=\dot{H}+H^2$. 
+
+From the two Friedmann equations, find the energy conservation equation law $\dot{\rho} c^2 = -3 H(\rho c^2 + p )$.
+
+\begin{align}
+8\pi G \dot{\rho} & = 6\dot{H}H - \frac{6c^2 k \dot{a}}{a^3} \\
+& = 3H \left[-8\pi G_N p / c^2 + c^2 \Lambda - 3 H^2 - \frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
+& = 3H \left[-8\pi G_N p / c^2 -8 \pi G_N \rho + 2\frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
+& = 3H \left[-8\pi G_N p / c^2 -8 \pi G_N \rho \right]
+\end{align}
+and $\dot{\rho} c^2 = -3 H(\rho c^2 + p )$. 
+This is the same result as in the $T^{\beta \alpha}_{\,\,\,\,\,\,;\alpha}=0$ computation (as expected).
+
+
+:::
+
+
+
 
 Inventaire cosmologique
 -----------------------

@@ -93,7 +93,7 @@ Etant donné le principe cosmologique, on cherche à déterminer la forme que do
 
 ### Métrique d'un Univers isotrope
 
-XXX A REPRENDRE XXXX Une définition mathématique précise d'un espace-temps spatialement homogène et isotrope est qu'il peut être folié avec une famille d'hyper-surfaces de type espace à un paramètre, homogènes et isotropes. 
+XXX A REPRENDRE VOIR NOTES XXXX Une définition mathématique précise d'un espace-temps spatialement homogène et isotrope est qu'il peut être folié avec une famille d'hyper-surfaces de type espace à un paramètre, homogènes et isotropes. 
 La définition d'une foliation impose que chaque feuille de la foliation, une hyper-surface de type espace dans notre cas, soit une classe d'équivalence où l'équivalence peut être énoncée comme ayant la même valeur du paramètre. 
 Si nous appelons ce paramètre le temps, nous voyons que nous avons un temps universel en tout point de l'espace. 
 Le terme $g_{00}$ de la métrique ne dépend alors pas des coordonnées spatiales, mais seulement du temps. 
@@ -189,7 +189,7 @@ il pourra observer la courbure de son Univers.
 La distance infinitésimale $\dd \vec l^2$ entre deux points de l'hypersurface définie dans l'espace 3D courbe de métrique $\gamma_{ij}$ 
 est égale à celle définie dans l'espace 4D _euclidien_ :
 \begin{equation}
-\dd \vec l^2= \gamma_{ij} \dd \xi^i \dd x^j =  \dd \vec x^2 \pm \dd w^2
+\dd \vec l^2= \gamma_{ij} \dd \xi^i \dd \xi^j =  \dd \vec x^2 \pm \dd w^2
 \end{equation}
 où le cas $+$ correspond à une géométrie sphérique, le cas $-$ à une géométrie hyperbolique {cite:p}`Weinberg1972` [p. 390-391].
 
@@ -527,11 +527,11 @@ Une autre forme de l'équation des géodésiques va ici nous aider, obtenue à p
 {\dd^2 x_\mu \over \dd  s^2} -\Gamma^{\nu}_{\,\,\mu\kappa} {\dd x_\nu \over \dd  s}{\dd x^\kappa \over \dd  s}=0.
 \label{geodesic-cov}
 \end{equation} 
-Définissons le vecteur 4-impulsion comobile $P^\mu$ le long d'une ligne d'Univers par $^\mu = \dd x^\mu / \dd s$. Alors :
+Définissons le vecteur 4-vitesse comobile $P^\mu$ le long d'une ligne d'Univers par $U^\mu = \dd x^\mu / \dd s$. Alors :
 \begin{equation}
 {\dd U_\mu \over \dd  s} = \Gamma^{\nu}_{\,\,\mu\kappa} U_\nu U^\kappa=  \frac{1}{2} \frac{\partial g_{\alpha\beta}}{\partial x^\mu} U^\alpha U^\beta.
 \end{equation} 
-A partir de cette forme de l'équation des géodésiques, calculons la forme que doit prendre le vecteur contravariant $U^\nu$ dans une métrique FLRW pour une particule en chute libre.
+A partir de cette forme de l'équation des géodésiques (voir {cite:p}`hobson2006general`[p. 81], calculons la forme que doit prendre le vecteur contravariant $U^\nu$ dans une métrique FLRW pour une particule en chute libre.
 
 Commençons par le cas $\mu=3$ et utilisons les coordonnées sphériques $(\chi,\theta,\phi)$. Comme la métrique FLRW ne dépend pas de $\phi$, alors :
 $${\dd U_3 \over \dd  s} = 0$$
@@ -580,13 +580,13 @@ de la lumière, dans la métrique FLRW on a, à tout instant:
 
 \dd s^2=0=-c^2 \dd t^2+\frac{a^2(t)}{1-k\sigma^2}\dd \sigma^2.
 ```
-car le long de sa géodésique $\theta$ et $\phi$ sont constants.
+car le long de sa géodésique $\theta$ et $\phi$ sont constants ($\dd \theta = \dd \phi=0$).
 Posons $t_0$ l'instant de la réception de cette onde en $\sigma=0$. Alors grâce à l'équation
 précédente on a la relation : 
 ```{math}
 :label: eq:comobile
 
-\chi =  \int_{t_E}^{t_0} \frac{c\dd t}{a(t)} = \int_0^{\sigma_E}\frac{\dd\sigma}{\sqrt{1-k\sigma^2}} = \left\lbrace
+\chi = \int_{t_E}^{t_0} \frac{c\dd t}{a(t)} =  -\int_{t_0}^{t_E} \frac{c\dd t}{a(t)} = \int_0^{\sigma_E}\frac{\dd\sigma}{\sqrt{1-k\sigma^2}} = \left\lbrace
 \begin{array}{cl}
     \arcsin \sigma_E & \text{ si } k=+1 \\
     \sigma_E & \text{ si } k=0 \\
@@ -594,23 +594,23 @@ précédente on a la relation :
 \end{array}
 \right. .
 ``` 
-Cette dernière intégrale est appelée distance comobile car
-elle fait abstraction des effets de l'expansion de l'Univers dans le
-calcul de la distance parcourue par la lumière. En effet, elle a la même
-dimension que $\sigma$ donc est sans unité.
+avec $\dd \sigma < 0$ pour $\dd t > 0$ en considérant un photon allant de la source vers l'observateur en 0.
+On retrouve de nouveau la distance comobile, faisant abstraction des effets de l'expansion de l'Univers, mais cette-fois ci
+exprimée sela la variable $t$. 
 
-En utilisant le temps conforme $\eta$ défini par $\dd \eta = \dd t / a(t)$, pour un photon on obtient :
-$$\chi = c \int_{\eta_E}^{\eta_0} \dd \eta = c (\eta_E - \eta_0)$$
+:::{note}
+D'ailleurs, en utilisant le temps conforme $\eta$ défini par $\dd \eta = \dd t / a(t)$, pour un photon on obtient :
+$$\chi = c \int_{\eta_E}^{\eta_0} \dd \eta = c (\eta_0 - \eta_E)$$
 donc on reconnait la relation traditionnelle entre distance et temps, mais dans l'espace comobile adimensionné 
 par le facteur d'échelle $a(t)$.
-
+:::
 
 Pour une onde électromagnétique de période $T$,
 l'expression [](#eq:ds2_lumiere) étant valable à tout instant, on peut
 calculer la même intégrale pour l'onde émise à l'instant $t_E+T_E$ et
 reçue à l'instant $t_0+T_0$ (on suppose donc que la période $T$ va
 varier au cours du temps): $$\label{eq:comobileT}
-\int_{t_E+T_E}^{t_0+T_0} \frac{cdt}{a(t)}= \int_0^{r_E}\frac{dr}{1-kr^2}.$$
+\int_{t_E+T_E}^{t_0+T_0} \frac{c \dd t}{a(t)}= \int_0^{\sigma_E}\frac{\dd \sigma}{1-k\sigma^2}.$$
 Par égalité des
 expression [](#eq:comobile) et
 [](#eq:comobileT), comme la période $T$ est petite devant les

@@ -159,7 +159,7 @@ C'est l'univers de de Sitter. Trouvez également un système de coordonnées dan
 
 Dans un univers plat $k=0$ et la première équation de Friedmann donne dans le modèle de Sitter :
 \begin{equation}
-\frac{\dot{a}^2}{a^2} = \frac{c^2 \Lambda}{3} \Leftrightarrow -\sqrt{\frac{3}{c^2 \Lambda}}\frac{da }{dt}+a=0
+\frac{\dot{a}^2}{a^2} = \frac{c^2 \Lambda}{3} \Leftrightarrow -\sqrt{\frac{3}{c^2 \Lambda}}\frac{\dd a }{\dd t}+a=0
 \end{equation}
 La solution de cette équation différentielle est
 \begin{equation}
@@ -167,9 +167,9 @@ a(t) = a_0 e^{\sqrt{c^2 \Lambda/3}t}
 \end{equation}
 L'univers de de Sitter croît exponentiellement avec le temps. 
 
-Pour montrer qu'un univers de de Sitter peut être considéré comme un univers statique, écrivons $T_0 = \sqrt{c^2 \Lambda / 3}$ et changeons les coordonnées $r'(t) = a_0 e^{t/T_0}r$. La métrique FLRW devient alors
+Pour montrer qu'un univers de de Sitter peut être considéré comme un univers statique, écrivons $T_0 = \sqrt{c^2 \Lambda / 3}$ et changeons les coordonnées $r'(t) = a_0 e^{t/T_0}\sigma$. La métrique FLRW devient alors
 \begin{equation}
-ds^2 = dt^2 - a^2 (dr^2 + r^2 d\theta + r^2 \sin\theta d \phi) \Leftrightarrow dt^2 - \left[\left(dr' - r' dt / T_0\right)^2 + r'^2 d\theta + r^2 \sin\theta d \phi\right]
+\dd s^2 = \dd t^2 - a^2 (\dd \sigma^2 + \sigma^2 \dd \theta + \sigma^2 \sin\theta \dd  \phi) \Leftrightarrow \dd t^2 - \left[\left(\dd r' - r' \dd t / T_0\right)^2 + r'^2 \dd \theta + r'^2 \sin\theta \dd \phi\right]
 \end{equation}
 En utilisant la transformation :
 \begin{equation}
@@ -177,7 +177,7 @@ t = t' + \frac{T_0}{2}\log \left( \frac{r'^2}{T_0^2} - 1 \right)
 \end{equation}
 nous trouvons :
 \begin{equation}
-ds^2 = \left(1-\frac{r'^2}{T_0^2}\right) dt'^2 - \left(1-\frac{r'^2}{T_0^2}\right)^{-1} dr'^2 - r'^2 d\theta -r'^2 \sin\theta d \phi 
+\dd s^2 = \left(1-\frac{r'^2}{T_0^2}\right) \dd t'^2 - \left(1-\frac{r'^2}{T_0^2}\right)^{-1} \dd r'^2 - r'^2 \dd \theta -r'^2 \sin\theta \dd \phi 
 \end{equation}
 Historiquement, le modèle de Sitter a été découvert comme un univers statique avec ce système de coordonnées. Dès que l'idée d'un univers en expansion a été admise par la communauté scientifique, l'univers de Sitter a été considéré comme un univers en expansion exponentielle, dominé par l'énergie noire.
 
@@ -409,10 +409,90 @@ souris pan-dimensionnelles... mais la réponse n'est pas (encore) donnée par le
 
 
 
-Age de l'Universe
+Âge de l'Univers
 ------------------
 
+:::{exercise} Age de l'Univers
+:label: exo:Uage
 
+1. Calculer $a(t)$ et l'âge de l'univers pour trois modèles différents en supposant que $H_0\approx 70\,\text{km/s/Mpc}$ :
+- $\Omega_m^0=1, \Omega_\Lambda^0=0, \Omega_r^0 \approx 0$ (modèle plat d'Einstein-de Sitter)
+- $\Omega_m^0=\Omega_\Lambda^0\approx 0, \Omega_r^0 \approx 0$ (univers vide)
+- $\Omega_m^0=\Omega_r^0\approx 0, \Omega_\Lambda^0 = 1$ (modèle plat dominé par le vide)
+Nous avons besoin de $1\,$Mpc$=3\times 10^{19}\,$km.
+
+2. Quel univers est le plus ancien ? Pour un modèle $\Lambda$CDM avec $32\%$ de matière et $68\%$ d'énergie noire, 
+les cosmologistes estiment l'âge de l'univers à $13.8\,$Gyr. Ce chiffre peut être comparé à l'âge des étoiles les plus anciennes, 
+qui est mesuré à {cite:p}`hobson2006general`[p. 410] :
+\begin{equation}
+t_{\text{premières étoiles}} = 11,5\pm 1,3\,\text{Gyr}
+\end{equation}
+ 
+3. Supposons maintenant que $H_0\approx 500\,$km/s/Mpc comme cela a été estimé au début par Edwin Hubble. 
+Calculer à nouveau l'âge de l'univers pour le premier cas, qui était le modèle le plus raisonnable à l'époque (plat, plein de matière...). Concluez.
+
+
+:::
+
+
+:::{solution} exo:Uage
+:class: dropdown
+
+
+1. Nous utilisons la première équation de Friedmann :
+\begin{equation}
+H^2 = \left(\frac{1}{a}\frac{da}{dt}\right)^2 = H_0^2 \left[ \frac{\Omega_m^0}{a^3}+\Omega_\Lambda^0+ \frac{\left(1-\Omega_m^0-\Omega_\Lambda^0)\right)}{a^2}\right].
+\end{equation}
+car à $a(t_0)=1$ nous avons toujours $1=\Omega_k^0 + \Omega_m^0 + \Omega_\Lambda^0$.
+
+- On a $\Omega_m^0=1, \Omega_\Lambda^0=0, \Omega_r^0 \approx 0$ alors :
+\begin{equation}
+\frac{\dd a}{\dd t} = a H_0 \sqrt{\frac{\Omega_m^0}{a^3}+\Omega_\Lambda^0+ \frac{\left(1-\Omega_m^0-\Omega_\Lambda^0\right)}{a^2}} = a H_0 \sqrt{\frac{\Omega_m^0}{a^3}} = H_0 a^{-1/2} 
+\end{equation}
+Avec $t=0$ au Big Bang, 
+\begin{equation}
+\sqrt{a}\dd a = H_0 \dd t \Rightarrow \int_0^a \sqrt{a'}\dd a' = H_0 \int_0^t \dd t' \Rightarrow \frac{2}{3}a^{3/2} = H_0 t
+\end{equation}
+Nous obtenons donc :
+\begin{equation}
+a(t) = \left( \frac{3}{2}H_0 t\right)^{2/3}\quad\text{et}\quad t_U = \frac{2}{3}\frac{1}{H_0} = 9.1\,\text{Gyr} 
+\end{equation}
+avec :
+\begin{equation}
+\frac{1}{H_0} = \frac{1}{70\,\text{km/s/Mpc}}= 4.3\times 10^{17}\,\text{s} = 13.6\,\text{Gyr} 
+\end{equation}
+
+- $\Omega_m^0=\Omega_\Lambda^0\approx 0,\Omega_r^0 \approx 0$ alors :
+\begin{equation}
+\frac{\dd a}{\dd t} = a H_0 \sqrt{\frac{\left(1-\Omega_m^0-\Omega_\Lambda^0\right)}{a^2}} = a H_0 \frac{\sqrt{1}}{a} = H_0 
+\end{equation}
+Avec $t=0$ au Big Bang, 
+\begin{equation}
+a(t) = H_0 t \Rightarrow t_U = \frac{1}{H_0} = 13.6\,\text{Gyr} 
+\end{equation}
+
+- $\Omega_m^0=\Omega_r^0\approx 0, \Omega_\Lambda^0 = 1$ alors :
+\begin{enumerate}
+\frac{da}{dt} = a H_0 \sqrt{\Omega_\Lambda^0} 
+\end{equation}
+Avec $t=t_0$ maintenant, 
+\begin{equation}
+\frac{\dd a}{a} = H_0 \sqrt{\Omega_\Lambda^0} \dd t \Rightarrow \int_a^{a_0} \frac{\dd a'}{a'} = H_0 \sqrt{\Omega_\Lambda^0} \int_t^{t_0} \dd t' \Rightarrow a(t) = a_0 e^{H_0 \sqrt{\Omega_\Lambda^0} (t-t_0)}
+\end{equation}
+On a $a(t)\Rightarrow 0$ quand $t\rightarrow -\infty$ donc l'âge de l'univers est infini dans le modèle de Sitter.
+
+2. La valeur d'Einstein de-Sitter est incompatible avec la mesure de l'âge des premières étoiles avec une telle valeur de $H_0$. 
+Cependant, le modèle $\Lambda$CDM est en accord avec le modèle de "l'univers vide". Cependant, dans l'"univers vide", l'hypothèse que la 
+matière ne joue aucun rôle est très forte.
+
+3. 
+\begin{equation}
+\frac{1}{H_0} = \frac{1}{500\,\text{km/s/Mpc}}= 4.3\times 10^{17}\,\text{s} = 1.9\,\text{Gyr} 
+\end{equation}
+
+La première mesure de la constante de Hubble était incompatible avec les mesures de l'âge de la Terre. Les premiers modèles cosmologiques ont donc été affectés par ce fait tant que la mesure de la constante $H_0$ n'était pas corrigée.
+
+:::
 
 
 Evolution des paramètres cosmologiques
