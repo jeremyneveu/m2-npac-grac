@@ -350,6 +350,26 @@ This is the same result as in the $T^{\beta \alpha}_{\,\,\,\,\,\,;\alpha}=0$ com
 
 :::
 
+:::{exercise} Evolution de l'entropie
+:label: exo:expansion_isentropique
+
+A partir du premier principe de la thermodynamique et de l'équation [](#eq:conservation_energie), retrouver que l'expansion 
+de l'Univers est isentropique.
+
+:::
+
+:::{solution} exo:expansion_isentropique
+:class: dropdown
+
+$$\dd U = T \dd S - p \dd V $$
+$$U = a^3 \epsilon, \quad V = a^3$$
+$$ \dd(a^3 \epsilon) = - p \dd (a^3) + T \dd S \Rightarrow 3 \dot{a} a^2 \epsilon + a^3 \dot{\epsilon} = - 3 p \dot{a} a^2  + T \frac{\dd S}{\dd t}\Rightarrow \dot{\epsilon} = -3\frac{\dot{a}}{a}(p+\epsilon) +T \frac{\dd S}{\dd t} $$
+Donc 
+$$\frac{\dd S}{\dd t} = 0$$
+et l'expansion est isentropique. C'est attendu étant donné que pour un Univers homogène et isotrope le tenseur énergi-impulsion est celui
+d'un fluide parfait donc sans viscosité ni transfert de chaleur.
+:::
+
 
 
 
@@ -422,19 +442,14 @@ et [](#eq:conservation_energie_radiation).
 
 
 
-### Courbure
 
+### Constante cosmologique
 
 Dans les équations de Friedmann
 [](#eq:friedmann), il est possible d'interpréter la constante
 cosmologique $\Lambda$ et la courbure $k$ en terme de densités d'énergie
 au même titre que la densité d'énergie $\rho$ du tenseur
-énergie-impulsion. La densité d'énergie associée à l'énergie de
-courbure s'identifie à : 
-$$\epsilon_k(t) =\rho_k(t) c^2 = - \frac{3 c^4 k  }{8\pi G_N a^2(t)}.$$
-
-
-### Constante cosmologique
+énergie-impulsion. 
 
 La densité d'énergie associée à la constante
 cosmologique est parfois appelée densité d'énergie noire, en raison des
@@ -474,6 +489,13 @@ $$\left[ g_{\mu\nu} \right] = [1,\mathsf{L}^{2},\mathsf{L}^{2},\mathsf{L}^{2}] $
 :::
 
 
+### Courbure
+
+
+La densité d'énergie associée à l'énergie de courbure s'identifie à : 
+$$\epsilon_k(t) =\rho_k(t) c^2 = - \frac{3 c^4 k  }{8\pi G_N a^2(t)}.$$
+De même, son effet en terme de pression est :
+$$p_k = \frac{c^4 k}{8\pi G_N a^2(t)}.$$
 
 Les paramètres cosmologiques
 ----------------------------
@@ -487,7 +509,7 @@ $$\label{eq:def-w}
 \fbox{$w=p/\epsilon.$}
 $$
 
--   La matière non relativiste n'exerce pas de pression sur son milieu
+-   La matière froide non relativiste n'exerce pas de pression sur son milieu
     extérieur d'où $p_m=0$ donc $w_m=0$.
 
 -   La matière relativiste exerce quant à elle une pression sur son
@@ -495,6 +517,8 @@ $$
 
 -   Pour la constante cosmologique, on a $p_\Lambda = - \epsilon_\Lambda$ donc son équation d'état est
     constante et négative $w_\Lambda = -1$.
+
+-   La courbure assimilée à un fluide parfait aurait un paramètre d'équation d'état $w_k=1/3$.
 
 
 ### Paramètres de densité d'énergie
@@ -510,7 +534,7 @@ où $H_0$ est la constante de Hubble.
 On définit les paramètres de densité (sans dimension) en normalisant les densités
 d'énergie par la densité critique, soit :
 $$\Omega_m(t) = \frac{\rho_m(t)}{\rho_c(t)},\quad \Omega_\Lambda(t) = \frac{c^2 \Lambda}{3H^2(t)}, \quad \Omega_k(t) = -\frac{c^2 k}{a^2(t)H^2(t)}$$
-$$\Omega_m^0 = \frac{\rho_m^0}{\rho_c^0},\quad \Omega_\Lambda^0 = \frac{\Lambda}{3H^2_0}, \quad \Omega_k^0 = -\frac{k}{H^2_0}.$$
+$$\Omega_m^0 = \frac{\rho_m^0}{\rho_c^0},\quad \Omega_\Lambda^0 = \frac{c^2 \Lambda}{3H^2_0}, \quad \Omega_k^0 = -\frac{c^2 k}{a_0^2 H^2_0}.$$
 La première équation de Friedmann s'écrit alors simplement :
 $$\label{eq:omega_sum}
 1 = \Omega_m(t) + \Omega_r(t) + \Omega_\Lambda(t) + \Omega_k(t)$$
@@ -536,16 +560,16 @@ donc l'Univers semble essentiellement plat.
 Quelle est la véritable nature de l'énergie noire ? Est-ce la manifestation de l'énergie du vide ? Une seconde constante fondamentale de la gravitation ?
 Ou bien une nouvelle cinquième force ? La manifestation de dimensions spatiales supplémentaires ? Ces questions sur la nature
 de l'énergie noire n'ont pour le moment pas de réponses, mais depuis la découverte de l'expansion accélérée en 1998 {cite:p}`Riess1998,Perlmutter1999`
-de nouveaux relevés cosmologiques sont en cours pour mesurer précisément l'équation d'état de l'énergie noire : tant qu'on mesure
-$w_\Lambda=-1$ alors l'accélération de l'expansion peut s'expliquer avec un unique paramètre qui est la valeur de $\Lambda$. 
+de nouveaux relevés cosmologiques sont en cours pour mesurer précisément l'équation d'état de l'énergie noire $w_{DE}$ : tant qu'on mesure
+$w_{DE} = w_\Lambda=-1$ alors l'accélération de l'expansion peut s'expliquer avec un unique paramètre qui est la valeur de $\Lambda$. 
 Si les mesures s'écartent significativement de $-1$, alors des modèles plus complexes seront à tester.
 
 C'est pourquoi aujourd'hui, en plus du modèle standard $\Lambda$CDM, les cosmologistes testent des modèles empiriques qui cherchent
 des écarts au modèle standard :
-- Flat $w$CDM : modèle d'Univers plat avec comme paramètres  libres $\Omega_m^0$, $\Omega_r^0$ et  $w_\Lambda$;
-- $w$CDM : modèle de courbure quelconque avec comme paramètres  libres $\Omega_m^0$, $\Omega_r^0$, $\Omega_\Lambda^0$ et  $w_\Lambda$;
+- Flat $w$CDM : modèle d'Univers plat avec comme paramètres  libres $\Omega_m^0$, $\Omega_r^0$ et $w_{DE}$;
+- $w$CDM : modèle de courbure quelconque avec comme paramètres  libres $\Omega_m^0$, $\Omega_r^0$, $\Omega_\Lambda^0$ et  $w_{DE}$;
 - $w_0w_a$CDM : modèle où le paramètre d'équation d'état de l'énergie noire est donnée par deux paramètres libres :
-$$w_\Lambda(a) = w_0 + \left(1 - \frac{a}{a_0}\right)w_a$$
+$$w_{DE}(a) = w_0 + \left(1 - \frac{a}{a_0}\right)w_a$$
 dont les valeurs mesurées par le satellite _Planck_ combinées aux supernovae de type Ia et les oscillations acoustiques de baryons donnent [](doi:10.1051/0004-6361/201833910):
 $$w_0 = −0.957 \pm 0.080, \quad w_a = −0.29^{+0.32}_{ −0.26}$$ 
 L'enjeu majeur pour les relevés cosmologiques futurs est de mesurer $w_a$ avec une meilleure précision, 
@@ -578,11 +602,11 @@ Cette équation d'état du vide peut être établie à l'aide de la théorie qua
 
 1. \begin{align}
 8\pi G \dot{\rho} & = 6\dot{H}H - \frac{6c^2 k \dot{a}}{a^3} \\
-& = 3H \left[-8\pi G P / c^2 + c^2 \Lambda - 3 H^2 - \frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
-& = 3H \left[-8\pi G P / c^2 -8 \pi G \rho + 2\frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
-& = 3H \left[-8\pi G P / c^2 -8 \pi G \rho \right]
+& = 3H \left[-8\pi G p / c^2 + c^2 \Lambda - 3 H^2 - \frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
+& = 3H \left[-8\pi G p / c^2 -8 \pi G \rho + 2\frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
+& = 3H \left[-8\pi G p / c^2 -8 \pi G \rho \right]
 \end{align}
-et $\dot{\rho} c^2 = -3 H(\rho c^2 + P )$. 
+et $\dot{\rho} c^2 = -3 H(\rho c^2 + p )$. 
 
 
 2. En utilisant la définition du paramètre de Hubble $H = (\dd a/\dd t)/a$, nous pouvons transformer les dérivées temporelles 
@@ -666,14 +690,14 @@ dU = \delta W = -p_{\rm vac} dV
 \end{equation}
 En supposant que $p_{\rm vac}= - \rho_{\rm vac} c^2$, pour la densité d'énergie du vide nous avons $d\rho_{\rm vac} = 0$ et le premier principe $ dU = \delta W$ est vérifié.
 
+
+Absence of a preferred reference frame (i.e. the Relativity principle) means that the energy-momentum tensor for vacuum T(vac)μν=diag(ρ,p,p,p) is the same for every observer. 
+There is only one tensor of rank 2 which is invariant with respect to Lorentz transformations---it is the unit tensor ημν=diag(1,−1,−1,−1). 
+That is why the Lorentz-invariant energy-momentum tensor must be proportional to the metric and therefore
+pvac=−ρvac.
+
 :::
 
-
-:::{exercise} Point de vue thermodynamique
-
-A partir de la formule [](#eq:conservation_energie_thermo) retrouver l'équation [](#eq:conservation_energie).
-
-:::
 
 :::{exercise} Ordres de grandeur
 :label: exo:densities
@@ -681,3 +705,17 @@ A partir de la formule [](#eq:conservation_energie_thermo) retrouver l'équation
 Transformer les valeurs de l'équation [](#eq:omegas_planck) en densité de masse et en densité d'énergie.
 
 :::
+
+
+:::{solution} exo:densities
+
+Suppose that density of the dark energy as cosmological constant is equal to the present critical density, ρΛ=ρcr. What is then the total amount of dark energy inside the Solar System? Compare this number with M⊙c2
+
+ρcr≃10−29  g/cm3;R≃50a.u.;1 a.u.≃1.5×1011m;EDESS/c2≃0.2⋅1014 kg;M⊙≃2⋅1030 kg;EDESSM⊙c2≃10−17.
+
+Transform Lambda into a length: Length = sqrt(1/Lambda) = ....
+
+:::
+
+
+

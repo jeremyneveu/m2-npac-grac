@@ -83,12 +83,12 @@ Einstein a été le premier à construire un modèle pour l'ensemble de l'univer
 statique et éternel qui ne contenait que de la matière.
 
 1. Dans une perspective moderne, avec les équations de Friedmann (ci-dessous), montrez qu'un univers statique ne 
-contenant que de la matière doit avoir une constante cosmologique non nulle $\Lambda=4\pi G \rho / c^2$ et doit être 
+contenant que de la matière doit avoir une constante cosmologique non nulle $\Lambda=4\pi G \rho_m / c^2$ et doit être 
 sphérique. Calculer le rayon de l'univers sphérique d'Einstein $R\equiv a_{\rm Einstein}$.
 
 \begin{equation} \left\lbrace
 \begin{array}{l}
-   \displaystyle{3 \left( \frac{\dot{a}^2}{a^2}+ \frac{c^2k}{a^2} \right) = 8\pi G_N \rho + c^2 \Lambda}  \\ 
+   \displaystyle{3 \left( \frac{\dot{a}^2}{a^2}+ \frac{c^2k}{a^2} \right) = 8\pi G_N \rho_m + c^2 \Lambda}  \\ 
     \displaystyle{\frac{2\ddot{a}a + \dot{a}^2 + c^2 k}{a^2} = - 8\pi G_N p/c^2 + c^2 \Lambda }
 \end{array}
 \right.
@@ -101,14 +101,14 @@ $\delta R$ du rayon de l'univers et $\delta \rho$ de la densité de matière pou
 
 
 :::{solution} exo:einstein_first
-1. Pour un univers avec seulement de la matière non relativiste, $p=0$. S'il est statique, alors $\ddot{a}=\dot{a}=0$ et la seconde équation de Friedmann s'écrit donc :
+1. Pour un univers avec seulement de la matière non relativiste, $p_m=0$. S'il est statique, alors $\ddot{a}=\dot{a}=0$ et la seconde équation de Friedmann s'écrit donc :
 \begin{equation}
 \frac{c^2 k}{a^2}=c^2 \Lambda
 \end{equation}
 L'injection de cette équation dans la première équation de Friedmann donne :
 \begin{align}
-3\frac{c^2 k}{a^2} = 8\pi G \rho + c^2 \Lambda & \Leftrightarrow 2 c^2 \Lambda = 8 \pi G \rho \\
-& \Leftrightarrow \Lambda = 4 \pi G \rho / c^2 > 0 
+3\frac{c^2 k}{a^2} = 8\pi G \rho_m + c^2 \Lambda & \Leftrightarrow 2 c^2 \Lambda = 8 \pi G \rho_m \\
+& \Leftrightarrow \Lambda = 4 \pi G \rho_m / c^2 > 0 
 \end{align}
 Ainsi, pour obtenir un univers statique, Einstein a dû introduire une constante cosmologique non nulle. 
 De plus, nous déduisons que $c^2 k / a^2 > 0$ donc $k=+1$ : l'univers statique doit être sphérique. 
@@ -125,18 +125,18 @@ R\equiv a_E = \Lambda^{-1/2}
 \begin{equation}
 \frac{2 \ddot{a}}{a} = - \frac{8\pi G \rho}{3} + \frac{2 c^2 \Lambda}{3}
 \end{equation}
-Considérons une perturbation du rayon, $R=\Lambda^{-1/2} + \delta R$, qui induit une perturbation de la densité de matière sur la sphère $\delta \rho = \rho_0 + \delta \rho = c^2 \Lambda/4 \pi G + \delta \rho$. Cette dernière équation devient
+Considérons une perturbation du rayon, $a=\Lambda^{-1/2} + \delta a$, qui induit une perturbation de la densité de matière sur la sphère $\rho_m = \rho_0 + \delta \rho = c^2 \Lambda/4 \pi G + \delta \rho$. Cette dernière équation devient
 \begin{align}
-2 \frac{\delta \ddot{R}}{R} = - \frac{2 c^2 \Lambda}{3} - \frac{8 \pi G \delta \rho}{3 c^2}+ \frac{2 c^2 \Lambda}{3} \Leftrightarrow 2 \frac{\delta \ddot{R}}{R} = - \frac{8 \pi G \delta \rho}{3 c^2}
+2 \frac{\delta \ddot{a}}{a} = - \frac{2 c^2 \Lambda}{3} - \frac{8 \pi G \delta \rho}{3 c^2}+ \frac{2 c^2 \Lambda}{3} 
+ = - \frac{8 \pi G \delta \rho}{3 c^2}
 \end{align}
 La quantité de matière se conserve ainsi :
-$$\rho_0 R^3 = cste \Rightarrow \frac{\delta \rho}{\rho} = -3 \frac{\delta R}{R}$$
+$$\rho a^3 = cste \Rightarrow \frac{\delta \rho}{\rho} = -3 \frac{\delta a}{a}$$
 et :
 \begin{equation}
-\delta \ddot{R} = 4 \pi G \rho_0 \delta R \Leftrightarrow \delta \ddot{R} - c^2 \Lambda \delta
- R = 0
+\delta \ddot{a} = 4 \pi G \rho_0 \delta a \Leftrightarrow \delta \ddot{a} - c^2 \Lambda \delta a = 0
 \end{equation}
-c'est-à-dire que la perturbation $\delta R$ croît exponentiellement avec le temps ($\Lambda>0$). L'univers est instable.
+c'est-à-dire que la perturbation $\delta a$ croît exponentiellement avec le temps ($\Lambda>0$). L'univers est instable.
 
 
 :::
