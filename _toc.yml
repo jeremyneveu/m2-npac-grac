@@ -22,5 +22,6 @@ chapters:
   - file: chapters/01_FLRW_metric
   - file: chapters/02_friedmann_equations
   - file: chapters/03_cosmological_models
+  - file: chapters/04_astrophysical_emissions  
   - file: notebooks/mechanical_analogy.ipynb
   - file: notebooks/astropy_cosmo.ipynb
