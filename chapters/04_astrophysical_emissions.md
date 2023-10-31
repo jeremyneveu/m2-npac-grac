@@ -227,7 +227,7 @@ $$
 
 with a negligible contribution from the energy density associated with the radiation, $\Omega_\mathrm{r}$. The evolution of the star formation rate, $\Psi$, determines the evolution of the fraction of the baryonic mass contained in stars and gas, as well as the enrichment of the interstellar medium in galaxies. For example, the mass density contained in stars, $\rho_\star$, can be calculated from the following conservation equation:
 $$
-\frac{\dd \rho}{\dd t} = (1-R) \Psi
+\frac{\dd \rho_\star}{\dd t} = (1-R) \Psi
 $$
 
 Here $R$ is the "return fraction", i.e. the proportion of matter reinjected into the interstellar medium by stellar winds and explosions. The value of $R$ is estimated at $30-40\%$, depending on the initial distribution of stellar mass, called the initial mass function.
@@ -270,7 +270,8 @@ The efficiency of matter-to-light conversion in the Sun is therefore only one te
 
 3. $$\begin{align}
 \rho_{\gamma, \mathrm{nucl}} &= \epsilon_\odot c^2 \int \dd t \Psi(t) \nonumber \\
-& \approx 7 \cdot 10^{-4} \times 10^{10} \times 0.05 M_\odot c^2 \,\mathrm{Mpc}^{-3}  \nonumber 3.5\cdot 10^{5} \times 1.1\cdot 10^{66}/(3.1\cdot 10^{22})^3 \mathrm{\,eV\,m}^{-3}  \\
+& \approx 7 \cdot 10^{-4} \times 10^{10} \times 0.05 M_\odot c^2 \,\mathrm{Mpc}^{-3}  \nonumber\\
+& \approx 3.5\cdot 10^{5} \times 1.1\cdot 10^{66}/(3.1\cdot 10^{22})^3 \mathrm{\,eV\,m}^{-3}  \\
 & \approx 13 \times 10^{3}\mathrm{\,eV\,m}^{-3}
 \end{align}$$
 
@@ -437,67 +438,62 @@ TBD: discussion
 :::{exercise} Energy densities in the Milky Way
 :label: exo:milky_way
 
-Adapted from Véronique Buat (p. 37) and Régis Terrier's (solution 1) master courses.
+The Galaxy can be seen as a disc of bolometric luminosity $1.5-2.0 \times 10^{10} \ L_\odot$, approximated by a cyclinder of diameter $2R=25\,$kpc and height $h=300\,$pc, and a bulge of bolometric luminosity $0.5 \times 10^{10} \ L_\odot$, approximated as a bar or spheroid of diameter $3\,$kpc. The bolometric luminosity of the Sun is $L_\odot = 3.85 \times 10^{26}\,$W. 
 
-The Milky Way is divided into a thin disk and a bulge whose Disk luminosity: 15-­‐20 109 Lsun
-Stellar mass in the disk: 60 109 M sun
-Bulge luminosity: 5 109 Lsun
-Stellar mass in the bulge: 20 109 M sun
 
-Dimensions:
-disque fin de 25 kpc de diamètre
-~300pc d'épaisseur
-Halo de 30 kpc
-distance au centre de la Galaxie ~ 8 kpc
-Densité moyenne ~ 1 cm -3 Champ mag moyen: B ~ 0.5 nT
-Densités d'énergie:
-CMB : 0.26 MeV.m -3
-Champ optique – IR ~ 0.5 – 1 MeV.m -3
-Rayons cosmiques: ~1 MeV.m -3
-Champ magnétique: 0.6 MeV.m -3
+1. Calculate the energy density of the photon field in the disc in eV$\,$m$^{-3}$.
 
-The most prominent features (in terms of luminosity) are disk and the bulge. The sun lies
-in the stellar thin disk, which is roughly circular. The radius of the disk is
-approximately 15 kpc, the Sun is lying about 8 kpc from the Galactic center. The scale
-height of the (thick) disk is approximately 1 kpc. Most of the stars and all the young
-massive ones lie in the thin disk whose scale height is a few hundreds of parsecs.
+2. The magnetic field of the Milky Way is inferred to range in $1-10\,\mu$G that is $(1-10)\times 10^{-10}\,$T. Estimate the magnetic energy density in the Milky Way.
 
-The local cosmic-ray intensity is I = I 0 E −α = 10 4 1GeV
-m −2 .s −1 .sr −1 .GeV −1 above 1 GeV.
-– Compute the energy density U CR of cosmic rays above 1 GeV and express it in MeV.m −3 .
-Now we want to estimate the energy density of the Galactic radiation field. We assume the Galaxy is a
-thin disk of radius R=15 kpc and thickness h=300 pc (R ~ h). It is uniformly filled with N = 10 11 stars
-with average luminosity L =3.8 10 26 W. We assume that the radiation field they produce is isotropic within
-the thin disk.
-– What is the energy flux escaping the boundary surface of the Galaxy ?
-– What is the energy density w of the radiation field in the Galaxy in MeV.m −3 ?
-
+3. From the local cosmic-ray spectrum presented in [](#fig:cr_spectrum), estimate the energy density of cosmic rays in the Milky Way.
 
 ```{figure}  ../images/The_CR_Spectrum_2023.pdf
 :name: fig:cr_spectrum
 :align: center
-:width: 50%
+:width: 60%
 
-The local cosmic-ray spectrum. Components from the Milky Way dominate the brightness of the sky at least up to the knee structure at $E \approx 3\, PeV$. From this [page](https://zenodo.org/records/7948212).
+The local cosmic-ray spectrum. Components from the Milky Way dominate the brightness of the sky at least up to the knee structure at $E \approx 3\,$PeV. From this [page](https://zenodo.org/records/7948212).
 ```
-
-
-
-1. Compute the energy density in Galactic cosmic rays from
-
-2. 
-
-3. 
 
 :::
 
 :::{solution} exo:milky_way
 
-1. 
+1. We assume the photon field to be isotropic in the disc of Milky Way. Then, we can estimate the photon density as:
+
+\begin{align}
+u_\mathrm{O-IR} &= \frac{4\pi}{c} I_\mathrm{O-IR} \nonumber \\
+		 &= \frac{4\pi}{c} \frac{F_\mathrm{O-IR}}{\int \dd \Omega \cos \theta}
+\end{align}
+
+where $F_\mathrm{O-IR}$ is the net flux emitted from one side of the disc and $\int \dd \Omega \cos \theta = 2\pi \int_0^1 \cos \theta \dd  \cos \theta = \pi$. The total flux emitted by the two sides of the disc is $2F_\mathrm{O-IR} = \frac{L_\mathrm{O-IR}}{\pi R^2}$, so that
+
+\begin{align}
+u_\mathrm{O-IR} &= \frac{4\pi}{c} I_\mathrm{O-IR} \\
+		 &= \frac{2}{c} \frac{L_\mathrm{O-IR}}{\pi R^2}
+ 		 &= \frac{2}{c} \frac{L_\mathrm{O-IR}}{\pi R^2}
+ 		 &\approx (0.5-0.7) \times 10^{6} \,\mathrm{eV\,m}^{-3},
+\end{align}
+i.e. two-to-three times the energy density of the CMB.
 
 2. 
+\begin{align}
+u_B & = \frac{B^2}{2\mu_0} \\
+ & \approx \frac{(1-100) \cdot 10^{-20} \times 6.2 \cdot 10^{18}}{2 \times 4\pi \times 10^{-7}} \,\mathrm{eV\,m}^{-3} \\
+ & \approx (0.02-2) \times 10^{6} \,\mathrm{eV\,m}^{-3},
+\end{align}
 
-3. 
+3. The local cosmic-ray intensity can be approximated as $J(E) = J_0 \left(\frac{E}{E_0} \right)^{-p} = 2 \times 10^4\, \mathrm{GeV^{-1}}\,\mathrm{m}^{-2}\,\mathrm{s}^{-1}\,\mathrm{sr}^{-1}\times \left(\frac{E}{1\,\mathrm{GeV}} \right)^{-2.7}$.
+
+Considering the cosmic-ray velocity to be near the speed of light (which is wrong near $1\,$GeV), the energy density of cosmic rays in the Milky Way above $E_0 = 1\,\mathrm{GeV} \approx m_p c^2$ can be approximated by
+
+\begin{align}
+u_\mathrm{CR} &= \frac{4\pi}{c} \int_{E_0} \dd E\ E J(E) \\
+			 &= \frac{4\pi}{c} \frac{E_0^2 J_0}{p-2} \\
+ 			 &\approx 1.2 \times 10^{6} \,\mathrm{eV\,m}^{-3}
+\end{align}
+
+Interestingly, all three components are close to equipartition.
 
 :::
 
