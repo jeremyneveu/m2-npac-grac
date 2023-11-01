@@ -10,6 +10,12 @@ Astrophysical emissions on cosmic scales
 =============================================
 
 
+*Note 1: energy densities written either as u or $\rho$: to be solved*
+
+*Note 2: final plot dJ/dE -> J(E), same in slide*
+
+*Note 3: discussion on various backgrounds to be written*
+
 A homogeneous and isotropic universe?
 --------------------------------
 
@@ -257,7 +263,7 @@ As with the mass of matter contained in stars today, the cumulative emission of 
 
 :::
 
-:::{solution} exo:volume_filling
+:::{solution} exo:photons_nucl
 
 1. $$\begin{align}
 \epsilon_\odot &= \frac{L_\odot t_\odot}{M_\odot c^2} \nonumber \\
@@ -379,12 +385,12 @@ Specific intensity has notable transformation properties. Indeed, it can be show
 
 
 :::{note}
-The literature sometimes uses the notation $I_{\mathrm{dex}}$ with $[I_{\mathrm{dex}}] = \mathrm{W}\,\mathrm{m}^{-2}\,\mathrm{sr}^{-1}\,\mathrm{dex}$. With this notation,  
+The literature sometimes uses the notation $I_{\mathrm{dex}}$ with $[I_{\mathrm{dex}}] = \mathrm{W}\,\mathrm{m}^{-2}\,\mathrm{sr}^{-1}\,\mathrm{dex}$. With this notation, 
 $$\int \dd \log_{10} \nu\ I_{\mathrm{dex}} = \int \dd \nu\ I_{\nu} = I$$
 Note that $I_\mathrm{dex}$ differs by a factor $\nu \ln 10$ from $I_{\nu}$
 :::
 
-Following again {cite}`1986rpa..book.....R`, the energy density in a field of particles with momentum between $p$ and $p + \dd p$ depends o, the number of particles per phase volume, $\dd \mathcal{N}/\dd^3 x \dd^3 p$ as
+Following again {cite}`1986rpa..book.....R`, the energy density in a field of particles with momentum between $p$ and $p + \dd p$ depends on the number of particles per phase volume, $\dd \mathcal{N}/\dd^3 x \dd^3 p$ as
 
 $$
 u_\nu \dd \nu = h\nu  \frac{\dd \mathcal{N}}{\dd^3 x \dd^3 p} 4\pi p^2 \dd p
@@ -438,7 +444,7 @@ TBD: discussion
 :::{exercise} Energy densities in the Milky Way
 :label: exo:milky_way
 
-The Galaxy can be seen as a disc of bolometric luminosity $1.5-2.0 \times 10^{10} \ L_\odot$, approximated by a cyclinder of diameter $2R=25\,$kpc and height $h=300\,$pc, and a bulge of bolometric luminosity $0.5 \times 10^{10} \ L_\odot$, approximated as a bar or spheroid of diameter $3\,$kpc. The bolometric luminosity of the Sun is $L_\odot = 3.85 \times 10^{26}\,$W. 
+The Galaxy can be seen as a disc of bolometric luminosity $1.5-2.0 \times 10^{10} \ L_\odot$, approximated by a cylinder of diameter $2R=25\,$kpc and height $h=300\,$pc, and a bulge of bolometric luminosity $0.5 \times 10^{10} \ L_\odot$, approximated as a bar or spheroid of diameter $3\,$kpc. The bolometric luminosity of the Sun is $L_\odot = 3.85 \times 10^{26}\,$W. 
 
 
 1. Calculate the energy density of the photon field in the disc in eV$\,$m$^{-3}$.
