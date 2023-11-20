@@ -38,7 +38,7 @@ avec au début de l'Univers $t=0$ et $a=0$. On a obtenu ainsi une relation direc
 
 Par un raisonnement similaire, on montre que pour un Univers plat dominé par le rayonnement on a une évolution différente du facteur d'échelle :
 $$\label{eq:a_rad_only}
-\frac{a(t)}{a_0} = \left( \frac{1}{2}H_0  t\right)^{1/2}$$
+\frac{a(t)}{a_0} = \left( 2 H_0  t\right)^{1/2}$$
 
 ### Univers vide (Milne)
 
@@ -65,6 +65,48 @@ mais bien une mesure externe qui permet de calculer l'histoire de l'Univers en f
 quelque sorte les conditions initiales du modèle, où aujourd'hui est l'instant initial.
 :::
 
+
+### Univers avec une constante cosmologique seulement (de Sitter)
+
+:::{exercise} Modèle de Sitter
+:label: exo:desitter
+
+Peu après Einstein, de Sitter a publié un autre type de modèle cosmologique. Il a proposé un univers plat avec seulement 
+une constante cosmologique non nulle et aucune matière à l'intérieur (ou une quantité négligeable de matière). 
+Montrer qu'un tel univers croît de manière exponentielle avec le temps. 
+C'est l'univers de de Sitter. Trouvez également un système de coordonnées dans lequel il est statique. 
+
+
+:::
+
+:::{solution} exo:desitter
+
+
+Dans un univers plat $k=0$ et la première équation de Friedmann donne dans le modèle de Sitter :
+\begin{equation}
+\frac{\dot{a}^2}{a^2} = \frac{c^2 \Lambda}{3} \Leftrightarrow -\sqrt{\frac{3}{c^2 \Lambda}}\frac{\dd a }{\dd t}+a=0
+\end{equation}
+La solution de cette équation différentielle est
+\begin{equation}
+a(t) = a_0 e^{\sqrt{c^2 \Lambda/3}t}
+\end{equation}
+L'univers de de Sitter croît exponentiellement avec le temps. 
+
+Pour montrer qu'un univers de de Sitter peut être considéré comme un univers statique, écrivons $T_0 = \sqrt{c^2 \Lambda / 3}$ et changeons les coordonnées $r'(t) = a_0 e^{t/T_0}\sigma$. La métrique FLRW devient alors
+\begin{equation}
+\dd s^2 =- \dd t^2 + a^2 (\dd \sigma^2 + \sigma^2 \dd \theta^2 + \sigma^2 \sin\theta \dd  \phi^2) =- \dd t^2 + \left[\left(\dd r' - r' \dd t / T_0\right)^2 + r'^2 \dd \theta^2 + r'^2 \sin\theta \dd \phi^2\right]
+\end{equation}
+En utilisant la transformation :
+\begin{equation}
+t = t' + \frac{T_0}{2}\log \left( \frac{r'^2}{T_0^2} - 1 \right) 
+\end{equation}
+nous trouvons :
+\begin{equation}
+\dd s^2 = \left(1-\frac{r'^2}{T_0^2}\right) \dd t'^2 - \left(1-\frac{r'^2}{T_0^2}\right)^{-1} \dd r'^2 - r'^2 \dd \theta^2 -r'^2 \sin\theta \dd \phi^2 
+\end{equation}
+Historiquement, le modèle de Sitter a été découvert comme un univers statique avec ce système de coordonnées. Dès que l'idée d'un univers en expansion a été admise par la communauté scientifique, l'univers de Sitter a été considéré comme un univers en expansion exponentielle, dominé par l'énergie noire.
+
+:::
 
 
 Modèles historiques
@@ -121,7 +163,7 @@ Nous trouvons que la valeur du rayon est :
 R\equiv a_E = \Lambda^{-1/2}
 \end{equation}
 
-2. En combinant les deux équations de Friedmann pour un univers poussiéreux, nous trouvons :
+2. En combinant les deux équations de Friedmann pour un univers avec de la matière froide seulement, nous trouvons :
 \begin{equation}
 \frac{2 \ddot{a}}{a} = - \frac{8\pi G \rho}{3} + \frac{2 c^2 \Lambda}{3}
 \end{equation}
@@ -141,48 +183,6 @@ c'est-à-dire que la perturbation $\delta a$ croît exponentiellement avec le te
 
 :::
 
-### Modèle de Sitter (vide)
-
-:::{exercise} Modèle de Sitter
-:label: exo:desitter
-
-Peu après Einstein, de Sitter a publié un autre type de modèle cosmologique. Il a proposé un univers plat avec seulement 
-une constante cosmologique non nulle et aucune matière à l'intérieur (ou une quantité négligeable de matière). 
-Montrer qu'un tel univers croît de manière exponentielle avec le temps. 
-C'est l'univers de de Sitter. Trouvez également un système de coordonnées dans lequel il est statique. 
-
-
-:::
-
-:::{solution} exo:desitter
-
-
-Dans un univers plat $k=0$ et la première équation de Friedmann donne dans le modèle de Sitter :
-\begin{equation}
-\frac{\dot{a}^2}{a^2} = \frac{c^2 \Lambda}{3} \Leftrightarrow -\sqrt{\frac{3}{c^2 \Lambda}}\frac{\dd a }{\dd t}+a=0
-\end{equation}
-La solution de cette équation différentielle est
-\begin{equation}
-a(t) = a_0 e^{\sqrt{c^2 \Lambda/3}t}
-\end{equation}
-L'univers de de Sitter croît exponentiellement avec le temps. 
-
-Pour montrer qu'un univers de de Sitter peut être considéré comme un univers statique, écrivons $T_0 = \sqrt{c^2 \Lambda / 3}$ et changeons les coordonnées $r'(t) = a_0 e^{t/T_0}\sigma$. La métrique FLRW devient alors
-\begin{equation}
-\dd s^2 = \dd t^2 - a^2 (\dd \sigma^2 + \sigma^2 \dd \theta + \sigma^2 \sin\theta \dd  \phi) \Leftrightarrow \dd t^2 - \left[\left(\dd r' - r' \dd t / T_0\right)^2 + r'^2 \dd \theta + r'^2 \sin\theta \dd \phi\right]
-\end{equation}
-En utilisant la transformation :
-\begin{equation}
-t = t' + \frac{T_0}{2}\log \left( \frac{r'^2}{T_0^2} - 1 \right) 
-\end{equation}
-nous trouvons :
-\begin{equation}
-\dd s^2 = \left(1-\frac{r'^2}{T_0^2}\right) \dd t'^2 - \left(1-\frac{r'^2}{T_0^2}\right)^{-1} \dd r'^2 - r'^2 \dd \theta -r'^2 \sin\theta \dd \phi 
-\end{equation}
-Historiquement, le modèle de Sitter a été découvert comme un univers statique avec ce système de coordonnées. Dès que l'idée d'un univers en expansion a été admise par la communauté scientifique, l'univers de Sitter a été considéré comme un univers en expansion exponentielle, dominé par l'énergie noire.
-
-:::
-
 ### Modèle de Lemaître
 
 
@@ -196,7 +196,7 @@ arbitraire (mais pas de rayonnement).
 
 1. Dans un tel modèle, montrer que, juste après un big bang à $t=0$, au début de l'univers le facteur d'échelle augmente comme :
 \begin{equation}
-a(t) =\left( \frac{3}{2}H_0\sqrt{\Omega_m^0}t\right)^{2/3}
+\frac{a(t)}{a_0} =\left( \frac{3}{2}H_0\sqrt{\Omega_m^0}t\right)^{2/3}
 \end{equation}
 
 2. Au fur et à mesure que l'univers s'étend, cependant, la densité d'énergie de la matière diminue et la constante 
@@ -211,7 +211,7 @@ Calculer $a_*$ le facteur d'échelle à la transition.
 :::
 
 :::{solution} exo:lemaitre
-1. Dans le modèle de Lemaître à matière seule, la première équation de Friedmann écrit\footnote{$8\pi G \rho_m / 3 = H_0^2 \rho_m / \rho_c^0 = H_0^2 \rho_m^0 a^{-3}/\rho_c^0 = H_0^2 \Omega_m^0 a^{-3}$.}
+1. Dans le modèle de Lemaître à matière seule, la première équation de Friedmann s'écrit :
 \begin{equation}\label{eq:lemaitre}
 \frac{\dot{a}^2}{a^2} = H_0^2\left(\Omega_m^0 a^{-3} + \Omega_\Lambda^0 + \Omega_k^0 a^{-2}\right) \Leftrightarrow \dot{a}^2 = H_0^2\left(\Omega_m^0 a^{-1} + \Omega_\Lambda^0 a^2 + \Omega_k^0 \right) 
 \end{equation}
@@ -231,7 +231,7 @@ A $t=0$, l'Univers était extrêmement petit et le terme de matière domine :
 \end{equation}
 Lorsque $a$ est petit, nous constatons que $\ddot{a}$ est négatif et que l'expansion décélère. Cependant, lorsque $a$ est grand, $\ddot{a}>0$ et l'expansion de l'univers s'accélère. La transition se produit à :
 \begin{equation}
-\ddot{a}=0 \Leftrightarrow 0=\frac{H_0^2}{2}\left(2 \Omega_\Lambda^0 a_* - \frac{\Omega_m^0}{a_*^2}\right) \Leftarrow a_* = \left( \frac{\Omega_m^0}{2\Omega_\Lambda^0}\right)^{1/3}
+\ddot{a}=0 \Leftrightarrow 0=\frac{H_0^2}{2}\left(2 \Omega_\Lambda^0 a_* - \frac{\Omega_m^0}{a_*^2}\right) \Leftrightarrow a_* = \left( \frac{\Omega_m^0}{2\Omega_\Lambda^0}\right)^{1/3}
 \end{equation}
 
 :::
@@ -244,7 +244,7 @@ Analogie mécanique
 :label: exo:analogmeca
 
 1. Écrire la première équation de Friedmann comme suit:
-\begin{enumerate}
+\begin{equation}
 \frac{1}{2}\Omega_k^0 = f(\Omega_i^0,a)
 \end{equation}
 Interpréter cette équation par analogie avec l'équation de conservation de l'énergie mécanique d'un corps massif suivant un 
@@ -282,7 +282,7 @@ Cette dernière équation ressemble à l'équation de conservation de l'énergie
 - $\frac{1}{2}\Omega_k^0$ est constant avec $a$ peut être identifié comme l'énergie mécanique conservée du corps massif
 - $\frac{1}{2}\frac{\dot{a}^2}{H_0^2}$ représente l'énergie cinétique du corps massif.
 - $- \frac{1}{2}\frac{\Omega_m^0}{a}$ ressemble à un potentiel gravitationnel centré autour de $a=0$.
-- $ \frac{1}{2}\frac{\Omega_r^0}{a^2}$ est un autre type de potentiel attractif.
+- $ -\frac{1}{2}\frac{\Omega_r^0}{a^2}$ est un autre type de potentiel attractif.
 - $- \frac{1}{2}\Omega_\Lambda^0 a^2$ est un potentiel harmonique inversé (répulsif) centré autour de $a=0$.
 
 2. \begin{equation}

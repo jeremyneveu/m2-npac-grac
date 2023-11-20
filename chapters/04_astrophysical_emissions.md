@@ -181,7 +181,7 @@ The rest-mass energy of the sum is energy $M_\odot c^2 \approx 1.8\times 10^{47}
 
 ### Cosmic energy inventory
 
-For an energy density today equal to the critical density $\rho_{c,0} = \frac{3 H_0  c^2}{8ⲡG} = 1.36 \times 10^{11}\, h_{70}\, M_\odot\,\mathrm{Mpc}^{-3} \approx 5.1\, h_{70}\,$GeV$\,$m$^{-3}$, we can see that only two thousandths of the universe's energy budget is made up of stars. A detailed breakdown of the different energy budgets of the universe is shown below.
+For an energy density today equal to the critical density $\rho_{c,0} = \frac{3 H_0  c^2}{8\pi G} = 1.36 \times 10^{11}\, h_{70}\, M_\odot\,\mathrm{Mpc}^{-3} \approx 5.1\, h_{70}\,$GeV$\,$m$^{-3}$, we can see that only two thousandths of the universe's energy budget is made up of stars. A detailed breakdown of the different energy budgets of the universe is shown below.
 
 ```{figure}  ../images/cosmic_inventory.png
 :name: fig:cosmic_inventory

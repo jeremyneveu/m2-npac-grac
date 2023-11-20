@@ -385,146 +385,6 @@ g_{\mu\nu}=\begin{pmatrix} -1 & 0 & 0 & 0 \\ 0 & a^2(t) & 0 & 0 \\ 0&0& a^2(t)&0
 \end{equation}
 
 
-### Distance propre et distance comobile
-
-La _distance propre_ définit la distance physique entre deux objets à un instant $t$. Soit un objet émetteur situé aux coordonnées comobiles $(\sigma_E, \theta_E, \phi_E)$.
-Par définition, la distance propre entre cet objet et un observateur situé à l'origine est :
-```{math}
-:label: eq:dist-prop
-
-D_p(\sigma_E, t) = \int_0^{\sigma_E} \sqrt{g_{\sigma\sigma}}\dd\sigma' = \int_0^{\sigma_E}\frac{a(t)\dd\sigma'}{\sqrt{1-k\sigma'^2}} = a(t) \chi(\sigma_E)
-```
-où on fait apparaître $\chi(\sigma_E)$ la _distance comobile_ entre cet objet et l'observateur :
-```{math}
-:label: eq:dist-comobile
-
-\chi(\sigma_E) = \int_0^{\sigma_E}\frac{\dd\sigma'}{\sqrt{1-k\sigma'^2}} = \left\lbrace\begin{array}{cl}
-    \arcsin\sigma_E & \text{ si } k=+1  \\
-    \sigma_E  & \text{ si } k=0 \\
-    \text{arcsh}\,\sigma_E & \text{ si } k=-1 
-\end{array}
-\right.
-```
-On voit que la distance propre $D_p$ possède bien l'unité d'une longueur alors que la distance comobile est sans dimension. Cette dernière représente la distance
-dans l'espace des coordonnées et est indépendante de l'expansion de l'Univers. En revanche la distance propre évolue avec le facteur d'échelle.
-
-Réciproquement, on définit $f_k(\chi)$ ainsi :
-\begin{equation}
-\sigma = f_k(\chi) = \left\lbrace\begin{array}{cl}
-    \sin\chi & \text{ si } k=+1  \\
-    \chi  & \text{ si } k=0 \\
-    \sinh\chi & \text{ si } k=-1 
-\end{array}
-\right.
-\end{equation}
-
-
-```{exercise} Coordonnées comobiles sur la sphère
-:label: exo:sphere-comobile
-
-Pour se créer une intuition sur la géométrie courbe et les coordonnées comobiles, nous allons étudier une sphère 2D de rayon $a(t)$. 
-Sur cette sphère, les coordonnées sont données par l'angle polaire $\chi$ et la longitude $\theta$ (la coordonnée $\phi$ est donc omise par rapport au cas FLRW). 
-Considérons qu'un observateur est situé en $(\chi,\theta)=(0, 0)$ et une galaxie en $(\chi, 0)$. 
-
-1. Représenter une sphère et tracer le méridien $\theta = 0$. Placer les quantités suivantes : l'observateur, la galaxie, $a(t)$, $\chi$, la distance propre entre l'observateur et la galaxie $D_p$. 
-Relier ces quantités à la coordonnée $\sigma$ et à l'expression de $D_p$.
-
-
-2. Considérons maintenant deux galaxies à la même coordonnées $\chi$, séparées par la distance physique $d$. Montrer que l'angle $\theta$ 
-($\theta \ll 1$) sous lequel elles sont observées sur la sphère est $\theta = d / (a(t) \sigma)$.
-
-```
-
-```{solution} exo:sphere-comobile
-:label: exo:sphere-comobile-sol
-:class: dropdown
-
-1. La coordonnée comobile $\chi$ est explicitement l'angle polaire entre l'observateur et la galaxie. 
-La distance propre est la longueur de l'arc qui est $D_p = a(t) \chi$ comme dans la géométrie habituelle. 
-La coordonnée $\sigma$ est liée à la longueur $b$ de la corde à cet angle $\chi$ par :
-\begin{equation}
-\sigma = \sin \chi = \frac{b}{a(t)}
-\end{equation}
-Notons également que $b$ est le rayon du cercle de colatitude $\chi$ : $b = a(t) \sin \chi$. 
-
-2. Avec la projection polaire, on voit que $\theta$ est l'angle délimitant un arc de taille $d$ et de rayon $b$, 
-le rayon du cercle de latitude de $\chi$. Ainsi :
-\begin{equation}
-\theta = \frac{d}{b} = \frac{d}{a(t) \sin \chi} = \frac{d}{a(t) \sigma}
-\end{equation}
-Dans un espace plat, $\sigma$ est clairement la coordonnée radiale de rapprochement entre l'observateur et les galaxies. 
-L'expression de $\theta$ dans le cas sphérique est cohérente avec celle dans le cas plat grâce au paramétrage $\sigma=f_k(\chi)$.
-
-En utilisant la métrique FLRW, avec l'[](#exo:conformal-time) nous avons également :
-\begin{equation}
-d = \int_0^d \dd d' = \int_0^\theta \sqrt{g_{\theta\theta}} a(t)\dd\theta = a(t) \int_0^\theta f_k(\chi) \dd\theta = a(t) \theta \sin\chi = a(t) \theta \sigma
-\end{equation}
-Donc $\theta = d / a(t) \sigma$.
-
-Il est facile de vérifier que nous avons les mêmes expressions dans le cas plat, et nous les admettrons dans la géométrie hyperbolique. 
-La coordonnée $\sigma$ est donc utile pour faire des calculs et des dessins dans le cas plat et traduire ces résultats dans les cas courbes (ce qui n'est pas si facile avec $\chi$).
-
-
-:::{figure} ../images/spherical_universe.svg
-:width: 100%
-:align: center
-    
-Géométrie dans un univers sphérique.
-:::
-
-```
-
-
-### Temps cosmique et temps conforme
-
-Le temps mérite une mention spéciale. Dans notre Univers idéal, sans surdensités ou sous-densités de matière, 
-toutes les horloges qui suivent l'expansion (c'est-à-dire sans mouvement propre) battent la seconde à la même cadence. 
-Avec un temps infini à notre disposition, nous pouvons proposer une convention commune pour synchroniser nos horloges : 
-par exemple, lorsque la température du CMB atteint une valeur donnée. Il est donc possible de définir un temps cosmique, 
-commun à tous les observateurs en chute libre {cite:p}`Weinberg1972` [p. 409]. 
-
-```{exercise} Temps conforme
-:label: exo:conformal-time
-
-Transformer la partie spatiale de la métrique FLRW dy système de coordonnées comobiles $(\sigma,\theta,\phi)$ [](#eq:FLRW-metric-spherical)
-au système de coordonnées comobiles équivalent $(\chi,\theta,\phi )$ avec $\chi$ la distance comobile. 
-Étendre cette transformation aux coordonnées temporelles et proposer une définition du temps conforme $\eta$ et l'écrire sous la forme :
-\begin{equation}
-\dd s^2 = a^2(t) \left[ -c^2 \dd\eta^2 + \dd\chi^2 + f_k^2(\chi)\dd\theta^2 + f_k^2(\chi)\sin^2\theta \dd\phi^2 \right]
-\end{equation}
-avec $f_k(\chi)$ une fonction de $k$ et $\chi$ à définir. 
-
-```
-
-```{solution} exo:conformal-time
-:label: exo:conformal-time-sol
-:class: dropdown
-
-On commence par la définition de la métrique FLRW :
-\begin{align}
-\dd s^2 & = -c^2\dd t^2 + a^2(t) \left[ \frac{\dd\sigma^2}{1-k\sigma^2} + \sigma^2\dd\theta^2 + \sigma^2 \sin^2\theta \dd\phi^2 \right]  \\
-& = -c^2\dd t^2 + a^2(t) \left[ \dd\chi^2 + \sigma^2\dd\theta^2 + \sigma^2 \sin^2\theta \dd\phi^2 \right] \\
-& = -c^2\dd t^2 + a^2(t) \left[ \dd\chi^2 + f_k^2(\chi)\dd\theta^2 +f_k^2(\chi) \sin^2\theta \dd\phi^2 \right]
-\end{align}
-avec $\dd\chi = \dd\sigma/\sqrt{1-k\sigma^2}$ et :
-\begin{equation}
-\sigma = f_k(\chi) = \left\lbrace\begin{array}{cl}
-    \sin\chi & \text{ si } k=+1  \\
-    \chi  & \text{ si } k=0 \\
-    \sinh\chi & \text{ si } k=-1 
-\end{array}
-\right.
-\end{equation}
-On définit $\dd\eta =  \dd t / a(t)$ le temps conforme, et on aboutit à :
-\begin{equation}
-\dd s^2 = a^2(t) \left[ -c^2 \dd\eta^2 + \dd\chi^2 + f_k^2(\chi)\dd\theta^2 + f_k^2(\chi)\sin^2\theta \dd\phi^2 \right]
-\end{equation}
-Le temps conforme $\eta$ possède la dimension d'une durée. 
-
-```
-
-
-
 Géodésiques dans la métrique FLRW
 ---------------------------------
 
@@ -584,7 +444,7 @@ Pour mesurer la valeur des différents paramètres de densité dans notre
 Univers, il faut avoir accès au paramètre d'échelle $a(t)$. Ceci est
 possible par la mesure du décalage spectral de la lumière venant de
 sources distantes. Dans la métrique FLRW, plaçons-nous par convention au
-centre $r=0$ (ou $\sigma=0$), et considérons un objet situé aux coordonnées comobiles
+centre ($\sigma=0$), et considérons un objet situé aux coordonnées comobiles
 $\left(\sigma_E,\theta_E,\phi_E\right)$, émettant un photon
 à l'instant $t_E$ (voir [](#fig:distances_croquis)). Pour ce photon, voyageant à la vitesse
 de la lumière, dans la métrique FLRW on a, à tout instant:
@@ -599,7 +459,7 @@ précédente on a la relation :
 ```{math}
 :label: eq:comobile
 
-\chi = \int_{t_E}^{t_0} \frac{c\dd t}{a(t)} =  -\int_{t_0}^{t_E} \frac{c\dd t}{a(t)} = \int_0^{\sigma_E}\frac{\dd\sigma}{\sqrt{1-k\sigma^2}} = \left\lbrace
+\int_{t_E}^{t_0} \frac{c\dd t}{a(t)} =  -\int_{t_0}^{t_E} \frac{c\dd t}{a(t)} = \int_0^{\sigma_E}\frac{\dd\sigma}{\sqrt{1-k\sigma^2}} = \left\lbrace
 \begin{array}{cl}
     \arcsin \sigma_E & \text{ si } k=+1 \\
     \sigma_E & \text{ si } k=0 \\
@@ -608,14 +468,7 @@ précédente on a la relation :
 \right. .
 ``` 
 avec $\dd \sigma < 0$ pour $\dd t > 0$ en considérant un photon allant de la source vers l'observateur en 0.
-On retrouve de nouveau la distance comobile, faisant abstraction des effets de l'expansion de l'Univers, mais cette-fois ci
-exprimée sela la variable $t$. 
 
-:::{note}
-D'ailleurs, en utilisant le temps conforme $\eta$ défini par $\dd \eta = \dd t / a(t)$, pour un photon on obtient :
-$$\chi = c \int_{\eta_E}^{\eta_0} \dd \eta = c (\eta_0 - \eta_E)$$
-donc on reconnait la relation traditionnelle entre distance et temps, mais dans l'espace comobile sans dimension.
-:::
 
 Pour une onde électromagnétique de période $T$,
 l'expression [](#eq:ds2_lumiere) étant valable à tout instant, on peut
@@ -711,16 +564,51 @@ où $h$ est usuellement défini par :
 $$H_0 = 100\,h\,\text{km/s/Mpc}$$
 Donc pour $h=0.7$, on trouve $D_H \approx 4.3 \,\text{Gpc}$. Cette valeur va apparaître pour toutes les distances (non comobiles) définies ci-après.
 
-### Distance comobile
 
-Soit un objet situé à la coordonnée comobile $\sigma$ et un observateur situé en 0.
+
+
+### Distance propre et distance comobile
+
+La _distance propre_ définit la distance physique entre deux objets à un instant $t$. Soit un objet émetteur situé aux coordonnées comobiles $(\sigma_E, \theta_E, \phi_E)$.
+Par définition, la distance propre entre cet objet et un observateur situé à l'origine est :
+```{math}
+:label: eq:dist-prop
+
+D_p(\sigma_E, t) = \int_0^{\sigma_E} \sqrt{g_{\sigma\sigma}}\dd\sigma' = \int_0^{\sigma_E}\frac{a(t)\dd\sigma'}{\sqrt{1-k\sigma'^2}} = a(t) \chi(\sigma_E)
+```
+où on fait apparaître $\chi(\sigma_E)$ la _distance comobile_ entre cet objet et l'observateur :
+```{math}
+:label: eq:dist-comobile
+
+\chi(\sigma_E) = \int_0^{\sigma_E}\frac{\dd\sigma'}{\sqrt{1-k\sigma'^2}} = \left\lbrace\begin{array}{cl}
+    \arcsin\sigma_E & \text{ si } k=+1  \\
+    \sigma_E  & \text{ si } k=0 \\
+    \text{arcsh}\,\sigma_E & \text{ si } k=-1 
+\end{array}
+\right.
+```
+On voit que la distance propre $D_p$ possède bien l'unité d'une longueur alors que la distance comobile est sans dimension. Cette dernière représente la distance
+dans l'espace des coordonnées et est indépendante de l'expansion de l'Univers. En revanche la distance propre évolue avec le facteur d'échelle.
+
+Réciproquement, on définit $f_k(\chi)$ ainsi :
+\begin{equation}
+\sigma = f_k(\chi) = \left\lbrace\begin{array}{cl}
+    \sin\chi & \text{ si } k=+1  \\
+    \chi  & \text{ si } k=0 \\
+    \sinh\chi & \text{ si } k=-1 
+\end{array}
+\right.
+\end{equation}
+
+
+Soit un objet situé à la coordonnée comobile $\sigma_E$ et un observateur situé en 0.
 La lumière voyage en suivant une géodésique, donc dans la métrique FLRW on a $\dd \theta=\dd \phi=0$ et :
-\begin{equation}\label{eq:ds2_lumiere}
-\dd \tau^2=0=c^2 \dd t^2-\frac{a^2(t)}{1-k\sigma^2}\dd\sigma^2.
+\begin{equation}
+\dd s^2=0=-c^2 \dd t^2+\frac{a^2(t)}{1-k\sigma^2}\dd\sigma^2.
  \end{equation} 
-Donc
-$$\dd\sigma/\sqrt{1-k\sigma^2} = - c \dd t/a(t)$$ 
-avec le photon voyageant le long de la direction $\dd \sigma<0$ pour $\dd t > 0$. La distance comobile s'écrit :
+Donc :
+$$\frac{\dd\sigma}{\sqrt{1-k\sigma^2}} = - \frac{c \dd t}{a(t)}$$ 
+avec le photon voyageant le long de la direction $\dd \sigma<0$ pour $\dd t > 0$. La distance comobile se réécrit :
 \begin{equation}
 \chi(\sigma_E) =  \int_0^{\sigma_E}\frac{\dd\sigma}{\sqrt{1-k\sigma^2}} = \int_{t_0}^{t_E} -\frac{c\dd t'}{a(t')}= \int_{t_E}^{t_0} \frac{c\dd t'}{a(t')} = \chi(t_E)
 \end{equation}
@@ -759,23 +647,13 @@ Dans cette paramétrisation, la valeur de $a_0$ est égale au rayon de l'univers
 \right.}
 \end{equation}
 
-### Distance propre
-
 
 La distance propre est la distance que l'on pourrait mesurer
 effectivement à un instant $t$ entre deux objets. Sans perdre en généralité,
 on peut choisir un objet situé à la coordonné comobile $\sigma_E$ et un observateur comobile en 0.
-La distance propre aujourd'hui à $t_0$ est alors définie naturellement selon une ligne $\dd \theta = \dd \phi=0$ par :
-$$D_p(t_0) \equiv \int_{0}^{\sigma_E} \sqrt{-g_{\sigma\sigma}}\dd \sigma' = \int_{0}^{\sigma_E}\frac{a(t_0) \dd \sigma'}{\sqrt{1-k\sigma'^2}} = a(t_0)\chi(t_E) = a(t_0)\left\lbrace
-\begin{array}{cl}
-    \arcsin \sigma_E & \text{ si } k=+1 \\
-    \sigma_E & \text{ si } k=0 \\
-    \text{arcsh } \sigma_E & \text{ si } k=-1 
-\end{array}
-\right. ,$$ 
-et s'exprime bien en unités de longueur. Cette distance s'exprime simplement en fonction du décalage spectral :
-$$D_p(z)=a_0\chi(z)=\int_0^z\frac{c \dd z}{H(z)}.$$ 
-pour les trois cas de courbure. La notion de distance propre est illustrée [](#fig:distances).
+En terme de redshift, la distance propre aujourd'hui à $t_0$ s'écrit alors simplement pour les trois cas de courbure :
+$$D_p(z) = a(t_0)\chi(z) =\int_0^z\frac{c \dd z}{H(z)} $$
+et s'exprime bien en unités de longueur. La notion de distance propre est illustrée [](#fig:distances).
 
 
 ```{figure} ../images/distances.svg
@@ -790,6 +668,64 @@ $a(t) \sigma$. (c) Distance propre dans un espace
 sphérique.
 ```
 
+
+```{exercise} Coordonnées comobiles sur la sphère
+:label: exo:sphere-comobile
+
+Pour se créer une intuition sur la géométrie courbe et les coordonnées comobiles, nous allons étudier une sphère 2D de rayon $a(t)$. 
+Sur cette sphère, les coordonnées sont données par l'angle polaire $\chi$ et la longitude $\theta$ (la coordonnée $\phi$ est donc omise par rapport au cas FLRW). 
+Considérons qu'un observateur est situé en $(\chi,\theta)=(0, 0)$ et une galaxie en $(\chi, 0)$. 
+
+1. Représenter une sphère et tracer le méridien $\theta = 0$. Placer les quantités suivantes : l'observateur, la galaxie, $a(t)$, $\chi$, la distance propre entre l'observateur et la galaxie $D_p$. 
+Relier ces quantités à la coordonnée $\sigma$ et à l'expression de $D_p$.
+
+
+2. Considérons maintenant deux galaxies à la même coordonnées $\chi$, séparées par la distance physique $d$. Montrer que l'angle $\theta$ 
+($\theta \ll 1$) sous lequel elles sont observées sur la sphère est $\theta = d / (a(t) \sigma)$.
+
+```
+
+```{solution} exo:sphere-comobile
+:label: exo:sphere-comobile-sol
+:class: dropdown
+
+1. La coordonnée comobile $\chi$ est explicitement l'angle polaire entre l'observateur et la galaxie. 
+La distance propre est la longueur de l'arc qui est $D_p = a(t) \chi$ comme dans la géométrie habituelle. 
+La coordonnée $\sigma$ est liée à la longueur $b$ de la corde à cet angle $\chi$ par :
+\begin{equation}
+\sigma = \sin \chi = \frac{b}{a(t)}
+\end{equation}
+Notons également que $b$ est le rayon du cercle de colatitude $\chi$ : $b = a(t) \sin \chi$. 
+
+2. Avec la projection polaire, on voit que $\theta$ est l'angle délimitant un arc de taille $d$ et de rayon $b$, 
+le rayon du cercle de latitude de $\chi$. Ainsi :
+\begin{equation}
+\theta = \frac{d}{b} = \frac{d}{a(t) \sin \chi} = \frac{d}{a(t) \sigma}
+\end{equation}
+Dans un espace plat, $\sigma$ est clairement la coordonnée radiale de rapprochement entre l'observateur et les galaxies. 
+L'expression de $\theta$ dans le cas sphérique est cohérente avec celle dans le cas plat grâce au paramétrage $\sigma=f_k(\chi)$.
+
+En utilisant la métrique FLRW, avec l'[](#exo:conformal-time) nous avons également :
+\begin{equation}
+d = \int_0^d \dd d' = \int_0^\theta \sqrt{g_{\theta\theta}} a(t)\dd\theta = a(t) \int_0^\theta f_k(\chi) \dd\theta = a(t) \theta \sin\chi = a(t) \theta \sigma
+\end{equation}
+Donc $\theta = d / a(t) \sigma$.
+
+Il est facile de vérifier que nous avons les mêmes expressions dans le cas plat, et nous les admettrons dans la géométrie hyperbolique. 
+La coordonnée $\sigma$ est donc utile pour faire des calculs et des dessins dans le cas plat et traduire ces résultats dans les cas courbes (ce qui n'est pas si facile avec $\chi$).
+
+
+:::{figure} ../images/spherical_universe.svg
+:width: 100%
+:align: center
+    
+Géométrie dans un univers sphérique.
+:::
+
+```
+
+
+
 :::{warning}
 
 Ni la distance propre ni la distance comobile ne sont mesurables car elles supposent de pouvoir s'affranchir de l'expansion de l'Univers. 
@@ -800,7 +736,7 @@ l'observation des flux lumineux $\Phi$ et des tailles angulaires $\delta$ :
 $$
 \Phi = \frac{L}{4\pi D_L^2}, \qquad \delta = \frac{l}{D_A}
 $$
-où $L$ est la luminosité intrinsèque d'un objet et $l$ une taille angulaire.
+où $L$ est la luminosité intrinsèque d'un objet (en W) et $l$ une taille angulaire.
 
 :::
 
@@ -903,6 +839,65 @@ avec $cz$ la vitesse apparente de récession par rapport à la Terre.
 
 
 :::
+
+
+
+Temps cosmique et temps conforme
+--------------------------------
+
+Le temps mérite une mention spéciale. Dans notre Univers idéal, sans surdensités ou sous-densités de matière, 
+toutes les horloges qui suivent l'expansion (c'est-à-dire sans mouvement propre) battent la seconde à la même cadence. 
+Avec un temps infini à notre disposition, nous pouvons proposer une convention commune pour synchroniser nos horloges : 
+par exemple, lorsque la température du CMB atteint une valeur donnée. Il est donc possible de définir un temps cosmique, 
+commun à tous les observateurs en chute libre {cite:p}`Weinberg1972` [p. 409]. 
+
+
+:::{note}
+D'ailleurs, en utilisant le temps conforme $\eta$ défini par $\dd \eta = \dd t / a(t)$, pour un photon on obtient :
+$$\chi = c \int_{\eta_E}^{\eta_0} \dd \eta = c (\eta_0 - \eta_E)$$
+donc on reconnait la relation traditionnelle entre distance et temps, mais dans l'espace comobile sans dimension.
+:::
+
+
+```{exercise} Temps conforme
+:label: exo:conformal-time
+
+Transformer la partie spatiale de la métrique FLRW dy système de coordonnées comobiles $(\sigma,\theta,\phi)$ [](#eq:FLRW-metric-spherical)
+au système de coordonnées comobiles équivalent $(\chi,\theta,\phi )$ avec $\chi$ la distance comobile. 
+Étendre cette transformation aux coordonnées temporelles et proposer une définition du temps conforme $\eta$ et l'écrire sous la forme :
+\begin{equation}
+\dd s^2 = a^2(t) \left[ -c^2 \dd\eta^2 + \dd\chi^2 + f_k^2(\chi)\dd\theta^2 + f_k^2(\chi)\sin^2\theta \dd\phi^2 \right]
+\end{equation}
+avec $f_k(\chi)$ une fonction de $k$ et $\chi$ à définir. 
+
+```
+
+```{solution} exo:conformal-time
+:label: exo:conformal-time-sol
+:class: dropdown
+
+On commence par la définition de la métrique FLRW :
+\begin{align}
+\dd s^2 & = -c^2\dd t^2 + a^2(t) \left[ \frac{\dd\sigma^2}{1-k\sigma^2} + \sigma^2\dd\theta^2 + \sigma^2 \sin^2\theta \dd\phi^2 \right]  \\
+& = -c^2\dd t^2 + a^2(t) \left[ \dd\chi^2 + \sigma^2\dd\theta^2 + \sigma^2 \sin^2\theta \dd\phi^2 \right] \\
+& = -c^2\dd t^2 + a^2(t) \left[ \dd\chi^2 + f_k^2(\chi)\dd\theta^2 +f_k^2(\chi) \sin^2\theta \dd\phi^2 \right]
+\end{align}
+avec $\dd\chi = \dd\sigma/\sqrt{1-k\sigma^2}$ et :
+\begin{equation}
+\sigma = f_k(\chi) = \left\lbrace\begin{array}{cl}
+    \sin\chi & \text{ si } k=+1  \\
+    \chi  & \text{ si } k=0 \\
+    \sinh\chi & \text{ si } k=-1 
+\end{array}
+\right.
+\end{equation}
+On définit $\dd\eta =  \dd t / a(t)$ le temps conforme, et on aboutit à :
+\begin{equation}
+\dd s^2 = a^2(t) \left[ -c^2 \dd\eta^2 + \dd\chi^2 + f_k^2(\chi)\dd\theta^2 + f_k^2(\chi)\sin^2\theta \dd\phi^2 \right]
+\end{equation}
+Le temps conforme $\eta$ possède la dimension d'une durée. 
+
+```
 
 
 
