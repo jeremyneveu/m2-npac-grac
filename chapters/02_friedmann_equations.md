@@ -398,7 +398,7 @@ doubler, alors la densité de matière est bien divisée par $2^3$.
 ### Photons et neutrinos
 
 Pour la matière relativiste (photons, neutrinos), 
-$$p_r =  \frac{1}{3} \epsilon_r,$$
+$$P_r =  \frac{1}{3} \epsilon_r,$$
 donc :
 $$\label{eq:conservation_energie_radiation}
 \dot{\epsilon}_r = -4 H\epsilon_r \Rightarrow \epsilon_r = \epsilon_r^0 \left(\frac{a_0}{a}\right)^{4}.
@@ -513,7 +513,7 @@ $$
     extérieur d'où $p_m=0$ donc $w_m=0$.
 
 -   La matière relativiste exerce quant à elle une pression sur son
-    milieu de valeur $p_r =  \epsilon_r / 3 $ d'où $w_r=1/3$.
+    milieu de valeur $P_r =  \epsilon_r / 3 $ d'où $w_r=1/3$.
 
 -   Pour la constante cosmologique, on a $p_\Lambda = - \epsilon_\Lambda$ donc son équation d'état est
     constante et négative $w_\Lambda = -1$.
@@ -582,7 +582,7 @@ afin de mesurer les variations de l'accélération de l'expansion de l'Univers.
 
 1. Démontrer la formule [](#eq:conservation_energie).
 2. Trouver l'évolution de la densité de matière $\rho_m$ en fonction de $a$. Même question pour la densité de rayonnement $\rho_r$. 
-On rappelle que $p_m=0$ pour la matière non relativiste et $p_r=\epsilon_r/3$ pour le rayonnement.
+On rappelle que $p_m=0$ pour la matière non relativiste et $P_r=\epsilon_r/3$ pour le rayonnement.
 3. A partir d'un raisonnement sur un cube comobile qui se dilate, avec des arguments physiques sur des nombres de galaxies,
 retrouvez le même résultat.
 4. Pour un fluide parfait dont l'équation d'état $w$ est constante ($p=w\rho c^2$), donner l'évolution de sa densité d'énergie.
@@ -622,7 +622,7 @@ En ce qui concerne la matière non relativiste, $p_m=0$ donc :
 \begin{equation}
 \frac{\dd\rho_m}{\rho_m} = -3 \frac{\dd a}{a} \Rightarrow \rho_m(a) = \rho_m^0 \left(\frac{a_0}{a}\right)^3
 \end{equation}
-En ce qui concerne le rayonnement, $p_r=\rho_r c^2 / 3$ donc :
+En ce qui concerne le rayonnement, $P_r=\rho_r c^2 / 3$ donc :
 \begin{equation}
 \frac{\dd\rho_r}{\rho_r} = -4 \frac{\dd a}{a} \Rightarrow \rho_r(a) = \rho_r^0 \left(\frac{a_0}{a}\right)^4
 \end{equation}

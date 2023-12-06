@@ -143,7 +143,7 @@ $\delta R$ du rayon de l'univers et $\delta \rho$ de la densité de matière pou
 
 
 :::{solution} exo:einstein_first
-1. Pour un univers avec seulement de la matière non relativiste, $p_m=0$. S'il est statique, alors $\ddot{a}=\dot{a}=0$ et la seconde équation de Friedmann s'écrit donc :
+1. Pour un univers avec seulement de la matière non relativiste, $P_m=0$. S'il est statique, alors $\ddot{a}=\dot{a}=0$ et la seconde équation de Friedmann s'écrit donc :
 \begin{equation}
 \frac{c^2 k}{a^2}=c^2 \Lambda
 \end{equation}
