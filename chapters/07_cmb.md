@@ -465,10 +465,9 @@ $\xi \ll x$ et nous pouvons développer : $(x^2 + \xi^2)^{1/2} \approx x (1 + \f
 :::
 
 
-
 ### Nombre effectif d'espèces relativistes
 
-Nous partons d'un plasma primordial en équilibre thermique et chimique. Toutes les espèces $i$ partagent la même température que nous notons $T_i = T$, avec $T$ la température du bain de photons.
+Nous partons d'un plasma primordial en équilibre thermique et chimique, contenant des espèces $i$ à la température $T_i$.
 
 Avant l'équivalence, le taux d'expansion est une fonction directe de la densité massique de matière relativiste :
 \begin{equation}
@@ -476,7 +475,7 @@ Avant l'équivalence, le taux d'expansion est une fonction directe de la densit�
 \end{equation}
 où $\rho_r(T)$ est la somme des densités de chaque espèce relativiste présente dans le fluide primordial :
 \begin{equation}
-  \rho_r(T) = \sum_i \rho_i(T)
+  \rho_r(T) = \sum_i^{m_i \ll T} \rho_i(T)
 \end{equation}
 Nous avons vu dans la section précédente que $\rho_i \propto T_i^4$ tant que la particule reste relativiste, et chute exponentiellement quand la température tombe en dessous de la masse de la particule. Plus précisément, nous pouvons écrire
 \begin{align*}
@@ -518,7 +517,7 @@ Ou, de manière équivalente, nous pouvons dériver l'évolution de l'énergie t
 \begin{equation}
   \boxed{E \approx [2\ \mathrm{MeV}]\ \left(\frac{t}{\mathrm{1\ sec}}\right)^{-1/2}}  
 \end{equation}
-Ainsi, lorsque l'Univers était âgé d'une seconde, l'énergie typique des particules était de l'ordre de 1 MeV.
+Ainsi, lorsque l'Univers était âgé d'une seconde, l'énergie typique des particules était de l'ordre de 2 MeV.
 
 
 #### Évolution de $g_\star(T)$
@@ -528,13 +527,13 @@ Ainsi, lorsque l'Univers était âgé d'une seconde, l'énergie typique des part
 :name: tab:gtable
 :::
 
-La dernière pièce manquante est l'évolution de $g_\star(T)$, qui raconte simplement l'évolution de la matière relativiste du plasma primordial au fur et à mesure qu'il se refroidit avec l'expansion. Commençons autour de $T \leq 100 $GeV. Toutes les particules du modèle standard sont relativistes (voir [](tab:gtable)). Lorsque toutes les particules sont relativistes, le nombre total de degrés de liberté est de :
+La dernière pièce manquante est l'évolution de $g_\star(T)$, qui raconte simplement l'évolution de la matière relativiste du plasma primordial au fur et à mesure qu'il se refroidit avec l'expansion. Commençons autour de $T \approx 300\,$GeV. Toutes les particules du modèle standard sont relativistes (voir [](tab:gtable)). Lorsque toutes les particules sont relativistes, le nombre total de degrés de liberté est de :
 \begin{equation}
   g_f = \underbrace{6 \times 12}_{\mathrm{quarks}} + \underbrace{3 \times 4}_{\ell^\pm} + \underbrace{3 \times 2}_{\nu's} = 90
 \end{equation}
 pour les fermions, et
 \begin{equation}
-  g_b = \underbrace{8 \times 2}_{g_i's} + \underbrace{3 \times 3}_{W,Z} + \underbrace{2}_{\gamma} + \underbrace{1}_{H}  = 28
+  g_b = \underbrace{8 \times 2}_{gluons} + \underbrace{3 \times 3}_{W,Z} + \underbrace{2}_{\gamma} + \underbrace{1}_{H}  = 28
 \end{equation}
 pour les bosons, ce qui donne
 \begin{equation}
@@ -554,7 +553,7 @@ L'événement suivant est la transition de phase QCD, qui se produit à $T \sim 
 
 Ensuite, les pions et les muons s'annihilent, ce qui nous donne
 \begin{equation}
-  g_\star = 2 + \frac{7}{8} \times (4 + 6) = 10,75
+  g_\star = 2 + \frac{7}{8} \times (4 + 6) = 10.75
 \end{equation}
 
 :::{figure} #ggstar_plot
@@ -567,8 +566,10 @@ Les deux événements significatifs suivants sont le découplage des neutrinos a
 ### Conservation de l'entropie
 
 
-L'entropie de l'Univers ne peut qu'augmenter ou rester constante. Nous savons qu'à l'équilibre, l'entropie est conservée (voir encadré).  Le plasma primordial n'est pas {\em exactement} à l'équilibre\footnote{c'est heureux, sinon, nous ne serions pas là pour réfléchir à tout cela} : l'expansion n'en fait qu'un équilibre local, nous verrons de nombreux exemples de processus hors équilibre dans la suite de l'article.  Cependant, comme l'entropie est au premier ordre proportionnelle au nombre de particules, et que les photons sont de loin l'espèce la plus abondante dans l'Univers, nous pouvons supposer sans risque que l'entropie est conservée, et que, à une très grande précision, l'expansion cosmique est un processus adiabatique.
+L'entropie de l'Univers ne peut qu'augmenter ou rester constante. Nous savons qu'à l'équilibre, l'entropie est conservée (voir encadré).  Le plasma primordial n'est pas _exactement_ à l'équilibre\footnote{c'est heureux, sinon, nous ne serions pas là pour réfléchir à tout cela} : l'expansion n'en fait qu'un équilibre local, nous verrons de nombreux exemples de processus hors équilibre dans la suite de l'article.  Cependant, comme l'entropie est au premier ordre proportionnelle au nombre de particules, et que les photons sont de loin l'espèce la plus abondante dans l'Univers, nous pouvons supposer sans risque que l'entropie est conservée, et que, à une très grande précision, l'expansion cosmique est un processus adiabatique.
 
+
+XXXXX VOIR NOTES PAPIER XXXXX
 Comment calculer l'entropie totale de l'Univers ? Nous pouvons commencer par :
 \begin{equation}
   E = TS -PV + \sum_i \mu_i N_i
@@ -619,7 +620,7 @@ Dans les intervalles entre les masses des particules, $g_\star(T)$ reste pratiqu
   \boxed{T \propto \left[g_\star(T) a\right]^{-1}}
 \end{equation}
 Durant un intervalle de temps où le nombre d'espèces relativistes est constant, la température décroît en $1/a$. Cependant, lorsqu'une espèce devient non relativiste, $g_\star(T)$ diminue et la pente de la relation entre $T$ et $a^{-1}$ change. L'évolution de la température avec le facteur d'échelle dans l'Univers jeune est donc une fonction continue de fonctions hyperboles dont le facteur de proportionnalité croit avec le temps.
-
+XXXXX ETUDIER LE LIEN DE CETTE FORMULE AVEC LA PRECEDENTE LIANT T t et a XXXXX
 
 Histoire de la matière dans l'Univers jeune
 --------------------------------------
@@ -642,10 +643,11 @@ Le découplage des neutrinos est notre première expérience de freeze-out.  Les
 \begin{equation}
   \begin{split}
     \nu_e + p & \rightleftharpoons p + e^- \\
-    \nu_e + \bar{\nu_e} & \rightleftharpoons e^+ + p^- \\
-    e^- + \nu_e & \rightleftharpoons e^+ + \nu_e \\    
+    \nu_e + \bar{\nu_e} & \rightleftharpoons e^+ + e^- \\
+    e^- + \nu_e & \rightleftharpoons e^- + \nu_e \\    
   \end{split}
 \end{equation}
+XXXXXX BIZARRE VOIR WEINBERG XXXXX
 Cependant, à ces énergies, la section efficace de l'interaction faible est $\sigma_w \sim G_F^2 T^2$, par conséquent, le taux d'interaction $\Gamma = n_e \sigma_w c \propto G_F^2 T^5$ diminue beaucoup plus rapidement que le paramètre de Hubble ($\propto T^2$).  Autour de 1 MeV, $\Gamma \sim H$ et les interactions entre les neutrinos et les autres particules du SM deviennent très improbables.  Les neutrinos se découplent et se déplacent librement le long des géodésiques.
 
 
@@ -679,7 +681,7 @@ avec $\mu_0 \equiv \frac{a_1}{a_0} \mu_1$ et $T_0 \equiv \frac{a_1}{a_0} T_1$.
 
 Peu après le découplage des neutrinos vers 1 MeV, les électrons et les positrons s'anihilent (511 keV).  Naïvement, on pourrait dire que $g_\star(T)$ devient alors :
 $$
-2 + \frac{7}{8} \times 6 = 7,25
+2 + \frac{7}{8} \times 6 = 7.25
 $$
 mais la Nature est plus subtile.  En effet, l'anihilation électron-positron produit suffisamment d'énergie et d'entropie pour chauffer le bain de photons et modifier la température des photons.  Les neutrinos ne sont pas affectés et leur température varie toujours comme $a^-1$.  Par conséquent, après l'anihilation de $e^+-e^-$, nous avons $T_\nu < T_\gamma$.
 
@@ -689,17 +691,19 @@ Nous nous trouvons donc dans une nouvelle situation où nous avons plusieurs esp
 \end{equation}
 Pour aller plus loin, nous devons déterminer $T_\nu$, ou plus exactement, relier $T_\nu$ et $T_\gamma$ (nous connaissons assez bien $T_\gamma$). La façon la plus simple de le faire est d'utiliser la conservation de l'entropie.
 
-
-
 ### La température du fond diffus de neutrinos
 
+
+XXXX VOIR COMMENT COMPTER LES ETATS DES NEUTRINOS : 1 ou 2 états de spin ? => d'après quelques lectures ce serait bien 1 état de spin XXXXX
+XXXXX DAPRES un seminaire réunion du vendredi, si les neutrinos sont sans masse alors il n'y a qu'un état de spin possible sur les deux (comme pour les photons) XXXXXX
+XXXXX MAIS D'APRES PIERRE ASTIER, en pratique il fuat compter deux états car on sait qu'ils ont une masse, même inconnue XXXX
 Revenons à la détermination de la relation entre la température des photons et la température du fond de neutrinos cosmiques.
 cosmique. Lors de l'annihilation, l'entropie et l'énergie du $e^\pm$ sont transférées au bain de photons. L'entropie étant conservée, nous avons, avant l'annihilation, démonté l'entropie des neutrinos (qui est conservée) :
 \begin{equation}
   g^\gamma_{\star S, \mathrm{before}}(T) = 2 + \frac{7}{8} (4) = \underbrace{\frac{11}{2}}_{e^\pm, \gamma} 
 \end{equation}
 après annihilation : 
-\begin{enumerate}
+\begin{equation}
   g^\gamma_{{star S, \mathrm{after}}(T) = 2 
 \end{equation}
 En écrivant la conservation de l'entropie, nous avons :
