@@ -40,9 +40,8 @@ Les équations de la physique classique sont valables en utilisant des quantité
 Nous avons les relations suivantes :
 \begin{align}
 \mathbf{r}& =a(t) \mathbf{x} \\ \notag
-\mathbf{v_r}& =\dot{a}\mathbf{x}+a \mathbf{v_x}
-\label{vel-rel}
-\end{equation}
+\mathbf{v_r}& =\dot{a}\mathbf{x}+a \mathbf{v_x} \label{vel-rel}
+\end{align}
 
 Bien que le flot de Hubble (premier terme de [](#vel-rel)) ne doive pas être considéré comme une vitesse réelle, il apparaît dans la relation entre $\mathbf{v_r}$ et $\mathbf{v_x}$. Cela poserait un problème si elle pouvait prendre des valeurs de l'ordre de $c$ (ou plus grandes). Mais la condition selon laquelle $\mathbf{x} \ll R_H$ garantit que $\dot{a}\mathbf{x} \ll c$. 
 

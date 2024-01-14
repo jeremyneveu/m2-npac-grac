@@ -191,15 +191,13 @@ La densité volumique de particules d'impulsion comprise entre $p$  et $p+\dd p$
 \end{equation}
 
 La densité volumique particulaire du gaz est:
-\begin{equation}
+\begin{equation}\label{eqn:number_density_general}
   \boxed{n = \frac{1}{(2\pi\hbar)^3} \int \dd^3\mathbf{p} f(p)}
-  \label{eqn:number_density_general}
 \end{equation}
 
 Pour la densité d'énergie, il suffit de faire la somme des énergies des particules pondérées la fonction de distribution : 
-\begin{equation}
+\begin{equation}\label{eqn:energy_density_general}  
   \boxed{\epsilon = \rho c^2 = \frac{1}{(2\pi\hbar)^3} \int \dd^3\mathbf{p} f(p) \sqrt{p^2c^2 + m^2 c^4}}
-  \label{eqn:energy_density_general}  
 \end{equation}
 
 :::{note}
@@ -211,9 +209,8 @@ décrits ci-dessus.
 :::
 
 Nous pouvons obtenir de la même manière la pression du gaz : 
-\begin{equation}
+\begin{equation}\label{eqn:pression_generale}
   \boxed{P = \frac{1}{(2\pi\hbar)^3} \int \dd^3\mathbf{p} f(p) \frac{p^2}{3E}}
-  \label{eqn:pression_générale}
 \end{equation}
 
 
@@ -344,7 +341,7 @@ En résumé:
 ### Densité et pression des fermions et bosons
 
 
-Nous avons maintenant tout ce qu'il faut pour calculer la densité particulaire, la densité d'énergie et la pression des constituants de l'Univers. Les potentiels chimiques peuvent être négligés à haute température ($\mu \ll T$), et les équations [](#eqn:number_density_general), [](#eqn:densité_énergétique_générale) et [](#eqn:pression_générale) peuvent être réécrites :
+Nous avons maintenant tout ce qu'il faut pour calculer la densité particulaire, la densité d'énergie et la pression des constituants de l'Univers. Les potentiels chimiques peuvent être négligés à haute température ($\mu \ll T$), et les équations [](#eqn:number_density_general), [](#eqn:energy_density_general) et [](#eqn:pression_generale) peuvent être réécrites :
 \begin{equation}
   \begin{split}
     n &= \frac{g}{2\pi^2\hbar^3} \int \dd p \frac{p^2}{\exp\left(\sqrt{p^2c^2 + m^2 c^4}/k_B T\right) \pm 1} \\
@@ -790,29 +787,31 @@ $$
 avec $f_i(E_i)$ les distributions de Fermi-Dirac des particules $i$ et :
 $$\vert \mathcal{M} \vert ^2 \propto G_F^2 ( 1+ 3g_A^2)$$
 avec $G_F = 1.16\times 10^{-5}  \,\GeV^{-2}$ la constante de Fermi et $g_A = 1.26$ le couplage axial-vecteur des nucléons ({cite}`KolbTurner` p.91). Malheureusement ces intégrales doivent être calculées précisément pour obtenir la bonne proportion d'hélium, car on va voir que la proportion de neutron gèle à une température proche de $Q$ et $m_e$, ce qui empêche de faire des approximations brutales pour se concentrer sur un régime de haute ou basse énergie. Une méthode d'intégration numérique est proposée dans {cite}`Dodelson2003` p.67  et {cite}`Bernstein1989` en définissant la proportion de neutron $X_n = n_n / n_b = n_n / (n_n + n_p)$ :
-$$ \frac{\dd X_n}{\dd t} = \Gamma_{np} \left[(1-X_n)e^{-Q_n / k_B T} - X_n\right] - \frac{X_n}{\tau_n} \label{eq:Xn} $$
+\begin{equation}\label{eq:Xn}
+\frac{\dd X_n}{\dd t} = \Gamma_{np} \left[(1-X_n)e^{-Q_n / k_B T} - X_n\right] - \frac{X_n}{\tau_n} 
+\end{equation}
 avec le taux de réaction :
 \begin{equation}\label{eq:Gnp} 
 \Gamma_{np}(x) = \frac{255}{\tau_n x^5}(12+6x+x^2), \quad x= \frac{Q_n}{k_B T}
 \end{equation}
 Après intégration numérique avec comme condition initiale et relation température-temps :
 $$X_n(t \approx 0.1\,\mathrm{s}) = \frac{1}{1+e^(-Q_n / k_B T(t))},\quad T(t) = 1.0\times 10^{10} \left(\frac{t}{1\,\mathrm{s}}\right)^{-2}, \quad g_*=10.75$$
-on obtient la figure [](#fog:BBN_Xn), convergeant vers $X_n^{\mathrm{freeze}} = 0.15$, soit 1 neutron pour 6 protons[^Tfreeze] si $\tau_n$ la désintégration spontanée du neutron est omise ($\tau_n \to \infty$). 
+on obtient la figure [](#fig:BBN_Xn), convergeant vers $X_n^{\mathrm{freeze}} = 0.15$, soit 1 neutron pour 6 protons[^Tfreeze] si $\tau_n$ la désintégration spontanée du neutron est omise ($\tau_n \to \infty$). 
 
 :::{figure} #BBN_Xn
 :name: fig:BBN_Xn
 :width: 70%
 
-Fraction de neutrons $X_n$ en fonction du temps calculé par l'équation [](#Xn) pendant la recombinaison (trait plein). Si la désintégration du neutron est négligée, alors on obtient la courbe en pointillé ($\tau \to \infty$). La distribution d'équilibre $\left.n_n/n_p\right\vert_{eq}$ donne la proportion de neutrons si les réactions ne sont pas gelées par l'expansion de l'Univers.
+Fraction de neutrons $X_n$ en fonction du temps calculé par l'équation [](#eq:Xn) (trait plein). Si la désintégration du neutron est négligée, alors on obtient la courbe en pointillé ($\tau \to \infty$). La distribution d'équilibre $\left.n_n/n_p\right\vert_{eq}$ donne la proportion de neutrons si les réactions ne sont pas gelées par l'expansion de l'Univers.
 :::
 
-La proportion de neutrons $X_n$ converge vers un plateau tant que $t \lesssim \tau_n$ après la température $T_{\mathrm{freeze}}= 0.7\,\MeV$ pour laquelle le taux d'intéraction $\Gamma_{np}(T)$ est comparable au taux d'expansion $H(T)$ ([](#Gnp))
+La proportion de neutrons $X_n$ converge vers un plateau tant que $t \lesssim \tau_n$ après la température $T_{\mathrm{freeze}}= 0.7\,\MeV$ pour laquelle le taux d'intéraction $\Gamma_{np}(T)$ est comparable au taux d'expansion $H(T)$ ([](#eq:Gnp))
 
 :::{figure} #BBN_Gnp
 :name: fig:BBN_Gnp
 :width: 70%
 
-Fraction de neutrons $X_n$ en fonction du temps calculé par l'équation [](#Xn) pendant la recombinaison (trait plein). Si la désintégration du neutron est négligée, alors on obtient la courbe en pointillé ($\tau \to \infty$). La distribution d'équilibre $\left.n_n/n_p\right\vert_{eq}$ donne la proportion de neutrons si les réactions ne sont pas gelées par l'expansion de l'Univers.
+Fraction de neutrons $X_n$ en fonction du temps calculé par l'équation [](#eq:Xn) pendant la recombinaison (trait plein). Si la désintégration du neutron est négligée, alors on obtient la courbe en pointillé ($\tau \to \infty$). La distribution d'équilibre $\left.n_n/n_p\right\vert_{eq}$ donne la proportion de neutrons si les réactions ne sont pas gelées par l'expansion de l'Univers.
 :::
 
 #### Synthèse du deutérium
@@ -868,13 +867,13 @@ En terme de masse, l'abondance d'hélium 4 dans l'Univers à la fin de la nuclé
 \begin{equation}
 \boxed{Y_p \equiv \frac{\rho(^4\mathrm{He})}{\rho_b} = \frac{4n_\mathrm{He}}{n_n + n_p} \approx 25\%}
 \end{equation}
-en bon accord avec les mesures (voir Figure~[](#fig:BBN). Des calculs plus précis donnent $Y_p$ autour de 24%, et notamment prédisent aussi la proportion des autres noyaux légers comme le deutérium après $t_{\mathrm{nuc}}$, le lithium, etc.
+en bon accord avec les mesures (voir Figure~[](#fig:BBN_mes). Des calculs plus précis donnent $Y_p$ autour de 24%, et notamment prédisent aussi la proportion des autres noyaux légers comme le deutérium après $t_{\mathrm{nuc}}$, le lithium, etc ([](#fig:BBN)).
 
 
 ```{figure} ../images/bbn.png
 :width: 80%
 :align: center
-:label:fig:BBN
+:label: fig:BBN
 
 Synthèse des éléments légers dans l'Univers primordial (d'après {cite}`PospelovBBN2010`).
 ```
@@ -883,7 +882,7 @@ Synthèse des éléments légers dans l'Univers primordial (d'après {cite}`Posp
 ```{figure} ../images/bbn_Yp.png
 :width: 80%
 :align: center
-:label:fig:BBN
+:label: fig:BBN_mes
 
 Comparaison entre les prédictions théoriques pour les abondances des noyaux légers (bandes colorées) et les mesures (bandes grises) (d'après {cite}`Baumann`).
 ```
@@ -935,7 +934,7 @@ Fraction d'ionisation $X_e$ en fonction du redshift pendant la recombinaison.
 
 Pendant encore un certain temps, les photons restent couplés à la petite fraction d'électrons libres par la diffusion Thomson :
 $$ e^- + \gamma \rightleftharpoons e^- + \gamma $$
-Le taux d'interaction est donné par (voir section [](#lpm_thomson)) :
+Le taux d'interaction est donné par (voir section [](#eq:lpm_thomson)) :
 $$\Gamma_\gamma = n_e \sigma_T c = n_b X_e \sigma_T c=  \frac{2\zeta(3)}{\pi^2} \eta  \sigma_T c\left(\frac{k_B T}{\hbar c}\right)^3$$
 avec la section efficace de la diffusion Thomson :
 $$\sigma_T = 0.665\,\mathrm{barns} = 6.65\times 10^{-29}\,\mathrm{m}^2$$
@@ -967,7 +966,7 @@ C'est un des six paramètres du modèle standard $\Lambda$CDM. En effet, après 
 ```{figure} ../images/tau_history.png
 :width: 80%
 :align: center
-:label:fig:BBN
+:label: fig:tau
 
 The optical depth to reionization $\tau$ (d'après [](https://lambda.gsfc.nasa.gov/education/graphic_history/taureionzation.html), image credit: NASA / LAMBDA Archive Team).
 ```

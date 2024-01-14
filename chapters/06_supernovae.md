@@ -357,4 +357,4 @@ Montrer que dans la diagramme précédent on ne peut pas mesurer H_0 car dégén
 
 [^bolo]: Un capteur bolométrique est capable d'absorber des photons et de mesurer leur énergie peu importe leur longueur d'onde (par exemple en mesurant l'échauffement d'un matériau). A contrario, un capteur photonique basé sur l'effet photoélectrique devient transparent dans les grandes longueurs d'ondes, lorsque l'énergie du photon passe sous le seuil d'émission d'un électron.
 
-[^Sfreq]: Ou en fréquence S_\nu(\nu)$ exprimée en W/m$^2$/Hz.
+[^Sfreq]: Ou en fréquence $S_\nu(\nu)$ exprimée en W/m$^2$/Hz.
