@@ -272,7 +272,9 @@ is ultimately contained within the metric, and that this metric therefore
 depends on the presence of matter. It is therefore possible
 a generalization of this observation. The Newtonian potential is
 determined by the Poisson equation :
-$$\nabla^2\phi = 4\pi G_N \rho,$$
+\begin{equation}\label{eq:poisson}
+\nabla^2\phi = 4\pi G_N \rho
+\end{equation}
 where $\rho$ is the matter density and $G_N$ is the Newton constant. The latter is associated with the energy density
 energy density $\epsilon$ of the energy-impulsion tensor of matter $T_{00} = \epsilon = \rho c^2 $ (see chapter [](./02_friedmann_equations.md)), so with equation
 [](#eq:g00) we can obtain :

@@ -127,15 +127,16 @@ Evaluons maintenant la densité de baryons (particules avec 3 quarks comme les p
   n_b(z) \approx \Omega_b^0 \rho_c^0 (1+z)^3 \approx 3\times 10^{11} \ \mathrm{baryons} /  \mathrm{m^3}
 \end{equation}
 L'univers primordial est donc largement dominé par les photons en terme de densité de particules :
-\begin{equation}
+\begin{equation}\label{eq:eta}
 \eta= \frac{n_b(z)}{n_\gamma(z)} \sim \frac{\Omega_b^0 \rho_c^0 c^3 \hbar^3}{(k_B T_0)^3} \sim 10^{-9}
 \end{equation}
 
 
+(lpm_photons)=
 #### Libre parcours moyen des photons
 
 Enfin, on peut s'interroger sur le libre parcours moyen des photons. Les photons interagissent préférentiellement avec les électrons par diffusion Thomson $e^- + \gamma \rightarrow e^- + \gamma$ et une bonne approximation du libre parcours moyen des photons est donnée par :
-\begin{equation}
+\begin{equation}\label{eq:lpm_thomson}
  l_{T} =\frac{1}{\sigma_T n_e}
 \end{equation}
 où $\sigma_T$ est la section efficace de diffusion de Thomson ($6.6529\times 10^{-29}\ \mathrm{m^2}$). Pour la densité électronique, considérons que l'Univers étant neutre, il y a un électron pour chaque proton donc $n_e = n_p \approx 0.3\,\mathrm{m^{-3}}$. Le temps typique entre deux interactions $\tau_T$ est alors :
@@ -176,7 +177,7 @@ La mécanique quantique nous apprend que la densité des états dans l'espace es
 \begin{equation}
   \vec{p} = \frac{h}{L}\left(n_x \vec{e}_x + n_y \vec{e}_y + n_z \vec{e}_z\right), \ \ \ n_i = 0, \pm 1, \pm 2, \ldots
 \end{equation}
-où $\vec{e}_x, \vec{e}_y$ et $\vec{e}_z$ sont les vecteurs unitaires et $h$ est la constante de Planck. En conséquence, dans l'espace des quantités de mouvement, il y un état par cube élémentaire de volume $h^3/L^3$. La densité d'état dans l'espace des quantités de mouvement est donc $L^3/h^3$ (XXXX FIARE SCHEMA XXXX):
+où $\vec{e}_x, \vec{e}_y$ et $\vec{e}_z$ sont les vecteurs unitaires et $h$ est la constante de Planck. En conséquence, dans l'espace des quantités de mouvement, il y un état par cube élémentaire de volume $h^3/L^3$. La densité d'état dans l'espace des quantités de mouvement est donc $L^3/h^3$ :
 Ensuite, il n'y a qu'une particule dans la boite quantique donc un seul état de position : dans l'espace des positions la densité d'état est de $1/L^3$. Au total, la densité d'état dans l'espace des phases est :
 \begin{equation}
   \frac{1}{h^3} = \frac{1}{(2\pi\hbar)^3}
@@ -303,7 +304,7 @@ Considérons maintenant que $S_1$ et $S_2$ peuvent échanger des particules (en 
 2. et l'entropie de $(S_1 + S_2)$ atteint un maximum, ce qui donne : $-\frac{\mu_1}{T} \dd N_1 - \frac{\mu_2}{T} \dd N_2 = 0$ d'où $\mu_1 = \mu_2$. À l'équilibre, les deux potentiels chimiques sont égaux.
 
 Considérons maintenant le cas d'une réaction chimique : 
-$$1 + 2 \leftrightharpoons 3 + 4$$
+$$1 + 2 \rightleftharpoons 3 + 4$$
 c'est-à-dire le cas de quatre systèmes $S_1$, $S_2$, $S_3$ et $S_4$ mis en contact. En suivant le même même raisonnement, on peut montrer que :
 1. ils atteignent une même température d'équilibre température $T$ 
 2. et qu'à l'équilibre, on a :
@@ -315,7 +316,7 @@ $$\mu_1 + \mu_2 = \mu_3 + \mu_4$$
 
 Nous avons vu dans l'encadré ci-dessus que si plusieurs espèces interagissent par le biais d'une réaction, par exemple :
 \begin{equation}
-  \nu_1 X_1 + \nu_2 X_2 + \ldots \leftrightharpoons \nu'_1 Y_1 + \nu'_2 Y_2 + \ldots
+  \nu_1 X_1 + \nu_2 X_2 + \ldots \rightleftharpoons \nu'_1 Y_1 + \nu'_2 Y_2 + \ldots
 \end{equation}
 et atteignent l'équilibre chimique (c'est-à-dire l'état d'entropie maximale), les potentiels chimiques satisfont : 
 \begin{equation}
@@ -333,7 +334,7 @@ _à l'équilibre_ :
 \begin{equation}
   \mu_X = -\mu_{\bar{X}}
 \end{equation}
-On peut aussi utiliser la réaction $X + \bar{X} \leftrightharpoons \gamma + \gamma$ pour arriver à la même conclusion.
+On peut aussi utiliser la réaction $X + \bar{X} \rightleftharpoons \gamma + \gamma$ pour arriver à la même conclusion.
 
 En résumé: 
 - Un système composés de différentes espèces a atteint l'équilibre cinétique s'il a atteint un état d'entropie maximale décrit par une fonction de distribution de Fermi-Dirac ou de Bose-Einstein. 
@@ -440,8 +441,8 @@ Dans la limite non relativiste, l'énergie des particules est égale à leur mas
 
 \begin{equation}
   \boxed{\begin{aligned}
-    n    &\approx g \left(\frac{m k_B T}{2\pi \hbar^2}\right)^{3/2} \exp\left(-\frac{(mc^2 - \mu)}{k_B T}\right) \\
-    \rho &\approx n m \\
+    n    &\approx g \left(\frac{m k_B T}{2\pi \hbar^2}\right)^{-3/2} \exp\left(-\frac{(mc^2 - \mu)}{k_B T}\right)\label{eq:n_nonrel} \\
+    \rho &\approx n m  \\
     P    &= n k_B T \ll \epsilon = nmc^2 \\
   \end{aligned}}
 \end{equation}
@@ -501,7 +502,7 @@ La loi d'expansion obéit à la première équation de Friedmann :
 \end{equation}
 et donc :
 \begin{equation}
-  \boxed{H = \sqrt{\frac{8 \pi^3 G}{90}} g_\star^{1/2}(T) T^2}
+  \boxed{H = \sqrt{\frac{8 \pi^3 G}{90 \hbar^3 c^5}} g_\star^{1/2}(T) (k_B T)^2}
 \end{equation}
 Ainsi, $H \propto T^2$ aux variations du nombre effectif de degrés de liberté dans le plasma primordial près. Gardez cela à l'esprit, cela sera utile lorsque vous comparerez le taux d'expansion avec les divers taux de réaction entre les différentes espèces.
 
@@ -511,13 +512,9 @@ De plus, comme l'Univers est dominé par le rayonnement, nous avons [](#eq:a_rad
 \end{equation}
 ce qui donne :
 \begin{equation}
-  \boxed{T \approx [10^{10} \mathrm{K}] \left(\frac{t}{\mathrm{1\ sec}}\right)^{-1/2}} 
+  \boxed{T \approx 1.8 \times 10^{10} \mathrm{K} g_*(T)^{-1/4} \left(\frac{t}{\mathrm{1\ sec}}\right)^{-1/2}} 
 \end{equation}
-Ou, de manière équivalente, nous pouvons dériver l'évolution de l'énergie typique des particules en fonction du temps.
-\begin{equation}
-  \boxed{E \approx [2\ \mathrm{MeV}]\ \left(\frac{t}{\mathrm{1\ sec}}\right)^{-1/2}}  
-\end{equation}
-Ainsi, lorsque l'Univers était âgé d'une seconde, l'énergie typique des particules était de l'ordre de 2 MeV.
+Ainsi, lorsque l'Univers était âgé d'une seconde, l'énergie typique des particules relativistes était de l'ordre de 0.9 MeV avec $g_*=10.75$.
 
 
 #### Évolution de $g_\star(T)$
@@ -527,7 +524,7 @@ Ainsi, lorsque l'Univers était âgé d'une seconde, l'énergie typique des part
 :name: tab:gtable
 :::
 
-La dernière pièce manquante est l'évolution de $g_\star(T)$, qui raconte simplement l'évolution de la matière relativiste du plasma primordial au fur et à mesure qu'il se refroidit avec l'expansion. Commençons autour de $T \approx 300\,$GeV. Toutes les particules du modèle standard sont relativistes (voir [](tab:gtable)). Lorsque toutes les particules sont relativistes, le nombre total de degrés de liberté est de :
+La dernière pièce manquante est l'évolution de $g_\star(T)$, qui raconte simplement l'évolution de la matière relativiste du plasma primordial au fur et à mesure qu'il se refroidit avec l'expansion. Commençons autour de $T \approx 300\,$GeV. Toutes les particules du modèle standard sont relativistes (voir [](#tab:gtable)). Lorsque toutes les particules sont relativistes, le nombre total de degrés de liberté est de :
 \begin{equation}
   g_f = \underbrace{6 \times 12}_{\mathrm{quarks}} + \underbrace{3 \times 4}_{\ell^\pm} + \underbrace{3 \times 2}_{\nu's} = 90
 \end{equation}
@@ -540,7 +537,7 @@ pour les bosons, ce qui donne
   g_\star = g_b + \frac{7}{8} g_f = 106.75
 \end{equation}
 
-Pour voir ce qui va se passer ensuite, il suffit de regarder les masses des particules énumérées dans le [](tab:gtable). Le quark top s'annihile en premier, réduisant le nombre de degrés de liberté à :
+Pour voir ce qui va se passer ensuite, il suffit de regarder les masses des particules énumérées dans le [](#tab:gtable). Le quark top s'annihile en premier, réduisant le nombre de degrés de liberté à :
 \begin{equation}
   g_\star(T<m_{\mathrm{top}}) = 106.75 - \frac{7}{8} \times 12 = 96.25
 \end{equation}
@@ -568,8 +565,6 @@ Les deux événements significatifs suivants sont le découplage des neutrinos a
 
 L'entropie de l'Univers ne peut qu'augmenter ou rester constante. Nous savons qu'à l'équilibre, l'entropie est conservée (voir encadré).  Le plasma primordial n'est pas _exactement_ à l'équilibre\footnote{c'est heureux, sinon, nous ne serions pas là pour réfléchir à tout cela} : l'expansion n'en fait qu'un équilibre local, nous verrons de nombreux exemples de processus hors équilibre dans la suite de l'article.  Cependant, comme l'entropie est au premier ordre proportionnelle au nombre de particules, et que les photons sont de loin l'espèce la plus abondante dans l'Univers, nous pouvons supposer sans risque que l'entropie est conservée, et que, à une très grande précision, l'expansion cosmique est un processus adiabatique.
 
-
-XXXXX VOIR NOTES PAPIER XXXXX
 Comment calculer l'entropie totale de l'Univers ? Nous pouvons commencer par :
 \begin{equation}
   E = TS -PV + \sum_i \mu_i N_i
@@ -619,8 +614,7 @@ Dans les intervalles entre les masses des particules, $g_\star(T)$ reste pratiqu
 \begin{equation}
   \boxed{T \propto \left[g_\star(T) a\right]^{-1}}
 \end{equation}
-Durant un intervalle de temps où le nombre d'espèces relativistes est constant, la température décroît en $1/a$. Cependant, lorsqu'une espèce devient non relativiste, $g_\star(T)$ diminue et la pente de la relation entre $T$ et $a^{-1}$ change. L'évolution de la température avec le facteur d'échelle dans l'Univers jeune est donc une fonction continue de fonctions hyperboles dont le facteur de proportionnalité croit avec le temps.
-XXXXX ETUDIER LE LIEN DE CETTE FORMULE AVEC LA PRECEDENTE LIANT T t et a XXXXX
+
 
 Histoire de la matière dans l'Univers jeune
 --------------------------------------
@@ -647,9 +641,7 @@ Le découplage des neutrinos est notre première expérience de freeze-out.  Les
     e^- + \nu_e & \rightleftharpoons e^- + \nu_e \\    
   \end{split}
 \end{equation}
-XXXXXX BIZARRE VOIR WEINBERG XXXXX
 Cependant, à ces énergies, la section efficace de l'interaction faible est $\sigma_w \sim G_F^2 T^2$, par conséquent, le taux d'interaction $\Gamma = n_e \sigma_w c \propto G_F^2 T^5$ diminue beaucoup plus rapidement que le paramètre de Hubble ($\propto T^2$).  Autour de 1 MeV, $\Gamma \sim H$ et les interactions entre les neutrinos et les autres particules du SM deviennent très improbables.  Les neutrinos se découplent et se déplacent librement le long des géodésiques.
-
 
 À ce stade, les neutrinos sont encore relativistes ($m_\nu \ll 1 MeV$). Même s'ils n'interagissent plus avec d'autres particules, ils conservent dans une excellente approximation leur fonction de distribution de Fermi-Dirac (voir encadré) avec une température qui n'est affectée que par le décalage vers le rouge. Ainsi, à ce stade :
 \begin{equation}
@@ -679,11 +671,11 @@ avec $\mu_0 \equiv \frac{a_1}{a_0} \mu_1$ et $T_0 \equiv \frac{a_1}{a_0} T_1$.
 
 ### Annihilation $e^+ + e^-$ 
 
-Peu après le découplage des neutrinos vers 1 MeV, les électrons et les positrons s'anihilent (511 keV).  Naïvement, on pourrait dire que $g_\star(T)$ devient alors :
+Peu après le découplage des neutrinos vers 1 MeV, les électrons et les positrons s'annihilent (511 keV).  Naïvement, on pourrait dire que $g_\star(T)$ devient alors :
 $$
 2 + \frac{7}{8} \times 6 = 7.25
 $$
-mais la Nature est plus subtile.  En effet, l'anihilation électron-positron produit suffisamment d'énergie et d'entropie pour chauffer le bain de photons et modifier la température des photons.  Les neutrinos ne sont pas affectés et leur température varie toujours comme $a^-1$.  Par conséquent, après l'anihilation de $e^+-e^-$, nous avons $T_\nu < T_\gamma$.
+mais la Nature est plus subtile.  En effet, l'annihilation électron-positron produit suffisamment d'énergie et d'entropie pour chauffer le bain de photons et modifier la température des photons.  Les neutrinos ne sont pas affectés et leur température varie toujours comme $a^-1$.  Par conséquent, après l'annihilation de $e^+ + e^-$, nous avons $T_\nu < T_\gamma$.
 
 Nous nous trouvons donc dans une nouvelle situation où nous avons plusieurs espèces relativistes avec des températures différentes.  Pour en tenir compte, nous pouvons modifier l'équation \ref{eqn:g_star_same_temp}, en permettant à chaque espèce d'avoir sa propre température :
 \begin{equation}
@@ -693,10 +685,6 @@ Pour aller plus loin, nous devons déterminer $T_\nu$, ou plus exactement, relie
 
 ### La température du fond diffus de neutrinos
 
-
-XXXX VOIR COMMENT COMPTER LES ETATS DES NEUTRINOS : 1 ou 2 états de spin ? => d'après quelques lectures ce serait bien 1 état de spin XXXXX
-XXXXX DAPRES un seminaire réunion du vendredi, si les neutrinos sont sans masse alors il n'y a qu'un état de spin possible sur les deux (comme pour les photons) XXXXXX
-XXXXX MAIS D'APRES PIERRE ASTIER, en pratique il fuat compter deux états car on sait qu'ils ont une masse, même inconnue XXXX
 Revenons à la détermination de la relation entre la température des photons et la température du fond de neutrinos cosmiques.
 cosmique. Lors de l'annihilation, l'entropie et l'énergie du $e^\pm$ sont transférées au bain de photons. L'entropie étant conservée, nous avons, avant l'annihilation, démonté l'entropie des neutrinos (qui est conservée) :
 \begin{equation}
@@ -704,7 +692,7 @@ cosmique. Lors de l'annihilation, l'entropie et l'énergie du $e^\pm$ sont trans
 \end{equation}
 après annihilation : 
 \begin{equation}
-  g^\gamma_{{star S, \mathrm{after}}(T) = 2 
+  g^\gamma_{\star S, \mathrm{after}}(T) = 2 
 \end{equation}
 En écrivant la conservation de l'entropie, nous avons :
 \begin{equation}
@@ -717,15 +705,15 @@ ce qui donne
 \end{equation}
 et donc :
 \begin{equation}
-  T_\gamma = \left(\frac{11}{4}\right)^{1/3}\ T_\nu
+  \boxed{T_\nu = \left(\frac{4}{11}\right)^{1/3}\ T_\gamma}
 \end{equation}
 
-Nous constatons donc qu'après l'annihilation de $e^\pm$, la température du fond de neutrinos cosmiques est effectivement inférieure à la température du CMB. Aujourd'hui, en utilisant $T_{CMB} = 2,726 K$, nous trouvons :
+Nous constatons donc qu'après l'annihilation de $e^\pm$, la température du fond de neutrinos cosmiques est effectivement inférieure à la température du CMB. Aujourd'hui, en utilisant $T_0 = 2.726\,$K, nous trouvons :
 \begin{equation}
-  T_\nu \approx 1.95 K
+  T_\nu \approx 1.95\,K
 \end{equation}
 
-Nous pouvons en déduire la densité de neutrinos $n_\nu$ en fonction de $n_\gamma$. Les neutrinos sont des fermions (d'où le facteur 3/4) : 
+Nous pouvons en déduire la densité de neutrinos $n_\nu$ en fonction de $n_\gamma$. Les neutrinos sont des fermions donc : 
 \begin{equation}
   n_\nu = \frac{3}{4} \times 3 \times \frac{4}{11} n_\gamma
 \end{equation}
@@ -737,20 +725,255 @@ Pour la densité d'énergie du fond de neutrinos, nous trouvons :
 \end{equation}
 et numériquement, on trouve $\Omega_\nu h^2 \approx 1.7\times 10^{-5}$.
 
-En fait, les neutrinos ont des masses, avec deux conséquences importantes (1) nous ne savons pas s'ils sont encore relativistes aujourd'hui (toutes espèces confondues) (2) $\Omega_\nu h^2$ est plus grand que la valeur citée ci-dessus. La cosmologie avec des neutrinos massifs fera l'objet d'un prochain devoir.  
+En fait, les neutrinos ont des masses, avec deux conséquences importantes (1) nous ne savons pas s'ils sont encore relativistes aujourd'hui 
+(toutes espèces confondues) (2) $\Omega_\nu h^2$ est plus grand que la valeur citée ci-dessus.
 
-Une autre remarque est que le découplage des neutrinos s'est légèrement superposé à l'anihilation de $e^\pm$.  Comme les neutrinos interagissaient encore au moment de l'anihilation, le bruit de fond des neutrinos a été légèrement affecté par l'énorme énergie et l'entropie libérées par l'anihilation de $e^\pm$. Dans la littérature, cela est pris en compte en introduisant un "nombre effectif de neutrinos", $N_{\mathrm eff} \approx 3.046$. En tenant compte de cela, le nombre de neutrinos et la densité d'énergie sont :
+Une autre remarque est que le découplage des neutrinos s'est légèrement superposé à l'annihilation de $e^\pm$.  
+Comme les neutrinos interagissaient encore au moment de l'annihilation, le bruit de fond des neutrinos a été légèrement affecté par l'énorme énergie et l'entropie libérées par l'annihilation de $e^\pm$. Dans la littérature, cela est pris en compte en introduisant un "nombre effectif de neutrinos", $N_{\mathrm{eff}} \approx 3.046$. En tenant compte de cela, le nombre de neutrinos et la densité d'énergie sont :
 \begin{equation}
   \begin{split}
-    n_\nu & = \frac{3}{4} N_{\mathrm{eff}} \frac{4}{11} n_\gamma \\
-    \rho_\nu & = \frac{7}{8} N_{\mathrm{eff}} \frac{4}{11} n_\gamma \\
+    n_\nu(T_\gamma) & = 2 \times \frac{3}{4} N_{\mathrm{eff}} \frac{4}{11} n_\gamma(T_\gamma) \\
+    \rho_\nu & = 2 \times \frac{7}{8} N_{\mathrm{eff}} \frac{4}{11} n_\gamma \\
   \end{split}
 \end{equation}
 
-Enfin, les valeurs correctes $g_\star$ et $g_{\star S}$ après l'anihilation $e^\pm$ sont :
+Enfin, les valeurs correctes $g_\star$ et $g_{\star S}$ après l'annihilation $e^\pm$ sont :
 \begin{equation}
   \begin{split}
     g_\star & = 2 + \frac{7}{8} 2 N_{\mathrm{eff}} \left(\frac{4}{11}\right)^{4/3} \approx 3.36 \\
     g_{\star S} & = 2 + \frac{7}{8} 2 N_{\mathrm{eff}} \left(\frac{4}{11}\right) \approx 3.94 \\    
   \end{split}
 \end{equation}
+
+
+### Big Bang Nucleosynthesis (BBN)
+
+Environ 1ms après le Big Bang, l'Univers est donc essentiellement une soupe chaude de baryons, de photons, d'électrons et de neutrinos, thermodynamiquement découplés des autres particules. On rappelle que le rapport baryon sur photon est une constante  [](#eq:eta) et vaut plus précisément :
+$$\eta = 6.2 \times 10^{-10}$$
+L'Univers continuant son expansion, il se refroidit et les protons et neutrons peuvent fusionner pour former les premiers noyaux atomiques. 
+
+#### Rapport neutron/proton
+
+Le taux de formation de ces noyaux va dépendre d'un paramètre essentiel : le rapport des nombres de neutrons et protons disponibles.
+
+:::{note} Free neutron decay
+Le neutron est instable s'il n'est pas lié à un proton dans un noyau atomique par interaction forte. Il se désintègre selon la réaction :
+$$ n \rightarrow p + e^- + \bar{\nu}_e $$
+car son énergie de masse est légèrement supérieure à celle du proton :
+$$ Q_n = (m_n - m_p)c^2 = 1.29\,\mathrm{MeV}$$
+La valeur de la durée de vie moyenne retenue par le Particle Data Group en 2022 est {cite:p}`PDG2022` :
+$$\tau_n = 878.4 \pm 0.5\,\mathrm{s}$$ 
+soit environ 15 minutes seulement. L'existence des neutrons libres dans l'Univers est donc fortement limitée dans le temps. Dans toute la suite, il faudra vérifier si l'age de l'Univers est petit devant ce temps de désintégration ($t\ll \tau_n$) pour voir s'il est légitime de négliger cette désintégration spontanée.
+:::
+
+
+A $t=0.1\,$s, les protons et neutrons sont à l'équilibre thermodynamique l'un avec l'autre via les interactions :
+\begin{align}
+n + \nu_e & \rightleftharpoons &  p + e^-\\
+n + e^+ & \rightleftharpoons & p + \bar{\nu}_e
+\end{align}
+et même celle-ci (moins efficace) :
+$$n  \rightleftharpoons  p + e^- + \bar{\nu}_e $$
+Tant que ces interactions existent, le rapport neutron sur proton est donné par les densités particulaires à l'équilibre [](#eq:n_nonrel) pour des particules non-relativistes[^mp] :
+\begin{align}
+    n_n  & = g_n \left(\frac{m_n k_B T}{2\pi \hbar^2}\right)^{-3/2} \exp\left(-\frac{(m_nc^2 - \mu_n)}{k_B T}\right) \\
+    n_p  & = g_p \left(\frac{m_p k_B T}{2\pi \hbar^2}\right)^{-3/2} \exp\left(-\frac{(m_pc^2 - \mu_p)}{k_B T}\right) 
+\end{align}
+Or $g_n=g_p=2$ et on peut supposer que $\mu_p=\mu_n$ si les potentiels chimiques des électrons et neutrinos sont négligeables. Alors le rapport neutron sur proton se simplifie en :
+\begin{equation}\label{eq:np_eq}
+\left.\frac{n_n}{n_p}\right\vert_{eq} = \left(\frac{m_n}{m_p}\right)^{3/2} \exp \left(- \frac{(m_n-m_p)c^2}{k_B T} \right) \approx \exp\left(-\frac{Q_n}{k_B T}\right)
+\end{equation}
+On en déduit que tant que la température est telle que $k_B T \gg Q_n = 1.29\,$MeV alors il y a autant de neutrons que de protons dans l'Univers, mais qu'en deçà la proportion de neutrons chute exponentiellement *tant que les réactions ont lieu*. En effet, si le taux d'expansion de l'Universe devient comparable ou supérieur au taux d'interaction, alors les réactions s'arrêtent et la proportion neutron sur proton est gelée. Pour la réaction $p+e^- \rightarrow \nu_e + n$, le taux d'interaction est donné par ({cite}`KolbTurner` p.90, {cite}`Weinberg1989` p.547 et originellement dans {cite}`Peebles1966`) :
+$$
+\Gamma_{pe\to \nu n} = \frac{1}{(2\pi)^5}\int f_e(E_e)\left[ 1 - f_\nu(E_\nu)\right]\vert \mathcal{M}\vert^2_{pe\to \nu n}\delta^4(p+e-\nu-n) \frac{\dd^3 p_e}{2 E_e}\frac{\dd^3 p_\nu}{2 E_\nu}\frac{\dd^3 p_n}{2 E_n}
+$$
+avec $f_i(E_i)$ les distributions de Fermi-Dirac des particules $i$ et :
+$$\vert \mathcal{M} \vert ^2 \propto G_F^2 ( 1+ 3g_A^2)$$
+avec $G_F = 1.16\times 10^{-5}  \,\GeV^{-2}$ la constante de Fermi et $g_A = 1.26$ le couplage axial-vecteur des nucléons ({cite}`KolbTurner` p.91). Malheureusement ces intégrales doivent être calculées précisément pour obtenir la bonne proportion d'hélium, car on va voir que la proportion de neutron gèle à une température proche de $Q$ et $m_e$, ce qui empêche de faire des approximations brutales pour se concentrer sur un régime de haute ou basse énergie. Une méthode d'intégration numérique est proposée dans {cite}`Dodelson2003` p.67  et {cite}`Bernstein1989` en définissant la proportion de neutron $X_n = n_n / n_b = n_n / (n_n + n_p)$ :
+$$ \frac{\dd X_n}{\dd t} = \Gamma_{np} \left[(1-X_n)e^{-Q_n / k_B T} - X_n\right] - \frac{X_n}{\tau_n} \label{eq:Xn} $$
+avec le taux de réaction :
+\begin{equation}\label{eq:Gnp} 
+\Gamma_{np}(x) = \frac{255}{\tau_n x^5}(12+6x+x^2), \quad x= \frac{Q_n}{k_B T}
+\end{equation}
+Après intégration numérique avec comme condition initiale et relation température-temps :
+$$X_n(t \approx 0.1\,\mathrm{s}) = \frac{1}{1+e^(-Q_n / k_B T(t))},\quad T(t) = 1.0\times 10^{10} \left(\frac{t}{1\,\mathrm{s}}\right)^{-2}, \quad g_*=10.75$$
+on obtient la figure [](#fog:BBN_Xn), convergeant vers $X_n^{\mathrm{freeze}} = 0.15$, soit 1 neutron pour 6 protons[^Tfreeze] si $\tau_n$ la désintégration spontanée du neutron est omise ($\tau_n \to \infty$). 
+
+:::{figure} #BBN_Xn
+:name: fig:BBN_Xn
+:width: 70%
+
+Fraction de neutrons $X_n$ en fonction du temps calculé par l'équation [](#Xn) pendant la recombinaison (trait plein). Si la désintégration du neutron est négligée, alors on obtient la courbe en pointillé ($\tau \to \infty$). La distribution d'équilibre $\left.n_n/n_p\right\vert_{eq}$ donne la proportion de neutrons si les réactions ne sont pas gelées par l'expansion de l'Univers.
+:::
+
+La proportion de neutrons $X_n$ converge vers un plateau tant que $t \lesssim \tau_n$ après la température $T_{\mathrm{freeze}}= 0.7\,\MeV$ pour laquelle le taux d'intéraction $\Gamma_{np}(T)$ est comparable au taux d'expansion $H(T)$ ([](#Gnp))
+
+:::{figure} #BBN_Gnp
+:name: fig:BBN_Gnp
+:width: 70%
+
+Fraction de neutrons $X_n$ en fonction du temps calculé par l'équation [](#Xn) pendant la recombinaison (trait plein). Si la désintégration du neutron est négligée, alors on obtient la courbe en pointillé ($\tau \to \infty$). La distribution d'équilibre $\left.n_n/n_p\right\vert_{eq}$ donne la proportion de neutrons si les réactions ne sont pas gelées par l'expansion de l'Univers.
+:::
+
+#### Synthèse du deutérium
+
+A la température de gel des neutrons, la proportion de neutrons et de protons est donc stable, à ceci près qu'un neutron libre est instable avec un temps de désintégration d'environ 15 minutes. Toutefois, si la température descend suffisamment, protons et neutrons peuvent se combiner pour former le plus léger des noyaux atomiques par interaction forte, le deutérium $\mathrm{D}$, via la réaction
+\begin{align}
+p + n \rightleftharpoons \mathrm{D} + \gamma
+\end{align}
+Le deutérium possède une énergie de liaison
+$$B_{\mathrm{D}} = (m_n + m_p - m_\mathrm{D})c^2 = 2.22\,\mathrm{MeV}$$
+A l'équilibre, 
+\begin{equation}
+\frac{n_\mathrm{D}}{n_pn_n} = \frac{g_\mathrm{D}}{g_p g_n} \left(\frac{k_B T}{2\pi \hbar^2}\right)^{-3/2}\left(\frac{m_\mathrm{D}}{m_p m_n}\right)^{3/2} \exp \left( \frac{(m_p+m_n-m_\mathrm{D})c^2}{k_B T} \right) \approx 6 \left(\frac{m_n k_B T}{2\pi \hbar^2}\right)^{-3/2}  \exp\left(\frac{B_\mathrm{D}}{k_B T}\right)
+\end{equation}
+avec $g_\mathrm{D}=3$, $g_n=g_p=2$.
+
+On définit la température de démarrage de la nucléosynthèse $T_{\mathrm{nuc}}$ celle où la moitié des neutrons ont été consommés pour former du deutérium, c'est-à-dire lorsque $n_\mathrm{D}=n_n$. Le rapport deutérium sur neutron s'écrit :
+\begin{equation}\label{eq:XD}
+\frac{n_\mathrm{D}}{n_n} \approx 6 n_p \left(\frac{m_n k_B T}{2\pi \hbar^2}\right)^{-3/2}  \exp\left(\frac{B_D}{k_B T}\right)
+\end{equation}
+Le nombre de protons au moment de la nucléosynthèse est donné par :
+$$n_p \approx (1-X_n(T_{\mathrm{nuc}})) n_b = (1-X_n(T_{\mathrm{nuc}})) \eta n_\gamma(T_{\mathrm{nuc}}) $$
+On en déduit alors la température $T_{\mathrm{nuc}}$ par l'inversion numérique de l'équation [](#eq:XD) :
+$$T_{\mathrm{nuc}} = 7.9 \times 10^8\,\mathrm{K}$$
+soit $t_{\mathrm{nuc}}\approx 280\,$s après le Big Bang, avec $g_* = 3.36$ dorénavant puisque l'Univers possède une température inférieure à $m_e$. A ce moment précis, la fraction de neutrons encore présente est environ de : 
+$$frac{n_n}{n_p}(T_{\mathrm{nuc}}) = \frac{X_n(T_{\mathrm{nuc}})}{1-X_n(T_{\mathrm{nuc}})} = 0.14 \sim 1/7$$
+
+
+:::{note} Free neutron decay again
+
+A cause de leur désintégration spontanée, la proportion de neutrons libres continue de chuter, et peut s'écrire :
+$$X_n(t) = X_n^{\mathrm{freeze}} e^-t/\tau_n$$
+A $t_\mathrm{nuc}$ la proportion de neutrons a diminué de $0.17 \sim 1/6$ vers :
+$$ \frac{n_n}{n_p}(t_\mathrm{nuc}) \approx \frac{e^{-t_\mathrm{nuc}/\tau_n}}{6 + [1- e^{-t_\mathrm{nuc}/\tau_n}]} \approx 0.12 $$
+ce qui proche du résultat précédent mais moins exact que de prendre en compte cette désintégration directement dans l'équation différentielle [](#eq:Xn).
+
+:::
+
+
+#### Synthèse de l'hélium 4
+
+La formation des noyaux d'hélium n'est possible que via la fusion de noyaux de deutérium :
+\begin{align}
+p + n &\rightarrow &\mathrm{D} + \gamma \\
+\mathrm{D} + p &\rightarrow &^3\mathrm{He} + \gamma \\
+\mathrm{D} + \mathrm{D} &\rightarrow& ^4\mathrm{He} + \gamma 
+\end{align}
+Or l'énergie de liaison de l'hélium 4 est supérieure à celle du deutérium donc c'est sa formation qui sera favorisée. On peut donc supposer que tous les neutrons disponibles à $t_\mathrm{nuc}$ vont terminer dans un noyau d'hélium. 
+
+Comme deux neutrons vont dans un noyau d'hélium 4, le nombre maximum de noyaux d'hélium formables est égal à la moitié des neutrons disponibles (qu'ils soient libres ou dans les noyaux de deutérium). On en déduit l'abondance en hélium 4 en nombre de noyaux comme étant :
+$$n_{\mathrm{He}} = \frac{1}{2} n_n(t_\mathrm{nuc})$$
+En terme de masse, l'abondance d'hélium 4 dans l'Univers à la fin de la nucléosynthèse primordiale peut être au maximum de :
+\begin{equation}
+\boxed{Y_p \equiv \frac{\rho(^4\mathrm{He})}{\rho_b} = \frac{4n_\mathrm{He}}{n_n + n_p} \approx 25\%}
+\end{equation}
+en bon accord avec les mesures (voir Figure~[](#fig:BBN). Des calculs plus précis donnent $Y_p$ autour de 24%, et notamment prédisent aussi la proportion des autres noyaux légers comme le deutérium après $t_{\mathrm{nuc}}$, le lithium, etc.
+
+
+```{figure} ../images/bbn.png
+:width: 80%
+:align: center
+:label:fig:BBN
+
+Synthèse des éléments légers dans l'Univers primordial (d'après {cite}`PospelovBBN2010`).
+```
+
+
+```{figure} ../images/bbn_Yp.png
+:width: 80%
+:align: center
+:label:fig:BBN
+
+Comparaison entre les prédictions théoriques pour les abondances des noyaux légers (bandes colorées) et les mesures (bandes grises) (d'après {cite}`Baumann`).
+```
+
+
+
+### Recombinaison
+
+La recombinaison correspond au moment où les électrons vont se combiner aux atomes pour former les premiers atomes. A ce moment là, le plasma se transforme en gaz d'hydrogène et d'hélium (plus un peu de lithium etc) neutre, laissant les photons du bain thermique libre de se propager dans l'Univers. Cette première lumière correspond au fond diffus cosmologique et nous renseigne sur l'état de l'Univers jeune et la physique qui s'y est déroulée avant. 
+
+La formation des atomes d'hydrogène se déroule par la réaction :
+$$ p + e^- \rightleftharpoons \mathrm{H} + \gamma$$
+et on rappelle que l'énergie de liaison de l'hydrogène vaut $B_\mathrm{H} = 13.6\,$eV. Une rapide approximation nous donnerait que la température à laquelle a eu lieu la recombinaison est $T_\mathrm{rec} \approx B_\mathrm{H} / k_B \approx 1.5 \times 10^5\,$K, mais ce serait oublier que même à des températures plus basses l'Univers contient encore énormément de photons d'énergie assez haute pour ioniser les atomes d'hydrogène. 
+
+Une meilleure estimation doit donc reposer au moins sur le rapport baryon sur photon $\eta$ et $B_\mathrm{H}$. Comme pour l'abondance du deutérium, à l'équilibre on peut décrire 
+\begin{align}
+\frac{n_\mathrm{H}}{n_pn_e} & =\frac{g_\mathrm{H}}{g_p g_e} \left(\frac{k_B T}{2\pi \hbar^2}\right)^{-3/2}\left(\frac{m_\mathrm{H}}{m_p m_e}\right)^{3/2} \exp \left(\frac{(m_p+m_e-m_\mathrm{H})c^2}{k_B T} \right) \\
+& \approx \left(\frac{m_e k_B T}{2\pi \hbar^2}\right)^{-3/2}  \exp\left(\frac{B_\mathrm{H}}{k_B T}\right)
+\end{align}
+avec $g_\mathrm{H}=4$ et $g_p=g_e=2$. C'est *l'équation de Saha*. Posons $X_e$ la fraction d'électron libre dans le plasma primordial :
+$$X_e = \frac{n_e}{n_b}$$
+Par neutralité électrique et conservation du nombre de particules, on a aussi :
+$$n_e=n_p,\quad X_e=\frac{n_p}{n_b}= \frac{n_p}{n_p + n_\mathrm{H}} $$
+en supposant qu'il n'y a que de l'hydrogène pour simplifier les calculs. Par conséquent, on a :
+\begin{equation}
+\frac{1-X_e}{X_e} = n_p \left(\frac{m_e k_B T}{2\pi \hbar^2}\right)^{-3/2}  \exp\left(\frac{B_\mathrm{H}}{k_B T}\right)
+\end{equation}
+et :
+$$n_p = X_e \eta  n_\gamma = \eta X_e  \frac{2\zeta(3)}{\pi^2}\left(\frac{k_B T}{\hbar c}\right)^3 $$
+donc :
+\begin{equation}
+\frac{1-X_e}{X_e^2} = \frac{2\zeta(3)}{\pi^2}\eta \left(2\pi\frac{k_B T}{m_e c^2}\right)^{3/2}  \exp\left(\frac{B_\mathrm{H}}{k_B T}\right) \equiv a_\mathrm{H}
+\end{equation}
+On a une équation du second degré en $X_e$ dont la solution est :
+$$X_e = \frac{-1 + \sqrt{1+ 4a_\mathrm{H}}}{2a_\mathrm{H}}$$
+On définit le moment de la recombinaison comme celui où le milieu est moins qu'à moitié ionisé soit $X_e = 1/2$, alors la température du découplage est donnée par :
+$$k_B T_{\mathrm{rec}} = 0.32\,\mathrm{eV} = \frac{B_\mathrm{H}}{42}$$
+$$ \boxed{T_{\mathrm{rec}} = 3760\,\mathrm{K},\quad z_\mathrm{rec} = 1378}$$
+soit quand l'Univers avait $t_\mathrm{rec} = 250\,000$ ans et alors que son évolution est dorénavant dominée par son contenu en matière. D'après la [](#fig:saha_Xe), on voit toutefois que la recombinaison s'étend globalement entre les redshift 1200 et 1600, se qui correspond tout de même à environ $70\,000$ ans, ce n'est donc pas un processus instantané. 
+
+:::{figure} #saha_Xe
+:name: fig:saha_Xe
+:width: 70%
+
+Fraction d'ionisation $X_e$ en fonction du redshift pendant la recombinaison.
+:::
+
+### Photon decoupling
+
+Pendant encore un certain temps, les photons restent couplés à la petite fraction d'électrons libres par la diffusion Thomson :
+$$ e^- + \gamma \rightleftharpoons e^- + \gamma $$
+Le taux d'interaction est donné par (voir section [](#lpm_thomson)) :
+$$\Gamma_\gamma = n_e \sigma_T c = n_b X_e \sigma_T c=  \frac{2\zeta(3)}{\pi^2} \eta  \sigma_T c\left(\frac{k_B T}{\hbar c}\right)^3$$
+avec la section efficace de la diffusion Thomson :
+$$\sigma_T = 0.665\,\mathrm{barns} = 6.65\times 10^{-29}\,\mathrm{m}^2$$
+Le découplage a lieu lorsque ce taux d'interaction devient petit devant le taux d'expansion de l'Univers, soit :
+$$\Gamma_\gamma(T_\mathrm{dec}) = H(T_\mathrm{dec})$$
+L'Univers étant dominé par la matière, on a :
+$$H(T_\mathrm{dec}) = H_0 \sqrt{\Omega_m^0(1+z)^3} = H_0 \sqrt{\Omega_m^0} \left(\frac{T_\mathrm{dec}}{T_0}\right)^{3/2}$$
+On aboutit à :
+\begin{equation}
+X_e(T_\mathrm{dec}) (k_B T_\mathrm{dec})^{3/2} \approx  \frac{\pi^2}{2\zeta(3)}\frac{H_0 \sqrt{\Omega_m^0} } {\eta  \sigma_T c} \left(\frac{k_B T_0}{\hbar c}\right)^{-3/2}
+\end{equation}
+Par une résolution numérique, on obtient :
+$$\boxed{T_{\mathrm{dec}} = 0.26\,\mathrm{eV} = 3055\,\mathrm{K}, \quad z_{\mathrm{dec}}\sim 1100,  \quad t_{\mathrm{dec}}=370\,000\,\mathrm{ans}}$$
+Le fond diffus cosmologique est donc une lumière qui a été émise il y a environ $370\,000\,$ans et l'Univers n'était quasiment plus ionisé puisque $X_e(T_{\mathrm{dec}}) = 6\times 10^{-3}$. Avec l'expansion de l'Univers et la prédiction d'une abondance de $24\%$ d'hélium, l'existence de ce fonds diffus est un des trois piliers qui assoit la théorie du Big Bang.
+
+
+:::{note} Profondeur optique
+
+On définit la profondeur optique $\tau$ par le rapport du nombre de photons reçus sur Terre sans avoir subi aucune diffusion Thomson $N(t_0)$ sur le nombre de photons $N(t)$ émis à un instant $t$:
+$$\frac{N(t_0)}{N(t)} = e^{-\tau}$$
+avec
+$$\tau = \int_t^{t_0} \Gamma_\gamma(t) \mathrm{d}t$$
+Le temps $t_{\mathrm{ls}}$ pour lequel $\tau=1$ est appelé temps de dernière diffusion. C'est le temps depuis lequel un photon du CMB n'a plus interagi avec un électron. Plus précisément,
+\begin{equation}
+\tau(z) = \int_0^z \frac{\Gamma_\gamma(z)}{H(z)}\frac{\dd z}{1+z}
+\end{equation}
+C'est un des six paramètres du modèle standard $\Lambda$CDM. En effet, après l'émission du fond diffus cosmologique, on entre dans les Ages Sombres de l'Univers, où l'Univers est transparent mais aucun astre n'émet encore de lumière. Mais avec l'apparition des premières étoiles et galaxies, peut-être 150 millions d'années après le Big Bang, le milieu neutre est de nouveau ionisé. Bien que très peu dense, les photons du CMB interagissent de nouveau avec les électrons par diffusion Thomsom, ce qui diminue l'amplitude des anisotropies de petites échelles dans le spectre de puissance du CMB, et introduit de nouvelles anisotropies dans les anisotropies de polarisation. C'est le paramètre le moins bien mesuré du modèle $\Lambda$CDM pour le moment, mais il informe sur l'apparition des premiers astres lumineux.
+
+```{figure} ../images/tau_history.png
+:width: 80%
+:align: center
+:label:fig:BBN
+
+The optical depth to reionization $\tau$ (d'après [](https://lambda.gsfc.nasa.gov/education/graphic_history/taureionzation.html), image credit: NASA / LAMBDA Archive Team).
+```
+
+:::
+
+[^mp]: on rappelle que les masses des protons et neutrons sont d'environ 1\,GeV.
+[^Tfreeze]: dans un certains nombres de référence, ont trouve comme température de gel des neutrons $T_{\mathrm{freeze}} \ approx 0.8\,\MeV$ ce qui correspond aussi à 1 neutron pour 5 protons si on suit la distribution d'équilibre [](#eq:np_eq) mais en admettant que cette température est un ordre de grandeur bien trouvé pour que ça marche à la fin.
+
