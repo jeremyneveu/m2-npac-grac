@@ -439,7 +439,7 @@ Dans la limite non relativiste, l'énergie des particules est égale à leur mas
 \begin{equation}
   \boxed{\begin{aligned}
     n    &\approx g \left(\frac{m k_B T}{2\pi \hbar^2}\right)^{-3/2} \exp\left(-\frac{(mc^2 - \mu)}{k_B T}\right)\label{eq:n_nonrel} \\
-    \rho &\approx n m  \\
+    \rho &\approx n m + \frac{3}{2} \frac{nk_B T}{c^2} \\
     P    &= n k_B T \ll \epsilon = nmc^2 \\
   \end{aligned}}
 \end{equation}
@@ -460,6 +460,13 @@ $\xi \ll x$ et nous pouvons développer : $(x^2 + \xi^2)^{1/2} \approx x (1 + \f
   \end{split}
 \end{equation}
 
+:::
+
+:::{note} Gaz moléculaire
+
+Si la particule considérée est composée de plusieurs atomes, alors elles possèdent plus de degrés de libertés que les 3 translations dans l'espace. Suivant une statistique de Boltzmann, elle peut stocker de l'énergie dans des degrés de liberté de rotation ou de vibration si le milieu est assez chaud, chacun comptant pour $k_B T / 2$ dans son énergie interne. Si on note $g_m$ le nombre de degrés de liberté d'une molécule, alors la densité d'énergie s'écrit
+$$ \epsilon &\approx n m c^2 + \frac{g_m}{2} nk_B T = n m c^2 + \frac{1}{\gamma -1} n k_B T $$
+avec $\gamma=C_p/C_V$ l'indice adiabatique, que l'on retrouve dans la loi de Laplace $pV^\gamma = cst$.
 :::
 
 
@@ -495,7 +502,7 @@ Lorsque la température descend en dessous de la masse $m_i$ de l'une des espèc
 
 La loi d'expansion obéit à la première équation de Friedmann :
 \begin{equation}
-  H^2 = \frac{8\pi G}{3} \rho_r = \frac{8\pi G}{3} \frac{\pi^2}{30} g_\star(T) T^4
+  H^2 = \frac{8\pi G}{3} \rho_r = \frac{8\pi G}{3} \frac{\pi^2}{30\hbar^3 c^5} g_\star(T) T^4
 \end{equation}
 et donc :
 \begin{equation}
@@ -509,7 +516,7 @@ De plus, comme l'Univers est dominé par le rayonnement, nous avons [](#eq:a_rad
 \end{equation}
 ce qui donne :
 \begin{equation}
-  \boxed{T \approx 1.8 \times 10^{10} \mathrm{K} g_*(T)^{-1/4} \left(\frac{t}{\mathrm{1\ sec}}\right)^{-1/2}} 
+  \boxed{T \approx \left[ 1.8 \times 10^{10} \mathrm{K}\right] \times  g_*(T)^{-1/4} \left(\frac{t}{\mathrm{1\ sec}}\right)^{-1/2}} 
 \end{equation}
 Ainsi, lorsque l'Univers était âgé d'une seconde, l'énergie typique des particules relativistes était de l'ordre de 0.9 MeV avec $g_*=10.75$.
 
@@ -609,7 +616,7 @@ ce qui donne
 
 Dans les intervalles entre les masses des particules, $g_\star(T)$ reste pratiquement constant.  Puisque $\epsilon \propto g_\star(T) T^{4} \propto a^{-4}$, nous pouvons raffiner le lien entre température et facteur d'échelle dans le plasma primordial :
 \begin{equation}
-  \boxed{T \propto \left[g_\star(T) a\right]^{-1}}
+  \boxed{T \propto \left[g_\star^{1/3}(T) a\right]^{-1}}
 \end{equation}
 
 
@@ -820,13 +827,13 @@ A la température de gel des neutrons, la proportion de neutrons et de protons e
 \begin{align}
 p + n \rightleftharpoons \mathrm{D} + \gamma
 \end{align}
-Le deutérium possède une énergie de liaison
+Le deutérium possède une énergie de liaison :
 $$B_{\mathrm{D}} = (m_n + m_p - m_\mathrm{D})c^2 = 2.22\,\mathrm{MeV}$$
 A l'équilibre, 
 \begin{equation}
 \frac{n_\mathrm{D}}{n_pn_n} = \frac{g_\mathrm{D}}{g_p g_n} \left(\frac{k_B T}{2\pi \hbar^2}\right)^{-3/2}\left(\frac{m_\mathrm{D}}{m_p m_n}\right)^{3/2} \exp \left( \frac{(m_p+m_n-m_\mathrm{D})c^2}{k_B T} \right) \approx 6 \left(\frac{m_n k_B T}{2\pi \hbar^2}\right)^{-3/2}  \exp\left(\frac{B_\mathrm{D}}{k_B T}\right)
 \end{equation}
-avec $g_\mathrm{D}=3$, $g_n=g_p=2$.
+avec $g_\mathrm{D}=3$, $g_n=g_p=2$ et $\mu_p + \mu_n = \mu_D + \mu_\gamma = \mu_D$  ({cite}`ryden2017` p.219).
 
 On définit la température de démarrage de la nucléosynthèse $T_{\mathrm{nuc}}$ celle où la moitié des neutrons ont été consommés pour former du deutérium, c'est-à-dire lorsque $n_\mathrm{D}=n_n$. Le rapport deutérium sur neutron s'écrit :
 \begin{equation}\label{eq:XD}
@@ -837,7 +844,7 @@ $$n_p \approx (1-X_n(T_{\mathrm{nuc}})) n_b = (1-X_n(T_{\mathrm{nuc}})) \eta n_\
 On en déduit alors la température $T_{\mathrm{nuc}}$ par l'inversion numérique de l'équation [](#eq:XD) :
 $$T_{\mathrm{nuc}} = 7.9 \times 10^8\,\mathrm{K}$$
 soit $t_{\mathrm{nuc}}\approx 280\,$s après le Big Bang, avec $g_* = 3.36$ dorénavant puisque l'Univers possède une température inférieure à $m_e$. A ce moment précis, la fraction de neutrons encore présente est environ de : 
-$$frac{n_n}{n_p}(T_{\mathrm{nuc}}) = \frac{X_n(T_{\mathrm{nuc}})}{1-X_n(T_{\mathrm{nuc}})} = 0.14 \sim 1/7$$
+$$\frac{n_n}{n_p}(T_{\mathrm{nuc}}) = \frac{X_n(T_{\mathrm{nuc}})}{1-X_n(T_{\mathrm{nuc}})} = 0.14 \sim 1/7$$
 
 
 :::{note} Free neutron decay again
@@ -859,7 +866,8 @@ p + n &\rightarrow &\mathrm{D} + \gamma \\
 \mathrm{D} + p &\rightarrow &^3\mathrm{He} + \gamma \\
 \mathrm{D} + \mathrm{D} &\rightarrow& ^4\mathrm{He} + \gamma 
 \end{align}
-Or l'énergie de liaison de l'hélium 4 est supérieure à celle du deutérium donc c'est sa formation qui sera favorisée. On peut donc supposer que tous les neutrons disponibles à $t_\mathrm{nuc}$ vont terminer dans un noyau d'hélium. 
+car il est beaucoup plus improbable que deux protons et deux neutrons se rencontrent par hasard pour former un noyau d'hélium.
+Or l'énergie de liaison de l'hélium 4 est bien supérieure à celle du deutérium ($B_{\mathrm{He}} = 28.3\,\MeV$) donc c'est sa formation qui sera favorisée. On peut donc supposer que tous les neutrons disponibles à $t_\mathrm{nuc}$ vont terminer dans un noyau d'hélium. 
 
 Comme deux neutrons vont dans un noyau d'hélium 4, le nombre maximum de noyaux d'hélium formables est égal à la moitié des neutrons disponibles (qu'ils soient libres ou dans les noyaux de deutérium). On en déduit l'abondance en hélium 4 en nombre de noyaux comme étant :
 $$n_{\mathrm{He}} = \frac{1}{2} n_n(t_\mathrm{nuc})$$
@@ -887,7 +895,19 @@ Synthèse des éléments légers dans l'Univers primordial (d'après {cite}`Posp
 Comparaison entre les prédictions théoriques pour les abondances des noyaux légers (bandes colorées) et les mesures (bandes grises) (d'après {cite}`Baumann`).
 ```
 
+:::{note} Au-delà de l'hélium
 
+Il est très difficile de former des noyaux au-delà de l'hélium car ce dernier possède une énergie de liaison particulièrement supérieure aux atomes immédiatement plus lourds. En particulier il n'existe pas de noyaux stables avec $A=5$ nucléons donc pour aller au-delà de l'hélium il ne suffit pas d'absorber un des nombreux protons présents. Un peu de lithium peut se former via les réactions :
+$$^4\mathrm{He} + \mathrm{D} \rightleftharpoons ^6\mathrm{Li} + \gamma $$
+
+```{figure} ../images/Binding_energy_curve.svg
+:width: 80%
+:align: center
+:label: fig:BBN_mes
+
+Energie de liaison par nucléons (source: Wikipedia <wiki:Nuclear_binding_energy>).
+```
+:::
 
 ### Recombinaison
 
@@ -916,9 +936,9 @@ donc :
 \begin{equation}
 \frac{1-X_e}{X_e^2} = \frac{2\zeta(3)}{\pi^2}\eta \left(2\pi\frac{k_B T}{m_e c^2}\right)^{3/2}  \exp\left(\frac{B_\mathrm{H}}{k_B T}\right) \equiv a_\mathrm{H}
 \end{equation}
-On a une équation du second degré en $X_e$ dont la solution est :
+On a une équation du second degré en $X_e$ dont la solution est ({cite}`ryden2017` p.192) :
 $$X_e = \frac{-1 + \sqrt{1+ 4a_\mathrm{H}}}{2a_\mathrm{H}}$$
-On définit le moment de la recombinaison comme celui où le milieu est moins qu'à moitié ionisé soit $X_e = 1/2$, alors la température du découplage est donnée par :
+On définit le moment de la recombinaison comme celui où le milieu est moins qu'à moitié ionisé soit $X_e = 1/2$, alors la température du découplage est donnée par {cite:p}`ryden2017` :
 $$k_B T_{\mathrm{rec}} = 0.32\,\mathrm{eV} = \frac{B_\mathrm{H}}{42}$$
 $$ \boxed{T_{\mathrm{rec}} = 3760\,\mathrm{K},\quad z_\mathrm{rec} = 1378}$$
 soit quand l'Univers avait $t_\mathrm{rec} = 250\,000$ ans et alors que son évolution est dorénavant dominée par son contenu en matière. D'après la [](#fig:saha_Xe), on voit toutefois que la recombinaison s'étend globalement entre les redshift 1200 et 1600, se qui correspond tout de même à environ $70\,000$ ans, ce n'est donc pas un processus instantané. 
@@ -932,13 +952,20 @@ Fraction d'ionisation $X_e$ en fonction du redshift pendant la recombinaison.
 
 ### Photon decoupling
 
+:::{figure} #rates_decoupling
+:name: fig:rates_decoupling
+:width: 70%
+
+Comparaison entre le taux d'interaction $\Gamma_\gamma$ et le taux d'expansion $H$ en fonction du redshift.
+:::
+
 Pendant encore un certain temps, les photons restent couplés à la petite fraction d'électrons libres par la diffusion Thomson :
 $$ e^- + \gamma \rightleftharpoons e^- + \gamma $$
 Le taux d'interaction est donné par (voir section [](#eq:lpm_thomson)) :
 $$\Gamma_\gamma = n_e \sigma_T c = n_b X_e \sigma_T c=  \frac{2\zeta(3)}{\pi^2} \eta  \sigma_T c\left(\frac{k_B T}{\hbar c}\right)^3$$
 avec la section efficace de la diffusion Thomson :
 $$\sigma_T = 0.665\,\mathrm{barns} = 6.65\times 10^{-29}\,\mathrm{m}^2$$
-Le découplage a lieu lorsque ce taux d'interaction devient petit devant le taux d'expansion de l'Univers, soit :
+Le découplage a lieu lorsque ce taux d'interaction devient petit devant le taux d'expansion de l'Univers ([](#fig:rates_decoupling)), soit :
 $$\Gamma_\gamma(T_\mathrm{dec}) = H(T_\mathrm{dec})$$
 L'Univers étant dominé par la matière, on a :
 $$H(T_\mathrm{dec}) = H_0 \sqrt{\Omega_m^0(1+z)^3} = H_0 \sqrt{\Omega_m^0} \left(\frac{T_\mathrm{dec}}{T_0}\right)^{3/2}$$

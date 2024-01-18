@@ -33,33 +33,28 @@ Acoustique dans un espace en expansion
 
 Les équations de la physique classique sont valables en utilisant des quantités physiques (non comobiles) : distance propre, temps propre, etc... L'utilisation des distances physiques comme système de coordonnées est cependant peu pratique. Une méthode plus pratique consiste à écrire l'équation dans l'espace comobile. Notons :
 - $\mathbf{r}$ le vecteur position physique (dont la norme est la distance propre $D_p(t)$),
-- $\mathbf{x}$ le vecteur position comobile (dont la norme est la distance comobile), 
-- $\mathbf{v_r}$ la vitesse physique et 
-- $\mathbf{v_x}$ la vitesse comobile (certains manuels utilisent la vitesse particulière $a v_x$ comme variable). 
+- $\mathbf{x}$ le vecteur position comobile (dont la norme est la distance comobile $\chi$), 
+- $\mathbf{v}$ la vitesse physique,
+- $\mathbf{v_x}$ la vitesse comobile. 
 
 Nous avons les relations suivantes :
 \begin{align}
 \mathbf{r}& =a(t) \mathbf{x} \\ \notag
-\mathbf{v_r}& =\dot{a}\mathbf{x}+a \mathbf{v_x} \label{vel-rel}
+\mathbf{v}& =\dot{a}\mathbf{x}+a \mathbf{v_x} \label{vel-rel}
 \end{align}
-
-Bien que le flot de Hubble (premier terme de [](#vel-rel)) ne doive pas être considéré comme une vitesse réelle, il apparaît dans la relation entre $\mathbf{v_r}$ et $\mathbf{v_x}$. Cela poserait un problème si elle pouvait prendre des valeurs de l'ordre de $c$ (ou plus grandes). Mais la condition selon laquelle $\mathbf{x} \ll R_H$ garantit que $\dot{a}\mathbf{x} \ll c$. 
+Bien que le flot de Hubble (premier terme de [](#vel-rel)) ne doive pas être considéré comme une vitesse réelle, il apparaît dans la relation entre $\mathbf{v_r}$ et $\mathbf{v_x}$. Cela poserait un problème si elle pouvait prendre des valeurs de l'ordre de $c$ (ou plus grandes). Mais la condition selon laquelle $\mathbf{r} \ll R_H$ garantit que $\dot{a}\mathbf{x} \ll c$. 
 
 Comment passer du système de coordonnées physique au système de coordonnées comobiles ? La conversion des dérivées partielles spatiales est assez simple :
 \begin{equation}
-\nabla_\mathbf{r} = {\partial \over \partial r_i} = {1 \over a} {\partial \over \partial x_i}  = \frac{1}{a} \nabla_\mathbf{x},\quad \nabla^2_\mathbf{r} = \frac{1}{a^2} \nabla_\mathbf{x}
+\nabla_\mathbf{r} = {\partial \over \partial r^i} = {1 \over a} {\partial \over \partial x^i}  = \frac{1}{a} \nabla_\mathbf{x},\qquad \nabla^2_\mathbf{r} = \frac{1}{a^2} \nabla^2_\mathbf{x}
 \end{equation}
 
-La dérivée partielle temporelle nécessite un examen plus attentif. En effet, nous voulons exprimer la relation entre 
-$$\left. {\partial \over \partial t} \right|_\mathbf{r}$$
-et 
-$$\left. {\partial \over \partial t} \right|_\mathbf{x}$$
-Ecrivons la différentielle de $f(t,\mathbf{r})$ :
+La dérivée partielle temporelle nécessite un examen plus attentif. Écrivons la différentielle de $f(t,\mathbf{r})$ :
 \begin{align}
-df&= \left. {\partial f\over \partial t} \right|_\mathbf{r} dt + {\partial f\over \partial r_1} dr_1  + {\partial f \over \partial r_2} dr_2 +{\partial f\over \partial r_3} dr_3 \\
-&=  \left. {\partial f\over \partial t} \right|_\mathbf{r} dt + {\partial f\over \partial r_1} d(a x_1)  + {\partial f \over \partial r_2} d(ax_2) +{\partial f\over \partial r_3} d(ax_3) \\
-&=  \left. {\partial f\over \partial t} \right|_\mathbf{r} dt + {1 \over a}{\partial f\over \partial x_1} (x_1 da + adx_1)  + {1 \over a}{\partial f \over \partial x_2} (x_2 da + adx_2) +{1 \over a}{\partial f\over \partial x_3} (x_3 da + adx_3) \\
-&= \left( \left. {\partial f\over \partial t} \right|_\mathbf{r} + {\dot{a} \over a} (\mathbf{x}.\nabla_\mathbf{x})f \right) dt+ {\partial f\over \partial x_1} dx_1  + {\partial f \over \partial x_2} dx_2 +{\partial f\over \partial x_3} dx_3
+\dd f&= \left. {\partial f\over \partial t} \right|_\mathbf{r} \dd t + \left.{\partial f\over \partial r^i}\right|_\mathbf{t} \dd r^i   \\
+&=  \left. {\partial f\over \partial t} \right|_\mathbf{r} \dd t + \left.{\partial f\over \partial r^i}\right|_\mathbf{t} \dd(a x^i)  \\
+&=  \left. {\partial f\over \partial t} \right|_\mathbf{r} \dd t + {1 \over a}\left.{\partial f\over \partial x^i}\right|_\mathbf{t} (x^i \dd a + a \dd x^i)\\
+&= \left( \left. {\partial f\over \partial t} \right|_\mathbf{r} + {\dot{a} \over a} (\mathbf{x}.\nabla_\mathbf{x})f \right) \dd t + \left.{\partial f\over \partial x^i}\right|_\mathbf{t} \dd x^i 
 \end{align}
  Donc par identification :
 \begin{equation}
@@ -70,8 +65,9 @@ df&= \left. {\partial f\over \partial t} \right|_\mathbf{r} dt + {\partial f\ove
 
 Dans l'espace physique, l'équation de continuité s'écrit :
 \begin{equation}
-\left.{\partial \rho \over \partial t}\right|_\mathbf{r} + \nabla_\mathbf{r} .(\rho \mathbf{v_r})=0
-\end{equation}
+\left.{\partial \rho \over \partial t}\right|_\mathbf{r} + \nabla_\mathbf{r} .(\rho \mathbf{v}_\mathbf{r})=0
+\end{equation} 
+
 En utilisant la densité comobile $\rho_\mathbf{x}=\rho a^3$, nous pouvons exprimer cette équation dans l'espace comobile :
 \begin{align}
 \left.{\partial \rho_\mathbf{x}\, a^{-3} \over \partial t}\right|_\mathbf{x} - H (\mathbf{x}.\nabla_\mathbf{x})(\rho_\mathbf{x} \, a^{-3})+{1 \over a} \nabla_\mathbf{x}\left[\rho_\mathbf{x} \, a^{-3} (\dot{a}\mathbf{x}+a \mathbf{v_x})\right] &=&0
@@ -82,24 +78,24 @@ où $\phi$ est un scalaire et $\mathbf{A}$ un vecteur, l'équation ci-dessus se 
 \begin{equation}\label{Cont_comov}
 \left.{\partial \rho_\mathbf{x}\over \partial t}\right|_\mathbf{x} + \nabla_\mathbf{x} .(\rho_\mathbf{x} \mathbf{v_x})=0,
 \end{equation}
-Elle prend donc exactement la même forme dans l'espace comobile, en utilisant des variables comobile. Ce n'est toutefois pas le cas si l'on utilise la vitesse particulière $a \mathbf{v_x}$.
+L'équation de continuité prend donc exactement la même forme dans l'espace comobile, en utilisant des variables comobile. Ce n'est toutefois pas le cas si l'on utilise la vitesse particulière $a \mathbf{v_x}$.
 
 
 ### Équation d'Euler
 
-Dans l'espace physique, l'équation d'Euler pour un fluide sans pression autogravitant prend la forme habituelle :
+Dans l'espace physique, l'équation d'Euler pour un fluide parfait (non visqueux)autogravitant prend la forme habituelle :
 \begin{equation}
-\left. {\partial \mathbf{v_r} \over \partial t} \right|_\mathbf{r}+\mathbf{v_r}.\nabla_\mathbf{r}\mathbf{v_r}=-\nabla_\mathbf{r}\phi
+\left. {\partial \mathbf{v_r} \over \partial t} \right|_\mathbf{r}+ \left(\mathbf{v_r}.\nabla_\mathbf{r}\right) \mathbf{v_r}=-\nabla_\mathbf{r}\phi - \frac{1}{\rho} \nabla_\mathbf{r}p 
 \end{equation}
 Dans l'espace comobile, elle se transforme en :
 \begin{equation}
-\left. {\partial (\dot{a}\mathbf{x}+a\mathbf{v_x}) \over \partial t} \right|_\mathbf{x} - H \mathbf{x}.\nabla_\mathbf{x}(\dot{a}\mathbf{x}+a\mathbf{v_x}) + (\dot{a}\mathbf{x}+a\mathbf{v_x}). {1 \over a}\nabla_\mathbf{x} (\dot{a}\mathbf{x}+a\mathbf{v_x})= -{1 \over a^2} \nabla_\mathbf{x}\phi_\mathbf{x}.
+\left. {\partial (\dot{a}\mathbf{x}+a\mathbf{v_x}) \over \partial t} \right|_\mathbf{x} - H \mathbf{x}.\nabla_\mathbf{x}(\dot{a}\mathbf{x}+a\mathbf{v_x}) + (\dot{a}\mathbf{x}+a\mathbf{v_x}). {1 \over a}\nabla_\mathbf{x} (\dot{a}\mathbf{x}+a\mathbf{v_x})= -{1 \over a^2} \nabla_\mathbf{x}\phi_\mathbf{x} - \frac{1}{a \rho} \nabla_\mathbf{x}p .
 \end{equation}
-En veillant à ce que $
-$\left. {\partial (\dot{a}\mathbf{x}+a\mathbf{v_x}) \over \partial t} \right|_\mathbf{x}=\ddot{a}\mathbf{x}+\dot{a}\mathbf{v_x}+a \left.{\partial \mathbf{v_x} \over \partial t} \\mathbf{x}$$
+En veillant à ce que  :
+$$\left. {\partial (\dot{a}\mathbf{x}+a\mathbf{v_x}) \over \partial t} \right|_\mathbf{x}=\ddot{a}\mathbf{x}+\dot{a}\mathbf{v_x}+a \left.{\partial \mathbf{v_x} \over \partial t}\right|_\mathbf{x}$$
 l'équation d'Euler en coordonnées comobiles se réduit à :
 \begin{equation}\label{Euler_comv}
-\left.{\partial \mathbf{v_x} \over \partial t} \right|_\mathbf{x} + 2 H \mathbf{v_x}+\mathbf{v_x}.\nabla_\mathbf{x}\mathbf{v_x}= -{1 \over a^3}  \nabla_\mathbf{x}\phi_\mathbf{x} - {\ddot{a} \over a} \mathbf{x}
+\left.{\partial \mathbf{v_x} \over \partial t} \right|_\mathbf{x} + 2 H \mathbf{v_x}+\mathbf{v_x}.\nabla_\mathbf{x}\mathbf{v_x}= -{1 \over a^3}  \nabla_\mathbf{x}\phi_\mathbf{x} - \frac{1}{a^2 \rho} \nabla_\mathbf{x}p  - {\ddot{a} \over a} \mathbf{x} 
 \end{equation}
 
 Nous pouvons voir deux termes supplémentaires par rapport à la version de l'équation d'Euler écrite en coordonnées physiques. Le terme supplémentaire $2 H \mathbf{v_x}$ est une force de traînée créé par l'expansion sur les vitesses comobiles. 
@@ -108,7 +104,7 @@ Nous pouvons voir deux termes supplémentaires par rapport à la version de l'é
 Ce terme de traînée existe également, avec un coefficient numérique différent, si nous utilisons la vitesse particulière comme variable. On peut vérifier qu'en l'absence de gravité, dans le régime linéaire, $\mathbf{v_x}\propto a^{-2}$. 
 :::
 
-Le second  nouveau terme est en quelque sorte fallacieux. En effet, il semble annuler la force newtonienne créée à $\mathbf{x}$ par un fond de densité homogène non nul. On pourrait arguer que cette force devrait être nulle, pour des raisons de symétrie. Cependant, en appliquant le théorème de Gauss, on peut trouver une force non nulle dirigée vers l'origine des coordonnées (où qu'elle soit choisie !). Le fait est que l'équation de Poisson se comporte mal (et ne doit pas être utilisée) pour un champ source dont la norme $L^2$ n'est pas finie. 
+Le second  nouveau terme paraît étrange. En effet, il semble annuler la force newtonienne créée à $\mathbf{x}$ par un fond de densité homogène non nul. On pourrait arguer que cette force devrait être nulle, pour des raisons de symétrie. Cependant, en appliquant le théorème de Gauss, on peut trouver une force non nulle dirigée vers l'origine des coordonnées (où qu'elle soit choisie !). Le fait est que l'équation de Poisson se comporte mal (et ne doit pas être utilisée) pour un champ source dont la norme $L^2$ n'est pas finie. 
 Mais bien sûr, cela implique des échelles au-delà de $R_H$ où nous ne nous attendons pas à ce que notre théorie tienne la route. En ce qui concerne les perturbations de la densité, nous soustrairons la valeur moyenne non nulle et nous nous débarrasserons ainsi de cette incohérence à grande échelle.  
 
 
@@ -138,40 +134,45 @@ Théorie newtonienne des perturbations
 
 ### Solution d'ordre zéro
 
-L'équation de continuité dans l'espace comobile ([](#Cont_comov))
-admet la solution homogène suivante (nous abandonnons l'indice $_\mathbf{x}$ à partir de maintenant pour désigner les quantités en coordonnées) :
-
+L'équation de continuité dans l'espace comobile [](#Cont_comov)
+admet la solution homogène suivante :
 \begin{equation}
-\rho_0= cst \qquad \mathbf{v}_0=0
+\rho_{\mathbf{x},0}= cst, \qquad \mathbf{v}_{\mathbf{x},0}=0
 \end{equation}
-L'intégration de l'équation de Poisson en coordonnées sphériques donne $\nabla \phi_0 = {4 \pi G \rho_0 \over 3 } \mathbf{x}+{A \over x^3} \mathbf{x}$, où $A$ est une constante d'intégration. En injectant l'équation de Friedman pour se débarrasser de $\rho_0$, nous obtenons :
-\begin{equation}
-\nabla \phi_0 = - a^3 {\ddot{a} \over a} \mathbf{x}+ {A \over x^3} \mathbf{x}
-\end{equation}
-On peut alors vérifier que $(\mathbf{v}_0, \phi_0)$ est une solution de l'équation d'Euler pour $A=0$.
+L'intégration de l'équation de Poisson en coordonnées sphériques donne :
+$$ \phi_{\mathbf{x},0} = \frac{4}{6} \pi G_N \rho_{\mathbf{x},0} $$
+$$\nabla \phi_{\mathbf{x},0} = {4 \pi G_N \rho_{\mathbf{x},0} \over 3 } \mathbf{x}$$
+en accord avec l'équation d'Euler si on utilise les équations de Friedmann [](#eq:ddota) :
+$$\frac{\ddot a}{a} = -\frac{4 \pi G_N}{3}(\epsilon + 3p)$$
+avec $\Lambda=0$ ici.
 
-Dans l'espace en mouvement, une solution homogène des équations de continuité, de Poisson et d'Euler ([](#Cont_comov), [](#Poisson_comov) et [](#Euler_comv)) est :
+Dans l'espace comobile, une solution homogène des équations de continuité, de Poisson et d'Euler ([](#Cont_comov), [](#Poisson_comov) et [](#Euler_comv)) est :
 \begin{equation}
-\rho_0= cst, \qquad \mathbf{v}_0=0, \qquad \nabla \phi_0 = - a^3 {\ddot{a} \over a} \mathbf{x}
+\rho_{\mathbf{x},0}= cst, \qquad \mathbf{v}_{\mathbf{x},0}=0, \qquad \nabla \phi_{\mathbf{x},0} = - a^3 {\ddot{a} \over a} \mathbf{x}, \qquad p_{\mathbf{x},0} = cst, 
 \end{equation}
 
-### Perturbations
+### Solution linéaire d'ordre un
 
 Considérons de petites perturbations autour de la solution d'ordre zéro :
-
 \begin{equation}
-\rho=\rho_0(1+\delta) \qquad \mathbf{v}=\mathbf{v}_0+\mathbf{v}_1 \qquad \phi=\phi_0 + \phi_1
+\rho_\mathbf{x}=\rho_0(1+\delta) \qquad \mathbf{v}_\mathbf{x}=\mathbf{v}_0+\delta\mathbf{v} \qquad \phi_\mathbf{x}=\phi_0 + \delta \phi_\mathbf{x}, \qquad p = p_0 + \delta p
 \end{equation}
-La quantité $\delta$ est appelée surdensité et est très utilisée dans la théorie de la formation des structures. Notons qu'elle a la même valeur dans l'espace physique et dans l'espace comoving. En injectant ces expressions dans les équations de continuité, de Poisson et d'Euler, la solution d'ordre zéro s'annule (comme prévu) et en supprimant les termes d'ordre 2, nous obtenons l'ensemble d'équations linéarisé :
+La quantité $\delta$ est appelée contraste de densité et est très utilisée dans la théorie de la formation des structures. Notons qu'elle a la même valeur dans l'espace physique et dans l'espace comobile. En injectant ces expressions dans les équations de continuité, de Poisson et d'Euler, la solution d'ordre zéro s'annule (comme prévu) et en supprimant les termes d'ordre 2, nous obtenons l'ensemble d'équations linéarisé :
 \begin{align}
-\nabla^2 \phi_1 &=& 4 \pi G \rho_0 \delta \\
-{\partial \delta \over \partial t} + \nabla. \mathbf{v_1}&=&0\\
-{\partial \mathbf{v_1} \over \partial t} + 2 H \mathbf{v_1} &=& - {1 \over a^3} \nabla \phi_1
+\nabla_\mathbf{x}^2 \delta \phi_\mathbf{x} &= 4 \pi G_N \rho_0 \delta \\
+{\partial \delta \over \partial t} + \nabla_\mathbf{x}. \delta\mathbf{v}&= 0\\
+{\partial \delta\mathbf{v} \over \partial t} + 2 H \delta\mathbf{v} &=  - {1 \over a^3} \nabla_\mathbf{x} \delta \phi_\mathbf{x} - \frac{1}{a^2 \rho} \nabla_\mathbf{x} \delta p
 \end{align}
 
 En prenant la divergence de l'équation d'Euler linéarisée et en réinjectant l'équation de Poisson et les équations de continuité, nous obtenons finalement :
+$$\ddot{\delta}+ 2 H \dot{\delta}  - \frac{1}{a^2 \rho} \triangle_\mathbf{x} \delta p = 4 \pi G_N {\rho_0 \over a^3} \delta$$
+On introduit la vitesse du son $c_s$ dans le milieu pour des compressions adiabatiques :
+$$c_s^2 = \frac{1}{\rho \chi_S} =  \left.\frac{\partial p}{\partial \rho}\right\vert_{adiabatique} \approx \frac{\delta p}{\delta \rho} = w c^2 $$
+avec $w = p/\epsilon$ le paramètre d'équation d'état du milieu de propagation. Alors on obtient l'équation de croissance des perturbations dans l'espace comobile :
+\begin{equation}\label{fluct_growth}
+\boxed{ \ddot{\delta}+ 2 H \dot{\delta}  - \frac{c_s^2}{a^2} \triangle_\mathbf{x} \delta = 4 \pi G_N \rho \delta  }
+\end{equation}
 
-$$\boxed{\ddot{\delta}+ 2 H \dot{\delta} - 4 \pi G {\rho_0 \over a^3} \delta =0 \label{fluct_growth}}$$
 
 
 ### Le champ de perturbation de la densité initiale
@@ -250,3 +251,8 @@ On notera que même lorsqu'elle est appliquée à une quantité sans dimension, 
 &=& \int  \Delta^2(k)\,\, d\,\ln(k)
 \end{align}
 Nous voyons que $\Delta^2$ quantifie la contribution à la variance (en quelque sorte la densité d'énergie) du signal de l'espace réel par cellule logarithmique.
+
+
+
+#### BACKUP
+

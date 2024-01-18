@@ -131,7 +131,7 @@ sphérique. Calculer le rayon de l'univers sphérique d'Einstein $R\equiv a_{\rm
 \begin{equation} \left\lbrace
 \begin{array}{l}
    \displaystyle{3 \left( \frac{\dot{a}^2}{a^2}+ \frac{c^2k}{a^2} \right) = 8\pi G_N \rho_m + c^2 \Lambda}  \\ 
-    \displaystyle{\frac{2\ddot{a}a + \dot{a}^2 + c^2 k}{a^2} = - 8\pi G_N p/c^2 + c^2 \Lambda }
+    \displaystyle{\frac{2\ddot{a}a + \dot{a}^2 + c^2 k}{a^2} = - 8\pi G_N P/c^2 + c^2 \Lambda }
 \end{array}
 \right.
 \end{equation}
@@ -256,7 +256,7 @@ mouvement unidimensionnel. Analyser à nouveau le rôle de chaque terme de "forc
 Dans ce qui suit, nous négligeons la composante de rayonnement. Tracez les termes d'énergie potentielle en fonction 
 du facteur d'échelle $a$ et décrivez le destin des univers suivants.
 
-3. Modèle sphérique ($k=+1$) avec $\Lambda=4\pi G \rho_m / c^2$ (montrez que le modèle statique d'Einstein est un 
+3. Modèle sphérique ($k=+1$) avec $\Lambda=4\pi G_N \rho_m / c^2$ (montrez que le modèle statique d'Einstein est un 
 cas particulier de ce modèle et qu'il est instable).
 
 4. Modèles de matière seule avec différents signes de courbure (le modèle d'Einstein-de Sitter correspond au cas de la courbure plate).
@@ -422,10 +422,10 @@ souris pan-dimensionnelles... mais la réponse n'est pas (encore) donnée par le
 Nous avons besoin de $1\,$Mpc$=3\times 10^{19}\,$km.
 
 2. Quel univers est le plus ancien ? Pour un modèle $\Lambda$CDM avec $32\%$ de matière et $68\%$ d'énergie noire, 
-les cosmologistes estiment l'âge de l'univers à $13.8\,$Gyr. Ce chiffre peut être comparé à l'âge des étoiles les plus anciennes, 
+les cosmologistes estiment l'âge de l'univers à $13.8\,\text{Gyr}$. Ce chiffre peut être comparé à l'âge des étoiles les plus anciennes, 
 qui est mesuré à {cite:p}`hobson2006general`[p. 410] :
 \begin{equation}
-t_{\text{premières étoiles}} = 11,5\pm 1,3\,\text{Gyr}
+t_{\text{premières étoiles}} = 11.5\pm 1.3\,\text{Gyr}
 \end{equation}
  
 3. Supposons maintenant que $H_0\approx 500\,$km/s/Mpc comme cela a été estimé au début par Edwin Hubble. 

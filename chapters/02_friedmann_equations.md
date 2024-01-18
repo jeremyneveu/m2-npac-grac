@@ -60,7 +60,7 @@ Par conséquent, mathématiquement on peut introduire $\epsilon(t)$ et $p(t)$ de
 $$\begin{align}
 T_{00} & =  \epsilon(t)\quad  \text{(scalaire)} \\
 T_{i0} & = T_{0i} = 0 \quad  \text{(vecteur)} \\
-T_{ij} & =  p(t) \gamma_{ij}\quad \text{(tenseur d'ordre 2)}
+T_{ij} & =  P(t) \gamma_{ij}\quad \text{(tenseur d'ordre 2)}
 \end{align}$$
 
 De manière plus élégante, on peut introduire le vecteur $U^\mu$ défini par :
@@ -68,16 +68,16 @@ $$ U^0 = 1, \quad U^i = 0 $$
 et obtenir une écriture compacte pour le tenseur énergie-impulsion d'un Univers homogène et isotrope :
 :::{math}
 :label: eq:def-Tmunu2
-T_{\mu\nu} = (\epsilon + p) U_\mu U_\nu + p g_{\mu\nu}
+T_{\mu\nu} = (\epsilon + P) U_\mu U_\nu + P g_{\mu\nu}
 :::
 
 :::{math}
 :label: eq:def-Tmunu
-T^{\mu\nu} = (\epsilon + p) U^\mu U^\nu + p g^{\mu\nu} = \begin{pmatrix}
+T^{\mu\nu} = (\epsilon + P) U^\mu U^\nu + P g^{\mu\nu} = \begin{pmatrix}
 -\epsilon g^{00} & 0 & 0 & 0 \\
-0 & p g^{11} & 0 & 0 \\ 
-0 & 0 & p g^{22} & 0 \\ 
-0 & 0 & 0 & p g^{33}  \\ 
+0 & P g^{11} & 0 & 0 \\ 
+0 & 0 & P g^{22} & 0 \\ 
+0 & 0 & 0 & P g^{33}  \\ 
 \end{pmatrix} 
 :::
 
@@ -93,16 +93,16 @@ le système physique étudié est au repos dans les coordonnées comobiles, comm
 Etudions un fluide parfait, c'est-à-dire un ensemble de particules dont le libre parcours moyen est petit devant les distances 
 auxquelles on l'étudie, et sans viscosité. Etant donné la définition d'un tenseur énergie-impulsion, dans le référentiel $\mathcal{R}'$ où
 le fluide parfait est au repos on peut écrire :
-$$ T'^{ij} = p \delta^{ij}, \quad T'^{i0} = T'^{0i} = 0, \quad T'^{00} = \rho c^2 $$
+$$ T'^{ij} = P \delta^{ij}, \quad T'^{i0} = T'^{0i} = 0, \quad T'^{00} = \rho c^2 $$
 où explicitement $\rho$ est la densité _massique_ propre du fluide et $p$ sa pression cinétique (donc un flux de quantité de mouvement à travers une surface).
 Dans un autre référentiel, celui d'un observateur de l'écoulement par exemple, ce tenseur énergie-impulsion se réécrit :
 $$ T^{\mu\nu} = \Lambda^{\mu}_{\;\alpha} \Lambda^{\nu}_{\;\beta} T^{\alpha\beta} $$
 avec $\Lambda^\mu_{\;\alpha}$ la transformation de Lorentz définie par l'équation [](#eq:lorentz2). Plus explicitement :
-$$ T^{ij} = p \delta^{ij} + (p + \rho c^2) \frac{v^i v^j}{c^2- v^2}, \quad T^{i0} = (p + \rho c^2) \frac{c v ^i}{c^2  - v^2}, \quad T^{00} = \frac{\rho c^4  + p v^2}{c^2  - v^2} $$
+$$ T^{ij} = P \delta^{ij} + (P + \rho c^2) \frac{v^i v^j}{c^2- v^2}, \quad T^{i0} = (P + \rho c^2) \frac{c v ^i}{c^2  - v^2}, \quad T^{00} = \frac{\rho c^4  + P v^2}{c^2  - v^2} $$
 Définissons la quatre vitesse en coordonnées comobiles ainsi :
 $$ \vec U =\frac{ \dd \vec x }{c \dd \tau} = \frac{\vec v / c }{ \sqrt{1-v^2}}, \quad U^0 = \frac{\dd t }{\dd  \tau} =  \frac{1 }{ \sqrt{1-v^2}}, \quad U_ \mu U ^\mu = -c^2  $$
 alors le tenseur s'écrit :
-$$T^{\mu\nu} = (\rho c^2 + p) U^\mu U^\nu + p \eta^{\mu\nu}$$
+$$T^{\mu\nu} = (\rho c^2 + P) U^\mu U^\nu + P \eta^{\mu\nu}$$
 
 L'équation [](#eq:def-Tmunu) correspond donc bien à la définition d'un tenseur énergie-impulsion pour un fluide parfait dans le cadre relativiste.
 
@@ -111,7 +111,7 @@ et l'équation de conservation de la matière.
 Pour simplifier, ramenons-nous au cas d'un fluide incompressible donc $\dd \rho / \dd t = 0$ et non relativiste donc $p / \rho c^2 \propto (v/c)^2 \ll 1$. Alors :
 $$ 0 = \frac{\partial T^{\mu\nu}}{\partial x^\beta} \Rightarrow
 \left\lbrace\begin{align*}
-& \alpha = i:\ & 0 = & \vec\nabla p + \rho \frac{\partial \vec v}{\partial t} +  \rho (\vec v \cdot \vec\nabla)(\vec v)  \\
+& \alpha = i:\ & 0 = & \vec\nabla P + \rho \frac{\partial \vec v}{\partial t} +  \rho (\vec v \cdot \vec\nabla)(\vec v)  \\
 & \alpha = 0:\ & 0 = & \rho \vec \nabla \vec v + \frac{\partial \rho}{\partial t} 
 \end{align*}\right.
 $$
@@ -122,9 +122,9 @@ Dans une base cartésienne, le tenseur énergie-impulsion prend la forme simple 
 $$\label{eq:tmunu_fluide}
 T_{\mu\nu}  =  \begin{pmatrix}
 \epsilon & 0 & 0 & 0 \\
-0 & p a^2(t) & 0 & 0 \\ 
-0 & 0 & p a^2(t) & 0 \\ 
-0 & 0 & 0 & p a^2(t)  \\ 
+0 & P a^2(t) & 0 & 0 \\ 
+0 & 0 & P a^2(t) & 0 \\ 
+0 & 0 & 0 & P a^2(t)  \\ 
 \end{pmatrix} .
 $$
 
@@ -187,7 +187,7 @@ G_{\mu\nu}-\Lambda g_{\mu\nu} & = -8\pi G_N T_{\mu\nu}/c^4 \\
 \Leftrightarrow  & \left\lbrace
 \begin{array}{rl}
     \text{00: } &  \displaystyle{3 \left( \frac{\dot{a}^2}{a^2}+ \frac{c^2 k}{a^2} \right) = 8\pi G_N \rho + c^2 \Lambda} \\
-    ij\text{: } &   \displaystyle{\frac{2\ddot{a}a + \dot{a}^2 + c^2 k}{a^2} = - \frac{8\pi G_N}{c^2 } p + c^2 \Lambda }
+    ij\text{: } &   \displaystyle{\frac{2\ddot{a}a + \dot{a}^2 + c^2 k}{a^2} = - \frac{8\pi G_N}{c^2 } P + c^2 \Lambda }
 \end{array}
 \right.\end{aligned}$$ 
 Ce sont les deux équations de Friedmann. Les voici maintenant exprimées en fonction du paramètre de Hubble
@@ -196,7 +196,7 @@ $$\label{eq:friedmann}
 \left\lbrace
 \begin{array}{rl}
     \text{00: } & \displaystyle{H^2 = \frac{8\pi G_N \rho}{3} + \frac{c^2 \Lambda}{3} - \frac{c^2 k}{a^2}}\\
-    ij\text{: } &  \displaystyle{2\dot{H} + 3H^2 = - \frac{8\pi G_N}{c^2 } p + c^2 \Lambda - \frac{c^2 k}{a^2}}
+    ij\text{: } &  \displaystyle{2\dot{H} + 3H^2 = - \frac{8\pi G_N}{c^2 } P + c^2 \Lambda - \frac{c^2 k}{a^2}}
 \end{array}
 \right.
 $$
@@ -208,7 +208,7 @@ l'équation de conservation de l'énergie que l'on obtiendrait aussi
 directement en calculant $T^{\mu\nu}_{\;\;\;;\mu}=0$ dans la métrique
 FLRW : 
 $$\label{eq:conservation_energie}
-\fbox{$\dot{\epsilon} = -3 H( \epsilon  + p )$}
+\fbox{$\dot{\epsilon} = -3 H( \epsilon  + P )$}
 $$
 
 
@@ -223,7 +223,7 @@ g_{\mu\nu} = \begin{pmatrix}
 0 & 0& a^2(t) & 0 \\
 0 & 0& 0& a^2(t)  \\
 \end{pmatrix}\qquad 
-T_{\mu\nu}=\begin{pmatrix} \rho c^2 & 0 & 0 & 0 \\ 0 &a^2 p & 0 & 0 \\ 0&0&a^2 p &0 \\ 0&0&0&a^2 p \end{pmatrix}
+T_{\mu\nu}=\begin{pmatrix} \rho c^2 & 0 & 0 & 0 \\ 0 &a^2 P & 0 & 0 \\ 0&0&a^2 P &0 \\ 0&0&0&a^2 P \end{pmatrix}
 \label{stress-energy-cosmo-tensor}
 \end{equation}
 We recall the following formula for the Christoffel and Riemann tensors:
@@ -321,7 +321,7 @@ G_{\mu\nu} - \Lambda g_{\mu\nu}  = -\frac{8\pi G_N}{c^4}T_{\mu\nu}
 \begin{align}
 \label{Friedmann1}
 3{\dot{a}^2 \over a^2}&=& 8 \pi G_N \rho + c^2 \Lambda\\
-2{\ddot{a} \over a} + {\dot{a}^2 \over a^2}& =& - {8 \pi G_N \over c^2}p + c^2 \Lambda
+2{\ddot{a} \over a} + {\dot{a}^2 \over a^2}& =& - {8 \pi G_N \over c^2}P + c^2 \Lambda
 \label{align}
 \end{align}
 
@@ -330,7 +330,7 @@ Write the two Friedmann equations in term of the Hubble parameter $H=\dot{a}/a$ 
 \begin{equation} \left\lbrace
 \begin{array}{l}
    \displaystyle{3 H^2+ \frac{3kc^2}{a^2} = 8\pi G_N \rho + c^2\Lambda} \\
-    \displaystyle{2\dot{H} + 3H^2 + \frac{c^2k}{a^2} = - 8\pi G_N p/c^2 + c^2\Lambda }
+    \displaystyle{2\dot{H} + 3H^2 + \frac{c^2k}{a^2} = - 8\pi G_N P/c^2 + c^2\Lambda }
 \end{array}
 \right.
 \end{equation}
@@ -340,9 +340,9 @@ From the two Friedmann equations, find the energy conservation equation law $\do
 
 \begin{align}
 8\pi G \dot{\rho} & = 6\dot{H}H - \frac{6c^2 k \dot{a}}{a^3} \\
-& = 3H \left[-8\pi G_N p / c^2 + c^2 \Lambda - 3 H^2 - \frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
-& = 3H \left[-8\pi G_N p / c^2 -8 \pi G_N \rho + 2\frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
-& = 3H \left[-8\pi G_N p / c^2 -8 \pi G_N \rho \right]
+& = 3H \left[-8\pi G_N P / c^2 + c^2 \Lambda - 3 H^2 - \frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
+& = 3H \left[-8\pi G_N P / c^2 -8 \pi G_N \rho + 2\frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
+& = 3H \left[-8\pi G_N P / c^2 -8 \pi G_N \rho \right]
 \end{align}
 and $\dot{\rho} c^2 = -3 H(\rho c^2 + p )$. 
 This is the same result as in the $T^{\beta \alpha}_{\,\,\,\,\,\,;\alpha}=0$ computation (as expected).
@@ -361,9 +361,9 @@ de l'Univers est isentropique.
 :::{solution} exo:expansion_isentropique
 :class: dropdown
 
-$$\dd U = T \dd S - p \dd V $$
+$$\dd U = T \dd S - P \dd V $$
 $$U = a^3 \epsilon, \quad V = a^3$$
-$$ \dd(a^3 \epsilon) = - p \dd (a^3) + T \dd S \Rightarrow 3 \dot{a} a^2 \epsilon + a^3 \dot{\epsilon} = - 3 p \dot{a} a^2  + T \frac{\dd S}{\dd t}\Rightarrow \dot{\epsilon} = -3\frac{\dot{a}}{a}(p+\epsilon) +T \frac{\dd S}{\dd t} $$
+$$ \dd(a^3 \epsilon) = - P \dd (a^3) + T \dd S \Rightarrow 3 \dot{a} a^2 \epsilon + a^3 \dot{\epsilon} = - 3 p \dot{a} a^2  + T \frac{\dd S}{\dd t}\Rightarrow \dot{\epsilon} = -3\frac{\dot{a}}{a}(p+\epsilon) +T \frac{\dd S}{\dd t} $$
 Donc 
 $$\frac{\dd S}{\dd t} = 0$$
 et l'expansion est isentropique. C'est attendu étant donné que pour un Univers homogène et isotrope le tenseur énergi-impulsion est celui
@@ -385,7 +385,7 @@ dans cette composante.
 
 La matière non relativiste n'exerce pas de
 pression donc 
-$$p_m=0,$$
+$$P_m=0,$$
 et : 
 $$
 \label{eq:conservation_energie_matiere}
@@ -411,9 +411,9 @@ une diminution de la densité d'énergie de rayonnement en $2^4$.
 
 :::{note} Equation d'état du gaz parfait
 Pour un gaz parfait, on rappelle que l'équation d'état est :
-$$ p = \rho_n k_B T  $$
+$$ P = \rho_n k_B T  $$
 avec $T$ sa température, $\rho_n$ la densité particulaire et $k_B$ la constante de Boltzmann.
-S'il est à basse température (i.e. non relativiste) alors on a $\epsilon \approx m c^2 \rho_n$ et on veut $p / \epsilon = k_B T \ll 1/3$ soit :
+S'il est à basse température (i.e. non relativiste) alors on a $\epsilon \approx m c^2 \rho_n$ et on veut $P / \epsilon = k_B T \ll 1/3$ soit :
 $$ T \ll m c^2 / 3 k_B $$
 Pour un gaz d'hydrogène, $T \ll 10^{12}\,$K. Donc on voit que la matière telle qu'on la connait est non relativiste aujourd'hui et même bien avant le CMB.
 
@@ -431,7 +431,7 @@ et [](#eq:conservation_energie_radiation) sont-elles encore valables ?
 L'équation [](#eq:conservation_energie) peut se déduire d'un raisonnement thermodynamique qui peut nous être utile ici. L'expansion de l'Univers
 étant adiabatique, la variation d'entropie liée à l'expansion est nulle donc $\dd S = 0$. Le premier principe de la thermodynamique sur un volume $V$ d'Univers donne :
 $$\label{eq:conservation_energie_thermo}
-\dd U = -p \dd V + T \dd S \Leftrightarrow \dd \left(\epsilon_m V + \epsilon_r V  \right) = -\frac{1}{3}\epsilon_r \dd V$$
+\dd U = -P \dd V + T \dd S \Leftrightarrow \dd \left(\epsilon_m V + \epsilon_r V  \right) = -\frac{1}{3}\epsilon_r \dd V$$
 Si les deux composantes n'interagissent pas entre elles, alors cette dernière équation peut se scinder en ses deux composantes, 
 comme deux systèmes thermodynamiques indépendants :
 $$\dd \left(\epsilon_m V\right) = 0, \quad \dd \left(\epsilon_r V  \right) = -\frac{1}{3}\epsilon_r \dd V$$
@@ -462,19 +462,19 @@ de volume. Elle n'est donc pas diluée comme toute énergie ordinaire
 lorsque celui-ci est en expansion. De plus, grâce à la seconde équation
 de Friedmann, on voit que la pression associée à la constante
 cosmologique serait 
-$$p_\Lambda = - \epsilon_\Lambda,$$
+$$P_\Lambda = - \epsilon_\Lambda,$$
 soit une pression négative ! Dans la physique ordinaire, un des rares phénomènes où interviennent des pressions négatives
 est la cavitation (<wiki:Pressure#Negative_pressures). En posant $\rho_{\mathrm{tot}}=\rho + \rho_\Lambda$ (et
 $p_{\mathrm{tot}}=p + p_\Lambda$) puis en combinant les deux équations
 de Friedmann [](#eq:friedmann) de façon à éliminer le terme de courbure, on
 obtient :
-$$
-2\dot{H} + 2H^2 = \frac{2\ddot{a}}{a} = -\frac{8\pi G_N}{3}\left( \epsilon _{\mathrm{tot}} + 3p_{\mathrm{tot}}\right).
-$$
+\begin{equation}\label{eq:ddota}
+2\dot{H} + 2H^2 = \frac{2\ddot{a}}{a} = -\frac{8\pi G_N}{3}\left( \epsilon _{\mathrm{tot}} + 3P_{\mathrm{tot}}\right).
+\end{equation}
 On constate que l'expansion de l'Univers s'accélère ($\ddot{a}>0$) si
-$p_{\mathrm{tot}}<-\epsilon_{\mathrm{tot}}/3$. L'Univers étant constitué
+$P_{\mathrm{tot}}<-\epsilon_{\mathrm{tot}}/3$. L'Univers étant constitué
 essentiellement de matière non relativiste et de rayonnement, la condition précédente devient équivalente à 
-$$\label{eq:ddota}
+$$
 \ddot{a} > 0 \Leftrightarrow \epsilon_\Lambda > \epsilon_r + \epsilon_m/2$$
 En conclusion, si la constante cosmologique domine le contenu en énergie de l'Univers, alors elle
 engendre une telle pression négative que ce dernier entre en _expansion accélérée_.
@@ -495,7 +495,7 @@ $$\left[ g_{\mu\nu} \right] = [1,\mathsf{L}^{2},\mathsf{L}^{2},\mathsf{L}^{2}] $
 La densité d'énergie associée à l'énergie de courbure s'identifie à : 
 $$\epsilon_k(t) =\rho_k(t) c^2 = - \frac{3 c^4 k  }{8\pi G_N a^2(t)}.$$
 De même, son effet en terme de pression est :
-$$p_k = \frac{c^4 k}{8\pi G_N a^2(t)}.$$
+$$P_k = \frac{c^4 k}{8\pi G_N a^2(t)}.$$
 
 Les paramètres cosmologiques
 ----------------------------
@@ -506,11 +506,11 @@ Les paramètres cosmologiques
 L'équation d'état $w$ associée à une composante de l'Univers est
 définie par le rapport de sa pression et de sa densité d'énergie
 $$\label{eq:def-w}
-\fbox{$w=p/\epsilon.$}
+\fbox{$w=P/\epsilon.$}
 $$
 
 -   La matière froide non relativiste n'exerce pas de pression sur son milieu
-    extérieur d'où $p_m=0$ donc $w_m=0$.
+    extérieur d'où $P_m=0$ donc $w_m=0$.
 
 -   La matière relativiste exerce quant à elle une pression sur son
     milieu de valeur $P_r =  \epsilon_r / 3 $ d'où $w_r=1/3$.
@@ -582,14 +582,14 @@ afin de mesurer les variations de l'accélération de l'expansion de l'Univers.
 
 1. Démontrer la formule [](#eq:conservation_energie).
 2. Trouver l'évolution de la densité de matière $\rho_m$ en fonction de $a$. Même question pour la densité de rayonnement $\rho_r$. 
-On rappelle que $p_m=0$ pour la matière non relativiste et $P_r=\epsilon_r/3$ pour le rayonnement.
+On rappelle que $P_m=0$ pour la matière non relativiste et $P_r=\epsilon_r/3$ pour le rayonnement.
 3. A partir d'un raisonnement sur un cube comobile qui se dilate, avec des arguments physiques sur des nombres de galaxies,
 retrouvez le même résultat.
-4. Pour un fluide parfait dont l'équation d'état $w$ est constante ($p=w\rho c^2$), donner l'évolution de sa densité d'énergie.
+4. Pour un fluide parfait dont l'équation d'état $w$ est constante ($P=w\rho c^2$), donner l'évolution de sa densité d'énergie.
 5. Identifier le terme $\Lambda g_{\mu\nu}$ avec le tenseur énergie-contrainte d'un fluide parfait. Trouver la densité d'énergie $\rho_\Lambda$ 
-et la pression $p_\Lambda$ exercées par la constante cosmologique ainsi que son équation d'état.
+et la pression $P_\Lambda$ exercées par la constante cosmologique ainsi que son équation d'état.
 6. À partir de ces dernières questions, réfléchissez au comportement de la densité d'énergie liée au vide. Considérons une chambre à piston cylindrique de section $A$ "remplie" d'énergie du vide. Le piston est tiré sur une distance linéaire $\dd x$.
-Montrez que l'énergie créée par le retrait du piston est égale au travail effectué par le vide, à condition que :}
+Montrez que l'énergie créée par le retrait du piston est égale au travail effectué par le vide, à condition que :
 \begin{equation}
  p_{\rm vac} = - \rho_{\rm vac} c^2 
  \end{equation} % voir Hobson exo piston 15,5 p422
@@ -601,12 +601,12 @@ Cette équation d'état du vide peut être établie à l'aide de la théorie qua
 :class: dropdown
 
 1. \begin{align}
-8\pi G \dot{\rho} & = 6\dot{H}H - \frac{6c^2 k \dot{a}}{a^3} \\
-& = 3H \left[-8\pi G p / c^2 + c^2 \Lambda - 3 H^2 - \frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
-& = 3H \left[-8\pi G p / c^2 -8 \pi G \rho + 2\frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
-& = 3H \left[-8\pi G p / c^2 -8 \pi G \rho \right]
+8\pi G_N \dot{\rho} & = 6\dot{H}H - \frac{6c^2 k \dot{a}}{a^3} \\
+& = 3H \left[-8\pi G_N P / c^2 + c^2 \Lambda - 3 H^2 - \frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
+& = 3H \left[-8\pi G_N P / c^2 -8 \pi G \rho + 2\frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
+& = 3H \left[-8\pi G_N P / c^2 -8 \pi G \rho \right]
 \end{align}
-et $\dot{\rho} c^2 = -3 H(\rho c^2 + p )$. 
+et $\dot{\rho} c^2 = -3 H(\rho c^2 + P )$. 
 
 
 2. En utilisant la définition du paramètre de Hubble $H = (\dd a/\dd t)/a$, nous pouvons transformer les dérivées temporelles 
@@ -616,9 +616,9 @@ en dérivées par rapport au facteur d'échelle $a$ (ou décalage vers le rouge 
 \end{equation}
 La formule de conservation de l'énergie se transforme en :
 \begin{equation}
-a\frac{\dd\rho}{da} = -3 (\rho c^2 + p)
+a\frac{\dd\rho}{da} = -3 (\rho c^2 + P)
 \end{equation}
-En ce qui concerne la matière non relativiste, $p_m=0$ donc :
+En ce qui concerne la matière non relativiste, $P_m=0$ donc :
 \begin{equation}
 \frac{\dd\rho_m}{\rho_m} = -3 \frac{\dd a}{a} \Rightarrow \rho_m(a) = \rho_m^0 \left(\frac{a_0}{a}\right)^3
 \end{equation}
@@ -660,19 +660,19 @@ Le comportement en $a^{-4}$ est donc dû à la dilatation de la longueur d'onde 
 
 4. On montre que
 \begin{align}
-\dot{\rho}c +3\frac{\dot{a}}{ac}(\rho c^2+p)=0 & \Leftrightarrow \dot{\rho}c =-3\frac{\dot{a}}{ac}(1+w)\rho c^2=0 \\
+\dot{\rho}c +3\frac{\dot{a}}{ac}(\rho c^2+P)=0 & \Leftrightarrow \dot{\rho}c =-3\frac{\dot{a}}{ac}(1+w)\rho c^2=0 \\
 & \Leftrightarrow \frac{d\rho}{\rho} = -3(1+w) \frac{da}{a} \\
 & \Rightarrow \rho = \rho_0 \left( \frac{a}{a_0}\right)^{-3(1+w)}
 \end{align}
 
 5. En utilisant l'équation d'Einstein, en passant le terme $\Lambda$ du côté du tenseur énergie-contrainte de l'équation, nous identifions cette contribution comme un fluide parfait :
 \begin{equation}
-\Lambda g_{\mu\nu} = \frac{8\pi G}{c^4} \begin{pmatrix} \rho_\Lambda c^2 & 0 & 0 & 0 \\ 0 &a^2 p_\Lambda & 0 & 0 \\ 0&0&a^2 p_\Lambda &0 \\ 0&0&0&a^2 p_\Lambda \end{pmatrix}
+\Lambda g_{\mu\nu} = \frac{8\pi G_N}{c^4} \begin{pmatrix} \rho_\Lambda c^2 & 0 & 0 & 0 \\ 0 &a^2 p_\Lambda & 0 & 0 \\ 0&0&a^2 p_\Lambda &0 \\ 0&0&0&a^2 p_\Lambda \end{pmatrix}
 \end{equation}
 Nous obtenons :
 \begin{align}
-\Lambda & = \frac{8\pi G}{c^4} \rho_\Lambda c^2 \Leftrightarrow \rho_\Lambda c^2 = c^4 \Lambda / 8\pi G \\
--a^2 \Lambda & = \frac{8\pi G}{c^4} a^2 p_\Lambda \Leftrightarrow p_\Lambda = - c^4 \Lambda / 8 \pi G = - \rho_\Lambda c^2
+\Lambda & = \frac{8\pi G_N}{c^4} \rho_\Lambda c^2 \Leftrightarrow \rho_\Lambda c^2 = c^4 \Lambda / 8\pi G_N \\
+-a^2 \Lambda & = \frac{8\pi G_N}{c^4} a^2 P_\Lambda \Leftrightarrow p_\Lambda = - c^4 \Lambda / 8 \pi G_N = - \rho_\Lambda c^2
 \end{align}
 Pour la constante cosmologique, l'équation d'état est constante et sa valeur est $w=-1$. En utilisant la question précédente, nous avons :
 \begin{equation}
@@ -682,13 +682,13 @@ La densité d'énergie associée à la constante cosmologique est constante tout
 
 6. L'énergie créée par le retrait du piston est :
 \begin{equation}
-dU = d\left(\rho_{\rm vac} c^2 V\right) = c^2 V d\rho_{\rm vac} + \rho_{\rm vac} c^2 dV
+\dd U = \dd\left(\rho_{\rm vac} c^2 V\right) = c^2 V \dd\rho_{\rm vac} + \rho_{\rm vac} c^2 \dd V
 \end{equation}
 Pour une transformation adiabatique, le premier principe de la thermodynamique donne :
 \begin{equation}
-dU = \delta W = -p_{\rm vac} dV
+\dd U = \delta W = -P_{\rm vac} \dd V
 \end{equation}
-En supposant que $p_{\rm vac}= - \rho_{\rm vac} c^2$, pour la densité d'énergie du vide nous avons $d\rho_{\rm vac} = 0$ et le premier principe $ dU = \delta W$ est vérifié.
+En supposant que $P_{\rm vac}= - \rho_{\rm vac} c^2$, pour la densité d'énergie du vide nous avons $d\rho_{\rm vac} = 0$ et le premier principe $ dU = \delta W$ est vérifié.
 
 
 Absence of a preferred reference frame (i.e. the Relativity principle) means that the energy-momentum tensor for vacuum T(vac)μν=diag(ρ,p,p,p) is the same for every observer. 
