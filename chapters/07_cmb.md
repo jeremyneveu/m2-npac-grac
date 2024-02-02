@@ -438,7 +438,7 @@ Dans la limite non relativiste, l'énergie des particules est égale à leur mas
 
 \begin{equation}
   \boxed{\begin{aligned}
-    n    &\approx g \left(\frac{m k_B T}{2\pi \hbar^2}\right)^{-3/2} \exp\left(-\frac{(mc^2 - \mu)}{k_B T}\right)\label{eq:n_nonrel} \\
+    n    &\approx g \left(\frac{m k_B T}{2\pi \hbar^2}\right)^{3/2} \exp\left(-\frac{(mc^2 - \mu)}{k_B T}\right)\label{eq:n_nonrel} \\
     \rho &\approx n m + \frac{3}{2} \frac{nk_B T}{c^2} \\
     P    &= n k_B T \ll \epsilon = nmc^2 \\
   \end{aligned}}
@@ -780,8 +780,8 @@ et même celle-ci (moins efficace) :
 $$n  \rightleftharpoons  p + e^- + \bar{\nu}_e $$
 Tant que ces interactions existent, le rapport neutron sur proton est donné par les densités particulaires à l'équilibre [](#eq:n_nonrel) pour des particules non-relativistes[^mp] :
 \begin{align}
-    n_n  & = g_n \left(\frac{m_n k_B T}{2\pi \hbar^2}\right)^{-3/2} \exp\left(-\frac{(m_nc^2 - \mu_n)}{k_B T}\right) \\
-    n_p  & = g_p \left(\frac{m_p k_B T}{2\pi \hbar^2}\right)^{-3/2} \exp\left(-\frac{(m_pc^2 - \mu_p)}{k_B T}\right) 
+    n_n  & = g_n \left(\frac{m_n k_B T}{2\pi \hbar^2}\right)^{3/2} \exp\left(-\frac{(m_nc^2 - \mu_n)}{k_B T}\right) \\
+    n_p  & = g_p \left(\frac{m_p k_B T}{2\pi \hbar^2}\right)^{3/2} \exp\left(-\frac{(m_pc^2 - \mu_p)}{k_B T}\right) 
 \end{align}
 Or $g_n=g_p=2$ et on peut supposer que $\mu_p=\mu_n$ si les potentiels chimiques des électrons et neutrinos sont négligeables. Alors le rapport neutron sur proton se simplifie en :
 \begin{equation}\label{eq:np_eq}
