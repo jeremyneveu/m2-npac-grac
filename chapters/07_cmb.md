@@ -878,35 +878,35 @@ En terme de masse, l'abondance d'hélium 4 dans l'Univers à la fin de la nuclé
 en bon accord avec les mesures (voir Figure~[](#fig:BBN_mes). Des calculs plus précis donnent $Y_p$ autour de 24%, et notamment prédisent aussi la proportion des autres noyaux légers comme le deutérium après $t_{\mathrm{nuc}}$, le lithium, etc ([](#fig:BBN)).
 
 
-```{figure} ../images/bbn.png
+:::{figure} ../images/bbn.png
 :width: 80%
 :align: center
 :label: fig:BBN
 
 Synthèse des éléments légers dans l'Univers primordial (d'après {cite}`PospelovBBN2010`).
-```
+:::
 
 
-```{figure} ../images/bbn_Yp.png
+:::{figure} ../images/bbn_Yp.png
 :width: 80%
 :align: center
 :label: fig:BBN_mes
 
 Comparaison entre les prédictions théoriques pour les abondances des noyaux légers (bandes colorées) et les mesures (bandes grises) (d'après {cite}`Baumann`).
-```
+:::
 
 :::{note} Au-delà de l'hélium
 
 Il est très difficile de former des noyaux au-delà de l'hélium car ce dernier possède une énergie de liaison particulièrement supérieure aux atomes immédiatement plus lourds. En particulier il n'existe pas de noyaux stables avec $A=5$ nucléons donc pour aller au-delà de l'hélium il ne suffit pas d'absorber un des nombreux protons présents. Un peu de lithium peut se former via les réactions :
 $$^4\mathrm{He} + \mathrm{D} \rightleftharpoons ^6\mathrm{Li} + \gamma $$
 
-```{figure} ../images/Binding_energy_curve.svg
+:::{figure} ../images/Binding_energy_curve.svg
 :width: 80%
 :align: center
 :label: fig:BBN_mes
 
 Energie de liaison par nucléons (source: Wikipedia <wiki:Nuclear_binding_energy>).
-```
+:::
 :::
 
 ### Recombinaison
@@ -990,13 +990,13 @@ Le temps $t_{\mathrm{ls}}$ pour lequel $\tau=1$ est appelé temps de dernière d
 \end{equation}
 C'est un des six paramètres du modèle standard $\Lambda$CDM. En effet, après l'émission du fond diffus cosmologique, on entre dans les Ages Sombres de l'Univers, où l'Univers est transparent mais aucun astre n'émet encore de lumière. Mais avec l'apparition des premières étoiles et galaxies, peut-être 150 millions d'années après le Big Bang, le milieu neutre est de nouveau ionisé. Bien que très peu dense, les photons du CMB interagissent de nouveau avec les électrons par diffusion Thomsom, ce qui diminue l'amplitude des anisotropies de petites échelles dans le spectre de puissance du CMB, et introduit de nouvelles anisotropies dans les anisotropies de polarisation. C'est le paramètre le moins bien mesuré du modèle $\Lambda$CDM pour le moment, mais il informe sur l'apparition des premiers astres lumineux.
 
-```{figure} ../images/tau_history.png
+:::{figure} ../images/tau_history.png
 :width: 80%
 :align: center
 :label: fig:tau
 
 The optical depth to reionization $\tau$ (d'après [](https://lambda.gsfc.nasa.gov/education/graphic_history/taureionzation.html), image credit: NASA / LAMBDA Archive Team).
-```
+:::
 
 :::
 

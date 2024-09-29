@@ -26,7 +26,7 @@ The cosmological models that we have discussed postulate that the universe is ho
 These structures arrange themselves in a network resembling that of soap bubbles. A simplified crystallographic representation is given below, with $l$ the characteristic cell size and $w$ the typical diameter of clusters or the cross-section of filaments. Cosmological simulations suggest a void occupancy rate of the order of $(1-w/l)³ = 75\%$ (see exercise below). Knowing that the characteristic radius of the clusters we observe is $w \approx 1\,$Mpc, we deduce a typical cell size of the order of $l \approx 10\,$Mpc.
 
 
-```{figure} ../images/bubble_network_2019GReGr..51....9F_ 2022A&A...662A..87O.jpg
+:::{figure} ../images/bubble_network_2019GReGr..51....9F_ 2022A&A...662A..87O.jpg
 :name: fig:bubble_network
 :align: center
 :width: 100%
@@ -74,43 +74,43 @@ These four types of structure are visible in the disitribution of nearby galaxie
 [](#fig:council-giants), the Local Group is at the heart of the Local Sheet. This sheet is a planar structure with a diameter of ${\sim}\,10\,$Mpc, delimiting one side of the Local Void.
 
 
-```{figure}  ../images/mccall_fig3.pdf
+:::{figure}  ../images/mccall_fig3.pdf
 :name: fig:council-giants
 :align: center
 :width: 70%
 
 Local Sheet galaxies ($R \approx 5\,$Mpc) surrounding the local group ($R \approx 0.5\,$ Mpc). From {cite}`2014MNRAS.440..405M`.
-```
+:::
 
 Opposite the galaxy NGC 253, about $16\,$Mpc from the Milky Way, is the Virgo cluster of galaxies, which has a rugby ball structure, as can be seen below. Galaxy clusters can contain several thousand galaxies.
 
-```{figure}  ../images/virgo_2007ApJ...655..144M.jpg
+:::{figure}  ../images/virgo_2007ApJ...655..144M.jpg
 :name: fig:virgo
 :align: center
 :width: 70%
 
 Spatial distribution of galaxies in the Virgo cluster with well constrained distances in  supergalactic coordinates (the supergalactic plane is an historical structure almost identical to the Local Sheet, with a tilt of 8°). The brightest galaxies are shown in red. From {cite}`2007ApJ...655..144M`.
-```
+:::
 
 Clusters of galaxies such as Virgo are connected to the cosmic web by filaments of galaxies, whose position in the celestial plane and radial velocity projection can be inferred by spectroscopy, as illustrated below.
 
-```{figure}  ../images/virgo_filaments_2022ApJS..259...43C
+:::{figure}  ../images/virgo_filaments_2022ApJS..259...43C
 :name: fig:filaments
 :align: center
 :width: 100%
 
 The filaments around the Virgo cluster. The distribution of galaxies in the sky is shown in equatorial coordinates (right ascension, R.A., and declination, Dec, in degrees). From {cite}`2022ApJS..259...43C`.
-```
+:::
 
 On an even larger scale, typically $100\,$Mpc, the clusters are grouped into superclusters such as Laniakea, which hosts us.
 
-```{figure}  ../images/laniakea_2014Natur.513...71T.jpg
+:::{figure}  ../images/laniakea_2014Natur.513...71T.jpg
 :name: fig:supercluster
 :align: center
 :width: 100%
 
 The local superclusters. Velocity streamlines of our supercluster, Laniakea, are shown in white. From {cite}`2014Natur.513...71T`.
-```
+:::
 
 ### Mass of local large-scale structures
 
@@ -122,13 +122,13 @@ Not only can astronomers measure the position of galaxies in the sky, they can a
 
 These masses are deduced using dynamical arguments such as Viriel's theorem (|kinetic energy| = |potential energy|/2 for a system at equilibrium) or using the projected trajectories of the tracers. Using stars as tracers, we estimate the mass of the central black hole of the Milky Way, Sgr A*, at $(4.15 \pm 0.01) \times 10^{6}\, M_\odot$ {cite:p}`2019A&A...625L..10G` (see [](#fig:S2-trajectory) ). The latter has a small contribution to the mass of our galaxy compared with the stars that make it up $(6 \pm 1)  \times 10^{10}\, M_\odot$ {cite:p}`2015ApJ...806...96L`. The mass of the Milky Way contained in the stars (and dust) is itself about 20 times less than its dynamic mass.
 
-```{figure}  ../images/S2_orbit.jpg
+:::{figure}  ../images/S2_orbit.jpg
 :name: fig:S2-trajectory
 :align: center
 :width: 100%
 
 The 16-year orbit of the star S2 around the massive black hole Sgr A*, which has also been followed spectroscopically for 27 years. From {cite}`2019A&A...625L..10G`.
-```
+:::
 
 The mass deficit observed in the Milky Way is also inferred at the level of galaxy populations. The stellar mass of each galaxy can be estimated using near-infrared observations. At these wavelengths (around $1-3\,$µm), the emission from medium-sized stars like the Sun is high compared with that from dust, which emits mainly at wavelengths greater than $5\,$µm, and from more massive and younger stars, which emit mainly in the UV and blue band.
 
@@ -141,13 +141,13 @@ $$f(M_\star) \dd M_\star= n_\star \left(\frac{M_\star}{M_0} \right)^{-\alpha} \e
 $$
 calculate the stellar-mass energy density using [](#fig:stellar_mass).
 
-```{figure}  ../images/stellar_mass_fun_2022MNRAS.513..439D.jpg
+:::{figure}  ../images/stellar_mass_fun_2022MNRAS.513..439D.jpg
 :name: fig:stellar_mass
 :align: center
 :width: 100%
 
 The stellar mass function of the galaxies in the local Universe ($z<0.1$). From  {cite}`2022MNRAS.513..439D`.
-```
+:::
 
 :::
 
@@ -183,13 +183,13 @@ The rest-mass energy of the sum is energy $M_\odot c^2 \approx 1.8\times 10^{47}
 
 For an energy density today equal to the critical density $\rho_{c,0} = \frac{3 H_0  c^2}{8\pi G} = 1.36 \times 10^{11}\, h_{70}\, M_\odot\,\mathrm{Mpc}^{-3} \approx 5.1\, h_{70}\,$GeV$\,$m$^{-3}$, we can see that only two thousandths of the universe's energy budget is made up of stars. A detailed breakdown of the different energy budgets of the universe is shown below.
 
-```{figure}  ../images/cosmic_inventory.png
+:::{figure}  ../images/cosmic_inventory.png
 :name: fig:cosmic_inventory
 :align: center
 :width: 100%
 
 The cosmic energy inventory of {cite}`2004ApJ...616..643F`. Adapted from this [page](https://www2.mpia-hd.mpg.de/home/poessel/UT2012/).
-```
+:::
 
 
 :::{important}
@@ -207,13 +207,13 @@ The processes responsible for most astrophysical emissions are star formation, t
 
 The evolution of baryonic matter and light emission follows the cosmic history of formation of stars. Their rate of formation per unit comoving volume is illustrated in the figure below.
 
-```{figure}  ../images/SFRD_2014ARA&A..52..415M.png
+:::{figure}  ../images/SFRD_2014ARA&A..52..415M.png
 :name: fig:csfh
 :align: center
 :width: 80%
 
 The cosmic star formation rate history. From {cite:p}`2014ARA&A..52..415M`.
-```
+:::
 
 In this figure, the redshift is converted to cosmological age using a flat $\Lambda$CDM cosmology, with Hubble constant $H_0 = 70\,\mathrm{km},\mathrm{s}^{-1}\,\mathrm{Mpc}^{-1}$ and dark energy density $\Omega_\Lambda = 0.7$, i.e. with $\Omega_\mathrm{m} = 0.3$. The look-back time is the counterpart of the cosmic age, i.e. $t_{L}(z) = \frac{1}{H_0} -  t_\mathrm{age}(z) = \int_0^z \dd z' \left|\frac{\dd t}{\dd z'} \right|$, where 
 
@@ -238,13 +238,13 @@ $$
 
 Here $R$ is the "return fraction", i.e. the proportion of matter reinjected into the interstellar medium by stellar winds and explosions. The value of $R$ is estimated at $30-40\%$, depending on the initial distribution of stellar mass, called the initial mass function.
 
-```{figure}  ../images/smd_2014ARA&A..52..415M.png
+:::{figure}  ../images/smd_2014ARA&A..52..415M.png
 :name: fig:csmh
 :align: center
 :width: 80%
 
 Cosmic evolution of the stellar mass density. From {cite:p}`2014ARA&A..52..415M`.
-```
+:::
 
 The evolution of star formation in the universe has led to an enrichment of interstellar media in atoms heavier than carbon, known as metals in thermal astrophysics. This enrichment is due to nucleosynthesis in the first stars from primordial hydrogen and helium (see [pp chain](wiki:Proton–proton_chain) and [CNO cycle](wiki:CNO_cycle)). These first stars, known as Population III stars, contributed to the reionisation of their environment during their short lifetime of a few million years. The most massive stars (${>}\,8\,M_\odot$) exploded in supernovae and ejected metals that fuelled subsequent generations of stars, and so on up to the Sun, which belongs to Population I. Gas, molecules - such as the most abundant H$_2$ and CO - and dust - in the form of carbonaceous and amorphous silicate grains - continued to accumulate in the interstellar medium throughout the first three billion years of the universe until the cosmic peak of star formation around a redshift $z \sim 2$, a period known as the "cosmic noon". Since then, the universe has been populated mainly by long-lived Population I stars, typically $t_\odot \approx 10\,$Gyr for the Sun. Their average rate of formation has decreased as the reservoir of gas available in the interstellar medium has been depleted until today.
 
@@ -289,13 +289,13 @@ For comparison, the energy density contained in CMB is twenty times greater, i.e
 
 Galaxies formed in a hierarchical fashion, first by the concentration of baryonic matter in their low-mass halos, then by merging with other galaxies in the cosmic web. The evolution of galaxies is accompanied by the growth of their central massive black hole. The mass of these black holes, $M_\bullet \approx 10^6 - 10^{10} M_\odot$, is about two thousandths of the stellar mass of the bulge of the host galaxy {cite:p}`2020ApJ...888...37D`. This relation illustrates the co-evolution of central black holes and their host galaxies. Many other correlations between observables support this link: for example the $M_\bullet - \sigma_\star$ relation between the black hole mass and the dispersion of stellar velocities within spheroids (elliptical galaxy or central bulge for a spiral galaxy). The rate of accretion of matter by massive black holes thus follows an evolution, $\Psi_\mathrm{accr}$, comparable to that of the star formation rate, with a density $2000-3000$ times lower.
 
-```{figure}  ../images/accr_2014ARA&A..52..415M.png
+:::{figure}  ../images/accr_2014ARA&A..52..415M.png
 :name: fig:csmh
 :align: center
 :width: 80%
 
 The evolution of the star formation rate (black curve) and the accretion rate of massive black holes (coloured curves and bands). The accretion-rate estimates are multiplied by a factor of ${\sim}\,3000$ to bring them up to the scale of the star formation rate. From {cite:p}`2014ARA&A..52..415M`.
-```
+:::
 
 Matter accretion around supermassive black holes, in particular around active galactic nuclei, is the second most important power-source for light emission after star formation. The energy released by accretion in the form of photons can be estimated using Soltan's argument {cite:p}`1982MNRAS.200..115S`. The energy of a test particle accreted by a black hole from the last marginally stable orbit is only a fraction of the energy of its rest mass. The rest can be released in the form of radiation. The radiative efficiency of the accretion process, $\epsilon_\mathrm{accr}$, is defined as the ratio of the radiated power to the rate of mass-energy deposition in the disc, measured by an observer at infinity. Taking into account the deceleration of the black hole's rotation by the accreted photons, Thorne calculates a radiative efficiency of $5.7\% < \epsilon_\mathrm{accr} < 30.8\%$ {cite:p}`1974ApJ...191..507T`.[^b]
 
@@ -428,13 +428,13 @@ Note that if $I$ is isotropic, the net flux is zero as the energy crossing the s
 ### The spectrum of the universe
 
 
-```{figure}  ../images/The_Fitted_MM_EGAL_Background_2023.pdf
+:::{figure}  ../images/The_Fitted_MM_EGAL_Background_2023.pdf
 :name: fig:mm_spectrum
 :align: center
 :width: 100%
 
 The multi-messenger extragalactic spectrum. Adapted from this [page](https://zenodo.org/records/7842239).
-```
+:::
 
 TBD: discussion
 
@@ -453,13 +453,13 @@ The Galaxy can be seen as a disc of bolometric luminosity $1.5-2.0 \times 10^{10
 
 3. From the local cosmic-ray spectrum presented in [](#fig:cr_spectrum), estimate the energy density of cosmic rays in the Milky Way.
 
-```{figure}  ../images/The_CR_Spectrum_2023.pdf
+:::{figure}  ../images/The_CR_Spectrum_2023.pdf
 :name: fig:cr_spectrum
 :align: center
 :width: 60%
 
 The local cosmic-ray spectrum. Components from the Milky Way dominate the brightness of the sky at least up to the knee structure at $E \approx 3\,$PeV. From this [page](https://zenodo.org/records/7948212).
-```
+:::
 
 :::
 

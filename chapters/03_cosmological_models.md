@@ -311,18 +311,18 @@ A $a=1$ ou $t=0$, la première équation de Friedmann donne :
 \end{equation}
 Le modèle est sphérique donc $\Omega_k^0 = -k c^2 / H_0^2 < 0$ avec $k=+1$ ce qui implique que $\Omega_m^0 > 2/3$. Dans l'Univers d'Einstein, $\Omega_m^0=1$.
 
-```{figure} #E-spherical
+:::{figure} #E-spherical
 :width: 60%
 :align: center
 :label:fig:einstein
 
 Energies potentielles dans le cas d'un univers sphérique avec $\Omega_m^0=1$.
-```
+:::
 
 D'après la figure [](#fig:einstein), la solution d'Einstein à $a=1$ est instable. 
 
 4.  
-```{list-table} Energies potentielles dans le cas de modèles à matière seule avec différentes courbures :  (en haut à gauche), $\Omega_m^0=1.5\Rightarrow k=+1$ (en haut à droite), $\Omega_m^0=0.5\Rightarrow k=-1$ (en bas)
+:::{list-table} Energies potentielles dans le cas de modèles à matière seule avec différentes courbures :  (en haut à gauche), $\Omega_m^0=1.5\Rightarrow k=+1$ (en haut à droite), $\Omega_m^0=0.5\Rightarrow k=-1$ (en bas)
 :header-rows: 1
 :name: fig:analogmeca
 
@@ -330,22 +330,22 @@ D'après la figure [](#fig:einstein), la solution d'Einstein à $a=1$ est instab
   - $\Omega_m^0=1.5\Rightarrow k=+1$
   - $\Omega_m^0=0.5\Rightarrow k=-1$
 
-* - ```{image} #EdS-Om1
+* - :::{image} #EdS-Om1
     :alt: galaxies
     :width: 100%
     :align: center
     
-    ```
-  - ```{image} #EdS-Om15
+    :::
+  - :::{image} #EdS-Om15
     :alt: light
     :width: 100%
     :align: center
     
-  - ```{image} #EdS-Om05
+  - :::{image} #EdS-Om05
     :alt: light
     :width: 100%
     :align: center
-```
+:::
 
 Dans ces modèles, la courbure est à nouveau donnée par :
 \begin{equation}
@@ -364,35 +364,35 @@ En analysant les trois tracés de la figure [](#fig:analogmeca), nous pouvons di
 \frac{d V_{\rm eff} }{da}= 0 \rightarrow a_* = \left(\frac{\Omega_m^0}{2 \Omega_\Lambda^0}\right)^{1/3}
 \end{equation}
 
-```{list-table} Energies potentielles dans le cas de modèles à matière seule avec différentes courbures :  (en haut à gauche), $\Omega_m^0=1.5\Rightarrow k=+1$ (en haut à droite), $\Omega_m^0=0.5\Rightarrow k=-1$ (en bas)
+:::{list-table} Energies potentielles dans le cas de modèles à matière seule avec différentes courbures :  (en haut à gauche), $\Omega_m^0=1.5\Rightarrow k=+1$ (en haut à droite), $\Omega_m^0=0.5\Rightarrow k=-1$ (en bas)
 :header-rows: 0
 :name: fig:analogmeca-LCDM
 
 * - $\Omega_m^0=0.3, \Omega_\Lambda^0=0.7$
   - $\Omega_m^0=0.3, \Omega_\Lambda^0=1.5$
 
-* - ```{image} #LCDM-Om03OL07
+* - :::{image} #LCDM-Om03OL07
     :width: 100%
     :align: center
     
-    ```
-  - ```{image} #LCDM-Om03OL15
+    :::
+  - :::{image} #LCDM-Om03OL15
     :width: 100%
     :align: center
 
 * - $\Omega_m^0=0.3, \Omega_\Lambda^0=0.5$
   - $\Omega_m^0=0.3, \Omega_\Lambda^0=-0.7$
 
-* - ```{image} #LCDM-Om03OL05
+* - :::{image} #LCDM-Om03OL05
     :width: 100%
     :align: center
     
-    ```
-  - ```{image} #LCDM-Om03OL-07
+    :::
+  - :::{image} #LCDM-Om03OL-07
     :width: 100%
     :align: center
     
-```
+:::
 
 Selon les valeurs des paramètres, l'échelle de transition se produit dans le futur ou dans le passé. 
 Si la constante cosmologique est positive, les univers en expansion ont une expansion décélérée et, 
@@ -499,13 +499,13 @@ Evolution des paramètres cosmologiques
 ------------------------------------
 
 
-```{figure} #omegas
+:::{figure} #omegas
 :width: 100%
 :align: center
 :label: fig:omegas
 
 Evolution des paramètres cosmologiques.
-```
+:::
 
 
 This will embed the output of a notebook cell

@@ -33,7 +33,7 @@ cosmologique. Le principe de ces deux méthodes est illustré
 [](#fig:chandelles).
 
 
-```{figure} ../images/chandelles.jpg
+:::{figure} ../images/chandelles.jpg
 :name: fig:chandelles
 :align: center
 :width: 80%
@@ -43,7 +43,7 @@ chandelles standard (les supernovæ de type Ia) et d'une règle standard
 (distance moyenne entre galaxies, issue de la distance moyenne entre
 sur-densités du fond diffus
 cosmologique).
-```
+:::
 
 
 Diagramme de Hubble des supernovae
@@ -58,7 +58,7 @@ Le principe de la mesure a été résumé en introduction de ce chapitre: s'il e
 distance. L'objet astrophysique en question est bien entendu la supernova de type Ia, dont la luminosité égale ou dépasse celle de la galaxie hôte (voir photographies [](#fig:sn) et [](#fig:sn2)). Ce sont donc des objets a priori visibles à des distances cosmologiques, cependant ce sont aussi des événements transitoires: la durée d'une supernova est de quelques dizaines de jours. Pour la capter, il faut donc regarder le ciel au bon endroit au bon moment.
 
 
-```{figure} ../images/SN1994D.jpg
+:::{figure} ../images/SN1994D.jpg
 :name: fig:sn
 :align: center
 :width: 40%
@@ -66,15 +66,15 @@ distance. L'objet astrophysique en question est bien entendu la supernova de typ
 La supernova SN 1994D (le point blanc brillant en bas à gauche de
 l'image), dans la galaxie spirale NGC
 4526.
-```
+:::
 
-```{figure} ../images/sn2023_ixf_ugri_gimp_leg.png
+:::{figure} ../images/sn2023_ixf_ugri_gimp_leg.png
 :name: fig:sn2
 :align: center
 :width: 40%
 
 La supernova sn2023ixf découverte par le relevé ZTF et photographiée par le télescope StarDICE (Newton, diamètre $40\,$cm) dans 4 filtres $ugri$ le 25 mai 2023.
-```
+:::
 
 ### Les supernovæ
 
@@ -116,23 +116,23 @@ This is a real footage of the type Ia supernova explosion. The supernova, SN 201
 :::
 
 
-```{figure} ../images/lc.pdf
+:::{figure} ../images/lc.pdf
 :name: fig:courbeslumiere
 :align: center
 :width: 70%
 
 Courbes de lumière synthétisées SN~2011fe en utilisant le jeu de filtres UBVRI$_\mathrm{SNf}$ {cite:p}`Pereira2013`. Les symboles remplis et ouverts correspondent respectivement aux nuits photométriques et non photométriques respectivement. Les résultats d'un ajustement simultané SALT2 de UBVR$_\mathrm{SNf}$ dans la plage de dans l'intervalle de phase $-\,16 < t < +\,25$~d sont représentés par des lignes pleines, avec les résidus correspondants (SALT2 - \snifs) sur le panneau inférieur.panneau inférieur. Les zones ombrées représentent l'erreur du modèle SALT2. La rupture dans l'axe du temps correspond à l'écart de $\sim50$ jours dans le suivi pendant lequel SN~2011fe n'était pas visible pendant la nuit depuis Hawaii. Notez le changement d'échelle de l'axe temporel étendu couvrant les observations tardives.
-```
+:::
 
 Une séquence de spectres acquises sur une supernovæ de de type Ia est présentée [](#fig:spectresIa).
 
-```{figure} ../images/timeseries.pdf
+:::{figure} ../images/timeseries.pdf
 :name: fig:spectresIa
 :align: center
 :width: 70%
 
 Série spectro-temporelle de SN2011fe mesurée par le relevé SNfactory {cite:p}`Pereira2013`. Les noms des principales composantes du spectre sont indiqués dans la partie supérieure de la figure.
-```
+:::
 
 En pratique, nous ne possédons pas de séquences spectrales aussi précises que celle présentée [](#fig:spectresIa) pour chaque des supernovae détectée, car cela coute trop de temps d'observation sur les plus grands télescopes au monde équipés de spectrographe. Seul le relevé SNFactory a dédié un spectrographe à l'étude spectrale systématique des supernovae. En règle générale, si possible, un spectre de la supernova est acquis à son maximum de luminosité (car c'est plus aisé) afin de vérifier que c'est bien une type Ia (spectre d'identification), avec un spectrographe qui n'a pas besoin d'avoir une grande résolution pour identifier les raies principales de l'explosion thermonucléaire. Plus tard, un spectre de la galaxie hôte est pris pour mesurer son redshift précisément s'il n'est pas déjà connu, avec un spectrographe à plus haute résolution (spectre de redshift). 
 
@@ -250,31 +250,31 @@ Pour obtenir une mesure du paramètre d'état de l'énergie noire $w_{DE}$ au po
 
 Après $K$-correction, on peut comparer les magnitudes $m_B^*$ à un modèle cosmologique. Avec les données JLA du SuperNova Legacy Survey, on obtient le diagramme de Hubble [](#fig:hubblemb).
 
-```{figure} #hubbleDiagaramMb
+:::{figure} #hubbleDiagaramMb
 :name: fig:hubblemb
 :align: center
 :width: 70%
 
 Diagramme de Hubble des 740 SNeIa du relevé SNLS, comparé à un modèle $\Lambda$CDM avec $\Omega_m^0 = 0.3$ et $\Omega_\Lambda^0=0.7$.
-```
+:::
 
 Autour du diagramme, on observe que les résidus au diagramme de Hubble ont une dispersion de $0.4\,$mag, supérieures aux erreurs de mesure. Si on trace ces résidus en fonction de la couleur $c=B-V$ ou de la durée normalisée $x_1$ de la supernova, on s'aperçoit qu'ils sont corrélés ([](#fig:hubbleRes)). 
 
-```{list-table} Résidus au diagramme de Hubble colorés en fonction de la durée normalisée $x_1$ (gauche) ou de la couleur $c=B-V$ (droite).
+:::{list-table} Résidus au diagramme de Hubble colorés en fonction de la durée normalisée $x_1$ (gauche) ou de la couleur $c=B-V$ (droite).
 :header-rows: 0
 :name: fig:hubbleRes
 
-* - ```{image} #hubbleResX1
+* - :::{image} #hubbleResX1
     :alt: x1
     :width: 95%
     :align: center
-    ```
-  - ```{image} #hubbleResC
+    :::
+  - :::{image} #hubbleResC
     :alt: color
     :width: 100%
     :align: center
-    ```
-```
+    :::
+:::
 
 Il y a donc une variabilité des supernovae qui n'a pas été prise en compte dans notre modèle spectrophotométrique jusqu'à présent.
 
@@ -287,13 +287,13 @@ Il y a aussi un effet d'environnement qui lie la brillance de la supernova et la
 
 
 
-```{figure} ../images/courbes_de_lumiere_x1c.png
+:::{figure} ../images/courbes_de_lumiere_x1c.png
 :name: fig:courbes_de_lumiere_x1c
 :align: center
 :width: 60%
 
 Courbes de lumière de SNe Ia du lot de données JLA du relevé SNLS colorées en fonction de $x_1$ ou $c$ {cite:p}`nicola2022`.
-```
+:::
 
 
 Le flux de lumière est lié à la production et à la décroissance de
@@ -313,7 +313,7 @@ Ces trois relations empiriques ajoutent trois paramètres supplémentaires $\alp
 mais après cela la dispersion au diagramme de Hubble est réduite à $0.15\,$mag ce qui augmente la précision sur les contraintes de l'expansion de l'Univers.
 
 
-```{figure} ../images/HD_jla.pdf
+:::{figure} ../images/HD_jla.pdf
 :name: fig:HD
 :align: center
 :width: 70%
@@ -322,7 +322,7 @@ Diagramme de Hubble des supernovæ du catalogue JLA. La courbe noire
 représente un modèle $\Lambda$CDM ajusté aux données. Un modèle sans
 énergie noire apparaîtrait significativement en dessous de la courbe
 décrite par les données ($-0.6\,$mag à $z=1$).
-```
+:::
 
 :::{note} Origine de $\Delta M_{host}$
 
@@ -334,13 +334,13 @@ En effet, il semble que les galaxies massives contiennent beaucoup plus de méta
 
 ### Étalonnages
 
-```{figure} ../images/strategy1.png
+:::{figure} ../images/strategy1.png
 :name: fig:SNCalib
 :align: center
 :width: 70%
 
 Stratégies pour étalonner la mesure du flux lumineux des étoiles tertiaires (les étoiles secondaires ne sont pas représentées). La bande $B$ redshiftée est représentée par un trait bleu épais sur les spectres des SNe Ia. 
-```
+:::
 
 ### State of the art
 

@@ -460,10 +460,10 @@ $$\label{eq:omega_sum}
 1 = \Omega_m(t) + \Omega_r(t) + \Omega_\Lambda(t) + \Omega_k(t)
 $$
 
-```{math}
+:::{math}
 :label: eq:friedmann2
 \bar H^2 (t) \equiv \frac{H^2(t)}{H_0^2} = \Omega_m^0 \left(\frac{a_0}{a(t)}\right)^{3} + \Omega_r^0 \left(\frac{a_0}{a(t)}\right)^{4} + \Omega_\Lambda^0 +  \Omega_k^0 \left(\frac{a_0}{a(t)}\right)^{2}.
-```
+:::
 Ce modèle d'Univers liant la prédiction de son expansion $\bar H(z)$ à son contenu composé d'une constante cosmologique, de matière et de radiation, est appelé modèle $\Lambda$CDM ($\Lambda$ pour la constante cosmologique et CDM pour *Cold Dark Matter*) dans le cas $k=0$ (Univers plat). C'est le modèle standard de la cosmologie.
 
 Dans le cadre d'un Univers plat, les valeurs mesurées par le satellite _Planck_  combinées aux supernovae de type Ia et les oscillations acoustiques de baryons donnent [](doi:10.1051/0004-6361/201833910) :
@@ -542,20 +542,20 @@ En ce qui concerne le rayonnement, $P_r=\rho_r c^2 / 3$ donc :
 
 
 3. 
-```{list-table} Conservation de l'énergie pour la matière et le rayonnement dans un univers en expansion.
+:::{list-table} Conservation de l'énergie pour la matière et le rayonnement dans un univers en expansion.
 :header-rows: 0
 :name: fig:cubes
 
-* - ```{image} ../images/cube_galaxies.svg
+* - :::{image} ../images/cube_galaxies.svg
     :alt: galaxies
     :width: 100%
     :align: center
-    ```
-  - ```{image} ../images/cube_waves.svg
+    :::
+  - :::{image} ../images/cube_waves.svg
     :alt: light
     :width: 100%
     :align: center
-```
+:::
 
 Dans le cube isolé, l'énergie et la matière se conservent. Ainsi, en ce qui concerne les galaxies présentes dans un cube en expansion, nous pouvons écrire que leur nombre est conservé par l'expansion de la manière suivante :
 \begin{equation}
