@@ -68,49 +68,44 @@ Univers de symétrie maximale
 
 ### Métrique d'un Univers isotrope
 
-XXX A REPRENDRE VOIR NOTES XXXX Une définition mathématique précise d'un espace-temps spatialement homogène et isotrope est qu'il peut être folié avec une famille d'hyper-surfaces de type espace à un paramètre, homogènes et isotropes. 
-La définition d'une foliation impose que chaque feuille de la foliation, une hyper-surface de type espace dans notre cas, soit une classe d'équivalence où l'équivalence peut être énoncée comme ayant la même valeur du paramètre. 
-Si nous appelons ce paramètre le temps, nous voyons que nous avons un temps universel en tout point de l'espace. 
-Le terme $g_{00}$ de la métrique ne dépend alors pas des coordonnées spatiales, mais seulement du temps. 
+Tout d'abord, si l'univers est homogène alors la composante $g_{00}(t,\vec x)$ ne peut dépendre que du temps $t$, de sorte que le battement des horloges ne dépendent pas de la position dans l'espace. Donc $g_{00}(t,\vec x) = g_{00}(t)$ {cite:p}`Weinberg1972`[p. 403]. Si nous appelons le paramètre $t$ le temps, nous voyons que nous avons un temps universel en tout point de l'espace. Comme l'univers est homogène, alors cela signifie qu'à chaque date on peut associer une densité d'énergie identique pour tous les observateurs, donc qu'avec un densimètre on peut construire une horloge. 
 
-De plus, on peut vérifier que la ligne du monde de tout observateur qui peut vérifier
-est _perpendiculaire_ (telle que définie par la métrique) aux surfaces spatiales. En effet, en simplifiant à un espace-temps 2D, si la métrique a la forme :
+De plus, on peut vérifier que les composantes croisées $g_{i0}$ et $g_{i0} sont nulles. Si tel n'était pas le cas, on aurait une direction privilégiée dans le l'univers. On peut s'en convaincre en remarquant que ces composantes sont non nulles si on réalise une transformation de Lorentz [](eq:lorentz)-[](eq:lorentz2), justement lorsqu'on prend un référentiel en translation uniforme par rapport à un autre, donc se déplaçant dans une direction choisie. 
+
+Autre façon de se convaincre, prenons un espace-temps 2D. Si la métrique a la forme :
 \begin{equation}
 g=\begin{pmatrix} g_{00} & g_{01}  \\ g_{01} & g_{11} \end{pmatrix}
 \end{equation}
 alors l'équation des trajectoires de type lumière est :
-$$\dd s^2=0=g_{00}c^2\dd t^2+2g_{01}\,c\,\dd x\,\dd t+g_{11}\dd x^2$$
+$$
+\dd s^2=0=g_{00}c^2\dd t^2+2g_{01}\,c\,\dd x\,\dd t+g_{11}\dd x^2.$$
+On peut alors vérifier, en résolvant l'équation du second degré en $\dd t$ que si $g_{01} \neq 0$, deux $\dd x$ opposés donnent deux valeurs différentes de $\dd t$ positif. C'est-à-dire qu'un observateur recevra à des moments différents les impulsions lumineuses émises simultanément par deux sources situées à la même distance dans des directions opposées. Cela rompt évidemment l'isotropie. Les termes $g_{0i}$ et $g_{i0}$ de la métrique sont donc nuls.
 
-On peut alors vérifier, en résolvant l'équation de $\dd t$, que si $g_{01} \neq 0$, deux $\dd x$ opposés donnent deux valeurs différentes de $\dd t$ positif. 
-C'est-à-dire qu'un observateur recevra à des moments différents les impulsions lumineuses émises simultanément par deux sources situées à la même distance dans des directions opposées. Cela rompt évidemment l'isotropie. Les termes $g_{0i}$ et $g_{i0}$ de la métrique sont donc nuls.
+
+
+
 
 En combinant les deux résultats précédents, l'intervalle espace-temps peut être écrit sous la forme suivante :
 \begin{equation}
 \dd s^2= g_{00}(t) c^2 \dd t^2 + \dd \vec l^2
 \end{equation}
-où $\dd \vec l$ est un vecteur élémentaire ne dépendant que des coordonnées spatiales. Il est alors possible de fixer $g_{00}$ à $-1$ quitte à redéfinir la variable temps[^g00]. 
-La métrique prend donc la forme :
+où $\dd \vec l$ est un vecteur élémentaire ne dépendant que des coordonnées spatiales. Il est alors possible de fixer $g_{00}$ à $-1$ quitte à redéfinir la variable temps[^g00]. La métrique prend donc la forme :
 \begin{equation}
 g_{\mu\nu}=\begin{pmatrix} -1& 0 & 0 & 0 \\ 0 & \gamma_{11} & \gamma_{12} & \gamma_{13} \\ 
 0&\gamma_{12} & \gamma_{22} & \gamma_{23} \\ 0&\gamma_{13} & \gamma_{23} & \gamma_{33} \end{pmatrix}
 \end{equation}
-où $\gamma_{ij}$ est la métrique spatiale, qui peut dépendre du temps et de la position, et comportant 6 composantes indépendantes inconnues (une métrique est symétrique).
+où $\gamma_{ij}$ est la métrique spatiale, qui peut dépendre du temps et de la position, et comportant 6 composantes indépendantes inconnues (une métrique est un tenseur symétrique).
 
 :::{attention} Convention de signature pour la métrique
-Dans ce cours, comme dans beaucoup de cours de cosmologie, la [signature](https://en.wikipedia.org/wiki/Metric_signature) choisie pour la métrique est $(-,+,+,+)$. 
-En effet, en cosmologie on manipule beaucoup des distances donc il est plus commode d'avoir des éléments de longueur positifs. En physique théorique
-des hautes énergies, la métrique $(+,-,-,-)$ est souvent préférée. Une compilation des différentes signatures utilisées est présentée
-[ici](https://en.wikipedia.org/wiki/Sign_convention).
+
+Dans ce cours, comme dans beaucoup de cours de cosmologie, la [signature](https://en.wikipedia.org/wiki/Metric_signature) choisie pour la métrique est $(-,+,+,+)$. En effet, en cosmologie on manipule beaucoup des distances donc il est plus commode d'avoir des éléments de longueur positifs. En physique théorique des hautes énergies, la métrique $(+,-,-,-)$ est souvent préférée. Une compilation des différentes signatures utilisées est présentée [ici](https://en.wikipedia.org/wiki/Sign_convention).
 
 :::
 
 
 ### Géométrie d'un Univers maximallement symétrique
 
-Trouvons maintenant une forme explicite pour $\dd \vec l^2$. Un Univers de symétrie maximale (homogène et isotrope) doit posséder une courbure constante.
-Cela se comprend assez intuitivement mais aussi se démontre en Relativité Générale {cite:p}`Weinberg1972` [p. 381].
-Notons $a$ le rayon de courbure associé, et soit $\vec \xi = (\xi^1, \xi^2, \xi^3)$ un vecteur position
-dans l'espace 3D :
+Trouvons maintenant une forme explicite pour $\dd \vec r^2$. Un Univers de symétrie maximale (homogène et isotrope) doit posséder une courbure constante. Cela se comprend assez intuitivement mais aussi se démontre en Relativité Générale {cite:p}`Weinberg1972` [p. 381]. Notons $a$ le rayon de courbure associé, et soit $\vec \xi = (\xi^1, \xi^2, \xi^3)$ un vecteur position dans l'espace 3D :
 \begin{equation}
 \dd \vec l^2 = \gamma_{ij} \dd \xi^i \dd \xi^j, \quad \text{avec}\quad i=1,2,3
 \end{equation}
@@ -118,66 +113,62 @@ dans l'espace 3D :
 
 Tout d'abord, si cet espace possède une courbure nulle, alors la distance élémentaire $\dd \vec l$ s'écrit simplement :
 \begin{equation}
-\dd \vec l^2 =   \delta_{ij}\dd x^i \dd x^j  = \dd \vec \xi^2 
+\dd \vec l^2 =   \delta_{ij}\dd \xi^i \dd \xi^j,\quad \gamma_{ij} = \delta_{ij}
 \end{equation}
 
-Travaillons maintenant sur le cas où la courbure est non nulle. Pour décrire la courbure d'une surface avec des notions de géométries habituelles, 
-étudions-la dans un espace avec une dimension supplémentaire.
-Si nous plaçons cet espace 3D non euclidien (courbé) dans un espace 4D _euclidien_ (non courbé) avec des coordonnées $\vec X = (x^1, x^2, x^3, w)$, 
-l'hyper-surface 3D non euclidienne de courbure gaussienne constante $a^{-2}$ peut être décrite par :
-- pour une 3-sphère de rayon $a$ : 
+Travaillons maintenant sur le cas où la courbure est non nulle. Pour décrire la courbure d'une surface avec des notions de géométries habituelles, étudions-la dans un espace avec une dimension supplémentaire. Plaçons cet espace 3D non euclidien (courbé) dans un espace 4D avec des coordonnées cartésiennes $\vec \xi = (x, y, z, w)$. Posons $r^2 = x^2 + y^2 + z^2$ la distance euclidienne dans le sous-espace 3D. La courbure de Gauss $1/a^2$ de l'hyper-surface 3D non euclidienne peut alors être décrite par {cite:p}`Baumann` :
+- pour une 3-sphère de rayon $a$ plongée dans un espace Euclidien 4D : 
 \begin{equation}
-x^2 + w^2= a^2
+r^2 + w^2= a^2,\quad  \dd \vec l^2 = \dd r^2 + \dd w^2, \quad  C_{\mu\nu} = \mathrm{diag}(1,1,1,1)
 \end{equation}
-- pour une 3-hyperboloïde de courbure $a$ :
+- pour une 3-hyperboloïde de courbure $a$ plongée dans un espace Lorentzien 4D :
 \begin{equation}
-x^2 - w^2= -a^2
+r^2 - w^2= -a^2,\quad  \dd \vec l^2 = \dd r^2 - \dd w^2, \quad C_{\mu\nu} = \mathrm{diag}(1,1,1,-1)
 \end{equation}
 
-Les deux derniers cas de courbures strictement positive ou négative sont donc définis par _l'équation de contrainte_ :
+Les deux derniers cas de courbures strictement positive ou négative sont donc définis par *l'équation de contrainte* :
 :::{math}
 :label: eq_hyp_sph
-x^2 \pm w^2= \pm a^2(t) 
+r^2 \pm w^2= \pm a^2(t) 
 :::
 où on autorise ici le rayon $a(t)$ à dépendre du temps, car a priori $\gamma_{ij}$ peut dépendre du temps.
 
 :::{tip} Notion de courbure
 :class: dropdown
 
-Si ces raisonnements vous troublent, rappelez-vous que c'est comme décrire la courbure d'un cercle de rayon $R$ 
-(objet à une dimension car il n'y a qu'une seule direction de déplacement sur cet objet, paramétré par un angle $\theta$ par exemple)
+Si ces raisonnements vous troublent, rappelez-vous que c'est comme décrire la courbure d'un cercle de rayon $R$ (objet à une dimension car il n'y a qu'une seule direction de déplacement sur cet objet, paramétré par un angle $\theta$ par exemple)
 dans un plan à l'aide d'une seconde dimension, donc deux coordonnées $x$ et $y$ telles que :
-$$x^2 + y^2 = R^2$$ 
+\begin{equation*}
+x^2 + y^2 = R^2
+\end{equation*}
 ou celle d'une sphère (deux dimensions) dans un espace avec une troisième dimension, donc trois coordonnées $(x,y,z)$ telles que :
-$$x^2 + y^2 + z^2 = R^2$$
+\begin{equation*}
+x^2 + y^2 + z^2 = R^2
+\end{equation*}
 
-La notion de courbure peut se calculer soit intrinsèquement soit à l'aide d'une dimension supplémentaire.
-Intrinsèquement, un être vivant sur un cercle peut mesurer sa courbure en mesurant le chemin parcouru lors d'un tour : il en déduira que la 
-courbure de son cercle est $1/R^2$ avec $R$ déduit du périmètre parcouru $l = 2\pi R$. S'il est capable de voyager dans une seconde dimension, 
-il pourra observer la courbure de son Univers.
+La notion de courbure peut se calculer soit intrinsèquement soit à l'aide d'une dimension supplémentaire. Intrinsèquement, un être vivant sur un cercle peut mesurer sa courbure en mesurant le chemin parcouru lors d'un tour : il en déduira que la courbure de son cercle est $1/R^2$ avec $R$ déduit du périmètre parcouru $l = 2\pi R$. S'il est capable de voyager dans une seconde dimension, il pourra observer la courbure de son Univers.
 
 :::
 
-La distance infinitésimale $\dd \vec l^2$ entre deux points de l'hypersurface définie dans l'espace 3D courbe de métrique $\gamma_{ij}$ 
-est égale à celle définie dans l'espace 4D _euclidien_ :
+La distance infinitésimale $\dd \vec l^2$ entre deux points de l'hypersurface définie dans l'espace 3D courbe de métrique $\gamma_{ij}$ doit être identique à celle mesurée dans l'espace 4D, donc :
 \begin{equation}
-\dd \vec l^2= \gamma_{ij} \dd \xi^i \dd \xi^j =  \dd \vec x^2 \pm \dd w^2
+\dd \vec l^2= \gamma_{ij} \dd \xi^i \dd \xi^j =  \dd r^2 \pm \dd w^2
 \end{equation}
 où le cas $+$ correspond à une géométrie sphérique, le cas $-$ à une géométrie hyperbolique {cite:p}`Weinberg1972` [p. 390-391].
 
 Or, la différentiation de l'équation eq. [](#eq_hyp_sph) donne la relation 
-$$(\vec x \cdot \dd \vec x) \pm w\dd w=0,$$
+$$
+(\vec r \cdot \dd \vec r) \pm w\dd w=0,$$
 donc, en injectant de nouveau l'équation [](#eq_hyp_sph), on obtient :
 \begin{equation}
-(\vec x \cdot \dd \vec x)^2=(w\dd w)^2 \Rightarrow (\dd w)^2= \frac{(\vec x \cdot \dd \vec x)^2}{w^2} = \frac{(\vec x \cdot \dd \vec x)^2}{a^2(t) \mp x^2}
+(\vec r \cdot \dd \vec r)^2=(w\dd w)^2 \Rightarrow (\dd w)^2= \frac{(\vec r \cdot \dd \vec r)^2}{w^2} = \frac{(\vec r \cdot \dd \vec r)^2}{a^2(t) \mp r^2}
 \end{equation}
 La distance infinitésimale entre 2 points de l'espace 3D non euclidien de courbure non nulle constante $a^{-2}$ est alors :
 \begin{equation}
-\dd \vec l^2= \dd \vec x^2 \pm \frac{(\vec x \cdot \dd \vec x)^2}{a^2(t)\mp x^2} 
+\dd \vec l^2= \dd \vec r^2 \pm \frac{(\vec r \cdot \dd \vec r)^2}{a^2(t)\mp r^2} 
 \end{equation}
 
-A cette étape, nous pouvons maintenant combiner le résultat obtenu pour les deux courbures non nulles avec le cas euclidien en introduisant
-le _paramètre de courbure_ $k$ :
+A cette étape, nous pouvons maintenant combiner le résultat obtenu pour les deux courbures non nulles avec le cas euclidien en introduisant le *paramètre de courbure* $k$ :
 :::{math}
 :label: K-def
 
@@ -190,10 +181,10 @@ k = \left\lbrace
 :::
 On a ainsi pour les trois géométries possibles d'un Univers maximallement symétrique :
 \begin{equation}
-\dd \vec l^2= \dd \vec x^2 + k\frac{ (\vec x \cdot \dd \vec x)^2}{a^2(t) - k x^2}
+\dd \vec l^2= \dd \vec r^2 + k\frac{ (\vec r \cdot \dd \vec r)^2}{a^2(t) - k r^2}
 \end{equation}
 
-Enfin, introduisons la variable rééchelonnée $\vec\sigma=\vec x/a(t)$, et nous obtenons une nouvelle expression :
+Enfin, introduisons la variable rééchelonnée $\vec\sigma=\vec r/a(t)$, et nous obtenons une nouvelle expression :
 \begin{equation}
 \dd \vec l^2= a^2(t) \left(\dd \vec \sigma^2 + k\frac{(\vec \sigma \cdot \dd \vec \sigma)^2}{1 - k \sigma^2} \right)
 \end{equation}
@@ -273,24 +264,18 @@ Dans la suite, nous travaillerons dans le système où $a_0$ _n'est pas fixé_ �
 :::
 
 :::{note} Que signifie vivre dans un espace courbé ?
-La [](#fig:espaces) représente des surfaces 2D plongées dans des espaces 3D. Mais comment se représenter que nous vivrions dans une 3-sphère ? Et qu'est-ce 
-que cela implique ? Vivre dans un espace courbé implique que la somme des angles d'un triangle n'est pas égale à 180°: elle est supérieure pour une 3-sphère et inférieure pour
-un 3-hyperboloid. C'est ainsi que les deux triangles bleus [](#fig:triangles_on_sphere)
-ont une somme de leurs angles supérieures à 180°. Dans une 3-sphère nous pouvons avoir l'impression que deux objets sont éloignés angulairement, alors qu'en en fait leur distance qui les sépare
-est plus petite que ce qu'elle serait dans un espace plat. Et ceci dans toutes les directions de l'espace. 
 
-En résumé, vivre dans un espace courbé signifie que la relation entre angles et longueurs est déformée par rapport à notre intuition euclidienne, en 
-tous cas sur des distance cosmologiques.
+La [](#fig:espaces) représente des surfaces 2D plongées dans des espaces 3D. Mais comment se représenter que nous vivrions dans une 3-sphère ? Et qu'est-ce que cela implique ? Vivre dans un espace courbé implique que la somme des angles d'un triangle n'est pas égale à 180°: elle est supérieure pour une 3-sphère et inférieure pour un 3-hyperboloid. C'est ainsi que les deux triangles bleus [](#fig:triangles_on_sphere) ont une somme de leurs angles supérieures à 180°. Dans une 3-sphère nous pouvons avoir l'impression que deux objets sont éloignés angulairement, alors qu'en en fait leur distance qui les sépare est plus petite que ce qu'elle serait dans un espace plat. Et ceci dans toutes les directions de l'espace. 
+
+En résumé, vivre dans un espace courbé signifie que la relation entre angles et longueurs est déformée par rapport à notre intuition euclidienne, en tous cas sur des distance cosmologiques.
 
 
-:::{figure} ../images/triangles_on_sphere.svg
+```{figure} ../images/triangles_on_sphere.svg
 :name: fig:triangles_on_sphere 
 :align: center
 
-Prenons deux galaxies: elles forment un triangle avec la Terre, qui, dans une 3-sphère, possède trois angles dont la somme est supérieure à 180°. Il repose
-sur une 2-sphère, hyperplan de la 3-sphère (surface $w=cste$). L'intersection avec le plan passant également par ces trois points définit les géodésiques par lesquelles la lumière nous parvient. 
-Pour toute paire de points, on peut ainsi définir un tel triangle reposant sur une 2-sphère (bleu et cyan par exemple).
-:::
+Prenons deux galaxies: elles forment un triangle avec la Terre, qui, dans une 3-sphère, possède trois angles dont la somme est supérieure à 180°. Il repose sur une 2-sphère, hyperplan de la 3-sphère (surface $w=cste$). L'intersection avec le plan passant également par ces trois points définit les géodésiques par lesquelles la lumière nous parvient. Pour toute paire de points, on peut ainsi définir un tel triangle reposant sur une 2-sphère (bleu et cyan par exemple).
+```
 
 :::
 
@@ -412,22 +397,13 @@ Le décalage spectral, ou redshift
 Notations pour le calcul du redshift et des distances cosmologiques en coordonnées comobiles.
 :::
 
-Pour mesurer la valeur des différents paramètres de densité dans notre
-Univers, il faut avoir accès au paramètre d'échelle $a(t)$. Ceci est
-possible par la mesure du décalage spectral de la lumière venant de
-sources distantes. Dans la métrique FLRW, plaçons-nous par convention au
-centre ($\sigma=0$), et considérons un objet situé aux coordonnées comobiles
-$\left(\sigma_E,\theta_E,\phi_E\right)$, émettant un photon
-à l'instant $t_E$ (voir [](#fig:distances_croquis)). Pour ce photon, voyageant à la vitesse
-de la lumière, dans la métrique FLRW on a, à tout instant:
+Pour mesurer la valeur des différents paramètres de densité dans notre Univers, il faut avoir accès au paramètre d'échelle $a(t)$. Ceci est possible par la mesure du décalage spectral de la lumière venant de sources distantes. Dans la métrique FLRW, plaçons-nous par convention au centre ($\sigma=0$), et considérons un objet situé aux coordonnées comobiles $\left(\sigma_E,\theta_E,\phi_E\right)$, émettant un photon à l'instant $t_E$ (voir [](#fig:distances_croquis)). Pour ce photon, voyageant à la vitesse de la lumière, dans la métrique FLRW on a, à tout instant:
 :::{math}
 :label: eq:ds2_lumiere
 
 \dd s^2=0=-c^2 \dd t^2+\frac{a^2(t)}{1-k\sigma^2}\dd \sigma^2.
 :::
-car le long de sa géodésique $\theta$ et $\phi$ sont constants ($\dd \theta = \dd \phi=0$).
-Posons $t_0$ l'instant de la réception de cette onde en $\sigma=0$. Alors grâce à l'équation
-précédente on a la relation : 
+car le long de sa géodésique $\theta$ et $\phi$ sont constants ($\dd \theta = \dd \phi=0$). Posons $t_0$ l'instant de la réception de cette onde en $\sigma=0$. Alors grâce à l'équation précédente on a la relation : 
 :::{math}
 :label: eq:comobile
 
@@ -442,42 +418,26 @@ précédente on a la relation :
 avec $\dd \sigma < 0$ pour $\dd t > 0$ en considérant un photon allant de la source vers l'observateur en 0.
 
 
-Pour une onde électromagnétique de période $T$,
-l'expression [](#eq:ds2_lumiere) étant valable à tout instant, on peut
-calculer la même intégrale pour l'onde émise à l'instant $t_E+T_E$ et
-reçue à l'instant $t_0+T_0$ (on suppose donc que la période $T$ va
-varier au cours du temps): $$\label{eq:comobileT}
+Pour une onde électromagnétique de période $T$, l'expression [](#eq:ds2_lumiere) étant valable à tout instant, on peut calculer la même intégrale pour l'onde émise à l'instant $t_E+T_E$ et reçue à l'instant $t_0+T_0$ (on suppose donc que la période $T$ va varier au cours du temps): 
+$$
+\label{eq:comobileT}
 \int_{t_E+T_E}^{t_0+T_0} \frac{c \dd t}{a(t)}= \int_0^{\sigma_E}\frac{\dd \sigma}{1-k\sigma^2}.$$
-Par égalité des
-expression [](#eq:comobile) et
-[](#eq:comobileT), comme la période $T$ est petite devant les
-variations du facteur d'échelle $a(t)$ pour les ondes électromagnétiques
-usuelles, on obtient: 
-$$\begin{aligned}
+Par égalité des expression [](#eq:comobile) et [](#eq:comobileT), comme la période $T$ est petite devant les variations du facteur d'échelle $a(t)$ pour les ondes électromagnétiques usuelles, on obtient: 
+$$
+\begin{aligned}
 \int_{t_E+T_E}^{t_0+T_0} \frac{c\dd t}{a(t)} & =\int_{t_E}^{t_0} \frac{c\dd t}{a(t)}  \\
 \int_{t_E+T_E}^{t_E} \frac{c\dd t}{a(t)} & =\int_{t_0+T_0}^{t_0} \frac{c\dd t}{a(t)} \\
 \Leftrightarrow \frac{cT_0}{a(t_0)} & = \frac{c T_E}{a(t_E)}  \\
 \Leftrightarrow \frac{\lambda_0}{\lambda_E} & = \frac{a(t_0)}{a(t_E)}\label{eq:redshift2}
 \end{aligned}
 $$
-Directement, si l'espace est en expansion alors $a(t_E) < a(t_0)$ et la
-longueur d'onde reçue $\lambda_0$ est donc supérieure à la longueur
-d'onde émise $\lambda_E$. On définit alors le décalage spectral,
-communément appelé _redshift_ en raison du fait que la quasi-totalité
-des spectres des galaxies observées sont décalées vers le rouge, par :
+Directement, si l'espace est en expansion alors $a(t_E) < a(t_0)$ et la longueur d'onde reçue $\lambda_0$ est donc supérieure à la longueur d'onde émise $\lambda_E$. On définit alors le décalage spectral, communément appelé _redshift_ en raison du fait que la quasi-totalité des spectres des galaxies observées sont décalées vers le rouge, par :
 :::{math}
 :label: eq:redshift
 
  \fbox{$ \displaystyle{z = \frac{\lambda_0-\lambda_E}{\lambda_E} \Leftrightarrow 1+z = \frac{a_0}{a(t_E)}} $}.
 :::
-Le décalage spectral est à la fois directement lié au paramètre
-d'échelle $a(t)$, mais aussi à une grandeur expérimentale directement
-mesurable sur le spectre d'émission des objets distants. En effet, en
-regardant la position des raies d'absorption et d'émission des objets
-lointains, on peut en déduire leurs décalages spectraux par rapport aux
-mêmes éléments chimiques situés sur Terre, au repos. Cette donnée
-expérimentale est donc souvent associée à la définition des distances en
-cosmologie.
+Le décalage spectral est à la fois directement lié au paramètre d'échelle $a(t)$, mais aussi à une grandeur expérimentale directement mesurable sur le spectre d'émission des objets distants. En effet, en regardant la position des raies d'absorption et d'émission des objets lointains, on peut en déduire leurs décalages spectraux par rapport aux mêmes éléments chimiques situés sur Terre, au repos. Cette donnée expérimentale est donc souvent associée à la définition des distances en cosmologie.
 
 
 :::{exercise} Mesure du redshift
@@ -486,7 +446,7 @@ cosmologie.
 Calculer les décalages vers le rouge des deux galaxies dont les spectres sont représentés ci-dessous.
 La raie $H\beta$ de l'hydrogène (de la série Balmer) est mesurée à $486.1\,$nm dans le cadre du repos de l'atome.
 
-:::{list-table}
+```{list-table}
 :header-rows: 0
 :name: fig:redshifts
 
@@ -500,8 +460,7 @@ La raie $H\beta$ de l'hydrogène (de la série Balmer) est mesurée à $486.1\,$
     :width: 100%
     :align: center
     :::
-:::
-
+```
 
 :::
 
@@ -518,6 +477,7 @@ Pour le second spectre de galaxie, la raie $H\beta$ est mesurée à $\lambda-0\a
 \begin{equation}
 z = \frac{\lambda_0-\lambda_E}{\lambda_E} = \frac{5000-4861}{4861} = 0.028
 \end{equation}
+
 :::
 
 
@@ -579,7 +539,9 @@ La lumière voyage en suivant une géodésique, donc dans la métrique FLRW on a
 \dd s^2=0=-c^2 \dd t^2+\frac{a^2(t)}{1-k\sigma^2}\dd\sigma^2.
  \end{equation} 
 Donc :
-$$\frac{\dd\sigma}{\sqrt{1-k\sigma^2}} = - \frac{c \dd t}{a(t)}$$ 
+$$
+\frac{\dd\sigma}{\sqrt{1-k\sigma^2}} = - \frac{c \dd t}{a(t)}
+$$ 
 avec le photon voyageant le long de la direction $\dd \sigma<0$ pour $\dd t > 0$. La distance comobile se réécrit :
 \begin{equation}
 \chi(\sigma_E) =  \int_0^{\sigma_E}\frac{\dd\sigma}{\sqrt{1-k\sigma^2}} = \int_{t_0}^{t_E} -\frac{c\dd t'}{a(t')}= \int_{t_E}^{t_0} \frac{c\dd t'}{a(t')} = \chi(t_E)
@@ -620,10 +582,7 @@ Dans cette paramétrisation, la valeur de $a_0$ est égale au rayon de l'univers
 \end{equation}
 
 
-La distance propre est la distance que l'on pourrait mesurer
-effectivement à un instant $t$ entre deux objets. Sans perdre en généralité,
-on peut choisir un objet situé à la coordonné comobile $\sigma_E$ et un observateur comobile en 0.
-En terme de redshift, la distance propre aujourd'hui à $t_0$ s'écrit alors simplement pour les trois cas de courbure :
+La distance propre est la distance que l'on pourrait mesurer effectivement à un instant $t$ entre deux objets. Sans perdre en généralité, on peut choisir un objet situé à la coordonné comobile $\sigma_E$ et un observateur comobile en 0. En terme de redshift, la distance propre aujourd'hui à $t_0$ s'écrit alors simplement pour les trois cas de courbure :
 $$D_p(z) = a(t_0)\chi(z) =\int_0^z\frac{c \dd z}{H(z)} $$
 et s'exprime bien en unités de longueur. La notion de distance propre est illustrée [](#fig:distances).
 
@@ -633,11 +592,7 @@ et s'exprime bien en unités de longueur. La notion de distance propre est illus
 :align: center
 :width: 100%
 
-Distance propre entre la Terre et une galaxie lointaine sans vitesse propre apparente. (a)
-Aujourd'hui, la distance mesurée entre la Terre et cette galaxie est de $a_0 \sigma$ années-lumière dans un
-espace plat. (b) A une autre date $t$, cette distance évolue et vaut
-$a(t) \sigma$. (c) Distance propre dans un espace
-sphérique.
+Distance propre entre la Terre et une galaxie lointaine sans vitesse propre apparente. (a) Aujourd'hui, la distance mesurée entre la Terre et cette galaxie est de $a_0 \sigma$ années-lumière dans un espace plat. (b) A une autre date $t$, cette distance évolue et vaut $a(t) \sigma$. (c) Distance propre dans un espace sphérique.
 :::
 
 
@@ -687,12 +642,12 @@ Il est facile de vérifier que nous avons les mêmes expressions dans le cas pla
 La coordonnée $\sigma$ est donc utile pour faire des calculs et des dessins dans le cas plat et traduire ces résultats dans les cas courbes (ce qui n'est pas si facile avec $\chi$).
 
 
-:::{figure} ../images/spherical_universe.svg
+```{figure} ../images/spherical_universe.svg
 :width: 100%
 :align: center
     
 Géométrie dans un univers sphérique.
-:::
+```
 
 :::
 
@@ -733,11 +688,11 @@ et :
 $$\dd t_E = \dd t_0/(1+z).$$
 d'où le flux reçu :
 $$\Phi_0 = \frac{n_0 h \nu_0}{\dd t_0 \dd S} =  \frac{h \nu_0 n_E}{\dd t_0 4 \pi a^2_0 \sigma^2_E} = \frac{L_E}{4 \pi a^2_0 \sigma^2_E(1+z)^2}.$$
-Dans un espace statique et plat, la luminosité apparente d'une source au
-repos à distance $D_L$ serait $L_E/4\pi D_L^2$. On propose donc de définir la
-distance de luminosité d'une source $D_L(z)$ en cosmologie par :
-$$\Phi_0 \equiv \frac{L_E}{4 \pi D_L^2(z)}$$
-$$\Rightarrow D_L(z) = a_0 \sigma_E (1+z) = a_0 (1+z)\left\lbrace
+Dans un espace statique et plat, la luminosité apparente d'une source au repos à distance $D_L$ serait $L_E/4\pi D_L^2$. On propose donc de définir la distance de luminosité d'une source $D_L(z)$ en cosmologie par :
+$$
+\Phi_0 \equiv \frac{L_E}{4 \pi D_L^2(z)}$$
+$$
+\Rightarrow D_L(z) = a_0 \sigma_E (1+z) = a_0 (1+z)\left\lbrace
 \begin{array}{cl}
     \sin \chi(z) & \text{ si } k=+1 \\
     \chi(z) & \text{ si } k=0 \\
@@ -767,12 +722,7 @@ Distance angulaire d'un objet de taille physique transverse $l$.
 :::
 
 
-Dernière distance importante en cosmologie, la distance angulaire d'un
-objet $D_A(z)$. Soit un objet de taille transverse physique $l$ situé en
-$\sigma=\sigma_E,t=t_E$ et observé aujourd'hui en $\sigma=0,t=t_0$. Dans l'espace comobile, il
-serait vu sous un angle $\delta \approx l_c / \sigma_E$ (avec $\delta\ll 1$ et $l_c = l / a_E$ sa taille comobile). On
-propose de définir la distance angulaire comobile ou distance transverse comobile
-simplement par :
+Dernière distance importante en cosmologie, la distance angulaire d'un objet $D_A(z)$. Soit un objet de taille transverse physique $l$ situé en $\sigma=\sigma_E,t=t_E$ et observé aujourd'hui en $\sigma=0,t=t_0$. Dans l'espace comobile, il serait vu sous un angle $\delta \approx l_c / \sigma_E$ (avec $\delta\ll 1$ et $l_c = l / a_E$ sa taille comobile). On propose de définir la distance angulaire comobile ou distance transverse comobile simplement par :
 $$d_A(z) = \frac{l_c}{\delta} = \sigma_E = \left\lbrace\begin{array}{cl}
     \sin \chi(z) & \text{ si } k=+1 \\
     \chi(z) & \text{ si } k=0 \\
@@ -781,11 +731,13 @@ $$d_A(z) = \frac{l_c}{\delta} = \sigma_E = \left\lbrace\begin{array}{cl}
 \right. .$$
 
 Dans un espace non statique, l'objet est à une distance $D_p(t_E) = a_E \sigma_E$ à l'émission. 
-$$\delta = \frac{l}{D_p(t_E)} =  \frac{l}{a_E \sigma_E}  = \frac{l_c}{\sigma_E}$$
-La distance angulaire $D_A(z)$ est la distance sous laquelle sa taille apparente serait à nouveau $l$ au moment de l'émission pour la même taille angulaire $\delta$
-dans un Univers plat et statique :
-$$\delta = \frac{l}{D_A(z)}$$
-$$\Rightarrow D_A(z) \equiv\frac{l}{\delta} =  a(t_E) \sigma_E=\frac{a_0 \sigma_E}{1+z} = \frac{a_0}{1+z}d_A(z)=\frac{D_L(z)}{(1+z)^2}$$
+$$
+\delta = \frac{l}{D_p(t_E)} =  \frac{l}{a_E \sigma_E}  = \frac{l_c}{\sigma_E}$$
+La distance angulaire $D_A(z)$ est la distance sous laquelle sa taille apparente serait à nouveau $l$ au moment de l'émission pour la même taille angulaire $\delta$ dans un Univers plat et statique :
+$$
+\delta = \frac{l}{D_A(z)}$$
+$$
+\Rightarrow D_A(z) \equiv\frac{l}{\delta} =  a(t_E) \sigma_E=\frac{a_0 \sigma_E}{1+z} = \frac{a_0}{1+z}d_A(z)=\frac{D_L(z)}{(1+z)^2}$$
 $$D_A(z) = \frac{a_0}{1+z} \left\lbrace\begin{array}{cl}
     \sin \chi(z) & \text{ si } k=+1 \\
     \chi(z) & \text{ si } k=0 \\
@@ -801,27 +753,21 @@ $$D_A(z) = \frac{1}{1+z} \left\lbrace
 \end{array}
 \right. 
 .$$
-Autrement dit, ce serait la distance à laquelle on pourrait interpréter la taille apparente de l'objet comme dans un Univers statique et euclidien. Aussi, d'après
-l'exercice [](#exo:sphere-comobile), on voit que l'usage de $\sigma$ au lieu de $\chi$ est bien adapté aux trois types de courbures d'Univers dans ces définitions.
+Autrement dit, ce serait la distance à laquelle on pourrait interpréter la taille apparente de l'objet comme dans un Univers statique et euclidien. Aussi, d'après l'exercice [](#exo:sphere-comobile), on voit que l'usage de $\sigma$ au lieu de $\chi$ est bien adapté aux trois types de courbures d'Univers dans ces définitions.
 
 :::{note} Loi de Hubble-Lemaître
+
 A bas redshift $z\ll 1$, on retrouve la loi de Hubble-Lemaître pour les trois courbures :
 $$D_L(z) \approx \frac{cz}{H_0} \approx D_A(z)$$
 avec $cz$ la vitesse apparente de récession par rapport à la Terre.
 
-
 :::
-
 
 
 Temps cosmique et temps conforme
 --------------------------------
 
-Le temps mérite une mention spéciale. Dans notre Univers idéal, sans surdensités ou sous-densités de matière, 
-toutes les horloges qui suivent l'expansion (c'est-à-dire sans mouvement propre) battent la seconde à la même cadence. 
-Avec un temps infini à notre disposition, nous pouvons proposer une convention commune pour synchroniser nos horloges : 
-par exemple, lorsque la température du CMB atteint une valeur donnée. Il est donc possible de définir un temps cosmique, 
-commun à tous les observateurs en chute libre {cite:p}`Weinberg1972` [p. 409]. 
+Le temps mérite une mention spéciale. Dans notre Univers idéal, sans surdensités ou sous-densités de matière, toutes les horloges qui suivent l'expansion (c'est-à-dire sans mouvement propre) battent la seconde à la même cadence. Avec un temps infini à notre disposition, nous pouvons proposer une convention commune pour synchroniser nos horloges : par exemple, lorsque la température du CMB atteint une valeur donnée. Il est donc possible de définir un temps cosmique, commun à tous les observateurs en chute libre {cite:p}`Weinberg1972` [p. 409]. 
 
 
 :::{note}
