@@ -17,10 +17,12 @@ project:
 
 site:
   template: book-theme
-  # title:
-  # logo:
+  title: Astroparticles and Cosmology
   nav: []
   actions:
-    - title: Learn More
-      url: https://myst-tools.org/docs/mystjs
   domains: []
+  options:
+    hide_outline: false
+    logo_text:
+    favicon:
+    logo:
