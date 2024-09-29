@@ -15,16 +15,16 @@ Principes cosmologiques
 
 
 
-```{iframe} https://www.youtube.com/embed/UTlYUxucEZA?si=WZpcAuL1ElZuyvf6
+:::{iframe} https://www.youtube.com/embed/UTlYUxucEZA?si=WZpcAuL1ElZuyvf6
 :name: fig:sdss
 :align: center
 :width: 60%
 
 Galaxy distribution compiled by the eBOSS survey. Every dot in this "pie" diagram is a galaxy, color coded by type: green for nearby galaxies, magenta and red for old red galaxies, 
 blue for young blue galaxies, yellow and white for quasars. Credit: A. Raichoor (EPFL) / A. Ross (Ohio State Univ.) / SDSS Collaboration
-```
+:::
 
-```{figure} ../images/CMB_planck.jpg
+:::{figure} ../images/CMB_planck.jpg
 :name: fig:cmb_planck
 :align: center
 :width: 70%
@@ -33,7 +33,7 @@ Carte de température du fond diffus cosmologique micro-onde (CMB)
 observée par le satellite Planck. L'écart relatif observé entre la
 température des points chauds (rouges) ou froids (bleus) par rapport à
 la moyenne est de l'ordre de $\delta \theta / \theta \approx 10^{-5}$.
-```
+:::
 
 Pour être en mesure de construire un modèle de l'Univers, c'est-à-dire une construction théorique capable de décrire le contenu de l'Univers et son évolution, il faut parvenir 
 à résoudre l'équation d'Einstein de la Relativité Générale. Cependant, jusqu'à quel niveau de détail est-il nécessaire d'aller pour le décrire suffisamment bien aux grandes échelles ? 
@@ -41,54 +41,29 @@ On se doute que paramétrer l'équation d'Einstein jusqu'à inclure l'échelle d
 la structure de l'Univers aux plus grandes échelles ? Ici la nature nous fait un beau cadeau, qui va simplifier considérablement l'écriture d'un modèle cosmologique à partir des équations
 de la Relativité Générale.
 
-:::{important}
+:::{important} Principe cosmologique
+
 À des échelles suffisamment grandes, l'univers est spatialement homogène et isotrope.
 :::
 
-1.  l'Univers est homogène : la métrique ne dépend donc pas de la
-    position dans l'espace, donc aucune position n'est particulière dans
-    l'Univers. Cette affirmation, issue du principe Copernicien, n'est
-    que statistiquement vraie car localement on observe bien que la
-    matière a formé des grumeaux (planètes, étoiles, galaxies,\...) au
-    milieu de larges vides. Cependant l'observation de l'Univers à
-    grande échelle montre que l'Univers est bien globalement homogène à
-    des échelles plus grandes que la distance moyenne
-    inter-galactique[^4] $100\,$Mpc (voir [](#fig:sdss) et par exemple {cite:t}`Scrimgeour2012` pour une
-    mesure de l'homogénéité de l'Univers par comptage de galaxies).
+1.  l'Univers est homogène : la métrique ne dépend donc pas de la position dans l'espace, donc aucune position n'est particulière dans l'Univers. Cette affirmation, issue du principe Copernicien, n'est que statistiquement vraie car localement on observe bien que la matière a formé des grumeaux (planètes, étoiles, galaxies,\...) au milieu de larges vides. Cependant l'observation de l'Univers à grande échelle montre que l'Univers est bien globalement homogène à des échelles plus grandes que $100\,$Mpc[^pc] (voir [](#fig:sdss) et par exemple {cite:t}`Scrimgeour2012` pour une mesure de l'homogénéité de l'Univers par comptage de galaxies).
 
-2.  l'Univers est isotrope: aucune direction n'est privilégiée. Ainsi,
-    des observations effectuées dans deux directions différentes du ciel
-    sont équivalentes. Ceci est bien vérifié par l'observation du fond
-    diffus cosmologique micro-onde (CMB) dont la température est mesurée
-    identique  à $2.725\pm0.002\,$K {cite:p}`Mather1999` dans toutes les directions de l'espace. Seules des fluctuations 
-    de température de l'ordre de $10^{-5}$ sont détectés sur cette image de l'Univers jeune (voir
-    figure [](#fig:cmb_planck) et par exemple
-    {cite:t}`ThePlanckCollaboration2013XIII` pour une vérification du principe
-    d'isotropie utilisant l'effet Sunyaev-Zeldovich).
+2.  l'Univers est isotrope: aucune direction n'est privilégiée. Ainsi, des observations effectuées dans deux directions différentes du ciel sont équivalentes. Ceci est bien vérifié par l'observation du fond diffus cosmologique micro-onde (CMB) dont la température est mesurée identique  à $2.725\pm0.002\,$K dans toutes les directions de l'espace  {cite:p}`Mather1999`. Seules des fluctuations de température de l'ordre de $10^{-5}$K sont détectées sur cette image de l'Univers jeune (voir figure [](#fig:cmb_planck) et par exemple {cite:t}`ThePlanckCollaboration2013XIII` pour une vérification du principe d'isotropie utilisant l'effet Sunyaev-Zeldovich).
 
 
-Ignorer complètement ce qui se passe à des échelles "insuffisamment" grandes est la première étape pour
-construire une solution cosmologique à la Relativité Générale. Muni de ces faits osbervationnels, nous imposerons l'homogénéité et l'isotropie à la métrique
-métrique et à la distribution de la matière (c'est-à-dire au tenseur contrainte-énergie).
+Ignorer complètement ce qui se passe à des échelles "insuffisamment" grandes est la première étape pour construire une solution cosmologique à la Relativité Générale. Muni de ces faits observationnels, nous imposerons l'homogénéité et l'isotropie à la métrique et à la distribution de la matière (c'est-à-dire au tenseur énergie-impulsion).
 
 :::{note} A propos de l'homogénéité de l'Univers
 :class: dropdown 
 
-Avant de présenter cette solution cosmologique, il est intéressant de se demander pourquoi
-le principe cosmologique devrait s'appliquer. Alors que la gravité, la force dominante qui façonne
-les structures à grande échelle de l'univers, tend à détruire l'homogénéité (une région légèrement sur-dense dans un univers homogène attirera la matière et deviendra de plus en plus sur-dense), il faut de plus en plus de temps pour y parvenir.
-il faut de plus en plus de temps pour y parvenir à mesure que l'on s'approche des grandes échelles. Comme les grandes échelles
-semblent plus homogènes dans les observations, on peut supposer que l'univers était beaucoup plus homogène dans le passé à toutes les échelles et qu'il le devient de moins en moins sous l'action de la gravité.
-Mais pourquoi était-il homogène à l'origine ? Une réponse logique est qu'une interaction autre que la gravité y a contribué (comme, par exemple, la pression dans un gaz parfait). Cependant, la Relativité Générale stipule qu'aucune interaction ne peut se propager plus vite que la vitesse de la lumière. Nous verrons
-que dans une théorie où l'évolution de l'univers découle d'un Big Bang initial, cela crée 
-une difficulté potentielle : l'homogénéisation ne devrait être possible que jusqu'à des échelles égales à la distance parcourue par un photon entre le Big Bang et aujourd'hui.
+Avant de présenter cette solution cosmologique, il est intéressant de se demander pourquoi le principe cosmologique devrait s'appliquer. Alors que la gravité, la force dominante qui façonne les structures à grande échelle de l'univers, tend à détruire l'homogénéité (une région légèrement sur-dense dans un univers homogène attirera la matière et deviendra de plus en plus sur-dense), il faut plus de temps pour que la matière aux grandes échelles forment des grumeaux. Comme les grandes échelles semblent plus homogènes dans les observations, on peut supposer que l'univers était beaucoup plus homogène dans le passé à toutes les échelles et qu'il le devient de moins en moins sous l'action de la gravité. Mais pourquoi était-il homogène à l'origine ? Une réponse logique est qu'une interaction autre que la gravité y a contribué (comme, par exemple, la pression dans un gaz parfait). Cependant, la Relativité Générale stipule qu'aucune interaction ne peut se propager plus vite que la vitesse de la lumière. Nous verrons que dans une théorie où l'évolution de l'univers découle d'un Big Bang initial, cela crée une difficulté potentielle : l'homogénéisation ne devrait être possible que jusqu'à des échelles égales à la distance parcourue par un photon entre le Big Bang et aujourd'hui.
 :::
 
 
 Univers de symétrie maximale
 ------------------
 
-Etant donné le principe cosmologique, on cherche à déterminer la forme que doit prendre la métrique d'un Univers de symétrie maximale, c'est-à-dire un Univers dont les propriétés sont invariantes par rotation et translation {cite:p}`Weinberg1972`[p. 379].
+Étant donné le principe cosmologique, on cherche à déterminer la forme que doit prendre la métrique d'un Univers de symétrie maximale, c'est-à-dire un Univers dont les propriétés sont invariantes par rotation et translation {cite:p}`Weinberg1972`[p. 379].
 
 
 ### Métrique d'un Univers isotrope
@@ -103,14 +78,11 @@ est _perpendiculaire_ (telle que définie par la métrique) aux surfaces spatial
 \begin{equation}
 g=\begin{pmatrix} g_{00} & g_{01}  \\ g_{01} & g_{11} \end{pmatrix}
 \end{equation}
-alors l'équation des trajectoires de type lumière est 
-
+alors l'équation des trajectoires de type lumière est :
 $$\dd s^2=0=g_{00}c^2\dd t^2+2g_{01}\,c\,\dd x\,\dd t+g_{11}\dd x^2$$
 
 On peut alors vérifier, en résolvant l'équation de $\dd t$, que si $g_{01} \neq 0$, deux $\dd x$ opposés donnent deux valeurs différentes de $\dd t$ positif. 
-C'est-à-dire qu'un observateur recevra à des moments différents les impulsions lumineuses émises 
-simultanément par deux sources situées à la même distance dans des directions opposées.
-Cela rompt évidemment l'isotropie. Les termes $g_{0i}$ et $g_{i0}$ de la métrique sont donc nuls.
+C'est-à-dire qu'un observateur recevra à des moments différents les impulsions lumineuses émises simultanément par deux sources situées à la même distance dans des directions opposées. Cela rompt évidemment l'isotropie. Les termes $g_{0i}$ et $g_{i0}$ de la métrique sont donc nuls.
 
 En combinant les deux résultats précédents, l'intervalle espace-temps peut être écrit sous la forme suivante :
 \begin{equation}
@@ -163,10 +135,10 @@ x^2 - w^2= -a^2
 \end{equation}
 
 Les deux derniers cas de courbures strictement positive ou négative sont donc définis par _l'équation de contrainte_ :
-```{math}
+:::{math}
 :label: eq_hyp_sph
 x^2 \pm w^2= \pm a^2(t) 
-```
+:::
 où on autorise ici le rayon $a(t)$ à dépendre du temps, car a priori $\gamma_{ij}$ peut dépendre du temps.
 
 :::{tip} Notion de courbure
@@ -206,7 +178,7 @@ La distance infinitésimale entre 2 points de l'espace 3D non euclidien de courb
 
 A cette étape, nous pouvons maintenant combiner le résultat obtenu pour les deux courbures non nulles avec le cas euclidien en introduisant
 le _paramètre de courbure_ $k$ :
-```{math}
+:::{math}
 :label: K-def
 
 k = \left\lbrace
@@ -215,7 +187,7 @@ k = \left\lbrace
  0 & \text{espace\ plat} \\
  -1 & \text{3-hyperboloïde} \\
 \end{array}\right.
-```
+:::
 On a ainsi pour les trois géométries possibles d'un Univers maximallement symétrique :
 \begin{equation}
 \dd \vec l^2= \dd \vec x^2 + k\frac{ (\vec x \cdot \dd \vec x)^2}{a^2(t) - k x^2}
@@ -228,11 +200,11 @@ Enfin, introduisons la variable rééchelonnée $\vec\sigma=\vec x/a(t)$, et nou
 
 La métrique de Friedmann-Lemaître-Robertson-Walker décrivant un Univers homogène 
 et isotrope s'écrit finalement :
-```{math}
+:::{math}
 :label: FLRW-metric
 
 \dd s^2=-c^2\dd t^2 + a^2(t) \left(\dd \vec \sigma^2 + k\frac{(\vec \sigma \cdot \dd \vec \sigma)^2}{1 - k \sigma^2} \right)
-```
+:::
 
 La métrique de Friedmann-Lemaître-Robertson-Walker (FLRW) constitue le cadre de base du modèle cosmologique standard. Les hypothèses d'homogénéité
 et d'isotropie ont directement conduit à une métrique décrivant un univers avec seulement trois géométries possibles 
@@ -267,11 +239,11 @@ possédant un rayon de courbure variable dans le temps. Un espace plat ne
 possède pas d'échelle caractéristique, la valeur de $a(t)$ n'est donc pas
 une observable physique. La quantité ayant un sens physique pour un tel univers
 est le paramètre de Hubble qui quantifie la vitesse de variation du facteur d'échelle : 
-```{math}
+:::{math}
 :label: H-def
 
 \fbox{$\displaystyle H(t) = \frac{\dot a(t)}{a(t)} $}
-```
+:::
 avec le point $\dot{}$ exprimant une dérivée par rapport au temps $t$.
 Dans le but d'alléger les notations, la dépendance temporelle des
 paramètres ne sera pas toujours explicitée, de sorte que $a(t)=a$. On
@@ -279,28 +251,28 @@ désignera les paramètres évalués au temps présent $t_0$ par l'indice ou
 l'exposant 0 si bien que $a(t_0)=a_0$. 
 Dans la suite, nous travaillerons dans le système où $a_0$ _n'est pas fixé_ à 1. 
 
-```{list-table} Représentation des équivalents à deux dimensions des trois espaces solution des principes cosmologiques: la 2-sphère, le plan, le 2-hyperboloïde.
+:::{list-table} Représentation des équivalents à deux dimensions des trois espaces solution des principes cosmologiques: la 2-sphère, le plan, le 2-hyperboloïde.
 :header-rows: 0
 :name: fig:espaces
 
-* - ```{image} ../images/sphere.jpeg
+* - :::{image} ../images/sphere.jpeg
     :alt: sphere
     :width: 95%
     :align: center
-    ```
-  - ```{image} ../images/plan.jpeg
+    :::
+  - :::{image} ../images/plan.jpeg
     :alt: plan
     :width: 100%
     :align: center
-    ```
-  - ```{image} ../images/hyperboloid.jpeg
+    :::
+  - :::{image} ../images/hyperboloid.jpeg
     :alt: hyperboloid
     :width: 90%
     :align: center
-    ```
-```
+    :::
+:::
 
-```{note} Que signifie vivre dans un espace courbé ?
+:::{note} Que signifie vivre dans un espace courbé ?
 La [](#fig:espaces) représente des surfaces 2D plongées dans des espaces 3D. Mais comment se représenter que nous vivrions dans une 3-sphère ? Et qu'est-ce 
 que cela implique ? Vivre dans un espace courbé implique que la somme des angles d'un triangle n'est pas égale à 180°: elle est supérieure pour une 3-sphère et inférieure pour
 un 3-hyperboloid. C'est ainsi que les deux triangles bleus [](#fig:triangles_on_sphere)
@@ -320,7 +292,7 @@ sur une 2-sphère, hyperplan de la 3-sphère (surface $w=cste$). L'intersection 
 Pour toute paire de points, on peut ainsi définir un tel triangle reposant sur une 2-sphère (bleu et cyan par exemple).
 :::
 
-```
+:::
 
 Coordonnées comobiles
 ---------------------
@@ -341,20 +313,20 @@ Il existe une grande liberté dans le choix des coordonnées comobiles.
 ### Coordonnées sphériques
 
 On privilégie souvent les coordonnées sphériques $(ct, \sigma, \theta, \phi)$ avec l'observateur (nous-mêmes) à l'origine, telles que :
-```{math}
+:::{math}
 
 \begin{aligned}
 \sigma_1 &= \sigma \sin \theta \cos \phi \\
 \sigma_2 &= \sigma \sin \theta \sin \phi \\
 \sigma_3 &= \sigma \cos \theta
 \end{aligned}
-```
+:::
 Après des calculs simples mais longs (voir notebook et [ici](`https://en.wikipedia.org/wiki/Spherical_coordinate_system#Integration_and_differentiation_in_spherical_coordinates`)), dans les trois cas de courbures la métrique FLRW s'écrit :
-```{math}
+:::{math}
 :label: eq:FLRW-metric-spherical
 
 \dd s^2=-c^2\dd t^2 + a^2(t) \left( {1 \over 1-k\sigma^2}\dd \sigma^2 + \sigma^2 \dd \theta^2 + \sigma^2 \sin^2 \theta \dd \phi^2\right)
-```
+:::
 
 :::{note} Courbure et finitude de l'Univers
 
@@ -375,10 +347,10 @@ avec les contraintes de plus en plus fortes des observations cosmologiques,
 nous concentrerons désormais nos développements analytiques sur l'univers plat, en mentionnant des résultats pour le cas général 
 lorsque cela est nécessaire. 
 Dans le cas de courbure nulle, il peut être pratique d'utiliser les coordonnées comobiles cartésiennes $(ct, x, y, z)$, telles que :
-```{math}
+:::{math}
 
 \sigma_1  = x,\quad \sigma_2  = y,\quad\sigma_3  = z,\quad\sigma^2  = x^2 + y^2 + z^2
-```
+:::
 La métrique FLRW s'écrit dans un univers plat :
 \begin{equation}
 g_{\mu\nu}=\begin{pmatrix} -1 & 0 & 0 & 0 \\ 0 & a^2(t) & 0 & 0 \\ 0&0& a^2(t)&0 \\ 0&0&0&a^2(t) \end{pmatrix}
@@ -432,13 +404,13 @@ Le décalage spectral, ou redshift
 ----------------------------------
 
 
-```{figure} ../images/distances2.svg
+:::{figure} ../images/distances2.svg
 :name: fig:distances_croquis
 :align: center
 :width: 60%
 
 Notations pour le calcul du redshift et des distances cosmologiques en coordonnées comobiles.
-```
+:::
 
 Pour mesurer la valeur des différents paramètres de densité dans notre
 Univers, il faut avoir accès au paramètre d'échelle $a(t)$. Ceci est
@@ -448,15 +420,15 @@ centre ($\sigma=0$), et considérons un objet situé aux coordonnées comobiles
 $\left(\sigma_E,\theta_E,\phi_E\right)$, émettant un photon
 à l'instant $t_E$ (voir [](#fig:distances_croquis)). Pour ce photon, voyageant à la vitesse
 de la lumière, dans la métrique FLRW on a, à tout instant:
-```{math}
+:::{math}
 :label: eq:ds2_lumiere
 
 \dd s^2=0=-c^2 \dd t^2+\frac{a^2(t)}{1-k\sigma^2}\dd \sigma^2.
-```
+:::
 car le long de sa géodésique $\theta$ et $\phi$ sont constants ($\dd \theta = \dd \phi=0$).
 Posons $t_0$ l'instant de la réception de cette onde en $\sigma=0$. Alors grâce à l'équation
 précédente on a la relation : 
-```{math}
+:::{math}
 :label: eq:comobile
 
 \int_{t_E}^{t_0} \frac{c\dd t}{a(t)} =  -\int_{t_0}^{t_E} \frac{c\dd t}{a(t)} = \int_0^{\sigma_E}\frac{\dd\sigma}{\sqrt{1-k\sigma^2}} = \left\lbrace
@@ -466,7 +438,7 @@ précédente on a la relation :
     \text{arcsh}\,\sigma_E & \text{ si } k=-1 
 \end{array}
 \right. .
-``` 
+::: 
 avec $\dd \sigma < 0$ pour $\dd t > 0$ en considérant un photon allant de la source vers l'observateur en 0.
 
 
@@ -493,11 +465,11 @@ longueur d'onde reçue $\lambda_0$ est donc supérieure à la longueur
 d'onde émise $\lambda_E$. On définit alors le décalage spectral,
 communément appelé _redshift_ en raison du fait que la quasi-totalité
 des spectres des galaxies observées sont décalées vers le rouge, par :
-```{math}
+:::{math}
 :label: eq:redshift
 
  \fbox{$ \displaystyle{z = \frac{\lambda_0-\lambda_E}{\lambda_E} \Leftrightarrow 1+z = \frac{a_0}{a(t_E)}} $}.
-```
+:::
 Le décalage spectral est à la fois directement lié au paramètre
 d'échelle $a(t)$, mais aussi à une grandeur expérimentale directement
 mesurable sur le spectre d'émission des objets distants. En effet, en
@@ -514,21 +486,21 @@ cosmologie.
 Calculer les décalages vers le rouge des deux galaxies dont les spectres sont représentés ci-dessous.
 La raie $H\beta$ de l'hydrogène (de la série Balmer) est mesurée à $486.1\,$nm dans le cadre du repos de l'atome.
 
-```{list-table}
+:::{list-table}
 :header-rows: 0
 :name: fig:redshifts
 
-* - ```{image} ../images/spectra_galaxy.png
+* - :::{image} ../images/spectra_galaxy.png
     :alt: sphere
     :width: 95%
     :align: center
-    ```
-* - ```{image} ../images/spectra_galaxy2.png
+    :::
+* - :::{image} ../images/spectra_galaxy2.png
     :alt: plan
     :width: 100%
     :align: center
-    ```
-```
+    :::
+:::
 
 
 :::
@@ -571,13 +543,13 @@ Donc pour $h=0.7$, on trouve $D_H \approx 4.3 \,\text{Gpc}$. Cette valeur va app
 
 La _distance propre_ définit la distance physique entre deux objets à un instant $t$. Soit un objet émetteur situé aux coordonnées comobiles $(\sigma_E, \theta_E, \phi_E)$.
 Par définition, la distance propre entre cet objet et un observateur situé à l'origine est :
-```{math}
+:::{math}
 :label: eq:dist-prop
 
 D_p(\sigma_E, t) = \int_0^{\sigma_E} \sqrt{g_{\sigma\sigma}}\dd\sigma' = \int_0^{\sigma_E}\frac{a(t)\dd\sigma'}{\sqrt{1-k\sigma'^2}} = a(t) \chi(\sigma_E)
-```
+:::
 où on fait apparaître $\chi(\sigma_E)$ la _distance comobile_ entre cet objet et l'observateur :
-```{math}
+:::{math}
 :label: eq:dist-comobile
 
 \chi(\sigma_E) = \int_0^{\sigma_E}\frac{\dd\sigma'}{\sqrt{1-k\sigma'^2}} = \left\lbrace\begin{array}{cl}
@@ -586,7 +558,7 @@ où on fait apparaître $\chi(\sigma_E)$ la _distance comobile_ entre cet objet 
     \text{arcsh}\,\sigma_E & \text{ si } k=-1 
 \end{array}
 \right.
-```
+:::
 On voit que la distance propre $D_p$ possède bien l'unité d'une longueur alors que la distance comobile est sans dimension. Cette dernière représente la distance
 dans l'espace des coordonnées et est indépendante de l'expansion de l'Univers. En revanche la distance propre évolue avec le facteur d'échelle.
 
@@ -656,7 +628,7 @@ $$D_p(z) = a(t_0)\chi(z) =\int_0^z\frac{c \dd z}{H(z)} $$
 et s'exprime bien en unités de longueur. La notion de distance propre est illustrée [](#fig:distances).
 
 
-```{figure} ../images/distances.svg
+:::{figure} ../images/distances.svg
 :name: fig:distances
 :align: center
 :width: 100%
@@ -666,10 +638,10 @@ Aujourd'hui, la distance mesurée entre la Terre et cette galaxie est de $a_0 \s
 espace plat. (b) A une autre date $t$, cette distance évolue et vaut
 $a(t) \sigma$. (c) Distance propre dans un espace
 sphérique.
-```
+:::
 
 
-```{exercise} Coordonnées comobiles sur la sphère
+:::{exercise} Coordonnées comobiles sur la sphère
 :label: exo:sphere-comobile
 
 Pour se créer une intuition sur la géométrie courbe et les coordonnées comobiles, nous allons étudier une sphère 2D de rayon $a(t)$. 
@@ -683,9 +655,9 @@ Relier ces quantités à la coordonnée $\sigma$ et à l'expression de $D_p$.
 2. Considérons maintenant deux galaxies à la même coordonnées $\chi$, séparées par la distance physique $d$. Montrer que l'angle $\theta$ 
 ($\theta \ll 1$) sous lequel elles sont observées sur la sphère est $\theta = d / (a(t) \sigma)$.
 
-```
+:::
 
-```{solution} exo:sphere-comobile
+:::{solution} exo:sphere-comobile
 :label: exo:sphere-comobile-sol
 :class: dropdown
 
@@ -722,7 +694,7 @@ La coordonnée $\sigma$ est donc utile pour faire des calculs et des dessins dan
 Géométrie dans un univers sphérique.
 :::
 
-```
+:::
 
 
 
@@ -786,13 +758,13 @@ $$D_L(z) = (1+z) \left\lbrace
 ### Distances angulaires
 
 
-```{figure} ../images/angular_distance.svg
+:::{figure} ../images/angular_distance.svg
 :name: fig:angular_distance
 :align: center
 :width: 100%
 
 Distance angulaire d'un objet de taille physique transverse $l$.
-```
+:::
 
 
 Dernière distance importante en cosmologie, la distance angulaire d'un
@@ -859,7 +831,7 @@ donc on reconnait la relation traditionnelle entre distance et temps, mais dans 
 :::
 
 
-```{exercise} Temps conforme
+:::{exercise} Temps conforme
 :label: exo:conformal-time
 
 Transformer la partie spatiale de la métrique FLRW dy système de coordonnées comobiles $(\sigma,\theta,\phi)$ [](#eq:FLRW-metric-spherical)
@@ -870,9 +842,9 @@ au système de coordonnées comobiles équivalent $(\chi,\theta,\phi )$ avec $\c
 \end{equation}
 avec $f_k(\chi)$ une fonction de $k$ et $\chi$ à définir. 
 
-```
+:::
 
-```{solution} exo:conformal-time
+:::{solution} exo:conformal-time
 :label: exo:conformal-time-sol
 :class: dropdown
 
@@ -897,11 +869,13 @@ On définit $\dd\eta =  \dd t / a(t)$ le temps conforme, et on aboutit à :
 \end{equation}
 Le temps conforme $\eta$ possède la dimension d'une durée. 
 
-```
+:::
 
 
 
 
 [^gammat]: Rien ne l'interdit, puisque $\gamma_{ij}$ peut dépendre du temps
+
 [^g00]: On peut introduire une nouvelle variable temps $t'$ telle que $\dd t' = \sqrt{g_{00}}\dd t$.
-[^4]:  1 parsec (pc) $= 3.262$ années-lumière $= 3.086\times 10^{16}\,$m. $100\,\text{Mpc}\approx 3\times 10^8\;$ années-lumière.
+
+[^pc]: 1 parsec (pc) $= 3.262$ années-lumière $= 3.086\times 10^{16}\,$m. $100\,\text{Mpc}\approx 3\times 10^8\;$ années-lumière.
