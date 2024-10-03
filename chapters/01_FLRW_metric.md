@@ -48,7 +48,7 @@ de la Relativité Générale.
 
 1.  l'Univers est homogène : la métrique ne dépend donc pas de la position dans l'espace, donc aucune position n'est particulière dans l'Univers. Cette affirmation, issue du principe Copernicien, n'est que statistiquement vraie car localement on observe bien que la matière a formé des grumeaux (planètes, étoiles, galaxies,\...) au milieu de larges vides. Cependant l'observation de l'Univers à grande échelle montre que l'Univers est bien globalement homogène à des échelles plus grandes que $100\,$Mpc[^pc] (voir [](#fig:sdss) et par exemple {cite:t}`Scrimgeour2012` pour une mesure de l'homogénéité de l'Univers par comptage de galaxies).
 
-2.  l'Univers est isotrope: aucune direction n'est privilégiée. Ainsi, des observations effectuées dans deux directions différentes du ciel sont équivalentes. Ceci est bien vérifié par l'observation du fond diffus cosmologique micro-onde (CMB) dont la température est mesurée identique  à $2.725\pm0.002\,$K dans toutes les directions de l'espace  {cite:p}`Mather1999`. Seules des fluctuations de température de l'ordre de $10^{-5}$K sont détectées sur cette image de l'Univers jeune (voir figure [](#fig:cmb_planck) et par exemple {cite:t}`ThePlanckCollaboration2013XIII` pour une vérification du principe d'isotropie utilisant l'effet Sunyaev-Zeldovich).
+2.  l'Univers est isotrope: aucune direction n'est privilégiée. Ainsi, des observations effectuées dans deux directions différentes du ciel sont équivalentes. Ceci est bien vérifié par l'observation du fond diffus cosmologique micro-onde (CMB) dont la température est mesurée identique  à $2.725\pm0.002\,$K dans toutes les directions de l'espace  {cite:p}`Mather1999`. Seules des fluctuations de température de l'ordre de $10^{-5}$\,K sont détectées sur cette image de l'Univers jeune (voir [](#fig:cmb_planck) et par exemple {cite:t}`ThePlanckCollaboration2013XIII` pour une vérification du principe d'isotropie utilisant l'effet Sunyaev-Zeldovich).
 
 
 Ignorer complètement ce qui se passe à des échelles "insuffisamment" grandes est la première étape pour construire une solution cosmologique à la Relativité Générale. Muni de ces faits observationnels, nous imposerons l'homogénéité et l'isotropie à la métrique et à la distribution de la matière (c'est-à-dire au tenseur énergie-impulsion).
@@ -70,7 +70,7 @@ Univers de symétrie maximale
 
 Tout d'abord, si l'univers est homogène alors la composante $g_{00}(t,\vec x)$ ne peut dépendre que du temps $t$, de sorte que le battement des horloges ne dépendent pas de la position dans l'espace. Donc $g_{00}(t,\vec x) = g_{00}(t)$ {cite:p}`Weinberg1972`[p. 403]. Si nous appelons le paramètre $t$ le temps, nous voyons que nous avons un temps universel en tout point de l'espace. Comme l'univers est homogène, alors cela signifie qu'à chaque date on peut associer une densité d'énergie identique pour tous les observateurs, donc qu'avec un densimètre on peut construire une horloge. 
 
-De plus, on peut vérifier que les composantes croisées $g_{i0}$ et $g_{i0} sont nulles. Si tel n'était pas le cas, on aurait une direction privilégiée dans le l'univers. On peut s'en convaincre en remarquant que ces composantes sont non nulles si on réalise une transformation de Lorentz [](eq:lorentz)-[](eq:lorentz2), justement lorsqu'on prend un référentiel en translation uniforme par rapport à un autre, donc se déplaçant dans une direction choisie. 
+De plus, on peut vérifier que les composantes croisées $g_{i0}$ et $g_{i0}$ sont nulles. Si tel n'était pas le cas, on aurait une direction privilégiée dans le l'univers. On peut s'en convaincre en remarquant que ces composantes sont non nulles si on réalise une transformation de Lorentz [](eq:lorentz)-[](eq:lorentz2), justement lorsqu'on prend un référentiel en translation uniforme par rapport à un autre, donc se déplaçant dans une direction choisie. 
 
 Autre façon de se convaincre, prenons un espace-temps 2D. Si la métrique a la forme :
 \begin{equation}
@@ -89,7 +89,7 @@ En combinant les deux résultats précédents, l'intervalle espace-temps peut ê
 \begin{equation}
 \dd s^2= g_{00}(t) c^2 \dd t^2 + \dd \vec l^2
 \end{equation}
-où $\dd \vec l$ est un vecteur élémentaire ne dépendant que des coordonnées spatiales. Il est alors possible de fixer $g_{00}$ à $-1$ quitte à redéfinir la variable temps[^g00]. La métrique prend donc la forme :
+où $\dd \vec l$ est un vecteur élémentaire spatial. Il est alors possible de fixer $g_{00}$ à $-1$ quitte à redéfinir la variable temps[^g00]. La métrique prend donc la forme :
 \begin{equation}
 g_{\mu\nu}=\begin{pmatrix} -1& 0 & 0 & 0 \\ 0 & \gamma_{11} & \gamma_{12} & \gamma_{13} \\ 
 0&\gamma_{12} & \gamma_{22} & \gamma_{23} \\ 0&\gamma_{13} & \gamma_{23} & \gamma_{33} \end{pmatrix}
@@ -105,7 +105,7 @@ Dans ce cours, comme dans beaucoup de cours de cosmologie, la [signature](https:
 
 ### Géométrie d'un Univers maximallement symétrique
 
-Trouvons maintenant une forme explicite pour $\dd \vec r^2$. Un Univers de symétrie maximale (homogène et isotrope) doit posséder une courbure constante. Cela se comprend assez intuitivement mais aussi se démontre en Relativité Générale {cite:p}`Weinberg1972` [p. 381]. Notons $a$ le rayon de courbure associé, et soit $\vec \xi = (\xi^1, \xi^2, \xi^3)$ un vecteur position dans l'espace 3D :
+Trouvons maintenant une forme explicite pour $\dd \vec l^2$. Un Univers de symétrie maximale (homogène et isotrope) doit posséder une courbure constante. Cela se comprend assez intuitivement mais aussi se démontre en Relativité Générale {cite:p}`Weinberg1972` [p. 381]. Notons $a$ le rayon de courbure associé, et soit $\vec \xi = (\xi^1, \xi^2, \xi^3)$ un vecteur position dans l'espace 3D :
 \begin{equation}
 \dd \vec l^2 = \gamma_{ij} \dd \xi^i \dd \xi^j, \quad \text{avec}\quad i=1,2,3
 \end{equation}
@@ -116,14 +116,14 @@ Tout d'abord, si cet espace possède une courbure nulle, alors la distance élé
 \dd \vec l^2 =   \delta_{ij}\dd \xi^i \dd \xi^j,\quad \gamma_{ij} = \delta_{ij}
 \end{equation}
 
-Travaillons maintenant sur le cas où la courbure est non nulle. Pour décrire la courbure d'une surface avec des notions de géométries habituelles, étudions-la dans un espace avec une dimension supplémentaire. Plaçons cet espace 3D non euclidien (courbé) dans un espace 4D avec des coordonnées cartésiennes $\vec \xi = (x, y, z, w)$. Posons $r^2 = x^2 + y^2 + z^2$ la distance euclidienne dans le sous-espace 3D. La courbure de Gauss $1/a^2$ de l'hyper-surface 3D non euclidienne peut alors être décrite par {cite:p}`Baumann` :
+Travaillons maintenant sur le cas où la courbure est non nulle. Pour décrire la courbure d'une surface avec des notions de géométries habituelles, étudions-la dans un espace avec une dimension supplémentaire. Plaçons cet espace 3D non euclidien (courbé) dans un espace 4D de métrique $C_{AB}$ avec des coordonnées cartésiennes $(x, y, z, w)$. Posons $r^2 = x^2 + y^2 + z^2$ la distance euclidienne dans le sous-espace 3D. La courbure de Gauss $1/a^2$ de l'hyper-surface 3D non euclidienne peut alors être décrite par {cite:p}`Baumann` :
 - pour une 3-sphère de rayon $a$ plongée dans un espace Euclidien 4D : 
 \begin{equation}
-r^2 + w^2= a^2,\quad  \dd \vec l^2 = \dd r^2 + \dd w^2, \quad  C_{\mu\nu} = \mathrm{diag}(1,1,1,1)
+r^2 + w^2= a^2,\quad  \dd \vec l^2 = \dd r^2 + \dd w^2, \quad  C_{AB} = \mathrm{diag}(1,1,1,1)
 \end{equation}
 - pour une 3-hyperboloïde de courbure $a$ plongée dans un espace Lorentzien 4D :
 \begin{equation}
-r^2 - w^2= -a^2,\quad  \dd \vec l^2 = \dd r^2 - \dd w^2, \quad C_{\mu\nu} = \mathrm{diag}(1,1,1,-1)
+r^2 - w^2= -a^2,\quad  \dd \vec l^2 = \dd r^2 - \dd w^2, \quad C_{AB} = \mathrm{diag}(1,1,1,-1)
 \end{equation}
 
 Les deux derniers cas de courbures strictement positive ou négative sont donc définis par *l'équation de contrainte* :
@@ -136,17 +136,16 @@ où on autorise ici le rayon $a(t)$ à dépendre du temps, car a priori $\gamma_
 :::{tip} Notion de courbure
 :class: dropdown
 
-Si ces raisonnements vous troublent, rappelez-vous que c'est comme décrire la courbure d'un cercle de rayon $R$ (objet à une dimension car il n'y a qu'une seule direction de déplacement sur cet objet, paramétré par un angle $\theta$ par exemple)
-dans un plan à l'aide d'une seconde dimension, donc deux coordonnées $x$ et $y$ telles que :
+Si ces raisonnements vous troublent, rappelez-vous que c'est comme décrire la courbure d'un cercle de rayon $R$. Un cercle est un objet à une dimension car il n'y a qu'une seule direction de déplacement sur cet objet, paramétré par un angle $\theta$ par exemple). Mais il peut aussi se décrire dans un plan 2D, avec deux coordonnées $x$ et $y$ liées par l'équation :
 \begin{equation*}
 x^2 + y^2 = R^2
 \end{equation*}
-ou celle d'une sphère (deux dimensions) dans un espace avec une troisième dimension, donc trois coordonnées $(x,y,z)$ telles que :
+De même, une sphère (objet à deux dimensions) peut être étudiée dans un espace avec une troisième dimension, donc trois coordonnées $(x,y,z)$ liées par l'équation :
 \begin{equation*}
 x^2 + y^2 + z^2 = R^2
 \end{equation*}
 
-La notion de courbure peut se calculer soit intrinsèquement soit à l'aide d'une dimension supplémentaire. Intrinsèquement, un être vivant sur un cercle peut mesurer sa courbure en mesurant le chemin parcouru lors d'un tour : il en déduira que la courbure de son cercle est $1/R^2$ avec $R$ déduit du périmètre parcouru $l = 2\pi R$. S'il est capable de voyager dans une seconde dimension, il pourra observer la courbure de son Univers.
+La notion de courbure peut se calculer soit intrinsèquement, soit à l'aide d'une dimension supplémentaire. Intrinsèquement, un être vivant sur un cercle peut mesurer sa courbure en mesurant le chemin parcouru lors d'un tour : il en déduira que la courbure de son cercle est $1/R^2$ avec $R$ déduit du périmètre parcouru $l = 2\pi R$. S'il est capable de sortir du cercle et de voyager dans une seconde dimension, il pourra observer son cercle depuis l'extérieur et mesurer aussi la courbure de son Univers.
 
 :::
 
@@ -156,7 +155,7 @@ La distance infinitésimale $\dd \vec l^2$ entre deux points de l'hypersurface d
 \end{equation}
 où le cas $+$ correspond à une géométrie sphérique, le cas $-$ à une géométrie hyperbolique {cite:p}`Weinberg1972` [p. 390-391].
 
-Or, la différentiation de l'équation eq. [](#eq_hyp_sph) donne la relation 
+Or, la différentiation de l'équation [](#eq_hyp_sph) donne la relation 
 $$
 (\vec r \cdot \dd \vec r) \pm w\dd w=0,$$
 donc, en injectant de nouveau l'équation [](#eq_hyp_sph), on obtient :
