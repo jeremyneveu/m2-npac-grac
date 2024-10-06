@@ -1,10 +1,9 @@
 ---
-# Math frontmatter:
-math:
-  # Note the 'single quotes'
-  '\dd': '\mathrm{d}'
+short_title: []
+authors:
+  - jbiteau
+keywords: []
 ---
-
 
 Astroparticle sources in the universe
 =============================================

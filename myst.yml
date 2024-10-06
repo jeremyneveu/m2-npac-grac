@@ -5,8 +5,11 @@ project:
   # description:
   keywords: []
   github: https://gitlab.in2p3.fr/m2-npac-ac/m2-npac-ac
+  license: CC-BY-NC-4.0
   authors:
-    - name: Jonathan Biteau
+    - id: jbiteau
+      name: Jonathan Biteau
+      roles: astroparticles
       url: https://www.iufrance.fr/les-membres-de-liuf/membre/2504-jonathan-biteau.html
       affiliations:
         - id: ups
@@ -19,6 +22,7 @@ project:
       email: xxx
     - id: jneveu
       name: Jérémy Neveu
+      roles: cosmology
       affiliations:
         - ups
         - ijclab
