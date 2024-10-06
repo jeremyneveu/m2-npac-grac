@@ -16,11 +16,11 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: chapters/fr/index
+root: README
 parts:
   - caption: Lectures
     chapters:
-    - file: chapters/fr/index
+    - file: chapters/fr/start
     - file: chapters/fr/00_introduction
     - file: chapters/fr/01_FLRW_metric
     - file: chapters/fr/02_friedmann_equations

@@ -1,4 +1,4 @@
-# M2 NPAC: Astroparticles and Cosmology
+# Forewords
 
 Astroparticles and cosmology lectures for M2 NPAC.
 

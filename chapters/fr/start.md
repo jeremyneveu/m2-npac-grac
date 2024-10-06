@@ -1,4 +1,4 @@
-# M2 NPAC: Astroparticles et Cosmologie
+# Préface
 
 Cours sur les astroparticles et la cosmologie pour le master 2 NPAC.
 
