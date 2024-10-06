@@ -14,7 +14,7 @@ Dans le chapitre précédent, par de simples considérations géométriques, nou
 Le tenseur énergie-impulsion
 ----------------------------
 
-:::{figure} ../images/tmunu_def.svg
+:::{figure} ../../images/tmunu_def.svg
 
 Le tenseur-énergie impulsion représente les flux de 4-impulsions $p^\mu$ et la densité d'énergie $\epsilon$ dans un volume local d'espace-temps. Si le système est soumis à aucune force hormis la gravitation, alors on l'équation de conservation $T^{\mu\nu}_{\;\;\;;\mu}=0$.
 :::
@@ -583,12 +583,12 @@ En ce qui concerne le rayonnement, $P_r=\rho_r c^2 / 3$ donc :
 :header-rows: 0
 :name: fig:cubes
 
-* - :::{image} ../images/cube_galaxies.svg
+* - :::{image} ../../images/cube_galaxies.svg
     :alt: galaxies
     :width: 100%
     :align: center
     :::
-  - :::{image} ../images/cube_waves.svg
+  - :::{image} ../../images/cube_waves.svg
     :alt: light
     :width: 100%
     :align: center

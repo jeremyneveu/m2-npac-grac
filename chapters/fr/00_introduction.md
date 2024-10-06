@@ -22,22 +22,17 @@ Si une loi physique semble vraie dans un référentiel inertiel, alors elle doit
 Dans le cas spécial de la théorie de l'électromagnétisme de Maxwell, il apparaît une vitesse invariante par changement de système de coordonnées: cette vitesse s'identifie à la célérité de la lumière. Comme la lumière est véhiculée par le photon, particule de masse nulle, c'est aussi la vitesse maximale pouvant être atteinte dans notre Univers. Si la théorie électromagnétique n'avait pas été écrite en 1905, un argument aurait aussi pu être qu'il doit exister une vitesse maximale dans l'Univers si on pense qu'aucun transport d'information ne peut être instantané. A ce moment là, cette vitesse limite doit être la même dans tous les référentiels inertiels et la célérité pivot de la théorie de la Relativité Restreinte aurait été la vitesse de l'interaction qui se propage le plus rapidement. Ce qui dans notre Univers revient à l'interaction électromagnétique {cite:p}`landau1989theory`. Dans les deux approches, le principe de relativité restreinte impose qu'il existe une vitesse maximum $c$ invariante par changement de système de coordonnées. *Si l'électromagnétisme est vérifiée dans un référentiel galiléen, quelles sont les transformations de coordonnées spatio-temporelles pouvant laisser cette célérité invariante?*
 
 Soit un quadri-vecteur de coordonnées $x^\alpha$, où la composante $\alpha=0$ correspond au temps[^2] $ct$ (avec $c$ la fameuse célérité maximale et $t$ le temps) et les composantes $\alpha=1,2,3$ correspondent aux coordonnées cartésiennes $x^1,x^2, x^3$. Dans ce cours, nous emploierons les lettres grecques pour les composantes allant de 0 à 3 et les lettres latines pour les composantes spatiales allant de 1 à 3. Pour passer à un autre système de coordonnées $x'^\alpha$, on introduit la transformation de Lorentz $\Lambda^\alpha_{\;\beta}$ ainsi :
-```{math}
-:label: eq:boost
-
+\begin{equation}\label{eq:boost}
 x'^{\alpha} = \Lambda^\alpha_{\;\beta} x^\alpha + a^\alpha,
-```
+\end{equation}
 où $a^\alpha$ est une simple translation temporelle et spatiale. On définit la métrique de Minkowski :
-```{math}
-:label: eq:minkowski
-
+\begin{equation}\label{eq:minkowski}
 \eta_{\alpha\beta} = \begin{pmatrix}
 -1 & 0& 0& 0 \\
 0 & 1 & 0 & 0 \\
 0 & 0 & 1 & 0 \\
 0 & 0 &0 & 1 \end{pmatrix}
-
-```
+\end{equation}
 de telle sorte qu'en coordonnées cartésiennes on puisse définir l'intervalle espace-temps ainsi entre deux coordonnées spatio-temporelles proches :
 $$ \dd s^2 = - c^2 \dd t^2 + \dd \vec x^2 = \eta_{\alpha\beta}\dd x^\alpha \dd x^\beta $$
 Pour assurer que la vitesse de la lumière est invariante par changement de système de coordonnées $x'^{\alpha}$, on doit conserver $\vert \dd \vec x' / \dd t'\vert = c$ pour la propagation d'un rayon lumineux donc $\dd s'^2=\dd s^2 = 0$. La transformation de Lorentz doit donc assurer la conservation de l'intervalle espace-temps:
@@ -51,22 +46,20 @@ $$
 $$
 
 A partir de la relation constitutive [](#eq:dscons), on peut démontrer les transformations de Lorentz forment un groupe défini par $\Lambda^{0}_{\;0}\geqslant 1$ and $\mathrm{det}\;\Lambda=+1$. Quelques calculs plus tard (voir {cite:t}`raimond` par exemple), on peut montrer que la transformation de Lorentz entre deux référentiels dont l'un se déplace à la vitesse $\vec v = v \vec e_{1}$ s'écrit de façon unique :
-```{math}
-:label: eq:lorentz
-
+\begin{equation}
+\label{eq:lorentz}
 \Lambda^{\alpha}_{\;\beta} = \begin{pmatrix}
 \gamma & -\beta \gamma & 0& 0 \\
 -\beta \gamma & \gamma & 0 & 0 \\
 0 & 0 & 1 & 0 \\
-0 & 0 &0 & 1 \end{pmatrix},\quad \beta = \frac{v}{c},\quad \gamma = \frac{1}{\sqrt{1 - \beta^2}}
+0 & 0 &0 & 1 \end{pmatrix},
+\quad \beta = \frac{v}{c},\quad \gamma = \frac{1}{\sqrt{1 - \beta^2}}
+\end{equation}
 
-```
 Si on inclut des rotations de l'espace, avec un référentiel se déplaçant à la vitesse $\vec v$ constante par rapport à un autre référentiel, les composantes du tenseur $\Lambda^\alpha_{\;\beta}$ s'écrivent finalement :
-```{math}
-:label: eq:lorentz2
-
+\begin{equation}\label{eq:lorentz2}
 \Lambda^0_{\;0} = \gamma,\quad \Lambda^i_{\;0} = \gamma v_i / c,\quad \Lambda^0_{\;j} = \gamma v_j / c,\quad \Lambda^i_{\;j} = \delta_{ij} +  (\gamma - 1)  \frac{v_i v_j}{v^2}
-```
+\end{equation}
 
 De Newton à la Relativité Générale
 ----------------------------------
@@ -102,9 +95,9 @@ Appliquons le Principe d'Équivalence au problème d'un objet massif en chute li
 avec $\dd\tau$ le temps propre[^1] :
 $$
 \label{eq:proper-time}
-\dd\tau^2 \equiv -\eta_{\mu\nu} \dd x'^\mu \dd x'^\nu.
+\dd \tau^2 \equiv -\eta_{\mu\nu} \dd x'^\mu \dd x'^\nu.
 $$ 
-Le paramètre $\tau$ va nous permettre de paramétrer la courbe $x'\mu(\tau)$, tel une abscisse curviligne. Dans cette équation il ne joue que le rôle d'une étiquette pour paramétrer les positions successives de l'objet, mais il a l'immense avantage d'être invariant de Lorentz et d'être le temps mesuré par l'observateur dans le référentiel de la particule.
+Le paramètre $\tau$ va nous permettre de paramétrer la courbe $x'^\mu(\tau)$, tel une abscisse curviligne. Dans cette équation il ne joue que le rôle d'une étiquette pour paramétrer les positions successives de l'objet, mais il a l'immense avantage d'être invariant de Lorentz et d'être le temps mesuré par l'observateur dans le référentiel de la particule.
 
 D'après le Principe d'Équivalence, cette équation est aussi valable dans un certain voisinage de l'objet en question avec un autre choix de coordonnées spatio-temporelles. Il existe donc un autre système de coordonnées arbitraire dans lequel on a le droit de réécrire l'équation de sa trajectoire $x^\mu$. Cherchons la forme qu'elle prendrait pour ces coordonnées $x^\mu$ :
 $$
@@ -118,7 +111,7 @@ où $\Gamma^\nu_{\ \mu\rho}$ est la *connexion affine* définie par:
 $$\Gamma^\nu_{\ \mu\rho} \equiv \frac{\partial x^\nu}{\partial x'^\lambda}\frac{\partial^2 x'^\lambda}{\partial x^\mu \partial x^\rho}.$$
 Le temps propre se réécrit:
 $$
-\dd\tau^2=-\eta_{\mu\nu} \dd x'^\mu \dd x'^\nu = -g_{\mu\nu} \dd x^\mu \dd x^\nu
+\dd \tau^2=-\eta_{\mu\nu} \dd x'^\mu \dd x'^\nu = -g_{\mu\nu} \dd x^\mu \dd x^\nu
 $$
 ce qui définit ainsi le tenseur métrique $g_{\mu\nu}$:
 $$
@@ -133,7 +126,8 @@ Le tenseur $g_{\mu\nu}$ décrit la géométrie de l'espace-temps dans le nouveau
 \left\lbrace\begin{array}{ll}
 x' &= x\cos \theta + y \sin \theta \\
 y' &= y\cos \theta - x \sin\theta
-\end{array}\right. \Rightarrow g_{\mu\nu} = \eta_{\alpha\beta} \frac{\partial X'^\alpha}{\partial X^\mu} \frac{\partial X'^\beta}{\partial X^\nu}
+\end{array}
+\right. \Rightarrow g_{\mu\nu} = \eta_{\alpha\beta} \frac{\partial X'^\alpha}{\partial X^\mu} \frac{\partial X'^\beta}{\partial X^\nu}
 \end{equation*}
 Calculons $g_{11}$ pour l'exemple :
 \begin{equation*}
@@ -157,7 +151,7 @@ donc l'espace reste euclidien après rotation. De façon équivalente on aurait 
 \dd \vec l^2 = a^2\dd \theta^2 + a^2 \sin^2 \theta \dd \phi^2
 \end{equation*}
 
-```{figure} ../images/sphere_gmunu
+```{figure} ../../images/sphere_gmunu
 
 
 ```
@@ -177,7 +171,9 @@ dont la courbure est la moitié du scalaire de Ricci (voir <wiki:Scalar_curvatur
 ct' & = ct \\
 x' &= x + Vt \\
 y' &= y
-\end{array}\right. \Rightarrow g_{\mu\nu} = \eta_{\alpha\beta} \frac{\partial X'^\alpha}{\partial X^\mu} \frac{\partial X'^\beta}{\partial X^\nu} \approx 
+\end{array}
+\right. 
+\Rightarrow g_{\mu\nu} = \eta_{\alpha\beta} \frac{\partial X'^\alpha}{\partial X^\mu} \frac{\partial X'^\beta}{\partial X^\nu} \approx 
 \begin{pmatrix}
 1 & V/c & 0 \\
 V/c & 1 & 0 \\
@@ -201,9 +197,13 @@ g^{\mu\nu} = \eta^{\alpha\beta} \frac{\partial x^\mu}{\partial x'^\alpha} \frac{
 En effet, par définition on a bien: 
 $$
 \begin{aligned}
-g^{\nu\rho}g_{\mu\nu} & = \eta^{\alpha\beta} \frac{\partial x^\nu}{\partial x'^\alpha} \frac{\partial x^\rho }{\partial x'^\beta} \eta_{\gamma\delta} \frac{\partial x'^\gamma}{\partial x^\mu} \frac{\partial x'^\delta}{\partial x^\nu} \\
-& = \delta^\delta_\alpha  \eta^{\alpha\beta} \frac{\partial x^\rho }{\partial x'^\beta} \eta_{\gamma\delta} \frac{\partial x'^\gamma}{\partial x^\mu} \text{ avec } \frac{\partial x^\nu}{\partial x'^\alpha}\frac{\partial x'^\delta}{\partial x^\nu} = \delta^\delta_\alpha \\
-& = \frac{\partial x^\rho}{\partial x'^\beta}\frac{\partial x'^\beta}{\partial x^\mu} = \delta^\rho_\mu,\end{aligned}$$
+g^{\nu\rho}g_{\mu\nu} & = \eta^{\alpha\beta} \frac{\partial x^\nu}{\partial x'^\alpha} \frac{\partial x^\rho }{\partial x'^\beta} 
+\eta_{\gamma\delta} \frac{\partial x'^\gamma}{\partial x^\mu} \frac{\partial x'^\delta}{\partial x^\nu} \\
+& = \delta^\delta_\alpha  \eta^{\alpha\beta} \frac{\partial x^\rho }{\partial x'^\beta} \eta_{\gamma\delta} 
+\frac{\partial x'^\gamma}{\partial x^\mu}
+\text{ avec } \frac{\partial x^\nu}{\partial x'^\alpha}\frac{\partial x'^\delta}{\partial x^\nu} = \delta^\delta_\alpha \\
+& = \frac{\partial x^\rho}{\partial x'^\beta}\frac{\partial x'^\beta}{\partial x^\mu} 
+= \delta^\rho_\mu,\end{aligned}$$
 où $\delta^\rho_\mu$ est le symbole de Kronecker ($\delta^\rho_\mu=1$ si $\rho=\mu$, 0 sinon). 
 :::
 
@@ -232,7 +232,7 @@ V^\nu{}_{;\mu} \equiv \partial_\mu V^\nu + \Gamma^\nu_{\ \mu\rho}V^\rho.
 $$
 Le premier terme correspond à la variation ordinaire d'un vecteur si on le déplace dans son voisinage. Le second terme prend en compte les changements du systèmes de coordonnées lui aussi déplacé, car le symbole de Christoffel décrit les changements des vecteurs de base du référentiel.
 
-:::{figure} ../images/covariant_derivative.svg
+:::{figure} ../../images/covariant_derivative.svg
 
 Illustration de la variation d'un vecteur $A^\mu$ (cyan) dans le voisinage d'une base $(e_\mu, e_\nu)$ d'un espace courbe. Suite à un déplacement dans son voisinage (ici le long de $e_\mu$), le vecteur change de taille (premier terme de la dérivée covariante) et la base qui définit ses projections donc ces coordonnées change également. La dérivée covariante calcule la variation des composantes du vecteur $A^\mu$ due à ces deux changements.
 ::: 
@@ -271,12 +271,12 @@ $$
 
 Armés de ces outils, allons maintenant vers une dérivation simple de l'équation d'Einstein qui résume la gravitation à une déformation de l'espace-temps par la matière. Commençons par nous intéresser à une particule massive se déplaçant lentement dans un champ gravitationnel faible, constant mais quelconque cette fois. D'après le Principe d'Équivalence, on a vu qu'il existe un système de coordonnées inertielles $\left(ct',\vec x'\right)$ tel que l'équation du mouvement [](#eq:eqm1) soit encore valable dans un autre référentiel $\left(ct,\vec x\right)$ mais avec champ gravitationnel. L'hypothèse de vitesse faible nous permet de négliger $\dd\vec x/\dd\tau$ devant $c\dd t/\dd\tau$. On a alors au premier ordre dans un champ de gravité faible et quasi-stationnaire :
 $$
-\frac{\dd^2x^\mu}{\dd\tau^2} + \Gamma^\mu_{\ 00}\left(c\frac{\dd t}{\dd\tau}\right)^2=0, \qquad \Gamma^\mu_{\ 00} \approx -\frac{1}{2}g^{\mu\nu}\frac{\partial g_{00}}{\partial x^\nu}.
+\frac{\dd^2x^\mu}{\dd\tau^2} + \Gamma^\mu_{\ 00}\left(c\frac{\dd t}{\dd\tau}\right)^2=0, \qquad \Gamma^\mu_{\;\;00} \approx -\frac{1}{2}g^{\mu\nu}\frac{\partial g_{00}}{\partial x^\nu}.
 $$
 
 Dans l'hypothèse d'un champ gravitationnel faible, on peut adopter une métrique presque cartésienne :
 $$
-g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu},\qquad \vert h_{\mu\nu}\vert\ll 1,
+g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu},\qquad \vert h_{\mu\nu} \vert \ll 1,
 $$
 et on obtient au premier ordre : 
 $$
@@ -303,13 +303,13 @@ $$
 Par conséquent, la métrique de l'espace-temps va pouvoir contenir les effets gravitationnels. L'élément $g_{00}$ correspondant à la composante temporelle de la métrique, le battement des horloges dépend par conséquent de l'intensité du champ gravitationnel. Ceci correspond à l'effet Einstein, la seule conséquence de la Relativité Générale aujourd'hui utilisée technologiquement (dans le GPS, voir [](#fig:effet_einstein)).
 
 
-```{figure} ../images/effet_eintein.svg
+:::{figure} ../../images/effet_eintein.svg
 :name: fig:effet_einstein
 :align: center
 :width: 90%
 
 Illustration de l'effet Einstein. Un photon tombant dans un puits gravitationnel gagne de l'énergie donc sa fréquence augmente. De façon équivalente, on peut dire que les horloges dans un champ gravitationnel retardent par rapport à des horloges identiques situées en dehors. Les récepteurs GPS doivent prendre en compte cet effet pour en déduire leur position par rapport aux satellites.
-```
+:::
 
 Cet exercice sur une particule ponctuelle nous apprend que le champ gravitationnel est finalement contenu dans la métrique, et que cette métrique dépend donc de la présence de matière. Il est donc possible d'imaginer une généralisation de ce constat. Le potentiel newtonien est déterminé par l'équation de Poisson :
 \begin{equation}\label{eq:poisson}
@@ -320,7 +320,8 @@ $$
 \nabla^2 g_{00}=-\frac{8\pi \GN}{c^4} T_{00}.
 $$ 
 Cette équation n'est pas invariante par transformation de Lorentz, d'où la nécessité de modifier la théorie de la gravitation newtonienne si on admet le principe de relativité restreinte. Les tenseurs sont les bons objets qui peuvent permettre d'atteindre cet objectif. On peut alors imaginer qu'il existe un tenseur $G_{\mu\nu}$ combinant des dérivées premières et secondes de la métrique $g_{\mu\nu}$ généralisant cette dernière équation à toutes les coordonnées tel que 
-$$\label{eq:einstein1}
+$$
+\label{eq:einstein1}
 G_{\mu\nu}=-\frac{8\pi \GN}{c^4} T_{\mu\nu}.
 $$ 
 Cette dernière équation correspond à une première version de *l'équation d'Einstein*. Ce raisonnement ne nous a permis que d'intuiter sa forme, mais une autre démonstration plus rigoureuse permet d'obtenir l'expression du tenseur d'Einstein $G_{\mu\nu}$ : 
@@ -337,7 +338,7 @@ $$
 *Comme le tenseur d'Einstein $G_{\mu\nu}$ contient des dérivées secondes de la métrique, l'équation d'Einstein lie la courbure de l'espace-temps donc les trajectoires des corps à son contenu en énergie et matière.*
 
 
-De plus, $G_{\mu\nu}$ apparaît être de divergence nulle. C'est l'identité de Binachi :
+De plus, $G_{\mu\nu}$ apparaît être de divergence nulle. C'est l'identité de Bianchi :
 $$G^{\mu\nu}_{\;\;\;;\mu}=0.$$
 
 :::{important} Conservation de $T^{\mu\nu}$
@@ -350,7 +351,8 @@ $$
 :::
 
 Par l'identité de Bianchi, on voit aussi que l'équation d'Einstein peut être définie à une constante près[^3] tout en gardant la conservation de l'énergie. Cette constante est aujourd'hui appelée constante cosmologique. Voici l'équation d'Einstein sous sa forme définitive {cite:p}`Einstein1917` :
-$$\label{eq:einstein2}
+$$
+\label{eq:einstein2}
 \boxed{G_{\mu\nu}-\Lambda g_{\mu\nu} = -\frac{8\pi \GN}{c^4} T_{\mu\nu}}
 $$
 
@@ -364,10 +366,3 @@ $$
 [^2prime]: Si étudie une particule de masse nulle, il suffit de remplacer $f^\mu/m$ par le modèle de l'interaction s'appliquant à cette particule.
 
 [^3]: Car on a aussi $g^{\mu\nu}{}_{;\mu}=0$.
-
-[^4]: 1 parsec (pc) $= 3.262$ années-lumière $= 3.086\times 10^{16}\,$m. $100\,\text{Mpc}\approx 3\times 10^8\;$ années-lumière.
-
-[^5]: Ces considérations historiques sont développées dans la référence  {cite:t}`Astier2012`.
-
-[^6]: Des calculs plus précis tenant compte des problèmes de renormalisation montrent que le désaccord peut être ramener de 120 à une cinquantaine d'ordres de grandeur, ce qui reste énorme {cite:p}`Martin2012`.
-
