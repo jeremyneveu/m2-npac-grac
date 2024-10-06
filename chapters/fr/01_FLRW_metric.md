@@ -1,8 +1,8 @@
 ---
-# Math frontmatter:
-math:
-  # Note the 'single quotes'
-  '\dd': '\mathrm{d}'
+short_title: Métrique FLRW
+authors:
+  - jneveu
+keywords: FLRW, cosmological principle, comobile, coordinates
 ---
 
 

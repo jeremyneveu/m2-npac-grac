@@ -1,9 +1,9 @@
 ---
-# Math frontmatter:
-math:
-  # Note the 'single quotes'
-  '\dd': '\mathrm{d}'
-  '\GN': '\mathcal{G}'  # newton constant
+short_title: General Relativity
+authors:
+  - jneveu
+keywords: special relativity, general relativity, metric
+
 ---
 
 A brief introduction to General Relativity

@@ -1,8 +1,8 @@
 ---
-# Math frontmatter:
-math:
-  # Note the 'single quotes'
-  '\dd': '\mathrm{d}'
+short_title: L'Univers en expansion
+authors:
+  - jneveu
+keywords: cosmological distances, scale factor, dark energy
 ---
 
 L'Univers en expansion

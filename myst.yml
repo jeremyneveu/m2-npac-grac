@@ -4,16 +4,35 @@ project:
   # title:
   # description:
   keywords: []
-  authors: []
+  github: https://gitlab.in2p3.fr/m2-npac-ac/m2-npac-ac
+  authors:
+    - name: Jonathan Biteau
+      url: https://www.iufrance.fr/les-membres-de-liuf/membre/2504-jonathan-biteau.html
+      affiliations:
+        - id: ups
+          institution: Université Paris-Saclay
+          city: Orsay
+        - id: ijclab
+          institution: IJCLab
+          city: Orsay
+      orcid: 0000-0002-4202-8939
+      email: xxx
+    - id: jneveu
+      name: Jérémy Neveu
+      affiliations:
+        - ups
+        - ijclab
+      orcid: 0000-0002-6966-5946
+      email: jeremy.neveu@universite-paris-saclay.fr
+  # authors: ["Jonathan Biteau", "Jérémy Neveu"]
   # github: https://gitlab.in2p3.fr/jeremy.neveu/m2-npac-cosmology
   # bibliography: []
   thebe:
     lite: true
-    # binder:
-    #  url: https://mybinder.org/
-    #  repo: jeremyneveu/m2-npac-cosmology-binder
-    #  ref: main
-    #  provider: github
+  math:
+    # Note the 'single quotes'
+    '\dd': '\mathrm{d}'
+    '\GN': '\mathcal{G}'  # newton constant
 
 site:
   template: book-theme
@@ -25,7 +44,10 @@ site:
       url: /fr/start
     - title: Jupyter notebooks
       url: /notebooks/start
-  actions:
+  actions: []
+  #   - title: m2-npac-ac
+  #     url: https://gitlab.in2p3.fr/m2-npac-ac/m2-npac-ac
+
   domains: []
   options:
     hide_outline: false

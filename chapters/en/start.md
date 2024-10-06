@@ -1,3 +1,8 @@
+---
+short_title: Forewords
+keywords: special relativity, general relativity, metric
+---
+
 # Forewords
 
 Astroparticles and cosmology lectures for M2 NPAC.
