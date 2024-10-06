@@ -70,7 +70,7 @@ site:
     - title: Version française
       url: /fr/start
     - title: Jupyter notebooks
-      url: /notebooks/start
+      url: /lite
   actions: []
   #   - title: m2-npac-ac
   #     url: https://gitlab.in2p3.fr/m2-npac-ac/m2-npac-ac
