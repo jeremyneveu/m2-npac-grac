@@ -4,12 +4,11 @@ project:
   # title:
   # description:
   keywords: []
-  github: https://gitlab.in2p3.fr/m2-npac-ac/m2-npac-ac
+  # github: https://gitlab.in2p3.fr/m2-npac-ac/m2-npac-ac
   license: CC-BY-NC-4.0
   authors:
     - id: jbiteau
       name: Jonathan Biteau
-      roles: astroparticles
       url: https://www.iufrance.fr/les-membres-de-liuf/membre/2504-jonathan-biteau.html
       affiliations:
         - id: ups
@@ -22,7 +21,6 @@ project:
       email: xxx
     - id: jneveu
       name: Jérémy Neveu
-      roles: cosmology
       affiliations:
         - ups
         - ijclab
@@ -37,6 +35,31 @@ project:
     # Note the 'single quotes'
     '\dd': '\mathrm{d}'
     '\GN': '\mathcal{G}'  # newton constant
+  toc:
+    - file: README
+    - title: Lectures
+      children:
+        - file: chapters/fr/start
+        - file: chapters/fr/00_introduction
+        - file: chapters/fr/01_FLRW_metric
+        - file: chapters/fr/02_friedmann_equations
+        #- file: chapters/03_cosmological_models
+        #- file: chapters/en/04_astrophysical_emissions
+        #- file: chapters/05_astroparticle_sources
+        #- file: chapters/06_supernovae
+        #- file: chapters/07_cmb
+        #- file: chapters/10_lss
+        #- file: chapters/11_inflation
+        #- file: chapters/12_lcdm_and_beyond
+    - title: Jupyter notebooks
+      file: notebooks/start.md
+      children:
+      - file: notebooks/mechanical_analogy.ipynb
+      - file: notebooks/astropy_cosmo.ipynb
+      - file: notebooks/CMB_degrees_of_freedom.ipynb
+      - file: notebooks/SNIa.ipynb
+      - file: notebooks/CMB_Saha_equation.ipynb
+      - file: notebooks/CMB_BBN.ipynb
 
 site:
   template: book-theme
@@ -51,11 +74,10 @@ site:
   actions: []
   #   - title: m2-npac-ac
   #     url: https://gitlab.in2p3.fr/m2-npac-ac/m2-npac-ac
-
   domains: []
   options:
     hide_outline: false
     hide_toc: false
-    logo_text:
-    favicon:
-    logo:
+    logo_text: ""
+    favicon: images/cropped-bandeau_NPAC_fr.jpg
+    logo: images/cropped-bandeau_NPAC_fr.jpg

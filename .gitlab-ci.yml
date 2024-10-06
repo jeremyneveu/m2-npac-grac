@@ -18,7 +18,7 @@ pages:
     - node -v
     - npm install -g mystmd
     - mv _toc.yml tmp_toc.yml
-    - "echo 'root: README' >> _toc.yml"
+    - "echo 'root: README\n ' >> _toc.yml"
     - myst build --html
     - mv _build/html/ public/
     - mv tmp_toc.yml _toc.yml
