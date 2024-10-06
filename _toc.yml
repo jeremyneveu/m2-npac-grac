@@ -29,7 +29,7 @@ parts:
     #- file: chapters/05_astroparticle_sources
     #- file: chapters/06_supernovae
     #- file: chapters/07_cmb
-    # - file: chapters/10_lss
+    #- file: chapters/10_lss
     #- file: chapters/11_inflation
     #- file: chapters/12_lcdm_and_beyond
   - caption: Jupyter notebooks
