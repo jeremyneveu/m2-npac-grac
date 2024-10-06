@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1052.3622"
+   height="744.09448"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="AP_effect.svg">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="476.48439"
+     inkscape:cy="543.773"
+     inkscape:document-units="px"
+     inkscape:current-layer="g4114"
+     showgrid="true"
+     inkscape:snap-grids="false"
+     inkscape:snap-page="false"
+     inkscape:window-width="1615"
+     inkscape:window-height="1026"
+     inkscape:window-x="1985"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2985"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5232"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5207"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5173"
+       is_visible="true" />
+    <marker
+       inkscape:stockid="StopL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="StopL"
+       style="overflow:visible">
+      <path
+         id="path3946"
+         d="M 0.0,5.65 L 0.0,-5.65"
+         style="fill:none;fill-opacity:0.75000000;fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8)" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DistanceStart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="DistanceStart">
+      <g
+         id="g2300">
+        <path
+           style="fill:none;stroke:#ffffff;stroke-width:1.15;stroke-linecap:square"
+           d="M 0,0 L 2,0"
+           id="path2306" />
+        <path
+           style="fill:#000000;fill-rule:evenodd;stroke:none"
+           d="M 0,0 L 13,4 L 9,0 13,-4 L 0,0 z "
+           id="path2302" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square"
+           d="M 0,-4 L 0,40"
+           id="path2304" />
+      </g>
+    </marker>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4548"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4540"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4536"
+       is_visible="true" />
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path3780"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         id="path3777"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect3771"
+       is_visible="true" />
+    <linearGradient
+       id="linearGradient3759">
+      <stop
+         style="stop-color:#0000ff;stop-opacity:1;"
+         offset="0"
+         id="stop3761" />
+      <stop
+         id="stop3767"
+         offset="0.5"
+         style="stop-color:#7f7fff;stop-opacity:0.49803922;" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop3763" />
+    </linearGradient>
+    <marker
+       inkscape:stockid="Arrow1LstartK"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1LstartK"
+       style="overflow:visible">
+      <path
+         id="path4415"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="stroke:#ff0000;stroke-width:1.0pt;fill:#ff0000;fill-rule:evenodd"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1LendG"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1LendG"
+       style="overflow:visible;">
+      <path
+         id="path4418"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="stroke:#ff0000;stroke-width:1.0pt;fill:#ff0000;fill-rule:evenodd"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1LstartKN"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1LstartKN"
+       style="overflow:visible">
+      <path
+         id="path4473"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#0000ff;stroke-width:1.0pt;fill:#0000ff"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1LendGu"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1LendGu"
+       style="overflow:visible;">
+      <path
+         id="path4476"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#0000ff;stroke-width:1.0pt;fill:#0000ff"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5173-9"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5207-9"
+       is_visible="true" />
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-308.2677)">
+    <path
+       sodipodi:type="arc"
+       style="fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:#0000f9;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;opacity:0.41218638"
+       id="path2989"
+       sodipodi:cx="665"
+       sodipodi:cy="209.09448"
+       sodipodi:rx="45"
+       sodipodi:ry="45"
+       d="m 710,209.09448 c 0,24.85282 -20.14719,45 -45,45 -24.85281,0 -45,-20.14718 -45,-45 0,-24.85281 20.14719,-45 45,-45 24.85281,0 45,20.14719 45,45 z"
+       transform="matrix(2.0000001,0,0,2.0000001,-560.00007,104.1732)"
+       inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="stroke-linejoin:miter;marker-end:url(#Arrow1LendGu);stroke-opacity:1;fill-opacity:1;marker-start:url(#Arrow1LstartKN);stroke:#0000ff;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:1.69700003000000010;fill:#0000ff"
+       d="m 700,582.36218 140,-120"
+       id="path3769"
+       inkscape:path-effect="#path-effect3771"
+       inkscape:original-d="m 700,582.36218 c 140,-120 140,-120 140,-120"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <flowRoot
+       transform="translate(-13.375,299.02871)"
+       style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot4445"
+       xml:space="preserve"
+       inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><flowRegion
+         id="flowRegion4447"><rect
+           style="fill:#0000ff;fill-opacity:1"
+           y="181.43951"
+           x="833.37585"
+           height="46.467018"
+           width="74.751289"
+           id="rect4449" /></flowRegion><flowPara
+         style="fill:#0000ff;fill-opacity:1"
+         id="flowPara4451">L<flowSpan
+   id="flowSpan4453"
+   style="font-size:65.00091553000000033%;baseline-shift:sub;fill:#0000ff;fill-opacity:1">0</flowSpan></flowPara></flowRoot>    <path
+       sodipodi:type="arc"
+       style="fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:#0000ff;stroke-width:1.69700003;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path4521"
+       sodipodi:cx="770"
+       sodipodi:cy="214.09448"
+       sodipodi:rx="10"
+       sodipodi:ry="10"
+       d="m 780,214.09448 c 0,5.52285 -4.47715,10 -10,10 -5.52285,0 -10,-4.47715 -10,-10 0,-5.52285 4.47715,-10 10,-10 5.52285,0 10,4.47715 10,10 z"
+       transform="matrix(0.5,0,0,0.5,386,414.31494)"
+       inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <image
+       y="506.96616"
+       x="-156.48732"
+       id="image4531"
+       xlink:href="data:image/png;base64,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 RK5CYII= "
+       height="114.98475"
+       width="114.98475"
+       transform="scale(-1,1)"
+       inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 770,124.09448 -630,90 630,90"
+       id="path4538"
+       inkscape:path-effect="#path-effect4540"
+       inkscape:original-d="m 770,124.09448 c 0,0 0,0 -630,90 630,90 630,90 630,90"
+       inkscape:connector-curvature="0"
+       transform="translate(0,308.2677)"
+       inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:1.69700003;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path4544"
+       sodipodi:cx="205"
+       sodipodi:cy="159.09448"
+       sodipodi:rx="35"
+       sodipodi:ry="35"
+       d="m 234.68168,140.54731 c 6.47615,10.364 7.07745,23.35544 1.58632,34.27334"
+       transform="translate(27.732001,365.54154)"
+       sodipodi:start="5.7246799"
+       sodipodi:end="6.7491882"
+       sodipodi:open="true"
+       inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#Arrow1Lend)"
+       d="m 140,334.09448 790,0"
+       id="path4546"
+       inkscape:path-effect="#path-effect4548"
+       inkscape:original-d="m 140,334.09448 c 740,0 790,0 790,0"
+       inkscape:connector-curvature="0"
+       transform="translate(0,308.2677)"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5145"
+       style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(11.8125,288.21621)"
+       inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><flowRegion
+         id="flowRegion5147"><rect
+           id="rect5149"
+           width="77.781746"
+           height="47.477169"
+           x="118.18785"
+           y="362.25681" /></flowRegion><flowPara
+         id="flowPara5151">0</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5153"
+       style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(67.4375,289.21621)"
+       inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><flowRegion
+         id="flowRegion5155"><rect
+           id="rect5157"
+           width="100.0051"
+           height="45.456863"
+           x="852.56873"
+           y="361.24667" /></flowRegion><flowPara
+         id="flowPara5159">z</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5161"
+       style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(26.71875,290.21621)"
+       inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><flowRegion
+         id="flowRegion5163"><rect
+           id="rect5165"
+           width="76.730774"
+           height="43.857971"
+           x="723.26923"
+           y="360.23651" /></flowRegion><flowPara
+         id="flowPara5167">z<flowSpan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="flowSpan5169">eff</flowSpan></flowPara></flowRoot>    <path
+       style="fill:none;stroke:#000000;stroke-width:2.1134491;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:4.22689803, 2.11344902;stroke-dashoffset:0"
+       d="m 770,528.36218 0,134"
+       id="path5171"
+       inkscape:path-effect="#path-effect5173"
+       inkscape:original-d="m 770,528.36218 c 0,134 0,134 0,134"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:4,8;stroke-dashoffset:0"
+       d="m 680,184.09448 0,230"
+       id="path5205"
+       inkscape:path-effect="#path-effect5207"
+       inkscape:original-d="m 680,184.09448 c 0,230 0,230 0,230"
+       inkscape:connector-curvature="0"
+       transform="translate(0,308.2677)"
+       inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:4, 8;stroke-dashoffset:0"
+       d="m 860,494.36218 0,230"
+       id="path5205-5"
+       inkscape:path-effect="#path-effect5207-9"
+       inkscape:original-d="m 860,494.36218 c 0,230 0,230 0,230"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-start:url(#Arrow1Lstart);marker-mid:none;marker-end:url(#Arrow1Lend)"
+       d="m 680,404.09448 180,0"
+       id="path5230"
+       inkscape:path-effect="#path-effect5232"
+       inkscape:original-d="m 680,404.09448 c 180,0 180,0 180,0"
+       inkscape:connector-curvature="0"
+       transform="translate(0,308.2677)"
+       inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       transform="matrix(0.58754749,0,0,0.58754749,124.01538,326.19086)"
+       id="g3622"
+       inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <g
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="content"
+         transform="matrix(1.0629921,0,0,-1.0629921,-186.02362,789.27165)"
+         xml:space="preserve"
+         stroke-miterlimit="10.433"
+         font-style="normal"
+         font-variant="normal"
+         font-weight="normal"
+         font-stretch="normal"
+         font-size-adjust="none"
+         letter-spacing="normal"
+         word-spacing="normal"><path
+           style="fill:#000000;stroke-width:0"
+           inkscape:connector-curvature="0"
+           d="m 477.54,440.98 -0.04,0.06 -0.03,0.06 -0.03,0.05 -0.02,0.05 -0.03,0.05 -0.03,0.05 -0.03,0.05 -0.02,0.04 -0.03,0.04 -0.03,0.04 -0.02,0.04 -0.03,0.03 -0.03,0.04 -0.03,0.03 -0.03,0.03 -0.03,0.03 -0.03,0.02 -0.04,0.03 -0.04,0.02 -0.03,0.02 -0.05,0.02 -0.04,0.01 -0.05,0.02 -0.04,0.01 -0.06,0.01 -0.05,0.01 -0.06,0.01 -0.06,0.01 -0.07,0 -0.07,0.01 -0.07,0 -0.04,0 -0.04,0 c -0.85,0 -0.94,-0.25 -1.28,-0.89 l -0.32,-4.09 13.41,-26.91 h -26.86 l 13.45,26.91 0.32,4.09 -16.85,-33.78 c -0.25,-0.45 -0.25,-0.55 -0.25,-0.59 0,-0.41 0.3,-0.41 1.1,-0.41 h 34.58 c 0.79,0 1.09,0 1.09,0.41 0,0.04 0,0.14 -0.25,0.59 z"
+           id="path3625" /><path
+           style="fill:#000000;stroke-width:0"
+           inkscape:connector-curvature="0"
+           d="m 519.71,431.11 0,0.31 -0.01,0.34 -0.02,0.36 -0.02,0.37 -0.03,0.39 -0.04,0.39 -0.04,0.41 -0.06,0.41 -0.07,0.42 -0.07,0.43 -0.09,0.42 -0.1,0.43 -0.12,0.42 -0.12,0.42 -0.14,0.41 -0.16,0.41 -0.17,0.4 -0.18,0.38 -0.2,0.37 -0.22,0.36 -0.23,0.34 -0.25,0.32 -0.28,0.3 -0.29,0.27 -0.31,0.25 -0.16,0.12 -0.17,0.1 -0.17,0.1 -0.18,0.1 -0.18,0.08 -0.19,0.08 -0.19,0.07 -0.2,0.06 -0.21,0.05 -0.21,0.05 -0.22,0.03 -0.22,0.02 -0.23,0.02 -0.23,0 -0.05,-1.09 c 2.44,0 2.73,-3.19 2.73,-6.03 0,-2.44 -0.39,-4.99 -1.59,-9.92 h -10.41 c 0.85,3.2 1.85,7.18 3.83,10.72 1.36,2.43 3.19,5.23 5.44,5.23 l 0.05,1.09 c -6.93,0 -14.6,-14.04 -14.6,-25.45 0,-4.69 1.44,-10.22 5.99,-10.22 v 1.1 c -1.66,0 -2.71,1.45 -2.71,6.07 0,2.1 0.3,4.99 1.6,9.86 h 10.37 c -0.54,-2.28 -1.59,-6.51 -3.5,-10.11 -1.73,-3.39 -3.62,-5.82 -5.76,-5.82 v -1.1 c 7.01,0 14.59,14.3 14.59,25.46 z"
+           id="path3627" /><path
+           style="fill:#000000;stroke-width:0"
+           inkscape:connector-curvature="0"
+           d="m 569.91,422.5 0.14,0 0.15,0 0.14,0 0.07,0.01 0.08,0 0.07,0.01 0.07,0.01 0.07,0.01 0.07,0.01 0.07,0.01 0.07,0.02 0.06,0.02 0.06,0.02 0.06,0.02 0.06,0.03 0.06,0.03 0.05,0.04 0.05,0.03 0.05,0.05 0.04,0.04 0.04,0.05 0.02,0.03 0.02,0.03 0.01,0.02 0.02,0.03 0.01,0.03 0.02,0.04 0.01,0.03 0.01,0.04 0.01,0.03 0.01,0.04 0.01,0.04 0,0.04 0.01,0.04 0,0.04 0,0.04 0,0.05 c 0,1 -0.95,1 -1.64,1 h -29.84 c -0.71,0 -1.64,0 -1.64,-1 0,-0.98 0.93,-0.98 1.68,-0.98 z"
+           id="path3629" /><path
+           style="fill:#000000;stroke-width:0"
+           inkscape:connector-curvature="0"
+           d="m 569.96,412.82 0.07,0 0.06,0 0.14,0.01 0.14,0 0.07,0 0.07,0.01 0.07,0.01 0.07,0 0.06,0.01 0.07,0.02 0.07,0.01 0.06,0.02 0.07,0.02 0.06,0.02 0.06,0.02 0.06,0.03 0.05,0.03 0.05,0.04 0.05,0.04 0.05,0.04 0.04,0.05 0.02,0.02 0.02,0.03 0.02,0.02 0.02,0.03 0.01,0.03 0.02,0.03 0.01,0.03 0.02,0.03 0.01,0.04 0.01,0.03 0.01,0.04 0.01,0.04 0.01,0.04 0,0.04 0.01,0.04 0,0.04 0,0.05 0,0.04 c 0,1 -0.95,1 -1.69,1 h -29.75 c -0.75,0 -1.68,0 -1.68,-1 0,-1 0.93,-1 1.64,-1 z"
+           id="path3631" /><path
+           style="fill:#000000;stroke-width:0"
+           inkscape:connector-curvature="0"
+           d="m 732.68,447.54 0.03,0.12 0.03,0.11 0.03,0.1 0.02,0.1 0.03,0.1 0.04,0.09 0.03,0.08 0.04,0.08 0.04,0.08 0.04,0.07 0.05,0.07 0.06,0.06 0.06,0.06 0.07,0.06 0.07,0.05 0.09,0.05 0.09,0.04 0.1,0.04 0.11,0.04 0.12,0.03 0.07,0.02 0.06,0.01 0.07,0.02 0.08,0.01 0.07,0.01 0.08,0.01 0.09,0.01 0.08,0.01 0.09,0.01 0.09,0.01 0.1,0.01 0.1,0.01 0.1,0 0.11,0.01 0.11,0.01 0.11,0 0.12,0 0.12,0.01 0.13,0 0.13,0 0.13,0.01 0.14,0 0.15,0 0.14,0 c 1.08,0 1.43,0 1.43,0.76 0,0.04 -0.03,0.49 -0.6,0.49 -0.79,0 -1.73,-0.06 -2.58,-0.11 -0.87,-0.03 -1.9,-0.03 -2.78,-0.03 -0.73,0 -1.67,0.03 -2.4,0.03 -0.74,0 -1.57,0.11 -2.27,0.11 -0.2,0 -0.73,0 -0.73,-0.77 0,-0.48 0.42,-0.48 1.12,-0.48 0.03,0 0.69,0 1.31,-0.08 0.74,-0.06 0.82,-0.14 0.82,-0.48 0,-0.07 0,-0.24 -0.14,-0.77 l -4.64,-18.5 c -0.32,-1.19 -0.39,-1.47 -3.07,-1.47 -0.59,0 -1.04,0 -1.04,-0.73 0,-0.52 0.42,-0.52 1.04,-0.52 h 17.52 c 0.87,0 0.91,0.03 1.19,0.7 0.36,0.94 2.97,7.69 2.97,7.97 0,0.11 -0.08,0.5 -0.6,0.5 -0.42,0 -0.48,-0.18 -0.7,-0.73 -1.31,-3.31 -2.86,-7.19 -9.24,-7.19 h -3.93 c -1.08,0 -1.11,0.05 -1.11,0.36 0,0.03 0,0.2 0.14,0.72 z"
+           id="path3633" /><path
+           style="fill:#000000;stroke-width:0"
+           inkscape:connector-curvature="0"
+           d="m 760.65,429.53 0,0.18 0,0.21 -0.01,0.24 0,0.25 -0.02,0.28 -0.01,0.3 -0.03,0.31 -0.03,0.33 -0.05,0.34 -0.05,0.35 -0.07,0.36 -0.07,0.37 -0.1,0.36 -0.11,0.37 -0.12,0.37 -0.14,0.36 -0.17,0.36 -0.18,0.35 -0.2,0.35 -0.23,0.33 -0.25,0.31 -0.27,0.3 -0.15,0.15 -0.16,0.14 -0.16,0.13 -0.16,0.13 -0.18,0.12 -0.18,0.12 -0.19,0.11 -0.2,0.1 -0.2,0.1 -0.22,0.09 -0.22,0.08 -0.23,0.08 -0.23,0.06 -0.25,0.06 -0.25,0.05 -0.27,0.04 -0.27,0.04 -0.28,0.02 -0.29,0.02 -0.3,0 v -0.83 c 1.84,0 3.17,-0.93 3.65,-2.68 0.36,-1.27 0.36,-3.35 0.36,-4.82 0,-1.68 0,-3.7 -0.37,-5.2 -0.66,-2.42 -2.64,-2.78 -3.64,-2.78 h 0 c -0.92,0 -3.02,0.31 -3.64,2.83 -0.35,1.34 -0.38,3.12 -0.38,5.15 0,1.85 0,3.57 0.41,4.99 0.62,2.09 2.55,2.51 3.61,2.51 v 0.83 c -6.5,0 -6.5,-6.83 -6.5,-8.62 0,-1.82 0,-8.52 6.5,-8.52 6.5,0 6.5,6.7 6.5,8.52 z"
+           id="path3635" /><polyline
+           style="fill:#000000;fill-rule:nonzero;stroke-width:0"
+           points="594,418 889.08,418 889.08,420.04 594,420.04 "
+           id="polyline3637" /><path
+           style="fill:#000000;stroke-width:0"
+           inkscape:connector-curvature="0"
+           d="m 606.61,415.18 -0.6,-0.45 -0.58,-0.46 -0.55,-0.47 -0.53,-0.49 -0.5,-0.5 -0.47,-0.51 -0.45,-0.53 -0.42,-0.53 -0.4,-0.54 -0.38,-0.55 -0.35,-0.56 -0.33,-0.56 -0.31,-0.57 -0.28,-0.57 -0.27,-0.58 -0.25,-0.58 -0.23,-0.58 -0.21,-0.58 -0.19,-0.59 -0.17,-0.58 -0.15,-0.58 -0.14,-0.58 -0.13,-0.57 -0.11,-0.57 -0.09,-0.57 -0.08,-0.56 -0.06,-0.55 -0.05,-0.55 -0.04,-0.53 -0.03,-0.53 -0.02,-0.52 0,-0.5 c 0,-4.92 1.47,-12.55 8.37,-17.42 0.29,0 0.69,0 0.69,0.4 0,0.22 -0.09,0.28 -0.34,0.53 -4.64,4.19 -6.35,10.11 -6.35,16.46 0,9.4 3.6,14 6.46,16.58 0.14,0.14 0.23,0.25 0.23,0.42 0,0.42 -0.4,0.42 -0.69,0.42 z"
+           id="path3639" /><path
+           style="fill:#000000;stroke-width:0"
+           inkscape:connector-curvature="0"
+           d="m 621.51,411.2 0,0.04 0,0.04 0,0.04 0,0.04 0,0.04 0,0.04 -0.01,0.04 0,0.03 0,0.03 0,0.04 0,0.03 0,0.03 -0.01,0.03 0,0.03 0,0.02 -0.01,0.03 0,0.03 -0.01,0.02 0,0.02 -0.01,0.03 -0.01,0.04 -0.01,0.04 -0.02,0.03 -0.02,0.03 -0.02,0.03 -0.03,0.02 -0.02,0.03 -0.03,0.02 -0.04,0.01 -0.04,0.02 -0.04,0.01 -0.04,0.01 -0.05,0.01 -0.02,0.01 -0.03,0 -0.03,0 -0.03,0.01 -0.03,0 -0.03,0 -0.03,0 -0.03,0 -0.04,0.01 -0.03,0 -0.04,0 -0.04,0 -0.03,0 -0.05,0 -0.04,0 -0.04,0 -0.04,0 -0.05,0 c -2.23,-2.2 -5.39,-2.23 -6.83,-2.23 v -1.25 c 0.85,0 3.14,0 5.05,0.96 V 391.9 c 0,-1.16 0,-1.61 -3.48,-1.61 h -1.32 v -1.25 c 0.63,0.03 4.91,0.14 6.21,0.14 1.07,0 5.46,-0.11 6.23,-0.14 v 1.25 h -1.33 c -3.48,0 -3.48,0.45 -3.48,1.61 z"
+           id="path3641" /><path
+           style="fill:#000000;stroke-width:0"
+           inkscape:connector-curvature="0"
+           d="m 645.77,396.91 h 10.66 c 0.45,0 1.28,0 1.28,0.85 0,0.86 -0.8,0.86 -1.28,0.86 h -10.66 v 10.7 c 0,0.45 0,1.28 -0.84,1.28 -0.88,0 -0.88,-0.8 -0.88,-1.28 v -10.7 h -10.68 c -0.46,0 -1.3,0 -1.3,-0.83 0,-0.88 0.8,-0.88 1.3,-0.88 h 10.68 v -10.7 c 0,-0.45 0,-1.28 0.85,-1.28 0.87,0 0.87,0.8 0.87,1.28 z"
+           id="path3643" /><path
+           style="fill:#000000;stroke-width:0"
+           inkscape:connector-curvature="0"
+           d="m 666.09,392.1 0.17,0.17 0.16,0.16 0.17,0.17 0.17,0.17 0.18,0.17 0.09,0.09 0.1,0.09 0.1,0.1 0.11,0.1 0.11,0.1 0.11,0.11 0.13,0.11 0.13,0.11 0.13,0.12 0.15,0.13 0.15,0.13 0.16,0.13 0.17,0.15 0.17,0.15 0.19,0.15 0.2,0.17 0.21,0.17 0.22,0.18 0.23,0.19 0.25,0.2 0.25,0.2 0.27,0.22 c 0.74,0.59 3.35,2.69 4.36,3.66 2.13,2.09 3.46,3.87 3.46,4.29 0,0.41 -0.46,0.41 -0.6,0.41 -0.31,0 -0.42,-0.06 -0.59,-0.35 -1.08,-1.59 -1.81,-2.12 -2.64,-2.12 -0.42,0 -0.96,0.03 -2,1.05 -1.17,1.18 -1.94,1.42 -2.75,1.42 -2.78,0 -4.67,-3.03 -4.67,-4.06 0,-0.33 0.36,-0.43 0.59,-0.43 0.42,0 0.5,0.1 0.62,0.49 0.54,1.22 2.49,1.3 3.05,1.3 0.8,0 1.7,-0.22 2.19,-0.33 1.92,-0.41 2.16,-0.41 3.03,-0.41 -0.9,-0.95 -1.53,-1.58 -4.84,-4.22 -2.72,-2.15 -3.66,-3.03 -4.31,-3.73 -2.1,-2.05 -3.12,-3.58 -3.12,-3.91 0,-0.4 0.46,-0.4 0.6,-0.4 0.34,0 0.42,0.06 0.59,0.34 0.94,1.33 2.02,2.12 3.21,2.12 0.42,0 0.93,-0.03 1.87,-0.9 1.1,-1.05 1.78,-1.56 2.91,-1.56 3.72,0 6.06,4.21 6.06,5.39 0,0.42 -0.39,0.45 -0.59,0.45 -0.43,0 -0.5,-0.17 -0.63,-0.55 -0.67,-1.75 -2.72,-2.58 -4.44,-2.58 -0.79,0 -1.67,0.18 -2.53,0.38 -1.61,0.34 -1.89,0.34 -2.51,0.34 -0.08,0 -0.6,0 -0.8,-0.03 z"
+           id="path3645" /><path
+           style="fill:#000000;stroke-width:0"
+           inkscape:connector-curvature="0"
+           d="m 692.2,389.37 0.04,0 0.05,0 0.05,0 0.04,0 0.04,0 0.04,0 0.04,0.01 0.04,0 0.03,0 0.03,0.01 0.04,0.01 0.03,0 0.02,0.01 0.03,0.01 0.03,0.01 0.02,0.02 0.02,0.01 0.02,0.02 0.02,0.02 0.02,0.02 0.01,0.02 0.02,0.02 0,0.02 0.01,0.01 0.01,0.02 0,0.01 0.01,0.02 0,0.01 0.01,0.02 0,0.02 0.01,0.02 0,0.02 0,0.02 0,0.02 0.01,0.02 0,0.02 0,0.03 0,0.02 0,0.03 0,0.02 0,0.03 0.01,0.02 c 0,1.68 -0.9,4.96 -5.55,4.96 -3.8,0 -6.45,-2.72 -6.45,-5.67 0,-3.18 3.03,-5.77 6.81,-5.77 3.97,0 5.19,2.77 5.19,3.25 0,0.42 -0.4,0.42 -0.52,0.42 -0.38,0 -0.44,-0.11 -0.58,-0.45 -0.7,-1.72 -2.55,-2.31 -3.94,-2.31 -2.01,0 -3.14,1.12 -3.51,1.54 -0.97,1.19 -0.97,2.77 -0.97,3.44 l 0.05,0.77 c 0.29,3.29 2.72,3.97 3.89,3.97 3.47,0 3.64,-3.25 3.65,-3.97 h -7.54 l -0.05,-0.77 z"
+           id="path3647" /><path
+           style="fill:#000000;stroke-width:0"
+           inkscape:connector-curvature="0"
+           d="m 700.84,393.4 h 3.53 v 1.1 h -3.64 v 2.68 c 0,2.35 1.55,3.32 2.7,3.32 0.17,0 0.67,-0.05 0.67,-0.13 l -0.06,-0.05 c -0.14,-0.14 -0.39,-0.43 -0.39,-0.96 0,-0.71 0.5,-1.27 1.27,-1.27 0.83,0 1.3,0.56 1.3,1.3 0,1.06 -1.07,1.93 -2.74,1.93 -2.2,0 -4.76,-1.39 -4.76,-4.11 v -2.71 h -2.41 v -1.1 h 2.41 v -7.54 c 0,-0.79 0,-1 -1.62,-1 h -0.45 v -1.1 c 1.05,0.08 2.17,0.1 3.22,0.1 1.28,0 2.52,-0.05 3.56,-0.1 v 1.1 h -0.67 c -1.92,0 -1.92,0.25 -1.92,1.03 z"
+           id="path3649" /><path
+           style="fill:#000000;stroke-width:0"
+           inkscape:connector-curvature="0"
+           d="m 711.76,393.4 h 3.53 v 1.1 h -3.64 v 2.68 c 0,2.35 1.55,3.32 2.7,3.32 0.17,0 0.67,-0.05 0.67,-0.13 l -0.06,-0.05 c -0.14,-0.14 -0.39,-0.43 -0.39,-0.96 0,-0.71 0.5,-1.27 1.27,-1.27 0.82,0 1.29,0.56 1.29,1.3 0,1.06 -1.06,1.93 -2.73,1.93 -2.2,0 -4.77,-1.39 -4.77,-4.11 v -2.71 h -2.4 v -1.1 h 2.4 v -7.54 c 0,-0.79 0,-1 -1.61,-1 h -0.45 v -1.1 c 1.05,0.08 2.17,0.1 3.22,0.1 1.28,0 2.51,-0.05 3.56,-0.1 v 1.1 h -0.67 c -1.92,0 -1.92,0.25 -1.92,1.03 z"
+           id="path3651" /><path
+           style="fill:#000000;stroke-width:0"
+           inkscape:connector-curvature="0"
+           d="m 724.1,415.18 -0.02,0 -0.03,0 -0.02,0 -0.03,0 -0.03,0 -0.02,0 -0.03,0 -0.03,-0.01 -0.03,0 -0.02,0 -0.03,-0.01 -0.03,0 -0.03,-0.01 -0.03,-0.01 -0.02,0 -0.03,-0.01 -0.02,-0.01 -0.03,-0.02 -0.02,-0.01 -0.02,-0.01 -0.02,-0.02 -0.02,-0.02 -0.02,-0.02 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 0,-0.01 -0.01,-0.02 -0.01,-0.01 0,-0.01 -0.01,-0.02 0,-0.01 -0.01,-0.02 0,-0.01 0,-0.02 -0.01,-0.02 0,-0.02 0,-0.01 0,-0.02 0,-0.02 c 0,-0.17 0.11,-0.28 0.31,-0.53 3,-2.75 6.35,-7.46 6.35,-16.44 0,-7.28 -2.27,-12.8 -6.04,-16.2 -0.57,-0.6 -0.62,-0.63 -0.62,-0.82 0,-0.17 0.11,-0.4 0.45,-0.4 0.42,0 3.74,2.29 6.03,6.65 1.54,2.89 2.55,6.66 2.55,10.74 0,4.9 -1.47,12.53 -8.36,17.42 z"
+           id="path3653" /><path
+           style="fill:#000000;stroke-width:0"
+           inkscape:connector-curvature="0"
+           d="m 743.14,391.76 -0.03,-0.11 -0.02,-0.1 -0.03,-0.1 -0.02,-0.1 -0.02,-0.08 -0.03,-0.09 -0.03,-0.08 -0.03,-0.07 -0.04,-0.07 -0.03,-0.07 -0.05,-0.06 -0.04,-0.06 -0.05,-0.05 -0.06,-0.05 -0.06,-0.05 -0.07,-0.04 -0.08,-0.04 -0.09,-0.04 -0.09,-0.03 -0.1,-0.03 -0.06,-0.01 -0.05,-0.02 -0.06,-0.01 -0.06,-0.01 -0.07,-0.01 -0.07,-0.01 -0.07,-0.01 -0.07,-0.01 -0.07,-0.01 -0.08,0 -0.08,-0.01 -0.09,-0.01 -0.08,0 -0.09,-0.01 -0.1,0 -0.09,-0.01 -0.1,0 -0.11,0 -0.11,-0.01 -0.11,0 -0.11,0 -0.12,0 -0.12,0 -0.13,0 c -0.62,0 -1.04,0 -1.04,-0.77 0,-0.48 0.42,-0.48 1.04,-0.48 h 12.44 l -0.62,1.25 h -4.74 c -1.08,0 -1.11,0.05 -1.11,0.36 0,0.03 0,0.2 0.13,0.72 l 4.78,19.03 c 0.28,1.08 0.31,1.19 1.78,1.19 h 4.45 c 3.91,0 7.19,-1.96 7.19,-6.69 0,-0.81 -0.36,-6.83 -3.84,-10.81 -1.36,-1.57 -4.35,-3.8 -8.64,-3.8 l 0.62,-1.25 c 7.74,0 15.16,7.11 15.16,14.7 0,5.1 -3.52,9.1 -9.19,9.1 h -12.69 c -0.7,0 -1.11,0 -1.11,-0.77 0,-0.48 0.38,-0.48 1.14,-0.48 0.57,0 0.71,0 1.33,-0.08 0.7,-0.06 0.77,-0.14 0.77,-0.49 0,-0.06 0,-0.23 -0.14,-0.76 z"
+           id="path3655" /><path
+           style="fill:#000000;stroke-width:0"
+           inkscape:connector-curvature="0"
+           d="m 787.19,401.16 -0.01,0.04 -0.01,0.05 -0.01,0.05 -0.01,0.04 -0.01,0.04 -0.01,0.04 -0.01,0.03 -0.01,0.04 -0.01,0.03 -0.02,0.03 -0.01,0.03 -0.02,0.03 -0.01,0.02 -0.02,0.03 -0.02,0.02 -0.02,0.02 -0.02,0.02 -0.02,0.02 -0.02,0.01 -0.03,0.02 -0.03,0.01 -0.03,0.01 -0.03,0.01 -0.03,0.01 -0.03,0.01 -0.04,0.01 -0.04,0 -0.04,0.01 -0.04,0 -0.04,0 -0.05,0 -0.05,0 c -0.6,0 -0.75,-0.2 -1,-0.57 l -9.77,-14.16 c -1.03,-1.52 -1.9,-1.91 -3.53,-1.99 -0.47,-0.03 -0.47,-0.67 -0.47,-0.7 0,-0.34 0.3,-0.42 0.39,-0.42 0.36,0 0.78,0.08 1.13,0.08 0.42,0 0.84,0.01 1.26,0.01 0.49,0 0.93,-0.01 1.38,-0.01 0.45,0 0.97,-0.08 1.42,-0.08 0.17,0 0.59,0 0.59,0.7 0,0.39 -0.37,0.42 -0.46,0.42 -0.21,0 -1.18,0.05 -1.18,0.65 0,0.29 0.3,0.71 0.47,0.96 l 1.83,2.68 c 0.12,0.15 0.14,0.17 0.61,0.17 h 7.56 l -0.2,1.12 h -7.08 l 5.56,8.07 1.52,-8.07 0.2,-1.12 c 0.05,-0.3 0.06,-0.42 0.14,-0.72 0.08,-0.45 0.58,-2.94 0.58,-3.19 0,-0.55 -1.58,-0.55 -1.7,-0.55 -0.38,0 -0.77,0 -0.77,-0.7 0,-0.25 0.17,-0.42 0.46,-0.42 0.51,0 1.1,0.08 1.65,0.08 0.61,0 1.17,0.01 1.78,0.01 0.52,0 1.07,-0.01 1.6,-0.01 0.5,0 1.06,-0.08 1.56,-0.08 0.42,0 0.59,0.3 0.59,0.7 0,0.42 -0.39,0.42 -0.73,0.42 -1.66,0 -1.67,0.18 -1.78,0.72 z"
+           id="path3657" /><path
+           style="fill:#000000;stroke-width:0"
+           inkscape:connector-curvature="0"
+           d="m 809.77,415.18 -0.6,-0.45 -0.58,-0.46 -0.55,-0.47 -0.53,-0.49 -0.5,-0.5 -0.47,-0.51 -0.45,-0.53 -0.42,-0.53 -0.4,-0.54 -0.38,-0.55 -0.35,-0.56 -0.33,-0.56 -0.31,-0.57 -0.28,-0.57 -0.27,-0.58 -0.25,-0.58 -0.23,-0.58 -0.21,-0.58 -0.19,-0.59 -0.17,-0.58 -0.15,-0.58 -0.14,-0.58 -0.13,-0.57 -0.11,-0.57 -0.09,-0.57 -0.08,-0.56 -0.06,-0.55 -0.05,-0.55 -0.04,-0.53 -0.03,-0.53 -0.02,-0.52 0,-0.5 c 0,-4.92 1.47,-12.55 8.37,-17.42 0.28,0 0.69,0 0.69,0.4 0,0.22 -0.09,0.28 -0.34,0.53 -4.64,4.19 -6.35,10.11 -6.35,16.46 0,9.4 3.6,14 6.46,16.58 0.14,0.14 0.23,0.25 0.23,0.42 0,0.42 -0.41,0.42 -0.69,0.42 z"
+           id="path3659" /><path
+           style="fill:#000000;stroke-width:0"
+           inkscape:connector-curvature="0"
+           d="m 818.85,392.1 0.17,0.17 0.17,0.16 0.16,0.17 0.17,0.17 0.18,0.17 0.1,0.09 0.09,0.09 0.11,0.1 0.1,0.1 0.11,0.1 0.12,0.11 0.12,0.11 0.13,0.11 0.14,0.12 0.14,0.13 0.15,0.13 0.16,0.13 0.17,0.15 0.18,0.15 0.19,0.15 0.2,0.17 0.21,0.17 0.22,0.18 0.23,0.19 0.24,0.2 0.26,0.2 0.27,0.22 c 0.73,0.59 3.34,2.69 4.36,3.66 2.12,2.09 3.45,3.87 3.45,4.29 0,0.41 -0.45,0.41 -0.59,0.41 -0.31,0 -0.42,-0.06 -0.59,-0.35 -1.08,-1.59 -1.82,-2.12 -2.65,-2.12 -0.42,0 -0.95,0.03 -2,1.05 -1.17,1.18 -1.93,1.42 -2.75,1.42 -2.78,0 -4.67,-3.03 -4.67,-4.06 0,-0.33 0.36,-0.43 0.6,-0.43 0.42,0 0.5,0.1 0.62,0.49 0.53,1.22 2.48,1.3 3.05,1.3 0.8,0 1.7,-0.22 2.18,-0.33 1.93,-0.41 2.16,-0.41 3.04,-0.41 -0.91,-0.95 -1.54,-1.58 -4.85,-4.22 -2.72,-2.15 -3.65,-3.03 -4.31,-3.73 -2.09,-2.05 -3.11,-3.58 -3.11,-3.91 0,-0.4 0.45,-0.4 0.6,-0.4 0.34,0 0.42,0.06 0.59,0.34 0.94,1.33 2.01,2.12 3.2,2.12 0.42,0 0.94,-0.03 1.88,-0.9 1.09,-1.05 1.78,-1.56 2.9,-1.56 3.72,0 6.06,4.21 6.06,5.39 0,0.42 -0.38,0.45 -0.59,0.45 -0.42,0 -0.5,-0.17 -0.62,-0.55 -0.67,-1.75 -2.72,-2.58 -4.44,-2.58 -0.8,0 -1.67,0.18 -2.53,0.38 -1.61,0.34 -1.89,0.34 -2.52,0.34 -0.08,0 -0.59,0 -0.8,-0.03 z"
+           id="path3661" /><path
+           style="fill:#000000;stroke-width:0"
+           inkscape:connector-curvature="0"
+           d="m 844.95,389.37 0.05,0 0.05,0 0.04,0 0.05,0 0.04,0 0.04,0 0.04,0.01 0.03,0 0.04,0 0.03,0.01 0.03,0.01 0.03,0 0.03,0.01 0.03,0.01 0.02,0.01 0.03,0.02 0.02,0.01 0.02,0.02 0.02,0.02 0.02,0.02 0.01,0.02 0.02,0.02 0,0.02 0.01,0.01 0,0.02 0.01,0.01 0.01,0.02 0,0.01 0.01,0.02 0,0.02 0,0.02 0.01,0.02 0,0.02 0,0.02 0.01,0.02 0,0.02 0,0.03 0,0.02 0,0.03 0,0.02 0,0.03 0,0.02 c 0,1.68 -0.89,4.96 -5.54,4.96 -3.8,0 -6.46,-2.72 -6.46,-5.67 0,-3.18 3.03,-5.77 6.82,-5.77 3.96,0 5.18,2.77 5.18,3.25 0,0.42 -0.39,0.42 -0.51,0.42 -0.38,0 -0.44,-0.11 -0.58,-0.45 -0.7,-1.72 -2.55,-2.31 -3.94,-2.31 -2.01,0 -3.14,1.12 -3.51,1.54 -0.97,1.19 -0.97,2.77 -0.97,3.44 l 0.04,0.77 c 0.3,3.29 2.72,3.97 3.89,3.97 3.47,0 3.65,-3.25 3.66,-3.97 h -7.55 l -0.04,-0.77 z"
+           id="path3663" /><path
+           style="fill:#000000;stroke-width:0"
+           inkscape:connector-curvature="0"
+           d="m 853.6,393.4 h 3.53 v 1.1 h -3.64 v 2.68 c 0,2.35 1.54,3.32 2.7,3.32 0.17,0 0.67,-0.05 0.67,-0.13 l -0.06,-0.05 c -0.14,-0.14 -0.39,-0.43 -0.39,-0.96 0,-0.71 0.5,-1.27 1.27,-1.27 0.82,0 1.29,0.56 1.29,1.3 0,1.06 -1.06,1.93 -2.73,1.93 -2.21,0 -4.77,-1.39 -4.77,-4.11 v -2.71 h -2.4 v -1.1 h 2.4 v -7.54 c 0,-0.79 0,-1 -1.61,-1 h -0.45 v -1.1 c 1.05,0.08 2.17,0.1 3.22,0.1 1.28,0 2.52,-0.05 3.56,-0.1 v 1.1 h -0.67 c -1.92,0 -1.92,0.25 -1.92,1.03 z"
+           id="path3665" /><path
+           style="fill:#000000;stroke-width:0"
+           inkscape:connector-curvature="0"
+           d="m 864.52,393.4 h 3.53 v 1.1 h -3.64 v 2.68 c 0,2.35 1.54,3.32 2.7,3.32 0.17,0 0.67,-0.05 0.67,-0.13 l -0.06,-0.05 c -0.14,-0.14 -0.39,-0.43 -0.39,-0.96 0,-0.71 0.5,-1.27 1.26,-1.27 0.83,0 1.3,0.56 1.3,1.3 0,1.06 -1.06,1.93 -2.73,1.93 -2.21,0 -4.77,-1.39 -4.77,-4.11 v -2.71 h -2.41 v -1.1 h 2.41 v -7.54 c 0,-0.79 0,-1 -1.61,-1 h -0.45 v -1.1 c 1.05,0.08 2.17,0.1 3.22,0.1 1.28,0 2.51,-0.05 3.56,-0.1 v 1.1 h -0.67 c -1.92,0 -1.92,0.25 -1.92,1.03 z"
+           id="path3667" /><path
+           style="fill:#000000;stroke-width:0"
+           inkscape:connector-curvature="0"
+           d="m 876.86,415.18 -0.02,0 -0.03,0 -0.03,0 -0.02,0 -0.03,0 -0.03,0 -0.02,0 -0.03,-0.01 -0.03,0 -0.03,0 -0.03,-0.01 -0.02,0 -0.03,-0.01 -0.03,-0.01 -0.02,0 -0.03,-0.01 -0.03,-0.01 -0.02,-0.02 -0.02,-0.01 -0.03,-0.01 -0.02,-0.02 -0.02,-0.02 -0.02,-0.02 0,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 0,-0.01 -0.01,-0.02 -0.01,-0.01 0,-0.01 -0.01,-0.02 0,-0.01 -0.01,-0.02 0,-0.01 0,-0.02 -0.01,-0.02 0,-0.02 0,-0.01 0,-0.02 0,-0.02 c 0,-0.17 0.11,-0.28 0.31,-0.53 3,-2.75 6.34,-7.46 6.34,-16.44 0,-7.28 -2.26,-12.8 -6.03,-16.2 -0.58,-0.6 -0.62,-0.63 -0.62,-0.82 0,-0.17 0.11,-0.4 0.45,-0.4 0.42,0 3.74,2.29 6.03,6.65 1.53,2.89 2.55,6.66 2.55,10.74 0,4.9 -1.47,12.53 -8.36,17.42 z"
+           id="path3669" /></g>    </g>
+    <g
+       id="g3878"
+       transform="matrix(0.64411715,0,0,0.64411715,475.33684,562.3638)">
+      <g
+         transform="matrix(0.9392715,0,0,0.9392715,47.744007,-26.303484)"
+         id="g4112">
+        <g
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+           id="g4114"
+           transform="matrix(1.0629921,0,0,-1.0629921,-186.02362,789.27165)"
+           xml:space="preserve"
+           stroke-miterlimit="10.433"
+           font-style="normal"
+           font-variant="normal"
+           font-weight="normal"
+           font-stretch="normal"
+           font-size-adjust="none"
+           letter-spacing="normal"
+           word-spacing="normal"><path
+             style="fill:#000000;stroke-width:0"
+             inkscape:connector-curvature="0"
+             d="m 477.54,440.98 -0.04,0.06 -0.03,0.06 -0.03,0.05 -0.02,0.05 -0.03,0.05 -0.03,0.05 -0.03,0.05 -0.02,0.04 -0.03,0.04 -0.03,0.04 -0.02,0.04 -0.03,0.03 -0.03,0.04 -0.03,0.03 -0.03,0.03 -0.03,0.03 -0.03,0.02 -0.04,0.03 -0.04,0.02 -0.03,0.02 -0.05,0.02 -0.04,0.01 -0.05,0.02 -0.04,0.01 -0.06,0.01 -0.05,0.01 -0.06,0.01 -0.06,0.01 -0.07,0 -0.07,0.01 -0.07,0 -0.04,0 -0.04,0 c -0.85,0 -0.94,-0.25 -1.28,-0.89 l -0.32,-4.09 13.41,-26.91 h -26.86 l 13.45,26.91 0.32,4.09 -16.85,-33.78 c -0.25,-0.45 -0.25,-0.55 -0.25,-0.59 0,-0.41 0.3,-0.41 1.1,-0.41 h 34.58 c 0.79,0 1.09,0 1.09,0.41 0,0.04 0,0.14 -0.25,0.59 z"
+             id="path4116"
+             inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90" /><path
+             style="fill:#000000;stroke-width:0"
+             inkscape:connector-curvature="0"
+             d="m 503.66,410.34 0.25,0.27 0.24,0.25 0.24,0.25 0.23,0.24 0.22,0.23 0.22,0.22 0.21,0.22 0.2,0.21 0.2,0.2 0.2,0.19 0.19,0.19 0.19,0.19 0.18,0.17 0.19,0.18 0.35,0.33 0.34,0.32 0.33,0.3 0.33,0.29 0.32,0.29 0.65,0.56 0.33,0.29 0.33,0.28 c 0,0.05 3.08,2.69 4.88,4.49 4.73,4.64 5.82,7.03 5.82,7.21 0,0.5 -0.45,0.5 -0.54,0.5 -0.35,0 -0.5,-0.09 -0.75,-0.54 -1.49,-2.39 -2.53,-3.19 -3.74,-3.19 -1.2,0 -1.79,0.75 -2.54,1.59 -0.94,1.16 -1.78,2.14 -3.44,2.14 -3.74,0 -6.02,-4.62 -6.02,-5.67 0,-0.25 0.14,-0.54 0.6,-0.54 0.45,0 0.54,0.25 0.64,0.54 0.95,2.3 3.84,2.35 4.23,2.35 1.05,0 2,-0.36 3.14,-0.75 2,-0.75 2.55,-0.75 3.85,-0.75 -1.8,-2.14 -5.99,-5.74 -6.93,-6.53 l -4.48,-4.18 c -3.39,-3.34 -5.14,-6.18 -5.14,-6.53 0,-0.5 0.5,-0.5 0.59,-0.5 0.41,0 0.5,0.1 0.8,0.64 1.16,1.75 2.64,3.1 4.23,3.1 1.16,0 1.66,-0.46 2.9,-1.89 0.85,-1.05 1.75,-1.85 3.18,-1.85 4.94,0 7.83,6.33 7.83,7.67 0,0.25 -0.2,0.5 -0.59,0.5 -0.46,0 -0.55,-0.29 -0.71,-0.65 -1.14,-3.24 -4.32,-4.17 -5.98,-4.17 -0.98,0 -1.89,0.29 -2.94,0.64 -1.69,0.64 -2.44,0.84 -3.48,0.84 -0.1,0 -0.89,0 -1.35,-0.14 z"
+             id="path4118"
+             inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90" /><path
+             style="fill:#000000;stroke-width:0"
+             inkscape:connector-curvature="0"
+             d="m 570.51,422.5 0.14,0 0.15,0 0.14,0 0.07,0.01 0.08,0 0.07,0.01 0.07,0.01 0.07,0.01 0.07,0.01 0.07,0.01 0.06,0.02 0.07,0.02 0.06,0.02 0.06,0.02 0.06,0.03 0.06,0.03 0.05,0.04 0.05,0.03 0.05,0.05 0.04,0.04 0.04,0.05 0.02,0.03 0.01,0.03 0.02,0.02 0.02,0.03 0.01,0.03 0.01,0.04 0.02,0.03 0.01,0.04 0.01,0.03 0,0.04 0.01,0.04 0.01,0.04 0,0.04 0.01,0.04 0,0.04 0,0.05 c 0,1 -0.95,1 -1.64,1 h -29.84 c -0.71,0 -1.65,0 -1.65,-1 0,-0.98 0.94,-0.98 1.69,-0.98 z"
+             id="path4120"
+             inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90" /><path
+             style="fill:#000000;stroke-width:0"
+             inkscape:connector-curvature="0"
+             d="m 570.56,412.82 0.06,0 0.07,0 0.14,0.01 0.14,0 0.07,0 0.07,0.01 0.06,0.01 0.07,0 0.07,0.01 0.07,0.02 0.07,0.01 0.06,0.02 0.06,0.02 0.07,0.02 0.06,0.02 0.05,0.03 0.06,0.03 0.05,0.04 0.05,0.04 0.05,0.04 0.04,0.05 0.02,0.02 0.02,0.03 0.02,0.02 0.01,0.03 0.02,0.03 0.02,0.03 0.01,0.03 0.01,0.03 0.02,0.04 0.01,0.03 0.01,0.04 0,0.04 0.01,0.04 0.01,0.04 0,0.04 0.01,0.04 0,0.05 0,0.04 c 0,1 -0.95,1 -1.69,1 h -29.75 c -0.75,0 -1.69,0 -1.69,-1 0,-1 0.94,-1 1.65,-1 z"
+             id="path4122"
+             inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90" /><path
+             style="fill:#000000;stroke-width:0"
+             inkscape:connector-curvature="0"
+             d="m 641.43,399.52156 -0.12,-0.03 -0.11,-0.02 -0.11,-0.03 -0.1,-0.04 -0.1,-0.03 -0.1,-0.04 -0.09,-0.05 -0.09,-0.05 -0.08,-0.05 -0.08,-0.05 -0.07,-0.06 -0.07,-0.06 -0.07,-0.06 -0.06,-0.07 -0.06,-0.06 -0.06,-0.07 -0.05,-0.07 -0.05,-0.07 -0.04,-0.07 -0.05,-0.08 -0.03,-0.07 -0.04,-0.08 -0.03,-0.07 -0.02,-0.08 -0.03,-0.07 -0.02,-0.08 -0.02,-0.08 -0.01,-0.07 -0.01,-0.08 -0.01,-0.07 0,-0.08 0,-0.07 c 0,-0.94 0.73,-1.28 1.35,-1.28 0.77,0 1.99,0.55 1.99,2.22 0,2.37 -2.72,3.03 -4.59,3.03 -5.24,0 -10.08,-4.8 -10.08,-9.64 0,-3 2.09,-6.06 6.45,-6.06 5.89,0 8.64,3.44 8.64,3.94 0,0.2 -0.31,0.59 -0.59,0.59 -0.21,0 -0.29,-0.08 -0.57,-0.36 -2.72,-3.2 -6.79,-3.2 -7.42,-3.2 -2.5,0 -3.62,1.7 -3.62,3.87 0,1 0.5,4.8 2.31,7.2 1.31,1.72 3.13,2.69 4.88,2.69 0.48,0 2.15,-0.06 3.03,-1.04 z"
+             id="path4124"
+             inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90" /><path
+             style="fill:#000000;stroke-width:0"
+             inkscape:connector-curvature="0"
+             d="m 658.28,407.11156 0.03,0.12 0.02,0.11 0.03,0.1 0.03,0.1 0.03,0.1 0.03,0.09 0.04,0.08 0.04,0.08 0.04,0.08 0.04,0.07 0.05,0.07 0.06,0.06 0.06,0.06 0.07,0.06 0.07,0.05 0.09,0.05 0.09,0.04 0.1,0.04 0.11,0.04 0.12,0.03 0.06,0.02 0.07,0.01 0.07,0.02 0.07,0.01 0.08,0.01 0.08,0.01 0.08,0.01 0.09,0.01 0.09,0.01 0.09,0.01 0.1,0.01 0.09,0.01 0.11,0 0.1,0.01 0.12,0.01 0.11,0 0.12,0 0.12,0.01 0.13,0 0.13,0 0.13,0.01 0.14,0 0.14,0 0.15,0 c 1.08,0 1.42,0 1.42,0.76 0,0.04 -0.03,0.49 -0.59,0.49 -0.8,0 -1.73,-0.06 -2.58,-0.11 -0.87,-0.03 -1.9,-0.03 -2.78,-0.03 -0.73,0 -1.67,0.03 -2.4,0.03 -0.74,0 -1.57,0.11 -2.27,0.11 -0.2,0 -0.73,0 -0.73,-0.77 0,-0.48 0.42,-0.48 1.12,-0.48 0.03,0 0.69,0 1.31,-0.08 0.74,-0.06 0.82,-0.14 0.82,-0.48 0,-0.07 0,-0.24 -0.15,-0.77 l -4.64,-18.5 c -0.31,-1.19 -0.39,-1.47 -3.06,-1.47 -0.59,0 -1.05,0 -1.05,-0.73 0,-0.52 0.43,-0.52 1.05,-0.52 h 17.52 c 0.87,0 0.9,0.03 1.18,0.7 0.36,0.94 2.97,7.69 2.97,7.97 0,0.11 -0.07,0.5 -0.59,0.5 -0.42,0 -0.48,-0.18 -0.7,-0.73 -1.32,-3.31 -2.86,-7.19 -9.24,-7.19 h -3.94 c -1.07,0 -1.1,0.05 -1.1,0.36 0,0.03 0,0.2 0.13,0.72 z"
+             id="path4126"
+             inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90" /><path
+             style="fill:#000000;stroke-width:0"
+             inkscape:connector-curvature="0"
+             d="m 686.25,389.10156 0,0.18 0,0.21 -0.01,0.24 0,0.25 -0.01,0.28 -0.02,0.3 -0.03,0.31 -0.03,0.33 -0.04,0.34 -0.06,0.35 -0.06,0.36 -0.08,0.37 -0.1,0.36 -0.1,0.37 -0.13,0.37 -0.14,0.36 -0.16,0.36 -0.19,0.35 -0.2,0.35 -0.23,0.33 -0.25,0.31 -0.27,0.3 -0.15,0.15 -0.15,0.14 -0.16,0.13 -0.17,0.13 -0.18,0.12 -0.18,0.12 -0.19,0.11 -0.2,0.1 -0.2,0.1 -0.21,0.09 -0.23,0.08 -0.22,0.08 -0.24,0.06 -0.25,0.06 -0.25,0.05 -0.27,0.04 -0.27,0.04 -0.28,0.02 -0.29,0.02 -0.3,0 v -0.83 c 1.84,0 3.17,-0.93 3.66,-2.68 0.36,-1.27 0.36,-3.35 0.36,-4.82 0,-1.68 0,-3.7 -0.38,-5.2 -0.66,-2.42 -2.64,-2.78 -3.64,-2.78 h 0 c -0.92,0 -3.02,0.31 -3.64,2.83 -0.34,1.34 -0.38,3.12 -0.38,5.15 0,1.85 0,3.57 0.41,4.99 0.63,2.09 2.55,2.51 3.61,2.51 v 0.83 c -6.5,0 -6.5,-6.83 -6.5,-8.62 0,-1.82 0,-8.52 6.5,-8.52 6.5,0 6.5,6.7 6.5,8.52 z"
+             id="path4128"
+             inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90" /><polyline
+             style="fill:#000000;fill-rule:nonzero;stroke-width:0"
+             points="595,418 722.2,418 722.2,420.04 595,420.04 "
+             id="polyline4130"
+             inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90" /><path
+             style="fill:#000000;stroke-width:0"
+             inkscape:connector-curvature="0"
+             d="m 624.14,453.54832 0.03,0.12 0.03,0.11 0.02,0.11 0.03,0.1 0.03,0.09 0.03,0.1 0.03,0.08 0.04,0.08 0.03,0.08 0.04,0.07 0.04,0.07 0.05,0.06 0.05,0.05 0.06,0.06 0.06,0.05 0.07,0.04 0.07,0.05 0.08,0.03 0.09,0.04 0.1,0.03 0.11,0.03 0.05,0.01 0.06,0.01 0.06,0.01 0.06,0.01 0.07,0.01 0.07,0.01 0.07,0.01 0.08,0.01 0.07,0.01 0.08,0 0.08,0.01 0.09,0 0.09,0.01 0.09,0 0.1,0 0.09,0.01 0.11,0 0.1,0 0.11,0 0.11,0.01 0.12,0 0.11,0 c 0.77,0 1.19,0 1.19,0.76 0,0.14 -0.11,0.49 -0.56,0.49 -1.01,0 -3.55,-0.14 -4.56,-0.14 -0.6,0 -1.82,0 -2.41,0.03 -0.69,0.04 -1.53,0.11 -2.19,0.11 -0.22,0 -0.73,0 -0.73,-0.77 0,-0.48 0.42,-0.48 1.11,-0.48 0.03,0 0.7,0 1.33,-0.08 0.73,-0.06 0.79,-0.14 0.79,-0.49 0,-0.03 0,-0.23 -0.14,-0.76 l -2.04,-8.22 h -11.67 l 2.01,8.08 c 0.31,1.18 0.39,1.47 3.06,1.47 0.6,0 1.05,0 1.05,0.76 0,0.14 -0.11,0.49 -0.56,0.49 -1,0 -3.55,-0.14 -4.56,-0.14 -0.6,0 -1.82,0 -2.41,0.03 -0.69,0.04 -1.53,0.11 -2.19,0.11 -0.2,0 -0.73,0 -0.73,-0.77 0,-0.48 0.42,-0.48 1.12,-0.48 0.03,0 0.69,0 1.31,-0.08 0.74,-0.06 0.82,-0.14 0.82,-0.49 0,-0.06 0,-0.23 -0.14,-0.76 l -4.65,-18.5 c -0.28,-1.19 -0.34,-1.47 -3.06,-1.47 -0.59,0 -1.04,0 -1.04,-0.74 0,-0.34 0.23,-0.51 0.56,-0.51 1,0 3.51,0.14 4.51,0.14 0.6,0 1.82,0 2.41,-0.03 0.7,-0.05 1.58,-0.11 2.24,-0.11 0.17,0 0.73,0 0.73,0.73 0,0.52 -0.35,0.52 -1.16,0.52 -0.54,0 -0.69,0 -1.31,0.08 -0.78,0.09 -0.78,0.17 -0.78,0.51 0,0.03 0,0.25 0.14,0.77 l 2.31,9.14 h 11.67 l -2.26,-9.03 c -0.28,-1.19 -0.36,-1.47 -3.08,-1.47 -0.58,0 -1.03,0 -1.03,-0.74 0,-0.34 0.23,-0.51 0.55,-0.51 1.01,0 3.51,0.14 4.53,0.14 0.59,0 1.81,0 2.4,-0.03 0.71,-0.05 1.57,-0.11 2.24,-0.11 0.17,0 0.73,0 0.73,0.73 0,0.52 -0.36,0.52 -1.15,0.52 -0.57,0 -0.71,0 -1.33,0.08 -0.77,0.09 -0.77,0.17 -0.77,0.51 0,0.22 0.11,0.57 0.14,0.77 z"
+             id="path4132"
+             inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90" /><path
+             style="fill:#000000;stroke-width:0"
+             inkscape:connector-curvature="0"
+             d="m 642.49,458.71832 -0.6,-0.45 -0.58,-0.46 -0.56,-0.47 -0.52,-0.49 -0.5,-0.5 -0.47,-0.51 -0.45,-0.53 -0.42,-0.53 -0.4,-0.54 -0.38,-0.55 -0.35,-0.56 -0.33,-0.56 -0.31,-0.57 -0.29,-0.57 -0.26,-0.58 -0.25,-0.58 -0.23,-0.58 -0.21,-0.58 -0.19,-0.59 -0.17,-0.58 -0.16,-0.58 -0.13,-0.58 -0.13,-0.57 -0.11,-0.57 -0.09,-0.57 -0.08,-0.56 -0.06,-0.55 -0.05,-0.55 -0.04,-0.53 -0.03,-0.53 -0.02,-0.52 0,-0.5 c 0,-4.92 1.47,-12.55 8.37,-17.42 0.28,0 0.69,0 0.69,0.4 0,0.22 -0.09,0.28 -0.34,0.53 -4.64,4.19 -6.35,10.11 -6.35,16.46 0,9.4 3.6,14 6.46,16.58 0.14,0.14 0.23,0.25 0.23,0.42 0,0.42 -0.41,0.42 -0.69,0.42 z"
+             id="path4134"
+             inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90" /><path
+             style="fill:#000000;stroke-width:0"
+             inkscape:connector-curvature="0"
+             d="m 651.57,435.63832 0.17,0.17 0.17,0.16 0.16,0.17 0.17,0.17 0.18,0.17 0.09,0.09 0.1,0.09 0.1,0.1 0.11,0.1 0.11,0.1 0.12,0.11 0.12,0.11 0.13,0.11 0.14,0.12 0.14,0.13 0.15,0.13 0.16,0.13 0.17,0.15 0.18,0.15 0.19,0.15 0.2,0.17 0.2,0.17 0.23,0.18 0.23,0.19 0.24,0.2 0.26,0.2 0.27,0.22 c 0.73,0.59 3.34,2.69 4.36,3.66 2.12,2.09 3.45,3.87 3.45,4.29 0,0.41 -0.45,0.41 -0.59,0.41 -0.31,0 -0.43,-0.06 -0.6,-0.35 -1.08,-1.59 -1.81,-2.12 -2.64,-2.12 -0.42,0 -0.95,0.03 -2,1.05 -1.17,1.18 -1.94,1.42 -2.75,1.42 -2.78,0 -4.67,-3.03 -4.67,-4.06 0,-0.33 0.36,-0.43 0.6,-0.43 0.42,0 0.5,0.1 0.62,0.49 0.53,1.22 2.48,1.3 3.05,1.3 0.79,0 1.7,-0.22 2.18,-0.33 1.93,-0.41 2.16,-0.41 3.03,-0.41 -0.9,-0.95 -1.53,-1.58 -4.84,-4.22 -2.72,-2.15 -3.66,-3.03 -4.31,-3.73 -2.1,-2.05 -3.11,-3.58 -3.11,-3.91 0,-0.4 0.45,-0.4 0.59,-0.4 0.35,0 0.42,0.06 0.6,0.34 0.94,1.33 2.01,2.12 3.2,2.12 0.42,0 0.94,-0.03 1.87,-0.9 1.1,-1.05 1.79,-1.56 2.91,-1.56 3.72,0 6.06,4.21 6.06,5.39 0,0.42 -0.39,0.45 -0.59,0.45 -0.42,0 -0.5,-0.17 -0.63,-0.55 -0.67,-1.75 -2.71,-2.58 -4.43,-2.58 -0.8,0 -1.67,0.18 -2.53,0.38 -1.61,0.34 -1.89,0.34 -2.52,0.34 -0.08,0 -0.59,0 -0.8,-0.03 z"
+             id="path4136"
+             inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90" /><path
+             style="fill:#000000;stroke-width:0"
+             inkscape:connector-curvature="0"
+             d="m 677.68,432.90832 0.04,0 0.05,0 0.05,0 0.04,0 0.04,0 0.04,0 0.04,0.01 0.04,0 0.03,0 0.04,0.01 0.03,0.01 0.03,0 0.02,0.01 0.03,0.01 0.03,0.01 0.02,0.02 0.02,0.01 0.02,0.02 0.02,0.02 0.02,0.02 0.01,0.02 0.02,0.02 0.01,0.02 0,0.01 0.01,0.02 0,0.01 0.01,0.02 0,0.01 0.01,0.02 0,0.02 0.01,0.02 0,0.02 0,0.02 0.01,0.02 0,0.02 0,0.02 0,0.03 0,0.02 0,0.03 0.01,0.02 0,0.03 0,0.02 c 0,1.68 -0.9,4.96 -5.55,4.96 -3.8,0 -6.45,-2.72 -6.45,-5.67 0,-3.18 3.03,-5.77 6.81,-5.77 3.97,0 5.19,2.77 5.19,3.25 0,0.42 -0.4,0.42 -0.52,0.42 -0.38,0 -0.44,-0.11 -0.58,-0.45 -0.7,-1.72 -2.55,-2.31 -3.93,-2.31 -2.02,0 -3.15,1.12 -3.52,1.54 -0.97,1.19 -0.97,2.77 -0.97,3.44 l 0.05,0.77 c 0.29,3.29 2.72,3.97 3.89,3.97 3.47,0 3.64,-3.25 3.65,-3.97 h -7.54 l -0.05,-0.77 z"
+             id="path4138"
+             inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90" /><path
+             style="fill:#000000;stroke-width:0"
+             inkscape:connector-curvature="0"
+             d="m 686.32,436.93832 h 3.53 v 1.1 h -3.64 v 2.68 c 0,2.35 1.55,3.32 2.7,3.32 0.18,0 0.68,-0.05 0.68,-0.13 l -0.07,-0.05 c -0.14,-0.14 -0.39,-0.43 -0.39,-0.96 0,-0.71 0.5,-1.27 1.27,-1.27 0.83,0 1.3,0.56 1.3,1.3 0,1.06 -1.07,1.93 -2.74,1.93 -2.2,0 -4.76,-1.39 -4.76,-4.11 v -2.71 h -2.41 v -1.1 h 2.41 v -7.54 c 0,-0.79 0,-1 -1.61,-1 h -0.46 v -1.1 c 1.05,0.08 2.17,0.1 3.22,0.1 1.28,0 2.52,-0.05 3.56,-0.1 v 1.1 h -0.67 c -1.92,0 -1.92,0.25 -1.92,1.03 z"
+             id="path4140"
+             inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90" /><path
+             style="fill:#000000;stroke-width:0"
+             inkscape:connector-curvature="0"
+             d="m 697.24,436.93832 h 3.53 v 1.1 h -3.64 v 2.68 c 0,2.35 1.55,3.32 2.7,3.32 0.17,0 0.67,-0.05 0.67,-0.13 l -0.06,-0.05 c -0.14,-0.14 -0.39,-0.43 -0.39,-0.96 0,-0.71 0.5,-1.27 1.27,-1.27 0.83,0 1.29,0.56 1.29,1.3 0,1.06 -1.06,1.93 -2.73,1.93 -2.2,0 -4.77,-1.39 -4.77,-4.11 v -2.71 h -2.4 v -1.1 h 2.4 v -7.54 c 0,-0.79 0,-1 -1.61,-1 h -0.45 v -1.1 c 1.05,0.08 2.17,0.1 3.22,0.1 1.28,0 2.51,-0.05 3.56,-0.1 v 1.1 h -0.67 c -1.92,0 -1.92,0.25 -1.92,1.03 z"
+             id="path4142"
+             inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90" /><path
+             style="fill:#000000;stroke-width:0"
+             inkscape:connector-curvature="0"
+             d="m 709.58,458.71832 -0.02,0 -0.03,0 -0.02,0 -0.03,0 -0.03,0 -0.02,0 -0.03,0 -0.03,-0.01 -0.03,0 -0.02,0 -0.03,-0.01 -0.03,0 -0.03,-0.01 -0.03,-0.01 -0.02,0 -0.03,-0.01 -0.02,-0.01 -0.03,-0.02 -0.02,-0.01 -0.02,-0.01 -0.02,-0.02 -0.02,-0.02 -0.02,-0.02 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 0,-0.01 -0.01,-0.02 -0.01,-0.01 0,-0.01 -0.01,-0.02 0,-0.01 -0.01,-0.02 0,-0.01 0,-0.02 -0.01,-0.02 0,-0.02 0,-0.01 0,-0.02 0,-0.02 c 0,-0.17 0.11,-0.28 0.31,-0.53 3,-2.75 6.35,-7.46 6.35,-16.44 0,-7.28 -2.27,-12.8 -6.04,-16.2 -0.57,-0.6 -0.62,-0.63 -0.62,-0.82 0,-0.17 0.11,-0.4 0.45,-0.4 0.42,0 3.74,2.29 6.04,6.65 1.53,2.89 2.54,6.66 2.54,10.74 0,4.9 -1.47,12.53 -8.36,17.42 z"
+             id="path4144"
+             inkscape:export-filename="/home/daplxa200/mnt/jneveu/Documents/Thèse/Thèse/images/cosmologie/fig/ap.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90" /></g>      </g>
+    </g>
+  </g>
+</svg>

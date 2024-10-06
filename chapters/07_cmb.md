@@ -201,11 +201,8 @@ Pour la densité d'énergie, il suffit de faire la somme des énergies des parti
 \end{equation}
 
 :::{note}
-Nous avons supposé ici que nous pouvions ignorer les énergies d'interaction
-entre les particules (c'est-à-dire que nous avons affaire à un gaz de particules
-particules interagissant faiblement). Dans ce cas, l'énergie est donnée par : $E(p) =
-\sqrt{p^2 c^2 + m^2 c^4}$ et les états disponibles sont en effet les états de particules libres décrits ci-dessus.
-décrits ci-dessus.
+Nous avons supposé ici que nous pouvions ignorer les énergies d'interaction entre les particules (c'est-à-dire que nous avons affaire à un gaz de particules particules interagissant faiblement). Dans ce cas, l'énergie est donnée par : $E(p) = \sqrt{p^2 c^2 + m^2 c^4}$ et les états disponibles sont en effet les états de particules libres décrits ci-dessus.
+
 :::
 
 Nous pouvons obtenir de la même manière la pression du gaz : 
@@ -214,7 +211,7 @@ Nous pouvons obtenir de la même manière la pression du gaz :
 \end{equation}
 
 
-Au final, le tenseur énergie impulsion pour un ensemble de particules quantiques peut s'écrire :
+Au final, le tenseur énergie-impulsion pour un ensemble de particules quantiques peut s'écrire :
 \begin{equation}
 \boxed{T^{\mu\nu}=\frac{1}{(2\pi\hbar)^3}\int{\dd^3\mathbf{p} f(p) \frac{p^\mu p^\nu}{p^0}}}
 \end{equation}

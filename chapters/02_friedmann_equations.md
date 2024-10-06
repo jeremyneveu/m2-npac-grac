@@ -8,36 +8,64 @@ math:
 L'Univers en expansion
 ======================
 
-Dans le chapitre précédent, par de simples considérations géométriques, nous sommes parvenus à écrire la forme de la métrique solution de l'équation d'Einstein pour un Univers homogène et isotrope. D'un tenseur inconnu à 10 composantes (car la métrique est un tenseur symétrique), par des arguments de symétrie nous avons abouti à la métrique FLRW qui ne contient qu'une seule fonction inconnue $a(t)$. Pour maintenant décrire la dynamique de l'Univers, et non plus sa géométrie, il faut résoudre l'équation d'Einstein pour comprendre comment le contenu en matière et en énergie agit sur l'expansion l'Univers via le facteur d'échelle $a(t)$.
+Dans le chapitre précédent, par de simples considérations géométriques, nous sommes parvenus à écrire la forme de la métrique solution de l'équation d'Einstein pour un Univers homogène et isotrope. D'un tenseur inconnu à 10 composantes (car la métrique est un tenseur symétrique), par des arguments de symétrie nous avons abouti à la métrique FLRW qui ne contient qu'une seule fonction inconnue du temps $a(t)$. Pour maintenant décrire la dynamique de l'Univers, et non plus sa géométrie, il faut résoudre l'équation d'Einstein afin de comprendre comment le contenu en matière et en énergie agit sur l'expansion l'Univers via le facteur d'échelle $a(t)$.
 
 
 Le tenseur énergie-impulsion
 ----------------------------
 
+:::{figure} ../images/tmunu_def.svg
+
+Le tenseur-énergie impulsion représente les flux de 4-impulsions $p^\mu$ et la densité d'énergie $\epsilon$ dans un volume local d'espace-temps. Si le système est soumis à aucune force hormis la gravitation, alors on l'équation de conservation $T^{\mu\nu}_{\;\;\;;\mu}=0$.
+:::
+
 Le tenseur énergie-impulsion $T^{\mu\nu}$ de l'équation d'Einstein décrit la densité d'énergie et les flux de quantités de mouvements en mécanique relativiste. C'est un tenseur d'ordre 2, construit à partir du vecteur 4-impulsion, qui prend la forme suivante :
 \begin{equation}
 T^{\mu\nu}=\begin{pmatrix} 
 T^{00}= \text{energy density}\,\,\,\,
-& cT^{01}=\text{energy flux  through }x_1=\text{cst}\,\,\,\,\,
-& cT^{02}=\text{energy flux  through }x_2=\text{cst}\,\,\,\,\,
-& cT^{03}=\text{energy flux through }x_3=\text{cst}
-\\  T^{10}c^{-1}=\text{density of }p_1\,\,\,\,\,\,\,
-& T^{11}= \text{flux of }p_1\text{ through }x_1=\text{cst}\,\,\,\,\,\,\,
-&  T^{12}= \text{flux of }p_1\text{ through }x_2=\text{cst}\,\,\,\,\,\,\,
-&  T^{13}= \text{flux of }p_1\text{ through }x_3=\text{cst}
-\\  T^{20}c^{-1}=\text{density of }p_2\,\,\,\,\,\,\,
-& T^{21}= \text{flux of }p_2\text{ through }x_1=\text{cst}\,\,\,\,\,\,\,
-&  T^{22}= \text{flux of }p_2\text{ through }x_2=\text{cst}\,\,\,\,\,\,\,
-&  T^{31}= \text{flux of }p_2\text{ through }x_3=\text{cst}
-\\  T^{30}c^{-1}= \text{density of }p_3\,\,\,\,\,\,\,
-& T^{31}= \text{flux of }p_3\text{ through }x_1=\text{cst}\,\,\,\,\,\,\,
-&  T^{32}= \text{flux of }p_3\text{ through }x_2=\text{cst}\,\,\,\,\,\,\,
-&  T^{33}= \text{flux of }p_3\text{ through }x_3=\text{cst}
+& T^{01}=\text{energy/c flux through }x_1\,\,\,\,\,
+& T^{02}=\text{energy/c flux through }x_2\,\,\,\,\,
+& T^{03}=\text{energy/c flux through }x_3
+\\  T^{10}=c\times \text{density of }p_1\,\,\,\,\,\,\,
+& T^{11}= \text{flux of }p_1\text{ through }x_1\,\,\,\,\,\,\,
+&  T^{12}= \text{flux of }p_1\text{ through }x_2\,\,\,\,\,\,\,
+&  T^{13}= \text{flux of }p_1\text{ through }x_3
+\\  T^{20}=c\times\text{density of }p_2\,\,\,\,\,\,\,
+& T^{21}= \text{flux of }p_2\text{ through }x_1\,\,\,\,\,\,\,
+&  T^{22}= \text{flux of }p_2\text{ through }x_2\,\,\,\,\,\,\,
+&  T^{31}= \text{flux of }p_2\text{ through }x_3
+\\  T^{30}= c\times\text{density of }p_3\,\,\,\,\,\,\,
+& T^{31}= \text{flux of }p_3\text{ through }x_1\,\,\,\,\,\,\,
+&  T^{32}= \text{flux of }p_3\text{ through }x_2\,\,\,\,\,\,\,
+&  T^{33}= \text{flux of }p_3\text{ through }x_3
 \end{pmatrix}
 \label{stress-energy-tensor-meaning}
 \end{equation}
+Si le système est soumis à aucune force hormis la gravitation, alors on l'équation de conservation $T^{\mu\nu}_{\;\;\;;\mu}=0$, C'est un jeu de quatre équations qui réprésente l'équation de conservation locale de l'énergie et de l'impulsion.
 
-Or dans notre hypothèse d'Univers de symétrie maximale, rappelons tout d'abord qu'on peut définir un temps cosmique, universel,  en utilisant l'évolution de l'Univers comme une horloge (densité de matière, température du CMB...). Les hypersurfaces de l'espace-temps paramétrées par ce temps universel sont alors eux-mêmes des sous-espaces de symétrie maximale. Les tenseurs représentants des observables cosmologiques de tels sous-espaces de symétrie maximale doivent alors être de _forme invariante_ c'est-à-dire qu'ils doivent prendre les mêmes valeurs à une date $t$ quelque soit le choix du système de coordonnées choisi (si on passe de $x^\mu$ à $x'^\mu$, on doit retrouver $T_{\mu\nu} = T'_{\mu\nu}$ pour retrouver la même densité d'énergie) {cite:p}`Weinberg1972`[p. 408]. On peut démontrer alors une propriété importante concernant la forme que doivent prendre les tenseurs de ces sous-espaces {cite:p}`Weinberg1972`[p. 392].
+:::{note} Tenseur énergie-impulsion en Relativité Restreinte
+
+Pour un ensemble de $n$ particules, la densité de 4-impulsion $p^\alpha$ est définie par {cite:p}`Weinberg1972`[p. 43]:
+$$
+T^{\alpha 0}(t, \vec x) = \sum_n p_n^{\alpha}c \delta^3(\vec x - \vec x_n(t))
+$$
+où $x_n(t)$ et $p_n^{\alpha}(t)=(E_n/c, \vec p_n)$ sont les positions et 4-impulsions de la particule $n$ à l'instant $t$. Le flux d'impulsion à travers une surface de normale $\vec e_i$ est quant à lui :
+$$
+T^{\alpha i}(t, \vec x) = \sum_n p_n^{\alpha} \frac{\dd x_n^i(t)}{\dd t} \delta^3(\vec x - \vec x_n(t))
+$$
+Ces deux définitions peuvent être combinées pour obtenir le tenseur symétrique :
+$$
+T^{\alpha \beta}(t, \vec x) = \sum_n p_n^{\alpha} \frac{\dd x_n^\beta(t)}{\dd t} \delta^3(\vec x - \vec x_n(t))
+$$
+avec $x_n^0(t)=ct$. Comme l'énergie d'une particule massive est $E=\sqrt{\vec m^2\gamma^2 v^2 c^2 + m^2 c^4}$ et celle d'une particule de masse nulle est $E=\vert \vec p \vert c$, alors on démontre que $p_n^\alpha c = E_n (\dd x_n^\alpha /c \dd t)$. D'où l'écriture du tenseur énergie-impulsion en tant que tenseur symétrique, invariant de Lorentz :
+$$
+T^{\alpha \beta}(t, \vec x) = c^2 \sum_n \frac{p_n^{\alpha} p_n^{\beta}}{E_n} \delta^3(\vec x - \vec x_n(t))
+$$
+
+
+:::
+
+Or dans notre hypothèse d'Univers de symétrie maximale, rappelons tout d'abord qu'on peut définir un temps cosmique, universel,  en utilisant l'évolution physique de l'Univers comme une horloge (densité de matière, température du CMB...). Les hypersurfaces de l'espace-temps paramétrées par ce temps universel sont alors eux-mêmes des sous-espaces de symétrie maximale. Les tenseurs représentants des observables cosmologiques de tels sous-espaces de symétrie maximale doivent alors être de _forme invariante_ c'est-à-dire qu'ils doivent prendre les mêmes valeurs à une date $t$ quelque soit le choix du système de coordonnées choisi (si on passe de $x^\mu$ à $x'^\mu$, on doit retrouver $T^{\mu\nu} = T'^{\mu\nu}$ pour retrouver la même densité d'énergie) {cite:p}`Weinberg1972`[p. 408]. On peut démontrer alors une propriété importante concernant la forme que doivent prendre les tenseurs de ces sous-espaces {cite:p}`Weinberg1972`[p. 392].
 
 :::{prf:property} Forme des tenseurs de forme invariante
 Un tenseur de forme invariante dans un espace de symétrie maximale :
@@ -48,9 +76,9 @@ Un tenseur de forme invariante dans un espace de symétrie maximale :
 
 Par conséquent, mathématiquement on peut introduire $\epsilon(t)$ et $p(t)$ deux fonctions telles que le tenseur énergie-impulsion se simplifie en :
 $$\begin{align}
-T_{00} & =  \epsilon(t)\quad  \text{(scalaire)} \\
-T_{i0} & = T_{0i} = 0 \quad  \text{(vecteur)} \\
-T_{ij} & =  P(t) \gamma_{ij}\quad \text{(tenseur d'ordre 2)}
+T^{00} & =  \epsilon(t)\quad  \text{(scalaire)} \\
+T^{i0} & = T_{0i} = 0 \quad  \text{(vecteur)} \\
+T^{ij} & =  P(t) \gamma^{ij}\quad \text{(tenseur d'ordre 2)}
 \end{align}$$
 
 De manière plus élégante, on peut introduire le vecteur $U^\mu$ défini par :
@@ -58,7 +86,7 @@ $$ U^0 = 1, \quad U^i = 0 $$
 et obtenir une écriture compacte pour le tenseur énergie-impulsion d'un Univers homogène et isotrope :
 :::{math}
 :label: eq:def-Tmunu2
-T_{\mu\nu} = (\epsilon + P) U_\mu U_\nu + P g_{\mu\nu}
+T^{\mu\nu} = (\epsilon + P) U^\mu U^\nu + P g^{\mu\nu}
 :::
 
 :::{math}
@@ -72,11 +100,11 @@ T^{\mu\nu} = (\epsilon + P) U^\mu U^\nu + P g^{\mu\nu} = \begin{pmatrix}
 :::
 
 Comment interpréter ces considérations mathématiques ? Tout d'abord, si on compare l'équation [](#eq:def-Tmunu) avec [](#stress-energy-tensor-meaning) alors on identifie $\epsilon$
-à la densité d'énergie et $p$ à la pression cinétique (flux de quantité de mouvement à travers une surface). Enfin, le tenseur énergie-impulsion $T^{\mu\nu}$ s'identifie à celui d'un <wiki:perfect_fluide>. Cela signifie que dans un Univers homogène et isotrope la matière peut être décrite comme un milieu continu, dont le mouvement peut être décrit sans prendre en compte des effets de viscosité et de conduction thermique (il est donc adiabatique). Aussi $U^\mu$ s'identifie alors à la 4-vitesse comobile du fluide, donc le fait que $U^i = 0$ montre que le système physique étudié est au repos dans les coordonnées comobiles, comme attendu. 
+à la densité d'énergie et $p$ à la pression cinétique (flux de quantité de mouvement à travers une surface). Enfin, le tenseur énergie-impulsion $T^{\mu\nu}$ s'identifie à celui d'un <wiki:perfect_fluid>. Cela signifie que dans un Univers homogène et isotrope la matière peut être décrite comme un milieu continu, dont le mouvement peut être décrit sans prendre en compte des effets de viscosité et de conduction thermique (il est donc adiabatique). Aussi $U^\mu$ s'identifie alors à la 4-vitesse comobile du fluide, donc le fait que $U^i = 0$ montre que le système physique étudié est au repos dans les coordonnées comobiles, comme attendu. 
 
 :::{note} Tenseur énergie-impulsion d'un fluide parfait {cite:p}`Weinberg1972`[p. 48]
 
-Etudions un fluide parfait, c'est-à-dire un ensemble de particules dont le libre parcours moyen est petit devant les distances  auxquelles on l'étudie, et sans viscosité. Etant donné la définition d'un tenseur énergie-impulsion, dans le référentiel $\mathcal{R}'$ où
+Étudions un fluide parfait, c'est-à-dire un ensemble de particules dont le libre parcours moyen est petit devant les distances  auxquelles on l'étudie, et sans viscosité. Etant donné la définition d'un tenseur énergie-impulsion, dans le référentiel $\mathcal{R}'$ où
 le fluide parfait est au repos on peut écrire :
 $$ T'^{ij} = P \delta^{ij}, \quad T'^{i0} = T'^{0i} = 0, \quad T'^{00} = \rho c^2 $$
 où explicitement $\rho$ est la densité _massique_ propre du fluide et $p$ sa pression cinétique (donc un flux de quantité de mouvement à travers une surface). Dans un autre référentiel, celui d'un observateur de l'écoulement par exemple, ce tenseur énergie-impulsion se réécrit :
@@ -101,13 +129,14 @@ $$
 :::
 
 Dans une base cartésienne, le tenseur énergie-impulsion prend la forme simple :
-$$\label{eq:tmunu_fluide}
-T_{\mu\nu}  =  \begin{pmatrix}
+$$
+T_{\mu\nu}  =  
+\begin{pmatrix}
 \epsilon & 0 & 0 & 0 \\
 0 & P a^2(t) & 0 & 0 \\ 
 0 & 0 & P a^2(t) & 0 \\ 
 0 & 0 & 0 & P a^2(t)  \\ 
-\end{pmatrix} .
+\end{pmatrix}.\label{eq:tmunu_fluide}
 $$
 
 
@@ -115,10 +144,11 @@ Les équations de Friedmann
 ---------------------------
 
 Résoudre l'équation d'Einstein [](#eq:einstein2) consiste à en trouver une métrique solution, compte tenu de la répartition en matière et énergie codée dans $T^{\mu\nu}$. Supposer les principes d'homogénéité et d'isotropie pour ce tenseur, impose que la métrique est la métrique de Friedmann-Lemaître-Robertson-Walker (FLRW), utilisant le jeu de coordonnées comobiles sphériques usuel $(ct, \sigma, \theta, \phi)$:
-$$\begin{aligned}\label{eq:flrw}
-g_{\mu\nu} = \begin{pmatrix}
+$$
+\begin{aligned}\label{eq:flrw}
+\displaystyle g_{\mu\nu} = \begin{pmatrix}
 -1 & 0 & 0 & 0 \\
-0 & \frac{a^2(t)}{1-k\sigma^2} & 0 & 0 \\ 
+0 & \dfrac{a^2(t)}{1-k\sigma^2} & 0 & 0 \\ 
 0 & 0 & a^2(t)\sigma^2 & 0 \\ 
 0 & 0 & 0 & a^2(t) \sigma^2 \sin^2 \theta  \\ 
 \end{pmatrix},\end{aligned}
@@ -127,40 +157,46 @@ où $a(t)$ est une fonction inconnue. Le paramètre d'échelle $a(t)$ peut être
 $$
 g^{\mu\nu} = \begin{pmatrix}
 -1 & 0 & 0 & 0 \\
-0 & \frac{1-k\sigma^2}{a^2(t)} & 0 & 0 \\ 
-0 & 0 & \frac{1}{a^2(t)\sigma^2}  & 0 \\ 
-0 & 0 & 0 & \frac{1}{a^2(t) \sigma^2 \sin^2 \theta}   \\ 
+0 & \dfrac{1-k\sigma^2}{a^2(t)} & 0 & 0 \\ 
+0 & 0 & \dfrac{1}{a^2(t)\sigma^2}  & 0 \\ 
+0 & 0 & 0 & \dfrac{1}{a^2(t) \sigma^2 \sin^2 \theta}   \\ 
 \end{pmatrix}.
 $$
 
 En utilisant la métrique FLRW
 [](#eq:flrw),
 calculons pour l'exemple la connexion affine suivante à partir de l'équation [](#eq:connexion):
-$$\begin{aligned}
+$$
+\begin{aligned}
 \Gamma^1_{\ 01} & = \frac{1}{2} g^{1 \mu} \left( \partial_0 g_{1\mu} + \partial_1 g_{0 \mu} - \partial_\mu g_{01} \right) \\
 & = \frac{1}{2} g^{1 1} \left(\frac{\partial g_{11}}{c\partial t} + \partial_\sigma g_{01} - 0 \right) \text{ car }\forall \mu \neq 1, g^{1\mu}=0\\
 & = \frac{1}{2} \frac{1-k\sigma^2}{a^2} \left( \frac{2 \dot{a} a}{c(1-k\sigma^2)} + 0 \right) \\
 & = \frac{\dot a}{ca} = \frac{H}{c}.
-\end{aligned}$$
-
+\end{aligned}
+$$
 
 De la même manière, on obtient les autres connexions affines, puis les tenseurs de Riemann et Ricci. Au final, le tenseur d'Einstein est diagonal et vaut: 
-$$\begin{aligned}
+$$
+\begin{aligned}
 G_{00} & =  - 3 \left( \frac{\dot{a}^2}{c^2 a^2}+ \frac{k}{a^2} \right), \\
 G_{ij} & = \frac{2\ddot{a}a + \dot{a}^2 + c^2 k}{c^2 a^2}g_{ij} \text{ pour } i=j\neq 0.
-\end{aligned}$$
+\end{aligned}
+$$
 A partir de l'équation d'Einstein [](#eq:einstein2) et du tenseur énergie-impulsion [](#eq:tmunu_fluide), on obtient pour la coordonnée $00$ et pour les coordonnées spatiales $ij$: 
-$$\begin{aligned}
+$$
+\begin{aligned}
 G_{\mu\nu}-\Lambda g_{\mu\nu} & = -8\pi G_N T_{\mu\nu}/c^4 \\
 \Leftrightarrow  & \left\lbrace
 \begin{array}{rl}
     \text{00: } &  \displaystyle{3 \left( \frac{\dot{a}^2}{a^2}+ \frac{c^2 k}{a^2} \right) = 8\pi G_N \rho + c^2 \Lambda} \\
     ij\text{: } &   \displaystyle{\frac{2\ddot{a}a + \dot{a}^2 + c^2 k}{a^2} = - \frac{8\pi G_N}{c^2 } P + c^2 \Lambda }
 \end{array}
-\right.\end{aligned}$$ 
+\right.\end{aligned}
+$$ 
 Ce sont les deux équations de Friedmann. Les voici maintenant exprimées en fonction du paramètre de Hubble
 $H=\dot{a}/a$ : 
-$$\label{eq:friedmann}
+$$
+\label{eq:friedmann}
 \left\lbrace
 \begin{array}{rl}
     \text{00: } & \displaystyle{H^2 = \frac{8\pi G_N \rho}{3} + \frac{c^2 \Lambda}{3} - \frac{c^2 k}{a^2}}\\
@@ -169,7 +205,8 @@ $$\label{eq:friedmann}
 \right.
 $$
 La première équation de Friedmann relie explicitement l'évolution du facteur d'échelle $a(t)$ au contenu énergétique de  l'Univers. De plus, en soustrayant ces deux équations et en combinant le résultat avec la dérivée temporelle de la première, on peut obtenir l'équation de conservation de l'énergie que l'on obtiendrait aussi directement en calculant $T^{\mu\nu}_{\;\;\;;\mu}=0$ dans la métrique FLRW : 
-$$\label{eq:conservation_energie}
+$$
+\label{eq:conservation_energie}
 \fbox{$\dot{\epsilon} = -3 H( \epsilon  + P )$}
 $$
 
@@ -542,7 +579,7 @@ En ce qui concerne le rayonnement, $P_r=\rho_r c^2 / 3$ donc :
 
 
 3. 
-:::{list-table} Conservation de l'énergie pour la matière et le rayonnement dans un univers en expansion.
+```{list-table} Conservation de l'énergie pour la matière et le rayonnement dans un univers en expansion.
 :header-rows: 0
 :name: fig:cubes
 
@@ -555,7 +592,7 @@ En ce qui concerne le rayonnement, $P_r=\rho_r c^2 / 3$ donc :
     :alt: light
     :width: 100%
     :align: center
-:::
+```
 
 Dans le cube isolé, l'énergie et la matière se conservent. Ainsi, en ce qui concerne les galaxies présentes dans un cube en expansion, nous pouvons écrire que leur nombre est conservé par l'expansion de la manière suivante :
 \begin{equation}
@@ -619,10 +656,13 @@ Transformer les valeurs de l'équation [](#eq:omegas_planck) en densité de mass
 
 
 :::{solution} exo:densities
+:class: dropdown
 
-Suppose that density of the dark energy as cosmological constant is equal to the present critical density, ρΛ=ρcr. What is then the total amount of dark energy inside the Solar System? Compare this number with M⊙c2
+Suppose that density of the dark energy as cosmological constant is equal to the present critical density, $\rho_\Lambda=\rho_c$. What is then the total amount of dark energy inside the Solar System? Compare this number with $M_\odot c^2$.
 
-ρcr≃10−29  g/cm3;R≃50a.u.;1 a.u.≃1.5×1011m;EDESS/c2≃0.2⋅1014 kg;M⊙≃2⋅1030 kg;EDESSM⊙c2≃10−17.
+$$\rho_c\approx 10^{-29}\,\text{g/cm}^3$$
+$$R\approx 50\,\text{A.U.}$$
+$$1\,\text{A.U.}\approx 1.5\times 1011m;EDESS/c2≃0.2⋅1014 kg;M⊙≃2⋅1030 kg;EDESSM⊙c2≃10−17.
 
 Transform Lambda into a length: Length = sqrt(1/Lambda) = ....
 
