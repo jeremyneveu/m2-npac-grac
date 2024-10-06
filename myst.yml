@@ -18,11 +18,18 @@ project:
 site:
   template: book-theme
   title: Astroparticles and Cosmology
-  nav: []
+  nav:
+    - title: English version
+      url: /en/start
+    - title: Version française
+      url: /fr/start
+    - title: Jupyter notebooks
+      url: /notebooks/start
   actions:
   domains: []
   options:
     hide_outline: false
+    hide_toc: false
     logo_text:
     favicon:
     logo:

@@ -5,6 +5,6 @@
 
 Astroparticle and cosmology lectures for M2 NPAC.
 
-[Version française ici.](https://m2-npac-ac.pages.in2p3.fr/index.html)
+[Version française ici.](https://m2-npac-ac.pages.in2p3.fr/fr/start.html)
 
-[English version here.](https://m2-npac-ac.pages.in2p3.fr/en/index.html)
+[English version here.](https://m2-npac-ac.pages.in2p3.fr/en/start.html)

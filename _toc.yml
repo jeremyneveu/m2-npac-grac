@@ -33,6 +33,7 @@ parts:
     #- file: chapters/11_inflation
     #- file: chapters/12_lcdm_and_beyond
   - caption: Jupyter notebooks
+    file: notebooks/start.md
     chapters:
     - file: notebooks/mechanical_analogy.ipynb
     - file: notebooks/astropy_cosmo.ipynb
