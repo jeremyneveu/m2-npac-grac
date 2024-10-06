@@ -35,6 +35,9 @@ project:
     # Note the 'single quotes'
     '\dd': '\mathrm{d}'
     '\GN': '\mathcal{G}'  # newton constant
+  abbreviations:
+    CMB: Fond Diffus Cosmologique
+    FLRW: Friedmann-Lemaître-Robertson-Walker
   toc:
     - file: README
     - title: Lectures

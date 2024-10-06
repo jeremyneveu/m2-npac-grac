@@ -16,8 +16,6 @@ dependencies:
 - ipywidgets
 - ipympl
 - astropy
-- pyccl
-- camb
 - pip:
   - ipyturtle3
 
