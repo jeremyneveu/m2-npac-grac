@@ -20,7 +20,7 @@ pages:
     - myst build --html
     - mkdir public
     - mv _build/html/ public/fr
-    - sed -i 's@fr/@en/@g' _toc.yml
+    - sed -i 's@fr/@en/@g' myst.yml
     - myst build --html
     - mv _build/html/ public/en
   artifacts:
