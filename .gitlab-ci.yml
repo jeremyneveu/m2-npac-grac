@@ -19,6 +19,9 @@ pages:
     - npm install -g mystmd
     - myst build --html
     - mv _build/html/ public/
+    - sed -i 's@fr/@en/@g' _toc.yml
+    - myst build --html
+    - mv _build/html/ public/en
   artifacts:
     paths:
       - public

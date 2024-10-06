@@ -20,7 +20,7 @@ root: README
 parts:
   - caption: Lectures
     chapters:
-    - file: chapters/en/00_introduction
+    - file: chapters/fr/00_introduction
     - file: chapters/fr/01_FLRW_metric
     - file: chapters/fr/02_friedmann_equations
     #- file: chapters/03_cosmological_models
