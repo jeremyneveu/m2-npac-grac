@@ -17,6 +17,10 @@ pages:
     - mamba install -y -c conda-forge nodejs
     - node -v
     - npm install -g mystmd
+    - mv _toc.yml tmp_toc.yml
+    - myst build --html
+    - mv _build/html/ public/
+    - mv tmp_toc.yml _toc.yml
     - myst build --html
     - mv _build/html/ public/fr
     - sed -i 's@fr/@en/@g' _toc.yml
