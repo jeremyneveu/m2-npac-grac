@@ -22,6 +22,7 @@ pages:
     - myst build --html
     - mv _build/html/ public
     - mv tmp_myst.yml myst.yml
+    - myst build --html
     - mv _build/html/ public/fr
     - sed -i 's@fr/@en/@g' myst.yml
     - myst build --html
