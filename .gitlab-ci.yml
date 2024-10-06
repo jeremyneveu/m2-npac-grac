@@ -17,8 +17,11 @@ pages:
     - mamba install -y -c conda-forge nodejs
     - node -v
     - npm install -g mystmd
+    - cp myst.yml tmp_myst.yml
+    - yq 'del(.project.toc)' myst.yml
     - myst build --html
-    - mkdir public
+    - mv _build/html/ public
+    - mv tmp_myst.yml myst.yml
     - mv _build/html/ public/fr
     - sed -i 's@fr/@en/@g' myst.yml
     - myst build --html
