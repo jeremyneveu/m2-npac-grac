@@ -100,7 +100,7 @@ Le paramètre $\tau$ va nous permettre de paramétrer la courbe $x'^\mu(\tau)$, 
 
 D'après le Principe d'Équivalence, cette équation est aussi valable dans un certain voisinage de l'objet en question avec un autre choix de coordonnées spatio-temporelles. Il existe donc un autre système de coordonnées arbitraire dans lequel on a le droit de réécrire l'équation de sa trajectoire $x^\mu$. Cherchons la forme qu'elle prendrait pour ces coordonnées $x^\mu$ :
 $$
-0=\frac{\dd^2 x'^\mu}{\dd\tau^2}=\frac{d}{\dd\tau}\left(\frac{\partial x'^\mu}{\partial x^\nu} \frac{\dd x^\nu}{\dd\tau}\right) = \frac{\partial x'^\mu}{\partial x^\nu} \frac{\dd^2 x^\nu}{\dd\tau^2} + \frac{\partial^2 x'^\mu}{\partial x^\nu \partial x^\rho}\frac{\dd x^\nu}{\dd\tau}\frac{\dd x^\rho}{\dd\tau}.$$
+0=\frac{\dd^2 x'^\mu}{\dd\tau^2}=\frac{\dd}{\dd\tau}\left(\frac{\partial x'^\mu}{\partial x^\nu} \frac{\dd x^\nu}{\dd\tau}\right) = \frac{\partial x'^\mu}{\partial x^\nu} \frac{\dd^2 x^\nu}{\dd\tau^2} + \frac{\partial^2 x'^\mu}{\partial x^\nu \partial x^\rho}\frac{\dd x^\nu}{\dd\tau}\frac{\dd x^\rho}{\dd\tau}.$$
 Après multiplication par $\partial x^\gamma/\partial x'^\mu$, on obtient[^inv] la nouvelle équation du mouvement :
 $$
 \label{eq:eqm2}
@@ -118,7 +118,7 @@ $$
 $$
 Le tenseur $g_{\mu\nu}$ décrit la géométrie de l'espace-temps dans le nouveau système de coordonnées $x^\mu$ et remplace la métrique cartésienne $\eta_{\mu\nu}$. C'est l'objet fondamental de la Relativité Générale car il permet de décrire les distances parcourues dans un espace-temps non euclidien (courbe).
 
-:::{note} Le tenseur métrique dans des cas simples
+:::{tip} Le tenseur métrique dans des cas simples
 
 * Soit un espace euclidien 2D de métrique $\eta_{\alpha\beta} = \text{diag}(1, 1)$ de coordonnées $\vec X=(x,y)$. On réalise une rotation de l'espace d'un angle $\theta$, passant aux coordonnées $\vec X'=(x',y')$ par :
 \begin{equation*}
@@ -233,7 +233,7 @@ Le premier terme correspond à la variation ordinaire d'un vecteur si on le dép
 
 :::{figure} ../../images/covariant_derivative.svg
 
-Illustration de la variation d'un vecteur $A^\mu$ (cyan) dans le voisinage d'une base $(e_\mu, e_\nu)$ d'un espace courbe. Suite à un déplacement dans son voisinage (ici le long de $e_\mu$), le vecteur change de taille (premier terme de la dérivée covariante) et la base qui définit ses projections donc ces coordonnées change également. La dérivée covariante calcule la variation des composantes du vecteur $A^\mu$ due à ces deux changements.
+Illustration de la variation d'un vecteur $V^\mu$ (cyan) dans le voisinage d'une base $(e_\mu, e_\nu)$ d'un espace courbe. Suite à un déplacement dans son voisinage (ici le long de $e_\mu$), le vecteur change de taille (premier terme de la dérivée covariante) et la base qui définit ses projections donc ces coordonnées change également. La dérivée covariante calcule la variation des composantes du vecteur $V^\mu$ due à ces deux changements.
 ::: 
 
 Cette définition de la dérivée en Relativité Générale exprime correctement la variation d'un vecteur le long d'une coordonnée dans un espace courbe. Ce vecteur variation se transforme de la même manière qu'un vecteur contravariant par un changement de coordonnées (contrairement à la dérivée usuelle): le vecteur variation $V^\nu{}_{;\mu}$ est donc correctement défini pour tout système de coordonnées. 

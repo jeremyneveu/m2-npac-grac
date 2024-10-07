@@ -85,7 +85,7 @@ $$
 On peut alors vérifier, en résolvant l'équation du second degré en $\dd t$ que si $g_{01} \neq 0$, deux $\dd x$ opposés donnent deux valeurs différentes de $\dd t$ positif. C'est-à-dire qu'un observateur recevra à des moments différents les impulsions lumineuses émises simultanément par deux sources situées à la même distance dans des directions opposées $\pm \dd x$. Cela rompt évidemment l'isotropie. Les termes $g_{0i}$ et $g_{i0}$ de la métrique sont donc nuls. Cela signifie que le vecteur temporel $\vec e_0$ est orthogonal aux vecteurs de base spatiaux $\vec e_i$.
 
 
-De plus, si l'Univers est homogène alors la composante $g_{00}(t,\vec x)$ ne peut dépendre que du temps $t$, de sorte que le battement des horloges ne dépendent pas de la position dans l'espace. Donc $g_{00}(t,\vec x) = g_{00}(t)$ {cite:p}`Weinberg1972`[p. 403]. Si nous appelons le paramètre $t$ le temps, nous voyons que nous avons un temps universel en tout point de l'espace, appelé temps cosmologique. Comme l'univers est homogène, alors cela signifie qu'à chaque date on peut associer une densité de matière ou d'énergie identique pour tous les observateurs, donc qu'avec un densimètre on peut construire une horloge. 
+De plus, si l'Univers est homogène alors la composante $g_{00}(t,\vec x)$ ne peut dépendre que du temps $t$, de sorte que le battement des horloges ne dépendent pas de la position dans l'espace. Donc $g_{00}(t,\vec x) = g_{00}(t)$ {cite:p}`Weinberg1972`[p. 403]. Si nous appelons le paramètre $t$ le temps, nous voyons que nous avons un temps universel en tout point de l'espace, appelé temps cosmologique. Comme l'univers est homogène, alors cela signifie qu'à chaque date on peut associer une densité de matière ou d'énergie identique pour tous les observateurs, donc qu'avec un densimètre on peut construire une horloge commune à tous les observateurs présents dans l'Univers. 
 
 En combinant les deux résultats précédents, l'intervalle espace-temps peut être écrit sous la forme suivante :
 \begin{equation}
@@ -107,7 +107,7 @@ Dans ce cours, comme dans beaucoup de cours de cosmologie, la [signature](https:
 
 ### Géométrie d'un Univers maximallement symétrique
 
-Trouvons maintenant une forme explicite pour $\dd \vec l^2$. Un Univers de symétrie maximale (homogène et isotrope) doit posséder une courbure constante. Cela se comprend assez intuitivement mais aussi se démontre en Relativité Générale {cite:p}`Weinberg1972` [p. 381]. Notons $a$ le rayon de courbure associé, et soit $\vec \xi = (\xi^1, \xi^2, \xi^3)$ un vecteur position dans l'espace 3D :
+Trouvons maintenant une forme explicite pour $\dd \vec l^2$. Un Univers de symétrie maximale (homogène et isotrope) doit posséder une courbure constante spatialement. Cela se comprend assez intuitivement mais aussi se démontre en Relativité Générale {cite:p}`Weinberg1972` [p. 381]. Notons $a$ le rayon de courbure associé, et soit $\vec \xi = (\xi^1, \xi^2, \xi^3)$ un vecteur position dans l'espace 3D :
 \begin{equation}
 \dd \vec l^2 = \gamma_{ij} \dd \xi^i \dd \xi^j, \quad \text{avec}\quad i=1,2,3
 \end{equation}
@@ -175,16 +175,15 @@ La distance infinitésimale entre 2 points de l'espace 3D non euclidien de courb
 \end{equation}
 
 A cette étape, nous pouvons maintenant combiner le résultat obtenu pour les deux courbures non nulles avec le cas euclidien en introduisant le *paramètre de courbure* $k$ :
-:::{math}
-:label: K-def
-
+\begin{equation}
+\label{K-def}
 k = \left\lbrace
 \begin{array}{rl}
  +1 & \text{3-sphère} \\
  0 & \text{espace\ plat} \\
  -1 & \text{3-hyperboloïde} \\
 \end{array}\right.
-:::
+\end{equation}
 On a ainsi pour les trois géométries possibles d'un Univers maximallement symétrique :
 \begin{equation}
 \dd \vec l^2= \dd \vec r^2 + k\frac{ (\vec r \cdot \dd \vec r)^2}{a^2(t) - k r^2}
@@ -196,11 +195,10 @@ Enfin, introduisons la variable rééchelonnée $\vec\sigma=\vec r/a(t)$, et nou
 \end{equation}
 
 La métrique de Friedmann-Lemaître-Robertson-Walker décrivant un Univers homogène et isotrope s'écrit finalement :
-:::{math}
-:label: FLRW-metric
-
+\begin{equation}
+\label{FLRW-metric}
 \dd s^2=-c^2\dd t^2 + a^2(t) \left(\dd \vec \sigma^2 + k\frac{(\vec \sigma \cdot \dd \vec \sigma)^2}{1 - k \sigma^2} \right)
-:::
+\end{equation}
 
 La métrique de Friedmann-Lemaître-Robertson-Walker (FLRW) constitue le cadre de base du modèle cosmologique standard. Les hypothèses d'homogénéité et d'isotropie ont directement conduit à une métrique décrivant un univers avec seulement trois géométries possibles (plat, 3-sphère, 3-hyperboloid) et un facteur d'échelle $a(t)$ affectant les distances. Notez que, grâce à l'imposition des symétries d'homogénéité et d'isotropie, nous avons réduit l'écriture de la métrique $g_{\mu\nu}$ (qui est un tenseur symétrique) constituée a priori de 10 composantes indépendantes inconnues à un tenseur possédant une seule fonction inconnue $a(t)$.
 
@@ -214,18 +212,17 @@ Dans ce cours, nous allons abondamment traiter des distances en cosmologie, et d
 
 :::
 
-Il est important de comprendre la signification physique du facteur d'expansion $a(t)$. Tout d'abord, d'après l'équation [](#FLRW-metric), ce facteur relie la distance propre (physique) $D_p$ et la distance de coordonnées $\sigma$ par $D_p=a(t)\sigma$, dans un espace plat. Une particule dont les coordonnées spatiales $\vec \sigma$ sont fixes verra sa distance physique avec un observateur en $\sigma=0$ augmenter (ou diminuer) avec le temps. Cette variation de la distance se réalise à la vitesse apparente :
+Il est important de comprendre la signification physique du facteur d'expansion $a(t)$. Tout d'abord, d'après l'équation [](#FLRW-metric), ce facteur relie la distance physique $\vec r$ et la distance de coordonnées $\sigma$ par $\vec r=a(t)\vec \sigma$, dans un espace plat. Une particule dont les coordonnées spatiales $\vec \sigma$ sont fixes verra sa distance physique avec un observateur en $\vec \sigma=\vec 0$ augmenter (ou diminuer) avec le temps. Cette variation de la distance se réalise à la vitesse apparente :
 $$
-v_p = \frac{\dd a(t)\sigma}{\dd t} = \dot a \sigma + a \dot \sigma = \frac{\dot a}{a} D_p
+\frac{\dd \vec r}{\dd t} = \frac{\dd a(t)\vec \sigma}{\dd t} = \dot a \vec \sigma + a \dot{\vec \sigma} = \frac{\dot a}{a} \vec r
 $$
-car $\dot \sigma = 0$ si la particule n'a pas de mouvement propre, avec le point $\dot{}$ exprimant une dérivée par rapport au temps $t$. On obtient donc une relation directe entre la distance à un observateur central et la vitesse apparente : c'est la *loi de Hubble*. Le taux d'éloignement est donné par le paramètre de Hubble, qui quantifie la vitesse de variation du facteur d'échelle : 
-:::{math}
-:label: H-def
+car $\dot{\vec \sigma} = \vec 0$ si la particule n'a pas de mouvement propre, avec le point $\;\dot{}\;$ exprimant une dérivée par rapport au temps $t$. On obtient donc une relation directe entre la distance à un observateur central et la vitesse apparente : c'est la *loi de Hubble*. Le taux d'éloignement est donné par le paramètre de Hubble, qui quantifie la vitesse de variation du facteur d'échelle : 
+\begin{equation}
+\label{eq:H-def}
+\boxed{\displaystyle H(t) = \frac{\dot a(t)}{a(t)}}
+\end{equation}
 
-\fbox{$\displaystyle H(t) = \frac{\dot a(t)}{a(t)} $}
-:::
-
-Pour un Univers sphérique, le facteur d'échelle $a(t)$ représente également son rayon de courbure. Un Univers sphérique dynamique correspond donc à un univers possédant un rayon de courbure variable dans le temps. Un espace plat ne possède pas d'échelle caractéristique, la valeur de $a(t)$ n'est donc pas une observable physique. La quantité ayant un sens physique pour un tel univers est le paramètre de Hubble $H(t)$.
+Pour un univers sphérique, le facteur d'échelle $a(t)$ représente également son rayon de courbure. Un univers sphérique dynamique correspond donc à un univers possédant un rayon de courbure variable dans le temps. Un espace plat ne possède pas d'échelle caractéristique, la valeur de $a(t)$ n'est donc pas une observable physique. La quantité ayant un sens physique pour un tel univers est le paramètre de Hubble $H(t)$.
 
 Dans le but d'alléger les notations, la dépendance temporelle des paramètres ne sera pas toujours explicitée, de sorte que $a(t)=a$. On désignera les paramètres évalués au temps présent $t_0$ par l'indice ou l'exposant 0 si bien que $a(t_0)=a_0$. Dans la suite, nous travaillerons dans le système où $a_0$ *n'est pas fixé* à 1. 
 
@@ -261,7 +258,7 @@ En résumé, vivre dans un espace courbé signifie que la relation entre angles 
 :name: fig:triangles_on_sphere 
 :align: center
 
-Prenons deux galaxies: elles forment un triangle avec la Terre, qui, dans une 3-sphère, possède trois angles dont la somme est supérieure à 180°.  Il repose sur une 2-sphère, hyperplan de la 3-sphère (surface $w=cste$). L'intersection avec le plan passant également par ces trois points définit les géodésiques par lesquelles la lumière nous parvient. Pour toute paire de points, on peut ainsi définir un tel triangle reposant sur une 2-sphère (bleu et cyan par exemple).
+Prenons deux galaxies: elles forment un triangle avec la Terre, qui, dans une 3-sphère, possède trois angles dont la somme est supérieure à 180°. 
 ```
 
 :::
@@ -269,29 +266,28 @@ Prenons deux galaxies: elles forment un triangle avec la Terre, qui, dans une 3-
 Coordonnées comobiles
 ---------------------
 
-Il est important de noter que tous les observateurs ne voient pas l'Univers comme isotrope, mais seulement les observateurs dits *comobiles*, qui sont localement au repos avec l'essentiel de la matière dans leur voisinage. Nous, par exemple, ne sommes pas des observateurs mobiles : lorsque nous observons la température du CMB, la première caractéristique que nous voyons est un grand dipôle de température (plus chaud d'un côté, plus froid du côté opposé), qui est le résultat du mouvement particulier de notre système solaire dans la galaxie, et de notre galaxie dans l'Univers (et de notre groupe de galaxies). Si retranche ce mouvement propre par rapport au référentiel du CMB, alors cela ferait de nous des observateurs comobiles. Ainsi, on peut définir un système de coordonnées associés à des observateurs sans mouvements propres, dont les distances propres relatives n'augmentent qu'avec le facteur d'échelle $a(t)$ {cite:p}`Weinberg1972`[p. 409].
+Il est important de noter que tous les observateurs ne voient pas l'Univers comme isotrope, mais seulement les observateurs dits *comobiles*, qui sont localement au repos avec l'essentiel de la matière dans leur voisinage. Nous, par exemple, ne sommes pas des observateurs mobiles : lorsque nous observons la température du CMB, la première caractéristique que nous voyons est un grand dipôle de température (plus chaud d'un côté, plus froid du côté opposé), qui est le résultat du mouvement particulier de notre système solaire dans la galaxie, et de notre galaxie dans l'Univers (et de notre groupe de galaxies). Si on retranche ce mouvement propre par rapport au référentiel du CMB, alors cela ferait de nous des observateurs comobiles. Ainsi, on peut définir un système de coordonnées associés à des observateurs sans mouvements propres, dont les distances propres relatives n'augmentent qu'avec le facteur d'échelle $a(t)$ {cite:p}`Weinberg1972`[p. 409].
 
 Dans la métrique FLRW où l'expansion de l'Univers est factorisée par un facteur d'échelle $a(t)$, les coordonnées spatiales $\vec \sigma$ sont appelées *coordonnées comobiles*. Il existe une grande liberté dans le choix des coordonnées comobiles. 
 
 ### Coordonnées sphériques
 
 On privilégie souvent les coordonnées sphériques $(ct, \sigma, \theta, \phi)$ avec l'observateur (nous-mêmes) à l'origine, telles que :
-:::{math}
-
+\begin{equation}
 \begin{aligned}
 \sigma_1 &= \sigma \sin \theta \cos \phi \\
 \sigma_2 &= \sigma \sin \theta \sin \phi \\
 \sigma_3 &= \sigma \cos \theta
 \end{aligned}
-:::
+\end{equation}
 Après des calculs simples mais longs (voir notebook et [ici](`https://en.wikipedia.org/wiki/Spherical_coordinate_system#Integration_and_differentiation_in_spherical_coordinates`)), dans les trois cas de courbures la métrique FLRW s'écrit :
-:::{math}
-:label: eq:FLRW-metric-spherical
-
+\begin{equation}
+\label{eq:FLRW-metric-spherical}
 \dd s^2=-c^2\dd t^2 + a^2(t) \left( {1 \over 1-k\sigma^2}\dd \sigma^2 + \sigma^2 \dd \theta^2 + \sigma^2 \sin^2 \theta \dd \phi^2\right)
-:::
+\end{equation}
 
 :::{note} Courbure et finitude de l'Univers
+:class: dropdown
 
 Pour la 3-sphère, 3-hyperboloïde et le plan, la courbure de ces surfaces est {cite:p}`Weinberg1972`[p. 412]:
 $$ K(t) = \frac{k}{a^2(t)}$$
@@ -305,11 +301,10 @@ $$L(t) = 2 \pi a(t)$$
 
 ### Coordonnées cartésiennes
 
-Le cas de l'univers plat simplifie beaucoup les calculs qui suivront. Étant donné qu'une courbure nulle est toujours compatible avec les contraintes de plus en plus fortes des observations cosmologiques, nous concentrerons désormais nos développements analytiques sur l'univers plat, en mentionnant des résultats pour le cas général lorsque cela est nécessaire. Dans le cas de courbure nulle, il peut être pratique d'utiliser les coordonnées comobiles cartésiennes $(ct, x, y, z)$, telles que :
-:::{math}
-
+Le cas de l'univers plat simplifie beaucoup les calculs qui suivront. Étant donné que l'hypothèse d'une courbure nulle est compatible avec les contraintes de plus en plus fortes des observations cosmologiques, nous concentrerons désormais nos développements analytiques sur l'univers plat, en mentionnant des résultats pour le cas général lorsque cela est nécessaire. Dans le cas de courbure nulle, il peut être pratique d'utiliser les coordonnées comobiles cartésiennes $(ct, x, y, z)$, telles que :
+\begin{equation}
 \sigma_1  = x,\quad \sigma_2  = y,\quad\sigma_3  = z,\quad\sigma^2  = x^2 + y^2 + z^2
-:::
+\end{equation}
 La métrique FLRW s'écrit dans un univers plat :
 \begin{equation}
 g_{\mu\nu}=\begin{pmatrix} -1 & 0 & 0 & 0 \\ 0 & a^2(t) & 0 & 0 \\ 0&0& a^2(t)&0 \\ 0&0&0&a^2(t) \end{pmatrix}
@@ -319,16 +314,17 @@ g_{\mu\nu}=\begin{pmatrix} -1 & 0 & 0 & 0 \\ 0 & a^2(t) & 0 & 0 \\ 0&0& a^2(t)&0
 Géodésiques dans la métrique FLRW
 ---------------------------------
 
-Quelle est la trajectoire d'une particule en chute libre dans une métrique FLRW ? D'après la Relativité Générale, nous savons qu'une telle particule se déplace le long d'une géodésique dont l'équation est la suivante :
-\begin{equation}\label{geodesic}
+Quelle est la trajectoire d'une particule en chute libre dans une métrique FLRW ? D'après la Relativité Générale, nous savons qu'une telle particule se déplace le long d'une géodésique $x^\mu(s)$ dont l'équation est la suivante :
+\begin{equation}
+\label{geodesic}
 {\dd^2 x^\mu \over \dd  s^2} +\Gamma^{\mu}_{\,\,\nu\kappa} {\dd x^\nu \over \dd  s}{\dd x^\kappa \over \dd  s}=0,
 \end{equation} 
-où $s$ est un paramètre quelconque décrivant la position le long de la géodésique (le temps propre par exemple). Une autre forme de l'équation des géodésiques va ici nous aider, obtenue à partir de l'équation [](#eq:dcov-cov) :
+où $s$ est un paramètre quelconque décrivant la position le long de la géodésique (le temps propre par exemple). Une autre forme de l'équation des géodésiques va ici nous aider, obtenue à partir de la définition de la dérivée covariante [](#eq:dcov-cov) :
 \begin{equation}
-{\dd^2 x_\mu \over \dd  s^2} -\Gamma^{\nu}_{\,\,\mu\kappa} {\dd x_\nu \over \dd  s}{\dd x^\kappa \over \dd  s}=0.
 \label{geodesic-cov}
+{\dd^2 x_\mu \over \dd  s^2} -\Gamma^{\nu}_{\,\,\mu\kappa} {\dd x_\nu \over \dd  s}{\dd x^\kappa \over \dd  s}=0.
 \end{equation} 
-Définissons le vecteur 4-vitesse comobile $U^\mu$ le long d'une ligne d'Univers par $U^\mu = \dd x^\mu / \dd s$. Alors :
+Définissons la quadri-vitesse $U^\mu$ le long d'une ligne d'Univers par $U^\mu = \dd x^\mu / \dd s$. Alors :
 \begin{equation}
 {\dd U_\mu \over \dd  s} = \Gamma^{\nu}_{\,\,\mu\kappa} U_\nu U^\kappa=  \frac{1}{2} \frac{\partial g_{\alpha\beta}}{\partial x^\mu} U^\alpha U^\beta.
 \end{equation} 
@@ -349,24 +345,27 @@ car la métrique est un tenseur symétrique donc ${\partial_\kappa g_{\mu\lambda
 A partir de cette forme de l'équation des géodésiques (voir {cite:p}`hobson2006general`[p. 81] pour une démonstration), calculons la forme que doit prendre le vecteur contravariant $U^\nu$ dans une métrique FLRW pour une particule en chute libre.
 
 Commençons par le cas $\mu=3$ et utilisons les coordonnées sphériques $(\chi,\theta,\phi)$. Comme la métrique FLRW ne dépend pas de $\phi$, alors :
-$${\dd U_3 \over \dd  s} = 0$$
+$$
+\frac{\dd U_3}{\dd s} = 0
+$$
 donc $U_3$ est une constante du mouvement. Or, on a par ailleurs :
-$$U_3 = g_{33} U^3 = a^2(t) f_k^2(\chi) \sin^2 \theta U^3 $$
+$$
+U_3 = g_{33} U^3 = a^2(t) f_k^2(\chi) \sin^2 \theta U^3 $$
 dont l'expression s'annule à l'origine en $\chi=0$. Comme la composante $U_3$ est constante alors elle est identiquement nulle le long de la trajectoire. On en déduit :
 $$U^3 = \frac{\dd \phi }{ \dd s} = 0 \Rightarrow \phi = \text{constante}$$
 
 Passons au cas $\mu=2$. La seule composante de la métrique dépendant de $\theta$ est 
 $g_{33}$ mais $U_3$ est identiquement nul donc :
-$${\dd U_2 \over \dd  s} = \frac{1}{2} \frac{\partial g_{\alpha\beta}}{\partial x^2} U^\alpha U^\beta = \frac{1}{2} \frac{\partial g_{33}}{\partial x^2} U^3 U^3 = 0.$$
+$$\frac{\dd U_2}{\dd s} = \frac{1}{2} \frac{\partial g_{\alpha\beta}}{\partial x^2} U^\alpha U^\beta = \frac{1}{2} \frac{\partial g_{33}}{\partial x^2} U^3 U^3 = 0.$$
 Or de même on a par ailleurs :
 $$U_2 = g_{22} U^2 = a^2(t) f_k^2(\chi) U^2 $$
 qui s'annule en $\chi=0$ donc $U^2$ est nul tout le long de la trajectoire. On en déduit :
 $$U^2 = \frac{\dd \theta }{ \dd s} = 0 \Rightarrow \theta = \text{constante}$$
 
 :::{important}
-Les géodésiques passant par l'origine en coordonnées sphériques sont les trajectoires vérifiant :
+En coordonnées sphériques, les géodésiques passant par l'origine sont les trajectoires vérifiant :
 $$
-\fbox{$\theta=\text{constante},\quad \phi=\text{constante}$}
+\boxed{\theta=\text{constante},\quad \phi=\text{constante}}
 $$
 :::
 
@@ -481,7 +480,7 @@ où $h$ est usuellement défini par :
 $$
 H_0 = 100\,h\,\text{km/s/Mpc}
 $$
-Donc pour $h=0.7$, on trouve $D_H \approx 4.3 \,\text{Gpc}$. Cette valeur va apparaître pour toutes les distances (non comobiles) définies ci-après.
+Donc pour $h=0.7$, on trouve $D_H \approx 4.3 \,\text{Gpc} \approx 14 \,\text{Gly}$. Cette valeur va apparaître pour toutes les distances (non comobiles) définies ci-après.
 
 
 
@@ -585,7 +584,7 @@ Pour se créer une intuition sur la géométrie courbe et les coordonnées comob
 1. Représenter une sphère et tracer le méridien $\theta = 0$. Placer les quantités suivantes : l'observateur, la galaxie, $a(t)$, $\chi$, la distance propre entre l'observateur et la galaxie $D_p$. Relier ces quantités à la coordonnée $\sigma$ et à l'expression de $D_p$.
 
 
-2. Considérons maintenant deux galaxies à la même coordonnées $\chi$, séparées par la distance physique $d$. Montrer que l'angle $\theta$ ($\theta \ll 1$) sous lequel elles sont observées sur la sphère est $\theta = d / (a(t) \sigma)$.
+2. Considérons maintenant deux galaxies à la même coordonnées $\chi$, séparées par la distance physique $l$. Montrer que l'angle $\theta$ ($\theta \ll 1$) sous lequel elles sont observées sur la sphère est $\theta = l / (a(t) \sigma)$.
 
 :::
 
@@ -599,17 +598,17 @@ Pour se créer une intuition sur la géométrie courbe et les coordonnées comob
 \end{equation}
 Notons également que $b$ est le rayon du cercle de colatitude $\chi$ : $b = a(t) \sin \chi$. 
 
-2. Avec la projection polaire, on voit que $\theta$ est l'angle délimitant un arc de taille $d$ et de rayon $b$, le rayon du cercle de latitude de $\chi$. Ainsi :
+2. Avec la projection polaire, on voit que $\theta$ est l'angle délimitant un arc de taille $l$ et de rayon $b$, le rayon du cercle de latitude de $\chi$. Ainsi :
 \begin{equation}
-\theta = \frac{d}{b} = \frac{d}{a(t) \sin \chi} = \frac{d}{a(t) \sigma}
+\theta = \frac{l}{b} = \frac{d}{a(t) \sin \chi} = \frac{d}{a(t) \sigma}
 \end{equation}
 Dans un espace plat, $\sigma$ est clairement la coordonnée radiale de rapprochement entre l'observateur et les galaxies. L'expression de $\theta$ dans le cas sphérique est cohérente avec celle dans le cas plat grâce au paramétrage $\sigma=f_k(\chi)$.
 
 En utilisant la métrique FLRW, avec l'[](#exo:conformal-time) nous avons également :
 \begin{equation}
-d = \int_0^d \dd d' = \int_0^\theta \sqrt{g_{\theta\theta}} a(t)\dd\theta = a(t) \int_0^\theta f_k(\chi) \dd\theta = a(t) \theta \sin\chi = a(t) \theta \sigma
+l = \int_0^d \dd l' = \int_0^\theta \sqrt{g_{\theta\theta}} a(t)\dd\theta = a(t) \int_0^\theta f_k(\chi) \dd\theta = a(t) \theta \sin\chi = a(t) \theta \sigma
 \end{equation}
-Donc $\theta = d / a(t) \sigma$.
+Donc $\theta = l / a(t) \sigma$.
 
 Il est facile de vérifier que nous avons les mêmes expressions dans le cas plat, et nous les admettrons dans la géométrie hyperbolique. La coordonnée $\sigma$ est donc utile pour faire des calculs et des dessins dans le cas plat et traduire ces résultats dans les cas courbes (ce qui n'est pas si facile avec $\chi$).
 
@@ -631,7 +630,7 @@ Ni la distance propre ni la distance comobile ne sont mesurables car elles suppo
 $$
 \Phi = \frac{L}{4\pi D_L^2}, \qquad \delta = \frac{l}{D_A}
 $$
-où $L$ est la luminosité intrinsèque d'un objet (en watts) et $l$ une taille angulaire (en mètres).
+où $L$ est la luminosité intrinsèque d'un objet (en watts) et $l$ une taille physique (en mètres).
 
 :::
 
@@ -670,6 +669,7 @@ $$
 \end{array}
 \right. 
 $$
+
 $$
 D_L(z) = (1+z) \left\lbrace
 \begin{array}{cl}
@@ -744,7 +744,8 @@ Le temps mérite une mention spéciale. Dans notre Univers idéal, sans surdensi
 
 :::{note}
 D'ailleurs, en utilisant le temps conforme $\eta$ défini par $\dd \eta = \dd t / a(t)$, pour un photon on obtient :
-$$\chi = c \int_{\eta_E}^{\eta_0} \dd \eta = c (\eta_0 - \eta_E)$$
+$$
+\chi = c \int_{\eta_E}^{\eta_0} \dd \eta = c (\eta_0 - \eta_E)$$
 donc on reconnait la relation traditionnelle entre distance et temps, mais dans l'espace comobile sans dimension.
 :::
 

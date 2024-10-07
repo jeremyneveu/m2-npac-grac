@@ -119,7 +119,7 @@ $$
 The tensor $g_{\mu\nu}$ describes the geometry of space-time in the new coordinate system $x^\mu$ and replaces the Cartesian metric $\eta_{\mu\nu}$. It is the fundamental object of General Relativity, as it allows us to describe distances traveled in a non-Euclidean (curved) space-time.
 
 
-:::{note} The metric tensor in simple cases
+:::{tip} The metric tensor in simple cases
 
 * Let be a 2D Euclidean space of metric $\eta_{\alpha\beta} = \text{diag}(1, 1)$ of coordinates $\vec X=(x,y)$. Rotate space by an angle $\theta$, passing through coordinates $\vec X'=(x',y')$ by :
 \begin{equation*}
@@ -147,7 +147,7 @@ so the space remains Euclidean after rotation. Equivalently, we could have obtai
 
 * Let be a 2D spherical space of radius $a$. A position on the sphere is given by two angles $\vec \xi = (\theta, \phi)$. An elementary vector $\dd \vec l$ on the sphere has length :
 \begin{equation*}
-\vec l^2 = a^2\dd \theta^2 + a^2 \sin^2 \theta \dd \phi^2
+\dd \vec l^2 = a^2\dd \theta^2 + a^2 \sin^2 \theta \dd \phi^2
 \end{equation*}
 
 ```{figure} ../../images/sphere_gmunu
@@ -157,7 +157,7 @@ so the space remains Euclidean after rotation. Equivalently, we could have obtai
 
 Hence the metric on this curved space:
 \begin{equation*}
-g_{mu\nu} = \begin{pmatrix}
+g_{\mu\nu} = \begin{pmatrix}
 a^2 & 0 \\
 0& a^2\sin^2\theta
 \end{pmatrix}
@@ -227,7 +227,7 @@ The first term corresponds to the ordinary variation of a vector when moved in i
 
 :::{figure} ../../images/covariant_derivative.svg
 
-Illustration of the variation of a vector $A^\mu$ (cyan) in the vicinity of a base $(e_\mu, e_\nu)$ of a curved space. Following a displacement in its neighborhood (here along $e_\mu$), the vector changes size (first term of the covariant derivative) and so does the basis that defines its projections and hence its coordinates. The covariant derivative calculates the variation in the components of vector $A^\mu$ due to these two changes.
+Illustration of the variation of a vector $V^\mu$ (cyan) in the vicinity of a base $(e_\mu, e_\nu)$ of a curved space. Following a displacement in its neighborhood (here along $e_\mu$), the vector changes size (first term of the covariant derivative) and so does the basis that defines its projections and hence its coordinates. The covariant derivative calculates the variation in the components of vector $V^\mu$ due to these two changes.
 ::: 
 
 This definition of the derivative in General Relativity correctly expresses the variation of a vector along a coordinate in curved space. This variation vector is transformed in the same way as a contravariant vector by a coordinate change (unlike the usual derivative): the variation vector $V^\nu{}_{;\mu}$ is therefore correctly defined for any coordinate system. 

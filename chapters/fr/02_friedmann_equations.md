@@ -16,7 +16,7 @@ Le tenseur énergie-impulsion
 
 :::{figure} ../../images/tmunu_def.svg
 
-Le tenseur-énergie impulsion représente les flux de 4-impulsions $p^\mu$ et la densité d'énergie $\epsilon$ dans un volume local d'espace-temps. Si le système est soumis à aucune force hormis la gravitation, alors on l'équation de conservation $T^{\mu\nu}_{\;\;\;;\mu}=0$.
+Le tenseur-énergie impulsion représente les flux de 4-impulsions $p^\mu$ et la densité d'énergie $\epsilon$ dans un volume local d'espace-temps. Si le système physique étudié dans ce volume local n'est soumis à aucune force qui travaille hormis la gravitation, alors on a l'équation de conservation $T^{\mu\nu}_{\;\;\;;\mu}=0$.
 :::
 
 Le tenseur énergie-impulsion $T^{\mu\nu}$ de l'équation d'Einstein décrit la densité d'énergie et les flux de quantités de mouvements en mécanique relativiste. C'est un tenseur d'ordre 2, construit à partir du vecteur 4-impulsion, qui prend la forme suivante :
@@ -41,11 +41,17 @@ T^{00}= \text{energy density}\,\,\,\,
 \end{pmatrix}
 \label{stress-energy-tensor-meaning}
 \end{equation}
-Si le système est soumis à aucune force hormis la gravitation, alors on l'équation de conservation $T^{\mu\nu}_{\;\;\;;\mu}=0$, C'est un jeu de quatre équations qui réprésente l'équation de conservation locale de l'énergie et de l'impulsion.
+Si le système physique étudié dans ce volume local n'est soumis à aucune force qui travaille hormis la gravitation, alors on l'équation de conservation $T^{\mu\nu}_{\;\;\;;\mu}=0$, C'est un jeu de quatre équations qui représentent l'équation de conservation locale de l'énergie et de l'impulsion. 
+
+Quelques remarques sur les composantes de ce tenseur :
+* $T^{00}$ est la densité d'énergie $\epsilon$ locale, généralement c'est la composante dominante du tenseur énergie-impulsion;
+* $T^{ii}$ représentent les flux de quantité de mouvement à travers une surface donc la pression cinétique $P$ exercée par le système physique dans la direction $\vec e_i$;
+* $T^{ij},\ i \neq j$ représentent les flux d'impulsions latéralement aux déplacements, donc des phénomènes de viscosité ou de cisaillement.
 
 :::{note} Tenseur énergie-impulsion en Relativité Restreinte
+:class: dropdown
 
-Pour un ensemble de $n$ particules, la densité de 4-impulsion $p^\alpha$ est définie par {cite:p}`Weinberg1972`[p. 43]:
+Pour un ensemble de $n$ particules, la densité de quadri-impulsion $p^\alpha$ est définie par {cite:p}`Weinberg1972`[p. 43]:
 $$
 T^{\alpha 0}(t, \vec x) = \sum_n p_n^{\alpha}c \delta^3(\vec x - \vec x_n(t))
 $$
@@ -65,16 +71,16 @@ $$
 
 :::
 
-Or dans notre hypothèse d'Univers de symétrie maximale, rappelons tout d'abord qu'on peut définir un temps cosmique, universel,  en utilisant l'évolution physique de l'Univers comme une horloge (densité de matière, température du CMB...). Les hypersurfaces de l'espace-temps paramétrées par ce temps universel sont alors eux-mêmes des sous-espaces de symétrie maximale. Les tenseurs représentants des observables cosmologiques de tels sous-espaces de symétrie maximale doivent alors être de _forme invariante_ c'est-à-dire qu'ils doivent prendre les mêmes valeurs à une date $t$ quelque soit le choix du système de coordonnées choisi (si on passe de $x^\mu$ à $x'^\mu$, on doit retrouver $T^{\mu\nu} = T'^{\mu\nu}$ pour retrouver la même densité d'énergie) {cite:p}`Weinberg1972`[p. 408]. On peut démontrer alors une propriété importante concernant la forme que doivent prendre les tenseurs de ces sous-espaces {cite:p}`Weinberg1972`[p. 392].
+Or dans notre hypothèse d'Univers de symétrie maximale, rappelons tout d'abord qu'on peut définir un temps cosmique, universel,  en utilisant l'évolution physique de l'Univers comme une horloge (densité de matière, température du CMB...). Les hypersurfaces de l'espace-temps paramétrées par ce temps universel sont alors eux-mêmes des sous-espaces de symétrie maximale. Les tenseurs représentants des observables cosmologiques de tels sous-espaces de symétrie maximale doivent alors être de _forme invariante_ c'est-à-dire qu'ils restent les mêmes fonctions des coordonnées à une date $t$ quelque soit le choix du système de coordonnées choisi : si on passe de $x^\mu$ à $x'^\mu$, on doit retrouver $T^{\mu\nu}(x^\rho) = T^{\mu\nu}(x'^\rho)$ (pour retrouver la même densité d'énergie) {cite:p}`Weinberg1972`[p. 408]. On peut démontrer alors une propriété importante concernant la forme que doivent prendre les tenseurs de ces sous-espaces {cite:p}`Weinberg1972`[p. 392].
 
-:::{prf:property} Forme des tenseurs de forme invariante
+:::{important} Structure des tenseurs de forme invariante
 Un tenseur de forme invariante dans un espace de symétrie maximale :
 - est constant si c'est un scalaire,
 - est nul si c'est un vecteur,
 - est proportionnel au tenseur métrique si c'est un tenseur d'ordre 2.
 :::
 
-Par conséquent, mathématiquement on peut introduire $\epsilon(t)$ et $p(t)$ deux fonctions telles que le tenseur énergie-impulsion se simplifie en :
+Par conséquent, mathématiquement on peut introduire $\epsilon(t)$ et $P(t)$ deux fonctions telles que le tenseur énergie-impulsion se simplifie en :
 $$\begin{align}
 T^{00} & =  \epsilon(t)\quad  \text{(scalaire)} \\
 T^{i0} & = T_{0i} = 0 \quad  \text{(vecteur)} \\
@@ -84,41 +90,55 @@ T^{ij} & =  P(t) \gamma^{ij}\quad \text{(tenseur d'ordre 2)}
 De manière plus élégante, on peut introduire le vecteur $U^\mu$ défini par :
 $$ U^0 = 1, \quad U^i = 0 $$
 et obtenir une écriture compacte pour le tenseur énergie-impulsion d'un Univers homogène et isotrope :
-:::{math}
-:label: eq:def-Tmunu2
+\begin{equation}
+\label{eq:def-Tmunu2}
 T^{\mu\nu} = (\epsilon + P) U^\mu U^\nu + P g^{\mu\nu}
-:::
-
-:::{math}
-:label: eq:def-Tmunu
-T^{\mu\nu} = (\epsilon + P) U^\mu U^\nu + P g^{\mu\nu} = \begin{pmatrix}
+\end{equation}
+En utilisant la métrique FLRW, solution d'un univers homogène et isotrope également, le tenseur énergie-impulsion s'écrit :
+\begin{equation}
+\label{eq:def-Tmunu}
+T^{\mu\nu} = (\epsilon + P) U^\mu U^\nu + P g^{\mu\nu} = 
+\begin{pmatrix}
 -\epsilon g^{00} & 0 & 0 & 0 \\
 0 & P g^{11} & 0 & 0 \\ 
 0 & 0 & P g^{22} & 0 \\ 
 0 & 0 & 0 & P g^{33}  \\ 
 \end{pmatrix} 
-:::
+\end{equation}
 
-Comment interpréter ces considérations mathématiques ? Tout d'abord, si on compare l'équation [](#eq:def-Tmunu) avec [](#stress-energy-tensor-meaning) alors on identifie $\epsilon$
-à la densité d'énergie et $p$ à la pression cinétique (flux de quantité de mouvement à travers une surface). Enfin, le tenseur énergie-impulsion $T^{\mu\nu}$ s'identifie à celui d'un <wiki:perfect_fluid>. Cela signifie que dans un Univers homogène et isotrope la matière peut être décrite comme un milieu continu, dont le mouvement peut être décrit sans prendre en compte des effets de viscosité et de conduction thermique (il est donc adiabatique). Aussi $U^\mu$ s'identifie alors à la 4-vitesse comobile du fluide, donc le fait que $U^i = 0$ montre que le système physique étudié est au repos dans les coordonnées comobiles, comme attendu. 
+Dans une base cartésienne et un espace plat, le tenseur énergie-impulsion prend la forme simple :
+\begin{equation}
+\label{eq:tmunu_fluide}
+T^{\mu\nu}  =  
+\begin{pmatrix}
+\epsilon & 0 & 0 & 0 \\
+0 & P/a^2(t) & 0 & 0 \\ 
+0 & 0 & P/a^2(t) & 0 \\ 
+0 & 0 & 0 & P/a^2(t)  \\ 
+\end{pmatrix}.
+\end{equation}
+
+Comment interpréter ces considérations mathématiques ? Tout d'abord, si on compare l'équation [](#eq:def-Tmunu) avec [](#stress-energy-tensor-meaning) alors on identifie $\epsilon$ à la densité d'énergie et $P$ à la pression cinétique (flux de quantité de mouvement à travers une surface). Enfin, le tenseur énergie-impulsion $T^{\mu\nu}$ s'identifie à celui d'un <wiki:perfect_fluid>. Cela signifie que dans un Univers homogène et isotrope la matière peut être décrite comme un milieu continu, dont l'évolution peut être décrite sans prendre en compte des effets de viscosité et de conduction thermique. _L'évolution thermodynamique de l'Univers est donc adiabatique._ Aussi $U^\mu$ s'identifie alors à la quadri-vitesse comobile du fluide, donc le fait que $U^i = 0$ montre que le système physique étudié est au repos dans les coordonnées comobiles, comme attendu. 
+
 
 :::{note} Tenseur énergie-impulsion d'un fluide parfait {cite:p}`Weinberg1972`[p. 48]
+:class: dropdown
 
-Étudions un fluide parfait, c'est-à-dire un ensemble de particules dont le libre parcours moyen est petit devant les distances  auxquelles on l'étudie, et sans viscosité. Etant donné la définition d'un tenseur énergie-impulsion, dans le référentiel $\mathcal{R}'$ où
-le fluide parfait est au repos on peut écrire :
+Étudions un fluide parfait, c'est-à-dire un ensemble de particules dont le libre parcours moyen est petit devant les distances  auxquelles on l'étudie, et sans viscosité. Étant donné la définition d'un tenseur énergie-impulsion, dans le référentiel $\mathcal{R}'$ où le fluide parfait est au repos on peut écrire :
 $$ T'^{ij} = P \delta^{ij}, \quad T'^{i0} = T'^{0i} = 0, \quad T'^{00} = \rho c^2 $$
-où explicitement $\rho$ est la densité _massique_ propre du fluide et $p$ sa pression cinétique (donc un flux de quantité de mouvement à travers une surface). Dans un autre référentiel, celui d'un observateur de l'écoulement par exemple, ce tenseur énergie-impulsion se réécrit :
+où explicitement $\rho$ est la densité _massique_ propre du fluide et $P$ sa pression cinétique (donc un flux de quantité de mouvement à travers une surface). Dans un autre référentiel, celui d'un observateur de l'écoulement par exemple, ce tenseur énergie-impulsion se réécrit :
 $$ T^{\mu\nu} = \Lambda^{\mu}_{\;\alpha} \Lambda^{\nu}_{\;\beta} T^{\alpha\beta} $$
 avec $\Lambda^\mu_{\;\alpha}$ la transformation de Lorentz définie par l'équation [](#eq:lorentz2). Plus explicitement :
 $$ T^{ij} = P \delta^{ij} + (P + \rho c^2) \frac{v^i v^j}{c^2- v^2}, \quad T^{i0} = (P + \rho c^2) \frac{c v ^i}{c^2  - v^2}, \quad T^{00} = \frac{\rho c^4  + P v^2}{c^2  - v^2} $$
-Définissons la quatre vitesse en coordonnées comobiles ainsi :
+
+Définissons la quadri-vitesse en coordonnées comobiles ainsi :
 $$ \vec U =\frac{ \dd \vec x }{c \dd \tau} = \frac{\vec v / c }{ \sqrt{1-v^2}}, \quad U^0 = \frac{\dd t }{\dd  \tau} =  \frac{1 }{ \sqrt{1-v^2}}, \quad U_ \mu U ^\mu = -c^2  $$
 alors le tenseur s'écrit :
-$$T^{\mu\nu} = (\rho c^2 + P) U^\mu U^\nu + P \eta^{\mu\nu}$$
+$$ T^{\mu\nu} = (\rho c^2 + P) U^\mu U^\nu + P \eta^{\mu\nu}$$
 
 L'équation [](#eq:def-Tmunu) correspond donc bien à la définition d'un tenseur énergie-impulsion pour un fluide parfait dans le cadre relativiste.
 
-Remarquons que dans un espace-temps plat, la conservation du tenseur énergie-impulsion d'un fluide parfait permet de retrouver l'équation de Navier-Stokes sans viscosité et sans forces extérieures, et l'équation de conservation de la matière. Pour simplifier, ramenons-nous au cas d'un fluide incompressible donc $\dd \rho / \dd t = 0$ et non relativiste donc $p / \rho c^2 \propto (v/c)^2 \ll 1$. Alors :
+Remarquons que dans un espace-temps plat, la conservation du tenseur énergie-impulsion d'un fluide parfait permet de retrouver l'équation de Navier-Stokes sans viscosité et sans forces extérieures, et l'équation de conservation de la matière. Pour simplifier, ramenons-nous au cas d'un fluide incompressible donc $\dd \rho / \dd t = 0$ et non relativiste donc $P / \rho c^2 \propto (v/c)^2 \ll 1$. Alors :
 $$ 0 = \frac{\partial T^{\mu\nu}}{\partial x^\beta} \Rightarrow
 \left\lbrace\begin{align*}
 & \alpha = i:\ & 0 = & \vec\nabla P + \rho \frac{\partial \vec v}{\partial t} +  \rho (\vec v \cdot \vec\nabla)(\vec v)  \\
@@ -127,17 +147,6 @@ $$ 0 = \frac{\partial T^{\mu\nu}}{\partial x^\beta} \Rightarrow
 $$
 
 :::
-
-Dans une base cartésienne, le tenseur énergie-impulsion prend la forme simple :
-$$
-T_{\mu\nu}  =  
-\begin{pmatrix}
-\epsilon & 0 & 0 & 0 \\
-0 & P a^2(t) & 0 & 0 \\ 
-0 & 0 & P a^2(t) & 0 \\ 
-0 & 0 & 0 & P a^2(t)  \\ 
-\end{pmatrix}.\label{eq:tmunu_fluide}
-$$
 
 
 Les équations de Friedmann
@@ -163,9 +172,7 @@ g^{\mu\nu} = \begin{pmatrix}
 \end{pmatrix}.
 $$
 
-En utilisant la métrique FLRW
-[](#eq:flrw),
-calculons pour l'exemple la connexion affine suivante à partir de l'équation [](#eq:connexion):
+En utilisant la métrique FLRW [](#eq:flrw), calculons pour l'exemple la connexion affine suivante à partir de l'équation [](#eq:connexion):
 $$
 \begin{aligned}
 \Gamma^1_{\ 01} & = \frac{1}{2} g^{1 \mu} \left( \partial_0 g_{1\mu} + \partial_1 g_{0 \mu} - \partial_\mu g_{01} \right) \\
@@ -211,6 +218,7 @@ $$
 $$
 
 :::{exercise}
+:label: exo:friedmann
 
 In this exercise, we use the FLRW metric in cartesian coordinates, and the corresponding stress energy tensor for a perfect fluid:
 \begin{equation}
@@ -233,8 +241,20 @@ R &= g^{\mu\nu}R_{\mu\nu}
 with $_{,\mu}$ the derivative $\partial / \partial x^\mu$.
 
 
-Show that $\Gamma^0_{\ ij} = \dot{a}a/c \delta_{ij}$ and $\Gamma^j_{\ 0i}=\dot{a}/(ac)\delta^j_i$, with the latin index standing for the spatial coordinates $i=1,2,3$. The other Christoffel symbols are null.
+1. Show that $\Gamma^0_{\ ij} = \dot{a}a/c \delta_{ij}$ and $\Gamma^j_{\ 0i}=\dot{a}/(ac)\delta^j_i$, with the latin index standing for the spatial coordinates $i=1,2,3$. The other Christoffel symbols are null.
+2. Show that $R_{00}=3\ddot{a}/(ac^2)$ and $R_{ij}=-(\ddot{a}a+2\dot{a}^2)\delta_{ij}/c^2$.
+3. Show that $R=-6\left(\ddot{a}/a+(\dot{a}/a)^2\right)/c^2$ and finally that $G_{\mu\nu}=R_{\mu\nu}-g_{\mu\nu}R/2$ is:
+\begin{equation}
+G_{\mu\nu}={1 \over c^2}\begin{pmatrix} 3{\dot{a}^2\over a^2} & 0 & 0 & 0 \\ 0 &-2\ddot{a}a-\dot{a}^2 & 0 & 0 \\ 0&0& -2\ddot{a}a-\dot{a}^2 &0 \\ 0&0&0&-2\ddot{a}a-\dot{a}^2  \end{pmatrix}
+\label{Einstein-cosmo-tensor}
+\end{equation}
+4. Write the two Friedmann equations in term of the Hubble parameter $H=\dot{a}/a$ instead of $a$.
+5. From the two Friedmann equations, find the energy conservation equation law $\dot{\rho} c^2 = -3 H(\rho c^2 + P)$.
 
+:::{solution} exo:friedmann
+:class: dropdown
+
+1. Let's compute the Christoffel symbols:
 \begin{align}
 \Gamma^{0}_{\mu\nu} & = \frac{1}{2}g^{0\lambda}\left( g_{\mu\lambda,\nu}+g_{\lambda\nu,\mu}-g_{\mu\nu,\lambda} \right) \\
  & = \frac{1}{2}g^{00}\left( g_{\mu 0,\nu}+g_{0\nu,\mu}-g_{\mu\nu,0} \right) \\
@@ -257,9 +277,7 @@ with $\delta_{ij}$ the Kronecker symbol such that $\delta_{ij}=1$ only if $j=i$.
 \end{align}
 with $\delta^j_i$ the identity matrix ($\delta^i_i = 3$, but $\delta_{ii}=1$).
 
-
-Show that $R_{00}=3\ddot{a}/(ac^2)$ and $R_{ij}=-(\ddot{a}a+2\dot{a}^2)\delta_{ij}/c^2$.
-
+2. Now the Ricci tensors :
 \begin{align}
 R_{00} & = -\Gamma^\rho_{\ 00,\rho} + \Gamma^\rho_{\ 0\rho,0} - \Gamma^\rho_{\ \rho\lambda}\Gamma^\lambda_{\ 00} + \Gamma^\rho_{\ 0\lambda}\Gamma^\lambda_{\ 0\rho} \\
 & = 0 + \Gamma^\rho_{\ 0\rho,0} + 0 + \Gamma^\rho_{\ 0\lambda}\Gamma^\lambda_{\ 0\rho} \\
@@ -277,12 +295,7 @@ R_{ij} & = -\Gamma^\rho_{\ ij,\rho} + \Gamma^\rho_{\ i\rho,j} - \Gamma^\rho_{\ \
 \end{align}
 with $\delta_{ik}\delta^k_j=\delta_{ij}$ and $\delta^k_k=3$.
 
-Show that $R=-6\left(\ddot{a}/a+(\dot{a}/a)^2\right)/c^2$ and finally that $G_{\mu\nu}=R_{\mu\nu}-g_{\mu\nu}R/2$ is:
-\begin{equation}
-G_{\mu\nu}={1 \over c^2}\begin{pmatrix} 3{\dot{a}^2\over a^2} & 0 & 0 & 0 \\ 0 &-2\ddot{a}a-\dot{a}^2 & 0 & 0 \\ 0&0& -2\ddot{a}a-\dot{a}^2 &0 \\ 0&0&0&-2\ddot{a}a-\dot{a}^2  \end{pmatrix}
-\label{Einstein-cosmo-tensor}
-\end{equation}
-
+3. Now the Einstein tensor :
 From the Einstein equation $G_{\mu\nu} - \Lambda g_{\mu\nu} = -8\pi G T_{\mu\nu}/c^4$ write the Friedmann equations:
 \begin{equation} \left\lbrace
 \begin{array}{l}
@@ -322,8 +335,7 @@ G_{\mu\nu} - \Lambda g_{\mu\nu}  = -\frac{8\pi G_N}{c^4}T_{\mu\nu}
 \label{align}
 \end{align}
 
-
-Write the two Friedmann equations in term of the Hubble parameter $H=\dot{a}/a$ instead of $a$.
+4. Using $H=\dot a / a$:
 \begin{equation} \left\lbrace
 \begin{array}{l}
    \displaystyle{3 H^2+ \frac{3kc^2}{a^2} = 8\pi G_N \rho + c^2\Lambda} \\
@@ -333,15 +345,14 @@ Write the two Friedmann equations in term of the Hubble parameter $H=\dot{a}/a$ 
 \end{equation}
 using $\ddot{a}/a=\dot{H}+H^2$. 
 
-From the two Friedmann equations, find the energy conservation equation law $\dot{\rho} c^2 = -3 H(\rho c^2 + p )$.
-
+5. And finally the energy-momentum tensor conservation:
 \begin{align}
 8\pi G \dot{\rho} & = 6\dot{H}H - \frac{6c^2 k \dot{a}}{a^3} \\
 & = 3H \left[-8\pi G_N P / c^2 + c^2 \Lambda - 3 H^2 - \frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
 & = 3H \left[-8\pi G_N P / c^2 -8 \pi G_N \rho + 2\frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
 & = 3H \left[-8\pi G_N P / c^2 -8 \pi G_N \rho \right]
 \end{align}
-and $\dot{\rho} c^2 = -3 H(\rho c^2 + p )$. 
+and $\dot{\rho} c^2 = -3 H(\rho c^2 + P)$. 
 This is the same result as in the $T^{\beta \alpha}_{\,\,\,\,\,\,;\alpha}=0$ computation (as expected).
 
 
@@ -359,10 +370,10 @@ A partir du premier principe de la thermodynamique et de l'équation [](#eq:cons
 
 $$\dd U = T \dd S - P \dd V $$
 $$U = a^3 \epsilon, \quad V = a^3$$
-$$ \dd(a^3 \epsilon) = - P \dd (a^3) + T \dd S \Rightarrow 3 \dot{a} a^2 \epsilon + a^3 \dot{\epsilon} = - 3 p \dot{a} a^2  + T \frac{\dd S}{\dd t}\Rightarrow \dot{\epsilon} = -3\frac{\dot{a}}{a}(p+\epsilon) +T \frac{\dd S}{\dd t} $$
+$$ \dd(a^3 \epsilon) = - P \dd (a^3) + T \dd S \Rightarrow 3 \dot{a} a^2 \epsilon + a^3 \dot{\epsilon} = - 3 P \dot{a} a^2  + T \frac{\dd S}{\dd t}\Rightarrow \dot{\epsilon} = -3\frac{\dot{a}}{a}(P+\epsilon) +T \frac{\dd S}{\dd t} $$
 Donc 
 $$\frac{\dd S}{\dd t} = 0$$
-et l'expansion est isentropique. C'est attendu étant donné que pour un Univers homogène et isotrope le tenseur énergi-impulsion est celui d'un fluide parfait donc sans viscosité ni transfert de chaleur.
+et l'expansion est isentropique. C'est attendu étant donné que pour un Univers homogène et isotrope le tenseur énergie-impulsion est celui d'un fluide parfait donc sans viscosité ni transfert de chaleur. L'évolution est donc adiabatique ($\delta Q=0$).
 :::
 
 
@@ -389,13 +400,15 @@ Cette  dernière relation traduit bien le fait que si une boîte de côté $a$ c
 Pour la matière relativiste (photons, neutrinos), 
 $$P_r =  \frac{1}{3} \epsilon_r,$$
 donc :
-$$\label{eq:conservation_energie_radiation}
+$$
+\label{eq:conservation_energie_radiation}
 \dot{\epsilon}_r = -4 H\epsilon_r \Rightarrow \epsilon_r = \epsilon_r^0 \left(\frac{a_0}{a}\right)^{4}.
 $$ 
 Le raisonnement avec une boîte cubique de côté $a$ s'applique aussi ici, mais si toutes les longueurs doublent, alors la longueur d'onde du rayonnement aussi donc son énergie est divisée par 2. On retrouve bien une diminution de la densité d'énergie de rayonnement en $2^4$.
 
 
 :::{note} Equation d'état du gaz parfait
+
 Pour un gaz parfait, on rappelle que l'équation d'état est :
 $$ P = \rho_n k_B T  $$
 avec $T$ sa température, $\rho_n$ la densité particulaire et $k_B$ la constante de Boltzmann.
@@ -407,15 +420,16 @@ Pour un gaz d'hydrogène, $T \ll 10^{12}\,$K. Donc on voit que la matière telle
 
 
 :::{note} Hypothèse de non interaction
+:class: dropdown
 
-Nous avons utilisé l'équation [](#eq:conservation_energie) pour en déduire que la matière non relativiste possède une densité qui évolue en $a^{-3}$ alors que la matière relativiste évolue en $a^{-4}$. Le lecteur attentif aura peut-être remarqué que la densité et la pression de l'équation [](#eq:conservation_energie) sont pourtant la somme des densités et pressions relativistes et non relativistes. Est-ce que dans un Univers possédant ces deux composantes les équations [](#eq:conservation_energie_matiere)et [](#eq:conservation_energie_radiation) sont-elles encore valables ?
+Nous avons utilisé l'équation [](#eq:conservation_energie) pour en déduire que la matière non relativiste possède une densité qui évolue en $a^{-3}$ alors que la matière relativiste évolue en $a^{-4}$. Le lecteur attentif aura peut-être remarqué que la densité et la pression de l'équation [](#eq:conservation_energie) sont pourtant la somme des densités et pressions relativistes et non relativistes. Est-ce que dans un Univers possédant ces deux composantes les équations [](#eq:conservation_energie_matiere) et [](#eq:conservation_energie_radiation) sont-elles encore valables ?
 
 L'équation [](#eq:conservation_energie) peut se déduire d'un raisonnement thermodynamique qui peut nous être utile ici. L'expansion de l'Univers étant adiabatique, la variation d'entropie liée à l'expansion est nulle donc $\dd S = 0$. Le premier principe de la thermodynamique sur un volume $V$ d'Univers donne :
 $$\label{eq:conservation_energie_thermo}
 \dd U = -P \dd V + T \dd S \Leftrightarrow \dd \left(\epsilon_m V + \epsilon_r V  \right) = -\frac{1}{3}\epsilon_r \dd V$$
 Si les deux composantes n'interagissent pas entre elles, alors cette dernière équation peut se scinder en ses deux composantes,  comme deux systèmes thermodynamiques indépendants :
 $$\dd \left(\epsilon_m V\right) = 0, \quad \dd \left(\epsilon_r V  \right) = -\frac{1}{3}\epsilon_r \dd V$$
-Si elles interagissaient, ceci ne serait pas vrai. De ceux deux équations, on en déduit de nouveau les équations [](#eq:conservation_energie_matiere) et [](#eq:conservation_energie_radiation).
+Si elles interagissaient, ceci ne serait pas vrai. De ces deux équations, on en déduit de nouveau les équations [](#eq:conservation_energie_matiere) et [](#eq:conservation_energie_radiation).
 
 :::
 
@@ -431,12 +445,11 @@ $$\epsilon_\Lambda(t) = \rho_\Lambda c^2 =  \frac{c^4 \Lambda}{8\pi G_N} = \text
 On voit que la densité d'énergie associée à la constante cosmologique étant constante dans le temps, cette dernière possède un comportement bien singulier : quelque soit la taille de l'Univers, il y a toujours autant d'énergie par unité de volume. Elle n'est donc pas diluée comme toute énergie ordinaire lorsque celui-ci est en expansion. De plus, grâce à la seconde équation de Friedmann, on voit que la pression associée à la constante cosmologique serait 
 $$P_\Lambda = - \epsilon_\Lambda,$$
 soit une pression négative ! Dans la physique ordinaire, un des rares phénomènes où interviennent des pressions négatives est la cavitation (<wiki:Pressure#Negative_pressures). En posant $\rho_{\mathrm{tot}}=\rho + \rho_\Lambda$ (et $p_{\mathrm{tot}}=p + p_\Lambda$) puis en combinant les deux équations de Friedmann [](#eq:friedmann) de façon à éliminer le terme de courbure, on  obtient :
-\begin{equation}\label{eq:ddota}
+\begin{equation}
+\label{eq:ddota}
 2\dot{H} + 2H^2 = \frac{2\ddot{a}}{a} = -\frac{8\pi G_N}{3}\left( \epsilon _{\mathrm{tot}} + 3P_{\mathrm{tot}}\right).
 \end{equation}
-On constate que l'expansion de l'Univers s'accélère ($\ddot{a}>0$) si
-$P_{\mathrm{tot}}<-\epsilon_{\mathrm{tot}}/3$. L'Univers étant constitué
-essentiellement de matière non relativiste et de rayonnement, la condition précédente devient équivalente à 
+On constate que l'expansion de l'Univers s'accélère ($\ddot{a}>0$) si $P_{\mathrm{tot}}<-\epsilon_{\mathrm{tot}}/3$. L'Univers étant constitué essentiellement de matière non relativiste et de rayonnement, la condition précédente devient équivalente à 
 $$
 \ddot{a} > 0 \Leftrightarrow \epsilon_\Lambda > \epsilon_r + \epsilon_m/2$$
 En conclusion, si la constante cosmologique domine le contenu en énergie de l'Univers, alors elle engendre une telle pression négative que ce dernier entre en _expansion accélérée_.
@@ -452,20 +465,20 @@ $$\left[ g_{\mu\nu} \right] = [1,\mathsf{L}^{2},\mathsf{L}^{2},\mathsf{L}^{2}] $
 
 ### Courbure
 
-
 La densité d'énergie associée à l'énergie de courbure s'identifie à : 
 $$\epsilon_k(t) =\rho_k(t) c^2 = - \frac{3 c^4 k  }{8\pi G_N a^2(t)}.$$
 De même, son effet en terme de pression est :
 $$P_k = \frac{c^4 k}{8\pi G_N a^2(t)}.$$
+
 
 Les paramètres cosmologiques
 ----------------------------
 
 ### Paramètres d'équation d'état
 
-
 L'équation d'état $w$ associée à une composante de l'Univers est définie par le rapport de sa pression et de sa densité d'énergie
-$$\label{eq:def-w}
+$$
+\label{eq:def-w}
 \fbox{$w=P/\epsilon.$}
 $$
 
@@ -484,16 +497,23 @@ $$
 ### Paramètres de densité d'énergie
 
 On peut définir une densité critique, qui correspondrait à la densité que l'on doit avoir dans un univers homogène et isotrope en expansion de courbure spatiale nulle (cf équation [](#eq:friedmann)) : 
-$$\rho_c(t) = \frac{3H^2(t)}{8\pi G_N}.$$ 
+$$
+\rho_c(t) = \frac{3H^2(t)}{8\pi G_N}.$$ 
 Il est commode de définir aussi sa valeur actuelle :
-$$\rho_{c}^0 = \frac{3H^2_0}{8\pi G_N} = 1.1 \times 10^{-29} \left( \frac{H_0}{75\text{ km/s/Mpc}}\right)^2\text{ g/cm}^3 \approx 6 \text{ protons/m}^3.$$
+$$
+\rho_{c}^0 = \frac{3H^2_0}{8\pi G_N} = 1.1 \times 10^{-29} \left( \frac{H_0}{75\text{ km/s/Mpc}}\right)^2\text{ g/cm}^3 \approx 6 \text{ protons/m}^3.$$
 où $H_0$ est la constante de Hubble.
 
 On définit les paramètres de densité (sans dimension) en normalisant les densités d'énergie par la densité critique, soit :
-$$\Omega_m(t) = \frac{\rho_m(t)}{\rho_c(t)},\quad \Omega_\Lambda(t) = \frac{c^2 \Lambda}{3H^2(t)}, \quad \Omega_k(t) = -\frac{c^2 k}{a^2(t)H^2(t)}$$
-$$\Omega_m^0 = \frac{\rho_m^0}{\rho_c^0},\quad \Omega_\Lambda^0 = \frac{c^2 \Lambda}{3H^2_0}, \quad \Omega_k^0 = -\frac{c^2 k}{a_0^2 H^2_0}.$$
+$$
+\Omega_m(t) = \frac{\rho_m(t)}{\rho_c(t)},\quad \Omega_\Lambda(t) = \frac{c^2 \Lambda}{3H^2(t)}, \quad \Omega_k(t) = -\frac{c^2 k}{a^2(t)H^2(t)}
+$$
+$$
+\Omega_m^0 = \frac{\rho_m^0}{\rho_c^0},\quad \Omega_\Lambda^0 = \frac{c^2 \Lambda}{3H^2_0}, \quad \Omega_k^0 = -\frac{c^2 k}{a_0^2 H^2_0}.
+$$
 La première équation de Friedmann s'écrit alors simplement :
-$$\label{eq:omega_sum}
+$$
+\label{eq:omega_sum}
 1 = \Omega_m(t) + \Omega_r(t) + \Omega_\Lambda(t) + \Omega_k(t)
 $$
 
@@ -504,30 +524,33 @@ $$
 Ce modèle d'Univers liant la prédiction de son expansion $\bar H(z)$ à son contenu composé d'une constante cosmologique, de matière et de radiation, est appelé modèle $\Lambda$CDM ($\Lambda$ pour la constante cosmologique et CDM pour *Cold Dark Matter*) dans le cas $k=0$ (Univers plat). C'est le modèle standard de la cosmologie.
 
 Dans le cadre d'un Univers plat, les valeurs mesurées par le satellite _Planck_  combinées aux supernovae de type Ia et les oscillations acoustiques de baryons donnent [](doi:10.1051/0004-6361/201833910) :
-$$\label{eq:omegas_planck}
-\Omega_m^0 = 0.3111 \pm 0.0056, \quad \Omega_\Lambda^0 = 0.6889 \pm 0.0056$$ pour un Univers plat. Si la courbure est un paramètre libre (on parle d'extension au modèle standard $\Lambda$CDM), on mesure :
-$$\Omega_k^0 = 0.0007\pm 0.0037$$
+$$
+\label{eq:omegas_planck}
+\Omega_m^0 = 0.3111 \pm 0.0056, \quad \Omega_\Lambda^0 = 0.6889 \pm 0.0056
+$$
+pour un Univers plat. Si la courbure est un paramètre libre (on parle d'extension au modèle standard $\Lambda$CDM), on mesure :
+$$
+\Omega_k^0 = 0.0007\pm 0.0037
+$$
 donc l'Univers semble essentiellement plat.
 
 ### Modélisations de l'énergie noire
 
-Quelle est la véritable nature de l'énergie noire ? Est-ce la manifestation de l'énergie du vide ? Une seconde constante fondamentale de la gravitation ?
-Ou bien une nouvelle cinquième force ? La manifestation de dimensions spatiales supplémentaires ? Ces questions sur la nature
-de l'énergie noire n'ont pour le moment pas de réponses, mais depuis la découverte de l'expansion accélérée en 1998 {cite:p}`Riess1998,Perlmutter1999`
-de nouveaux relevés cosmologiques sont en cours pour mesurer précisément l'équation d'état de l'énergie noire $w_{DE}$ : tant qu'on mesure
-$w_{DE} = w_\Lambda=-1$ alors l'accélération de l'expansion peut s'expliquer avec un unique paramètre qui est la valeur de $\Lambda$. 
-Si les mesures s'écartent significativement de $-1$, alors des modèles plus complexes seront à tester.
+Quelle est la véritable nature de l'énergie noire ? Est-ce la manifestation de l'énergie du vide ? Une seconde constante fondamentale de la gravitation ? Ou bien une nouvelle cinquième force ? La manifestation de dimensions spatiales supplémentaires ? Ces questions sur la nature de l'énergie noire n'ont pour le moment pas de réponses, mais depuis la découverte de l'expansion accélérée en 1998 {cite:p}`Riess1998,Perlmutter1999` de nouveaux relevés cosmologiques sont en cours pour mesurer précisément l'équation d'état de l'énergie noire $w_{DE}$ : tant qu'on mesure $w_{DE} = w_\Lambda=-1$ alors l'accélération de l'expansion peut s'expliquer avec un unique paramètre qui est la valeur de $\Lambda$. Si les mesures s'écartent significativement de $-1$, alors des modèles plus complexes seront à tester.
 
 C'est pourquoi aujourd'hui, en plus du modèle standard $\Lambda$CDM, les cosmologistes testent des modèles empiriques qui cherchent des écarts au modèle standard :
 - Flat $w$CDM : modèle d'Univers plat avec comme paramètres  libres $\Omega_m^0$, $\Omega_r^0$ et $w_{DE}$;
 - $w$CDM : modèle de courbure quelconque avec comme paramètres  libres $\Omega_m^0$, $\Omega_r^0$, $\Omega_\Lambda^0$ et  $w_{DE}$;
 - $w_0w_a$CDM : modèle où le paramètre d'équation d'état de l'énergie noire est donnée par deux paramètres libres :
-$$w_{DE}(a) = w_0 + \left(1 - \frac{a}{a_0}\right)w_a$$
+$$
+w_{DE}(a) = w_0 + \left(1 - \frac{a}{a_0}\right)w_a
+$$
 dont les valeurs mesurées par le satellite _Planck_ combinées aux supernovae de type Ia et les oscillations acoustiques de baryons donnent [](doi:10.1051/0004-6361/201833910):
-$$w_0 = −0.957 \pm 0.080, \quad w_a = −0.29^{+0.32}_{ −0.26}$$ 
-L'enjeu majeur pour les relevés cosmologiques futurs est de mesurer $w_a$ avec une meilleure précision, afin de mesurer les variations de l'accélération de l'expansion de l'Univers.
-
-
+$$
+w_0 = −0.957 \pm 0.080, \quad w_a = −0.29^{+0.32}_{ −0.26}
+$$ 
+L'enjeu majeur pour les relevés cosmologiques actuels et futurs est de mesurer $w_a$ avec une meilleure précision, afin de mesurer les variations de l'accélération de l'expansion de l'Univers.
+- 
 
 :::{exercise} Evolution des densités d'énergie et interprétation
 :label: exo:rhos
@@ -551,7 +574,8 @@ Cette équation d'état du vide peut être établie à l'aide de la théorie qua
 :::{solution} exo:rhos
 :class: dropdown
 
-1. \begin{align}
+1. Commençons :
+\begin{align}
 8\pi G_N \dot{\rho} & = 6\dot{H}H - \frac{6c^2 k \dot{a}}{a^3} \\
 & = 3H \left[-8\pi G_N P / c^2 + c^2 \Lambda - 3 H^2 - \frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
 & = 3H \left[-8\pi G_N P / c^2 -8 \pi G \rho + 2\frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
@@ -639,10 +663,6 @@ Pour une transformation adiabatique, le premier principe de la thermodynamique d
 \dd U = \delta W = -P_{\rm vac} \dd V
 \end{equation}
 En supposant que $P_{\rm vac}= - \rho_{\rm vac} c^2$, pour la densité d'énergie du vide nous avons $d\rho_{\rm vac} = 0$ et le premier principe $ dU = \delta W$ est vérifié.
-
-
-Absence of a preferred reference frame (i.e. the Relativity principle) means that the energy-momentum tensor for vacuum T(vac)μν=diag(ρ,p,p,p) is the same for every observer. There is only one tensor of rank 2 which is invariant with respect to Lorentz transformations---it is the unit tensor ημν=diag(1,−1,−1,−1). That is why the Lorentz-invariant energy-momentum tensor must be proportional to the metric and therefore
-pvac=−ρvac.
 
 :::
 
