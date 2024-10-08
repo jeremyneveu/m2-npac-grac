@@ -741,13 +741,11 @@ Temps cosmique et temps conforme
 
 Le temps mérite une mention spéciale. Dans notre Univers idéal, sans surdensités ou sous-densités de matière, toutes les horloges qui suivent l'expansion (c'est-à-dire sans mouvement propre) battent la seconde à la même cadence. Avec un temps infini à notre disposition, nous pouvons proposer une convention commune pour synchroniser nos horloges : par exemple, lorsque la température du CMB atteint une valeur donnée. Il est donc possible de définir un temps cosmique, commun à tous les observateurs en chute libre {cite:p}`Weinberg1972` [p. 409]. 
 
-
-:::{note}
 D'ailleurs, en utilisant le temps conforme $\eta$ défini par $\dd \eta = \dd t / a(t)$, pour un photon on obtient :
 $$
 \chi = c \int_{\eta_E}^{\eta_0} \dd \eta = c (\eta_0 - \eta_E)$$
 donc on reconnait la relation traditionnelle entre distance et temps, mais dans l'espace comobile sans dimension.
-:::
+
 
 
 :::{exercise} Temps conforme

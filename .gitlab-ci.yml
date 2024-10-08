@@ -18,15 +18,15 @@ pages:
     - node -v
     - npm install -g mystmd
     - cp myst.yml tmp_myst.yml
-    - python remove_toc.py
+    #- python remove_toc.py
     - myst build --html
     - mv _build/html/ public
-    - mv tmp_myst.yml myst.yml
-    - myst build --html
-    - mv _build/html/ public/fr
-    - sed -i 's@fr/@en/@g' myst.yml
-    - myst build --html
-    - mv _build/html/ public/en
+    #- mv tmp_myst.yml myst.yml
+    #- myst build --html
+    #- mv _build/html/ public/fr
+    #- sed -i 's@fr/@en/@g' myst.yml
+    #- myst build --html
+    #- mv _build/html/ public/en
     - pip install jupyterlite-core jupyterlite-xeus jupyterlab notebook ipympl ipywidgets
     - jupyter lite build --XeusAddon.environment_file=jupyterlite-environment.yml --contents=notebooks --output-dir=public/lite
   artifacts:

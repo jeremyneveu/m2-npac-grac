@@ -16,7 +16,7 @@ Le tenseur énergie-impulsion
 
 :::{figure} ../../images/tmunu_def.svg
 
-Le tenseur-énergie impulsion représente les flux de 4-impulsions $p^\mu$ et la densité d'énergie $\epsilon$ dans un volume local d'espace-temps. Si le système physique étudié dans ce volume local n'est soumis à aucune force qui travaille hormis la gravitation, alors on a l'équation de conservation $T^{\mu\nu}_{\;\;\;;\mu}=0$.
+Le tenseur-énergie impulsion représente les flux de quadri-impulsions $p^\mu$ et la densité d'énergie $\epsilon$ dans un volume local d'espace-temps. Si le système physique étudié dans ce volume local n'est soumis à aucune force qui travaille hormis la gravitation, alors on a l'équation de conservation $T^{\mu\nu}_{\;\;\;;\mu}=0$.
 :::
 
 Le tenseur énergie-impulsion $T^{\mu\nu}$ de l'équation d'Einstein décrit la densité d'énergie et les flux de quantités de mouvements en mécanique relativiste. C'est un tenseur d'ordre 2, construit à partir du vecteur 4-impulsion, qui prend la forme suivante :
@@ -71,7 +71,7 @@ $$
 
 :::
 
-Or dans notre hypothèse d'Univers de symétrie maximale, rappelons tout d'abord qu'on peut définir un temps cosmique, universel,  en utilisant l'évolution physique de l'Univers comme une horloge (densité de matière, température du CMB...). Les hypersurfaces de l'espace-temps paramétrées par ce temps universel sont alors eux-mêmes des sous-espaces de symétrie maximale. Les tenseurs représentants des observables cosmologiques de tels sous-espaces de symétrie maximale doivent alors être de _forme invariante_ c'est-à-dire qu'ils restent les mêmes fonctions des coordonnées à une date $t$ quelque soit le choix du système de coordonnées choisi : si on passe de $x^\mu$ à $x'^\mu$, on doit retrouver $T^{\mu\nu}(x^\rho) = T^{\mu\nu}(x'^\rho)$ (pour retrouver la même densité d'énergie) {cite:p}`Weinberg1972`[p. 408]. On peut démontrer alors une propriété importante concernant la forme que doivent prendre les tenseurs de ces sous-espaces {cite:p}`Weinberg1972`[p. 392].
+Or dans notre hypothèse d'Univers de symétrie maximale, rappelons tout d'abord qu'on peut définir un temps cosmique, universel,  en utilisant l'évolution physique de l'Univers comme une horloge (densité de matière, température du CMB...). Les hypersurfaces de l'espace-temps paramétrées par ce temps universel sont alors eux-mêmes des sous-espaces de symétrie maximale. Les tenseurs représentants des observables cosmologiques de tels sous-espaces de symétrie maximale doivent alors être de _forme invariante_ c'est-à-dire qu'ils restent les mêmes fonctions des coordonnées à une date $t$ quelque soit le choix du système de coordonnées choisi : si on passe de $x^\rho$ à $x'^\rho$, on doit avoir $T^{\mu\nu}(x^\rho) = T^{\mu\nu}(x'^\rho)$ (pour retrouver la même densité d'énergie) {cite:p}`Weinberg1972`[p. 408]. On peut démontrer alors une propriété importante concernant la forme que doivent prendre les tenseurs de ces sous-espaces {cite:p}`Weinberg1972`[p. 392].
 
 :::{important} Structure des tenseurs de forme invariante
 Un tenseur de forme invariante dans un espace de symétrie maximale :
@@ -81,13 +81,15 @@ Un tenseur de forme invariante dans un espace de symétrie maximale :
 :::
 
 Par conséquent, mathématiquement on peut introduire $\epsilon(t)$ et $P(t)$ deux fonctions telles que le tenseur énergie-impulsion se simplifie en :
-$$\begin{align}
-T^{00} & =  \epsilon(t)\quad  \text{(scalaire)} \\
-T^{i0} & = T_{0i} = 0 \quad  \text{(vecteur)} \\
-T^{ij} & =  P(t) \gamma^{ij}\quad \text{(tenseur d'ordre 2)}
-\end{align}$$
+$$
+\begin{align}
+T^{00} & =  \epsilon(t) &\quad  \text{(scalaire)} \\
+T^{i0} & = T_{0i} = 0 & \quad  \text{(vecteur)} \\
+T^{ij} & =  P(t) \gamma^{ij}& \quad \text{(tenseur d'ordre 2)}
+\end{align}
+$$
 
-De manière plus élégante, on peut introduire le vecteur $U^\mu$ défini par :
+De manière plus élégante, on peut introduire le quadri-vecteur $U^\mu$ défini par :
 $$ U^0 = 1, \quad U^i = 0 $$
 et obtenir une écriture compacte pour le tenseur énergie-impulsion d'un Univers homogène et isotrope :
 \begin{equation}
