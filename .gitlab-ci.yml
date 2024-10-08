@@ -1,4 +1,4 @@
-image: mambaorg/micromamba:latest
+image: condaforge/mambaforge:latest
 
 #variables:
 #  BASE_URL: "https://m2-npac-ac.pages.in2p3.fr"  # "/m2-npac-ac"
@@ -14,7 +14,7 @@ pages:
   stage: build
   script:
     - python -V               # Print out python version for debugging
-    - micromamba install -y -c conda-forge nodejs pyyaml
+    - mamba install -y -c conda-forge nodejs pyyaml
     - node -v
     - npm install -g mystmd
     - cp myst.yml tmp_myst.yml
