@@ -15,7 +15,7 @@ dependencies:
 - jupytext
 - ipywidgets
 - ipympl
-- astropy
+- astropy<6.0
 - sympy
 - pip:
   - ipyturtle3
