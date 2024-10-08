@@ -19,5 +19,5 @@ dependencies:
 - sympy
 - pip:
   - ipyturtle3
-  - astropy['all']
+  - astropy"[all]"
 
