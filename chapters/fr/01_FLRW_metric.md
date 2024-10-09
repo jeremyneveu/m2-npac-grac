@@ -184,10 +184,11 @@ k = \left\lbrace
  -1 & \text{3-hyperboloïde} \\
 \end{array}\right.
 \end{equation}
-On a ainsi pour les trois géométries possibles d'un Univers maximallement symétrique :
+On a ainsi pour les trois géométries possibles[^flat] d'un Univers maximallement symétrique :
 \begin{equation}
 \dd \vec l^2= \dd \vec r^2 + k\frac{ (\vec r \cdot \dd \vec r)^2}{a^2(t) - k r^2}
 \end{equation}
+où dans le cas d'un espace plat on aurait $\vec r = \vec \xi$.
 
 Enfin, introduisons la variable rééchelonnée $\vec\sigma=\vec r/a(t)$, et nous obtenons une nouvelle expression :
 \begin{equation}
@@ -212,7 +213,7 @@ Dans ce cours, nous allons abondamment traiter des distances en cosmologie, et d
 
 :::
 
-Il est important de comprendre la signification physique du facteur d'expansion $a(t)$. Tout d'abord, d'après l'équation [](#FLRW-metric), ce facteur relie la distance physique $\vec r$ et la distance de coordonnées $\sigma$ par $\vec r=a(t)\vec \sigma$, dans un espace plat. Une particule dont les coordonnées spatiales $\vec \sigma$ sont fixes verra sa distance physique avec un observateur en $\vec \sigma=\vec 0$ augmenter (ou diminuer) avec le temps. Cette variation de la distance se réalise à la vitesse apparente :
+Il est important de comprendre la signification physique du facteur d'expansion $a(t)$. Tout d'abord, d'après l'équation [](#FLRW-metric), ce facteur relie la distance physique $\vec r$ et la distance de coordonnées $\sigma$ par $\vec r=a(t)\vec \sigma$. Une particule dont les coordonnées spatiales $\vec \sigma$ sont fixes verra sa distance physique avec un observateur en $\vec \sigma=\vec 0$ augmenter (ou diminuer) avec le temps. Cette variation de la distance se réalise à la vitesse apparente :
 $$
 \frac{\dd \vec r}{\dd t} = \frac{\dd a(t)\vec \sigma}{\dd t} = \dot a \vec \sigma + a \dot{\vec \sigma} = \frac{\dot a}{a} \vec r
 $$
@@ -351,7 +352,7 @@ $$
 donc $U_3$ est une constante du mouvement. Or, on a par ailleurs :
 $$
 U_3 = g_{33} U^3 = a^2(t) (\sigma \sin \theta)^2 U^3 $$
-dont l'expression s'annule à l'origine en $\sigma=0$. Comme la composante $U_3$ est constante alors elle est identiquement nulle le long de la trajectoire. On en déduit :
+dont l'expression s'annule à l'origine en $\sigma=0$, là nous observons. Comme la composante $U_3$ est constante alors elle est identiquement nulle le long de la trajectoire. On en déduit :
 $$U^3 = \frac{\dd \phi }{ \dd s} = 0 \Rightarrow \phi = \text{constante}$$
 
 Passons au cas $\mu=2$. La seule composante de la métrique dépendant de $\theta$ est 

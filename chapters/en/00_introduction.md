@@ -147,7 +147,7 @@ so the space remains Euclidean after rotation. Equivalently, we could have obtai
 
 * Let be a 2D spherical space of radius $a$. A position on the sphere is given by two angles $\vec \xi = (\theta, \phi)$. An elementary vector $\dd \vec l$ on the sphere has length :
 \begin{equation*}
-\dd \vec l^2 = a^2\dd \theta^2 + a^2 \sin^2 \theta \dd \phi^2
+\dd \vec l^2 = a^2\dd \theta^2 + a^2 \sin^2 \theta \dd \phi^2 = g_{ij} \dd \xi^i \dd \xi^j
 \end{equation*}
 
 ```{figure} ../../images/sphere_gmunu

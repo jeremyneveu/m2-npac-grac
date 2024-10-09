@@ -147,7 +147,7 @@ donc l'espace reste euclidien après rotation. De façon équivalente on aurait 
 
 * Soit un espace sphérique 2D de rayon $a$. Une position sur la sphère est donnée par deux angles $\vec \xi = (\theta, \phi)$. Un vecteur élémentaire $\dd \vec l$ sur la sphère a pour longueur :
 \begin{equation*}
-\dd \vec l^2 = a^2\dd \theta^2 + a^2 \sin^2 \theta \dd \phi^2
+\dd \vec l^2 = a^2\dd \theta^2 + a^2 \sin^2 \theta \dd \phi^2 = g_{ij} \dd \xi^i \dd \xi^j
 \end{equation*}
 
 ```{figure} ../../images/sphere_gmunu
