@@ -23,6 +23,11 @@ perturbation de la métrique et du tenseur contrainte-énergie doit être faible
 Préambule
 ----------
 
+:::{figure} ../../images/noirlab2408a-2.jpg
+
+An artistic celebration of the Dark Energy Spectroscopic Instrument (DESI) Year 1 data, showing a slice of the larger 3D map that DESI is constructing during its five-year survey. DESI is mounted on the Nicholas U. Mayall 4-meter Telescope at Kitt Peak National Observatory. Credit:
+DESI Collaboration/KPNO/NOIRLab/NSF/AURA/P. Horálek/R. Proctor
+:::
 
 
 

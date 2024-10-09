@@ -162,7 +162,7 @@ La distance infinitésimale $\dd \vec l^2$ entre deux points de l'hypersurface d
 \end{equation}
 où le cas $+$ correspond à une géométrie sphérique, le cas $-$ à une géométrie hyperbolique {cite:p}`Weinberg1972` [p. 390-391].
 
-Or, la différentiation de l'équation [](#eq_hyp_sph) donne la relation 
+Or, l'équation de contrainte [](#eq_hyp_sph) lie $r, w$ et $a$ donc on peut remplacer $\dd w$ par une expression fonction de $r$ et $a$ (donc sans la quatrième dimension). La différentiation de l'équation [](#eq_hyp_sph) donne la relation 
 $$
 (\vec r \cdot \dd \vec r) \pm w\dd w=0,$$
 donc, en injectant de nouveau l'équation [](#eq_hyp_sph), on obtient :
@@ -344,22 +344,22 @@ car la métrique est un tenseur symétrique donc ${\partial_\kappa g_{\mu\lambda
 
 A partir de cette forme de l'équation des géodésiques (voir {cite:p}`hobson2006general`[p. 81] pour une démonstration), calculons la forme que doit prendre le vecteur contravariant $U^\nu$ dans une métrique FLRW pour une particule en chute libre.
 
-Commençons par le cas $\mu=3$ et utilisons les coordonnées sphériques $(\chi,\theta,\phi)$. Comme la métrique FLRW ne dépend pas de $\phi$, alors :
+Commençons par le cas $\mu=3$ et utilisons les coordonnées sphériques $(\sigma,\theta,\phi)$. Comme la métrique FLRW ne dépend pas de $\phi$, alors :
 $$
 \frac{\dd U_3}{\dd s} = 0
 $$
 donc $U_3$ est une constante du mouvement. Or, on a par ailleurs :
 $$
-U_3 = g_{33} U^3 = a^2(t) f_k^2(\chi) \sin^2 \theta U^3 $$
-dont l'expression s'annule à l'origine en $\chi=0$. Comme la composante $U_3$ est constante alors elle est identiquement nulle le long de la trajectoire. On en déduit :
+U_3 = g_{33} U^3 = a^2(t) (\sigma \sin \theta)^2 U^3 $$
+dont l'expression s'annule à l'origine en $\sigma=0$. Comme la composante $U_3$ est constante alors elle est identiquement nulle le long de la trajectoire. On en déduit :
 $$U^3 = \frac{\dd \phi }{ \dd s} = 0 \Rightarrow \phi = \text{constante}$$
 
 Passons au cas $\mu=2$. La seule composante de la métrique dépendant de $\theta$ est 
 $g_{33}$ mais $U_3$ est identiquement nul donc :
 $$\frac{\dd U_2}{\dd s} = \frac{1}{2} \frac{\partial g_{\alpha\beta}}{\partial x^2} U^\alpha U^\beta = \frac{1}{2} \frac{\partial g_{33}}{\partial x^2} U^3 U^3 = 0.$$
 Or de même on a par ailleurs :
-$$U_2 = g_{22} U^2 = a^2(t) f_k^2(\chi) U^2 $$
-qui s'annule en $\chi=0$ donc $U^2$ est nul tout le long de la trajectoire. On en déduit :
+$$U_2 = g_{22} U^2 = a^2(t) \sigma^2 U^2 $$
+qui s'annule en $\sigma=0$ donc $U^2$ est nul tout le long de la trajectoire. On en déduit :
 $$U^2 = \frac{\dd \theta }{ \dd s} = 0 \Rightarrow \theta = \text{constante}$$
 
 :::{important}

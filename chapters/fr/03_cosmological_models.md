@@ -1,49 +1,45 @@
 ---
-# Math frontmatter:
-math:
-  # Note the 'single quotes'
-  '\dd': '\mathrm{d}'
+short_title: Modèles cosmologiques
+authors:
+  - jneveu
+keywords: cosmological models, EdS model, mechanical analogy
 ---
 
 Modèles cosmologiques
 =======================
 
-
-
 Modèles simples
 ---------------
 
-
-Maintenant que nous avons un modèle pour décrire la dynamique de l'Univers, calculons son évolution dans quelques cas simples
-pour s'entraîner.
+Maintenant que nous avons un modèle pour décrire la dynamique de l'Univers, calculons son évolution dans quelques cas simples pour s'entraîner.
 
 ### Univers plat, matière seule
 
-Commençons par le cas d'un Univers plat, contenant uniquement de la matière non relativiste. C'est le modèle dit _d'Einstein et de Sitter_.
-C'est le plus naïf auquel on puisse penser à partir de l'observation. La première équation de Friedmann s'écrit :
+Commençons par le cas d'un Univers plat, contenant uniquement de la matière non relativiste. C'est le modèle dit _d'Einstein et de Sitter_. C'est le plus naïf auquel on puisse penser à partir de l'observation. La première équation de Friedmann s'écrit :
 $$ \begin{align*}
-& 3 \frac{\dot{a}^2}{a^2} = 8\pi G_N \rho_m = 8 \pi G_N \rho_m^0 \left(\frac{a_0}{a}\right)^{3} 
-& \Leftrightarrow (\dot a)^2 = 8 \pi G_N \rho_m^0 a_0^3 / 3 a = H_0^2 \Omega_m^0 \frac{a_0^3}{a}
+& 3 \frac{\dot{a}^2}{a^2} = 8\pi \GN \rho_m = 8 \pi \GN \rho_m^0 \left(\frac{a_0}{a}\right)^{3} 
+& \Leftrightarrow (\dot a)^2 = 8 \pi \GN \rho_m^0 a_0^3 / 3 a = H_0^2 \Omega_m^0 \frac{a_0^3}{a}
 \end{align*}
 $$
-Avant d'intégrer cette équation différentielle, rappelons nous que les paramètres de densité d'énergie sont liés par une relation
-de fermeture [](#eq:omega_sum). Par conséquent, dans un Univers plat avec seulement de la matière, on a $\Omega_m^0=1$. Intégrons maintenant
-l'équation différentielle :
-$$  \sqrt{\frac{a}{a_0}} \frac{\dd a}{a_0} = H_0  \dd t \Rightarrow \left(\frac{a}{a_0}\right)^{3/2} = \frac{3}{2}H_0  t $$
-$$\label{eq:a_matiere_only}
+Avant d'intégrer cette équation différentielle, rappelons nous que les paramètres de densité d'énergie sont liés par une relation de fermeture [](#eq:omega_sum). Par conséquent, dans un Univers plat avec seulement de la matière, on a $\Omega_m^0=1$. Intégrons maintenant l'équation différentielle :
+$$  
+\sqrt{\frac{a}{a_0}} \frac{\dd a}{a_0} = H_0  \dd t \Rightarrow \left(\frac{a}{a_0}\right)^{3/2} = \frac{3}{2}H_0  t $$
+$$
+\label{eq:a_matiere_only}
 \Rightarrow \frac{a(t)}{a_0} = \left( \frac{3}{2}H_0  t\right)^{2/3}$$
 avec au début de l'Univers $t=0$ et $a=0$. On a obtenu ainsi une relation direct entre le facteur d'échelle et l'âge de l'Univers.
 
 ### Univers plat, radiation seule
 
 Par un raisonnement similaire, on montre que pour un Univers plat dominé par le rayonnement on a une évolution différente du facteur d'échelle :
-$$\label{eq:a_rad_only}
-\frac{a(t)}{a_0} = \left( 2 H_0  t\right)^{1/2}$$
+$$
+\label{eq:a_rad_only}
+\frac{a(t)}{a_0} = \left( 2 H_0  t\right)^{1/2}
+$$
 
 ### Univers vide (Milne)
 
-Supposons que l'Univers est vide, ou du moins avec une densité d'énergie totale très faible devant la densité critique. 
-Alors l'Univers doit être courbé puisque dans ce cas :
+Supposons que l'Univers est vide, ou du moins avec une densité d'énergie totale très faible devant la densité critique. Alors l'Univers doit être courbé puisque dans ce cas :
 $$\Omega_k^0 = 1 - \Omega_m^0  - \Omega_r^0  - \Omega_\Lambda^0 \approx 1$$
 Cet Univers est donc hyperbolique[^ksign]. La première équation de Friedmann s'écrit :
 $$
@@ -60,9 +56,7 @@ où l'échelle aujourd'hui $a_0$ n'apparaît pas.
 
 :::{important}
 
-La constante de Hubble $H_0$ apparaît dans les trois modèles d'Univers précédents. Or $H_0$ n'est pas une prédiction des modèles cosmologiques
-mais bien une mesure externe qui permet de calculer l'histoire de l'Univers en fonction de son taux d'expansion aujourd'hui. C'est en 
-quelque sorte les conditions initiales du modèle, où aujourd'hui est l'instant initial.
+La constante de Hubble $H_0$ apparaît dans les trois modèles d'Univers précédents. Or $H_0$ n'est pas une prédiction des modèles cosmologiques mais bien une mesure externe qui permet de calculer l'histoire de l'Univers en fonction de son taux d'expansion aujourd'hui. C'est en quelque sorte les conditions initiales du modèle, où aujourd'hui est l'instant initial.
 :::
 
 
@@ -73,8 +67,8 @@ quelque sorte les conditions initiales du modèle, où aujourd'hui est l'instant
 
 Peu après Einstein, de Sitter a publié un autre type de modèle cosmologique. Il a proposé un univers plat avec seulement 
 une constante cosmologique non nulle et aucune matière à l'intérieur (ou une quantité négligeable de matière). 
-Montrer qu'un tel univers croît de manière exponentielle avec le temps. 
-C'est l'univers de de Sitter. Trouvez également un système de coordonnées dans lequel il est statique. 
+1. Montrer qu'un tel univers croît de manière exponentielle avec le temps. C'est l'univers de de Sitter. 
+2. Trouvez également un système de coordonnées dans lequel il est statique. 
 
 
 :::
@@ -82,7 +76,7 @@ C'est l'univers de de Sitter. Trouvez également un système de coordonnées dan
 :::{solution} exo:desitter
 
 
-Dans un univers plat $k=0$ et la première équation de Friedmann donne dans le modèle de Sitter :
+1. Dans un univers plat $k=0$ et la première équation de Friedmann donne dans le modèle de Sitter :
 \begin{equation}
 \frac{\dot{a}^2}{a^2} = \frac{c^2 \Lambda}{3} \Leftrightarrow -\sqrt{\frac{3}{c^2 \Lambda}}\frac{\dd a }{\dd t}+a=0
 \end{equation}
@@ -92,7 +86,7 @@ a(t) = a_0 e^{\sqrt{c^2 \Lambda/3}t}
 \end{equation}
 L'univers de de Sitter croît exponentiellement avec le temps. 
 
-Pour montrer qu'un univers de de Sitter peut être considéré comme un univers statique, écrivons $T_0 = \sqrt{c^2 \Lambda / 3}$ et changeons les coordonnées $r'(t) = a_0 e^{t/T_0}\sigma$. La métrique FLRW devient alors
+2. Pour montrer qu'un univers de de Sitter peut être considéré comme un univers statique, écrivons $T_0 = \sqrt{c^2 \Lambda / 3}$ et changeons les coordonnées $r'(t) = a_0 e^{t/T_0}\sigma$. La métrique FLRW devient alors
 \begin{equation}
 \dd s^2 =- \dd t^2 + a^2 (\dd \sigma^2 + \sigma^2 \dd \theta^2 + \sigma^2 \sin\theta \dd  \phi^2) =- \dd t^2 + \left[\left(\dd r' - r' \dd t / T_0\right)^2 + r'^2 \dd \theta^2 + r'^2 \sin\theta \dd \phi^2\right]
 \end{equation}
@@ -117,27 +111,21 @@ Modèles historiques
 :::{exercise} Premiers modèles cosmologiques
 :label: exo:einstein_first
 
-La cosmologie moderne est née avec la relativité générale. Depuis l'écriture de ces équations, les scientifiques 
-ont commencé à décrire mathématiquement l'univers comme un système physique. De nombreux modèles ont été proposés pour 
-décrire les différentes histoires de l'univers. Dans cet exercice, nous allons passer en revue certains d'entre eux.
+La cosmologie moderne est née avec la Relativité Générale. Depuis l'écriture de ces équations, les scientifiques ont commencé à décrire mathématiquement l'univers comme un système physique. De nombreux modèles ont été proposés pour décrire les différentes histoires de l'univers. Dans cet exercice, nous allons passer en revue certains d'entre eux.
 
-Einstein a été le premier à construire un modèle pour l'ensemble de l'univers, en 1917. Il croyait en un univers 
-statique et éternel qui ne contenait que de la matière.
+Einstein a été le premier à construire un modèle pour l'ensemble de l'univers, en 1917. Il croyait en un univers statique et éternel qui ne contenait que de la matière.
 
-1. Dans une perspective moderne, avec les équations de Friedmann (ci-dessous), montrez qu'un univers statique ne 
-contenant que de la matière doit avoir une constante cosmologique non nulle $\Lambda=4\pi G \rho_m / c^2$ et doit être 
-sphérique. Calculer le rayon de l'univers sphérique d'Einstein $R\equiv a_{\rm Einstein}$.
+1. Dans une perspective moderne, avec les équations de Friedmann (ci-dessous), montrez qu'un univers statique ne contenant que de la matière doit avoir une constante cosmologique non nulle $\Lambda=4\pi G \rho_m / c^2$ et doit être sphérique. Calculer le rayon de l'univers sphérique d'Einstein $R\equiv a_{\rm Einstein}$.
 
 \begin{equation} \left\lbrace
 \begin{array}{l}
-   \displaystyle{3 \left( \frac{\dot{a}^2}{a^2}+ \frac{c^2k}{a^2} \right) = 8\pi G_N \rho_m + c^2 \Lambda}  \\ 
-    \displaystyle{\frac{2\ddot{a}a + \dot{a}^2 + c^2 k}{a^2} = - 8\pi G_N P/c^2 + c^2 \Lambda }
+   \displaystyle{3 \left( \frac{\dot{a}^2}{a^2}+ \frac{c^2k}{a^2} \right) = 8\pi \GN \rho_m + c^2 \Lambda}  \\ 
+    \displaystyle{\frac{2\ddot{a}a + \dot{a}^2 + c^2 k}{a^2} = - 8\pi \GN P/c^2 + c^2 \Lambda }
 \end{array}
 \right.
 \end{equation}
 
-2. À l'aide des équations de Friedmann, montrez que cet univers sphérique est instable. Considérer une perturbation 
-$\delta R$ du rayon de l'univers et $\delta \rho$ de la densité de matière pour calculer l'évolution du rayon.
+2. À l'aide des équations de Friedmann, montrez que cet univers sphérique est instable. Considérer une perturbation $\delta R$ du rayon de l'univers et $\delta \rho$ de la densité de matière pour calculer l'évolution du rayon.
 
 :::
 
@@ -256,7 +244,7 @@ mouvement unidimensionnel. Analyser à nouveau le rôle de chaque terme de "forc
 Dans ce qui suit, nous négligeons la composante de rayonnement. Tracez les termes d'énergie potentielle en fonction 
 du facteur d'échelle $a$ et décrivez le destin des univers suivants.
 
-3. Modèle sphérique ($k=+1$) avec $\Lambda=4\pi G_N \rho_m / c^2$ (montrez que le modèle statique d'Einstein est un 
+3. Modèle sphérique ($k=+1$) avec $\Lambda=4\pi \GN \rho_m / c^2$ (montrez que le modèle statique d'Einstein est un 
 cas particulier de ce modèle et qu'il est instable).
 
 4. Modèles de matière seule avec différents signes de courbure (le modèle d'Einstein-de Sitter correspond au cas de la courbure plate).

@@ -81,13 +81,11 @@ Un tenseur de forme invariante dans un espace de symétrie maximale :
 :::
 
 Par conséquent, mathématiquement on peut introduire $\epsilon(t)$ et $P(t)$ deux fonctions telles que le tenseur énergie-impulsion se simplifie en :
-$$
-\begin{align}
+$$ \begin{align}
 T^{00} & =  \epsilon(t) &\quad  \text{(scalaire)} \\
 T^{i0} & = T_{0i} = 0 & \quad  \text{(vecteur)} \\
 T^{ij} & =  P(t) \gamma^{ij}& \quad \text{(tenseur d'ordre 2)}
-\end{align}
-$$
+\end{align} $$
 
 De manière plus élégante, on peut introduire le quadri-vecteur $U^\mu$ défini par :
 $$ U^0 = 1, \quad U^i = 0 $$
@@ -194,11 +192,11 @@ $$
 A partir de l'équation d'Einstein [](#eq:einstein2) et du tenseur énergie-impulsion [](#eq:tmunu_fluide), on obtient pour la coordonnée $00$ et pour les coordonnées spatiales $ij$: 
 $$
 \begin{aligned}
-G_{\mu\nu}-\Lambda g_{\mu\nu} & = -8\pi G_N T_{\mu\nu}/c^4 \\
+G_{\mu\nu}-\Lambda g_{\mu\nu} & = -8\pi \GN T_{\mu\nu}/c^4 \\
 \Leftrightarrow  & \left\lbrace
 \begin{array}{rl}
-    \text{00: } &  \displaystyle{3 \left( \frac{\dot{a}^2}{a^2}+ \frac{c^2 k}{a^2} \right) = 8\pi G_N \rho + c^2 \Lambda} \\
-    ij\text{: } &   \displaystyle{\frac{2\ddot{a}a + \dot{a}^2 + c^2 k}{a^2} = - \frac{8\pi G_N}{c^2 } P + c^2 \Lambda }
+    \text{00: } &  \displaystyle{3 \left( \frac{\dot{a}^2}{a^2}+ \frac{c^2 k}{a^2} \right) = 8\pi \GN \rho + c^2 \Lambda} \\
+    ij\text{: } &   \displaystyle{\frac{2\ddot{a}a + \dot{a}^2 + c^2 k}{a^2} = - \frac{8\pi \GN}{c^2 } P + c^2 \Lambda }
 \end{array}
 \right.\end{aligned}
 $$ 
@@ -208,8 +206,8 @@ $$
 \label{eq:friedmann}
 \left\lbrace
 \begin{array}{rl}
-    \text{00: } & \displaystyle{H^2 = \frac{8\pi G_N \rho}{3} + \frac{c^2 \Lambda}{3} - \frac{c^2 k}{a^2}}\\
-    ij\text{: } &  \displaystyle{2\dot{H} + 3H^2 = - \frac{8\pi G_N}{c^2 } P + c^2 \Lambda - \frac{c^2 k}{a^2}}
+    \text{00: } & \displaystyle{H^2 = \frac{8\pi \GN \rho}{3} + \frac{c^2 \Lambda}{3} - \frac{c^2 k}{a^2}}\\
+    ij\text{: } &  \displaystyle{2\dot{H} + 3H^2 = - \frac{8\pi \GN}{c^2 } P + c^2 \Lambda - \frac{c^2 k}{a^2}}
 \end{array}
 \right.
 $$
@@ -301,8 +299,8 @@ with $\delta_{ik}\delta^k_j=\delta_{ij}$ and $\delta^k_k=3$.
 From the Einstein equation $G_{\mu\nu} - \Lambda g_{\mu\nu} = -8\pi G T_{\mu\nu}/c^4$ write the Friedmann equations:
 \begin{equation} \left\lbrace
 \begin{array}{l}
-   \displaystyle{3 \left( \frac{\dot{a}^2}{a^2}+ \frac{c^2k}{a^2} \right) = 8\pi G_N \rho + c^2 \Lambda} \\
-    \displaystyle{\frac{2\ddot{a}a + \dot{a}^2 + c^2 k}{a^2} = - 8\pi G_N P/c^2 + c^2 \Lambda }
+   \displaystyle{3 \left( \frac{\dot{a}^2}{a^2}+ \frac{c^2k}{a^2} \right) = 8\pi \GN \rho + c^2 \Lambda} \\
+    \displaystyle{\frac{2\ddot{a}a + \dot{a}^2 + c^2 k}{a^2} = - 8\pi \GN P/c^2 + c^2 \Lambda }
 \end{array}
 \right.
 \end{equation}
@@ -328,20 +326,20 @@ G_{ij} &= R_{ij}-g_{ij}R/2 \\
 \end{align}
 Using the definition of $ T_{\mu\nu}$, we obtain directly the two Friedmann equations:
 \begin{equation}
-G_{\mu\nu} - \Lambda g_{\mu\nu}  = -\frac{8\pi G_N}{c^4}T_{\mu\nu}
+G_{\mu\nu} - \Lambda g_{\mu\nu}  = -\frac{8\pi \GN}{c^4}T_{\mu\nu}
 \end{equation}
 \begin{align}
 \label{Friedmann1}
-3{\dot{a}^2 \over a^2}&=& 8 \pi G_N \rho + c^2 \Lambda\\
-2{\ddot{a} \over a} + {\dot{a}^2 \over a^2}& =& - {8 \pi G_N \over c^2}P + c^2 \Lambda
+3{\dot{a}^2 \over a^2}&=& 8 \pi \GN \rho + c^2 \Lambda\\
+2{\ddot{a} \over a} + {\dot{a}^2 \over a^2}& =& - {8 \pi \GN \over c^2}P + c^2 \Lambda
 \label{align}
 \end{align}
 
 4. Using $H=\dot a / a$:
 \begin{equation} \left\lbrace
 \begin{array}{l}
-   \displaystyle{3 H^2+ \frac{3kc^2}{a^2} = 8\pi G_N \rho + c^2\Lambda} \\
-    \displaystyle{2\dot{H} + 3H^2 + \frac{c^2k}{a^2} = - 8\pi G_N P/c^2 + c^2\Lambda }
+   \displaystyle{3 H^2+ \frac{3kc^2}{a^2} = 8\pi \GN \rho + c^2\Lambda} \\
+    \displaystyle{2\dot{H} + 3H^2 + \frac{c^2k}{a^2} = - 8\pi \GN P/c^2 + c^2\Lambda }
 \end{array}
 \right.
 \end{equation}
@@ -350,9 +348,9 @@ using $\ddot{a}/a=\dot{H}+H^2$.
 5. And finally the energy-momentum tensor conservation:
 \begin{align}
 8\pi G \dot{\rho} & = 6\dot{H}H - \frac{6c^2 k \dot{a}}{a^3} \\
-& = 3H \left[-8\pi G_N P / c^2 + c^2 \Lambda - 3 H^2 - \frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
-& = 3H \left[-8\pi G_N P / c^2 -8 \pi G_N \rho + 2\frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
-& = 3H \left[-8\pi G_N P / c^2 -8 \pi G_N \rho \right]
+& = 3H \left[-8\pi \GN P / c^2 + c^2 \Lambda - 3 H^2 - \frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
+& = 3H \left[-8\pi \GN P / c^2 -8 \pi \GN \rho + 2\frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
+& = 3H \left[-8\pi \GN P / c^2 -8 \pi \GN \rho \right]
 \end{align}
 and $\dot{\rho} c^2 = -3 H(\rho c^2 + P)$. 
 This is the same result as in the $T^{\beta \alpha}_{\,\,\,\,\,\,;\alpha}=0$ computation (as expected).
@@ -443,15 +441,15 @@ Si elles interagissaient, ceci ne serait pas vrai. De ces deux équations, on en
 Dans les équations de Friedmann [](#eq:friedmann), il est possible d'interpréter la constante cosmologique $\Lambda$ et la courbure $k$ en terme de densités d'énergie au même titre que la densité d'énergie $\rho$ du tenseur énergie-impulsion. 
 
 La densité d'énergie associée à la constante cosmologique est parfois appelée densité d'énergie noire, en raison des étranges propriétés associées à cette dernière :
-$$\epsilon_\Lambda(t) = \rho_\Lambda c^2 =  \frac{c^4 \Lambda}{8\pi G_N} = \text{ constante }.$$ 
-On voit que la densité d'énergie associée à la constante cosmologique étant constante dans le temps, cette dernière possède un comportement bien singulier : quelque soit la taille de l'Univers, il y a toujours autant d'énergie par unité de volume. Elle n'est donc pas diluée comme toute énergie ordinaire lorsque celui-ci est en expansion. De plus, grâce à la seconde équation de Friedmann, on voit que la pression associée à la constante cosmologique serait 
+$$\epsilon_\Lambda(t) = \rho_\Lambda c^2 =  \frac{c^4 \Lambda}{8\pi \GN} = \text{ constante }.$$ 
+On voit que la densité d'énergie associée à la constante cosmologique étant constante dans le temps, cette dernière possède un comportement bien singulier : quelque soit la taille de l'Univers, il y a toujours autant d'énergie par unité de volume. Elle n'est donc pas diluée comme toute énergie ordinaire lorsque celui-ci est en expansion. De plus, grâce à la seconde équation de Friedmann, on voit que la pression associée à la constante cosmologique serait :
 $$P_\Lambda = - \epsilon_\Lambda,$$
-soit une pression négative ! Dans la physique ordinaire, un des rares phénomènes où interviennent des pressions négatives est la cavitation (<wiki:Pressure#Negative_pressures). En posant $\rho_{\mathrm{tot}}=\rho + \rho_\Lambda$ (et $p_{\mathrm{tot}}=p + p_\Lambda$) puis en combinant les deux équations de Friedmann [](#eq:friedmann) de façon à éliminer le terme de courbure, on  obtient :
+soit une pression négative ! Dans la physique ordinaire, un des rares phénomènes où interviennent des pressions négatives est la cavitation (<wiki:Pressure#Negative_pressures). En posant $\epsilon_{\mathrm{tot}}=\epsilon + \epsilon_\Lambda$ (et $P_{\mathrm{tot}}=P + P_\Lambda$) puis en combinant les deux équations de Friedmann [](#eq:friedmann) de façon à éliminer le terme de courbure, on  obtient :
 \begin{equation}
 \label{eq:ddota}
-2\dot{H} + 2H^2 = \frac{2\ddot{a}}{a} = -\frac{8\pi G_N}{3}\left( \epsilon _{\mathrm{tot}} + 3P_{\mathrm{tot}}\right).
+2\dot{H} + 2H^2 = \frac{2\ddot{a}}{a} = -\frac{8\pi \GN}{3}\left( \epsilon _{\mathrm{tot}} + 3P_{\mathrm{tot}}\right).
 \end{equation}
-On constate que l'expansion de l'Univers s'accélère ($\ddot{a}>0$) si $P_{\mathrm{tot}}<-\epsilon_{\mathrm{tot}}/3$. L'Univers étant constitué essentiellement de matière non relativiste et de rayonnement, la condition précédente devient équivalente à 
+On constate que l'expansion de l'Univers s'accélère ($\ddot{a}>0$) si $P_{\mathrm{tot}}<-\epsilon_{\mathrm{tot}}/3$. L'Univers étant constitué essentiellement de matière non relativiste et de rayonnement, la condition précédente devient équivalente à :
 $$
 \ddot{a} > 0 \Leftrightarrow \epsilon_\Lambda > \epsilon_r + \epsilon_m/2$$
 En conclusion, si la constante cosmologique domine le contenu en énergie de l'Univers, alors elle engendre une telle pression négative que ce dernier entre en _expansion accélérée_.
@@ -459,18 +457,21 @@ En conclusion, si la constante cosmologique domine le contenu en énergie de l'U
 :::{note} Quelle unité pour $\Lambda$ ?
 
 Comme $\epsilon_\Lambda$ est une densité d'énergie, on en déduit que $\Lambda$ a la dimension de l'inverse du carré d'une longueur. Pour résumé,
-$$\label{eq:dimensions}
+$$
+\label{eq:dimensions}
 \left[a\right] = \mathsf{L},\quad \left[\rho \right] = \mathsf{M}\cdot \mathsf{L}^{-3}, \quad \left[\epsilon \right] = \left[p \right] = \mathsf{M}\cdot \mathsf{L}^{-1} \cdot \mathsf{T}^{-2}\quad \left[\Lambda \right] = \mathsf{L}^{-2} $$
-$$\left[ g_{\mu\nu} \right] = [1,\mathsf{L}^{2},\mathsf{L}^{2},\mathsf{L}^{2}] $$
+$$
+\left[ g_{\mu\nu} \right] = [1,\mathsf{L}^{2},\mathsf{L}^{2},\mathsf{L}^{2}] $$
 :::
 
 
 ### Courbure
 
 La densité d'énergie associée à l'énergie de courbure s'identifie à : 
-$$\epsilon_k(t) =\rho_k(t) c^2 = - \frac{3 c^4 k  }{8\pi G_N a^2(t)}.$$
+$$
+\epsilon_k(t) =\rho_k(t) c^2 = - \frac{3 c^4 k  }{8\pi \GN a^2(t)}.$$
 De même, son effet en terme de pression est :
-$$P_k = \frac{c^4 k}{8\pi G_N a^2(t)}.$$
+$$P_k = \frac{c^4 k}{8\pi \GN a^2(t)}.$$
 
 
 Les paramètres cosmologiques
@@ -478,7 +479,7 @@ Les paramètres cosmologiques
 
 ### Paramètres d'équation d'état
 
-L'équation d'état $w$ associée à une composante de l'Univers est définie par le rapport de sa pression et de sa densité d'énergie
+L'équation d'état $w$ associée à une composante de l'Univers est définie par le rapport de sa pression et de sa densité d'énergie :
 $$
 \label{eq:def-w}
 \fbox{$w=P/\epsilon.$}
@@ -490,7 +491,7 @@ $$
 -   La matière relativiste exerce quant à elle une pression sur son
     milieu de valeur $P_r =  \epsilon_r / 3 $ d'où $w_r=1/3$.
 
--   Pour la constante cosmologique, on a $p_\Lambda = - \epsilon_\Lambda$ donc son équation d'état est
+-   Pour la constante cosmologique, on a $P_\Lambda = - \epsilon_\Lambda$ donc son équation d'état est
     constante et négative $w_\Lambda = -1$.
 
 -   La courbure assimilée à un fluide parfait aurait un paramètre d'équation d'état $w_k=1/3$.
@@ -500,10 +501,11 @@ $$
 
 On peut définir une densité critique, qui correspondrait à la densité que l'on doit avoir dans un univers homogène et isotrope en expansion de courbure spatiale nulle (cf équation [](#eq:friedmann)) : 
 $$
-\rho_c(t) = \frac{3H^2(t)}{8\pi G_N}.$$ 
+\rho_c(t) = \frac{3H^2(t)}{8\pi \GN}.$$ 
 Il est commode de définir aussi sa valeur actuelle :
 $$
-\rho_{c}^0 = \frac{3H^2_0}{8\pi G_N} = 1.1 \times 10^{-29} \left( \frac{H_0}{75\text{ km/s/Mpc}}\right)^2\text{ g/cm}^3 \approx 6 \text{ protons/m}^3.$$
+\rho_{c}^0 = \frac{3H^2_0}{8\pi \GN} = 1.1 \times 10^{-29} \left( \frac{H_0}{75\text{ km/s/Mpc}}\right)^2\text{ g/cm}^3 \approx 6 \text{ protons/m}^3.
+$$
 où $H_0$ est la constante de Hubble.
 
 On définit les paramètres de densité (sans dimension) en normalisant les densités d'énergie par la densité critique, soit :
@@ -552,7 +554,7 @@ $$
 w_0 = −0.957 \pm 0.080, \quad w_a = −0.29^{+0.32}_{ −0.26}
 $$ 
 L'enjeu majeur pour les relevés cosmologiques actuels et futurs est de mesurer $w_a$ avec une meilleure précision, afin de mesurer les variations de l'accélération de l'expansion de l'Univers.
-- 
+
 
 :::{exercise} Evolution des densités d'énergie et interprétation
 :label: exo:rhos
@@ -578,10 +580,10 @@ Cette équation d'état du vide peut être établie à l'aide de la théorie qua
 
 1. Commençons :
 \begin{align}
-8\pi G_N \dot{\rho} & = 6\dot{H}H - \frac{6c^2 k \dot{a}}{a^3} \\
-& = 3H \left[-8\pi G_N P / c^2 + c^2 \Lambda - 3 H^2 - \frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
-& = 3H \left[-8\pi G_N P / c^2 -8 \pi G \rho + 2\frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
-& = 3H \left[-8\pi G_N P / c^2 -8 \pi G \rho \right]
+8\pi \GN \dot{\rho} & = 6\dot{H}H - \frac{6c^2 k \dot{a}}{a^3} \\
+& = 3H \left[-8\pi \GN P / c^2 + c^2 \Lambda - 3 H^2 - \frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
+& = 3H \left[-8\pi \GN P / c^2 -8 \pi G \rho + 2\frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
+& = 3H \left[-8\pi \GN P / c^2 -8 \pi G \rho \right]
 \end{align}
 et $\dot{\rho} c^2 = -3 H(\rho c^2 + P )$. 
 
@@ -643,12 +645,12 @@ Le comportement en $a^{-4}$ est donc dû à la dilatation de la longueur d'onde 
 
 5. En utilisant l'équation d'Einstein, en passant le terme $\Lambda$ du côté du tenseur énergie-contrainte de l'équation, nous identifions cette contribution comme un fluide parfait :
 \begin{equation}
-\Lambda g_{\mu\nu} = \frac{8\pi G_N}{c^4} \begin{pmatrix} \rho_\Lambda c^2 & 0 & 0 & 0 \\ 0 &a^2 p_\Lambda & 0 & 0 \\ 0&0&a^2 p_\Lambda &0 \\ 0&0&0&a^2 p_\Lambda \end{pmatrix}
+\Lambda g_{\mu\nu} = \frac{8\pi \GN}{c^4} \begin{pmatrix} \rho_\Lambda c^2 & 0 & 0 & 0 \\ 0 &a^2 p_\Lambda & 0 & 0 \\ 0&0&a^2 p_\Lambda &0 \\ 0&0&0&a^2 p_\Lambda \end{pmatrix}
 \end{equation}
 Nous obtenons :
 \begin{align}
-\Lambda & = \frac{8\pi G_N}{c^4} \rho_\Lambda c^2 \Leftrightarrow \rho_\Lambda c^2 = c^4 \Lambda / 8\pi G_N \\
--a^2 \Lambda & = \frac{8\pi G_N}{c^4} a^2 P_\Lambda \Leftrightarrow p_\Lambda = - c^4 \Lambda / 8 \pi G_N = - \rho_\Lambda c^2
+\Lambda & = \frac{8\pi \GN}{c^4} \rho_\Lambda c^2 \Leftrightarrow \rho_\Lambda c^2 = c^4 \Lambda / 8\pi \GN \\
+-a^2 \Lambda & = \frac{8\pi \GN}{c^4} a^2 P_\Lambda \Leftrightarrow p_\Lambda = - c^4 \Lambda / 8 \pi \GN = - \rho_\Lambda c^2
 \end{align}
 Pour la constante cosmologique, l'équation d'état est constante et sa valeur est $w=-1$. En utilisant la question précédente, nous avons :
 \begin{equation}
