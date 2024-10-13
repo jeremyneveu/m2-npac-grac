@@ -543,7 +543,7 @@ D'où la distance comobile en terme de temps $t$, facteur d'échelle $a$ et reds
 & = \int_z^0 \frac{1+z}{a_0}\frac{-\dd z}{(1+z)H(z)} = \frac{1}{a_0}\int_0^z\frac{c\dd z}{H(z)} = \chi(z)
 \end{align}
 
-En général, $a_0$ n'est pas directement mesurable, mais les paramètres cosmologiques et $H_0$ peuvent être déterminés. Il est donc utile de savoir comment se débarrasser de $a_0$ dans le cas général. A $t=0$, on peut écrire :
+En général, $a_0$ n'est pas directement mesurable, mais les paramètres cosmologiques et $H_0$ peuvent être déterminés. Il est donc utile de savoir comment se débarrasser de $a_0$ dans le cas général. Dans cette paramétrisation, la valeur de $a_0$ est égale au rayon de l'univers dans les cas courbes (avec $a$ ayant la dimension d'une longueur, $\sigma$ non dimensionné). Pour des raisons qui seront évidentes au chapitre suivant, à $t=t_0$ on peut définir une observable $\Omega_k^0$ dépendant de $a_0$ :
 \begin{equation}
 \Omega_k^0 = - \frac{kc^2}{H_0^2 a_0^2} \Rightarrow a_0 = \left\lbrace\begin{array}{l}
     \displaystyle{\frac{c}{H_0\sqrt{-\Omega_k^0}}}  \text{ if } k=+1 \\
@@ -552,7 +552,7 @@ En général, $a_0$ n'est pas directement mesurable, mais les paramètres cosmol
 \end{array}
 \right.
 \end{equation}
-Dans cette paramétrisation, la valeur de $a_0$ est égale au rayon de l'univers dans les cas courbes (avec $a$ ayant la dimension d'une longueur, $\sigma$ non dimensionné). Ainsi :
+Ainsi :
 \begin{equation}
 \displaystyle{\chi(z) = \left\lbrace\begin{array}{cl}
     \displaystyle{H_0\sqrt{-\Omega_k^0}\int_0^z\frac{dz}{H(z)}}  & \text{ if } k=+1 \\
@@ -562,9 +562,8 @@ Dans cette paramétrisation, la valeur de $a_0$ est égale au rayon de l'univers
 \right.}
 \end{equation}
 
-
 La distance propre est la distance que l'on pourrait mesurer effectivement à un instant $t$ entre deux objets. Sans perdre en généralité, on peut choisir un objet situé à la coordonné comobile $\sigma_E$ et un observateur comobile en 0. En terme de redshift, la distance propre aujourd'hui à $t_0$ s'écrit alors simplement pour les trois cas de courbure :
-$$D_p(z) = a(t_0)\chi(z) =\int_0^z\frac{c \dd z}{H(z)} $$
+$$D_p(z) = a_0 \chi(z) =\int_0^z\frac{c \dd z}{H(z)} $$
 et s'exprime bien en unités de longueur. La notion de distance propre est illustrée [](#fig:distances).
 
 
@@ -653,7 +652,7 @@ $$
 n_0 = n_E \dd S/(4 \pi a^2_0 \sigma^2_E).$$
 Or à partir de l'équation
 [](#eq:redshift2), on a :
-$$\nu_E = \nu_0 a(t_0)/a(t_E) = \nu_0 (1+z)$$
+$$\nu_E = \nu_0 a_0/a(t_E) = \nu_0 (1+z)$$
 et :
 $$\dd t_E = \dd t_0/(1+z).$$
 d'où le flux reçu :

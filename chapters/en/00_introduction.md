@@ -49,7 +49,7 @@ From the constitutive relation [](#eq:dscons), we can show that Lorentz transfor
 \begin{equation}\label{eq:lorentz}
 \Lambda^{alpha}_{\;\beta} = \begin{pmatrix}
 \gamma & -\beta \gamma & 0& 0 \\
--\beta \gamma & \gamma & 0 & 0 \gamma
+-\beta \gamma & \gamma & 0 & 0 \\
 0 & 0 & 1 & 0 \\
 0 & 0 &0 & 1 \end{pmatrix},\quad \beta = \frac{v}{c},\quad \gamma = \frac{1}{\sqrt{1 - \beta^2}}
 \end{equation}

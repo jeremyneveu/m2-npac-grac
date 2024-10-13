@@ -47,11 +47,13 @@ $$
 A partir de la relation constitutive [](#eq:dscons), on peut démontrer les transformations de Lorentz forment un groupe défini par $\Lambda^{0}_{\;0}\geqslant 1$ and $\mathrm{det}\;\Lambda=+1$. Quelques calculs plus tard (voir {cite:t}`raimond` par exemple), on peut montrer que la transformation de Lorentz entre deux référentiels dont l'un se déplace à la vitesse $\vec v = v \vec e_{1}$ s'écrit de façon unique :
 \begin{equation}
 \label{eq:lorentz}
-\Lambda^{\alpha}_{\;\beta} = \begin{pmatrix}
-\gamma & -\beta \gamma & 0& 0 \\
+\Lambda^{\alpha}_{\;\beta} = 
+\begin{pmatrix}
+\gamma & -\beta \gamma & 0 & 0 \\
 -\beta \gamma & \gamma & 0 & 0 \\
 0 & 0 & 1 & 0 \\
-0 & 0 &0 & 1 \end{pmatrix},
+0 & 0 &0 & 1 
+\end{pmatrix},
 \quad \beta = \frac{v}{c},\quad \gamma = \frac{1}{\sqrt{1 - \beta^2}}
 \end{equation}
 
