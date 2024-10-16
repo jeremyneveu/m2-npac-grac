@@ -51,23 +51,22 @@ Quelques remarques sur les composantes de ce tenseur :
 :::{note} Tenseur énergie-impulsion en Relativité Restreinte
 :class: dropdown
 
-Pour un ensemble de $n$ particules, la densité de quadri-impulsion $p^\alpha$ est définie par {cite:p}`Weinberg1972`[p. 43]:
+Pour un ensemble de $N$ particules, la densité de quadri-impulsion $p^\mu$ est définie par {cite:p}`Weinberg1972`[p. 43]:
 $$
-T^{\alpha 0}(t, \vec x) = \sum_n p_n^{\alpha}c \delta^3(\vec x - \vec x_n(t))
+T^{\mu 0}(t, \vec x) = \sum_n p_n^{\mu}c \delta^{(3)}(\vec x - \vec x_n(t))
 $$
-où $x_n(t)$ et $p_n^{\alpha}(t)=(E_n/c, \vec p_n)$ sont les positions et quadri-impulsions de la particule $n$ à l'instant $t$. Le flux d'impulsion à travers une surface de normale $\vec e_i$ est quant à lui :
+où $x_n(t)$ et $p_n^{\mu}(t)=(E_n/c, \vec p_n)$ sont les positions et quadri-impulsions de la particule $n$ à l'instant $t$. Le flux d'impulsion à travers une surface de normale $\vec e_i$ est quant à lui :
 $$
-T^{\alpha i}(t, \vec x) = \sum_n p_n^{\alpha} \frac{\dd x_n^i(t)}{\dd t} \delta^3(\vec x - \vec x_n(t))
+T^{\mu i}(t, \vec x) = \sum_n p_n^{\mu} \frac{\dd x_n^i(t)}{\dd t} \delta^{(3)}(\vec x - \vec x_n(t))
 $$
 Ces deux définitions peuvent être combinées pour obtenir :
 $$
-T^{\alpha \beta}(t, \vec x) = \sum_n p_n^{\alpha} \frac{\dd x_n^\beta(t)}{\dd t} \delta^3(\vec x - \vec x_n(t))
+T^{\mu \nu}(t, \vec x) = \sum_n p_n^{\mu} \frac{\dd x_n^\nu(t)}{\dd t} \delta^{(3)}(\vec x - \vec x_n(t))
 $$
-avec $x_n^0(t)=ct$. Comme l'énergie d'une particule massive est $E=\sqrt{\vec m^2\gamma^2 v^2 c^2 + m^2 c^4}$ et celle d'une particule de masse nulle est $E=\vert \vec p \vert c$, alors on démontre que $p_n^\alpha c = E_n (\dd x_n^\alpha /c \dd t)$. D'où l'écriture du tenseur énergie-impulsion en tant que tenseur symétrique :
+avec $x_n^0(t)=ct$. Comme l'énergie d'une particule massive est $E=\sqrt{m^2\gamma^2 \vec v^2 c^2 + m^2 c^4}$ et celle d'une particule de masse nulle est $E=\vert \vec p \vert c$, alors on démontre que $p_n^\mu c = E_n (\dd x_n^\mu /c \dd t)$. D'où l'écriture du tenseur énergie-impulsion en tant que tenseur symétrique :
 $$
-T^{\alpha \beta}(t, \vec x) = c^2 \sum_n \frac{p_n^{\alpha} p_n^{\beta}}{E_n} \delta^3(\vec x - \vec x_n(t))
+T^{\mu \nu}(t, \vec x) = c^2 \sum_n \frac{p_n^{\mu} p_n^{\nu}}{E_n} \delta^{(3)}(\vec x - \vec x_n(t))
 $$
-
 
 :::
 
@@ -168,10 +167,10 @@ $$ T^{\mu\nu} = (\rho c^2 + P) U^\mu U^\nu + P \eta^{\mu\nu}$$
 L'équation [](#eq:def-Tmunu) correspond donc bien à la définition d'un tenseur énergie-impulsion pour un fluide parfait dans le cadre relativiste.
 
 Remarquons que dans un espace-temps plat, la conservation du tenseur énergie-impulsion d'un fluide parfait permet de retrouver l'équation de Navier-Stokes sans viscosité et sans forces extérieures, et l'équation de conservation de la matière. Pour simplifier, ramenons-nous au cas d'un fluide incompressible donc $\dd \rho / \dd t = 0$ et non relativiste donc $P / \rho c^2 \propto (v/c)^2 \ll 1$. Alors :
-$$ 0 = \frac{\partial T^{\mu\nu}}{\partial x^\beta} \Rightarrow
+$$ 0 = \frac{\partial T^{\mu\nu}}{\partial x^\nu} \Rightarrow
 \left\lbrace\begin{align*}
-& \alpha = i:\ & 0 = & \vec\nabla P + \rho \frac{\partial \vec v}{\partial t} +  \rho (\vec v \cdot \vec\nabla)(\vec v)  \\
-& \alpha = 0:\ & 0 = & \rho \vec \nabla \vec v + \frac{\partial \rho}{\partial t} 
+& \mu = i:\ & 0 = & \vec\nabla P + \rho \frac{\partial \vec v}{\partial t} +  \rho (\vec v \cdot \vec\nabla)(\vec v)  \\
+& \mu = 0:\ & 0 = & \rho \vec \nabla \vec v + \frac{\partial \rho}{\partial t} 
 \end{align*}\right.
 $$
 
