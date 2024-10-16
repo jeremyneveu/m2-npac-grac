@@ -39,6 +39,10 @@ project:
     CMB: Fond Diffus Cosmologique
     FLRW: Friedmann-Lemaître-Robertson-Walker
     IJCLab: Laboratoire de Physique des 2 Infinis Irène Joliot Curie
+  numbering:
+    heading_1: true
+    heading_2: true
+    heading_3: true
   toc:
     - file: README
     - title: Lectures

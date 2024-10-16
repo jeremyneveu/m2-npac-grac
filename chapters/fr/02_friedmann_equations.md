@@ -556,16 +556,6 @@ $$
 :::
 Ce modèle d'Univers liant la prédiction de son expansion $\bar H(z)$ à son contenu composé d'une constante cosmologique, de matière et de radiation, est appelé modèle $\Lambda$CDM ($\Lambda$ pour la constante cosmologique et CDM pour *Cold Dark Matter*) dans le cas $k=0$ (Univers plat). C'est le modèle standard de la cosmologie.
 
-Dans le cadre d'un Univers plat, les valeurs mesurées par le satellite _Planck_  combinées aux supernovae de type Ia et les oscillations acoustiques de baryons donnent [](doi:10.1051/0004-6361/201833910) :
-$$
-\label{eq:omegas_planck}
-\Omega_m^0 = 0.3111 \pm 0.0056, \quad \Omega_\Lambda^0 = 0.6889 \pm 0.0056
-$$
-pour un Univers plat. Si la courbure est un paramètre libre (on parle d'extension au modèle standard $\Lambda$CDM), on mesure :
-$$
-\Omega_k^0 = 0.0007\pm 0.0037
-$$
-donc l'Univers semble essentiellement plat.
 
 ### Modélisations de l'énergie noire
 
@@ -576,128 +566,176 @@ C'est pourquoi aujourd'hui, en plus du modèle standard $\Lambda$CDM, les cosmol
 - $w$CDM : modèle de courbure quelconque avec comme paramètres  libres $\Omega_m^0$, $\Omega_r^0$, $\Omega_\Lambda^0$ et  $w_{DE}$;
 - $w_0w_a$CDM : modèle où le paramètre d'équation d'état de l'énergie noire est donnée par deux paramètres libres :
 $$
-w_{DE}(a) = w_0 + \left(1 - \frac{a}{a_0}\right)w_a
+w_{DE}(a) = w_0 + \left(1 - \frac{a}{a_0}\right)w_a$$
+
+L'enjeu majeur pour les relevés cosmologiques actuels et futurs est de mesurer $w_a$, afin de mesurer les variations de l'accélération de l'expansion de l'Univers.
+
+
+Distances cosmologiques
+------------
+
+La cosmologie est une science observationnelles. Il faut inférer les propriétés de l'Univers sans pouvoir se déplacer ou refaire l'expérience du Big Bang, mais à partir de nos observations seulement. Les paramètres cosmologiques sont liés au taux d'expansion de l'Univers $H(z)$. Donc pour pouvoir les estimer nous devons être capable de mesurer $H(z)$. Ce taux d'expansion est présent dans les distances propres et comobiles définies [Sec. {number}](#distance-propre-et-distance-comobile), mais celles-ci ne sont pas mesurables. Par contre, avec des télescopes on peut mesurer des flux lumineux et des angles: si on connaît la luminosité de l'objet observé ou sa taille physique on peut en définir sa distance et la lier au taux d'expansion $H(z)$.
+
+
+### Distance de Hubble
+
+Avec les paramètres $c$ et $H_0$, il est possible de construire une quantité homogène à une longueur. Cette distance typique en cosmologie est appelée *distance de Hubble* et vaut :
 $$
-dont les valeurs mesurées par le satellite _Planck_ combinées aux supernovae de type Ia et les oscillations acoustiques de baryons donnent [](doi:10.1051/0004-6361/201833910):
+D_H = \frac{c}{H_0} = 3000\,\text{Mpc/}h
+$$
+où $h$ est usuellement défini par :
+$$
+H_0 = 100\,h\,\text{km/s/Mpc}
+$$
+Donc pour $h=0.7$, on trouve $D_H \approx 4.3 \,\text{Gpc} \approx 14 \,\text{Gly}$. Cette valeur va apparaître pour toutes les distances (non comobiles) définies ci-après.
+
+
+### Distance de luminosité 
+
+Dans un espace statique et plat, la luminosité apparente d'une source au repos à distance $D_L$ serait $L_E/4\pi D_L^2$. On propose donc de définir la distance de luminosité d'une source $D_L(z)$ en cosmologie par :
+$$
+\Phi_0 \equiv \frac{L_E}{4 \pi D_L^2(z)}
+$$
+Considérons une source située en $\sigma_E$, émettant $n_E$ photons de fréquence moyenne $\nu_E$ à l'instant $t_E$ (se reporter encore à la [](#fig:distances_croquis)). Sa luminosité est :
+$$
+L_E = \frac{n_E h\nu_E}{\dd t_E}.$$ 
+Alors le flux surfacique reçu par un observateur est : 
+$$
+\Phi_0 = \frac{n_0 h \nu_0}{\dd t_0 \dd S}.$$ 
+La surface sur laquelle se répartit, à l'instant $t_0$, le flux émis est:
+$$
+S = \int_0^{2\pi} \int_0^\pi \sqrt{-g} \dd\theta \dd\phi = \int_0^{2\pi} \int_0^\pi a^2(t_0)\sigma^2(t_0)\sin^2\theta \dd\theta \dd\phi = 4 \pi a^2_0 \sigma^2_E.
+$$
+avec $\sigma(t_0)=\sigma_E$.
+Le nombre de photons émis $n_E$ intercepté par la surface collectrice de taille $\dd S$ est donc :
+$$
+n_0 = n_E \dd S/(4 \pi a^2_0 \sigma^2_E).$$
+Or à partir de l'équation
+[](#eq:redshift2), on a :
+$$\nu_E = \nu_0 a_0/a(t_E) = \nu_0 (1+z)$$
+et aussi :
+$$\dd t_E = \dd t_0/(1+z).$$
+D'où le flux reçu :
+$$\Phi_0 = \frac{n_0 h \nu_0}{\dd t_0 \dd S} =  \frac{h \nu_0 n_E}{\dd t_0 4 \pi a^2_0 \sigma^2_E} = \frac{L_E}{4 \pi a^2_0 \sigma^2_E(1+z)^2}.$$
+
+On en déduit l'expression de la distance de luminosité dans un univers courbe et en expansion, fonction des paramètres cosmologiques et le redshift :
+$$
+\Rightarrow D_L(z) = a_0 \sigma_E (1+z) = a_0 (1+z)\left\lbrace
+\begin{array}{cl}
+    \sin \chi(z) & \text{ si } k=+1 \\
+    \chi(z) & \text{ si } k=0 \\
+    \text{sh } \chi(z) & \text{ si } k=-1 
+\end{array}
+\right. 
+$$
+
+Le facteur d'échelle aujourd'hui $a_0$ n'est pas accessible via les équations de Friedmann qui ne donnent que le taux d'expansion. En revanche, il s'exprime en fonction des paramètres cosmologiques et $H_0$ :
+\begin{equation}
+\Omega_k^0 = - \frac{kc^2}{H_0^2 a_0^2} \Rightarrow a_0 = \left\lbrace\begin{array}{l}
+    \displaystyle{\frac{c}{H_0\sqrt{-\Omega_k^0}}}  \text{ if } k=+1 \\
+    \text{indéterminé mais usuellement valant } 1 \text{ if } k=0 \\
+    \displaystyle{\frac{c}{H_0\sqrt{\Omega_k^0}}}  \text{ if } k=-1 
+\end{array}
+\right.
+\end{equation}
+Ainsi :
+\begin{equation}
+\displaystyle{\chi(z) = \left\lbrace\begin{array}{cl}
+    \displaystyle{H_0\sqrt{-\Omega_k^0}\int_0^z\frac{dz}{H(z)}}  & \text{ if } k=+1 \\
+    \displaystyle{\frac{1}{a_0}\int_0^z\frac{cdz}{H(z)}} & \text{ if } k=0 \\
+    \displaystyle{H_0\sqrt{\Omega_k^0}\int_0^z\frac{dz}{H(z)} } & \text{ if } k=-1 
+\end{array}
+\right.}
+\end{equation}
+
+$$
+D_L(z) = (1+z) \left\lbrace
+\begin{array}{cl}
+    \displaystyle \frac{c}{H_0 \sqrt{-\Omega_k^0}} \sin\left[ H_0  \sqrt{-\Omega_k^0} \int_0^z \frac{\dd z}{H(z)} \right] & \text{ si } k=+1 \\
+    \displaystyle \int_0^z \frac{\dd z}{H(z)}  & \text{ si } k=0 \\
+    \displaystyle \frac{c}{H_0 \sqrt{\Omega_k^0}} \sh\left[ H_0  \sqrt{\Omega_k^0} \int_0^z \frac{\dd z}{H(z)} \right] & \text{ si } k=-1 \\
+\end{array}
+\right. 
+.$$
+
+On a donc obtenu un lien entre une mesure de distance obtenue par la mesure du flux $\Phi_0$ d'un astre, et un modèle cosmologique fonction de paramètres à déterminer. La mesure des flux d'objets de luminosité intrinsèque $L_E$ connue permet donc d'estimer les paramètres cosmologiques.
+
+### Distances angulaires
+
+
+:::{figure} ../../images/angular_distance.svg
+:name: fig:angular_distance
+:align: center
+:width: 100%
+
+Distance angulaire d'un objet de taille physique transverse $l$.
+:::
+
+
+Dernière distance importante en cosmologie, la distance angulaire d'un objet $D_A(z)$. La distance angulaire $D_A(z)$ est la distance sous laquelle sa taille apparente serait à nouveau $l$ au moment de l'émission pour la même taille angulaire $\delta$ dans un Univers plat et statique :
+$$
+\delta = \frac{l}{D_A(z)}
+$$
+
+Soit un objet de taille transverse physique $l$ situé en $\sigma=\sigma_E,t=t_E$ et observé aujourd'hui en $\sigma=0,t=t_0$. Dans l'espace comobile, il serait vu sous un angle $\delta \approx l_c / \sigma_E$ (avec $\delta\ll 1$ et $l_c = l / a_E$ sa taille comobile). On propose de définir la distance angulaire comobile ou distance transverse comobile simplement par :
+$$d_A(z) = \frac{l_c}{\delta} = \sigma_E = \left\lbrace\begin{array}{cl}
+    \sin \chi(z) & \text{ si } k=+1 \\
+    \chi(z) & \text{ si } k=0 \\
+    \sinh \chi(z) & \text{ si } k=-1 
+\end{array}
+\right. .$$
+
+Dans l'espace physique, l'objet est à une distance $D_p(t_E) = a_E \sigma_E$ à l'émission, d'où : 
+$$
+\delta = \frac{l}{D_p(t_E)} =  \frac{l}{a_E \sigma_E}  = \frac{l_c}{\sigma_E}
+$$
+On en déduit l'expression de la distance angulaire dans un univers courbe et en expansion, fonction des paramètres cosmologiques et le redshift :
+$$
+\Rightarrow D_A(z) \equiv\frac{l}{\delta} =  a(t_E) \sigma_E=\frac{a_0 \sigma_E}{1+z} = \frac{a_0}{1+z}d_A(z)=\frac{D_L(z)}{(1+z)^2}$$
+$$D_A(z) = \frac{a_0}{1+z} \left\lbrace\begin{array}{cl}
+    \sin \chi(z) & \text{ si } k=+1 \\
+    \chi(z) & \text{ si } k=0 \\
+    \sinh \chi(z) & \text{ si } k=-1 
+\end{array}
+\right.$$
+
+$$D_A(z) = \frac{1}{1+z} \left\lbrace
+\begin{array}{cl}
+    \displaystyle \dfrac{c}{H_0 \sqrt{-\Omega_k^0}} \sin\left[ H_0  \sqrt{-\Omega_k^0} \int_0^z \dfrac{\dd z}{H(z)} \right] & \text{ si } k=+1 \\
+    \displaystyle \int_0^z \dfrac{\dd z}{H(z)}  & \text{ si } k=0 \\
+    \displaystyle \dfrac{c}{H_0 \sqrt{\Omega_k^0}} \sh\left[ H_0  \sqrt{\Omega_k^0} \int_0^z \dfrac{\dd z}{H(z)} \right] & \text{ si } k=-1 \\
+\end{array}
+\right. 
+.$$
+Autrement dit, ce serait la distance à laquelle on pourrait interpréter la taille apparente de l'objet comme dans un Univers statique et euclidien. Aussi, d'après l'exercice [](#exo:sphere-comobile), on voit que l'usage de $\sigma$ au lieu de $\chi$ est bien adapté aux trois types de courbures d'Univers dans ces définitions.
+
+:::{note} Loi de Hubble-Lemaître
+
+A bas redshift $z\ll 1$, on retrouve la loi de Hubble-Lemaître pour les trois courbures :
+$$D_L(z) \approx \frac{cz}{H_0} \approx D_A(z)$$
+avec $cz$ la vitesse apparente de récession par rapport à la Terre.
+
+:::
+
+
+:::{note} Les mesures des paramètres cosmologiques
+
+Dans le cadre d'un Univers plat, les mesures angulaires réalisées par le satellite _Planck_ sur le fond diffus cosmologique, combinées aux mesures de flux des supernovae de type Ia, et les distances angulaires des oscillations acoustiques de baryons permettent d'inférer le contenu en matière et énergie noire pour un univers plat aujourd'hui ([](doi:10.1051/0004-6361/201833910)) :
+$$
+\label{eq:omegas_planck}
+\Omega_m^0 = 0.3111 \pm 0.0056, \quad \Omega_\Lambda^0 = 0.6889 \pm 0.0056
+$$
+Si la courbure est un paramètre libre du modèle (on parle d'extension au modèle standard $\Lambda$CDM), on mesure :
+$$
+\Omega_k^0 = 0.0007\pm 0.0037
+$$
+Si on propose un modèle à deux paramètres pour l'énergie noire, on obtient ([](doi:10.1051/0004-6361/201833910)) :
 $$
 w_0 = −0.957 \pm 0.080, \quad w_a = −0.29^{+0.32}_{ −0.26}
 $$ 
-L'enjeu majeur pour les relevés cosmologiques actuels et futurs est de mesurer $w_a$ avec une meilleure précision, afin de mesurer les variations de l'accélération de l'expansion de l'Univers.
-
-
-:::{exercise} Evolution des densités d'énergie et interprétation
-:label: exo:rhos
-
-1. Démontrer la formule [](#eq:conservation_energie).
-2. Trouver l'évolution de la densité de matière $\rho_m$ en fonction de $a$. Même question pour la densité de rayonnement $\rho_r$. 
-On rappelle que $P_m=0$ pour la matière non relativiste et $P_r=\epsilon_r/3$ pour le rayonnement.
-3. A partir d'un raisonnement sur un cube comobile qui se dilate, avec des arguments physiques sur des nombres de galaxies,
-retrouvez le même résultat.
-4. Pour un fluide parfait dont l'équation d'état $w$ est constante ($P=w\rho c^2$), donner l'évolution de sa densité d'énergie.
-5. Identifier le terme $\Lambda g_{\mu\nu}$ avec le tenseur énergie-contrainte d'un fluide parfait. Trouver la densité d'énergie $\rho_\Lambda$ 
-et la pression $P_\Lambda$ exercées par la constante cosmologique ainsi que son équation d'état.
-6. À partir de ces dernières questions, réfléchissez au comportement de la densité d'énergie liée au vide. Considérons une chambre à piston cylindrique de section $A$ "remplie" d'énergie du vide. Le piston est tiré sur une distance linéaire $\dd x$.  Montrez que l'énergie créée par le retrait du piston est égale au travail effectué par le vide, à condition que :
-\begin{equation}
- p_{\rm vac} = - \rho_{\rm vac} c^2 
- \end{equation} % voir Hobson exo piston 15,5 p422
-Cette équation d'état du vide peut être établie à l'aide de la théorie quantique des champs. Elle montre donc que, dans ce cas, la densité d'énergie du vide est constante lorsque le piston se retire.
 
 :::
 
-:::{solution} exo:rhos
-:class: dropdown
-
-1. Commençons :
-\begin{align}
-8\pi \GN \dot{\rho} & = 6\dot{H}H - \frac{6c^2 k \dot{a}}{a^3} \\
-& = 3H \left[-8\pi \GN P / c^2 + c^2 \Lambda - 3 H^2 - \frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
-& = 3H \left[-8\pi \GN P / c^2 -8 \pi G \rho + 2\frac{kc^2}{a^2}\right] - 6 H \frac{kc^2}{a^2} \\
-& = 3H \left[-8\pi \GN P / c^2 -8 \pi G \rho \right]
-\end{align}
-et $\dot{\rho} c^2 = -3 H(\rho c^2 + P )$. 
-
-
-2. En utilisant la définition du paramètre de Hubble $H = (\dd a/\dd t)/a$, nous pouvons transformer les dérivées temporelles en dérivées par rapport au facteur d'échelle $a$ (ou décalage vers le rouge $z$) :
-\begin{equation}
-\frac{\dd}{\dd t}=Ha\frac{\dd}{\dd a}
-\end{equation}
-La formule de conservation de l'énergie se transforme en :
-\begin{equation}
-a\frac{\dd\rho}{da} = -3 (\rho c^2 + P)
-\end{equation}
-En ce qui concerne la matière non relativiste, $P_m=0$ donc :
-\begin{equation}
-\frac{\dd\rho_m}{\rho_m} = -3 \frac{\dd a}{a} \Rightarrow \rho_m(a) = \rho_m^0 \left(\frac{a_0}{a}\right)^3
-\end{equation}
-En ce qui concerne le rayonnement, $P_r=\rho_r c^2 / 3$ donc :
-\begin{equation}
-\frac{\dd\rho_r}{\rho_r} = -4 \frac{\dd a}{a} \Rightarrow \rho_r(a) = \rho_r^0 \left(\frac{a_0}{a}\right)^4
-\end{equation}
-
-
-3. 
-```{list-table} Conservation de l'énergie pour la matière et le rayonnement dans un univers en expansion.
-:header-rows: 0
-:name: fig:cubes
-
-* - :::{image} ../../images/cube_galaxies.svg
-    :alt: galaxies
-    :width: 100%
-    :align: center
-    :::
-  - :::{image} ../../images/cube_waves.svg
-    :alt: light
-    :width: 100%
-    :align: center
-```
-
-Dans le cube isolé, l'énergie et la matière se conservent. Ainsi, en ce qui concerne les galaxies présentes dans un cube en expansion, nous pouvons écrire que leur nombre est conservé par l'expansion de la manière suivante :
-\begin{equation}
-N_{\rm gal} = \rho_m^0 a_0^3 = \rho_m(a) a^3 \Rightarrow \rho_m(a) = \rho_m^0 \left(\frac{a_0}{a}\right)^3
-\end{equation}
-Considérons une onde électromagnétique dans un cube en expansion. La longueur d'onde physique $\lambda$ augmente mais la longueur d'onde en coordonnées $\lambda/a$ est conservée. La conservation de l'énergie de rayonnement dans un cube en mouvement s'écrit :
-\begin{equation}
-a_0 \frac{h c}{\lambda_0} = a \frac{h c}{\lambda}
-\end{equation}
-La densité d'énergie est alors
-\begin{equation}
-\rho_r(a) = \frac{(hc/\lambda)}{a^3} = \frac{a_0(hc/\lambda_0)}{a^4} = \rho_r^0 \left(\frac{a_0}{a}\right)^4
-\end{equation}
-Le comportement en $a^{-4}$ est donc dû à la dilatation de la longueur d'onde du photon.
-
-4. On montre que
-\begin{align}
-\dot{\rho}c +3\frac{\dot{a}}{ac}(\rho c^2+P)=0 & \Leftrightarrow \dot{\rho}c =-3\frac{\dot{a}}{ac}(1+w)\rho c^2=0 \\
-& \Leftrightarrow \frac{d\rho}{\rho} = -3(1+w) \frac{da}{a} \\
-& \Rightarrow \rho = \rho_0 \left( \frac{a}{a_0}\right)^{-3(1+w)}
-\end{align}
-
-5. En utilisant l'équation d'Einstein, en passant le terme $\Lambda$ du côté du tenseur énergie-contrainte de l'équation, nous identifions cette contribution comme un fluide parfait :
-\begin{equation}
-\Lambda g_{\mu\nu} = \frac{8\pi \GN}{c^4} \begin{pmatrix} \rho_\Lambda c^2 & 0 & 0 & 0 \\ 0 &a^2 p_\Lambda & 0 & 0 \\ 0&0&a^2 p_\Lambda &0 \\ 0&0&0&a^2 p_\Lambda \end{pmatrix}
-\end{equation}
-Nous obtenons :
-\begin{align}
-\Lambda & = \frac{8\pi \GN}{c^4} \rho_\Lambda c^2 \Leftrightarrow \rho_\Lambda c^2 = c^4 \Lambda / 8\pi \GN \\
--a^2 \Lambda & = \frac{8\pi \GN}{c^4} a^2 P_\Lambda \Leftrightarrow p_\Lambda = - c^4 \Lambda / 8 \pi \GN = - \rho_\Lambda c^2
-\end{align}
-Pour la constante cosmologique, l'équation d'état est constante et sa valeur est $w=-1$. En utilisant la question précédente, nous avons :
-\begin{equation}
-\rho = \rho_0 \left( \frac{a}{a_0}\right)^{-3(1+w)} = \rho_0
-\end{equation}
-La densité d'énergie associée à la constante cosmologique est constante tout au long de l'expansion de l'univers.
-
-6. L'énergie créée par le retrait du piston est :
-\begin{equation}
-\dd U = \dd\left(\rho_{\rm vac} c^2 V\right) = c^2 V \dd\rho_{\rm vac} + \rho_{\rm vac} c^2 \dd V
-\end{equation}
-Pour une transformation adiabatique, le premier principe de la thermodynamique donne :
-\begin{equation}
-\dd U = \delta W = -P_{\rm vac} \dd V
-\end{equation}
-En supposant que $P_{\rm vac}= - \rho_{\rm vac} c^2$, pour la densité d'énergie du vide nous avons $d\rho_{\rm vac} = 0$ et le premier principe $ dU = \delta W$ est vérifié.
-
-:::
 
 
 :::{exercise} Ordres de grandeur
@@ -720,6 +758,8 @@ $$1\,\text{A.U.}\approx 1.5\times 1011m;EDESS/c2≃0.2⋅1014 kg;M⊙≃2⋅1030
 Transform Lambda into a length: Length = sqrt(1/Lambda) = ....
 
 :::
+
+
 
 
 [^epsP]: Le choix des notations pour ces fonctions mathématiques n'a pas été fait par hasard...

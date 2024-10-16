@@ -468,25 +468,10 @@ z = \frac{\lambda_0-\lambda_E}{\lambda_E} = \frac{5000-4861}{4861} = 0.028
 :::
 
 
-Distances en cosmologie
+
+
+Distance propre et distance comobile
 ------------
-
-### Distance de Hubble
-
-Avec les paramètres $c$ et $H_0$, il est possible de construire une quantité homogène à une longueur. Cette distance typique en cosmologie est appelée *distance de Hubble* et vaut :
-$$
-D_H = \frac{c}{H_0} = 3000\,\text{Mpc/}h
-$$
-où $h$ est usuellement défini par :
-$$
-H_0 = 100\,h\,\text{km/s/Mpc}
-$$
-Donc pour $h=0.7$, on trouve $D_H \approx 4.3 \,\text{Gpc} \approx 14 \,\text{Gly}$. Cette valeur va apparaître pour toutes les distances (non comobiles) définies ci-après.
-
-
-
-
-### Distance propre et distance comobile
 
 La *distance propre* définit la distance physique entre deux objets à un instant $t$. Soit un objet émetteur situé aux coordonnées comobiles $(\sigma_E, \theta_E, \phi_E)$. Par définition, la distance propre entre cet objet et un observateur situé à l'origine est le long d'une courbe à $\theta$ et $\phi$ constants et vaut :
 :::{math}
@@ -539,33 +524,12 @@ a = \frac{a_0}{1+z} \Rightarrow \dd a = -a_0 \frac{\dd z}{(1+z)^2}\Rightarrow \f
 D'où la distance comobile en terme de temps $t$, facteur d'échelle $a$ et redshift $z$ :
 \begin{align}
 \chi(\sigma_E) & = \chi(t_E) = \int_{t_E}^{t_0} \frac{c\dd t'}{a(t')} = \int_{a_E}^{a_0} \frac{c\dd a}{a^2 H(a)} \\
-& = \int_z^0 \frac{1+z}{a_0}\frac{-\dd z}{(1+z)H(z)} = \frac{1}{a_0}\int_0^z\frac{c\dd z}{H(z)} = \chi(z)
+& = \int_z^0 \frac{1+z}{a_0}\frac{-c\dd z}{(1+z)H(z)} = \frac{1}{a_0}\int_0^z\frac{c\dd z}{H(z)} = \chi(z)
 \end{align}
 
 La distance propre est la distance que l'on pourrait mesurer effectivement à un instant $t$ entre deux objets. Si on choisit un objet situé à la coordonné comobile $\sigma_E$ et un observateur comobile en 0, la distance propre aujourd'hui à $t_0$ s'écrit alors simplement pour les trois cas de courbure :
 $$D_p(z) = a_0 \chi(z) =\int_0^z\frac{c \dd z}{H(z)} $$
 et s'exprime bien en unités de longueur. La notion de distance propre est illustrée [](#fig:distances).
-
-
-
-En général, $a_0$ n'est pas directement mesurable, mais les paramètres cosmologiques et $H_0$ peuvent être déterminés. Il est donc utile de savoir comment se débarrasser de $a_0$ dans le cas général. Dans cette paramétrisation, la valeur de $a_0$ est égale au rayon de l'univers dans les cas courbes (avec $a$ ayant la dimension d'une longueur, $\sigma$ non dimensionné). Pour des raisons qui seront évidentes au chapitre suivant, à $t=t_0$ on peut définir une observable $\Omega_k^0$ dépendant de $a_0$ :
-\begin{equation}
-\Omega_k^0 = - \frac{kc^2}{H_0^2 a_0^2} \Rightarrow a_0 = \left\lbrace\begin{array}{l}
-    \displaystyle{\frac{c}{H_0\sqrt{-\Omega_k^0}}}  \text{ if } k=+1 \\
-    \text{indéterminé mais usuellement valant } 1 \text{ if } k=0 \\
-    \displaystyle{\frac{c}{H_0\sqrt{\Omega_k^0}}}  \text{ if } k=-1 
-\end{array}
-\right.
-\end{equation}
-Ainsi :
-\begin{equation}
-\displaystyle{\chi(z) = \left\lbrace\begin{array}{cl}
-    \displaystyle{H_0\sqrt{-\Omega_k^0}\int_0^z\frac{dz}{H(z)}}  & \text{ if } k=+1 \\
-    \displaystyle{\frac{1}{a_0}\int_0^z\frac{cdz}{H(z)}} & \text{ if } k=0 \\
-    \displaystyle{H_0\sqrt{\Omega_k^0}\int_0^z\frac{dz}{H(z)} } & \text{ if } k=-1 
-\end{array}
-\right.}
-\end{equation}
 
 
 :::{figure} ../../images/distances.svg
@@ -636,114 +600,6 @@ où $L$ est la luminosité intrinsèque d'un objet (en watts) et $l$ une taille 
 
 :::
 
-### Distance de luminosité 
-
-Dans un espace statique et plat, la luminosité apparente d'une source au repos à distance $D_L$ serait $L_E/4\pi D_L^2$. On propose donc de définir la distance de luminosité d'une source $D_L(z)$ en cosmologie par :
-$$
-\Phi_0 \equiv \frac{L_E}{4 \pi D_L^2(z)}
-$$
-Considérons une source située en $\sigma_E$, émettant $n_E$ photons de fréquence moyenne $\nu_E$ à l'instant $t_E$ (se reporter encore à la [](#fig:distances_croquis)). Sa luminosité est :
-$$
-L_E = \frac{n_E h\nu_E}{\dd t_E}.$$ 
-Alors le flux surfacique reçu par un observateur est : 
-$$
-\Phi_0 = \frac{n_0 h \nu_0}{\dd t_0 \dd S}.$$ 
-La surface sur laquelle se répartit, à l'instant $t_0$, le flux émis est:
-$$
-S = \int_0^{2\pi} \int_0^\pi \sqrt{-g} \dd\theta \dd\phi = \int_0^{2\pi} \int_0^\pi a^2(t_0)\sigma^2(t_0)\sin^2\theta \dd\theta \dd\phi = 4 \pi a^2_0 \sigma^2_E.
-$$
-avec $\sigma(t_0)=\sigma_E$.
-Le nombre de photons émis $n_E$ intercepté par la surface collectrice de taille $\dd S$ est donc :
-$$
-n_0 = n_E \dd S/(4 \pi a^2_0 \sigma^2_E).$$
-Or à partir de l'équation
-[](#eq:redshift2), on a :
-$$\nu_E = \nu_0 a_0/a(t_E) = \nu_0 (1+z)$$
-et aussi :
-$$\dd t_E = \dd t_0/(1+z).$$
-D'où le flux reçu :
-$$\Phi_0 = \frac{n_0 h \nu_0}{\dd t_0 \dd S} =  \frac{h \nu_0 n_E}{\dd t_0 4 \pi a^2_0 \sigma^2_E} = \frac{L_E}{4 \pi a^2_0 \sigma^2_E(1+z)^2}.$$
-
-On en déduit l'expression de la distance de luminosité dans un univers courbe et en expansion, fonction des paramètres cosmologiques et le redshift :
-$$
-\Rightarrow D_L(z) = a_0 \sigma_E (1+z) = a_0 (1+z)\left\lbrace
-\begin{array}{cl}
-    \sin \chi(z) & \text{ si } k=+1 \\
-    \chi(z) & \text{ si } k=0 \\
-    \text{sh } \chi(z) & \text{ si } k=-1 
-\end{array}
-\right. 
-$$
-
-$$
-D_L(z) = (1+z) \left\lbrace
-\begin{array}{cl}
-    \displaystyle \frac{c}{H_0 \sqrt{-\Omega_k^0}} \sin\left[ H_0  \sqrt{-\Omega_k^0} \int_0^z \frac{\dd z}{H(z)} \right] & \text{ si } k=+1 \\
-    \displaystyle \int_0^z \frac{\dd z}{H(z)}  & \text{ si } k=0 \\
-    \displaystyle \frac{c}{H_0 \sqrt{\Omega_k^0}} \sh\left[ H_0  \sqrt{\Omega_k^0} \int_0^z \frac{\dd z}{H(z)} \right] & \text{ si } k=-1 \\
-\end{array}
-\right. 
-.$$
-
-
-
-### Distances angulaires
-
-
-:::{figure} ../../images/angular_distance.svg
-:name: fig:angular_distance
-:align: center
-:width: 100%
-
-Distance angulaire d'un objet de taille physique transverse $l$.
-:::
-
-
-Dernière distance importante en cosmologie, la distance angulaire d'un objet $D_A(z)$. La distance angulaire $D_A(z)$ est la distance sous laquelle sa taille apparente serait à nouveau $l$ au moment de l'émission pour la même taille angulaire $\delta$ dans un Univers plat et statique :
-$$
-\delta = \frac{l}{D_A(z)}
-$$
-
-Soit un objet de taille transverse physique $l$ situé en $\sigma=\sigma_E,t=t_E$ et observé aujourd'hui en $\sigma=0,t=t_0$. Dans l'espace comobile, il serait vu sous un angle $\delta \approx l_c / \sigma_E$ (avec $\delta\ll 1$ et $l_c = l / a_E$ sa taille comobile). On propose de définir la distance angulaire comobile ou distance transverse comobile simplement par :
-$$d_A(z) = \frac{l_c}{\delta} = \sigma_E = \left\lbrace\begin{array}{cl}
-    \sin \chi(z) & \text{ si } k=+1 \\
-    \chi(z) & \text{ si } k=0 \\
-    \sinh \chi(z) & \text{ si } k=-1 
-\end{array}
-\right. .$$
-
-Dans l'espace physique, l'objet est à une distance $D_p(t_E) = a_E \sigma_E$ à l'émission, d'où : 
-$$
-\delta = \frac{l}{D_p(t_E)} =  \frac{l}{a_E \sigma_E}  = \frac{l_c}{\sigma_E}
-$$
-On en déduit l'expression de la distance angulaire dans un univers courbe et en expansion, fonction des paramètres cosmologiques et le redshift :
-$$
-\Rightarrow D_A(z) \equiv\frac{l}{\delta} =  a(t_E) \sigma_E=\frac{a_0 \sigma_E}{1+z} = \frac{a_0}{1+z}d_A(z)=\frac{D_L(z)}{(1+z)^2}$$
-$$D_A(z) = \frac{a_0}{1+z} \left\lbrace\begin{array}{cl}
-    \sin \chi(z) & \text{ si } k=+1 \\
-    \chi(z) & \text{ si } k=0 \\
-    \sinh \chi(z) & \text{ si } k=-1 
-\end{array}
-\right.$$
-
-$$D_A(z) = \frac{1}{1+z} \left\lbrace
-\begin{array}{cl}
-    \displaystyle \dfrac{c}{H_0 \sqrt{-\Omega_k^0}} \sin\left[ H_0  \sqrt{-\Omega_k^0} \int_0^z \dfrac{\dd z}{H(z)} \right] & \text{ si } k=+1 \\
-    \displaystyle \int_0^z \dfrac{\dd z}{H(z)}  & \text{ si } k=0 \\
-    \displaystyle \dfrac{c}{H_0 \sqrt{\Omega_k^0}} \sh\left[ H_0  \sqrt{\Omega_k^0} \int_0^z \dfrac{\dd z}{H(z)} \right] & \text{ si } k=-1 \\
-\end{array}
-\right. 
-.$$
-Autrement dit, ce serait la distance à laquelle on pourrait interpréter la taille apparente de l'objet comme dans un Univers statique et euclidien. Aussi, d'après l'exercice [](#exo:sphere-comobile), on voit que l'usage de $\sigma$ au lieu de $\chi$ est bien adapté aux trois types de courbures d'Univers dans ces définitions.
-
-:::{note} Loi de Hubble-Lemaître
-
-A bas redshift $z\ll 1$, on retrouve la loi de Hubble-Lemaître pour les trois courbures :
-$$D_L(z) \approx \frac{cz}{H_0} \approx D_A(z)$$
-avec $cz$ la vitesse apparente de récession par rapport à la Terre.
-
-:::
-
 
 Temps cosmique et temps conforme
 --------------------------------
@@ -753,48 +609,48 @@ Le temps mérite une mention spéciale. Dans notre Univers idéal, sans surdensi
 
 
 
-:::{exercise} Temps conforme
-:label: exo:conformal-time
+% :::{exercise} Temps conforme
+% :label: exo:conformal-time
 
-Transformer la partie spatiale de la métrique FLRW dy système de coordonnées comobiles $(\sigma,\theta,\phi)$ [](#eq:FLRW-metric-spherical) au système de coordonnées comobiles équivalent $(\chi,\theta,\phi )$ avec $\chi$ la distance comobile. Étendre cette transformation aux coordonnées temporelles et proposer une définition du temps conforme $\eta$ et l'écrire sous la forme :
-\begin{equation}
-\dd s^2 = a^2(t) \left[ -c^2 \dd\eta^2 + \dd\chi^2 + f_k^2(\chi)\dd\theta^2 + f_k^2(\chi)\sin^2\theta \dd\phi^2 \right]
-\end{equation}
-avec $f_k(\chi)$ une fonction de $k$ et $\chi$ à définir. 
+% Transformer la partie spatiale de la métrique FLRW dy système de coordonnées comobiles $(\sigma,\theta,\phi)$ [](#eq:FLRW-metric-spherical) au système de coordonnées comobiles équivalent $(\chi,\theta,\phi )$ avec $\chi$ la distance comobile. Étendre cette transformation aux coordonnées temporelles et proposer une définition du temps conforme $\eta$ et l'écrire sous la forme :
+% \begin{equation}
+% \dd s^2 = a^2(t) \left[ -c^2 \dd\eta^2 + \dd\chi^2 + f_k^2(\chi)\dd\theta^2 + f_k^2(\chi)\sin^2\theta \dd\phi^2 \right]
+% \end{equation}
+% avec $f_k(\chi)$ une fonction de $k$ et $\chi$ à définir. 
 
-:::
+% :::
 
-:::{solution} exo:conformal-time
-:label: exo:conformal-time-sol
-:class: dropdown
+% :::{solution} exo:conformal-time
+% :label: exo:conformal-time-sol
+% :class: dropdown
 
-On commence par la définition de la métrique FLRW :
-\begin{align}
-\dd s^2 & = -c^2\dd t^2 + a^2(t) \left[ \frac{\dd\sigma^2}{1-k\sigma^2} + \sigma^2\dd\theta^2 + \sigma^2 \sin^2\theta \dd\phi^2 \right]  \\
-& = -c^2\dd t^2 + a^2(t) \left[ \dd\chi^2 + \sigma^2\dd\theta^2 + \sigma^2 \sin^2\theta \dd\phi^2 \right] \\
-& = -c^2\dd t^2 + a^2(t) \left[ \dd\chi^2 + f_k^2(\chi)\dd\theta^2 +f_k^2(\chi) \sin^2\theta \dd\phi^2 \right]
-\end{align}
-avec $\dd\chi = \dd\sigma/\sqrt{1-k\sigma^2}$ et :
-\begin{equation}
-\sigma = f_k(\chi) = \left\lbrace\begin{array}{cl}
-    \sin\chi & \text{ si } k=+1  \\
-    \chi  & \text{ si } k=0 \\
-    \sinh\chi & \text{ si } k=-1 
-\end{array}
-\right.
-\end{equation}
-On définit $\dd\eta =  \dd t / a(t)$ le temps conforme, et on aboutit à :
-\begin{equation}
-\dd s^2 = a^2(t) \left[ -c^2 \dd\eta^2 + \dd\chi^2 + f_k^2(\chi)\dd\theta^2 + f_k^2(\chi)\sin^2\theta \dd\phi^2 \right]
-\end{equation}
-Le temps conforme $\eta$ possède la dimension d'une durée. 
+% On commence par la définition de la métrique FLRW :
+% \begin{align}
+% \dd s^2 & = -c^2\dd t^2 + a^2(t) \left[ \frac{\dd\sigma^2}{1-k\sigma^2} + \sigma^2\dd\theta^2 + \sigma^2 \sin^2\theta \dd\phi^2 \right]  \\
+% & = -c^2\dd t^2 + a^2(t) \left[ \dd\chi^2 + \sigma^2\dd\theta^2 + \sigma^2 \sin^2\theta \dd\phi^2 \right] \\
+% & = -c^2\dd t^2 + a^2(t) \left[ \dd\chi^2 + f_k^2(\chi)\dd\theta^2 +f_k^2(\chi) \sin^2\theta \dd\phi^2 \right]
+% \end{align}
+% avec $\dd\chi = \dd\sigma/\sqrt{1-k\sigma^2}$ et :
+% \begin{equation}
+% \sigma = f_k(\chi) = \left\lbrace\begin{array}{cl}
+%     \sin\chi & \text{ si } k=+1  \\
+%     \chi  & \text{ si } k=0 \\
+%     \sinh\chi & \text{ si } k=-1 
+% \end{array}
+% \right.
+% \end{equation}
+% On définit $\dd\eta =  \dd t / a(t)$ le temps conforme, et on aboutit à :
+% \begin{equation}
+% \dd s^2 = a^2(t) \left[ -c^2 \dd\eta^2 + \dd\chi^2 + f_k^2(\chi)\dd\theta^2 + f_k^2(\chi)\sin^2\theta \dd\phi^2 \right]
+% \end{equation}
+% Le temps conforme $\eta$ possède la dimension d'une durée. 
 
-:::
+% :::
 
-D'ailleurs, en utilisant le temps conforme $\eta$ défini par $\dd \eta = \dd t / a(t)$, pour un photon on obtient :
-$$
-\chi = c \int_{\eta_E}^{\eta_0} \dd \eta = c (\eta_0 - \eta_E)$$
-donc on reconnait la relation traditionnelle entre distance et temps, mais dans l'espace comobile sans dimension.
+% D'ailleurs, en utilisant le temps conforme $\eta$ défini par $\dd \eta = \dd t / a(t)$, pour un photon on obtient :
+% $$
+% \chi = c \int_{\eta_E}^{\eta_0} \dd \eta = c (\eta_0 - \eta_E)$$
+% donc on reconnait la relation traditionnelle entre distance et temps, mais dans l'espace comobile sans dimension.
 
 
 [^gammat]: Rien ne l'interdit, puisque $\gamma_{ij}$ peut dépendre du temps
