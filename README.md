@@ -15,6 +15,6 @@ abbreviations: []
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fgitlab.in2p3.fr%2Fjeremy.neveu%2Fm2-npac-cosmology/HEAD)
 
 
-[Version française ici.](https://m2-npac-ac.pages.in2p3.fr/fr/start.html)
+% [Version française ici.](https://m2-npac-ac.pages.in2p3.fr/fr/start.html)
 
-[English version here.](https://m2-npac-ac.pages.in2p3.fr/en/start.html)
+% [English version here.](https://m2-npac-ac.pages.in2p3.fr/en/start.html)
