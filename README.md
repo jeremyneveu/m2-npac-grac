@@ -4,7 +4,6 @@ subject: Astroparticles and Cosmology
 # subtitle: How can I estimate the state AND the parameters?
 short_title: M2 NPAC AC
 keywords: cosmology, astroparticles, general relativity
-abbreviations: []
 ---
 
 > Astroparticles and Cosmology lectures for M2 NPAC.
