@@ -65,8 +65,7 @@ La constante de Hubble $H_0$ apparaît dans les trois modèles d'Univers précé
 :::{exercise} Modèle de Sitter
 :label: exo:desitter
 
-Peu après Einstein, de Sitter a publié un autre type de modèle cosmologique. Il a proposé un univers plat avec seulement 
-une constante cosmologique non nulle et aucune matière à l'intérieur (ou une quantité négligeable de matière). 
+Peu après Einstein, de Sitter a publié un autre type de modèle cosmologique. Il a proposé un univers plat avec seulement une constante cosmologique non nulle et aucune matière à l'intérieur (ou une quantité négligeable de matière). 
 1. Montrer qu'un tel univers croît de manière exponentielle avec le temps. C'est l'univers de de Sitter. 
 2. Trouvez également un système de coordonnées dans lequel il est statique. 
 
@@ -74,6 +73,7 @@ une constante cosmologique non nulle et aucune matière à l'intérieur (ou une 
 :::
 
 :::{solution} exo:desitter
+:class: dropdown
 
 
 1. Dans un univers plat $k=0$ et la première équation de Friedmann donne dans le modèle de Sitter :
@@ -131,6 +131,8 @@ Einstein a été le premier à construire un modèle pour l'ensemble de l'univer
 
 
 :::{solution} exo:einstein_first
+:class: dropdown
+
 1. Pour un univers avec seulement de la matière non relativiste, $P_m=0$. S'il est statique, alors $\ddot{a}=\dot{a}=0$ et la seconde équation de Friedmann s'écrit donc :
 \begin{equation}
 \frac{c^2 k}{a^2}=c^2 \Lambda
@@ -140,13 +142,9 @@ L'injection de cette équation dans la première équation de Friedmann donne :
 3\frac{c^2 k}{a^2} = 8\pi G \rho_m + c^2 \Lambda & \Leftrightarrow 2 c^2 \Lambda = 8 \pi G \rho_m \\
 & \Leftrightarrow \Lambda = 4 \pi G \rho_m / c^2 > 0 
 \end{align}
-Ainsi, pour obtenir un univers statique, Einstein a dû introduire une constante cosmologique non nulle. 
-De plus, nous déduisons que $c^2 k / a^2 > 0$ donc $k=+1$ : l'univers statique doit être sphérique. 
-À l'origine, Einstein soutenait que l'univers devait être sphérique en utilisant le principe de Mach[^Mach],
-mais les équations de Friedmann constituent un point de départ plus facile pour retrouver le modèle d'univers d'Einstein. 
+Ainsi, pour obtenir un univers statique, Einstein a dû introduire une constante cosmologique non nulle. De plus, nous déduisons que $c^2 k / a^2 > 0$ donc $k=+1$ : l'univers statique doit être sphérique. À l'origine, Einstein soutenait que l'univers devait être sphérique en utilisant le principe de Mach[^Mach], mais les équations de Friedmann constituent un point de départ plus facile pour retrouver le modèle d'univers d'Einstein. 
 
-Le facteur d'échelle qui paramètre la croissance de l'univers peut être associé au rayon de l'univers sphérique. 
-Nous trouvons que la valeur du rayon est :
+Le facteur d'échelle qui paramètre la croissance de l'univers peut être associé au rayon de l'univers sphérique. Nous trouvons que la valeur du rayon est :
 \begin{equation}
 R\equiv a_E = \Lambda^{-1/2}
 \end{equation}
@@ -177,28 +175,25 @@ c'est-à-dire que la perturbation $\delta a$ croît exponentiellement avec le te
 :::{exercise} Modèle de Lemaître
 :label: exo:lemaitre
 
-Friedmann et Lemaître ont été les premiers cosmologistes à proposer, indépendamment, des modèles non statiques d'univers 
-avec des courbures arbitraires. Les équations de Friedmann ont été largement étudiées dans ce cours, mais Lemaître a été le premier à proposer l'idée que l'Univers s'est développé à partir d'un atome primitif. 
-Son modèle repose sur un univers composé uniquement de matière, avec une constante cosmologique et une courbure spatiale 
-arbitraire (mais pas de rayonnement). 
+Friedmann et Lemaître ont été les premiers cosmologistes à proposer, indépendamment, des modèles non statiques d'univers avec des courbures arbitraires. Les équations de Friedmann ont été largement étudiées dans ce cours, mais Lemaître a été le premier à proposer l'idée que l'Univers s'est développé à partir d'un atome primitif. Son modèle repose sur un univers composé uniquement de matière, avec une constante cosmologique et une courbure spatiale arbitraire (mais pas de rayonnement). 
 
 1. Dans un tel modèle, montrer que, juste après un big bang à $t=0$, au début de l'univers le facteur d'échelle augmente comme :
 \begin{equation}
 \frac{a(t)}{a_0} =\left( \frac{3}{2}H_0\sqrt{\Omega_m^0}t\right)^{2/3}
 \end{equation}
 
-2. Au fur et à mesure que l'univers s'étend, cependant, la densité d'énergie de la matière diminue et la constante 
-cosmologique finit par dominer. Montrer que, pour les grands $t$, le facteur d'échelle augmente comme :
+2. Au fur et à mesure que l'univers s'étend, cependant, la densité d'énergie de la matière diminue et la constante cosmologique finit par dominer. Montrer que, pour les grands $t$, le facteur d'échelle augmente comme :
 \begin{equation}
 a(t) \propto e^{H_0\sqrt{\Omega_\Lambda^0}t}
 \end{equation}
 
-3. Calculez $\ddot{a}$ et montrez que l'expansion de l'univers décélère d'abord, puis s'accélère. 
-Calculer $a_*$ le facteur d'échelle à la transition.
+3. Calculez $\ddot{a}$ et montrez que l'expansion de l'univers décélère d'abord, puis s'accélère. Calculer $a_*$ le facteur d'échelle à la transition.
 
 :::
 
 :::{solution} exo:lemaitre
+:class: dropdown
+
 1. Dans le modèle de Lemaître à matière seule, la première équation de Friedmann s'écrit :
 \begin{equation}\label{eq:lemaitre}
 \frac{\dot{a}^2}{a^2} = H_0^2\left(\Omega_m^0 a^{-3} + \Omega_\Lambda^0 + \Omega_k^0 a^{-2}\right) \Leftrightarrow \dot{a}^2 = H_0^2\left(\Omega_m^0 a^{-1} + \Omega_\Lambda^0 a^2 + \Omega_k^0 \right) 
@@ -235,14 +230,12 @@ Analogie mécanique
 \begin{equation}
 \frac{1}{2}\Omega_k^0 = f(\Omega_i^0,a)
 \end{equation}
-Interpréter cette équation par analogie avec l'équation de conservation de l'énergie mécanique d'un corps massif suivant un 
-mouvement unidimensionnel, et décrire le rôle de chaque terme d'"énergie potentielle".
+Interpréter cette équation par analogie avec l'équation de conservation de l'énergie mécanique d'un corps massif suivant un mouvement unidimensionnel, et décrire le rôle de chaque terme d'"énergie potentielle".
 
 2. Dériver cette équation par rapport au temps et faire l'analogie avec la loi de Newton appliquée à un corps massif en 
 mouvement unidimensionnel. Analyser à nouveau le rôle de chaque terme de "force".
 
-Dans ce qui suit, nous négligeons la composante de rayonnement. Tracez les termes d'énergie potentielle en fonction 
-du facteur d'échelle $a$ et décrivez le destin des univers suivants.
+Dans ce qui suit, nous négligeons la composante de rayonnement. Tracez les termes d'énergie potentielle en fonction du facteur d'échelle $a$ et décrivez le destin des univers suivants.
 
 3. Modèle sphérique ($k=+1$) avec $\Lambda=4\pi \GN \rho_m / c^2$ (montrez que le modèle statique d'Einstein est un 
 cas particulier de ce modèle et qu'il est instable).
@@ -255,6 +248,7 @@ cas particulier de ce modèle et qu'il est instable).
 
 
 :::{solution} exo:analogmeca
+:class: dropdown
 
 
 1. En termes de $\Omega_i^0$, la première équation de Friedmann s'écrit :
@@ -299,18 +293,18 @@ A $a=1$ ou $t=0$, la première équation de Friedmann donne :
 \end{equation}
 Le modèle est sphérique donc $\Omega_k^0 = -k c^2 / H_0^2 < 0$ avec $k=+1$ ce qui implique que $\Omega_m^0 > 2/3$. Dans l'Univers d'Einstein, $\Omega_m^0=1$.
 
-:::{figure} #E-spherical
+```{figure} #E-spherical
 :width: 60%
 :align: center
 :label:fig:einstein
 
 Energies potentielles dans le cas d'un univers sphérique avec $\Omega_m^0=1$.
-:::
+```
 
 D'après la figure [](#fig:einstein), la solution d'Einstein à $a=1$ est instable. 
 
 4.  
-:::{list-table} Energies potentielles dans le cas de modèles à matière seule avec différentes courbures :  (en haut à gauche), $\Omega_m^0=1.5\Rightarrow k=+1$ (en haut à droite), $\Omega_m^0=0.5\Rightarrow k=-1$ (en bas)
+```{list-table} Energies potentielles dans le cas de modèles à matière seule avec différentes courbures :  (en haut à gauche), $\Omega_m^0=1.5\Rightarrow k=+1$ (en haut à droite), $\Omega_m^0=0.5\Rightarrow k=-1$ (en bas)
 :header-rows: 1
 :name: fig:analogmeca
 
@@ -333,7 +327,7 @@ D'après la figure [](#fig:einstein), la solution d'Einstein à $a=1$ est instab
     :alt: light
     :width: 100%
     :align: center
-:::
+```
 
 Dans ces modèles, la courbure est à nouveau donnée par :
 \begin{equation}
@@ -352,7 +346,7 @@ En analysant les trois tracés de la figure [](#fig:analogmeca), nous pouvons di
 \frac{d V_{\rm eff} }{da}= 0 \rightarrow a_* = \left(\frac{\Omega_m^0}{2 \Omega_\Lambda^0}\right)^{1/3}
 \end{equation}
 
-:::{list-table} Energies potentielles dans le cas de modèles à matière seule avec différentes courbures :  (en haut à gauche), $\Omega_m^0=1.5\Rightarrow k=+1$ (en haut à droite), $\Omega_m^0=0.5\Rightarrow k=-1$ (en bas)
+```{list-table} Energies potentielles dans le cas de modèles à matière seule avec différentes courbures :  (en haut à gauche), $\Omega_m^0=1.5\Rightarrow k=+1$ (en haut à droite), $\Omega_m^0=0.5\Rightarrow k=-1$ (en bas)
 :header-rows: 0
 :name: fig:analogmeca-LCDM
 
@@ -380,7 +374,7 @@ En analysant les trois tracés de la figure [](#fig:analogmeca), nous pouvons di
     :width: 100%
     :align: center
     
-:::
+```
 
 Selon les valeurs des paramètres, l'échelle de transition se produit dans le futur ou dans le passé. 
 Si la constante cosmologique est positive, les univers en expansion ont une expansion décélérée et, 
@@ -469,9 +463,7 @@ Avec $t=t_0$ maintenant,
 \end{equation}
 On a $a(t)\Rightarrow 0$ quand $t\rightarrow -\infty$ donc l'âge de l'univers est infini dans le modèle de Sitter.
 
-2. La valeur d'Einstein de-Sitter est incompatible avec la mesure de l'âge des premières étoiles avec une telle valeur de $H_0$. 
-Cependant, le modèle $\Lambda$CDM est en accord avec le modèle de "l'univers vide". Cependant, dans l'"univers vide", l'hypothèse que la 
-matière ne joue aucun rôle est très forte.
+2. La valeur d'Einstein de-Sitter est incompatible avec la mesure de l'âge des premières étoiles avec une telle valeur de $H_0$. Cependant, le modèle $\Lambda$CDM est en accord avec le modèle de "l'univers vide". Cependant, dans l'"univers vide", l'hypothèse que la matière ne joue aucun rôle est très forte.
 
 3. 
 \begin{equation}

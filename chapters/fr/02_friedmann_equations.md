@@ -55,15 +55,15 @@ Pour un ensemble de $n$ particules, la densité de quadri-impulsion $p^\alpha$ e
 $$
 T^{\alpha 0}(t, \vec x) = \sum_n p_n^{\alpha}c \delta^3(\vec x - \vec x_n(t))
 $$
-où $x_n(t)$ et $p_n^{\alpha}(t)=(E_n/c, \vec p_n)$ sont les positions et 4-impulsions de la particule $n$ à l'instant $t$. Le flux d'impulsion à travers une surface de normale $\vec e_i$ est quant à lui :
+où $x_n(t)$ et $p_n^{\alpha}(t)=(E_n/c, \vec p_n)$ sont les positions et quadri-impulsions de la particule $n$ à l'instant $t$. Le flux d'impulsion à travers une surface de normale $\vec e_i$ est quant à lui :
 $$
 T^{\alpha i}(t, \vec x) = \sum_n p_n^{\alpha} \frac{\dd x_n^i(t)}{\dd t} \delta^3(\vec x - \vec x_n(t))
 $$
-Ces deux définitions peuvent être combinées pour obtenir le tenseur symétrique :
+Ces deux définitions peuvent être combinées pour obtenir :
 $$
 T^{\alpha \beta}(t, \vec x) = \sum_n p_n^{\alpha} \frac{\dd x_n^\beta(t)}{\dd t} \delta^3(\vec x - \vec x_n(t))
 $$
-avec $x_n^0(t)=ct$. Comme l'énergie d'une particule massive est $E=\sqrt{\vec m^2\gamma^2 v^2 c^2 + m^2 c^4}$ et celle d'une particule de masse nulle est $E=\vert \vec p \vert c$, alors on démontre que $p_n^\alpha c = E_n (\dd x_n^\alpha /c \dd t)$. D'où l'écriture du tenseur énergie-impulsion en tant que tenseur symétrique, invariant de Lorentz :
+avec $x_n^0(t)=ct$. Comme l'énergie d'une particule massive est $E=\sqrt{\vec m^2\gamma^2 v^2 c^2 + m^2 c^4}$ et celle d'une particule de masse nulle est $E=\vert \vec p \vert c$, alors on démontre que $p_n^\alpha c = E_n (\dd x_n^\alpha /c \dd t)$. D'où l'écriture du tenseur énergie-impulsion en tant que tenseur symétrique :
 $$
 T^{\alpha \beta}(t, \vec x) = c^2 \sum_n \frac{p_n^{\alpha} p_n^{\beta}}{E_n} \delta^3(\vec x - \vec x_n(t))
 $$
@@ -71,19 +71,48 @@ $$
 
 :::
 
-Or dans notre hypothèse d'Univers de symétrie maximale, rappelons tout d'abord qu'on peut définir un temps cosmique, universel,  en utilisant l'évolution physique de l'Univers comme une horloge (densité de matière, température du CMB...). Les hypersurfaces de l'espace-temps paramétrées par ce temps universel sont alors eux-mêmes des sous-espaces de symétrie maximale. Les tenseurs représentants des observables cosmologiques de tels sous-espaces de symétrie maximale doivent alors être de _forme invariante_ c'est-à-dire qu'ils restent les mêmes fonctions des coordonnées à une date $t$ quelque soit le choix du système de coordonnées choisi : si on passe de $x^\rho$ à $x'^\rho$, on doit avoir $T^{\mu\nu}(x^\rho) = T^{\mu\nu}(x'^\rho)$ (pour retrouver la même densité d'énergie) {cite:p}`Weinberg1972`[p. 408]. On peut démontrer alors une propriété importante concernant la forme que doivent prendre les tenseurs de ces sous-espaces {cite:p}`Weinberg1972`[p. 392].
+Or dans notre hypothèse d'Univers de symétrie maximale, rappelons tout d'abord qu'on peut définir un temps cosmique, universel,  en utilisant l'évolution physique de l'Univers comme une horloge (densité de matière, température du CMB...). Les hypersurfaces de l'espace-temps paramétrées par ce temps universel sont alors elles-mêmes des sous-espaces de symétrie maximale. Les tenseurs $\mathcal{T}$ représentants des observables cosmologiques de tels sous-espaces de symétrie maximale doivent alors être de _forme invariante_ c'est-à-dire qu'ils restent les mêmes fonctions des coordonnées spatiales à une date $t$ quelque soit le choix du système de coordonnées choisi : si on passe d'un système $x^\rho$ à $x'^\rho$, on doit avoir $\mathcal{T}'_{\mu\nu\ldots}(x'^\rho) = \mathcal{T}_{\mu\nu\ldots}(x'^\rho)$. Intuitivement, si $\mathcal{T}$ est le tenseur énergie-impulsion cela revient entre autre à demander que la densité d'énergie soit identique en tout point pour tout choix de système de coordonnées {cite:p}`Weinberg1972`[p. 409]. On peut démontrer alors une propriété importante concernant la forme que doivent prendre les tenseurs de ces sous-espaces {cite:p}`Weinberg1972`[p. 392].
 
 :::{important} Structure des tenseurs de forme invariante
 Un tenseur de forme invariante dans un espace de symétrie maximale :
-- est constant si c'est un scalaire,
+- est indépendant de la position si c'est un scalaire,
 - est nul si c'est un vecteur,
 - est proportionnel au tenseur métrique si c'est un tenseur d'ordre 2.
 :::
 
-Par conséquent, mathématiquement on peut introduire $\epsilon(t)$ et $P(t)$ deux fonctions telles que le tenseur énergie-impulsion se simplifie en :
+:::{tip} Démonstration pour un tenseur scalaire {cite:p}`Weinberg1972`[p. 392]
+:class: dropdown
+
+Si $\mathcal{T}^{\mu\nu\ldots}$ se transforme comme un tenseur et est de forme invariante, alors :
+$$
+\label{eq:form_invariant}
+\mathcal{T}_{\mu\nu\ldots}(x^\rho) =
+\frac{\partial x'^\lambda}{\partial x^\mu}\frac{\partial x'^\sigma}{\partial x^\nu}\cdots \mathcal{T}'_{\lambda\sigma\ldots}(x'^\rho) = \frac{\partial x'^\lambda}{\partial x^\mu}\frac{\partial x'^\sigma}{\partial x^\nu}\cdots \mathcal{T}_{\lambda\sigma\ldots}(x'^\rho)
+$$
+Pour un tenseur scalaire $\mathcal{S}(x^\mu)$ :
+$$
+\label{eq:scalar_form_invariant}
+\mathcal{S}(x^\rho) = \mathcal{S}(x'^\rho)
+$$
+Soit une transformation spatiale infinitésimale :
+$$x'^\rho = x^\rho + \epsilon \xi^\rho(x),\quad \vert\epsilon\vert \ll 1$$
+alors l'équation [](#eq:scalar_form_invariant) devient au premier ordre :
+$$
+0 = \xi^\lambda(x) \frac{\partial \mathcal{S}(x)}{\partial x^\lambda}
+$$
+Comme $\mathcal{S}$ est maximallement symétrique, on a le droit de choisir n'importe quelle transformation $\xi^\lambda$ non nulle, donc :
+$$
+\frac{\partial \mathcal{S}(x)}{\partial x^\lambda} = 0
+$$
+donc $\mathcal{S}$ de forme invariante n'est pas une fonction des coordonnées d'espaces.
+
+
+:::
+
+Par conséquent, mathématiquement on peut introduire $\epsilon(t)$ et $P(t)$ deux fonctions du temps telles que le tenseur énergie-impulsion se simplifie en :
 $$ \begin{align}
 T^{00} & =  \epsilon(t) &\quad  \text{(scalaire)} \\
-T^{i0} & = T_{0i} = 0 & \quad  \text{(vecteur)} \\
+T^{i0} & = T^{0i} = 0 & \quad  \text{(vecteur)} \\
 T^{ij} & =  P(t) \gamma^{ij}& \quad \text{(tenseur d'ordre 2)}
 \end{align} $$
 
@@ -118,7 +147,7 @@ T^{\mu\nu}  =
 \end{pmatrix}.
 \end{equation}
 
-Comment interpréter ces considérations mathématiques ? Tout d'abord, si on compare l'équation [](#eq:def-Tmunu) avec [](#stress-energy-tensor-meaning) alors on identifie $\epsilon$ à la densité d'énergie et $P$ à la pression cinétique (flux de quantité de mouvement à travers une surface). Enfin, le tenseur énergie-impulsion $T^{\mu\nu}$ s'identifie à celui d'un <wiki:perfect_fluid>. Cela signifie que dans un Univers homogène et isotrope la matière peut être décrite comme un milieu continu, dont l'évolution peut être décrite sans prendre en compte des effets de viscosité et de conduction thermique. _L'évolution thermodynamique de l'Univers est donc adiabatique._ Aussi $U^\mu$ s'identifie alors à la quadri-vitesse comobile du fluide, donc le fait que $U^i = 0$ montre que le système physique étudié est au repos dans les coordonnées comobiles, comme attendu. 
+Comment interpréter ces considérations mathématiques ? Tout d'abord, si on compare l'équation [](#eq:def-Tmunu) avec [](#stress-energy-tensor-meaning) alors on identifie $\epsilon$ à la densité d'énergie et $P$ à la pression cinétique (flux de quantité de mouvement à travers une surface)[^epsP]. Ensuite, le tenseur énergie-impulsion $T^{\mu\nu}$ s'identifie à celui d'un <wiki:perfect_fluid>. Cela signifie que dans un Univers homogène et isotrope la matière peut être décrite comme un milieu continu, dont l'évolution peut être décrite sans prendre en compte des effets de viscosité et de conduction thermique. _L'évolution thermodynamique de l'Univers est donc adiabatique._ Enfin, $U^\mu$ s'identifie alors à la quadri-vitesse comobile du fluide, donc le fait que $U^i = 0$ montre que le système physique étudié est au repos dans les coordonnées comobiles, comme attendu. 
 
 
 :::{note} Tenseur énergie-impulsion d'un fluide parfait {cite:p}`Weinberg1972`[p. 48]
@@ -388,7 +417,7 @@ Le tenseur énergie-impulsion inclut la matière non-relativiste et relativiste.
 
 La matière non relativiste n'exerce pas de pression donc 
 $$P_m=0,$$
-et : 
+puis : 
 $$
 \label{eq:conservation_energie_matiere}
 \dot{\rho}_m = -3 H\rho_m \Rightarrow \rho_m = \rho_m^0 \left(\frac{a_0}{a}\right)^{3}.
@@ -693,4 +722,4 @@ Transform Lambda into a length: Length = sqrt(1/Lambda) = ....
 :::
 
 
-
+[^epsP]: Le choix des notations pour ces fonctions mathématiques n'a pas été fait par hasard...

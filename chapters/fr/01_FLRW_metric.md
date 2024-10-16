@@ -455,12 +455,12 @@ La raie $H\beta$ de l'hydrogène (de la série Balmer) est mesurée à $486.1\,$
 :::{solution} exo:redshift
 :class: dropdown
 
-Pour le premier spectre de galaxie, la raie $H\beta$ est mesurée à $\lambda-0\approx 5100\,$Å, le décalage vers le rouge de la galaxie est donc :
+Pour le premier spectre de galaxie, la raie $H\beta$ est émise à $\lambda_E = 4861\,$Å et mesurée à $\lambda_0\approx 5100\,$Å, le décalage vers le rouge de la galaxie est donc :
 \begin{equation}
 z = \frac{\lambda_0-\lambda_E}{\lambda_E} = \frac{5100-4861}{4861} = 0.049
 \end{equation} 
  
-Pour le second spectre de galaxie, la raie $H\beta$ est mesurée à $\lambda-0\approx 5000\,$Å donc le décalage vers le rouge de la galaxie est :
+Pour le second spectre de galaxie, la raie $H\beta$ est mesurée à $\lambda_0\approx 5000\,$Å donc le décalage vers le rouge de la galaxie est :
 \begin{equation}
 z = \frac{\lambda_0-\lambda_E}{\lambda_E} = \frac{5000-4861}{4861} = 0.028
 \end{equation}
@@ -488,7 +488,7 @@ Donc pour $h=0.7$, on trouve $D_H \approx 4.3 \,\text{Gpc} \approx 14 \,\text{Gl
 
 ### Distance propre et distance comobile
 
-La *distance propre* définit la distance physique entre deux objets à un instant $t$. Soit un objet émetteur situé aux coordonnées comobiles $(\sigma_E, \theta_E, \phi_E)$. Par définition, la distance propre entre cet objet et un observateur situé à l'origine est :
+La *distance propre* définit la distance physique entre deux objets à un instant $t$. Soit un objet émetteur situé aux coordonnées comobiles $(\sigma_E, \theta_E, \phi_E)$. Par définition, la distance propre entre cet objet et un observateur situé à l'origine est le long d'une courbe à $\theta$ et $\phi$ constants et vaut :
 :::{math}
 :label: eq:dist-prop
 
@@ -505,7 +505,7 @@ où on fait apparaître $\chi(\sigma_E)$ la _distance comobile_ entre cet objet 
 \end{array}
 \right.
 :::
-On voit que la distance propre $D_p$ possède bien l'unité d'une longueur alors que la distance comobile est sans dimension. Cette dernière représente la distance dans l'espace des coordonnées et est indépendante de l'expansion de l'Univers. En revanche la distance propre évolue avec le facteur d'échelle.
+On voit que la distance propre $D_p$ possède bien l'unité d'une longueur alors que la distance comobile est sans dimension. Cette dernière représente la distance dans l'espace des coordonnées et est indépendante de l'expansion de l'Univers. En revanche la distance propre évolue dans le temps avec le facteur d'échelle.
 
 Réciproquement, on définit $f_k(\chi)$ ainsi :
 \begin{equation}
@@ -517,8 +517,7 @@ Réciproquement, on définit $f_k(\chi)$ ainsi :
 \right.
 \end{equation}
 
-
-Soit un objet situé à la coordonnée comobile $\sigma_E$ et un observateur situé en 0. La lumière voyage en suivant une géodésique, donc dans la métrique FLRW on a $\dd \theta=\dd \phi=0$ et :
+Imaginons maintenant que cette distance puisse être perçue par le voyage d'un photon. La lumière voyage en suivant une géodésique, donc dans la métrique FLRW on a bien $\dd \theta=\dd \phi=0$ et :
 \begin{equation}
 \dd s^2=0=-c^2 \dd t^2+\frac{a^2(t)}{1-k\sigma^2}\dd\sigma^2.
  \end{equation} 
@@ -543,6 +542,12 @@ D'où la distance comobile en terme de temps $t$, facteur d'échelle $a$ et reds
 & = \int_z^0 \frac{1+z}{a_0}\frac{-\dd z}{(1+z)H(z)} = \frac{1}{a_0}\int_0^z\frac{c\dd z}{H(z)} = \chi(z)
 \end{align}
 
+La distance propre est la distance que l'on pourrait mesurer effectivement à un instant $t$ entre deux objets. Si on choisit un objet situé à la coordonné comobile $\sigma_E$ et un observateur comobile en 0, la distance propre aujourd'hui à $t_0$ s'écrit alors simplement pour les trois cas de courbure :
+$$D_p(z) = a_0 \chi(z) =\int_0^z\frac{c \dd z}{H(z)} $$
+et s'exprime bien en unités de longueur. La notion de distance propre est illustrée [](#fig:distances).
+
+
+
 En général, $a_0$ n'est pas directement mesurable, mais les paramètres cosmologiques et $H_0$ peuvent être déterminés. Il est donc utile de savoir comment se débarrasser de $a_0$ dans le cas général. Dans cette paramétrisation, la valeur de $a_0$ est égale au rayon de l'univers dans les cas courbes (avec $a$ ayant la dimension d'une longueur, $\sigma$ non dimensionné). Pour des raisons qui seront évidentes au chapitre suivant, à $t=t_0$ on peut définir une observable $\Omega_k^0$ dépendant de $a_0$ :
 \begin{equation}
 \Omega_k^0 = - \frac{kc^2}{H_0^2 a_0^2} \Rightarrow a_0 = \left\lbrace\begin{array}{l}
@@ -562,10 +567,6 @@ Ainsi :
 \right.}
 \end{equation}
 
-La distance propre est la distance que l'on pourrait mesurer effectivement à un instant $t$ entre deux objets. Sans perdre en généralité, on peut choisir un objet situé à la coordonné comobile $\sigma_E$ et un observateur comobile en 0. En terme de redshift, la distance propre aujourd'hui à $t_0$ s'écrit alors simplement pour les trois cas de courbure :
-$$D_p(z) = a_0 \chi(z) =\int_0^z\frac{c \dd z}{H(z)} $$
-et s'exprime bien en unités de longueur. La notion de distance propre est illustrée [](#fig:distances).
-
 
 :::{figure} ../../images/distances.svg
 :name: fig:distances
@@ -584,7 +585,7 @@ Pour se créer une intuition sur la géométrie courbe et les coordonnées comob
 1. Représenter une sphère et tracer le méridien $\theta = 0$. Placer les quantités suivantes : l'observateur, la galaxie, $a(t)$, $\chi$, la distance propre entre l'observateur et la galaxie $D_p$. Relier ces quantités à la coordonnée $\sigma$ et à l'expression de $D_p$.
 
 
-2. Considérons maintenant deux galaxies à la même coordonnées $\chi$, séparées par la distance physique $l$. Montrer que l'angle $\theta$ ($\theta \ll 1$) sous lequel elles sont observées sur la sphère est $\theta = l / (a(t) \sigma)$.
+2. Considérons maintenant deux galaxies à la même coordonnées $\chi$, séparées par la distance physique $l$. Montrer que l'angle $\theta$ sous lequel elles sont observées sur la sphère est $\theta = l / (a(t) \sigma)$  si $\theta \ll 1$.
 
 :::
 
@@ -598,17 +599,17 @@ Pour se créer une intuition sur la géométrie courbe et les coordonnées comob
 \end{equation}
 Notons également que $b$ est le rayon du cercle de colatitude $\chi$ : $b = a(t) \sin \chi$. 
 
-2. Avec la projection polaire, on voit que $\theta$ est l'angle délimitant un arc de taille $l$ et de rayon $b$, le rayon du cercle de latitude de $\chi$. Ainsi :
+2. Avec la projection polaire [](#fig:projection_polaire), on voit que $\theta$ est l'angle délimitant un arc de taille $l$ et de rayon $b$, le rayon du cercle de latitude de $\chi$. Ainsi :
 \begin{equation}
-\theta = \frac{l}{b} = \frac{d}{a(t) \sin \chi} = \frac{d}{a(t) \sigma}
+\theta = \frac{l}{b} = \frac{l}{a(t) \sin \chi} = \frac{l}{a(t) \sigma}
 \end{equation}
-Dans un espace plat, $\sigma$ est clairement la coordonnée radiale de rapprochement entre l'observateur et les galaxies. L'expression de $\theta$ dans le cas sphérique est cohérente avec celle dans le cas plat grâce au paramétrage $\sigma=f_k(\chi)$.
+Grâce au paramétrage $\sigma=f_k(\chi)$, on voit que cette égalité fonctionne en espace plat et en espace courbe.
 
-En utilisant la métrique FLRW, avec l'[](#exo:conformal-time) nous avons également :
+Si on préfère un raisonnement mathématique plutôt que graphique, en utilisant la métrique FLRW, nous pouvons démontrer également :
 \begin{equation}
-l = \int_0^d \dd l' = \int_0^\theta \sqrt{g_{\theta\theta}} a(t)\dd\theta = a(t) \int_0^\theta f_k(\chi) \dd\theta = a(t) \theta \sin\chi = a(t) \theta \sigma
+l = \int_0^d \dd l' = \int_0^\theta \sqrt{g_{\theta\theta}} a(t)\dd\theta' = a(t) \int_0^\theta f_k(\chi) \dd\theta' = a(t) \theta \sin\chi = a(t) \theta \sigma
 \end{equation}
-Donc $\theta = l / a(t) \sigma$.
+Donc on obtient de nouveau $\theta = l / a(t) \sigma$.
 
 Il est facile de vérifier que nous avons les mêmes expressions dans le cas plat, et nous les admettrons dans la géométrie hyperbolique. La coordonnée $\sigma$ est donc utile pour faire des calculs et des dessins dans le cas plat et traduire ces résultats dans les cas courbes (ce qui n'est pas si facile avec $\chi$).
 
@@ -616,6 +617,7 @@ Il est facile de vérifier que nous avons les mêmes expressions dans le cas pla
 ```{figure} ../../images/spherical_universe.svg
 :width: 100%
 :align: center
+:label: fig:projection_polaire
     
 Géométrie dans un univers sphérique.
 ```
@@ -636,6 +638,10 @@ où $L$ est la luminosité intrinsèque d'un objet (en watts) et $l$ une taille 
 
 ### Distance de luminosité 
 
+Dans un espace statique et plat, la luminosité apparente d'une source au repos à distance $D_L$ serait $L_E/4\pi D_L^2$. On propose donc de définir la distance de luminosité d'une source $D_L(z)$ en cosmologie par :
+$$
+\Phi_0 \equiv \frac{L_E}{4 \pi D_L^2(z)}
+$$
 Considérons une source située en $\sigma_E$, émettant $n_E$ photons de fréquence moyenne $\nu_E$ à l'instant $t_E$ (se reporter encore à la [](#fig:distances_croquis)). Sa luminosité est :
 $$
 L_E = \frac{n_E h\nu_E}{\dd t_E}.$$ 
@@ -653,13 +659,12 @@ n_0 = n_E \dd S/(4 \pi a^2_0 \sigma^2_E).$$
 Or à partir de l'équation
 [](#eq:redshift2), on a :
 $$\nu_E = \nu_0 a_0/a(t_E) = \nu_0 (1+z)$$
-et :
+et aussi :
 $$\dd t_E = \dd t_0/(1+z).$$
-d'où le flux reçu :
+D'où le flux reçu :
 $$\Phi_0 = \frac{n_0 h \nu_0}{\dd t_0 \dd S} =  \frac{h \nu_0 n_E}{\dd t_0 4 \pi a^2_0 \sigma^2_E} = \frac{L_E}{4 \pi a^2_0 \sigma^2_E(1+z)^2}.$$
-Dans un espace statique et plat, la luminosité apparente d'une source au repos à distance $D_L$ serait $L_E/4\pi D_L^2$. On propose donc de définir la distance de luminosité d'une source $D_L(z)$ en cosmologie par :
-$$
-\Phi_0 \equiv \frac{L_E}{4 \pi D_L^2(z)}$$
+
+On en déduit l'expression de la distance de luminosité dans un univers courbe et en expansion, fonction des paramètres cosmologiques et le redshift :
 $$
 \Rightarrow D_L(z) = a_0 \sigma_E (1+z) = a_0 (1+z)\left\lbrace
 \begin{array}{cl}
@@ -694,7 +699,12 @@ Distance angulaire d'un objet de taille physique transverse $l$.
 :::
 
 
-Dernière distance importante en cosmologie, la distance angulaire d'un objet $D_A(z)$. Soit un objet de taille transverse physique $l$ situé en $\sigma=\sigma_E,t=t_E$ et observé aujourd'hui en $\sigma=0,t=t_0$. Dans l'espace comobile, il serait vu sous un angle $\delta \approx l_c / \sigma_E$ (avec $\delta\ll 1$ et $l_c = l / a_E$ sa taille comobile). On propose de définir la distance angulaire comobile ou distance transverse comobile simplement par :
+Dernière distance importante en cosmologie, la distance angulaire d'un objet $D_A(z)$. La distance angulaire $D_A(z)$ est la distance sous laquelle sa taille apparente serait à nouveau $l$ au moment de l'émission pour la même taille angulaire $\delta$ dans un Univers plat et statique :
+$$
+\delta = \frac{l}{D_A(z)}
+$$
+
+Soit un objet de taille transverse physique $l$ situé en $\sigma=\sigma_E,t=t_E$ et observé aujourd'hui en $\sigma=0,t=t_0$. Dans l'espace comobile, il serait vu sous un angle $\delta \approx l_c / \sigma_E$ (avec $\delta\ll 1$ et $l_c = l / a_E$ sa taille comobile). On propose de définir la distance angulaire comobile ou distance transverse comobile simplement par :
 $$d_A(z) = \frac{l_c}{\delta} = \sigma_E = \left\lbrace\begin{array}{cl}
     \sin \chi(z) & \text{ si } k=+1 \\
     \chi(z) & \text{ si } k=0 \\
@@ -702,12 +712,11 @@ $$d_A(z) = \frac{l_c}{\delta} = \sigma_E = \left\lbrace\begin{array}{cl}
 \end{array}
 \right. .$$
 
-Dans un espace non statique, l'objet est à une distance $D_p(t_E) = a_E \sigma_E$ à l'émission. 
+Dans l'espace physique, l'objet est à une distance $D_p(t_E) = a_E \sigma_E$ à l'émission, d'où : 
 $$
-\delta = \frac{l}{D_p(t_E)} =  \frac{l}{a_E \sigma_E}  = \frac{l_c}{\sigma_E}$$
-La distance angulaire $D_A(z)$ est la distance sous laquelle sa taille apparente serait à nouveau $l$ au moment de l'émission pour la même taille angulaire $\delta$ dans un Univers plat et statique :
+\delta = \frac{l}{D_p(t_E)} =  \frac{l}{a_E \sigma_E}  = \frac{l_c}{\sigma_E}
 $$
-\delta = \frac{l}{D_A(z)}$$
+On en déduit l'expression de la distance angulaire dans un univers courbe et en expansion, fonction des paramètres cosmologiques et le redshift :
 $$
 \Rightarrow D_A(z) \equiv\frac{l}{\delta} =  a(t_E) \sigma_E=\frac{a_0 \sigma_E}{1+z} = \frac{a_0}{1+z}d_A(z)=\frac{D_L(z)}{(1+z)^2}$$
 $$D_A(z) = \frac{a_0}{1+z} \left\lbrace\begin{array}{cl}
@@ -739,12 +748,8 @@ avec $cz$ la vitesse apparente de récession par rapport à la Terre.
 Temps cosmique et temps conforme
 --------------------------------
 
-Le temps mérite une mention spéciale. Dans notre Univers idéal, sans surdensités ou sous-densités de matière, toutes les horloges qui suivent l'expansion (c'est-à-dire sans mouvement propre) battent la seconde à la même cadence. Avec un temps infini à notre disposition, nous pouvons proposer une convention commune pour synchroniser nos horloges : par exemple, lorsque la température du CMB atteint une valeur donnée. Il est donc possible de définir un temps cosmique, commun à tous les observateurs en chute libre {cite:p}`Weinberg1972` [p. 409]. 
+Le temps mérite une mention spéciale. Dans notre Univers idéal, sans surdensités ou sous-densités de matière, toutes les horloges qui suivent l'expansion (c'est-à-dire sans mouvement propre) battent la seconde à la même cadence. Avec un temps infini à notre disposition pour mettre à l'heure toutes les horloges de l'Univers, nous pouvons proposer une convention universelle pour synchroniser nos horloges. Par exemple, lorsque la température du CMB atteint une valeur donnée, toutes les civilisations de l'Univers peuvent décider que cela correspond à une certaine date. Il est donc possible de définir un temps cosmique, commun à tous les observateurs comobiles {cite:p}`Weinberg1972` [p. 409]. 
 
-D'ailleurs, en utilisant le temps conforme $\eta$ défini par $\dd \eta = \dd t / a(t)$, pour un photon on obtient :
-$$
-\chi = c \int_{\eta_E}^{\eta_0} \dd \eta = c (\eta_0 - \eta_E)$$
-donc on reconnait la relation traditionnelle entre distance et temps, mais dans l'espace comobile sans dimension.
 
 
 
@@ -785,6 +790,11 @@ On définit $\dd\eta =  \dd t / a(t)$ le temps conforme, et on aboutit à :
 Le temps conforme $\eta$ possède la dimension d'une durée. 
 
 :::
+
+D'ailleurs, en utilisant le temps conforme $\eta$ défini par $\dd \eta = \dd t / a(t)$, pour un photon on obtient :
+$$
+\chi = c \int_{\eta_E}^{\eta_0} \dd \eta = c (\eta_0 - \eta_E)$$
+donc on reconnait la relation traditionnelle entre distance et temps, mais dans l'espace comobile sans dimension.
 
 
 [^gammat]: Rien ne l'interdit, puisque $\gamma_{ij}$ peut dépendre du temps

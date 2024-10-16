@@ -23,7 +23,7 @@ In the special case of Maxwell's theory of electromagnetism, a velocity appears 
 
 Let's consider a quadri-vector with coordinates $x^\alpha$, where the $\alpha=0$ component corresponds to time[^2] $ct$ (with $c$ the famous maximum celerity and $t$ time) and the $\alpha=1,2,3$ components correspond to Cartesian coordinates $x^1,x^2, x^3$. In this course, we'll use Greek letters for components from 0 to 3 and Latin letters for spatial components from 1 to 3. To switch to another coordinate system $x'^\alpha$, we introduce the Lorentz transformation $\Lambda^\alpha_{\;\beta}$ as follows:
 \begin{equation}\label{eq:boost}
-x'^{\alpha} = \Lambda^\alpha_{\;\beta} x^\alpha + a^\alpha,
+x'^{\alpha} = \Lambda^\alpha_{\;\beta} x^\beta + a^\alpha,
 \end{equation}
 where $a^\alpha$ is a simple temporal and spatial translation. We define the Minkowski metric:
 \begin{equation}\label{eq:minkowski}
@@ -47,7 +47,7 @@ $$
 
 From the constitutive relation [](#eq:dscons), we can show that Lorentz transformations form a group defined by $\Lambda^{0}_{\;0}\geqslant 1$ and $\mathrm{det}\;\Lambda=+1$. A few calculations later (see {cite:t}`raimond` for example), we can show that the Lorentz transformation between two reference frames, one of which is moving at the speed $\vec v = v \vec e_{1}$, is uniquely written:
 \begin{equation}\label{eq:lorentz}
-\Lambda^{alpha}_{\;\beta} = \begin{pmatrix}
+\Lambda^{\alpha}_{\;\beta} = \begin{pmatrix}
 \gamma & -\beta \gamma & 0& 0 \\
 -\beta \gamma & \gamma & 0 & 0 \\
 0 & 0 & 1 & 0 \\
@@ -56,7 +56,7 @@ From the constitutive relation [](#eq:dscons), we can show that Lorentz transfor
 
 If we include space rotations, with one frame of reference moving at a constant $\vec v$ velocity relative to another frame of reference, the components of the $\Lambda^\alpha_{\;\beta}$ tensor can finally be written as:
 \begin{equation}\label{eq:lorentz2}
-\Lambda^0_{\;0} = \gamma,\quad \Lambda^i_{\;0} = \gamma v_i / c,\quad \Lambda^0_{\;j} = \gamma v_j / c,\quad \Lambda^i_{\;j} = \delta_{ij} + (\gamma - 1) \frac{v_i v_j}{v^2}
+\Lambda^0_{\;0} = \gamma,\quad \Lambda^i_{\;0} = -\gamma v_i / c,\quad \Lambda^0_{\;j} = -\gamma v_j / c,\quad \Lambda^i_{\;j} = \delta_{ij} + (\gamma - 1) \frac{v_i v_j}{v^2}
 \end{equation}
 
 
@@ -262,7 +262,7 @@ $$
 
 ### Towards Einstein's equation
 
-Armed with these tools, let's move on to a simple derivation of Einstein's equation, which summarizes gravitation as a deformation of space-time by matter. Let's start with a massive particle moving slowly in a weak, constant gravitational field, but any gravitational field this time. According to the Equivalence Principle, we have seen that there exists an inertial coordinate system $\left(ct',\vec x'\right)$ such that the equation of motion [](#eq:eqm1) is still valid in another reference frame $\left(ct,\vec x'\right)$ but with a gravitational field. The low-speed hypothesis allows us to neglect $\dd\vec x/\dd\tau$ in front of $c\dd t/\dd\tau$. In a weak, quasi-stationary gravitational field, we have to first order:
+Armed with these tools, let's move on to a simple derivation of Einstein's equation, which summarizes gravitation as a deformation of space-time by matter. Let's start with a massive particle moving slowly in a weak, constant gravitational field, but any gravitational field this time. According to the Equivalence Principle, we have seen that there exists an inertial coordinate system $\left(ct',\vec x'\right)$ such that the equation of motion [](#eq:eqm1) is still valid in another reference frame $\left(ct,\vec x\right)$ but with a gravitational field. The low-speed hypothesis allows us to neglect $\dd\vec x/\dd\tau$ in front of $c\dd t/\dd\tau$. In a weak, quasi-stationary gravitational field, we have to first order:
 $$
 \frac{\dd^2x^\mu}{\dd\tau^2} + \Gamma^\mu_{\ 00}\left(c\frac{\dd t}{\dd\tau}\right)^2=0, \qquad \Gamma^\mu_{\;\; 00} \approx -\frac{1}{2}g^{\mu\nu}\frac{\partial g_{00}}{\partial x^\nu}.
 $$

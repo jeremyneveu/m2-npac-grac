@@ -22,7 +22,7 @@ Dans le cas spécial de la théorie de l'électromagnétisme de Maxwell, il appa
 
 Soit un quadri-vecteur de coordonnées $x^\alpha$, où la composante $\alpha=0$ correspond au temps[^2] $ct$ (avec $c$ la fameuse célérité maximale et $t$ le temps) et les composantes $\alpha=1,2,3$ correspondent aux coordonnées cartésiennes $x^1,x^2, x^3$. Dans ce cours, nous emploierons les lettres grecques pour les composantes allant de 0 à 3 et les lettres latines pour les composantes spatiales allant de 1 à 3. Pour passer à un autre système de coordonnées $x'^\alpha$, on introduit la transformation de Lorentz $\Lambda^\alpha_{\;\beta}$ ainsi :
 \begin{equation}\label{eq:boost}
-x'^{\alpha} = \Lambda^\alpha_{\;\beta} x^\alpha + a^\alpha,
+x'^{\alpha} = \Lambda^\alpha_{\;\beta} x^\beta + a^\alpha,
 \end{equation}
 où $a^\alpha$ est une simple translation temporelle et spatiale. On définit la métrique de Minkowski :
 \begin{equation}\label{eq:minkowski}
@@ -59,7 +59,7 @@ A partir de la relation constitutive [](#eq:dscons), on peut démontrer les tran
 
 Si on inclut des rotations de l'espace, avec un référentiel se déplaçant à la vitesse $\vec v$ constante par rapport à un autre référentiel, les composantes du tenseur $\Lambda^\alpha_{\;\beta}$ s'écrivent finalement :
 \begin{equation}\label{eq:lorentz2}
-\Lambda^0_{\;0} = \gamma,\quad \Lambda^i_{\;0} = \gamma v_i / c,\quad \Lambda^0_{\;j} = \gamma v_j / c,\quad \Lambda^i_{\;j} = \delta_{ij} +  (\gamma - 1)  \frac{v_i v_j}{v^2}
+\Lambda^0_{\;0} = \gamma,\quad \Lambda^i_{\;0} = -\gamma v_i / c,\quad \Lambda^0_{\;j} = -\gamma v_j / c,\quad \Lambda^i_{\;j} = \delta_{ij} +  (\gamma - 1)  \frac{v_i v_j}{v^2}
 \end{equation}
 
 De Newton à la Relativité Générale
