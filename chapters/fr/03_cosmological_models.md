@@ -15,7 +15,7 @@ Maintenant que nous avons un modèle pour décrire la dynamique de l'Univers, ca
 
 ### Univers plat, matière seule
 
-Commençons par le cas d'un Univers plat, contenant uniquement de la matière non relativiste. C'est le modèle dit _d'Einstein et de Sitter_. C'est le plus naïf auquel on puisse penser à partir de l'observation. La première équation de Friedmann s'écrit :
+Commençons par le cas d'un Univers plat, contenant uniquement de la matière non relativiste. C'est le modèle dit _d'Einstein et de Sitter_. C'est le plus simple auquel on puisse penser en 1930. La première équation de Friedmann s'écrit :
 $$ \begin{align*}
 & 3 \frac{\dot{a}^2}{a^2} = 8\pi \GN \rho_m = 8 \pi \GN \rho_m^0 \left(\frac{a_0}{a}\right)^{3} 
 & \Leftrightarrow (\dot a)^2 = 8 \pi \GN \rho_m^0 a_0^3 / 3 a = H_0^2 \Omega_m^0 \frac{a_0^3}{a}
@@ -56,7 +56,77 @@ où l'échelle aujourd'hui $a_0$ n'apparaît pas.
 
 :::{important}
 
-La constante de Hubble $H_0$ apparaît dans les trois modèles d'Univers précédents. Or $H_0$ n'est pas une prédiction des modèles cosmologiques mais bien une mesure externe qui permet de calculer l'histoire de l'Univers en fonction de son taux d'expansion aujourd'hui. C'est en quelque sorte les conditions initiales du modèle, où aujourd'hui est l'instant initial.
+La constante de Hubble $H_0$ apparaît dans les trois modèles d'Univers précédents. Ce paramètre définit les conditions initiales du modèle cosmologique lors de l'intégration des équations de Friedmann.
+:::
+
+
+
+Modèles historiques
+-------------------
+
+La cosmologie moderne est née avec la Relativité Générale. Depuis l'écriture de ces équations, les scientifiques ont commencé à décrire mathématiquement l'univers comme un système physique. De nombreux modèles ont été proposés pour décrire les différentes histoires de l'univers. Dans ce chapitre, nous allons passer en revue certains d'entre eux.
+
+
+### Premier modèle d'Einstein
+
+:::{exercise} Premiers modèles cosmologiques
+:label: exo:einstein_first
+
+
+Einstein a été le premier à construire un modèle pour l'ensemble de l'univers, en 1917. Il croyait en un univers statique et borné qui ne contient que de la matière.
+
+1. Dans une perspective moderne, avec les équations de Friedmann (ci-dessous), montrez qu'un univers statique ne contenant que de la matière doit avoir une constante cosmologique non nulle $\Lambda=4\pi G \rho_m / c^2$ et doit être sphérique. Calculer le rayon de l'univers sphérique d'Einstein $R\equiv a_{\rm Einstein}$.
+
+\begin{equation} \left\lbrace
+\begin{array}{l}
+   \displaystyle{3 \left( \frac{\dot{a}^2}{a^2}+ \frac{c^2k}{a^2} \right) = 8\pi \GN \rho_m + c^2 \Lambda}  \\ 
+    \displaystyle{\frac{2\ddot{a}a + \dot{a}^2 + c^2 k}{a^2} = - 8\pi \GN \frac{P}{c^2} + c^2 \Lambda }
+\end{array}
+\right.
+\end{equation}
+
+2. À l'aide des équations de Friedmann, montrez que cet univers sphérique est instable. Considérer une perturbation $\delta R$ du rayon de l'univers et $\delta \rho$ de la densité de matière pour calculer l'évolution du rayon.
+
+:::
+
+
+:::{solution} exo:einstein_first
+:class: dropdown
+
+1. Pour un univers avec seulement de la matière non relativiste, $P_m=0$. S'il est statique, alors $\ddot{a}=\dot{a}=0$ et la seconde équation de Friedmann s'écrit donc :
+\begin{equation}
+\frac{c^2 k}{a^2}=c^2 \Lambda
+\end{equation}
+L'injection de cette équation dans la première équation de Friedmann donne :
+\begin{align}
+3\frac{c^2 k}{a^2} = 8\pi G \rho_m + c^2 \Lambda & \Leftrightarrow 2 c^2 \Lambda = 8 \pi G \rho_m \\
+& \Leftrightarrow \Lambda = 4 \pi G \rho_m / c^2 > 0 
+\end{align}
+Ainsi, pour obtenir un univers statique, Einstein a dû introduire une constante cosmologique non nulle. De plus, nous déduisons que $c^2 k / a^2 > 0$ donc $k=+1$ : l'univers statique doit être sphérique. À l'origine, Einstein soutenait que l'univers devait être borné en utilisant le principe de Mach[^Mach], la solution d'un Univers sphérique paraissait donc satisfaisante de ce point de vue. 
+
+Le facteur d'échelle peut être associé au rayon de l'univers sphérique. Avec la seconde équation de Friedmann, nous trouvons que la valeur du rayon est :
+\begin{equation}
+R\equiv a_E = \Lambda^{-1/2}
+\end{equation}
+
+2. En combinant les deux équations de Friedmann pour un univers avec de la matière froide seulement, nous trouvons :
+\begin{equation}
+\frac{2 \ddot{a}}{a} = - \frac{8\pi G \rho}{3} + \frac{2 c^2 \Lambda}{3}
+\end{equation}
+Considérons une perturbation du rayon, $a=\Lambda^{-1/2} + \delta a$, qui induit une perturbation de la densité de matière sur la sphère $\rho_m = \rho_0 + \delta \rho = c^2 \Lambda/4 \pi G + \delta \rho$. Cette dernière équation devient
+\begin{align}
+2 \frac{\delta \ddot{a}}{a} = - \frac{2 c^2 \Lambda}{3} - \frac{8 \pi G \delta \rho}{3 c^2}+ \frac{2 c^2 \Lambda}{3} 
+ = - \frac{8 \pi G \delta \rho}{3 c^2}
+\end{align}
+Or la quantité de matière se conserve, donc on a aussi :
+$$\rho a^3 = cste \Rightarrow \frac{\delta \rho}{\rho} = -3 \frac{\delta a}{a}$$
+et :
+\begin{equation}
+\delta \ddot{a} = 4 \pi G \rho_0 \delta a \Leftrightarrow \delta \ddot{a} - c^2 \Lambda \delta a = 0
+\end{equation}
+c'est-à-dire que la perturbation $\delta a$ croît exponentiellement avec le temps ($\Lambda>0$). L'univers est instable.
+
+
 :::
 
 
@@ -65,7 +135,7 @@ La constante de Hubble $H_0$ apparaît dans les trois modèles d'Univers précé
 :::{exercise} Modèle de Sitter
 :label: exo:desitter
 
-Peu après Einstein, de Sitter a publié un autre type de modèle cosmologique. Il a proposé un univers plat avec seulement une constante cosmologique non nulle et aucune matière à l'intérieur (ou une quantité négligeable de matière). 
+Peu après Einstein en 1917, de Sitter a publié un autre type de modèle cosmologique. Il a proposé un univers plat avec seulement une constante cosmologique non nulle et aucune matière à l'intérieur (ou une quantité négligeable de matière). 
 1. Montrer qu'un tel univers croît de manière exponentielle avec le temps. C'est l'univers de de Sitter. 
 2. Trouvez également un système de coordonnées dans lequel il est statique. 
 
@@ -98,74 +168,7 @@ nous trouvons :
 \begin{equation}
 \dd s^2 = \left(1-\frac{r'^2}{T_0^2}\right) \dd t'^2 - \left(1-\frac{r'^2}{T_0^2}\right)^{-1} \dd r'^2 - r'^2 \dd \theta^2 -r'^2 \sin\theta \dd \phi^2 
 \end{equation}
-Historiquement, le modèle de Sitter a été découvert comme un univers statique avec ce système de coordonnées. Dès que l'idée d'un univers en expansion a été admise par la communauté scientifique, l'univers de Sitter a été considéré comme un univers en expansion exponentielle, dominé par l'énergie noire.
-
-:::
-
-
-Modèles historiques
--------------------
-
-### Premier modèle d'Einstein
-
-:::{exercise} Premiers modèles cosmologiques
-:label: exo:einstein_first
-
-La cosmologie moderne est née avec la Relativité Générale. Depuis l'écriture de ces équations, les scientifiques ont commencé à décrire mathématiquement l'univers comme un système physique. De nombreux modèles ont été proposés pour décrire les différentes histoires de l'univers. Dans cet exercice, nous allons passer en revue certains d'entre eux.
-
-Einstein a été le premier à construire un modèle pour l'ensemble de l'univers, en 1917. Il croyait en un univers statique et éternel qui ne contenait que de la matière.
-
-1. Dans une perspective moderne, avec les équations de Friedmann (ci-dessous), montrez qu'un univers statique ne contenant que de la matière doit avoir une constante cosmologique non nulle $\Lambda=4\pi G \rho_m / c^2$ et doit être sphérique. Calculer le rayon de l'univers sphérique d'Einstein $R\equiv a_{\rm Einstein}$.
-
-\begin{equation} \left\lbrace
-\begin{array}{l}
-   \displaystyle{3 \left( \frac{\dot{a}^2}{a^2}+ \frac{c^2k}{a^2} \right) = 8\pi \GN \rho_m + c^2 \Lambda}  \\ 
-    \displaystyle{\frac{2\ddot{a}a + \dot{a}^2 + c^2 k}{a^2} = - 8\pi \GN P/c^2 + c^2 \Lambda }
-\end{array}
-\right.
-\end{equation}
-
-2. À l'aide des équations de Friedmann, montrez que cet univers sphérique est instable. Considérer une perturbation $\delta R$ du rayon de l'univers et $\delta \rho$ de la densité de matière pour calculer l'évolution du rayon.
-
-:::
-
-
-:::{solution} exo:einstein_first
-:class: dropdown
-
-1. Pour un univers avec seulement de la matière non relativiste, $P_m=0$. S'il est statique, alors $\ddot{a}=\dot{a}=0$ et la seconde équation de Friedmann s'écrit donc :
-\begin{equation}
-\frac{c^2 k}{a^2}=c^2 \Lambda
-\end{equation}
-L'injection de cette équation dans la première équation de Friedmann donne :
-\begin{align}
-3\frac{c^2 k}{a^2} = 8\pi G \rho_m + c^2 \Lambda & \Leftrightarrow 2 c^2 \Lambda = 8 \pi G \rho_m \\
-& \Leftrightarrow \Lambda = 4 \pi G \rho_m / c^2 > 0 
-\end{align}
-Ainsi, pour obtenir un univers statique, Einstein a dû introduire une constante cosmologique non nulle. De plus, nous déduisons que $c^2 k / a^2 > 0$ donc $k=+1$ : l'univers statique doit être sphérique. À l'origine, Einstein soutenait que l'univers devait être sphérique en utilisant le principe de Mach[^Mach], mais les équations de Friedmann constituent un point de départ plus facile pour retrouver le modèle d'univers d'Einstein. 
-
-Le facteur d'échelle qui paramètre la croissance de l'univers peut être associé au rayon de l'univers sphérique. Nous trouvons que la valeur du rayon est :
-\begin{equation}
-R\equiv a_E = \Lambda^{-1/2}
-\end{equation}
-
-2. En combinant les deux équations de Friedmann pour un univers avec de la matière froide seulement, nous trouvons :
-\begin{equation}
-\frac{2 \ddot{a}}{a} = - \frac{8\pi G \rho}{3} + \frac{2 c^2 \Lambda}{3}
-\end{equation}
-Considérons une perturbation du rayon, $a=\Lambda^{-1/2} + \delta a$, qui induit une perturbation de la densité de matière sur la sphère $\rho_m = \rho_0 + \delta \rho = c^2 \Lambda/4 \pi G + \delta \rho$. Cette dernière équation devient
-\begin{align}
-2 \frac{\delta \ddot{a}}{a} = - \frac{2 c^2 \Lambda}{3} - \frac{8 \pi G \delta \rho}{3 c^2}+ \frac{2 c^2 \Lambda}{3} 
- = - \frac{8 \pi G \delta \rho}{3 c^2}
-\end{align}
-La quantité de matière se conserve ainsi :
-$$\rho a^3 = cste \Rightarrow \frac{\delta \rho}{\rho} = -3 \frac{\delta a}{a}$$
-et :
-\begin{equation}
-\delta \ddot{a} = 4 \pi G \rho_0 \delta a \Leftrightarrow \delta \ddot{a} - c^2 \Lambda \delta a = 0
-\end{equation}
-c'est-à-dire que la perturbation $\delta a$ croît exponentiellement avec le temps ($\Lambda>0$). L'univers est instable.
-
+Historiquement, le modèle de Sitter a été découvert comme un univers statique avec ce système de coordonnées, dont la forme ressemble beaucoup à la solution de Schwarzschild. Dès que l'idée d'un univers en expansion a été admise par la communauté scientifique, l'univers de Sitter a été considéré sous sa forme dynamique, comme un univers en expansion exponentielle dominé par la constante cosmologique.
 
 :::
 
@@ -175,7 +178,7 @@ c'est-à-dire que la perturbation $\delta a$ croît exponentiellement avec le te
 :::{exercise} Modèle de Lemaître
 :label: exo:lemaitre
 
-Friedmann et Lemaître ont été les premiers cosmologistes à proposer, indépendamment, des modèles non statiques d'univers avec des courbures arbitraires. Les équations de Friedmann ont été largement étudiées dans ce cours, mais Lemaître a été le premier à proposer l'idée que l'Univers s'est développé à partir d'un atome primitif. Son modèle repose sur un univers composé uniquement de matière, avec une constante cosmologique et une courbure spatiale arbitraire (mais pas de rayonnement). 
+Friedmann et Lemaître ont été les premiers cosmologistes à proposer, indépendamment, des modèles non statiques d'univers avec des courbures arbitraires. Les équations de Friedmann ont été largement étudiées dans ce cours, mais Lemaître a été le premier à proposer l'idée que l'Univers s'est développé à partir d'un atome primitif. Son modèle repose sur un univers composé uniquement de matière froide, avec une constante cosmologique et une courbure spatiale arbitraire (pas de rayonnement). 
 
 1. Dans un tel modèle, montrer que, juste après un big bang à $t=0$, au début de l'univers le facteur d'échelle augmente comme :
 \begin{equation}
@@ -196,11 +199,11 @@ a(t) \propto e^{H_0\sqrt{\Omega_\Lambda^0}t}
 
 1. Dans le modèle de Lemaître à matière seule, la première équation de Friedmann s'écrit :
 \begin{equation}\label{eq:lemaitre}
-\frac{\dot{a}^2}{a^2} = H_0^2\left(\Omega_m^0 a^{-3} + \Omega_\Lambda^0 + \Omega_k^0 a^{-2}\right) \Leftrightarrow \dot{a}^2 = H_0^2\left(\Omega_m^0 a^{-1} + \Omega_\Lambda^0 a^2 + \Omega_k^0 \right) 
+\frac{\dot{a}^2}{a^2} = H_0^2\left[\Omega_m^0 \left(\frac{a_0}{a}\right)^{3} + \Omega_\Lambda^0 + \Omega_k^0 \left(\frac{a_0}{a}\right)^{2}\right] \Leftrightarrow \dot{a}^2 = H_0^2\left[\Omega_m^0 \frac{a_0^3}{a} + \Omega_\Lambda^0 a^2 + \Omega_k^0 a_0^2 \right]
 \end{equation}
-A $t=0$, l'Univers était extrêmement petit et le terme de matière domine :
+A $t\approx 0$, l'Univers était extrêmement petit donc le terme de matière domine :
 \begin{equation}
-\dot{a}^2 \approx H_0^2\left(\Omega_m^0 a^{-1}\right) \Leftrightarrow \sqrt{a}\dot{a}= H_0 \sqrt{\Omega_m^0} \Leftrightarrow a(t) = \left(\frac{3}{2}H_0\sqrt{\Omega_m^0}t\right)^{2/3}
+\dot a^2 \approx H_0^2\left[\Omega_m^0 \frac{a_0^3}{a}\right] \Leftrightarrow \sqrt{\frac{a}{a_0}}\frac{\dot{a}}{a_0}= H_0 \sqrt{\Omega_m^0} \Leftrightarrow \frac{a(t)}{a_0} = \left(\frac{3}{2}H_0\sqrt{\Omega_m^0}t\right)^{2/3}
 \end{equation}
 
 2. Puis, après un certain temps, $a$ devient grand et le terme de constante cosmologique domine :
@@ -210,13 +213,13 @@ A $t=0$, l'Univers était extrêmement petit et le terme de matière domine :
 
 3. En dérivant l'équation [](#eq:lemaitre), on trouve que :
 \begin{equation}
-2\dot{a}\ddot{a} = H_0^2\left(-\dot{a}\Omega_m^0 a^{-2} + 2 \dot{a} a \Omega_\Lambda^0 \right) \Leftrightarrow \ddot{a} = \frac{H_0^2}{2}\left(2 \Omega_\Lambda^0 a - \frac{\Omega_m^0}{a^2}\right)
+2\dot{a}\ddot{a} = H_0^2\left[-\dot{a}\Omega_m^0 \frac{a_0^3 }{a^{2}} + 2 \dot{a} a \Omega_\Lambda^0 \right] \Leftrightarrow \frac{\ddot{a}}{a_0} = \frac{H_0^2}{2}\left[2 \Omega_\Lambda^0 \left(\frac{a}{a_0}\right) - \Omega_m^0\left(\frac{a_0}{a}\right)^2\right]
 \end{equation}
 Lorsque $a$ est petit, nous constatons que $\ddot{a}$ est négatif et que l'expansion décélère. Cependant, lorsque $a$ est grand, $\ddot{a}>0$ et l'expansion de l'univers s'accélère. La transition se produit à :
 \begin{equation}
-\ddot{a}=0 \Leftrightarrow 0=\frac{H_0^2}{2}\left(2 \Omega_\Lambda^0 a_* - \frac{\Omega_m^0}{a_*^2}\right) \Leftrightarrow a_* = \left( \frac{\Omega_m^0}{2\Omega_\Lambda^0}\right)^{1/3}
+\ddot{a}=0 \Leftrightarrow 0=\frac{H_0^2}{2}\left[2 \Omega_\Lambda^0 \frac{a_*}{a_0} - \frac{\Omega_m^0a_0^2}{a_*^2}\right] \Leftrightarrow \frac{a_*}{a_0} = \left( \frac{\Omega_m^0}{2\Omega_\Lambda^0}\right)^{1/3}
 \end{equation}
-
+Pour le modèle $\Lambda$CDM avec $\Omega_m^0\approx 0.3$ et $\Omega_\Lambda^0\approx 0.7$, on a $a_*/a_0 \approx 0.6$ d'où un redshift de transition à $z\approx 0.67$.
 :::
 
 
@@ -376,15 +379,9 @@ En analysant les trois tracés de la figure [](#fig:analogmeca), nous pouvons di
     
 ```
 
-Selon les valeurs des paramètres, l'échelle de transition se produit dans le futur ou dans le passé. 
-Si la constante cosmologique est positive, les univers en expansion ont une expansion décélérée et, 
-après l'échelle de transition, une expansion accélérée.  Si la constante cosmologique est négative, 
-l'univers doit s'effondrer après un certain temps.
+Selon les valeurs des paramètres, l'échelle de transition se produit dans le futur ou dans le passé. Si la constante cosmologique est positive, les univers en expansion ont une expansion décélérée et, après l'échelle de transition, une expansion accélérée.  Si la constante cosmologique est négative, l'univers doit s'effondrer après un certain temps.
 
-Pourquoi l'Univers est-il donc en expansion aujourd'hui? Cela dépend entièrement des conditions initiales, 
-donc en particulier parce que l'univers est né d'un Big Bang. 
-Et pourquoi il y a eu un Big Bang ? On peut laisser libre son imagination: collisions de branes, Dieu, 
-souris pan-dimensionnelles... mais la réponse n'est pas (encore) donnée par les sciences physiques.
+Pourquoi l'Univers est-il donc en expansion aujourd'hui? Cela dépend entièrement des conditions initiales, donc en particulier parce que l'univers est né d'un Big Bang. Et pourquoi il y a eu un Big Bang ? On peut laisser libre son imagination: collisions de branes, Dieu, souris pan-dimensionnelles... mais la réponse n'est pas (encore) donnée par les sciences physiques.
 
 :::
 
@@ -401,11 +398,12 @@ souris pan-dimensionnelles... mais la réponse n'est pas (encore) donnée par le
 - $\Omega_m^0=1, \Omega_\Lambda^0=0, \Omega_r^0 \approx 0$ (modèle plat d'Einstein-de Sitter)
 - $\Omega_m^0=\Omega_\Lambda^0\approx 0, \Omega_r^0 \approx 0$ (univers vide)
 - $\Omega_m^0=\Omega_r^0\approx 0, \Omega_\Lambda^0 = 1$ (modèle plat dominé par le vide)
+
 Nous avons besoin de $1\,$Mpc$=3\times 10^{19}\,$km.
 
-2. Quel univers est le plus ancien ? Pour un modèle $\Lambda$CDM avec $32\%$ de matière et $68\%$ d'énergie noire, 
-les cosmologistes estiment l'âge de l'univers à $13.8\,\text{Gyr}$. Ce chiffre peut être comparé à l'âge des étoiles les plus anciennes, 
-qui est mesuré à {cite:p}`hobson2006general`[p. 410] :
+2. Quel univers est le plus ancien ? 
+
+Pour un modèle $\Lambda$CDM avec $32\%$ de matière et $68\%$ d'énergie noire, les cosmologistes estiment l'âge de l'univers à $13.8\,\text{Gyr}$. Ce chiffre peut être comparé à l'âge des étoiles les plus anciennes, qui est mesuré à {cite:p}`hobson2006general`[p. 410] :
 \begin{equation}
 t_{\text{premières étoiles}} = 11.5\pm 1.3\,\text{Gyr}
 \end{equation}
@@ -423,7 +421,7 @@ Calculer à nouveau l'âge de l'univers pour le premier cas, qui était le modè
 
 1. Nous utilisons la première équation de Friedmann :
 \begin{equation}
-H^2 = \left(\frac{1}{a}\frac{da}{dt}\right)^2 = H_0^2 \left[ \frac{\Omega_m^0}{a^3}+\Omega_\Lambda^0+ \frac{\left(1-\Omega_m^0-\Omega_\Lambda^0)\right)}{a^2}\right].
+H^2 = \left(\frac{1}{a}\frac{da}{dt}\right)^2 = H_0^2 \left[ \frac{\Omega_m^0}{a^3}+\Omega_\Lambda^0+ \frac{\left(1-\Omega_m^0-\Omega_\Lambda^0\right)}{a^2}\right].
 \end{equation}
 car à $a(t_0)=1$ nous avons toujours $1=\Omega_k^0 + \Omega_m^0 + \Omega_\Lambda^0$.
 
@@ -454,7 +452,7 @@ a(t) = H_0 t \Rightarrow t_U = \frac{1}{H_0} = 13.6\,\text{Gyr}
 \end{equation}
 
 - $\Omega_m^0=\Omega_r^0\approx 0, \Omega_\Lambda^0 = 1$ alors :
-\begin{enumerate}
+\begin{equation}
 \frac{da}{dt} = a H_0 \sqrt{\Omega_\Lambda^0} 
 \end{equation}
 Avec $t=t_0$ maintenant, 
