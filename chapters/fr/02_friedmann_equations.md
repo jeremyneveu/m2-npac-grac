@@ -16,7 +16,7 @@ Le tenseur énergie-impulsion
 
 :::{figure} ../../images/tmunu_def.svg
 
-Le tenseur-énergie impulsion représente les flux de quadri-impulsions $p^\mu$ et la densité d'énergie $\epsilon$ dans un volume local d'espace-temps. Si le système physique étudié dans ce volume local n'est soumis à aucune force qui travaille hormis la gravitation, alors on a l'équation de conservation $T^{\mu\nu}_{\;\;\;;\mu}=0$.
+Le tenseur énergie-impulsion représente les flux de quadri-impulsions $p^\mu$ et la densité d'énergie $\epsilon$ dans un volume local d'espace-temps. Si le système physique étudié dans ce volume local n'est soumis à aucune force qui travaille hormis la gravitation, alors on a l'équation de conservation $T^{\mu\nu}_{\;\;\;;\mu}=0$.
 :::
 
 Le tenseur énergie-impulsion $T^{\mu\nu}$ de l'équation d'Einstein décrit la densité d'énergie et les flux de quantités de mouvements en mécanique relativiste. C'est un tenseur d'ordre 2, construit à partir du vecteur 4-impulsion, qui prend la forme suivante :
@@ -204,7 +204,7 @@ En utilisant la métrique FLRW [](#eq:flrw), calculons pour l'exemple la connexi
 $$
 \begin{aligned}
 \Gamma^1_{\ 01} & = \frac{1}{2} g^{1 \mu} \left( \partial_0 g_{1\mu} + \partial_1 g_{0 \mu} - \partial_\mu g_{01} \right) \\
-& = \frac{1}{2} g^{1 1} \left(\frac{\partial g_{11}}{c\partial t} + \partial_\sigma g_{01} - 0 \right) \text{ car }\forall \mu \neq 1, g^{1\mu}=0\\
+& = \frac{1}{2} g^{1 1} \left(\frac{\partial g_{11}}{c\partial t} + \partial_\sigma g_{01} - 0 \right) \text{ car } \forall \mu \neq 1, g^{1\mu}=0\\
 & = \frac{1}{2} \frac{1-k\sigma^2}{a^2} \left( \frac{2 \dot{a} a}{c(1-k\sigma^2)} + 0 \right) \\
 & = \frac{\dot a}{ca} = \frac{H}{c}.
 \end{aligned}
@@ -242,7 +242,7 @@ $$
 La première équation de Friedmann relie explicitement l'évolution du facteur d'échelle $a(t)$ au contenu énergétique de  l'Univers. De plus, en soustrayant ces deux équations et en combinant le résultat avec la dérivée temporelle de la première, on peut obtenir l'équation de conservation de l'énergie que l'on obtiendrait aussi directement en calculant $T^{\mu\nu}_{\;\;\;;\mu}=0$ dans la métrique FLRW : 
 $$
 \label{eq:conservation_energie}
-\fbox{$\dot{\epsilon} = -3 H( \epsilon  + P )$}
+\boxed{\dot{\epsilon} = -3 H( \epsilon  + P )}
 $$
 
 :::{exercise}
@@ -510,17 +510,14 @@ Les paramètres cosmologiques
 L'équation d'état $w$ associée à une composante de l'Univers est définie par le rapport de sa pression et de sa densité d'énergie :
 $$
 \label{eq:def-w}
-\fbox{$w=P/\epsilon.$}
+\boxed{w=P/\epsilon}
 $$
 
--   La matière froide non relativiste n'exerce pas de pression sur son milieu
-    extérieur d'où $P_m=0$ donc $w_m=0$.
+-   La matière froide non relativiste n'exerce pas de pression sur son milieu extérieur d'où $P_m=0$ donc $w_m=0$.
 
--   La matière relativiste exerce quant à elle une pression sur son
-    milieu de valeur $P_r =  \epsilon_r / 3 $ d'où $w_r=1/3$.
+-   La matière relativiste exerce quant à elle une pression sur son milieu de valeur $P_r =  \epsilon_r / 3 $ d'où $w_r=1/3$.
 
--   Pour la constante cosmologique, on a $P_\Lambda = - \epsilon_\Lambda$ donc son équation d'état est
-    constante et négative $w_\Lambda = -1$.
+-   Pour la constante cosmologique, on a $P_\Lambda = - \epsilon_\Lambda$ donc son équation d'état est constante et négative $w_\Lambda = -1$.
 
 -   La courbure assimilée à un fluide parfait aurait un paramètre d'équation d'état $w_k=1/3$.
 
@@ -619,7 +616,8 @@ $$\Phi_0 = \frac{n_0 h \nu_0}{\dd t_0 \dd S} =  \frac{h \nu_0 n_E}{\dd t_0 4 \pi
 
 On en déduit l'expression de la distance de luminosité dans un univers courbe et en expansion, fonction des paramètres cosmologiques et le redshift :
 $$
-\Rightarrow D_L(z) = a_0 \sigma_E (1+z) = a_0 (1+z)\left\lbrace
+\Rightarrow D_L(z) = a_0 \sigma_E (1+z) = a_0 (1+z)
+\left\lbrace
 \begin{array}{cl}
     \sin \chi(z) & \text{ si } k=+1 \\
     \chi(z) & \text{ si } k=0 \\
@@ -651,7 +649,7 @@ $$
 D_L(z) = (1+z) \left\lbrace
 \begin{array}{cl}
     \displaystyle \frac{c}{H_0 \sqrt{-\Omega_k^0}} \sin\left[ H_0  \sqrt{-\Omega_k^0} \int_0^z \frac{\dd z}{H(z)} \right] & \text{ si } k=+1 \\
-    \displaystyle \int_0^z \frac{\dd z}{H(z)}  & \text{ si } k=0 \\
+    \displaystyle \int_0^z \frac{c\dd z}{H(z)}  & \text{ si } k=0 \\
     \displaystyle \frac{c}{H_0 \sqrt{\Omega_k^0}} \sh\left[ H_0  \sqrt{\Omega_k^0} \int_0^z \frac{\dd z}{H(z)} \right] & \text{ si } k=-1 \\
 \end{array}
 \right. 
@@ -692,21 +690,24 @@ $$d_A(z) = \frac{l_c}{\delta} = \sigma_E = \left\lbrace\begin{array}{cl}
 On en déduit aussi l'expression de la distance angulaire dans un univers courbe et en expansion, fonction des paramètres cosmologiques et du redshift :
 $$
 \Rightarrow D_A(z) \equiv\frac{l}{\delta} =  a(t_E) \sigma_E=\frac{a_0 \sigma_E}{1+z} = \frac{a_0}{1+z}d_A(z)=\frac{D_L(z)}{(1+z)^2}$$
-$$D_A(z) = \frac{a_0}{1+z} \left\lbrace\begin{array}{cl}
+$$D_A(z) = \frac{a_0}{1+z}
+\left\lbrace
+\begin{array}{cl}
     \sin \chi(z) & \text{ si } k=+1 \\
     \chi(z) & \text{ si } k=0 \\
     \sinh \chi(z) & \text{ si } k=-1 
 \end{array}
 \right.$$
 
-$$D_A(z) = \frac{1}{1+z} \left\lbrace
+$$D_A(z) = \frac{1}{1+z}
+\left\lbrace
 \begin{array}{cl}
     \displaystyle \dfrac{c}{H_0 \sqrt{-\Omega_k^0}} \sin\left[ H_0  \sqrt{-\Omega_k^0} \int_0^z \dfrac{\dd z}{H(z)} \right] & \text{ si } k=+1 \\
     \displaystyle \int_0^z \dfrac{c \dd z}{H(z)}  & \text{ si } k=0 \\
     \displaystyle \dfrac{c}{H_0 \sqrt{\Omega_k^0}} \sh\left[ H_0  \sqrt{\Omega_k^0} \int_0^z \dfrac{\dd z}{H(z)} \right] & \text{ si } k=-1 \\
 \end{array}
 \right. 
-.$$
+$$
 D'après l'exercice [](#exo:sphere-comobile), on voit que l'usage de $\sigma$ au lieu de $\chi$ est bien adapté aux trois types de courbures d'Univers dans ces définitions des distances.
 
 :::{note} Loi de Hubble-Lemaître

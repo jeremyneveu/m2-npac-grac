@@ -265,7 +265,7 @@ Comobiles coordinates
 
 It's important to note that not all observers see the Universe as isotropic, but only so-called *mobile* observers, who are locally at rest with most of the matter in their vicinity. We, for example, are not mobile observers: when we observe the temperature of the CMB, the first feature we see is a large temperature dipole (warmer on one side, colder on the opposite side), which is the result of the particular motion of our solar system in the galaxy, and of our galaxy in the Universe (and of our group of galaxies). If we were to subtract this own motion from the CMB frame of reference, then we would be comobile observers. Thus, we can define a coordinate system associated with observers without proper motion, whose relative proper distances increase only with the scaling factor $a(t)$ {cite:p}`Weinberg1972`[p. 409].
 
-In the FLRW metric, where the expansion of the Universe is factorized by a scale factor $a(t)$, the spatial coordinates $\vec \sigma$ are called *comobiles coordinates*. There is considerable freedom in the choice of comobiles coordinates. 
+In the FLRW metric, where the expansion of the Universe is factorized by a scale factor $a(t)$, the spatial coordinates $\vec \sigma$ are called *comobile coordinates*. There is considerable freedom in the choice of comobile coordinates. 
 
 ### Spherical coordinates
 
@@ -298,7 +298,7 @@ $$L(t) = 2 \pi a(t)$$
 
 ### Cartesian coordinates
 
-The flat-universe case greatly simplifies the calculations that follow. Since the assumption of zero curvature is compatible with the ever-stricter constraints of cosmological observations, we will henceforth concentrate our analytical developments on the flat universe, mentioning results for the general case where necessary. In the case of zero curvature, it may be convenient to use Cartesian comobiles coordinates $(ct, x, y, z)$, such as :
+The flat-universe case greatly simplifies the calculations that follow. Since the assumption of zero curvature is compatible with the ever-stricter constraints of cosmological observations, we will henceforth concentrate our analytical developments on the flat universe, mentioning results for the general case where necessary. In the case of zero curvature, it may be convenient to use Cartesian comobile coordinates $(ct, x, y, z)$, such as :
 \begin{equation}
 \sigma_1 = x,\quad \sigma_2 = y,\quad \sigma_3 = z,\quad \sigma^2 = x^2 + y^2 + z^2
 \end{equation}
@@ -381,10 +381,10 @@ Spectral shift, or redshift
 :align: center
 :width: 60%
 
-Notations for calculating redshift and cosmological distances in comobiles coordinates.
+Notations for calculating redshift and cosmological distances in comobile coordinates.
 :::
 
-To measure the expansion history of the Universe, we need access to the scale parameter $a(t)$. This is made possible by measuring the spectral shift of light coming from distant sources. In the FLRW metric, let's place ourselves by convention at the center ($\sigma=0$), and consider an object located at comobiles coordinates $\left(\sigma_E,\theta_E,\phi_E\right)$, emitting a photon at time $t_E$ (see [](#fig:distances_croquis)). For this photon, traveling at the speed of light, in the FLRW metric we have, at any instant:
+To measure the expansion history of the Universe, we need access to the scale parameter $a(t)$. This is made possible by measuring the spectral shift of light coming from distant sources. In the FLRW metric, let's place ourselves by convention at the center ($\sigma=0$), and consider an object located at comobile coordinates $\left(\sigma_E,\theta_E,\phi_E\right)$, emitting a photon at time $t_E$ (see [](#fig:distances_croquis)). For this photon, traveling at the speed of light, in the FLRW metric we have, at any instant:
 :::{math}
 :label: eq:ds2_lumiere
 
@@ -474,7 +474,7 @@ Proper distance and comobile distance
 ------------------------------
 
 *Proper distance* defines the physical distance between two objects at a time $t$. 
-Let a transmitting object be located at comobiles coordinates $(\sigma_E, \theta_E, \phi_E)$. By definition, the proper distance between this object and an observer located at the origin is along a curve at constant $\theta$ and $\phi$ and is equal to :
+Let a transmitting object be located at comobile coordinates $(\sigma_E, \theta_E, \phi_E)$. By definition, the proper distance between this object and an observer located at the origin is along a curve at constant $\theta$ and $\phi$ and is equal to :
 :::{math}
 :label: eq:dist-prop
 
@@ -560,7 +560,7 @@ Proper distance between the Earth and a distant galaxy with no apparent proper v
 
 :::{exercise} Comobiles coordinates on the sphere
 :label: exo:sphere-comobile 
-To get a feel for curved geometry and comobiles coordinates, let's study a 2D sphere of radius $a(t)$.On this sphere, coordinates are given by the polar angle $\chi$ and the longitude $\theta$ (the $\phi$ coordinate is therefore omitted compared with the FLRW case). 
+To get a feel for curved geometry and comobile coordinates, let's study a 2D sphere of radius $a(t)$.On this sphere, coordinates are given by the polar angle $\chi$ and the longitude $\theta$ (the $\phi$ coordinate is therefore omitted compared with the FLRW case). 
 Let's consider that an observer is located at $(\chi,\theta)=(0, 0)$ and a galaxy at $(\chi, 0)$. 
 
 1. Represent a sphere and draw the meridian $\theta = 0$. Place the following quantities: observer, galaxy, $a(t)$, $\chi$, proper distance between observer and galaxy $D_p$. Relate these quantities to the coordinate $\sigma$ and the expression for $D_p$.
