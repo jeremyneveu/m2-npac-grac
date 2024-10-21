@@ -146,7 +146,7 @@ T^{\mu\nu}  =
 \end{pmatrix}.
 \end{equation}
 
-Comment interpréter ces considérations mathématiques ? Tout d'abord, si on compare l'équation [](#eq:def-Tmunu) avec [](#stress-energy-tensor-meaning) alors on identifie $\epsilon$ à la densité d'énergie et $P$ à la pression cinétique (flux de quantité de mouvement à travers une surface)[^epsP]. Ensuite, le tenseur énergie-impulsion $T^{\mu\nu}$ s'identifie à celui d'un <wiki:perfect_fluid>. Cela signifie que dans un Univers homogène et isotrope la matière peut être décrite comme un milieu continu, dont l'évolution peut être décrite sans prendre en compte des effets de viscosité et de conduction thermique. _L'évolution thermodynamique de l'Univers est donc adiabatique._ Enfin, $U^\mu$ s'identifie alors à la quadri-vitesse comobile du fluide, donc le fait que $U^i = 0$ montre que le système physique étudié est au repos dans les coordonnées comobiles, comme attendu. 
+Comment interpréter ces considérations mathématiques ? Tout d'abord, si on compare l'équation [](#eq:def-Tmunu) avec [](#stress-energy-tensor-meaning) alors on identifie $\epsilon$ à la densité d'énergie et $P$ à la pression cinétique (flux de quantité de mouvement à travers une surface)[^epsP]. Ensuite, le tenseur énergie-impulsion $T^{\mu\nu}$ s'identifie à celui d'un <wiki:perfect_fluid>. Cela signifie que dans un Univers homogène et isotrope la matière peut être décrite comme un milieu continu, dont l'évolution peut être décrite sans prendre en compte des effets de viscosité et de conduction thermique. _L'évolution thermodynamique de l'Univers est donc adiabatique._ Enfin, $U^\mu$ s'identifie alors à la quadri-vitesse comoving du fluide, donc le fait que $U^i = 0$ montre que le système physique étudié est au repos dans les coordonnées comovings, comme attendu. 
 
 
 :::{note} Tenseur énergie-impulsion d'un fluide parfait {cite:p}`Weinberg1972`[p. 48]
@@ -159,7 +159,7 @@ $$ T^{\mu\nu} = \Lambda^{\mu}_{\;\alpha} \Lambda^{\nu}_{\;\beta} T^{\alpha\beta}
 avec $\Lambda^\mu_{\;\alpha}$ la transformation de Lorentz définie par l'équation [](#eq:lorentz2). Plus explicitement :
 $$ T^{ij} = P \delta^{ij} + (P + \rho c^2) \frac{v^i v^j}{c^2- v^2}, \quad T^{i0} = (P + \rho c^2) \frac{c v ^i}{c^2  - v^2}, \quad T^{00} = \frac{\rho c^4  + P v^2}{c^2  - v^2} $$
 
-Définissons la quadri-vitesse en coordonnées comobiles ainsi :
+Définissons la quadri-vitesse en coordonnées comovings ainsi :
 $$ \vec U =\frac{ \dd \vec x }{c \dd \tau} = \frac{\vec v / c }{ \sqrt{1-v^2}}, \quad U^0 = \frac{\dd t }{\dd  \tau} =  \frac{1 }{ \sqrt{1-v^2}}, \quad U_ \mu U ^\mu = -c^2  $$
 alors le tenseur s'écrit :
 $$ T^{\mu\nu} = (\rho c^2 + P) U^\mu U^\nu + P \eta^{\mu\nu}$$
@@ -180,7 +180,7 @@ $$
 Les équations de Friedmann
 ---------------------------
 
-Résoudre l'équation d'Einstein [](#eq:einstein2) consiste à en trouver une métrique solution, compte tenu de la répartition en matière et énergie codée dans $T^{\mu\nu}$. Supposer les principes d'homogénéité et d'isotropie pour ce tenseur, impose que la métrique est la métrique de Friedmann-Lemaître-Robertson-Walker (FLRW), utilisant le jeu de coordonnées comobiles sphériques usuel $(ct, \sigma, \theta, \phi)$:
+Résoudre l'équation d'Einstein [](#eq:einstein2) consiste à en trouver une métrique solution, compte tenu de la répartition en matière et énergie codée dans $T^{\mu\nu}$. Supposer les principes d'homogénéité et d'isotropie pour ce tenseur, impose que la métrique est la métrique de Friedmann-Lemaître-Robertson-Walker (FLRW), utilisant le jeu de coordonnées comovings sphériques usuel $(ct, \sigma, \theta, \phi)$:
 $$
 \begin{aligned}\label{eq:flrw}
 \displaystyle g_{\mu\nu} = \begin{pmatrix}
@@ -570,7 +570,7 @@ L'enjeu majeur pour les relevés cosmologiques actuels et futurs est de mesurer 
 Distances cosmologiques
 ------------
 
-La cosmologie est une science observationnelles. Il faut inférer les propriétés de l'Univers sans pouvoir se déplacer ou refaire l'expérience du Big Bang, mais à partir de nos observations seulement. Les paramètres cosmologiques sont liés au taux d'expansion de l'Univers $H(z)$. Donc pour pouvoir les estimer nous devons être capable de mesurer $H(z)$. Ce taux d'expansion est présent dans les distances propres et comobiles définies [Sec. {number}](#distance-propre-et-distance-comobile), mais celles-ci ne sont pas mesurables. Par contre, avec des télescopes on peut mesurer des flux lumineux et des angles: si on connaît la luminosité de l'objet observé ou sa taille physique on peut en définir sa distance et la lier au taux d'expansion $H(z)$.
+La cosmologie est une science observationnelles. Il faut inférer les propriétés de l'Univers sans pouvoir se déplacer ou refaire l'expérience du Big Bang, mais à partir de nos observations seulement. Les paramètres cosmologiques sont liés au taux d'expansion de l'Univers $H(z)$. Donc pour pouvoir les estimer nous devons être capable de mesurer $H(z)$. Ce taux d'expansion est présent dans les distances propres et comovings définies [Sec. {number}](#distance-propre-et-distance-comoving), mais celles-ci ne sont pas mesurables. Par contre, avec des télescopes on peut mesurer des flux lumineux et des angles: si on connaît la luminosité de l'objet observé ou sa taille physique on peut en définir sa distance et la lier au taux d'expansion $H(z)$.
 
 
 ### Distance de Hubble
@@ -583,7 +583,7 @@ où $h$ est usuellement défini par :
 $$
 H_0 = 100\,h\,\text{km/s/Mpc}
 $$
-Donc pour $h=0.7$, on trouve $D_H \approx 4.3 \,\text{Gpc} \approx 14 \,\text{Gly}$. Cette valeur va apparaître pour toutes les distances (non comobiles) définies ci-après.
+Donc pour $h=0.7$, on trouve $D_H \approx 4.3 \,\text{Gpc} \approx 14 \,\text{Gly}$. Cette valeur va apparaître pour toutes les distances (non comovings) définies ci-après.
 
 
 ### Distance de luminosité 
@@ -676,11 +676,11 @@ $$
 
 Comment cette distance se modélise dans la métrique FLRW? Soit un objet de taille transverse physique $l$ situé en $\sigma=\sigma_E,t=t_E$ et observé aujourd'hui en $\sigma=0,t=t_0$. 
 
-Dans l'espace physique, l'angle $\delta$ est le même que dans l'espace comobile (on passe de l'un à l'autre par une homothétie), mais aussi le même à la réception et à l'émission. L'angle sous lequel est vu l'objet est donc dans tous les cas, et pour toute courbure (voir [](#fig:projection_polaire)) : 
+Dans l'espace physique, l'angle $\delta$ est le même que dans l'espace comoving (on passe de l'un à l'autre par une homothétie), mais aussi le même à la réception et à l'émission. L'angle sous lequel est vu l'objet est donc dans tous les cas, et pour toute courbure (voir [](#fig:projection_polaire)) : 
 $$
 \delta = \frac{l}{a_E \sigma_E} = \frac{l (a_0/a_E)}{a_0 \sigma_E}  = \frac{l_c}{\sigma_E}
 $$
-avec $l_c = l / a_E$ la taille comobile de l'objet à l'émission $t_E$. On propose de définir la distance angulaire comobile ou distance transverse comobile simplement par :
+avec $l_c = l / a_E$ la taille comoving de l'objet à l'émission $t_E$. On propose de définir la distance angulaire comoving ou distance transverse comoving simplement par :
 $$d_A(z) = \frac{l_c}{\delta} = \sigma_E = \left\lbrace\begin{array}{cl}
     \sin \chi(z) & \text{ si } k=+1 \\
     \chi(z) & \text{ si } k=0 \\
@@ -708,7 +708,7 @@ $$D_A(z) = \frac{1}{1+z}
 \end{array}
 \right. 
 $$
-D'après l'exercice [](#exo:sphere-comobile), on voit que l'usage de $\sigma$ au lieu de $\chi$ est bien adapté aux trois types de courbures d'Univers dans ces définitions des distances.
+D'après l'exercice [](#exo:sphere-comoving), on voit que l'usage de $\sigma$ au lieu de $\chi$ est bien adapté aux trois types de courbures d'Univers dans ces définitions des distances.
 
 :::{note} Loi de Hubble-Lemaître
 

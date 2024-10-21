@@ -2,7 +2,7 @@
 short_title: Metric FLRW
 authors:
   - jneveu
-keywords: FLRW, cosmological principle, comobile, coordinates
+keywords: FLRW, cosmological principle, comoving, coordinates
 ---
 
 
@@ -263,9 +263,9 @@ Take two galaxies: they form a triangle with the Earth, which, in a 3-sphere, ha
 Comobiles coordinates
 ---------------------
 
-It's important to note that not all observers see the Universe as isotropic, but only so-called *mobile* observers, who are locally at rest with most of the matter in their vicinity. We, for example, are not mobile observers: when we observe the temperature of the CMB, the first feature we see is a large temperature dipole (warmer on one side, colder on the opposite side), which is the result of the particular motion of our solar system in the galaxy, and of our galaxy in the Universe (and of our group of galaxies). If we were to subtract this own motion from the CMB frame of reference, then we would be comobile observers. Thus, we can define a coordinate system associated with observers without proper motion, whose relative proper distances increase only with the scaling factor $a(t)$ {cite:p}`Weinberg1972`[p. 409].
+It's important to note that not all observers see the Universe as isotropic, but only so-called *mobile* observers, who are locally at rest with most of the matter in their vicinity. We, for example, are not mobile observers: when we observe the temperature of the CMB, the first feature we see is a large temperature dipole (warmer on one side, colder on the opposite side), which is the result of the particular motion of our solar system in the galaxy, and of our galaxy in the Universe (and of our group of galaxies). If we were to subtract this own motion from the CMB frame of reference, then we would be comoving observers. Thus, we can define a coordinate system associated with observers without proper motion, whose relative proper distances increase only with the scaling factor $a(t)$ {cite:p}`Weinberg1972`[p. 409].
 
-In the FLRW metric, where the expansion of the Universe is factorized by a scale factor $a(t)$, the spatial coordinates $\vec \sigma$ are called *comobile coordinates*. There is considerable freedom in the choice of comobile coordinates. 
+In the FLRW metric, where the expansion of the Universe is factorized by a scale factor $a(t)$, the spatial coordinates $\vec \sigma$ are called *comoving coordinates*. There is considerable freedom in the choice of comoving coordinates. 
 
 ### Spherical coordinates
 
@@ -298,7 +298,7 @@ $$L(t) = 2 \pi a(t)$$
 
 ### Cartesian coordinates
 
-The flat-universe case greatly simplifies the calculations that follow. Since the assumption of zero curvature is compatible with the ever-stricter constraints of cosmological observations, we will henceforth concentrate our analytical developments on the flat universe, mentioning results for the general case where necessary. In the case of zero curvature, it may be convenient to use Cartesian comobile coordinates $(ct, x, y, z)$, such as :
+The flat-universe case greatly simplifies the calculations that follow. Since the assumption of zero curvature is compatible with the ever-stricter constraints of cosmological observations, we will henceforth concentrate our analytical developments on the flat universe, mentioning results for the general case where necessary. In the case of zero curvature, it may be convenient to use Cartesian comoving coordinates $(ct, x, y, z)$, such as :
 \begin{equation}
 \sigma_1 = x,\quad \sigma_2 = y,\quad \sigma_3 = z,\quad \sigma^2 = x^2 + y^2 + z^2
 \end{equation}
@@ -381,10 +381,10 @@ Spectral shift, or redshift
 :align: center
 :width: 60%
 
-Notations for calculating redshift and cosmological distances in comobile coordinates.
+Notations for calculating redshift and cosmological distances in comoving coordinates.
 :::
 
-To measure the expansion history of the Universe, we need access to the scale parameter $a(t)$. This is made possible by measuring the spectral shift of light coming from distant sources. In the FLRW metric, let's place ourselves by convention at the center ($\sigma=0$), and consider an object located at comobile coordinates $\left(\sigma_E,\theta_E,\phi_E\right)$, emitting a photon at time $t_E$ (see [](#fig:distances_croquis)). For this photon, traveling at the speed of light, in the FLRW metric we have, at any instant:
+To measure the expansion history of the Universe, we need access to the scale parameter $a(t)$. This is made possible by measuring the spectral shift of light coming from distant sources. In the FLRW metric, let's place ourselves by convention at the center ($\sigma=0$), and consider an object located at comoving coordinates $\left(\sigma_E,\theta_E,\phi_E\right)$, emitting a photon at time $t_E$ (see [](#fig:distances_croquis)). For this photon, traveling at the speed of light, in the FLRW metric we have, at any instant:
 :::{math}
 :label: eq:ds2_lumiere
 
@@ -392,7 +392,7 @@ To measure the expansion history of the Universe, we need access to the scale pa
 :::
 because along its geodesic $\theta$ and $\phi$ are constant ($\dd \theta = \dd \phi=0$). Let's assume $t_0$ is the instant of reception of this wave at $\sigma=0$. Then, thanks to the previous equation, we have the relation : 
 :::{math}
-:label: eq:comobile
+:label: eq:comoving
 
 \int_{t_E}^{t_0} \frac{c\dd t}{a(t)} = -\int_{t_0}^{t_E} \frac{c\dd t}{a(t)} = \int_0^{\sigma_E}\frac{c\dd\sigma}{sqrt{1-k\sigma^2}} = \left\lbrace
 \begin{array}{cl}
@@ -407,10 +407,10 @@ with $\dd \sigma < 0$ for $\dd t > 0$ considering a photon going from the source
 
 For an electromagnetic wave with period $T$, the expression [](#eq:ds2_lumiere) being valid at any instant, we can calculate the same integral for the wave emitted at instant $t_E+T_E$ and received at instant $t_0+T_0$ (we assume that the period $T$ will vary with time): 
 $$
-\label{eq:comobileT}
+\label{eq:comovingT}
 \int_{t_E+T_E}^{t_0+T_0} \frac{c \dd t}{a(t)}= \int_0^{\sigma_E}\frac{\dd \sigma}{1-k\sigma^2}.
 $$
-Equating the expressions [](#eq:comobile) and [](#eq:comobileT), since the period $T$ is small compared to the variations in the scale factor $a(t)$ for usual electromagnetic waves, we obtain: 
+Equating the expressions [](#eq:comoving) and [](#eq:comovingT), since the period $T$ is small compared to the variations in the scale factor $a(t)$ for usual electromagnetic waves, we obtain: 
 $$
 \begin{aligned}
 \int_{t_E+T_E}^{t_0+T_0} \frac{c\dd t}{a(t)} & =\int_{t_E}^{t_0} \frac{c\dd t}{a(t)}  
@@ -470,20 +470,20 @@ z = \frac{\lambda_0-\lambda_E}{\lambda_E} = \frac{5000-4861}{4861} = 0.028
 
 
 
-Proper distance and comobile distance
+Proper distance and comoving distance
 ------------------------------
 
 *Proper distance* defines the physical distance between two objects at a time $t$. 
-Let a transmitting object be located at comobile coordinates $(\sigma_E, \theta_E, \phi_E)$. By definition, the proper distance between this object and an observer located at the origin is along a curve at constant $\theta$ and $\phi$ and is equal to :
+Let a transmitting object be located at comoving coordinates $(\sigma_E, \theta_E, \phi_E)$. By definition, the proper distance between this object and an observer located at the origin is along a curve at constant $\theta$ and $\phi$ and is equal to :
 :::{math}
 :label: eq:dist-prop
 
 D_p(\sigma_E, t) = \int_0^{\sigma_E}
  \sqrt{g_{\sigma\sigma}}\dd\sigma' = \int_0^{\sigma_E}\frac{a(t)\dd\sigma'}{\sqrt{1-k\sigma'^2}} = a(t) \chi(\sigma_E)
 :::
-where $\chi(\sigma_E)$ is the _distance comobile_ between this object and the observer:
+where $\chi(\sigma_E)$ is the _distance comoving_ between this object and the observer:
 :::{math}
-:label: eq:dist-comobile
+:label: eq:dist-comoving
 
 \chi(\sigma_E) = \int_0^{\sigma_E}\frac{\dd\sigma'}{\sqrt{1-k\sigma'^2}} = \left\lbrace\begin{array}{cl}
     \arcsin\sigma_E & \text{ si } k=+1 \\
@@ -492,7 +492,7 @@ where $\chi(\sigma_E)$ is the _distance comobile_ between this object and the ob
 \end{array}
 \right.
 :::
-We can see that the proper distance $D_p$ has the unit of a length, whereas the comobile distance is dimensionless. The latter represents distance in coordinate space and is independent of the expansion of the Universe. The proper distance, on the other hand, evolves over time with the scale factor.
+We can see that the proper distance $D_p$ has the unit of a length, whereas the comoving distance is dimensionless. The latter represents distance in coordinate space and is independent of the expansion of the Universe. The proper distance, on the other hand, evolves over time with the scale factor.
 
 Reciprocally, we define $f_k(\chi)$ as follows:
 \begin{equation}
@@ -543,7 +543,7 @@ Table [](#tab:atz) summarizes how the parameters $a$, $t$ and $z$ are converted 
 
 :::
 
-The proper distance is the distance that could actually be measured between two objects at time $t$. If we choose an object located at the comobile coordinate $\sigma_E$ and a comobile observer in 0, then the proper distance today at $t_0$ is simply written for the three curvature cases:
+The proper distance is the distance that could actually be measured between two objects at time $t$. If we choose an object located at the comoving coordinate $\sigma_E$ and a comoving observer in 0, then the proper distance today at $t_0$ is simply written for the three curvature cases:
 $$D_p(z) = a_0 \chi(z) =\int_0^z\frac{c \dd z}{H(z)} $$
 and is expressed in units of length. The notion of proper distance is illustrated [](#fig:distances).
 
@@ -559,8 +559,8 @@ Proper distance between the Earth and a distant galaxy with no apparent proper v
 
 
 :::{exercise} Comobiles coordinates on the sphere
-:label: exo:sphere-comobile 
-To get a feel for curved geometry and comobile coordinates, let's study a 2D sphere of radius $a(t)$.On this sphere, coordinates are given by the polar angle $\chi$ and the longitude $\theta$ (the $\phi$ coordinate is therefore omitted compared with the FLRW case). 
+:label: exo:sphere-comoving 
+To get a feel for curved geometry and comoving coordinates, let's study a 2D sphere of radius $a(t)$.On this sphere, coordinates are given by the polar angle $\chi$ and the longitude $\theta$ (the $\phi$ coordinate is therefore omitted compared with the FLRW case). 
 Let's consider that an observer is located at $(\chi,\theta)=(0, 0)$ and a galaxy at $(\chi, 0)$. 
 
 1. Represent a sphere and draw the meridian $\theta = 0$. Place the following quantities: observer, galaxy, $a(t)$, $\chi$, proper distance between observer and galaxy $D_p$. Relate these quantities to the coordinate $\sigma$ and the expression for $D_p$.
@@ -570,11 +570,11 @@ Let's consider that an observer is located at $(\chi,\theta)=(0, 0)$ and a galax
 
 :::
 
-:::{solution} exo:sphere-comobile
-:label: exo:sphere-comobile-sol
+:::{solution} exo:sphere-comoving
+:label: exo:sphere-comoving-sol
 :class: dropdown
 
-1. The comobile coordinates $\chi$ is explicitly the polar angle between the observer and the galaxy. The proper distance is the arc length, which is $D_p = a(t) \chi$ as in usual geometry. The coordinate $\sigma$ is related to the length $b$ of the chord at this angle $\chi$ by :
+1. The comoving coordinates $\chi$ is explicitly the polar angle between the observer and the galaxy. The proper distance is the arc length, which is $D_p = a(t) \chi$ as in usual geometry. The coordinate $\sigma$ is related to the length $b$ of the chord at this angle $\chi$ by :
 \begin{equation}
 \sigma = \sin \chi = \frac{b}{a(t)}
 \end{equation}
@@ -621,7 +621,7 @@ where $L$ is an object's intrinsic luminosity (in watts) and $l$ a physical size
 Cosmic time and conformal time
 --------------------------------
 
-Time deserves a special mention. In our ideal Universe, with no over- or under-densities of matter, all clocks that follow expansion (i.e. with no motion of their own) beat the second at the same rate. With infinite time at our disposal to set all the clocks in the Universe, we can propose a universal convention for synchronizing our clocks. For example, when the temperature of the CMB reaches a given value, all the civilizations in the Universe can decide that this corresponds to a certain date. It is therefore possible to define a cosmic time, common to all comobile observers {cite:p}`Weinberg1972` [p. 409]. 
+Time deserves a special mention. In our ideal Universe, with no over- or under-densities of matter, all clocks that follow expansion (i.e. with no motion of their own) beat the second at the same rate. With infinite time at our disposal to set all the clocks in the Universe, we can propose a universal convention for synchronizing our clocks. For example, when the temperature of the CMB reaches a given value, all the civilizations in the Universe can decide that this corresponds to a certain date. It is therefore possible to define a cosmic time, common to all comoving observers {cite:p}`Weinberg1972` [p. 409]. 
 
 
 

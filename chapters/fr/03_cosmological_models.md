@@ -212,7 +212,7 @@ A $t\approx 0$, l'Univers était extrêmement petit donc le terme de matière do
 
 3. En dérivant l'équation [](#eq:lemaitre), on trouve que :
 \begin{equation}
-2\dot{a}\ddot{a} = H_0^2\left[-\dot{a}\Omega_m^0 \frac{a_0^3 }{a^{2}} + 2 \dot{a} a \Omega_\Lambda^0 \right] \Leftrightarrow \frac{\ddot{a}}{a_0} = \frac{H_0^2}{2}\left[2 \Omega_\Lambda^0 \left(\frac{a}{a_0}\right) - \Omega_m^0\left(\frac{a_0}{a}\right)^2\right]
+2\dot{a}\ddot{a} = H_0^2\left[ -\dot{a}\Omega_m^0 \frac{a_0^3 }{a^{2}} + 2 \dot{a} a \Omega_\Lambda^0 \right] \Leftrightarrow \frac{\ddot{a}}{a_0} = \frac{H_0^2}{2}\left[2 \Omega_\Lambda^0 \left(\frac{a}{a_0}\right) - \Omega_m^0\left(\frac{a_0}{a}\right)^2\right]
 \end{equation}
 Lorsque $a$ est petit, nous constatons que $\ddot{a}$ est négatif et que l'expansion décélère. Cependant, lorsque $a$ est grand, $\ddot{a}>0$ et l'expansion de l'univers s'accélère. La transition se produit à :
 \begin{equation}
@@ -234,13 +234,11 @@ Analogie mécanique
 \end{equation}
 Interpréter cette équation par analogie avec l'équation de conservation de l'énergie mécanique d'un corps massif suivant un mouvement unidimensionnel, et décrire le rôle de chaque terme d'"énergie potentielle".
 
-2. Dériver cette équation par rapport au temps et faire l'analogie avec la loi de Newton appliquée à un corps massif en 
-mouvement unidimensionnel. Analyser à nouveau le rôle de chaque terme de "force".
+2. Dériver cette équation par rapport au temps et faire l'analogie avec la loi de Newton appliquée à un corps massif en mouvement unidimensionnel. Analyser à nouveau le rôle de chaque terme de "force".
 
 Dans ce qui suit, nous négligeons la composante de rayonnement. Tracez les termes d'énergie potentielle en fonction du facteur d'échelle $a$ et décrivez le destin des univers suivants.
 
-3. Modèle sphérique ($k=+1$) avec $\Lambda=4\pi \GN \rho_m / c^2$ (montrez que le modèle statique d'Einstein est un 
-cas particulier de ce modèle et qu'il est instable).
+3. Modèle sphérique ($k=+1$) avec $\Lambda=4\pi \GN \rho_m / c^2$ (montrez que le modèle statique d'Einstein est un cas particulier de ce modèle et qu'il est instable).
 
 4. Modèles de matière seule avec différents signes de courbure (le modèle d'Einstein-de Sitter correspond au cas de la courbure plate).
 
@@ -287,7 +285,7 @@ V_{\rm eff}(a) = - \frac{1}{2}\frac{\Omega_m^0}{a} - \frac{1}{2}\Omega_\Lambda^0
 V_{\rm eff}(a) = - \frac{1}{2}\frac{\Omega_m^0}{a} - \frac{1}{4}\Omega_m^0 a^2
 \end{equation}
 \begin{equation}
-\frac{d V_{\rm eff} }{da}= 0 \Rightarrow \left(\frac{1}{a^2}-a\right)\Omega_m^0 = 0 \Rightarrow a=1\text{ (aujourd'hui)}
+\frac{\dd V_{\rm eff} }{\dd a}= 0 \Rightarrow \left(\frac{1}{a^2}-a\right)\Omega_m^0 = 0 \Rightarrow a=1\text{ (aujourd'hui)}
 \end{equation}
 A $a=1$ ou $t=0$, la première équation de Friedmann donne :
 \begin{equation}
@@ -303,7 +301,7 @@ Le modèle est sphérique donc $\Omega_k^0 = -k c^2 / H_0^2 < 0$ avec $k=+1$ ce 
 Energies potentielles dans le cas d'un univers sphérique avec $\Omega_m^0=1$.
 ```
 
-D'après la figure [](#fig:einstein), la solution d'Einstein à $a=1$ est instable. 
+D'après la figure [](#fig:einstein), la solution d'Einstein à $a=a_0$ est instable. 
 
 4.  
 ```{list-table} Energies potentielles dans le cas de modèles à matière seule avec différentes courbures :  (en haut à gauche), $\Omega_m^0=1.5\Rightarrow k=+1$ (en haut à droite), $\Omega_m^0=0.5\Rightarrow k=-1$ (en bas)
