@@ -202,7 +202,7 @@ where $\delta^\rho_\mu$ is the Kronecker symbol ($\delta^\rho_\mu=1$ if $\rho=\m
 
 We could later show that $\Gamma^\nu_{\ \mu\rho}$ can only be written using a single coordinate system and the metric tensor : 
 $$
-\label{eq:connection}
+\label{eq:connexion}
 \Gamma^\nu_{\mu\rho} = \frac{1}{2}g^{\lambda\nu}\left( \frac{\partial g_{\lambda\rho}}{\partial x^\mu} + \frac{\partial g_{\mu\lambda}}{\partial x^\rho} - \frac{\partial g_{\mu\rho}}{\partial x^\lambda} \right)
 $$
 

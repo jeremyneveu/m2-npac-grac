@@ -43,20 +43,19 @@ Supposons que l'Univers est vide, ou du moins avec une densité d'énergie total
 $$\Omega_k^0 = 1 - \Omega_m^0  - \Omega_r^0  - \Omega_\Lambda^0 \approx 1$$
 Cet Univers est donc hyperbolique[^ksign]. La première équation de Friedmann s'écrit :
 $$
-\frac{\dot{a}^2}{a^2} + \frac{c^2 k}{a^2}  = 0 
+\frac{\dot{a}^2}{a^2}   = H_0^2 \Omega_k^0 \frac{a_0^2}{a^2}
 $$
 puis :
 $$ 
-\dot a = \sqrt{-c^2 k} = \sqrt{c^2 H_0^2 \Omega_k^0} = c H_0
+\dot a = \sqrt{a_0^2 H_0^2 \Omega_k^0} = a_0 H_0
 $$
 L'intégration donne donc un Univers en expansion à vitesse constante :
 $$\label{eq:a_empty}
-a(t) = c H_0 t$$
-où l'échelle aujourd'hui $a_0$ n'apparaît pas. 
+a(t) = a_0 H_0 t$$
 
 :::{important}
 
-La constante de Hubble $H_0$ apparaît dans les trois modèles d'Univers précédents. Ce paramètre définit les conditions initiales du modèle cosmologique lors de l'intégration des équations de Friedmann.
+La constante de Hubble $H_0$ apparaît dans les trois modèles d'Univers précédents. Le taux d'expansion de l'Univers aujourd'hui n'est pas une prédiction des modèles mais une donnée externe, lors de l'intégration des équations différentielles de Friedmann.
 :::
 
 
@@ -67,7 +66,7 @@ Modèles historiques
 La cosmologie moderne est née avec la Relativité Générale. Depuis l'écriture de ces équations, les scientifiques ont commencé à décrire mathématiquement l'univers comme un système physique. De nombreux modèles ont été proposés pour décrire les différentes histoires de l'univers. Dans ce chapitre, nous allons passer en revue certains d'entre eux.
 
 
-### Premier modèle d'Einstein
+### Premier modèle d'Einstein (1917)
 
 :::{exercise} Premiers modèles cosmologiques
 :label: exo:einstein_first
@@ -130,7 +129,7 @@ c'est-à-dire que la perturbation $\delta a$ croît exponentiellement avec le te
 :::
 
 
-### Univers avec une constante cosmologique seulement (de Sitter)
+### Univers avec une constante cosmologique seulement (de Sitter, 1917)
 
 :::{exercise} Modèle de Sitter
 :label: exo:desitter
@@ -172,7 +171,7 @@ Historiquement, le modèle de Sitter a été découvert comme un univers statiqu
 
 :::
 
-### Modèle de Lemaître
+### Modèle de Eddington-Lemaître (1927)
 
 
 :::{exercise} Modèle de Lemaître

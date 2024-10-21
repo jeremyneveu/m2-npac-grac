@@ -671,24 +671,25 @@ Distance angulaire d'un objet de taille physique transverse $l$.
 :::
 
 
-Dernière distance importante en cosmologie, la distance angulaire d'un objet $D_A(z)$. La distance angulaire $D_A(z)$ est la distance sous laquelle sa taille apparente serait à nouveau $l$ au moment de l'émission pour la même taille angulaire $\delta$ dans un Univers plat et statique :
+Dernière distance importante en cosmologie, la distance angulaire d'un objet $D_A(z)$. Dans un espace statique et plat, l'angle apparent $\delta$ d'un objet de taille physique $l$ au repos à distance $D_A$ serait $l/D_A$. On propose donc de définir la distance angulaire $D_A(z)$ en cosmologie par :
 $$
 \delta = \frac{l}{D_A(z)}
 $$
 
-Soit un objet de taille transverse physique $l$ situé en $\sigma=\sigma_E,t=t_E$ et observé aujourd'hui en $\sigma=0,t=t_0$. Dans l'espace comobile, il serait vu sous un angle $\delta \approx l_c / \sigma_E$ (avec $\delta\ll 1$ et $l_c = l / a_E$ sa taille comobile). On propose de définir la distance angulaire comobile ou distance transverse comobile simplement par :
+Comment cette distance se modélise dans la métrique FLRW? Soit un objet de taille transverse physique $l$ situé en $\sigma=\sigma_E,t=t_E$ et observé aujourd'hui en $\sigma=0,t=t_0$. 
+
+Dans l'espace physique, l'angle $\delta$ est le même que dans l'espace comobile (on passe de l'un à l'autre par une homothétie), mais aussi le même à la réception et à l'émission. L'angle sous lequel est vu l'objet est donc dans tous les cas, et pour toute courbure (voir [](#fig:projection_polaire)) : 
+$$
+\delta = \frac{l}{a_E \sigma_E} = \frac{l (a_0/a_E)}{a_0 \sigma_E}  = \frac{l_c}{\sigma_E}
+$$
+avec $l_c = l / a_E$ la taille comobile de l'objet à l'émission $t_E$. On propose de définir la distance angulaire comobile ou distance transverse comobile simplement par :
 $$d_A(z) = \frac{l_c}{\delta} = \sigma_E = \left\lbrace\begin{array}{cl}
     \sin \chi(z) & \text{ si } k=+1 \\
     \chi(z) & \text{ si } k=0 \\
     \sinh \chi(z) & \text{ si } k=-1 
 \end{array}
 \right. .$$
-
-Dans l'espace physique, l'objet est à une distance $D_p(t_E) = a_E \sigma_E$ à l'émission, d'où : 
-$$
-\delta = \frac{l}{D_p(t_E)} =  \frac{l}{a_E \sigma_E}  = \frac{l_c}{\sigma_E}
-$$
-On en déduit l'expression de la distance angulaire dans un univers courbe et en expansion, fonction des paramètres cosmologiques et le redshift :
+On en déduit aussi l'expression de la distance angulaire dans un univers courbe et en expansion, fonction des paramètres cosmologiques et du redshift :
 $$
 \Rightarrow D_A(z) \equiv\frac{l}{\delta} =  a(t_E) \sigma_E=\frac{a_0 \sigma_E}{1+z} = \frac{a_0}{1+z}d_A(z)=\frac{D_L(z)}{(1+z)^2}$$
 $$D_A(z) = \frac{a_0}{1+z} \left\lbrace\begin{array}{cl}
@@ -701,12 +702,12 @@ $$D_A(z) = \frac{a_0}{1+z} \left\lbrace\begin{array}{cl}
 $$D_A(z) = \frac{1}{1+z} \left\lbrace
 \begin{array}{cl}
     \displaystyle \dfrac{c}{H_0 \sqrt{-\Omega_k^0}} \sin\left[ H_0  \sqrt{-\Omega_k^0} \int_0^z \dfrac{\dd z}{H(z)} \right] & \text{ si } k=+1 \\
-    \displaystyle \int_0^z \dfrac{\dd z}{H(z)}  & \text{ si } k=0 \\
+    \displaystyle \int_0^z \dfrac{c \dd z}{H(z)}  & \text{ si } k=0 \\
     \displaystyle \dfrac{c}{H_0 \sqrt{\Omega_k^0}} \sh\left[ H_0  \sqrt{\Omega_k^0} \int_0^z \dfrac{\dd z}{H(z)} \right] & \text{ si } k=-1 \\
 \end{array}
 \right. 
 .$$
-Autrement dit, ce serait la distance à laquelle on pourrait interpréter la taille apparente de l'objet comme dans un Univers statique et euclidien. Aussi, d'après l'exercice [](#exo:sphere-comobile), on voit que l'usage de $\sigma$ au lieu de $\chi$ est bien adapté aux trois types de courbures d'Univers dans ces définitions.
+D'après l'exercice [](#exo:sphere-comobile), on voit que l'usage de $\sigma$ au lieu de $\chi$ est bien adapté aux trois types de courbures d'Univers dans ces définitions des distances.
 
 :::{note} Loi de Hubble-Lemaître
 

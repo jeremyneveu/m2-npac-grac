@@ -109,7 +109,8 @@ $$
 \frac{\dd^2x^\nu}{\dd\tau^2} + \Gamma^\nu_{\ \mu\rho}\frac{\dd x^\mu}{\dd\tau}\frac{\dd x^\rho}{\dd\tau}=0,
 $$
 où $\Gamma^\nu_{\ \mu\rho}$ est la *connexion affine* définie par:
-$$\Gamma^\nu_{\ \mu\rho} \equiv \frac{\partial x^\nu}{\partial x'^\lambda}\frac{\partial^2 x'^\lambda}{\partial x^\mu \partial x^\rho}.$$
+$$
+\Gamma^\nu_{\ \mu\rho} \equiv \frac{\partial x^\nu}{\partial x'^\lambda}\frac{\partial^2 x'^\lambda}{\partial x^\mu \partial x^\rho}.$$
 Le temps propre se réécrit:
 $$
 \dd \tau^2=-\eta_{\mu\nu} \dd x'^\mu \dd x'^\nu = -g_{\mu\nu} \dd x^\mu \dd x^\nu

@@ -526,6 +526,21 @@ D'où la distance comobile en terme de temps $t$, facteur d'échelle $a$ et reds
 \chi(\sigma_E) & = \chi(t_E) = \int_{t_E}^{t_0} \frac{c\dd t'}{a(t')} = \int_{a_E}^{a_0} \frac{c\dd a}{a^2 H(a)} \\
 & = \int_z^0 \frac{1+z}{a_0}\frac{-c\dd z}{(1+z)H(z)} = \frac{1}{a_0}\int_0^z\frac{c\dd z}{H(z)} = \chi(z)
 \end{align}
+On résume dans le tableau [](#tab:atz) comment se convertissent les paramètres $a$, $t$ et $z$ à différents moments dans la chronologie de l'Univers.
+
+:::{table} Conversion des paramètres $a$, $t$ et $z$. On note $t_U$ l'âge de l'Univers aujourd'hui.
+:label: table
+:align: center
+:label: tab:atz
+
+|  | a | t | z |
+| --- | --- | --- | --- | 
+| réception (aujourd'hui) | $a_0$ | $t_U$ | 0 |
+| émission (passé) | $a_E$ | $t_E$ | $z$ |
+| début de l'Univers | $0$ | $0$ | $+\infty$ |
+| fin des temps | $+\infty$ | $+\infty$ | -1 |
+
+:::
 
 La distance propre est la distance que l'on pourrait mesurer effectivement à un instant $t$ entre deux objets. Si on choisit un objet situé à la coordonné comobile $\sigma_E$ et un observateur comobile en 0, la distance propre aujourd'hui à $t_0$ s'écrit alors simplement pour les trois cas de courbure :
 $$D_p(z) = a_0 \chi(z) =\int_0^z\frac{c \dd z}{H(z)} $$
