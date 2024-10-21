@@ -10,7 +10,7 @@ La métrique de Friedmann-Lemaître-Robertson-Walker
 ================================
 
 
-Principes cosmologiques
+Principe cosmologique
 -----------------------
 
 
@@ -20,8 +20,7 @@ Principes cosmologiques
 :align: center
 :width: 60%
 
-Galaxy distribution compiled by the eBOSS survey. Every dot in this "pie" diagram is a galaxy, color coded by type: green for nearby galaxies, magenta and red for old red galaxies, 
-blue for young blue galaxies, yellow and white for quasars. Credit: A. Raichoor (EPFL) / A. Ross (Ohio State Univ.) / SDSS Collaboration
+Galaxy distribution compiled by the eBOSS survey. Every dot in this "pie" diagram is a galaxy, color coded by type: green for nearby galaxies, magenta and red for old red galaxies, blue for young blue galaxies, yellow and white for quasars. Credit: A. Raichoor (EPFL) / A. Ross (Ohio State Univ.) / SDSS Collaboration
 :::
 
 :::{figure} ../../images/CMB_planck.jpg
@@ -29,17 +28,10 @@ blue for young blue galaxies, yellow and white for quasars. Credit: A. Raichoor 
 :align: center
 :width: 70%
 
-Carte de température du fond diffus cosmologique micro-onde (CMB)
-observée par le satellite Planck. L'écart relatif observé entre la
-température des points chauds (rouges) ou froids (bleus) par rapport à
-la moyenne est de l'ordre de $\delta \theta / \theta \approx 10^{-5}$.
+Carte de température du fond diffus cosmologique micro-onde (CMB) observée par le satellite Planck. L'écart relatif observé entre la  température des points chauds (rouges) ou froids (bleus) par rapport à la moyenne est de l'ordre de $\delta \theta / \theta \approx 10^{-5}$.
 :::
 
-Pour être en mesure de construire un modèle de l'Univers, c'est-à-dire une construction théorique capable de décrire le contenu de l'Univers et son évolution, il faut parvenir 
-à résoudre l'équation d'Einstein de la Relativité Générale. Cependant, jusqu'à quel niveau de détail est-il nécessaire d'aller pour le décrire suffisamment bien aux grandes échelles ? 
-On se doute que paramétrer l'équation d'Einstein jusqu'à inclure l'échelle du système solaire est à la fois illusoire et non nécessaire. Quelle est 
-la structure de l'Univers aux plus grandes échelles ? Ici la nature nous fait un beau cadeau, qui va simplifier considérablement l'écriture d'un modèle cosmologique à partir des équations
-de la Relativité Générale.
+Pour être en mesure de construire un modèle de l'Univers, c'est-à-dire une construction théorique capable de décrire le contenu de l'Univers et son évolution, il faut parvenir à résoudre l'équation d'Einstein de la Relativité Générale. Cependant, jusqu'à quel niveau de détail est-il nécessaire d'aller pour le décrire suffisamment bien aux grandes échelles ? On se doute que paramétrer l'équation d'Einstein jusqu'à inclure l'échelle du système solaire est à la fois illusoire et non nécessaire. Quelle est la structure de l'Univers aux plus grandes échelles ? Ici la nature nous fait un beau cadeau, qui va simplifier considérablement l'écriture d'un modèle cosmologique à partir des équations de la Relativité Générale.
 
 :::{important} Principe cosmologique
 
@@ -93,8 +85,12 @@ En combinant les deux résultats précédents, l'intervalle espace-temps peut ê
 \end{equation}
 où $\dd \vec l$ est un vecteur élémentaire spatial. Il est alors possible de fixer $g_{00}$ à $-1$ quitte à redéfinir la variable temps[^g00]. La métrique prend donc la forme :
 \begin{equation}
-g_{\mu\nu}=\begin{pmatrix} -1& 0 & 0 & 0 \\ 0 & \gamma_{11} & \gamma_{12} & \gamma_{13} \\ 
-0&\gamma_{12} & \gamma_{22} & \gamma_{23} \\ 0&\gamma_{13} & \gamma_{23} & \gamma_{33} \end{pmatrix}
+g_{\mu\nu} = \begin{pmatrix}
+-1 & 0 & 0 & 0 \\ 
+0 & \gamma_{11} & \gamma_{12} & \gamma_{13} \\ 
+0 &\gamma_{12} & \gamma_{22} & \gamma_{23} \\ 
+0 &\gamma_{13} & \gamma_{23} & \gamma_{33} 
+\end{pmatrix}
 \end{equation}
 où $\gamma_{ij}$ est la métrique spatiale, qui peut dépendre du temps et de la position, et comportant 6 composantes indépendantes inconnues (une métrique est un tenseur symétrique).
 
@@ -192,7 +188,7 @@ où dans le cas d'un espace plat on aurait $\vec r = \vec \xi$.
 
 Enfin, introduisons la variable rééchelonnée $\vec\sigma=\vec r/a(t)$, et nous obtenons une nouvelle expression :
 \begin{equation}
-\dd \vec l^2= a^2(t) \left(\dd \vec \sigma^2 + k\frac{(\vec \sigma \cdot \dd \vec \sigma)^2}{1 - k \sigma^2} \right)
+\dd \vec{l}^2= a^2(t) \left(\dd \vec \sigma^2 + k\frac{(\vec{\sigma} \cdot \dd \vec{\sigma})^2}{1 - k \sigma^2} \right)
 \end{equation}
 
 La métrique de Friedmann-Lemaître-Robertson-Walker décrivant un Univers homogène et isotrope s'écrit finalement :
@@ -308,7 +304,13 @@ Le cas de l'univers plat simplifie beaucoup les calculs qui suivront. Étant don
 \end{equation}
 La métrique FLRW s'écrit dans un univers plat :
 \begin{equation}
-g_{\mu\nu}=\begin{pmatrix} -1 & 0 & 0 & 0 \\ 0 & a^2(t) & 0 & 0 \\ 0&0& a^2(t)&0 \\ 0&0&0&a^2(t) \end{pmatrix}
+g_{\mu\nu} = 
+\begin{pmatrix}
+-1 & 0 & 0 & 0 \\ 
+0 & a^2(t) & 0 & 0 \\ 
+0 & 0 & a^2(t) & 0 \\ 
+0 & 0 & 0 & a^2(t)
+\end{pmatrix}
 \end{equation}
 
 
@@ -393,7 +395,9 @@ car le long de sa géodésique $\theta$ et $\phi$ sont constants ($\dd \theta = 
 :::{math}
 :label: eq:comobile
 
-\int_{t_E}^{t_0} \frac{c\dd t}{a(t)} =  -\int_{t_0}^{t_E} \frac{c\dd t}{a(t)} = \int_0^{\sigma_E}\frac{\dd\sigma}{\sqrt{1-k\sigma^2}} = \left\lbrace
+\int_{t_E}^{t_0} \frac{c\dd t}{a(t)} =  -\int_{t_0}^{t_E} \frac{c\dd t}{a(t)} 
+= \int_0^{\sigma_E}\frac{\dd\sigma}{\sqrt{1-k\sigma^2}}
+= \left\lbrace
 \begin{array}{cl}
     \arcsin \sigma_E & \text{ si } k=+1 \\
     \sigma_E & \text{ si } k=0 \\
@@ -422,7 +426,7 @@ Directement, si l'espace est en expansion alors $a(t_E) < a(t_0)$ et la longueur
 :::{math}
 :label: eq:redshift
 
- \fbox{$ \displaystyle{z = \frac{\lambda_0-\lambda_E}{\lambda_E} \Leftrightarrow 1+z = \frac{a_0}{a(t_E)}} $}.
+ \boxed{ \displaystyle{z = \frac{\lambda_0-\lambda_E}{\lambda_E} \Leftrightarrow 1+z = \frac{a_0}{a(t_E)} }}
 :::
 Le décalage spectral est à la fois directement lié au paramètre d'échelle $a(t)$, mais aussi à une grandeur expérimentale directement mesurable sur le spectre d'émission des objets distants. En effet, en regardant la position des raies d'absorption et d'émission des objets lointains, on peut en déduire leurs décalages spectraux par rapport aux mêmes éléments chimiques situés sur Terre, au repos. Cette donnée expérimentale est donc souvent associée à la définition des distances en cosmologie.
 
@@ -477,13 +481,17 @@ La *distance propre* définit la distance physique entre deux objets à un insta
 :::{math}
 :label: eq:dist-prop
 
-D_p(\sigma_E, t) = \int_0^{\sigma_E} \sqrt{g_{\sigma\sigma}}\dd\sigma' = \int_0^{\sigma_E}\frac{a(t)\dd\sigma'}{\sqrt{1-k\sigma'^2}} = a(t) \chi(\sigma_E)
+D_p(\sigma_E, t) = \int_0^{\sigma_E} 
+\sqrt{g_{\sigma\sigma}}\dd\sigma' 
+= \int_0^{\sigma_E}\frac{a(t)\dd\sigma'}{\sqrt{1-k\sigma'^2}} = a(t) \chi(\sigma_E)
 :::
 où on fait apparaître $\chi(\sigma_E)$ la _distance comobile_ entre cet objet et l'observateur :
 :::{math}
 :label: eq:dist-comobile
 
-\chi(\sigma_E) = \int_0^{\sigma_E}\frac{\dd\sigma'}{\sqrt{1-k\sigma'^2}} = \left\lbrace\begin{array}{cl}
+\chi(\sigma_E) = \int_0^{\sigma_E}\frac{\dd\sigma'}{\sqrt{1-k\sigma'^2}}
+= \left\lbrace
+\begin{array}{cl}
     \arcsin\sigma_E & \text{ si } k=+1  \\
     \sigma_E  & \text{ si } k=0 \\
     \text{arcsh}\,\sigma_E & \text{ si } k=-1 
@@ -494,7 +502,9 @@ On voit que la distance propre $D_p$ possède bien l'unité d'une longueur alors
 
 Réciproquement, on définit $f_k(\chi)$ ainsi :
 \begin{equation}
-\sigma = f_k(\chi) = \left\lbrace\begin{array}{cl}
+\sigma = f_k(\chi) = 
+\left\lbrace
+\begin{array}{cl}
     \sin\chi & \text{ si } k=+1  \\
     \chi  & \text{ si } k=0 \\
     \sinh\chi & \text{ si } k=-1 
@@ -529,7 +539,6 @@ D'où la distance comobile en terme de temps $t$, facteur d'échelle $a$ et reds
 On résume dans le tableau [](#tab:atz) comment se convertissent les paramètres $a$, $t$ et $z$ à différents moments dans la chronologie de l'Univers.
 
 :::{table} Conversion des paramètres $a$, $t$ et $z$. On note $t_U$ l'âge de l'Univers aujourd'hui.
-:label: table
 :align: center
 :label: tab:atz
 
@@ -553,6 +562,7 @@ et s'exprime bien en unités de longueur. La notion de distance propre est illus
 :width: 100%
 
 Distance propre entre la Terre et une galaxie lointaine sans vitesse propre apparente. (a) Aujourd'hui, la distance mesurée entre la Terre et cette galaxie est de $a_0 \sigma$ années-lumière dans un espace plat. (b) A une autre date $t$, cette distance évolue et vaut $a(t) \sigma$. (c) Distance propre dans un espace sphérique.
+
 :::
 
 
