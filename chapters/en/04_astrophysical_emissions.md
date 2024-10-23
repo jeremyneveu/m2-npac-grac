@@ -32,12 +32,12 @@ These structures arrange themselves in a network resembling that of soap bubbles
 :width: 100%
 
 Network of soap bubbles and cubic model illustrating the structure of the cosmic web. On the right-hand side, the nodes in orange correspond to the clusters, the sheets and filaments are in sky blue and the voids in dark blue. Images taken from {cite}`2019GReGr..51....9F` and {cite}`2022A&A...662A..87O`.
+:::
 
 :::{exercise} Volume filling factor rate of large-scale structures
 :label: exo:volume_filling
 
 Assess the relative volume occupancy of clusters, filaments and sheets using a crystallographic approach as presented above.
-
 :::
 
 :::{solution} exo:volume_filling
@@ -73,7 +73,7 @@ These four types of structure are visible in the disitribution of nearby galaxie
 [](#fig:council-giants), the Local Group is at the heart of the Local Sheet. This sheet is a planar structure with a diameter of ${\sim}\,10\,$Mpc, delimiting one side of the Local Void.
 
 
-:::{figure}  ../../images/mccall_fig3.pdf
+:::{figure}  ../../images/mccall_fig3.jpeg
 :name: fig:council-giants
 :align: center
 :width: 70%
@@ -167,16 +167,12 @@ The stellar mass energy density is then
 \end{align}
 
 Estimation using the exact form of the mass distribution function gives a stellar matter density up to $z < 0. 1$  or $D_L < 500\,$Mpc of $\rho_{\star, 0}= (2.97 \pm 0.04) \times 10^8 \,h_{70}\, M_\odot \, \mathrm{Mpc}^{-3}$, where $h_{70} = H_0 / (70\,$km$\,$s$^{-1}\,$Mpc$^{-1})$. This corresponds to an energy density comparable to our crude estimate, namely $\rho_{\star, 0} \approx (11.0 \pm 0.1) \, h_{70} \times 10^{6}\,\mathrm{eV\,m}^{-3}$
-
 :::
 
 
 :::{note} $M_\odot$ per Mpc$^{3}$ and eV per m$^3$
-
 The rest-mass energy of the sum is energy $M_\odot c^2 \approx 1.8\times 10^{47} \, \mathrm{J} \approx 1.1\times 10^{66}\,\mathrm{eV}$. The typical distance between neighboring galaxies is $1\, \mathrm{Mpc} \approx 3.1 \times 10^{22}\, \mathrm{m}$. The good  match between powers of ten makes it fairly easy to convert stellar mass density into energy density.
-
 :::
-
 
 ### Cosmic energy inventory
 
@@ -259,7 +255,6 @@ As with the mass of matter contained in stars today, the cumulative emission of 
 2. Discuss the efficiency of this light production compared with that of the pp chain ($4 p + 2 e^- \rightarrow\ ^{4}\mathrm{He}^{2+} + 2 \nu_e$), which releases $26.1\,$MeV of energy in the form of photons (and $0.6\,$MeV in the form of neutrino kinetic energy).
 
 3. From the light-to-matter conversion efficiency in the sun and the star formation rate density, calculate the energy density in the field of photons emitted by all the stars in the universe.
-
 :::
 
 :::{solution} exo:photons_nucl
@@ -281,7 +276,6 @@ The efficiency of matter-to-light conversion in the Sun is therefore only one te
 \end{align}$$
 
 For comparison, the energy density contained in CMB is twenty times greater, i.e. $\rho_{\gamma, \mathrm{CMB}} = 260 \times 10^3\mathrm{\,eV\,m}^{-3}$ (or $0.26\mathrm{\,eV\,cm}^{-3}$).
-
 :::
 
 ### Accretion
@@ -306,11 +300,9 @@ Matter accretion around supermassive black holes, in particular around active ga
 1. What is the fraction of mass energy that can be converted to radiation for a black hole accreting at the rate $\dot M$ for a radiative efficiency $\epsilon_\mathrm{accr}$?
 
 2. Estimate the energy density of photons from matter accreted by massive black holes.
-
 :::
 
 :::{solution} exo:photons_accr
-
 1. Let us consider for the exercise $\epsilon_\mathrm{accr} \approx 20\%$. The fraction of mass actually accreted by the black hole is $1-\epsilon_\mathrm{accr}$. The mass energy that can be converted into radiation is therefore proportional to $\frac{\epsilon_\mathrm{accr}}{1-\epsilon_\mathrm{accr}} \dot M$.
 
 2. For $\psi_\mathrm{accr}(t) = f_\mathrm{accr} \psi(t)$ with $f_\mathrm{accr} = 1/3000$, the energy density of the photon field emitted by the accretion processes is
@@ -321,7 +313,6 @@ $$\begin{align}
 \end{align}$$
 
 The emission produced by accretion is not negligible, especially if we realise that only 1% of galaxies have an active nucleus {cite:p}`2010ApJ...723.1447H`.
-
 :::
 
 ### Ejection
@@ -334,11 +325,9 @@ The conversion of the Poynting flux (electromagnetic energy) into global plasma 
 :label: exo:photons_jet
 
 Estimate the energy density of photons from jets emitted in the vicinity of massive black holes.
-
 :::
 
 :::{solution} exo:photons_jet
-
 Using the ratio of jet kinetic energy to accreted mass energy of $0.5\%$, we obtain an energy conversion factor between accreted mass and photon emission by the jets $\eta_\mathrm{jet} \approx 0.05\%$ on cosmic scales. The energy density of photons radiated by the jets should then be of the order of
 
 $$\begin{align}
@@ -346,11 +335,9 @@ $$\begin{align}
 	&=  f_\mathrm{accr} \frac{\eta_\mathrm{jet}}{\epsilon_\odot} \rho_{\gamma, \mathrm{nucl}} \nonumber \\
 & \approx 3 \mathrm{\,eV\,m}^{-3}
 \end{align}$$
-
 :::
 
 Now that we have estimated the energy densities associated with the photon fields emitted by the three major astrophysical processes, we can compare them with observations.
-
 
 
 Multi-messenger emissions on cosmic scales
@@ -370,7 +357,6 @@ I = \frac{c}{4\pi} u
 $$ 
 
 :::{important}
-
 The specific intensity, $I_\nu$, is the derivative of the bolometric intensity, $I$:
 $$
 I = \int \dd \nu\ I_{\nu}, \quad \mathrm{with\ } [I_{\nu}] =  \mathrm{W}\,\mathrm{m}^{-2}\,\mathrm{sr}^{-1}\,\mathrm{Hz}^{-1}
@@ -381,7 +367,6 @@ $$\int \dd \ln \nu\ \nu I_{\nu} = \int \dd \nu\ I_{\nu} = I$$
 
 Specific intensity has notable transformation properties. Indeed, it can be shown that $I_\nu / \nu^3$ is a Lorentz invariant. 
 :::
-
 
 :::{note}
 The literature sometimes uses the notation $I_{\mathrm{dex}}$ with $[I_{\mathrm{dex}}] = \mathrm{W}\,\mathrm{m}^{-2}\,\mathrm{sr}^{-1}\,\mathrm{dex}$. With this notation, 
@@ -420,14 +405,13 @@ F = \int \dd\Omega\ I \cos \theta
 $$ 
 
 Note that if $I$ is isotropic, the net flux is zero as the energy crossing the surface $\dd A$ in the $+\vec{n}$ direction is the opposite of that from $-\vec{n}$ direction.
-
 :::
 
 
 ### The spectrum of the universe
 
 
-:::{figure}  ../../images/The_Fitted_MM_EGAL_Background_2023.pdf
+:::{figure}  ../../images/The_Fitted_MM_EGAL_Background_2023.png
 :name: fig:mm_spectrum
 :align: center
 :width: 100%
@@ -436,8 +420,6 @@ The multi-messenger extragalactic spectrum. Adapted from this [page](https://zen
 :::
 
 TBD: discussion
-
-
 
 
 :::{exercise} Energy densities in the Milky Way
@@ -452,7 +434,7 @@ The Galaxy can be seen as a disc of bolometric luminosity $1.5-2.0 \times 10^{10
 
 3. From the local cosmic-ray spectrum presented in [](#fig:cr_spectrum), estimate the energy density of cosmic rays in the Milky Way.
 
-:::{figure}  ../../images/The_CR_Spectrum_2023.pdf
+:::{figure}  ../../images/The_CR_Spectrum_2023.png
 :name: fig:cr_spectrum
 :align: center
 :width: 60%
@@ -463,7 +445,6 @@ The local cosmic-ray spectrum. Components from the Milky Way dominate the bright
 :::
 
 :::{solution} exo:milky_way
-
 1. We assume the photon field to be isotropic in the disc of Milky Way. Then, we can estimate the photon density as:
 
 \begin{align}
@@ -499,6 +480,5 @@ u_\mathrm{CR} &= \frac{4\pi}{c} \int_{E_0} \dd E\ E J(E) \\
 \end{align}
 
 Interestingly, all three components are close to equipartition.
-
 :::
 
