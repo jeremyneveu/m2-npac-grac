@@ -41,7 +41,6 @@ Assess the relative volume occupancy of clusters, filaments and sheets using a c
 :::
 
 :::{solution} exo:volume_filling
-:class: dropdown
 
 In the crystallographic approach presented above, the volume filling factors of clusters, $\mathrm{VFF}_\mathrm{c}$, filaments, $\mathrm{VFF}_\mathrm{f}$, sheets, $\mathrm{VFF}_\mathrm{s}$ and voids, $\mathrm{VFF}_\mathrm{v}$ are
 
@@ -150,7 +149,6 @@ The stellar mass function of the galaxies in the local Universe ($z<0.1$). From 
 :::
 
 :::{solution} exo:stellar_mass
-:class: dropdown
 
 The first panel represents the function $g(M_\star)$ such as $\int g(M_\star) \dd \log_{10}M_\star = 1/V$, where $V$ is the considered volume. Thus $f(M_\star) = g(M_\star)/(\ln(10)M_\star)$.
 
@@ -168,7 +166,7 @@ $$
 \end{align}
 $$
 
-Estimation using the exact form of the mass distribution function gives a stellar matter density up to $z < 0. 1$  or $D_L < 500\,$Mpc of $\rho_{\star, 0}= (2.97 \pm 0.04) \times 10^8 \,h_{70}\, M_\odot \, \mathrm{Mpc}^{-3}$, where $h_{70} = H_0 / (70\,\mathrm{km}\,\mathrm{s}^{-1}\,\mathrm{Mpc}^{-1})$. This corresponds to an energy density comparable to our crude estimate, namely $\epsilon_{\star, 0} \approx (11.0 \pm 0.1) \, h_{70} \times 10^{6}\,\mathrm{eV\,m}^{-3}$
+Estimation using the exact form of the mass distribution function gives a stellar matter density up to $z < 0. 1$  or $D_L < 500\,$Mpc of $\rho_{\star, 0}= (2.97 \pm 0.04) \times 10^8 \,h_{70}\, M_\odot \, \mathrm{Mpc}^{-3}$, where $h_{70} = H_0 / (70\,\mathrm{km}\,\mathrm{s}^{-1}\,\mathrm{Mpc}^{-1})$. This corresponds to an energy density comparable to our crude estimate, namely $\varepsilon_{\star, 0} \approx (11.0 \pm 0.1) \, h_{70} \times 10^{6}\,\mathrm{eV\,m}^{-3}$
 :::
 
 
@@ -178,7 +176,7 @@ The rest-mass energy of the sun is $M_\odot c^2 \approx 1.8\times 10^{47} \, \ma
 
 ### Cosmic energy inventory
 
-For an energy density today equal to the critical density $\rho_{c,0} = \frac{3 H_0^2  c^2}{8\pi G} = 1.36 \times 10^{11}\, h_{70}\, M_\odot\,\mathrm{Mpc}^{-3}$, i.e. $\epsilon_{c,0} = \approx 5.1\, h_{70}\,$GeV$\,$m$^{-3}$, where $h_{70} = H_0 / 70 \,\mathrm{km}\,\mathrm{s}^{-1}\,\mathrm{Mpc}^{-1}$, we can see that only two thousandths of the universe's energy budget is made up of stars. A detailed breakdown of the different energy budgets of the universe is shown below.
+For an energy density today equal to the critical density $\rho_{c,0} = \frac{3 H_0^2  c^2}{8\pi G} = 1.36 \times 10^{11}\, h_{70}\, M_\odot\,\mathrm{Mpc}^{-3}$, i.e. $\varepsilon_{c,0} \approx 5.1\, h_{70}\,$GeV$\,$m$^{-3}$, where $h_{70} = H_0 / 70 \,\mathrm{km}\,\mathrm{s}^{-1}\,\mathrm{Mpc}^{-1}$, we can see that only two thousandths of the universe's energy budget is made up of stars. A detailed breakdown of the different energy budgets of the universe is shown below.
 
 :::{figure}  ../../images/cosmic_inventory.png
 :name: fig:cosmic_inventory
@@ -209,10 +207,10 @@ The evolution of baryonic matter and light emission follows the cosmic history o
 :align: center
 :width: 80%
 
-The cosmic star formation rate history. From {cite:p}`2014ARA&A..52..415M`.
+The cosmic star-formation rate history. From {cite:p}`2014ARA&A..52..415M`.
 :::
 
-In this figure, the redshift is converted to cosmological age using a flat $\Lambda$CDM cosmology, with Hubble constant $H_0 = 70\,\mathrm{km},\mathrm{s}^{-1}\,\mathrm{Mpc}^{-1}$ and dark energy density $\Omega_\Lambda = 0.7$, i.e. with $\Omega_\mathrm{m} = 0.3$. The look-back time is the counterpart of the cosmic age, i.e. $t_{L}(z) = \frac{1}{H_0} -  t_\mathrm{age}(z) = \int_0^z \dd z' \left|\frac{\dd t}{\dd z'} \right|$, where 
+In this figure, the redshift is converted to cosmological age using a flat $\Lambda$CDM cosmology, with Hubble constant $H_0 = 70\,\mathrm{km}\,\mathrm{s}^{-1}\,\mathrm{Mpc}^{-1}$ and dark energy density $\Omega_\Lambda = 0.7$, i.e. with $\Omega_\mathrm{m} = 0.3$. The look-back time is the counterpart of the cosmic age, i.e. $t_{L}(z) = \frac{1}{H_0} -  t_\mathrm{age}(z) = \int_0^z \dd z' \left|\frac{\dd t}{\dd z'} \right|$, where 
 
 $$
 \begin{align}
@@ -228,7 +226,9 @@ $$
 \left|\frac{\dd t}{\dd z}\right| =  \frac{1}{H_0} \frac{1}{(1+z)\sqrt{\Omega_\Lambda + \Omega_\mathrm{m}  (1+z)^3}},
 $$
 
-with a negligible contribution from the energy density associated with the radiation, $\Omega_\mathrm{r}$. The evolution of the star formation rate, $\Psi$, determines the evolution of the fraction of the baryonic mass contained in stars and gas, as well as the enrichment of the interstellar medium in galaxies. For example, the mass density contained in stars, $\rho_\star$, can be calculated from the following conservation equation:
+with a negligible contribution from the energy density associated with the radiation, $\Omega_\mathrm{r}$. 
+
+The evolution of the star-formation rate, $\Psi$, determines the evolution of the fraction of the baryonic mass contained in stars and gas, as well as the enrichment of the interstellar medium in galaxies. For example, the mass density contained in stars, $\rho_\star$, can be calculated from the following conservation equation:
 $$
 \frac{\dd \rho_\star}{\dd t} = (1-R) \Psi
 $$
@@ -246,71 +246,71 @@ Cosmic evolution of the stellar mass density. From {cite:p}`2014ARA&A..52..415M`
 The evolution of star formation in the universe has led to an enrichment of interstellar media in atoms heavier than carbon, known as metals in thermal astrophysics. This enrichment is due to nucleosynthesis in the first stars from primordial hydrogen and helium (see [pp chain](wiki:Proton–proton_chain) and [CNO cycle](wiki:CNO_cycle)). These first stars, known as Population III stars, contributed to the reionisation of their environment during their short lifetime of a few million years. The most massive stars (${>}\,8\,M_\odot$) exploded in supernovae and ejected metals that fuelled subsequent generations of stars, and so on up to the Sun, which belongs to Population I. Gas, molecules - such as the most abundant H$_2$ and CO - and dust - in the form of carbonaceous and amorphous silicate grains - continued to accumulate in the interstellar medium throughout the first three billion years of the universe until the cosmic peak of star formation around a redshift $z \sim 2$, a period known as the "cosmic noon". Since then, the universe has been populated mainly by long-lived Population I stars, typically $t_\odot \approx 10\,$Gyr for the Sun. Their average rate of formation has decreased as the reservoir of gas available in the interstellar medium has been depleted until today.
 
 
-As with the mass of matter contained in stars today, the cumulative emission of nucleosynthesis processes is proportional to the integral of the cosmic star formation rate.
+As with the mass of matter contained in stars today, the cumulative emission of nucleosynthesis processes is proportional to the integral of the cosmic star-formation rate.
 
 
 :::{exercise} Cosmic energy density of photons produced by nucleosynthesis
 :label: exo:photons_nucl
 
-1. Estimate the efficiency of conversion of matter into light, $\epsilon_\odot$, within stars similar to the Sun. Its bolometric luminosity is $L_\odot = 3.8 \times 10^{26}\,$W.
+1. Estimate the efficiency of conversion of matter into light, $\eta_\odot$, within stars similar to the Sun. Its bolometric luminosity is $L_\odot = 3.8 \times 10^{26}\,$W.
 
 2. Discuss the efficiency of this light production compared with that of the pp chain ($4 p + 2 e^- \rightarrow\ ^{4}\mathrm{He}^{2+} + 2 \nu_e$), which releases $26.1\,$MeV of energy in the form of photons (and $0.6\,$MeV in the form of neutrino kinetic energy).
 
-3. From the light-to-matter conversion efficiency in the sun and the star formation rate density, calculate the energy density in the field of photons emitted by all the stars in the universe.
+3. From the light-to-matter conversion efficiency in the sun and the star-formation rate density, calculate the energy density in the field of photons emitted by all the stars in the universe.
 :::
 
 :::{solution} exo:photons_nucl
 
 1. $$\begin{align}
-\epsilon_\odot &= \frac{L_\odot t_\odot}{M_\odot c^2} \nonumber \\
+\eta_\odot &= \frac{L_\odot t_\odot}{M_\odot c^2} \nonumber \\
 & \approx 7 \times 10^{-4}
 \end{align}$$
 
-2. $$\epsilon_\mathrm{pp} \approx \frac{26.1}{4\times 938} \approx 7 \times 10^{-3}$$
+2. $$\eta_\mathrm{pp} \approx \frac{26.1}{4\times 938} \approx 7 \times 10^{-3}$$
 
 The efficiency of matter-to-light conversion in the Sun is therefore only one tenth of the theoretical maximum efficiency. It should be noted that although the pp chain is dominant within the Sun, this does not mean that all its protons are involved in the fusion processes.
 
 3. $$\begin{align}
-\rho_{\gamma, \mathrm{nucl}} &= \epsilon_\odot c^2 \int \dd t \Psi(t) \nonumber \\
+\rho_{\gamma, \mathrm{nucl}} &= \eta_\odot c^2 \int \dd t \Psi(t) \nonumber \\
 & \approx 7 \cdot 10^{-4} \times 10^{10} \times 0.05 M_\odot c^2 \,\mathrm{Mpc}^{-3}  \nonumber\\
 & \approx 3.5\cdot 10^{5} \times 1.1\cdot 10^{66}/(3.1\cdot 10^{22})^3 \mathrm{\,eV\,m}^{-3}  \\
 & \approx 13 \times 10^{3}\mathrm{\,eV\,m}^{-3}
 \end{align}$$
 
-For comparison, the energy density contained in CMB is twenty times greater, i.e. $\rho_{\gamma, \mathrm{CMB}} = 260 \times 10^3\mathrm{\,eV\,m}^{-3}$ (or $0.26\mathrm{\,eV\,cm}^{-3}$).
+For comparison, the energy density contained in CMB is twenty times greater, i.e. $\varepsilon_{\gamma, \mathrm{CMB}} = 260 \times 10^3\mathrm{\,eV\,m}^{-3}$ (or $0.26\mathrm{\,eV\,cm}^{-3}$).
 :::
 
 ### Accretion
 
-Galaxies formed in a hierarchical fashion, first by the concentration of baryonic matter in their low-mass halos, then by merging with other galaxies in the cosmic web. The evolution of galaxies is accompanied by the growth of their central massive black hole. The mass of these black holes, $M_\bullet \approx 10^6 - 10^{10} M_\odot$, is about two thousandths of the stellar mass of the bulge of the host galaxy {cite:p}`2020ApJ...888...37D`. This relation illustrates the co-evolution of central black holes and their host galaxies. Many other correlations between observables support this link: for example the $M_\bullet - \sigma_\star$ relation between the black hole mass and the dispersion of stellar velocities within spheroids (elliptical galaxy or central bulge for a spiral galaxy). The rate of accretion of matter by massive black holes thus follows an evolution, $\Psi_\mathrm{accr}$, comparable to that of the star formation rate, with a density $2000-3000$ times lower.
+Galaxies formed in a hierarchical fashion, first by the concentration of baryonic matter in their low-mass halos, then by merging with other galaxies in the cosmic web. The evolution of galaxies is accompanied by the growth of their central massive black hole. The mass of these black holes, $M_\bullet \approx 10^6 - 10^{10} M_\odot$, is about two thousandths of the stellar mass of the bulge of the host galaxy {cite:p}`2020ApJ...888...37D`. This relation illustrates the co-evolution of central black holes and their host galaxies. Many other correlations between observables support this link: for example the $M_\bullet - \sigma_\star$ relation between the black-hole mass and the dispersion of stellar velocities within spheroids (elliptical galaxy or central bulge for a spiral galaxy). The rate of accretion of matter by massive black holes thus follows an evolution, $\Psi_\mathrm{accr}$, comparable to that of the star-formation rate, with a density $2000-3000$ times lower.
 
 :::{figure}  ../../images/accr_2014ARA&A..52..415M.png
 :name: fig:csmh
 :align: center
 :width: 80%
 
-The evolution of the star formation rate (black curve) and the accretion rate of massive black holes (coloured curves and bands). The accretion-rate estimates are multiplied by a factor of ${\sim}\,3000$ to bring them up to the scale of the star formation rate. From {cite:p}`2014ARA&A..52..415M`.
+The evolution of the star-formation rate (black curve) and the accretion rate of massive black holes (coloured curves and bands). The accretion-rate estimates are multiplied by a factor of ${\sim}\,3000$ to bring them up to the scale of the star-formation rate. From {cite:p}`2014ARA&A..52..415M`.
 :::
 
-Matter accretion around supermassive black holes, in particular around active galactic nuclei, is the second most important power-source for light emission after star formation. The energy released by accretion in the form of photons can be estimated using Soltan's argument {cite:p}`1982MNRAS.200..115S`. The energy of a test particle accreted by a black hole from the last marginally stable orbit is only a fraction of the energy of its rest mass. The rest can be released in the form of radiation. The radiative efficiency of the accretion process, $\epsilon_\mathrm{accr}$, is defined as the ratio of the radiated power to the rate of mass-energy deposition in the disc, measured by an observer at infinity. Taking into account the deceleration of the black hole's rotation by the accreted photons, Thorne calculates a radiative efficiency of $5.7\% < \epsilon_\mathrm{accr} < 30.8\%$ {cite:p}`1974ApJ...191..507T`.[^b]
+Matter accretion around supermassive black holes, in particular around active galactic nuclei, is the second most important power-source for light emission after star formation. The energy released by accretion in the form of photons can be estimated using Soltan's argument {cite:p}`1982MNRAS.200..115S`. The energy of a test particle accreted by a black hole from the last marginally stable orbit is only a fraction of the energy of its rest mass. The rest can be released in the form of radiation. The radiative efficiency of the accretion process, $\eta_\mathrm{accr}$, is defined as the ratio of the radiated power to the rate of mass-energy deposition in the disc, measured by an observer at infinity. Taking into account the deceleration of the black hole's rotation by the accreted photons, Thorne calculates a radiative efficiency of $5.7\% < \eta_\mathrm{accr} < 30.8\%$ {cite:p}`1974ApJ...191..507T`.[^b]
 
 [^b]: The upper bound of this range is lower than the 42% expected for a maximally rotating Kerr black hole. The difference with the value estimated by Thorne is due to the capture of photons.
 
 :::{exercise} Cosmic energy density of photons from accretion
 :label: exo:photons_accr
 
-1. What is the fraction of mass energy that can be converted to radiation for a black hole accreting at the rate $\dot M$ for a radiative efficiency $\epsilon_\mathrm{accr}$?
+1. What is the fraction of mass energy that can be converted to radiation for a black hole accreting at the rate $\dot M$ for a radiative efficiency $\eta_\mathrm{accr}$?
 
 2. Estimate the energy density of photons from matter accreted by massive black holes.
 :::
 
 :::{solution} exo:photons_accr
-1. Let us consider for the exercise $\epsilon_\mathrm{accr} \approx 20\%$. The fraction of mass actually accreted by the black hole is $1-\epsilon_\mathrm{accr}$. The mass energy that can be converted into radiation is therefore proportional to $\frac{\epsilon_\mathrm{accr}}{1-\epsilon_\mathrm{accr}} \dot M$.
+1. Let us consider for the exercise $\eta_\mathrm{accr} \approx 20\%$. The fraction of mass actually accreted by the black hole is $1-\eta_\mathrm{accr}$. The mass energy that can be converted into radiation is therefore $\frac{\eta_\mathrm{accr}}{1-\eta_\mathrm{accr}} \dot M$.
 
 2. For $\psi_\mathrm{accr}(t) = f_\mathrm{accr} \psi(t)$ with $f_\mathrm{accr} = 1/3000$, the energy density of the photon field emitted by the accretion processes is
 $$\begin{align}
-\rho_{\gamma, \mathrm{accr}} &= \frac{\epsilon_\mathrm{accr}}{1-\epsilon_\mathrm{accr}} c^2 \int \dd t \Psi_\mathrm{accr}(t) \nonumber \\
-	&=  f_\mathrm{accr} \frac{\epsilon_\mathrm{accr}/\epsilon_\odot}{1-\epsilon_\mathrm{accr}} \rho_{\gamma, \mathrm{nucl}} \nonumber \\
+\varepsilon_{\gamma, \mathrm{accr}} &= \frac{\eta_\mathrm{accr}}{1-\eta_\mathrm{accr}} c^2 \int \dd t \Psi_\mathrm{accr}(t) \nonumber \\
+	&=  f_\mathrm{accr} \frac{\eta_\mathrm{accr}/\eta_\odot}{1-\eta_\mathrm{accr}} \rho_{\gamma, \mathrm{nucl}} \nonumber \\
 & \approx 1.5 \times 10^{3}\mathrm{\,eV\,m}^{-3}
 \end{align}$$
 
@@ -333,8 +333,8 @@ Estimate the energy density of photons from jets emitted in the vicinity of mass
 Using the ratio of jet kinetic energy to accreted mass energy of $0.5\%$, we obtain an energy conversion factor between accreted mass and photon emission by the jets $\eta_\mathrm{jet} \approx 0.05\%$ on cosmic scales. The energy density of photons radiated by the jets should then be of the order of
 
 $$\begin{align}
-\rho_{\gamma, \mathrm{accr}} &=\eta_\mathrm{jet} c^2 \int \dd t \Psi_\mathrm{accr}(t) \nonumber \\
-	&=  f_\mathrm{accr} \frac{\eta_\mathrm{jet}}{\epsilon_\odot} \rho_{\gamma, \mathrm{nucl}} \nonumber \\
+\varepsilon_{\gamma, \mathrm{accr}} &=\eta_\mathrm{jet} c^2 \int \dd t \Psi_\mathrm{accr}(t) \nonumber \\
+	&=  f_\mathrm{accr} \frac{\eta_\mathrm{jet}}{\eta_\odot} \rho_{\gamma, \mathrm{nucl}} \nonumber \\
 & \approx 3 \mathrm{\,eV\,m}^{-3}
 \end{align}$$
 :::
@@ -353,7 +353,7 @@ $$
 $$
 with $[I] = \mathrm{W}\,\mathrm{m}^{-2}\,\mathrm{sr}^{-1}$.
 
-The radiative energy density, $u$, in a volume $\dd V = c \dd t \dd A$ is such as $dE = u \dd V$, so that the average intensity integrated over the sphere is
+The radiative energy density, $\varepsilon$, in a volume $\dd V = c \dd t \dd A$ is such as $dE = \varepsilon \dd V$, so that the average intensity integrated over the sphere is
 $$
 I = \frac{c}{4\pi} u
 $$ 
@@ -362,6 +362,17 @@ $$
 The specific intensity, $I_\nu$, is the derivative of the bolometric intensity, $I$:
 $$
 I = \int \dd \nu\ I_{\nu}, \quad \mathrm{with\ } [I_{\nu}] =  \mathrm{W}\,\mathrm{m}^{-2}\,\mathrm{sr}^{-1}\,\mathrm{Hz}^{-1}
+
+Radio-to-optical astronomers often plot $\nu I_\nu$, while X-ray and higher-energy astronomers often consider $E^2 J(E) = \nu I_\nu$, where both are in units of power per unit area per unit solid angle. 
+
+Similarly, the specific flux density from a point source, denoted as $S_\nu$ or $F_\nu$ with $[F_\nu] = \mathrm{W}\,\mathrm{m}^{-2}$, is represented as $\nu F_\nu = E^2 \frac{\dd N}{\dd E}$, where $\left[\frac{\dd N}{\dd E}\right] = \mathrm{m}^{-2}\,\mathrm{s}^{-1}\,\mathrm{eV}^{-1}$. The specific and bolometric luminosity are estimated from the flux and distance as $L_\nu = 4\pi D_L^2 F_\nu$ and $L = 4\pi D_L^2 F$.
+
+The net flux received from a region covering a solid angle $\dd \Omega$ at zenith angle $\theta$ can be computed from the surface brightness of that region as
+$$
+F = \int \dd\Omega\ I \cos \theta 
+$$ 
+
+Note that if $I$ is isotropic, the net flux is zero as the energy crossing the surface $\dd A$ in the $+\vec{n}$ direction is the opposite of that from $-\vec{n}$ direction.
 $$
 
 Specific intensity is often represented in the form $\nu I_\nu$ as a function of $\ln \nu$, since the integral under the curve then gives the bolometric intensity:
@@ -379,7 +390,7 @@ Note that $I_\mathrm{dex}$ differs by a factor $\nu \ln 10$ from $I_{\nu}$
 Following again {cite}`1986rpa..book.....R`, the energy density in a field of particles with momentum between $p$ and $p + \dd p$ depends on the number of particles per phase volume, $\dd \mathcal{N}/\dd^3 x \dd^3 p$ as
 
 $$
-u_\nu \dd \nu = h\nu  \frac{\dd \mathcal{N}}{\dd^3 x \dd^3 p} 4\pi p^2 \dd p
+\varepsilon_\nu \dd \nu = h\nu  \frac{\dd \mathcal{N}}{\dd^3 x \dd^3 p} 4\pi p^2 \dd p
 $$
 
 $\dd \mathcal{N}/\dd^3 x \dd^3 p$ is invariant under a Lorentz transformation. Indeed $\dd \mathcal{N}$ is countable and thus invariant. Under a boost $(\beta, \gamma)$ along the x-axis from the comving frame (K') towards the observer's frame (K), one finds $\dd x = \gamma^{-1} \dd x'$ (length contraction) and $\dd p_x = \gamma (\dd p_{x'} + \beta \dd E') = \gamma \dd p_{x'}$ for particles with fixed energy (total momentum fixed between $p$ and $p + \dd p$). Thus $\dd^3 x \dd^3 p$ is invariant, *quod erat demonstrandum*.
@@ -396,18 +407,6 @@ $$
 I_\nu / \nu^3 = \mathrm{Lorentz\ invariant}
 $$
 
-:::{note}
-Radio-to-optical astronomers often plot $\nu I_\nu$, while X-ray and higher-energy astronomers often consider $E^2 J(E) = \nu I_\nu$, where both are in units of power per unit area per unit solid angle. 
-
-Similarly, the specific flux density from a point source, denoted as $S_\nu$ or $F_\nu$ with $[F_\nu] = \mathrm{W}\,\mathrm{m}^{-2}$, is represented as $\nu F_\nu = E^2 \frac{\dd N}{\dd E}$, where $\left[\frac{\dd N}{\dd E}\right] = \mathrm{m}^{-2}\,\mathrm{s}^{-1}\,\mathrm{eV}^{-1}$. The specific and bolometric luminosity are estimated from the flux and distance as $L_\nu = 4\pi D_L^2 F_\nu$ and $L = 4\pi D_L^2 F$.
-
-The net flux received from a region covering a solid angle $\dd \Omega$ at zenith angle $\theta$ can be computed from the surface brightness of that region as
-$$
-F = \int \dd\Omega\ I \cos \theta 
-$$ 
-
-Note that if $I$ is isotropic, the net flux is zero as the energy crossing the surface $\dd A$ in the $+\vec{n}$ direction is the opposite of that from $-\vec{n}$ direction.
-:::
 
 
 ### The spectrum of the universe
@@ -457,7 +456,7 @@ u_\mathrm{O-IR} &= \frac{4\pi}{c} I_\mathrm{O-IR} \nonumber \\
 where $F_\mathrm{O-IR}$ is the net flux emitted from one side of the disc and $\int \dd \Omega \cos \theta = 2\pi \int_0^1 \cos \theta \dd  \cos \theta = \pi$. The total flux emitted by the two sides of the disc is $2F_\mathrm{O-IR} = \frac{L_\mathrm{O-IR}}{\pi R^2}$, so that
 
 \begin{align}
-u_\mathrm{O-IR} &= \frac{4\pi}{c} I_\mathrm{O-IR} \\
+\varepsilon_\mathrm{O-IR} &= \frac{4\pi}{c} I_\mathrm{O-IR} \\
 		 &= \frac{2}{c} \frac{L_\mathrm{O-IR}}{\pi R^2}
  		 &= \frac{2}{c} \frac{L_\mathrm{O-IR}}{\pi R^2}
  		 &\approx (0.5-0.7) \times 10^{6} \,\mathrm{eV\,m}^{-3},
@@ -466,7 +465,7 @@ i.e. two-to-three times the energy density of the CMB.
 
 2. 
 \begin{align}
-u_B & = \frac{B^2}{2\mu_0} \\
+\varepsilon_B & = \frac{B^2}{2\mu_0} \\
  & \approx \frac{(1-100) \cdot 10^{-20} \times 6.2 \cdot 10^{18}}{2 \times 4\pi \times 10^{-7}} \,\mathrm{eV\,m}^{-3} \\
  & \approx (0.02-2) \times 10^{6} \,\mathrm{eV\,m}^{-3},
 \end{align}
@@ -476,7 +475,7 @@ u_B & = \frac{B^2}{2\mu_0} \\
 Considering the cosmic-ray velocity to be near the speed of light (which is wrong near $1\,$GeV), the energy density of cosmic rays in the Milky Way above $E_0 = 1\,\mathrm{GeV} \approx m_p c^2$ can be approximated by
 
 \begin{align}
-u_\mathrm{CR} &= \frac{4\pi}{c} \int_{E_0} \dd E\ E J(E) \\
+\varepsilon_\mathrm{CR} &= \frac{4\pi}{c} \int_{E_0} \dd E\ E J(E) \\
 			 &= \frac{4\pi}{c} \frac{E_0^2 J_0}{p-2} \\
  			 &\approx 1.2 \times 10^{6} \,\mathrm{eV\,m}^{-3}
 \end{align}
