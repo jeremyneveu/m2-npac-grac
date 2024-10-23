@@ -26,13 +26,12 @@ The cosmological models that we have discussed postulate that the universe is ho
 These structures arrange themselves in a network resembling that of soap bubbles. A simplified crystallographic representation is given below, with $l$ the characteristic cell size and $w$ the typical diameter of clusters or the cross-section of filaments. Cosmological simulations suggest a void occupancy rate of the order of $(1-w/l)³ = 75\%$ (see exercise below). Knowing that the characteristic radius of the clusters we observe is $w \approx 1\,$Mpc, we deduce a typical cell size of the order of $l \approx 10\,$Mpc.
 
 
-:::{figure} ../images/bubble_network_2019GReGr..51....9F_ 2022A&A...662A..87O.jpg
+:::{figure} ../../images/bubble_network_2019GReGr..51....9F_ 2022A&A...662A..87O.jpg
 :name: fig:bubble_network
 :align: center
 :width: 100%
 
 Network of soap bubbles and cubic model illustrating the structure of the cosmic web. On the right-hand side, the nodes in orange correspond to the clusters, the sheets and filaments are in sky blue and the voids in dark blue. Images taken from {cite}`2019GReGr..51....9F` and {cite}`2022A&A...662A..87O`.
-
 
 :::{exercise} Volume filling factor rate of large-scale structures
 :label: exo:volume_filling
