@@ -73,7 +73,7 @@ These four types of structure are visible in the disitribution of nearby galaxie
 [](#fig:council-giants), the Local Group is at the heart of the Local Sheet. This sheet is a planar structure with a diameter of ${\sim}\,10\,$Mpc, delimiting one side of the Local Void.
 
 
-:::{figure}  ../images/mccall_fig3.pdf
+:::{figure}  ../../images/mccall_fig3.pdf
 :name: fig:council-giants
 :align: center
 :width: 70%
@@ -83,7 +83,7 @@ Local Sheet galaxies ($R \approx 5\,$Mpc) surrounding the local group ($R \appro
 
 Opposite the galaxy NGC 253, about $16\,$Mpc from the Milky Way, is the Virgo cluster of galaxies, which has a rugby ball structure, as can be seen below. Galaxy clusters can contain several thousand galaxies.
 
-:::{figure}  ../images/virgo_2007ApJ...655..144M.jpg
+:::{figure}  ../../images/virgo_2007ApJ...655..144M.jpg
 :name: fig:virgo
 :align: center
 :width: 70%
@@ -93,7 +93,7 @@ Spatial distribution of galaxies in the Virgo cluster with well constrained dist
 
 Clusters of galaxies such as Virgo are connected to the cosmic web by filaments of galaxies, whose position in the celestial plane and radial velocity projection can be inferred by spectroscopy, as illustrated below.
 
-:::{figure}  ../images/virgo_filaments_2022ApJS..259...43C
+:::{figure}  ../../images/virgo_filaments_2022ApJS..259...43C
 :name: fig:filaments
 :align: center
 :width: 100%
@@ -103,7 +103,7 @@ The filaments around the Virgo cluster. The distribution of galaxies in the sky 
 
 On an even larger scale, typically $100\,$Mpc, the clusters are grouped into superclusters such as Laniakea, which hosts us.
 
-:::{figure}  ../images/laniakea_2014Natur.513...71T.jpg
+:::{figure}  ../../images/laniakea_2014Natur.513...71T.jpg
 :name: fig:supercluster
 :align: center
 :width: 100%
@@ -121,7 +121,7 @@ Not only can astronomers measure the position of galaxies in the sky, they can a
 
 These masses are deduced using dynamical arguments such as Viriel's theorem (|kinetic energy| = |potential energy|/2 for a system at equilibrium) or using the projected trajectories of the tracers. Using stars as tracers, we estimate the mass of the central black hole of the Milky Way, Sgr A*, at $(4.15 \pm 0.01) \times 10^{6}\, M_\odot$ {cite:p}`2019A&A...625L..10G` (see [](#fig:S2-trajectory) ). The latter has a small contribution to the mass of our galaxy compared with the stars that make it up $(6 \pm 1)  \times 10^{10}\, M_\odot$ {cite:p}`2015ApJ...806...96L`. The mass of the Milky Way contained in the stars (and dust) is itself about 20 times less than its dynamic mass.
 
-:::{figure}  ../images/S2_orbit.jpg
+:::{figure}  ../../images/S2_orbit.jpg
 :name: fig:S2-trajectory
 :align: center
 :width: 100%
@@ -140,7 +140,7 @@ $$f(M_\star) \dd M_\star= n_\star \left(\frac{M_\star}{M_0} \right)^{-\alpha} \e
 $$
 calculate the stellar-mass energy density using [](#fig:stellar_mass).
 
-:::{figure}  ../images/stellar_mass_fun_2022MNRAS.513..439D.jpg
+:::{figure}  ../../images/stellar_mass_fun_2022MNRAS.513..439D.jpg
 :name: fig:stellar_mass
 :align: center
 :width: 100%
@@ -182,7 +182,7 @@ The rest-mass energy of the sum is energy $M_\odot c^2 \approx 1.8\times 10^{47}
 
 For an energy density today equal to the critical density $\rho_{c,0} = \frac{3 H_0  c^2}{8\pi G} = 1.36 \times 10^{11}\, h_{70}\, M_\odot\,\mathrm{Mpc}^{-3} \approx 5.1\, h_{70}\,$GeV$\,$m$^{-3}$, we can see that only two thousandths of the universe's energy budget is made up of stars. A detailed breakdown of the different energy budgets of the universe is shown below.
 
-:::{figure}  ../images/cosmic_inventory.png
+:::{figure}  ../../images/cosmic_inventory.png
 :name: fig:cosmic_inventory
 :align: center
 :width: 100%
@@ -206,7 +206,7 @@ The processes responsible for most astrophysical emissions are star formation, t
 
 The evolution of baryonic matter and light emission follows the cosmic history of formation of stars. Their rate of formation per unit comoving volume is illustrated in the figure below.
 
-:::{figure}  ../images/SFRD_2014ARA&A..52..415M.png
+:::{figure}  ../../images/SFRD_2014ARA&A..52..415M.png
 :name: fig:csfh
 :align: center
 :width: 80%
@@ -237,7 +237,7 @@ $$
 
 Here $R$ is the "return fraction", i.e. the proportion of matter reinjected into the interstellar medium by stellar winds and explosions. The value of $R$ is estimated at $30-40\%$, depending on the initial distribution of stellar mass, called the initial mass function.
 
-:::{figure}  ../images/smd_2014ARA&A..52..415M.png
+:::{figure}  ../../images/smd_2014ARA&A..52..415M.png
 :name: fig:csmh
 :align: center
 :width: 80%
@@ -288,7 +288,7 @@ For comparison, the energy density contained in CMB is twenty times greater, i.e
 
 Galaxies formed in a hierarchical fashion, first by the concentration of baryonic matter in their low-mass halos, then by merging with other galaxies in the cosmic web. The evolution of galaxies is accompanied by the growth of their central massive black hole. The mass of these black holes, $M_\bullet \approx 10^6 - 10^{10} M_\odot$, is about two thousandths of the stellar mass of the bulge of the host galaxy {cite:p}`2020ApJ...888...37D`. This relation illustrates the co-evolution of central black holes and their host galaxies. Many other correlations between observables support this link: for example the $M_\bullet - \sigma_\star$ relation between the black hole mass and the dispersion of stellar velocities within spheroids (elliptical galaxy or central bulge for a spiral galaxy). The rate of accretion of matter by massive black holes thus follows an evolution, $\Psi_\mathrm{accr}$, comparable to that of the star formation rate, with a density $2000-3000$ times lower.
 
-:::{figure}  ../images/accr_2014ARA&A..52..415M.png
+:::{figure}  ../../images/accr_2014ARA&A..52..415M.png
 :name: fig:csmh
 :align: center
 :width: 80%
@@ -427,7 +427,7 @@ Note that if $I$ is isotropic, the net flux is zero as the energy crossing the s
 ### The spectrum of the universe
 
 
-:::{figure}  ../images/The_Fitted_MM_EGAL_Background_2023.pdf
+:::{figure}  ../../images/The_Fitted_MM_EGAL_Background_2023.pdf
 :name: fig:mm_spectrum
 :align: center
 :width: 100%
@@ -452,7 +452,7 @@ The Galaxy can be seen as a disc of bolometric luminosity $1.5-2.0 \times 10^{10
 
 3. From the local cosmic-ray spectrum presented in [](#fig:cr_spectrum), estimate the energy density of cosmic rays in the Milky Way.
 
-:::{figure}  ../images/The_CR_Spectrum_2023.pdf
+:::{figure}  ../../images/The_CR_Spectrum_2023.pdf
 :name: fig:cr_spectrum
 :align: center
 :width: 60%
