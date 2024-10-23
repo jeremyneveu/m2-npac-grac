@@ -361,8 +361,6 @@ $$
 Specific intensity is often represented in the form $\nu I_\nu$ as a function of $\ln \nu$, since the integral under the curve then gives the bolometric intensity:
 $$\int \dd \ln \nu\ \nu I_{\nu} = \int \dd \nu\ I_{\nu} = I$$
 
-Specific intensity has notable transformation properties. Indeed, it can be shown that $I_\nu / \nu^3$ is a Lorentz invariant. 
-
 Radio-to-optical astronomers often plot $\nu I_\nu$, while X-ray and higher-energy astronomers often consider $E^2 J(E) = \nu I_\nu$, where both are in units of power per unit area per unit solid angle. 
 
 Similarly, the specific flux density from a point source, denoted as $S_\nu$ or $F_\nu$ with $[F_\nu] = \mathrm{W}\,\mathrm{m}^{-2}$, is represented as $\nu F_\nu = E^2 \frac{\dd N}{\dd E}$, where $\left[\frac{\dd N}{\dd E}\right] = \mathrm{m}^{-2}\,\mathrm{s}^{-1}\,\mathrm{eV}^{-1}$. The specific and bolometric luminosity are estimated from the flux and distance as $L_\nu = 4\pi D_L^2 F_\nu$ and $L = 4\pi D_L^2 F$.
@@ -378,7 +376,7 @@ Note that if $I$ is isotropic, the net flux is zero as the energy crossing the s
 :::
 
 :::{note}
-The literature sometimes uses the notation $I_{\mathrm{dex}}$ with $[I_{\mathrm{dex}}] = \mathrm{W}\,\mathrm{m}^{-2}\,\mathrm{sr}^{-1}\,\mathrm{dex}$. With this notation, 
+The literature sometimes uses the notation $I_{\mathrm{dex}}$ with $[I_{\mathrm{dex}}] = \mathrm{W}\,\mathrm{m}^{-2}\,\mathrm{sr}^{-1}\,\mathrm{dex}^{-1}$. With this notation, 
 $$\int \dd \log_{10} \nu\ I_{\mathrm{dex}} = \int \dd \nu\ I_{\nu} = I$$
 Note that $I_\mathrm{dex}$ differs by a factor $\nu \ln 10$ from $I_{\nu}$
 :::
@@ -416,19 +414,21 @@ $$
 The multi-messenger extragalactic spectrum. Adapted from this [page](https://zenodo.org/records/7842239).
 :::
 
-The broadband emission from all galaxy populations is responsible for the spectrum of the universe shown in [](#fig:mm_spectrum). In particular, electromagnetic radiations include the cosmic radio background (CRB) from both active and star-forming galaxies, the cosmic infrared and optical backgrounds (CIB and COB) mostly from nucleosynthesis and dust emission, the cosmic X-ray background from active galaxies and the cosmic gamma-ray background (CGB) from jetted active galaxies. The differential measurements of these cosmic backgrounds are of fundamental value: they reflect our knowledge of the distribution of light emitted by star formation, accretion and ejection integrated since the formation of the first astrophysical sources. Although these emissions are only a negligible part of the cosmic energy inventory, they provide us with a cosmological consistency test that is essential for understanding the content and evolution of the post-recombination universe  {cite:p}`2004ApJ...616..643F`. These measurements also quantify the degree of darkness of the night sky once the foregrounds are subtracted. It is the history of their emission that provides the solution to the Olbers paradox and the present intensity of these backgrounds that determines the darkness (or rather grayness) of the night sky. We can understand the extragalactic background at all electromagnetic wavelengths, the so-called extragalactic background light, using synthetic models of galaxy populations. Some unknowns in the extraglactic background light, including tensions between measurements, are nonetheless still the subject of active research. Light emission is fundamentally the result of decay, heating and acceleration of matter. We will explore in this course the knowledge established with photons, in particular through multi-wavelength observations of gamma-ray sources, and to which extent this multi-wavelength knowledge allows us to understand extragalactic backgrounds observed today with other messengers, in particular the extragalactic neutrino background (ENB) between $30\,$TeV and $3$\,PeV and the extragalactic cosmic-ray background (ECRB) between $200$\,PeV and $200$\,EeV.
+The broadband emission from all galaxy populations is responsible for the spectrum of the universe shown in [](#fig:mm_spectrum). In particular, electromagnetic radiations include the cosmic radio background (CRB) from both active and star-forming galaxies, the cosmic infrared and optical backgrounds (CIB and COB) mostly from nucleosynthesis and dust emission, the cosmic X-ray background from active galaxies and the cosmic gamma-ray background (CGB) from jetted active galaxies. The differential measurements of these cosmic backgrounds are of fundamental value: they reflect our knowledge of the distribution of light emitted by star formation, accretion and ejection integrated since the formation of the first astrophysical sources. Although these emissions are only a negligible part of the cosmic energy inventory, they provide us with a cosmological consistency test that is essential for understanding the content and evolution of the post-recombination universe  {cite:p}`2004ApJ...616..643F`. 
+
+These measurements also quantify the degree of darkness of the night sky once the foregrounds are subtracted. It is the history of their emission that provides the solution to the Olbers paradox and the present intensity of these backgrounds that determines the darkness (or rather grayness) of the night sky. We can understand the extragalactic background at all electromagnetic wavelengths, the so-called extragalactic background light, using synthetic models of galaxy populations. Some unknowns in the extraglactic background light, including tensions between measurements, are nonetheless still the subject of active research. Light emission is fundamentally the result of decay, heating and acceleration of matter. We will explore in the following lessons the knowledge established with photons, in particular through multi-wavelength observations of gamma-ray sources, and to which extent this multi-wavelength knowledge allows us to understand extragalactic backgrounds observed today with other messengers, in particular the extragalactic neutrino background (ENB) between $30\,$TeV and $3\,$PeV and the extragalactic cosmic-ray background (ECRB) between $200\,$PeV and $200\,$EeV.
 
 
 
 :::{exercise} Energy densities in the Milky Way
 :label: exo:milky_way
 
-The Galaxy can be seen as a disc of bolometric luminosity $[1.5; 2.0] \times 10^{10} \ L_\odot$, approximated by a cylinder of diameter $2R=25\,$kpc and height $h=300\,$pc. Its bulge, with a bolometric luminosity $0.5 \times 10^{10} \ L_\odot$, can be approximated as a bar or spheroid of diameter $3\,$kpc. The bolometric luminosity of the Sun is $L_\odot = 3.8 \times 10^{26}\,$W. 
+The Galaxy can be seen as a disc of bolometric luminosity $(1.5-2.0) \times 10^{10} \ L_\odot$, approximated by a cylinder of diameter $2R=25\,$kpc and height $h=300\,$pc. Its bulge, with a bolometric luminosity $0.5 \times 10^{10} \ L_\odot$, can be approximated as a bar or spheroid of diameter $3\,$kpc. The bolometric luminosity of the Sun is $L_\odot = 3.8 \times 10^{26}\,$W. 
 
 
 1. Calculate the energy density of the photon field in the disc in eV$\,$m$^{-3}$.
 
-2. The magnetic field of the Milky Way is inferred to range in $1-10\,\mu$G that is $[1;10]\times 10^{-10}\,$T. Estimate the magnetic energy density in the Milky Way.
+2. The magnetic field of the Milky Way is inferred to range in $1-10\,\mu$G that is $(1-10)\times 10^{-10}\,$T. Estimate the magnetic energy density in the Milky Way.
 
 3. From the local cosmic-ray spectrum presented in [](#fig:cr_spectrum), estimate the energy density of cosmic rays in the Milky Way.
 :::
