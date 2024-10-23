@@ -355,7 +355,7 @@ with $[I] = \mathrm{W}\,\mathrm{m}^{-2}\,\mathrm{sr}^{-1}$.
 
 The radiative energy density, $\varepsilon$, in a volume $\dd V = c \dd t \dd A$ is such as $dE = \varepsilon \dd V$, so that the average intensity integrated over the sphere is
 $$
-I = \frac{c}{4\pi} u
+I = \frac{c}{4\pi} \varepsilon
 $$ 
 
 :::{important}
@@ -404,7 +404,7 @@ $$
 so that 
 
 $$
-I_\nu / \nu^3 = \mathrm{Lorentz\ invariant}
+I_\nu / \nu^3 \equiv \mathrm{Lorentz\ invariant}
 $$
 
 
@@ -448,37 +448,46 @@ The local cosmic-ray spectrum. Components from the Milky Way dominate the bright
 :::{solution} exo:milky_way
 1. We assume the photon field to be isotropic in the disc of Milky Way. Then, we can estimate the photon density as:
 
+$$
 \begin{align}
 u_\mathrm{O-IR} &= \frac{4\pi}{c} I_\mathrm{O-IR} \nonumber \\
 		 &= \frac{4\pi}{c} \frac{F_\mathrm{O-IR}}{\int \dd \Omega \cos \theta}
 \end{align}
+$$
 
 where $F_\mathrm{O-IR}$ is the net flux emitted from one side of the disc and $\int \dd \Omega \cos \theta = 2\pi \int_0^1 \cos \theta \dd  \cos \theta = \pi$. The total flux emitted by the two sides of the disc is $2F_\mathrm{O-IR} = \frac{L_\mathrm{O-IR}}{\pi R^2}$, so that
 
+$$
 \begin{align}
 \varepsilon_\mathrm{O-IR} &= \frac{4\pi}{c} I_\mathrm{O-IR} \\
 		 &= \frac{2}{c} \frac{L_\mathrm{O-IR}}{\pi R^2}
  		 &= \frac{2}{c} \frac{L_\mathrm{O-IR}}{\pi R^2}
  		 &\approx (0.5-0.7) \times 10^{6} \,\mathrm{eV\,m}^{-3},
 \end{align}
+$$
+
 i.e. two-to-three times the energy density of the CMB.
 
 2. 
+$$
 \begin{align}
 \varepsilon_B & = \frac{B^2}{2\mu_0} \\
  & \approx \frac{(1-100) \cdot 10^{-20} \times 6.2 \cdot 10^{18}}{2 \times 4\pi \times 10^{-7}} \,\mathrm{eV\,m}^{-3} \\
  & \approx (0.02-2) \times 10^{6} \,\mathrm{eV\,m}^{-3},
 \end{align}
+$$
 
 3. The local cosmic-ray intensity can be approximated as $J(E) = J_0 \left(\frac{E}{E_0} \right)^{-p} = 2 \times 10^4\, \mathrm{GeV^{-1}}\,\mathrm{m}^{-2}\,\mathrm{s}^{-1}\,\mathrm{sr}^{-1}\times \left(\frac{E}{1\,\mathrm{GeV}} \right)^{-2.7}$.
 
 Considering the cosmic-ray velocity to be near the speed of light (which is wrong near $1\,$GeV), the energy density of cosmic rays in the Milky Way above $E_0 = 1\,\mathrm{GeV} \approx m_p c^2$ can be approximated by
 
+$$
 \begin{align}
 \varepsilon_\mathrm{CR} &= \frac{4\pi}{c} \int_{E_0} \dd E\ E J(E) \\
 			 &= \frac{4\pi}{c} \frac{E_0^2 J_0}{p-2} \\
  			 &\approx 1.2 \times 10^{6} \,\mathrm{eV\,m}^{-3}
 \end{align}
+$$
 
 Interestingly, all three components are close to equipartition.
 :::
