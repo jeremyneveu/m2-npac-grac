@@ -9,13 +9,6 @@ keywords: []
 Astrophysical emissions on cosmic scales
 =============================================
 
-
-*Note 1: energy densities written either as u or $\rho$: to be solved*
-
-*Note 2: final plot dJ/dE -> J(E), same in slide*
-
-*Note 3: discussion on various backgrounds to be written*
-
 A homogeneous and isotropic universe?
 --------------------------------
 
@@ -188,7 +181,7 @@ The cosmic energy inventory of {cite}`2004ApJ...616..643F`. Adapted from this [p
 
 
 :::{important}
-Most of what we know about the universe comes from  four messengers: photons, neutrinos, cosmic rays and gravitational waves. As shown in  [](#fig:cosmic_inventory), the energy density associated with these tracers is only a few parts per million. Despite this, estimates of the amount of baryonic matter from radiation are increasingly precise. Of particular note is the potential resolution of a long-standing problem, the location of the missing half of the universe's baryons, which could be found in the warm/hot intergalactic plasma that makes up the cosmic web (see {cite}`2021NatAs...5..852D`).
+Most of what we know about the universe comes from  four messengers: photons, neutrinos, cosmic rays and gravitational waves. As shown in [](#fig:cosmic_inventory), the energy density associated with these tracers is only a few parts per million. Despite this, estimates of the amount of baryonic matter from radiation are increasingly precise. Of particular note is the potential resolution of a long-standing problem, the location of the missing half of the universe's baryons, which could be found in the warm/hot intergalactic plasma that makes up the cosmic web (see {cite}`2021NatAs...5..852D`).
 :::
 
 
@@ -423,7 +416,8 @@ $$
 The multi-messenger extragalactic spectrum. Adapted from this [page](https://zenodo.org/records/7842239).
 :::
 
-TBD: discussion
+The broadband emission from all galaxy populations is responsible for the spectrum of the universe shown in [](#fig:mm_spectrum). In particular, electromagnetic radiations include the cosmic radio background (CRB) from both active and star-forming galaxies, the cosmic infrared and optical backgrounds (CIB and COB) mostly from nucleosynthesis and dust emission, the cosmic X-ray background from active galaxies and the cosmic gamma-ray background (CGB) from jetted active galaxies. The differential measurements of these cosmic backgrounds are of fundamental value: they reflect our knowledge of the distribution of light emitted by star formation, accretion and ejection integrated since the formation of the first astrophysical sources. Although these emissions are only a negligible part of the cosmic energy inventory, they provide us with a cosmological consistency test that is essential for understanding the content and evolution of the post-recombination universe  {cite:p}`2004ApJ...616..643F`. These measurements also quantify the degree of darkness of the night sky once the foregrounds are subtracted. It is the history of their emission that provides the solution to the Olbers paradox and the present intensity of these backgrounds that determines the darkness (or rather grayness) of the night sky. We can understand the extragalactic background at all electromagnetic wavelengths, the so-called extragalactic background light, using synthetic models of galaxy populations. Some unknowns in the extraglactic background light, including tensions between measurements, are nonetheless still the subject of active research. Light emission is fundamentally the result of decay, heating and acceleration of matter. We will explore in this course the knowledge established with photons, in particular through multi-wavelength observations of gamma-ray sources, and to which extent this multi-wavelength knowledge allows us to understand extragalactic backgrounds observed today with other messengers, in particular the extragalactic neutrino background (ENB) between $30\,$TeV and $3$\,PeV and the extragalactic cosmic-ray background (ECRB) between $200$\,PeV and $200$\,EeV.
+
 
 
 :::{exercise} Energy densities in the Milky Way
