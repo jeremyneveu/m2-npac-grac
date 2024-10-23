@@ -19,11 +19,11 @@ Astrophysical emissions on cosmic scales
 A homogeneous and isotropic universe?
 --------------------------------
 
-The cosmological models that we have discussed postulate that the universe is homogeneous and isotropic on large scales, i.e. typical distances greater than 100 Mpc. Below this characteristic scale, the galaxies observed in large optical surveys are distributed according to the cosmic web. The large structures that weave this web formed as a result of the growth of the fluctuations in the CMB. Due to the properties of gravitation, an initially ellipsoidal overdensity collapses preferentially along its smallest axis, resulting in a sheet (so called Zel'dovich pancake). These sheets can collapse in the form of filaments, which themselves converge towards galaxy clusters. The areas not populated by the cosmic web constitute the cosmic voids, which occupy most of space.
+The cosmological models that we have discussed postulate that the universe is homogeneous and isotropic on large scales, i.e. typical distances greater than 100 Mpc. Below this characteristic scale, the galaxies observed in wide-field optical surveys are distributed according to the cosmic web. The large structures that weave this web formed as a result of the growth of the fluctuations in the CMB. Due to the properties of gravitation, an initially ellipsoidal overdensity collapses preferentially along its smallest axis, resulting in a sheet (so called Zel'dovich pancake). These sheets can collapse in the form of filaments, which themselves converge towards galaxy clusters. The areas not populated by the cosmic web constitute the cosmic voids, which occupy most of space.
 
 ### Distance from local large-scale structures
 
-These structures arrange themselves in a network resembling that of soap bubbles. A simplified crystallographic representation is given below, with $l$ the characteristic cell size and $w$ the typical diameter of clusters or the cross-section of filaments. Cosmological simulations suggest a void occupancy rate of the order of $(1-w/l)³ = 75\%$ (see exercise below). Knowing that the characteristic radius of the clusters we observe is $w \approx 1\,$Mpc, we deduce a typical cell size of the order of $l \approx 10\,$Mpc.
+These structures arrange themselves in a network resembling that of soap bubbles. A simplified crystallographic representation is given below, with $l$ the characteristic cell size and $w$ the typical diameter of clusters, or the cross-section of filaments. Cosmological simulations suggest a void occupancy rate of the order of $(1-w/l)³ = 75\%$ (see exercise below). Knowing that the characteristic radius of the clusters we observe is $w \approx 1\,$Mpc, we deduce a typical cell size of the order of $l \approx 10\,$Mpc.
 
 
 :::{figure} ../../images/bubble_network_2019GReGr..51....9F_ 2022A&A...662A..87O.jpg
@@ -113,13 +113,13 @@ The local superclusters. Velocity streamlines of our supercluster, Laniakea, are
 
 ### Mass of local large-scale structures
 
-Not only can astronomers measure the position of galaxies in the sky, they can also measure the radial component of their velocity as well as their distance from the stars that calibrate the cosmic distance ladder. The velocity field of galaxies can thus be used to constrain the gravitational field of Laniakea or its companion supercluster Perseus-Pisces. The mass of the Laniakea supercluster is estimated at ${\sim}\,10^{17}\, M_\odot$ {cite:p}`2014Natur.513...71T` [^a]. On a smaller scale, the mass of the Virgo cluster is estimated at ${\sim}\,10^{14}\, M_\odot$ {cite:p}`2016A&A...596A.101P`. Such dynamical arguments also yield an estimate of the mass of the Local Group of galaxies at ${\sim}\,3 \times 10^{12}\, M_\odot$. The Local Group dynamical mass is dominated by that of the Milky Way, $(1. 2 \pm 0.2) 10^{12}\, M_\odot$ and Andromeda, $(1.8 \pm 0.5) 10^{12}\, M_\odot$ {cite:p}`2022ApJ...928L...5B`.
+Not only can astronomers measure the position of galaxies in the sky, they can also measure the radial component of their velocity as well as their distance from the stars that calibrate the cosmic distance ladder. The velocity field of galaxies can thus be used to constrain the gravitational field of Laniakea or its companion supercluster Perseus-Pisces. The mass of the Laniakea supercluster is estimated at ${\sim}\,10^{17}\, M_\odot$ {cite:p}`2014Natur.513...71T` [^a]. On a smaller scale, the mass of the Virgo cluster is estimated at ${\sim}\,10^{14}\, M_\odot$ {cite:p}`2016A&A...596A.101P`. Such dynamical arguments also yield an estimate of the mass of the Local Group of galaxies at ${\sim}\,3 \times 10^{12}\, M_\odot$. The Local Group dynamical mass is dominated by that of the Milky Way, $(1. 2 \pm 0.2)  \times 10^{12}\, M_\odot$ and Andromeda, $(1.8 \pm 0.5) 10^{12}\, M_\odot$ {cite:p}`2022ApJ...928L...5B`.
 
 
 [^a]: The sun has a mass measured with better than $10^{-4}$ accuracy at  $M_\odot = 1.9885 \times 10^{30}\,$kg.
 
 
-These masses are deduced using dynamical arguments such as Viriel's theorem (|kinetic energy| = |potential energy|/2 for a system at equilibrium) or using the projected trajectories of the tracers. Using stars as tracers, we estimate the mass of the central black hole of the Milky Way, Sgr A*, at $(4.15 \pm 0.01) \times 10^{6}\, M_\odot$ {cite:p}`2019A&A...625L..10G` (see [](#fig:S2-trajectory) ). The latter has a small contribution to the mass of our galaxy compared with the stars that make it up $(6 \pm 1)  \times 10^{10}\, M_\odot$ {cite:p}`2015ApJ...806...96L`. The mass of the Milky Way contained in the stars (and dust) is itself about 20 times less than its dynamic mass.
+These masses are deduced using dynamical arguments such as Viriel's theorem (|kinetic energy| = |potential energy|/2 for a system at equilibrium) or using the projected trajectories of the tracers. Using stars as tracers, astronomers estimate the mass of the central black hole of the Milky Way, Sgr A*, at $(4.15 \pm 0.01) \times 10^{6}\, M_\odot$ {cite:p}`2019A&A...625L..10G` (see [](#fig:S2-trajectory) ). The latter has a small contribution to the mass of our galaxy compared with the stars that make it up $(6 \pm 1)  \times 10^{10}\, M_\odot$ {cite:p}`2015ApJ...806...96L`. The mass of the Milky Way contained in the stars (and dust) is itself about 20 times less than its dynamic mass.
 
 :::{figure}  ../../images/S2_orbit.jpg
 :name: fig:S2-trajectory
@@ -151,6 +151,7 @@ The stellar mass function of the galaxies in the local Universe ($z<0.1$). From 
 :::
 
 :::{solution} exo:stellar_mass
+:class: dropdown
 
 The first panel represents the function $g(M_\star)$ such as $\int g(M_\star) \dd \log_{10}M_\star = 1/V$, where $V$ is the considered volume. Thus $f(M_\star) = g(M_\star)/(\ln(10)M_\star)$.
 
@@ -171,12 +172,12 @@ Estimation using the exact form of the mass distribution function gives a stella
 
 
 :::{note} $M_\odot$ per Mpc$^{3}$ and eV per m$^3$
-The rest-mass energy of the sum is energy $M_\odot c^2 \approx 1.8\times 10^{47} \, \mathrm{J} \approx 1.1\times 10^{66}\,\mathrm{eV}$. The typical distance between neighboring galaxies is $1\, \mathrm{Mpc} \approx 3.1 \times 10^{22}\, \mathrm{m}$. The good  match between powers of ten makes it fairly easy to convert stellar mass density into energy density.
+The rest-mass energy of the sun is $M_\odot c^2 \approx 1.8\times 10^{47} \, \mathrm{J} \approx 1.1\times 10^{66}\,\mathrm{eV}$. The typical distance between neighboring galaxies is $1\, \mathrm{Mpc} \approx 3.1 \times 10^{22}\, \mathrm{m}$. The good  match between powers of ten ($66 = 22 \times 3$) makes it fairly easy to convert stellar mass density into energy density.
 :::
 
 ### Cosmic energy inventory
 
-For an energy density today equal to the critical density $\rho_{c,0} = \frac{3 H_0  c^2}{8\pi G} = 1.36 \times 10^{11}\, h_{70}\, M_\odot\,\mathrm{Mpc}^{-3} \approx 5.1\, h_{70}\,$GeV$\,$m$^{-3}$, we can see that only two thousandths of the universe's energy budget is made up of stars. A detailed breakdown of the different energy budgets of the universe is shown below.
+For an energy density today equal to the critical density $\rho_{c,0} = \frac{3 H_0  c^2}{8\pi G} = 1.36 \times 10^{11}\, h_{70}\, M_\odot\,\mathrm{Mpc}^{-3} \approx 5.1\, h_{70}\,$GeV$\,$m$^{-3}$, where $h_{70} = H_0 / 70 \,\mathrm{km}\,\mathrm{s}^{-1}\,\mathrm{Mpc}^{-1}, we can see that only two thousandths of the universe's energy budget is made up of stars. A detailed breakdown of the different energy budgets of the universe is shown below.
 
 :::{figure}  ../../images/cosmic_inventory.png
 :name: fig:cosmic_inventory
