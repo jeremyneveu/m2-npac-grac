@@ -271,7 +271,7 @@ As with the mass of matter contained in stars today, the cumulative emission of 
 The efficiency of matter-to-light conversion in the Sun is therefore only one tenth of the theoretical maximum efficiency. It should be noted that although the pp chain is dominant within the Sun, this does not mean that all its protons are involved in the fusion processes.
 
 3. $$\begin{align}
-\rho_{\gamma, \mathrm{nucl}} &= \eta_\odot c^2 \int \dd t \Psi(t) \nonumber \\
+\varepsilon_{\gamma, \mathrm{nucl}} &= \eta_\odot c^2 \int \dd t \Psi(t) \nonumber \\
 & \approx 7 \cdot 10^{-4} \times 10^{10} \times 0.05 M_\odot c^2 \,\mathrm{Mpc}^{-3}  \nonumber\\
 & \approx 3.5\cdot 10^{5} \times 1.1\cdot 10^{66}/(3.1\cdot 10^{22})^3 \mathrm{\,eV\,m}^{-3}  \\
 & \approx 13 \times 10^{3}\mathrm{\,eV\,m}^{-3}
@@ -321,7 +321,7 @@ The emission produced by accretion is not negligible, especially if we realise t
 
 Around 10% of active galactic nuclei develop a jet on either side of the accretion disc {cite:p}`2019ARA&A..57..467B`. The presence of jets is deduced or observed in many astrophysical systems: collapse of a massive star leading to the formation of a long gamma-ray burst, binary of compact objects for a short gamma-ray burst, binary of a star and a white dwarf for a Nova, binary of a star and a compact object such as a black hole or a neutron star for a micro-quasar. Plasma ejection in the jets results from the conversion of electromagnetic energy at their base into kinetic energy at their termination. The kinetic energy of the jets can be estimated for some active galactic nuclei by the size of the radio cavities they form in the intracluster medium {cite:p}`2012ARA&A..50..455F`. Synthetic evolution models that attempt to reproduce these observations estimate that ${\sim}\,0.5\%$ of the mass energy associated with accretion is injected into the jets of active galactic nuclei {cite:p}`2008MNRAS.388.1011M`. However, the uncertainties surrounding the mechanisms of jet formation and the different accretion regimes mean that this ratio is merely a rough estimate of the blance between the kinetic energy and accreted energy.
 
-The conversion of the Poynting flux (electromagnetic energy) into global plasma motion (kinetic energy) is accompanied by the acceleration of charged particles, for example by shock waves in the jets or at its boundary (shear), or by magnetic reconnection. Accelerated particles lose energy through conventional emission processes: synchrotron and inverse Compton for electrons and positrons, as well as production of pairs and pions for protons and nuclei. It is these radiative losses that produce the emission of jets from radio waves to gamma rays. The efficiency of converting kinetic energy into radiation is estimated at $10\%$ for jets of active galactic nuclei, gamma-ray bursts and microquasars.
+The conversion of the Poynting flux (electromagnetic energy) into global plasma motion (kinetic energy) is accompanied by the acceleration of charged particles, for example by shock waves in the jets or at its boundary (shear), or by magnetic reconnection. Accelerated particles lose energy through radiative processes: synchrotron and inverse Compton for electrons and positrons, as well as production of pairs and pions for protons and nuclei. It is these radiative losses that produce the emission of jets from radio waves to gamma rays. The efficiency of converting kinetic energy into radiation is estimated at $10\%$ for jets of active galactic nuclei, gamma-ray bursts and microquasars.
 
 :::{exercise} Cosmic energy density of photons from jets
 :label: exo:photons_jet
@@ -360,8 +360,15 @@ $$
 
 :::{important}
 The specific intensity, $I_\nu$, is the derivative of the bolometric intensity, $I$:
+
 $$
 I = \int \dd \nu\ I_{\nu}, \quad \mathrm{with\ } [I_{\nu}] =  \mathrm{W}\,\mathrm{m}^{-2}\,\mathrm{sr}^{-1}\,\mathrm{Hz}^{-1}
+$$
+
+Specific intensity is often represented in the form $\nu I_\nu$ as a function of $\ln \nu$, since the integral under the curve then gives the bolometric intensity:
+$$\int \dd \ln \nu\ \nu I_{\nu} = \int \dd \nu\ I_{\nu} = I$$
+
+Specific intensity has notable transformation properties. Indeed, it can be shown that $I_\nu / \nu^3$ is a Lorentz invariant. 
 
 Radio-to-optical astronomers often plot $\nu I_\nu$, while X-ray and higher-energy astronomers often consider $E^2 J(E) = \nu I_\nu$, where both are in units of power per unit area per unit solid angle. 
 
@@ -373,12 +380,8 @@ F = \int \dd\Omega\ I \cos \theta
 $$ 
 
 Note that if $I$ is isotropic, the net flux is zero as the energy crossing the surface $\dd A$ in the $+\vec{n}$ direction is the opposite of that from $-\vec{n}$ direction.
-$$
 
-Specific intensity is often represented in the form $\nu I_\nu$ as a function of $\ln \nu$, since the integral under the curve then gives the bolometric intensity:
-$$\int \dd \ln \nu\ \nu I_{\nu} = \int \dd \nu\ I_{\nu} = I$$
 
-Specific intensity has notable transformation properties. Indeed, it can be shown that $I_\nu / \nu^3$ is a Lorentz invariant. 
 :::
 
 :::{note}
@@ -393,7 +396,7 @@ $$
 \varepsilon_\nu \dd \nu = h\nu  \frac{\dd \mathcal{N}}{\dd^3 x \dd^3 p} 4\pi p^2 \dd p
 $$
 
-$\dd \mathcal{N}/\dd^3 x \dd^3 p$ is invariant under a Lorentz transformation. Indeed $\dd \mathcal{N}$ is countable and thus invariant. Under a boost $(\beta, \gamma)$ along the x-axis from the comving frame (K') towards the observer's frame (K), one finds $\dd x = \gamma^{-1} \dd x'$ (length contraction) and $\dd p_x = \gamma (\dd p_{x'} + \beta \dd E') = \gamma \dd p_{x'}$ for particles with fixed energy (total momentum fixed between $p$ and $p + \dd p$). Thus $\dd^3 x \dd^3 p$ is invariant, *quod erat demonstrandum*.
+$\dd \mathcal{N}/\dd^3 x \dd^3 p$ is invariant under a Lorentz transformation. Indeed $\dd \mathcal{N}$ is countable and thus invariant. Under a boost $(\beta, \gamma)$ along the x-axis from the coomving frame (K') towards the observer's frame (K), one finds $\dd x = \gamma^{-1} \dd x'$ (length contraction) and $\dd p_x = \gamma (\dd p_{x'} + \beta \dd E') = \gamma \dd p_{x'}$ for particles with fixed energy (total momentum fixed between $p$ and $p + \dd p$). Thus $\dd^3 x \dd^3 p$ is invariant, *quod erat demonstrandum*.
  
  
 One finds
@@ -426,14 +429,15 @@ TBD: discussion
 :::{exercise} Energy densities in the Milky Way
 :label: exo:milky_way
 
-The Galaxy can be seen as a disc of bolometric luminosity $1.5-2.0 \times 10^{10} \ L_\odot$, approximated by a cylinder of diameter $2R=25\,$kpc and height $h=300\,$pc, and a bulge of bolometric luminosity $0.5 \times 10^{10} \ L_\odot$, approximated as a bar or spheroid of diameter $3\,$kpc. The bolometric luminosity of the Sun is $L_\odot = 3.85 \times 10^{26}\,$W. 
+The Galaxy can be seen as a disc of bolometric luminosity $[1.5; 2.0] \times 10^{10} \ L_\odot$, approximated by a cylinder of diameter $2R=25\,$kpc and height $h=300\,$pc. Its bulge, with a bolometric luminosity $0.5 \times 10^{10} \ L_\odot$, can be approximated as a bar or spheroid of diameter $3\,$kpc. The bolometric luminosity of the Sun is $L_\odot = 3.8 \times 10^{26}\,$W. 
 
 
 1. Calculate the energy density of the photon field in the disc in eV$\,$m$^{-3}$.
 
-2. The magnetic field of the Milky Way is inferred to range in $1-10\,\mu$G that is $(1-10)\times 10^{-10}\,$T. Estimate the magnetic energy density in the Milky Way.
+2. The magnetic field of the Milky Way is inferred to range in $1-10\,\mu$G that is $[1;10]\times 10^{-10}\,$T. Estimate the magnetic energy density in the Milky Way.
 
 3. From the local cosmic-ray spectrum presented in [](#fig:cr_spectrum), estimate the energy density of cosmic rays in the Milky Way.
+:::
 
 :::{figure}  ../../images/The_CR_Spectrum_2023.png
 :name: fig:cr_spectrum
@@ -443,14 +447,15 @@ The Galaxy can be seen as a disc of bolometric luminosity $1.5-2.0 \times 10^{10
 The local cosmic-ray spectrum. Components from the Milky Way dominate the brightness of the sky at least up to the knee structure at $E \approx 3\,$PeV. From this [page](https://zenodo.org/records/7948212).
 :::
 
-:::
 
 :::{solution} exo:milky_way
+:class: dropdown
+
 1. We assume the photon field to be isotropic in the disc of Milky Way. Then, we can estimate the photon density as:
 
 $$
 \begin{align}
-u_\mathrm{O-IR} &= \frac{4\pi}{c} I_\mathrm{O-IR} \nonumber \\
+\varepsilon_\mathrm{O-IR} &= \frac{4\pi}{c} I_\mathrm{O-IR} \nonumber \\
 		 &= \frac{4\pi}{c} \frac{F_\mathrm{O-IR}}{\int \dd \Omega \cos \theta}
 \end{align}
 $$
