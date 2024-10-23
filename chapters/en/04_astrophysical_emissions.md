@@ -69,7 +69,7 @@ The following table, adapted from {cite}`2022A&A...662A..87O`, provides a compar
 Large-scale cosmological simulations indicate that at $z=0$, clusters and filaments encompass ${\sim}\,50\%$ and ${\sim}\,45\%$ of dark matter respectively. Taking into account feedback from galaxy winds and jets suggests a more diffuse baryon distribution: ${\sim}\,25\%$ of baryons would be found in clusters, ${\sim}\,45\%$ in filaments and sheets, ${\sim}\,30\%$ in voids {cite:p}`2016MNRAS.457.3024H`.
 :::
 
-These four types of structure are visible in the disitribution of nearby galaxies. Our galaxy, its neighbour Andromeda at $0.75\,$Mpc and their satellites, such as the Large Magellanic Cloud at $50\,$kpc, form the Local Group. As illustrated in 
+These four types of structure are visible in the distribution of nearby galaxies. Our galaxy, its neighbour Andromeda at $0.75\,$Mpc and their satellites, such as the Large Magellanic Cloud at $50\,$kpc, form the Local Group. As illustrated in 
 [](#fig:council-giants), the Local Group is at the heart of the Local Sheet. This sheet is a planar structure with a diameter of ${\sim}\,10\,$Mpc, delimiting one side of the Local Void.
 
 
@@ -147,29 +147,12 @@ calculate the stellar-mass energy density using [](#fig:stellar_mass).
 
 The stellar mass function of the galaxies in the local Universe ($z<0.1$). From  {cite}`2022MNRAS.513..439D`.
 :::
-
 :::
 
 :::{solution} exo:stellar_mass
 :class: dropdown
 
-The first panel represents the function $g(M_\star)$ such as $\int g(M_\star) \dd \log_{10}M_\star = 1/V$, where $V$ is the considered volume. Thus $f(M_\star) = g(M_\star)/(\ln(10)M_\star)$.
-
-From the first panel, we estimate by eye a cut-off at $M_0 \approx 1 \times 10^{11}
-\,M_\odot$ where the density is $\ln(10) M_0 n_{\star}/e \approx 2  \times  10^{-3}\,$Mpc$^{-3}$dex$^{-1}$. We find $n_{\star} M_0 \approx 2 \times 10^{-3} \,$Mpc$^{-3}$. The index is similarly estimated at $\alpha=1.5$.
-
-The stellar mass energy density is then
-
-$$
-\begin{align}
-\int f(M_\star) M_\star c^2 \dd M_\star &= n_\star M_0 \times M_0  c^2 \int \dd x \, x^{1-\alpha} \exp(-x) dx \nonumber\\
-							&=\Gamma(2-\alpha) \times n_\star M_0 \times M_0  c^2 \nonumber\\					
-							&\approx \sqrt{\pi} \times 2 \cdot 10^{-3} \times 10^{11} \times  1.1 \cdot 10^{66}/(3.1 \cdot 10^{22})^3\,\mathrm{eV\,m}^{-3} \nonumber\\
-														&\approx 13 \times 10^{6}\,\mathrm{eV\,m}^{-3} 
-\end{align}
-$$
-
-Estimation using the exact form of the mass distribution function gives a stellar matter density up to $z < 0. 1$  or $D_L < 500\,$Mpc of $\rho_{\star, 0}= (2.97 \pm 0.04) \times 10^8 \,h_{70}\, M_\odot \, \mathrm{Mpc}^{-3}$, where $h_{70} = H_0 / (70\,\mathrm{km}\,\mathrm{s}^{-1}\,\mathrm{Mpc}^{-1})$. This corresponds to an energy density comparable to our crude estimate, namely $\rho_{\star, 0} \approx (11.0 \pm 0.1) \, h_{70} \times 10^{6}\,\mathrm{eV\,m}^{-3}$
+The first panel represents the function $g(M_\star)$ 
 :::
 
 
@@ -179,7 +162,7 @@ The rest-mass energy of the sun is $M_\odot c^2 \approx 1.8\times 10^{47} \, \ma
 
 ### Cosmic energy inventory
 
-For an energy density today equal to the critical density $\rho_{c,0} = \frac{3 H_0^2  c^2}{8\pi G} = 1.36 \times 10^{11}\, h_{70}\, M_\odot\,\mathrm{Mpc}^{-3} \approx 5.1\, h_{70}\,$GeV$\,$m$^{-3}$, where $h_{70} = H_0 / 70 \,\mathrm{km}\,\mathrm{s}^{-1}\,\mathrm{Mpc}^{-1}, we can see that only two thousandths of the universe's energy budget is made up of stars. A detailed breakdown of the different energy budgets of the universe is shown below.
+For an energy density today equal to the critical density $\rho_{c,0} = \frac{3 H_0^2  c^2}{8\pi G} = 1.36 \times 10^{11}\, h_{70}\, M_\odot\,\mathrm{Mpc}^{-3} \approx 5.1\, h_{70}\,$GeV$\,$m$^{-3}$, where $h_{70} = H_0 / 70 \,\mathrm{km}\,\mathrm{s}^{-1}\,\mathrm{Mpc}^{-1}$, we can see that only two thousandths of the universe's energy budget is made up of stars. A detailed breakdown of the different energy budgets of the universe is shown below.
 
 :::{figure}  ../../images/cosmic_inventory.png
 :name: fig:cosmic_inventory
