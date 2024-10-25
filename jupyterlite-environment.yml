@@ -17,7 +17,6 @@ dependencies:
 - ipympl
 - astropy
 - sympy
-- pip:
-  - ipyturtle3
+#- pip:
   # - astropy-iers-data
 
