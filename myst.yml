@@ -49,10 +49,10 @@ project:
       children:
         - file: chapters/fr/start
         - file: chapters/fr/00_introduction
-        - file: chapters/en/01_FLRW_metric
-        - file: chapters/en/02_friedmann_equations
-        - file: chapters/en/03_cosmological_models
-        - file: chapters/en/04_astrophysical_emissions
+        - file: chapters/fr/01_FLRW_metric
+        - file: chapters/fr/02_friedmann_equations
+        - file: chapters/fr/03_cosmological_models
+        - file: chapters/fr/04_astrophysical_emissions
         #- file: chapters/05_astroparticle_sources
         #- file: chapters/06_supernovae
         #- file: chapters/fr/07_cmb
@@ -75,9 +75,9 @@ site:
   title: Astroparticles and Cosmology
   nav:
     - title: English version
-      url: /chapters/en/start
+      url: /en/chapters/en/start
     - title: Version française
-      url: /chapters/fr/start
+      url: /fr/chapters/fr/start
     - title: Jupyter notebooks
       url: /lite
   actions: []
