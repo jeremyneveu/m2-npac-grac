@@ -16,7 +16,7 @@ pages:
     - python -V               # Print out python version for debugging
     - mamba install -y -c conda-forge nodejs pyyaml
     - node -v
-    - npm install -g mystmd
+    - npm install -g mystmd@latest
     - cp myst.yml tmp_myst.yml
     #- python remove_toc.py
     - myst build --html
