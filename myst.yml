@@ -75,9 +75,9 @@ site:
   title: Astroparticles and Cosmology
   nav:
     - title: English version
-      url: /en
+      url: /chapters/en/start
     - title: Version française
-      url: /fr
+      url: /chapters/fr/start
     - title: Jupyter notebooks
       url: /lite
   actions: []
