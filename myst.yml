@@ -70,14 +70,13 @@ project:
       - file: notebooks/CMB_BBN.ipynb
 
 site:
-  folders: true
   template: book-theme
   title: Astroparticles and Cosmology
   nav:
     - title: English version
-      url: /en/start
+      url: /en.start
     - title: Version française
-      url: /fr/start
+      url: /fr.start
     - title: Jupyter notebooks
       url: /lite
   actions: []
@@ -85,6 +84,7 @@ site:
   #     url: https://gitlab.in2p3.fr/m2-npac-ac/m2-npac-ac
   domains: []
   options:
+    folders: true
     hide_outline: false
     hide_toc: false
     logo_text: ""
