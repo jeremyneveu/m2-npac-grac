@@ -70,13 +70,14 @@ project:
       - file: notebooks/CMB_BBN.ipynb
 
 site:
+  folders: true
   template: book-theme
   title: Astroparticles and Cosmology
   nav:
     - title: English version
-      url: /
+      url: /en
     - title: Version française
-      url: /
+      url: /fr
     - title: Jupyter notebooks
       url: /lite
   actions: []
