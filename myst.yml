@@ -47,8 +47,8 @@ project:
     - file: README
     - title: Lectures
       children:
-        - file: chapters/en/start
-        - file: chapters/en/00_introduction
+        - file: chapters/fr/start
+        - file: chapters/fr/00_introduction
         - file: chapters/en/01_FLRW_metric
         - file: chapters/en/02_friedmann_equations
         - file: chapters/en/03_cosmological_models
