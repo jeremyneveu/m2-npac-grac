@@ -104,7 +104,6 @@ The Galaxy can be seen as a disc of bolometric luminosity $(1.5-2.0) \times 10^{
 2. The magnetic field of the Milky Way is inferred to range in $1-10\,\mu$G that is $(1-10)\times 10^{-10}\,$T. Estimate the magnetic energy density in the Milky Way.
 
 3. From the local cosmic-ray spectrum presented in [](#fig:cr_spectrum), estimate the energy density of cosmic rays in the Milky Way.
-:::
 
 :::{figure}  ../../images/The_CR_Spectrum_2023.png
 :name: fig:cr_spectrum
@@ -359,7 +358,7 @@ Schematic view of the shocks between shells internal to the jet of a gamma-ray b
 :::
 
 :::{solution} exo:grb_opacity
-#:class: dropdown
+:class: dropdown
 
 1. Each shell reaches a radius $r_i = v_i(t-t_i)$, with $i=1,2$ and $t_2-t_1 = \Delta t_\mathrm{var}$. The internal shock occurs at a distance $r=r_1=r_2$ and time $t = t_1 + r/v_1 = t_2 + r/v_2$. Then, $\Delta t_\mathrm{var} = r\times(1/v_1 - 1/v_2)$, i.e.
 \begin{align}
