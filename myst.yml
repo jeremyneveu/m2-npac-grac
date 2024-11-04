@@ -18,7 +18,7 @@ project:
           institution: IJCLab
           city: Orsay
       orcid: 0000-0002-4202-8939
-      email: xxx
+      email: biteau@in2p3.fr
     - id: jneveu
       name: Jérémy Neveu
       affiliations:
@@ -53,7 +53,7 @@ project:
         - file: chapters/en/02_friedmann_equations
         - file: chapters/en/03_cosmological_models
         - file: chapters/en/04_astrophysical_emissions
-        #- file: chapters/05_astroparticle_sources
+        - file: chapters/en/05_astroparticle_sources
         #- file: chapters/06_supernovae
         #- file: chapters/fr/07_cmb
         #- file: chapters/10_lss
