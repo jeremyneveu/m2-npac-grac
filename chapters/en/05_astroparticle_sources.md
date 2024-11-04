@@ -61,7 +61,7 @@ $$
 \varepsilon_\nu \dd \nu = h\nu  \frac{\dd \mathcal{N}}{\dd^3 x \dd^3 p} 4\pi p^2 \dd p
 $$
 
-$\dd \mathcal{N}/\dd^3 x \dd^3 p$ is invariant under a Lorentz transformation. Indeed $\dd \mathcal{N}$ is countable and thus invariant. Under a boost $(\beta, \gamma)$ along the x-axis from the coomving frame (K') towards the observer's frame (K), one finds $\dd x = \gamma^{-1} \dd x'$ (length contraction) and $\dd p_x = \gamma (\dd p_{x'} + \beta \dd E') = \gamma \dd p_{x'}$ for particles with fixed energy (total momentum fixed between $p$ and $p + \dd p$). Thus $\dd^3 x \dd^3 p$ is invariant, *quod erat demonstrandum*.
+$\dd \mathcal{N}/\dd^3 x \dd^3 p$ is invariant under a Lorentz transformation. Indeed $\dd \mathcal{N}$ is countable and thus invariant. Under a boost $(\beta, \gamma)$ along the x-axis from the coomving frame (K') towards the observer's frame (K), one finds $\dd x = \gamma^{-1} \dd x'$ (length contraction) and $\dd p_x = \gamma (\dd p_{x'} + \beta \dd E') = \gamma \dd p_{x}'$ for particles with fixed energy (total momentum fixed between $p$ and $p + \dd p$). Thus $\dd^3 x \dd^3 p$ is invariant, *quod erat demonstrandum*.
  
  
 One finds
@@ -426,6 +426,29 @@ The classes of Galactic sources satisfying this condition up to the magnetic rig
 
 ### Cosmic-ray production rate
 
+Cosmic-ray accelerators must not only be able to achieve a given maximum rigidity, but must also be sufficiently luminous that their cumulative emission reproduces the observed intensity, $I_\mathrm{CR} = \frac{c}{4\pi} \varepsilon_\mathrm{CR}$.
 
+A particularly useful quantity for studying the origin of Galactic cosmic rays is the energy production rate:
+$w_\mathrm{GCR} = \varepsilon_\mathrm{GCR}({>}\,1\,\mathrm{GeV})/\tau_\mathrm{esc}$, where $\varepsilon_\mathrm{GCR}({>}\,1\,\mathrm{GeV})\approx 1.2 \times 10^6\,\mathrm{eV\,m}^{-3} \approx 6 \times 10^{45}\,\mathrm{J\,kpc}^{-3}$ was determined in [exercise %s](exo:milky_way) and where $\tau_\mathrm{esc} \gtrsim 15\,$Myr is the residence time of cosmic rays in the Galaxy. This residence time is estimated from so called cosmic-ray clocks (see e.g. {cite}`2014arXiv1407.5223L`), e.g. through the ratio between $^{10}$Be ($t_{1/2} = 1.4\,$Myr) and its stable isotope $^{9}$Be, both formed by the fragmentation of carbon and oxygen nuclei confined in the Milky Way.
+
+If we model the Milky Way as a disk with diameter $2r_\mathrm{MW} = 25\,$kpc and height $h_\mathrm{MW} = 0.3\,$kpc, then the energy production rate of Galactic cosmic rays integrated over the volume of the Milky Way yields the cumulative luminosity of the cosmic-ray sources:
+\begin{align}
+\sum_{\mathrm{src} \in \mathrm{MW}} L_\mathrm{src}(> 1\,\mathrm{GeV}) &= w_\mathrm{GCR} \times \pi r_\mathrm{MW}^2 h_\mathrm{MW}\\
+&\lesssim 2 \times 10^{33}\,\mathrm{W}.
+\end{align}
+
+The kinetic energy of a core-collapse supernova can be estimated to 
+\begin{align}
+T_\mathrm{CC} &= \frac{1}{2}M_\mathrm{ejecta} v_\mathrm{shock}^2 \\
+&\approx 10^{44}\,\mathrm{J} \times \Big( \frac{M_\mathrm{ejecta}}{10\,M_\odot} \Big) \times \Big( \frac{v_\mathrm{shock}}{3\times 10^3 \,\mathrm{km\,s}^{-1}} \Big)^2
+\end{align}
+and their explosion rate in the Milky-Way is estimated as $\lambda_\mathrm{CC} = (1.6 \pm 0.5)\times 10^{-2}\,\mathrm{yr}^{-1}$ ({cite}`2021NewA...8301498R`).
+
+If core-collapse supernovae are responsible for accelerating the majority of cosmic rays to energies greater than 1 GeV, then the efficiency of the conversion of kinetic energy into cosmic rays, $\eta_\mathrm{GCR}$, should satisfy the relation
+\begin{align}
+\eta_\mathrm{GCR} &= \frac{\sum_{\mathrm{src} \in \mathrm{MW}} L_\mathrm{src}(> 1\,\mathrm{GeV})}{T_\mathrm{CC}\lambda_\mathrm{CC} } \\
+&\lesssim 2\%,
+\end{align}
+a reasonnable constraint suggesting that core-collapse supernovae may be responsible for accelerating the bulk of Galactic cosmic rays.
 
 
