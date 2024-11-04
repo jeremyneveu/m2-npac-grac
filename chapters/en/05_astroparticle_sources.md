@@ -161,7 +161,10 @@ $$
 \end{align}
 $$
 
+
+Interestingly, the three components are close to equipartition.
 :::
+
 
 
 ### The spectrum, composition and arrival directions of cosmic rays

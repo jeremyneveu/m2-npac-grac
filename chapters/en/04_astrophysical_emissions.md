@@ -334,8 +334,3 @@ $$\begin{align}
 
 Now that we have estimated the energy densities associated with the photon fields emitted by the three major astrophysical processes, we can compare them with observations.
 
-
-
-Interestingly, all three components are close to equipartition.
-:::
-
