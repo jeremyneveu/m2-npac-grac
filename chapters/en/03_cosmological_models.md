@@ -268,10 +268,10 @@ This last equation resembles the equation for the conservation of mechanical ene
 - $\frac{1}{2}\Omega_\Lambda^0 a^2$ is an inverted harmonic potential (repulsive) centered around $a=0$.
 
 2. \begin{equation}
-\frac{ddot{a}}{H_0^2} = - \frac{1}{2}\frac{\Omega_m^0}{a^2 } -\frac{\Omega_r^0}{a^3 } + \Omega_\Lambda^0 a
+\frac{\ddot{a}}{H_0^2} = - \frac{1}{2}\frac{\Omega_m^0}{a^2 } -\frac{\Omega_r^0}{a^3 } + \Omega_\Lambda^0 a
 \end{equation}
 This equation resembles Newton's law applied to a massive body in one-dimensional motion. Let's make the analogy:
-- $\frac{ddot{a}}{H_0^2}$ acceleration of the solid body
+- $\frac{\ddot{a}}{H_0^2}$ acceleration of the solid body
 - $\frac{1}{2}\frac{\Omega_m^0}{a^2 }$ gravitational force (attractive)
 - $\Omega_\Lambda^0 a$ elastic repulsive force
 
@@ -289,7 +289,7 @@ V_{\rm eff}(a) = - \frac{1}{2}\frac{\Omega_m^0}{a} - \frac{1}{4}\Omega_m^0 a^2
 \end{equation}
 At $a=1$ or $t=0$, the first Friedmann equation gives :
 \begin{equation}
-1 = \Omega_m^0 + \Omega_\Lambda^0 + \Omega_k^0 \Omega_k^0 = 1 - \frac{3}{2}\Omega_m^0
+1 = \Omega_m^0 + \Omega_\Lambda^0 + \Omega_k^0  = 1 - \frac{3}{2}\Omega_m^0
 \end{equation}
 The model is spherical so $\Omega_k^0 = -k c^2 / H_0^2 < 0$ with $k=+1$ which implies that $\Omega_m^0 > 2/3$. In Einstein's Universe, $\Omega_m^0=1$.
 

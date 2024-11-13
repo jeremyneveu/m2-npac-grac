@@ -534,7 +534,7 @@ a = \frac{a_0}{1+z} \Rightarrow \dd a = -a_0 \frac{\dd z}{(1+z)^2}\Rightarrow \f
 D'où la distance comobile en terme de temps $t$, facteur d'échelle $a$ et redshift $z$ :
 \begin{align}
 \chi(\sigma_E) & = \chi(t_E) = \int_{t_E}^{t_0} \frac{c\dd t'}{a(t')} = \int_{a_E}^{a_0} \frac{c\dd a}{a^2 H(a)} \\
-& = \int_z^0 \frac{1+z}{a_0}\frac{-c\dd z}{(1+z)H(z)} = \frac{1}{a_0}\int_0^z\frac{c\dd z}{H(z)} = \chi(z)
+& = -\int_z^0 \frac{1+z}{a_0}\frac{-c\dd z}{(1+z)H(z)} = \frac{1}{a_0}\int_0^z\frac{c\dd z}{H(z)} = \chi(z)
 \end{align}
 On résume dans le tableau [](#tab:atz) comment se convertissent les paramètres $a$, $t$ et $z$ à différents moments dans la chronologie de l'Univers.
 

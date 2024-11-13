@@ -526,7 +526,7 @@ a = \frac{a_0}{1+z} \Rightarrow \dd a = -a_0 \frac{\dd z}{(1+z)^2}\Rightarrow \f
 Hence the comoving distance in terms of time $t$, scale factor $a$ and redshift $z$ :
 \begin{align}
 \chi(\sigma_E) & = \chi(t_E) = \int_{t_E}^{t_0} \frac{c\dd t'}{a(t')} = \int_{a_E}^{a_0} \frac{c\dd a}{a^2 H(a)} \\
-& = \int_z^0 \frac{1+z}{a_0}\frac{c\dd z}{(1+z)H(z)} = \frac{1}{a_0}\int_0^z\frac{c\dd z}{H(z)} = \chi(z)
+& = - \int_z^0 \frac{1+z}{a_0}\frac{c\dd z}{(1+z)H(z)} = \frac{1}{a_0}\int_0^z\frac{c\dd z}{H(z)} = \chi(z)
 \end{align}
 Table [](#tab:atz) summarizes how the parameters $a$, $t$ and $z$ are converted at different times in the chronology of the Universe.
 

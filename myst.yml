@@ -54,7 +54,7 @@ project:
         - file: chapters/en/03_cosmological_models
         - file: chapters/en/04_astrophysical_emissions
         - file: chapters/en/05_astroparticle_sources
-        #- file: chapters/06_supernovae
+        - file: chapters/fr/06_supernovae
         #- file: chapters/fr/07_cmb
         #- file: chapters/10_lss
         #- file: chapters/11_inflation
