@@ -98,8 +98,7 @@ Les supernovæ de type Ia (SNe Ia) sont les premières sondes cosmologiques qui
 :align: center
 :width: 60%
 
-La supernova SN 1994D (le point blanc brillant en bas à gauche de l'image), dans la galaxie spirale NGC
-4526.
+La supernova SN 1994D (le point blanc brillant en bas à gauche de l'image), dans la galaxie spirale NGC4526.
 :::
 
 :::{figure} ../../images/sn2023_ixf_ugri_gimp_leg.png
@@ -165,7 +164,7 @@ Le système UBV est l'un des systèmes photométriques photoélectriques standar
 :::
 
 
-Il faut donc définir un instant où comparer la brillance des chandelles standard et un filtre de référence. Pour des raisons pratiques, on utilise comme référence les magnitudes au maximum de l'émission. Pour des raisons historiques, on utilise la bande Johnsonn B comme filtre de référence. La magnitude du maximum de luminosité d'une supernovae de type Ia observée en bande B est donc utiliser comme chandelle standard, ou du moins standardisable.
+Il faut donc définir un instant où comparer la brillance des chandelles standard et un filtre de référence. Pour des raisons pratiques, on utilise comme référence les magnitudes au maximum de l'émission. Pour des raisons historiques, on utilise la bande Johnson B comme filtre de référence. La magnitude du maximum de luminosité d'une supernovae de type Ia observée en bande B est donc utiliser comme chandelle standard, ou du moins standardisable.
 
 ### Magnitude dans le référentiel au repos
 
