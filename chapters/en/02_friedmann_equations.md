@@ -1,5 +1,5 @@
 ---
-short_title: The Expanding Universe
+short_title: The expanding Universe
 authors:
   - jneveu
 keywords: cosmological distances, scale factor, dark energy
@@ -599,27 +599,27 @@ In a static, flat space, the apparent luminosity of a source at rest at distance
 $$
 \Phi_0 \equiv \frac{L_E}{4 \pi D_L^2(z)}
 $$
-Let's consider a source located in $\sigma_E$, emitting $n_E$ photons of mean frequency $\nu_E$ at time $t_E$ (refer again to the [](#fig:distances_croquis)). Its luminosity is :
+Let's consider a source located in $\sigma_E$, emitting $\delta N_E$ photons of mean frequency $\nu_E$ at time $t_E$ during $\delta t_E$ (refer again to the [](#fig:distances_croquis)). Its luminosity is :
 $$
-L_E = \frac{n_E h\nu_E}{\dd t_E}.$$ 
-So the flux density received by an observer is : 
+L_E = h\nu_E \frac{\delta N_E }{\delta t_E}.$$ 
+So the flux density received by an observer with a telescope of aperture size $A$ is : 
 $$
-\Phi_0 = \frac{n_0 h \nu_0}{\dd t_0 \dd S}.$$ 
+\Phi_0 = h \nu_0\frac{\delta N_0 }{A \delta t_0}.$$ 
 The surface over which the emitted flux is distributed at time $t_0$ is:
 $$
 S = \int_0^{2\pi} \int_0^\pi \sqrt{-g} \dd\theta \dd\phi = \int_0^{2\pi} \int_0^\pi a^2(t_0)\sigma^2(t_0)\sin^2\theta \dd\theta \dd\phi = 4 \pi a^2_0 \sigma^2_E.
 $$
 with $\sigma(t_0)=\sigma_E$.
-The number of emitted photons $n_E$ intercepted by the collecting surface of size $\dd S$ is therefore :
+The number of emitted photons $\delta N_E$ intercepted by the collecting surface of size $A$ is therefore :
 $$
-n_0 = n_E \dd S/(4 \pi a^2_0 \sigma^2_E).$$
+\delta N_0 = \delta N_E \frac{A}{4 \pi a^2_0 \sigma^2_E}.$$
 From the equation
 [](#eq:redshift2), we have:
 $$\nu_E = \nu_0 a_0/a(t_E) = \nu_0 (1+z)$$
 and also:
-$$\dd t_E = \dd t_0/(1+z).$$
+$$\delta t_E = \delta t_0/(1+z).$$
 Hence the received flux:
-$$\Phi_0 = \frac{n_0 h \nu_0}{\dd t_0 \dd S} = \frac{h \nu_0 n_E}{\dd t_0 4 \pi a^2_0 \sigma^2_E} = \frac{L_E}{4 \pi a^2_0 \sigma^2_E(1+z)^2}.$$
+$$\Phi_0 = h \nu_0\frac{\delta N_0 }{A \delta t_0 } = h \nu_0  \frac{\delta N_E}{4 \pi a^2_0 \sigma^2_E \delta t_0 } = \frac{L_E}{4 \pi a^2_0 \sigma^2_E(1+z)^2}.$$
 
 We deduce the expression for the luminosity distance in a curved, expanding universe, a function of cosmological parameters and redshift:
 $$

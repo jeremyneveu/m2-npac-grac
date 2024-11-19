@@ -343,27 +343,30 @@ Stratégies pour étalonner la mesure du flux lumineux des étoiles tertiaires (
 
 
 
-Mesure locale de $H_0$
+Mesure locale de $H_0$ (brouillon)
 ------------------------
 
-Montrer que dans la diagramme précédent on ne peut pas mesurer H_0 car dégénéré
+Le module de distance $\mu$ permet de mesurer la distance relative entre les SNe Ia, ce qui fournit des informations cruciales sur l'énergie noire, comme nous le verrons dans la section ? Cependant, la distance absolue des SNe Ia ne peut être obtenue par cette méthode, car la distance de luminosité dépend de la valeur de $H_0$. Par conséquent, il y a une dégénérescence entre la luminosité de la SNe Ia et $H_0$ lors de l'estimation de $M_B$. Pour briser cette dégénérescence, l'échelle des distances cosmiques est utilisée. Cette méthode implique une série de mesures de distance qui se chevauchent en utilisant divers objets et techniques astronomiques, comme l'illustre la figure 1.17 de Riess et al. (2022). En ancrant les distances des SNe Ia à des distances mesurées indépendamment par l'échelle des distances cosmiques, nous pouvons démêler la magnitude absolue des SNe Ia de celle de H0. Dans ce qui suit, nous allons discuter des différentes étapes de cette échelle de distance.
 
+### Mesure de la parallaxe
 
-1.7.1 Mesure de la parallaxe
-Lorsqu'une étoile de premier plan est observée à partir de deux positions opposées, A et B, sur l'orbite de la Terre autour du Soleil, elle semble se déplacer par rapport au champ d'étoiles d'arrière-plan vers les positions A' et B'. Ce décalage apparent est appelé parallaxe. La distance entre la Terre et le Soleil est définie comme une unité astronomique (UA)1, c'est-à-dire la moyenne entre les deux demi-axes de l'orbite elliptique de la Terre. Avec cette distance, et en mesurant le déplacement apparent de la position de l'étoile, on peut calculer par trigonométrie la distance entre l'observateur et l'étoile. Ce phénomène, connu sous le nom de parallaxe, est schématisé dans la figure 1.15. Les mesures de parallaxe effectuées par Gaia atteignent une précision de 0,04 marcsec (Luri et al., 2018). Cette méthode constitue le premier échelon de l'échelle des distances cosmiques.
-1.7.2 Céphéides
+Lorsqu'une étoile de premier plan est observée à partir de deux positions opposées, A et B, sur l'orbite de la Terre autour du Soleil, elle semble se déplacer par rapport au champ d'étoiles d'arrière-plan vers les positions A' et B'. Ce décalage apparent est appelé parallaxe. La distance entre la Terre et le Soleil est définie comme une unité astronomique (UA), c'est-à-dire la moyenne entre les deux demi-axes de l'orbite elliptique de la Terre. Avec cette distance, et en mesurant le déplacement apparent de la position de l'étoile, on peut calculer par trigonométrie la distance entre l'observateur et l'étoile. Ce phénomène est connu sous le nom de parallaxe. Les mesures de parallaxe effectuées par Gaia atteignent une précision de 0,04 marcsec (Luri et al., 2018). Cette méthode constitue le premier échelon de l'échelle des distances cosmiques.
+
+###  Céphéides
+
 Les céphéides sont un type d'étoile qui pulse radialement, subissant des variations régulières de diamètre et de température. Ces pulsations se traduisent par des changements de luminosité avec une période et une amplitude bien définies et stables. Elles ont été découvertes par Henrietta Swan Leavitt (Leavitt, 1908), qui a mis en évidence la corrélation entre le diamètre et la température de l'étoile.
-Le module de distance µ permet de mesurer la distance relative entre les SNe Ia, ce qui fournit des informations cruciales sur l'énergie noire, comme nous le verrons dans la section ? Cependant, la distance absolue des SNe Ia ne peut être obtenue par cette méthode, car la distance de luminosité dépend de la valeur de H0. Par conséquent, il y a une dégénérescence entre la luminosité de la SNe Ia et H0 lors de l'estimation de MB. Pour briser cette dégénérescence, l'échelle des distances cosmiques est utilisée. Cette méthode implique une série de mesures de distance qui se chevauchent en utilisant divers objets et techniques astronomiques, comme l'illustre la figure 1.17 de Riess et al. (2022). En ancrant les distances des SNe Ia à des distances mesurées indépendamment par l'échelle des distances cosmiques, nous pouvons démêler la magnitude absolue des SNe Ia de celle de H0. Dans ce qui suit, nous allons discuter des différentes étapes de cette échelle de distance.
 
-
-1.7.3 Supernovae de type Ia
-Une fois que la fonction période-luminosité des céphéides a été calibrée, nous voulons transférer cette calibration à des bougies standard permettant une estimation plus poussée de la distance, telles que les SNe Ia. Pour estimer la distance d'une galaxie à l'aide d'une céphéide, celle-ci doit être résolue par rapport aux autres sources lumineuses de la galaxie et sa photométrie doit être réalisée. Ensuite, l'observation d'une SN Ia dans la même galaxie permet de calibrer la luminosité de la SN. Riess et al, 2022 ont observé 42 SNe Ia dans 37 hôtes calibrés. Ces SNe Ia sont représentées dans le graphique du milieu de la figure 1.17, ce qui permet de calibrer la magnitude absolue des SNe Ia.
-Enfin, le graphique en haut à droite montre un diagramme de Hubble des SNe Ia, qui est directement lié à l'estimation de la distance géométrique par la méthode de la parallaxe. Avec cet échantillon, Riess et al. 2022 ont obtenu une mesure de H0 de 73,04 ± 1,04 km/s/Mpc.
-18
-1. Supernovae de type Ia
-Figure 1.15 : Schéma du phénomène de parallaxe d'une étoile d'avant-plan observée à deux positions terrestres A et B.
 La luminosité d'une céphéide et sa période de pulsation. Cette loi est connue sous le nom de loi de Leavitt, et la figure 1.16 de Leavitt et Pickering, 1912, illustre cette relation.
-En observant les Céphéides suffisamment près pour utiliser la méthode de parallaxe pour l'estimation de la distance, nous pouvons calibrer la magnitude absolue des Céphéides, et donc leur fonction période-luminosité. En raison de la stabilité de leur fonction période-luminosité, cette calibration peut ensuite être appliquée à toutes les Céphéides, ce qui nous permet de mesurer leur distance de luminosité dans d'autres galaxies où la méthode de la parallaxe n'est pas réalisable. Par conséquent, les céphéides servent de première bougie standard dans l'échelle des distances cosmiques, permettant de déterminer la distance d'autres galaxies, comme le montre le graphique en bas à gauche de la figure 1.17.
+En observant les Céphéides suffisamment près pour utiliser la méthode de parallaxe pour l'estimation de la distance, nous pouvons calibrer la magnitude absolue des Céphéides, et donc leur fonction période-luminosité. En raison de la stabilité de leur fonction période-luminosité, cette calibration peut ensuite être appliquée à toutes les Céphéides, ce qui nous permet de mesurer leur distance de luminosité dans d'autres galaxies où la méthode de la parallaxe n'est pas réalisable. Par conséquent, les céphéides servent de première chandelle standard dans l'échelle des distances cosmiques, permettant de déterminer la distance d'autres galaxies, comme le montre le graphique en bas à gauche de la figure 1.17.
+
+
+
+### Supernovae de type Ia
+
+Une fois que la fonction période-luminosité des céphéides a été calibrée, nous voulons transférer cette calibration aux SNe Ia. Pour estimer la distance d'une galaxie à l'aide d'une céphéide, celle-ci doit être résolue par rapport aux autres sources lumineuses de la galaxie et sa photométrie doit être réalisée. En mesurant sa période de variation, on en déduit sa luminosité intrinsèque donc la distance de la galaxie hôte. 
+
+Ensuite, l'observation d'une SN Ia dans la même galaxie permet de connaître sa luminosité intrinsèque puisque la distance est connue via la céphéide. Riess et al, 2022 ont observé 42 SNe Ia dans 37 hôtes calibrés. Ces SNe Ia sont représentées dans le graphique du milieu de la figure 1.17, ce qui permet de calibrer la magnitude absolue des SNe Ia. Enfin, le graphique en haut à droite montre un diagramme de Hubble des SNe Ia, qui est directement lié à l'estimation de la distance géométrique par la méthode de la parallaxe. Avec cet échantillon, Riess et al. 2022 ont obtenu une mesure de $H_0$ de $73.04 \pm 1,04\,$km/s/Mpc.
+
 
 
 [^bolo]: Un capteur bolométrique est capable d'absorber des photons et de mesurer leur énergie peu importe leur longueur d'onde (par exemple en mesurant l'échauffement d'un matériau). A contrario, un capteur photonique basé sur l'effet photoélectrique devient transparent dans les grandes longueurs d'ondes, lorsque l'énergie du photon passe sous le seuil d'émission d'un électron.

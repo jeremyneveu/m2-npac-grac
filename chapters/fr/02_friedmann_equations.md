@@ -592,27 +592,26 @@ Dans un espace statique et plat, la luminosité apparente d'une source au repos 
 $$
 \Phi_0 \equiv \frac{L_E}{4 \pi D_L^2(z)}
 $$
-Considérons une source située en $\sigma_E$, émettant $n_E$ photons de fréquence moyenne $\nu_E$ à l'instant $t_E$ (se reporter encore à la [](#fig:distances_croquis)). Sa luminosité est :
+Considérons une source située en $\sigma_E$, émettant $\delta N_E$ photons de fréquence moyenne $\nu_E$ à l'instant $t_E$ pendant un temps $\delta t_E$ (se reporter encore à la [](#fig:distances_croquis)). Sa luminosité est :
 $$
-L_E = \frac{n_E h\nu_E}{\dd t_E}.$$ 
-Alors le flux surfacique reçu par un observateur est : 
+L_E = h\nu_E \frac{\delta N_E }{\delta t_E}.$$ 
+Alors le flux surfacique reçu par un observateur possédant un télescope d'ouverture $A$ est : 
 $$
-\Phi_0 = \frac{n_0 h \nu_0}{\dd t_0 \dd S}.$$ 
+\Phi_0 = h \nu_0\frac{\delta N_0 }{A \delta t_0}.$$ 
 La surface sur laquelle se répartit, à l'instant $t_0$, le flux émis est:
 $$
 S = \int_0^{2\pi} \int_0^\pi \sqrt{-g} \dd\theta \dd\phi = \int_0^{2\pi} \int_0^\pi a^2(t_0)\sigma^2(t_0)\sin^2\theta \dd\theta \dd\phi = 4 \pi a^2_0 \sigma^2_E.
 $$
 avec $\sigma(t_0)=\sigma_E$.
-Le nombre de photons émis $n_E$ intercepté par la surface collectrice de taille $\dd S$ est donc :
+Le nombre de photons émis $\delta N_E$ intercepté par la surface collectrice de taille $A$ est donc :
 $$
-n_0 = n_E \dd S/(4 \pi a^2_0 \sigma^2_E).$$
-Or à partir de l'équation
-[](#eq:redshift2), on a :
+\delta N_0 = \delta N_E \frac{A}{4 \pi a^2_0 \sigma^2_E}.$$
+Or à partir de l'équation [](#eq:redshift2), on a :
 $$\nu_E = \nu_0 a_0/a(t_E) = \nu_0 (1+z)$$
 et aussi :
-$$\dd t_E = \dd t_0/(1+z).$$
+$$\delta t_E = \delta t_0/(1+z).$$
 D'où le flux reçu :
-$$\Phi_0 = \frac{n_0 h \nu_0}{\dd t_0 \dd S} =  \frac{h \nu_0 n_E}{\dd t_0 4 \pi a^2_0 \sigma^2_E} = \frac{L_E}{4 \pi a^2_0 \sigma^2_E(1+z)^2}.$$
+$$\Phi_0 = h \nu_0\frac{\delta N_0 }{A \delta t_0 } = h \nu_0  \frac{\delta N_E}{4 \pi a^2_0 \sigma^2_E \delta t_0 } = \frac{L_E}{4 \pi a^2_0 \sigma^2_E(1+z)^2}.$$
 
 On en déduit l'expression de la distance de luminosité dans un univers courbe et en expansion, fonction des paramètres cosmologiques et le redshift :
 $$
