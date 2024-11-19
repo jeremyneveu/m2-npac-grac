@@ -1,8 +1,8 @@
 ---
-short_title: []
+short_title: Jetted and non-jetted astroparticle sources
 authors:
   - jbiteau
-keywords: []
+keywords: jet
 ---
 
 Jetted and non-jetted astroparticle sources in the universe
@@ -267,7 +267,7 @@ Radio emission from the jet of the active galactic nucleus 3C 279. From this [pa
 :::{solution} exo:superluminal
 :class: dropdown
 
-1. Following the notations in [figure %s](fig:superluminal_sol), the apparent velocity, $v_\mathrm{app}$, of the plasma blob is given by
+1. Following the notations in [figure %s](#fig:superluminal_sol), the apparent velocity, $v_\mathrm{app}$, of the plasma blob is given by
 
 $$
 \begin{align}
@@ -281,7 +281,7 @@ where $v$ is the physical speed of the plasma blob along the jet in the observer
 
 2. Using $\beta = \frac{v}{c}$ and $t = \tan(\theta/2)$, together with standard trigonometry gives:
 $$
-v_\mathrm{app} &= \frac{2t\beta }{1+t^2 - (1-t^2)\beta}
+v_\mathrm{app} = \frac{2t\beta }{1+t^2 - (1-t^2)\beta}
 $$
 So that after a bit of algebra, an apparent speed that is equal to a fraction $k$ of the speed of light reads
 $$
@@ -349,7 +349,7 @@ The prompt emission of a short GRB shows an observed luminosity $L = 10^{44}\,$W
 3. Give a constraint (expression and numerical value) on the the Lorentz factor of the first shell and on the distance from the central engine at which the internal shock between the two shells occurs.
 
 :::{figure}  ../../images/GRB_scenario_DESY.jpg
-:name: fig:superluminal_sol
+:name: fig:grb_desy
 :align: center
 :width: 80%
 
@@ -389,7 +389,7 @@ Injecting this lower bound on the Lorentz factor into the solution to question 1
 ### Maximum energy: the Hillas criterion
 
 
-A necessary condition for accelerating particles up to a given maximum energy is that their astrophysical source is large enough, or magnetised enough, to confine them for at least one radius of gyration. This relatively simple criterion, attributed to Michael Hillas, is used to classify astrophysical accelerators in a so-called Hillas diagram, as shown in [figure %s](fig:cr_hillas).
+A necessary condition for accelerating particles up to a given maximum energy is that their astrophysical source is large enough, or magnetised enough, to confine them for at least one radius of gyration. This relatively simple criterion, attributed to Michael Hillas, is used to classify astrophysical accelerators in a so-called Hillas diagram, as shown in [figure %s](#fig:cr_hillas).
 
 :::{figure}  ../../images/CR_Hillas.jpeg
 :name: fig:cr_hillas
@@ -422,14 +422,14 @@ R_\mathrm{obs} < \Gamma \beta r' B' c\\\
 \end{align}
 $$
 
-The classes of Galactic sources satisfying this condition up to the magnetic rigidity corresponding to the knee and second knee of the cosmic-ray spectrum, i.e. a proton energy of $\approx 3 \times 10^{15}\,\mathrm{eV}$ and an energy of $\approx 10^{17}\,\mathrm{eV}$ for fully ionized iron are shown in [figure %s](fig:cr_hillas). Extragalactic sources are also shown and can be compared to the Hillas criterion up to the ankle and cut-off of the cosmic-ray spectrum, i.e. for maximum proton energy of $\approx 5 \times 10^{18}\,\mathrm{eV}$ and iron energy of $\approx 10^{20}\,\mathrm{eV}$.
+The classes of Galactic sources satisfying this condition up to the magnetic rigidity corresponding to the knee and second knee of the cosmic-ray spectrum, i.e. a proton energy of $\approx 3 \times 10^{15}\,\mathrm{eV}$ and an energy of $\approx 10^{17}\,\mathrm{eV}$ for fully ionized iron are shown in [figure %s](#fig:cr_hillas). Extragalactic sources are also shown and can be compared to the Hillas criterion up to the ankle and cut-off of the cosmic-ray spectrum, i.e. for maximum proton energy of $\approx 5 \times 10^{18}\,\mathrm{eV}$ and iron energy of $\approx 10^{20}\,\mathrm{eV}$.
 
 ### Cosmic-ray production rate
 
 Cosmic-ray accelerators must not only be able to achieve a given maximum rigidity, but must also be sufficiently luminous that their cumulative emission reproduces the observed intensity, $I_\mathrm{CR} = \frac{c}{4\pi} \varepsilon_\mathrm{CR}$.
 
 A particularly useful quantity for studying the origin of Galactic cosmic rays is the energy production rate:
-$w_\mathrm{GCR} = \varepsilon_\mathrm{GCR}({>}\,1\,\mathrm{GeV})/\tau_\mathrm{esc}$, where $\varepsilon_\mathrm{GCR}({>}\,1\,\mathrm{GeV})\approx 1.2 \times 10^6\,\mathrm{eV\,m}^{-3} \approx 6 \times 10^{45}\,\mathrm{J\,kpc}^{-3}$ was determined in [exercise %s](exo:milky_way) and where $\tau_\mathrm{esc} \gtrsim 15\,$Myr is the residence time of cosmic rays in the Galaxy. This residence time is estimated from so called cosmic-ray clocks (see e.g. {cite}`2014arXiv1407.5223L`), e.g. through the ratio between $^{10}$Be ($t_{1/2} = 1.4\,$Myr) and its stable isotope $^{9}$Be, both formed by the fragmentation of carbon and oxygen nuclei confined in the Milky Way.
+$w_\mathrm{GCR} = \varepsilon_\mathrm{GCR}({>}\,1\,\mathrm{GeV})/\tau_\mathrm{esc}$, where $\varepsilon_\mathrm{GCR}({>}\,1\,\mathrm{GeV})\approx 1.2 \times 10^6\,\mathrm{eV\,m}^{-3} \approx 6 \times 10^{45}\,\mathrm{J\,kpc}^{-3}$ was determined in [exercise %s](#exo:milky_way) and where $\tau_\mathrm{esc} \gtrsim 15\,$Myr is the residence time of cosmic rays in the Galaxy. This residence time is estimated from so called cosmic-ray clocks (see e.g. {cite}`2014arXiv1407.5223L`), e.g. through the ratio between $^{10}$Be ($t_{1/2} = 1.4\,$Myr) and its stable isotope $^{9}$Be, both formed by the fragmentation of carbon and oxygen nuclei confined in the Milky Way.
 
 If we model the Milky Way as a disk with diameter $2r_\mathrm{MW} = 25\,$kpc and height $h_\mathrm{MW} = 0.3\,$kpc, then the energy production rate of Galactic cosmic rays integrated over the volume of the Milky Way yields the cumulative luminosity of the cosmic-ray sources:
 \begin{align}

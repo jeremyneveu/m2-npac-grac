@@ -1,8 +1,8 @@
 ---
-short_title: []
+short_title: Astrophysical emissions
 authors:
   - jbiteau
-keywords: []
+keywords: astrophysical emissions
 ---
 
 
@@ -70,7 +70,7 @@ These four types of structure are visible in the distribution of nearby galaxies
 :align: center
 :width: 70%
 
-Local Sheet galaxies ($R \approx 5\,$Mpc) surrounding the local group ($R \approx 0.5\,$ Mpc). From {cite}`2014MNRAS.440..405M`.
+Local Sheet galaxies ($R \approx 5\,$Mpc) surrounding the local group ($R \approx 0.5\,$Mpc). From {cite}`2014MNRAS.440..405M`.
 :::
 
 Opposite the galaxy NGC 253, about $16\,$Mpc from the Milky Way, is the Virgo cluster of galaxies, which has a rugby ball structure, as can be seen below. Galaxy clusters can contain several thousand galaxies.
