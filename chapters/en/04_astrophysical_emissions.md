@@ -303,7 +303,7 @@ Matter accretion around supermassive black holes, in particular around active ga
 2. For $\psi_\mathrm{accr}(t) = f_\mathrm{accr} \psi(t)$ with $f_\mathrm{accr} = 1/3000$, the energy density of the photon field emitted by the accretion processes is
 $$\begin{align}
 \varepsilon_{\gamma, \mathrm{accr}} &= \frac{\eta_\mathrm{accr}}{1-\eta_\mathrm{accr}} c^2 \int \dd t \Psi_\mathrm{accr}(t) \nonumber \\
-	&=  f_\mathrm{accr} \frac{\eta_\mathrm{accr}/\eta_\odot}{1-\eta_\mathrm{accr}} \rho_{\gamma, \mathrm{nucl}} \nonumber \\
+	&=  f_\mathrm{accr} \frac{\eta_\mathrm{accr}/\eta_\odot}{1-\eta_\mathrm{accr}} \varepsilon_{\gamma, \mathrm{nucl}} \nonumber \\
 & \approx 1.5 \times 10^{3}\mathrm{\,eV\,m}^{-3}
 \end{align}$$
 
@@ -327,7 +327,7 @@ Using the ratio of jet kinetic energy to accreted mass energy of $0.5\%$, we obt
 
 $$\begin{align}
 \varepsilon_{\gamma, \mathrm{accr}} &=\eta_\mathrm{jet} c^2 \int \dd t \Psi_\mathrm{accr}(t) \nonumber \\
-	&=  f_\mathrm{accr} \frac{\eta_\mathrm{jet}}{\eta_\odot} \rho_{\gamma, \mathrm{nucl}} \nonumber \\
+	&=  f_\mathrm{accr} \frac{\eta_\mathrm{jet}}{\eta_\odot} \varepsilon_{\gamma, \mathrm{nucl}} \nonumber \\
 & \approx 3 \mathrm{\,eV\,m}^{-3}
 \end{align}$$
 :::
