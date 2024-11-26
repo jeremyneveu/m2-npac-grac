@@ -416,7 +416,7 @@ $$
 \int_{t_E+T_E}^{t_0+T_0} \frac{c\dd t}{a(t)} & =\int_{t_E}^{t_0} \frac{c\dd t}{a(t)}  
 \Leftrightarrow \int_{t_E+T_E}^{t_E} \frac{c\dd t}{a(t)} =\int_{t_0+T_0}^{t_0} \frac{c\dd t}{a(t)} \\
 \Leftrightarrow \frac{cT_0}{a(t_0)} & = \frac{c T_E}{a(t_E)}  
-\Leftrightarrow \frac{\lambda_0}{\lambda_E} = \frac{a(t_0)}{a(t_E)}{eq:redshift2}
+\Leftrightarrow \frac{\lambda_0}{\lambda_E} = \frac{a(t_0)}{a(t_E)}\label{eq:redshift2}
 \end{aligned}
 $$
 Directly, if space is expanding, then $a(t_E) < a(t_0)$ and the received wavelength $\lambda_0$ is therefore greater than the transmitted wavelength $\lambda_E$. We then define the spectral shift, commonly called _redshift_ due to the fact that almost all observed galaxy spectra are redshifted, as :

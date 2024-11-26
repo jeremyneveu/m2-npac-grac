@@ -198,7 +198,7 @@ g^{\mu\nu} = \begin{pmatrix}
 \end{pmatrix}.
 $$
 
-Using the FLRW metric [](#eq:flrw), let's calculate the following affine connection from equation [](#eq:connection):
+Using the FLRW metric [](#eq:flrw), let's calculate the following affine connection from equation [](#eq:connexion):
 $$
 \begin{aligned}
 \Gamma^1_{\ 01} & = \frac{1}{2} g^{1 \mu} \left( \partial_0 g_{1\mu} + \partial_1 g_{0 \mu} - \partial_\mu g_{01} \right) \\
@@ -400,7 +400,7 @@ $$\dd U = T \dd S - P \dd V $$
 $$U = a^3 \epsilon, \quad V = a^3$$
 $$ \dd(a^3 \epsilon) 
 = - P \dd (a^3) + T \dd S \Rightarrow 3 \dot{a} a^2 \epsilon + a^3 \dot{\epsilon} = - 3 P \dot{a} a^2 + T \frac{\dd S}{\dd t}\Rightarrow \dot{\epsilon} 
-= -3\frac{\dot{a}{a}(P+\epsilon) +T \frac{\dd S}{\dd t} $$
+= -3\frac{\dot{a}}{a}(P+\epsilon) +T \frac{\dd S}{\dd t} $$
 So 
 $$ \frac{\dd S}{\dd t} = 0$$
 and the expansion is isentropic. 
@@ -577,7 +577,7 @@ The major challenge for current and future cosmological surveys is to measure $w
 Cosmological distances
 ------------
 
-Cosmology is an observational science. We need to infer the properties of the Universe without being able to move around or repeat the Big Bang experience, but from our observations alone. Cosmological parameters are linked to the expansion rate of the Universe $H(z)$. So, to estimate them, we need to be able to measure $H(z)$. This expansion rate is present in the defined proper distance and comobile distance [Sec. {number}](#proper-distance-and-comobile-distance), but these are not measurable. Telescopes, on the other hand, can measure luminous fluxes and angles: if we know the luminosity of the observed object or its physical size, we can define its distance and link it to the expansion rate $H(z)$.
+Cosmology is an observational science. We need to infer the properties of the Universe without being able to move around or repeat the Big Bang experience, but from our observations alone. Cosmological parameters are linked to the expansion rate of the Universe $H(z)$. So, to estimate them, we need to be able to measure $H(z)$. This expansion rate is present in the defined proper distance and comobile distance [Sec. {number}](#proper-distance-and-comoving-distance), but these are not measurable. Telescopes, on the other hand, can measure luminous fluxes and angles: if we know the luminosity of the observed object or its physical size, we can define its distance and link it to the expansion rate $H(z)$.
 
 
 ### Hubble distance
@@ -714,7 +714,7 @@ $$D_A(z) = \frac{1}{1+z} \left\lbrace
 \end{array}
 \right. 
 .$$
-From exercise [](#exo:sphere-comobile), we can see that the use of $\sigma$ instead of $\chi$ is well suited to the three types of Universe curvatures in these distance definitions.
+From exercise [](#exo:sphere-comoving), we can see that the use of $\sigma$ instead of $\chi$ is well suited to the three types of Universe curvatures in these distance definitions.
 
 :::{note} Hubble-Lemaître law
 
