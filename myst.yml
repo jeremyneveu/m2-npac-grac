@@ -36,6 +36,9 @@ project:
     '\dd': '\mathrm{d}'
     '\GN': '\mathcal{G}'  # newton constant
     '\parsec': '\mathrm{pc}'  # parsec
+    '\kelvin': '\mathrm{K}'
+    '\GeV': '\mathrm{GeV}'
+    '\MeV': '\mathrm{MeV}'
   abbreviations:
     CMB: Fond Diffus Cosmologique
     FLRW: Friedmann-Lemaître-Robertson-Walker
@@ -56,7 +59,7 @@ project:
         - file: chapters/en/04_astrophysical_emissions
         - file: chapters/en/05_astroparticle_sources
         - file: chapters/fr/06_supernovae
-        #- file: chapters/fr/07_cmb
+        - file: chapters/fr/07_cmb
         #- file: chapters/10_lss
         #- file: chapters/11_inflation
         #- file: chapters/12_lcdm_and_beyond
