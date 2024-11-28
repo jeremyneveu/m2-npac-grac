@@ -222,6 +222,14 @@ For the $\Lambda$CDM model with $\Omega_m^0\approx 0.3$ and $\Omega_\Lambda^0\ap
 :::
 
 
+$\Lambda$CDM model
+------------------
+
+The expansion of the Universe is now well described by the flat $\Lambda$CDM model ($\Omega_k^0=0$). The proportions of each of these components are now estimated at {cite}`Planck2018`:
+$$Omega_\Lambda^0 = 0.685,\quad \Omega_m^0=315$$
+Cold matter can be separated into two contributions: dark matter $\Omega_{c}^0=0.264$ and baryonic matter [^baryons] $\Omega_b^0=0.049$.
+
+
 Mechanical analogy
 -------------------
 

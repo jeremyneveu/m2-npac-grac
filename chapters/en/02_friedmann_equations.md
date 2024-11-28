@@ -64,7 +64,7 @@ T^{\mu \nu}(t, \vec x) = \sum_n p_n^{\mu} \frac{\dd x_n^\nu(t)}{\dd t} \delta^{(
 $$
 with $x_n^0(t)=ct$. Since the energy of a massive particle is $E=\sqrt{m^2\gamma^2 \vec v^2 c^2 + m^2 c^4}$ and that of a zero-mass particle is $E=\vert \vec p \vert c$, then we show that $p_n^\mu c = E_n (\dd x_n^\mu /c \dd t)$. Hence the energy-momentum tensor is written as a symmetrical tensor:
 $$
-T^{\mu \nu}(t, \vec x) = c^2 \sum_n \frac{p_n^{\mu} p_n^{\nu}}{E_n} \delta^{(3)}(\vec x - \vec x_n(t))
+T^{\mu \nu}(t, \vec x) = c^2 \sum_n \frac{p_n^{\mu} p_n^{\nu}}{E_n} \delta^{(3)}(\vec x - \vec x_n(t))\label{eq:TmunuGaz}
  $$
 
 :::

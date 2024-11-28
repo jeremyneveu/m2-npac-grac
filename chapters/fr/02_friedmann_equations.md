@@ -65,7 +65,7 @@ T^{\mu \nu}(t, \vec x) = \sum_n p_n^{\mu} \frac{\dd x_n^\nu(t)}{\dd t} \delta^{(
 $$
 avec $x_n^0(t)=ct$. Comme l'énergie d'une particule massive est $E=\sqrt{m^2\gamma^2 \vec v^2 c^2 + m^2 c^4}$ et celle d'une particule de masse nulle est $E=\vert \vec p \vert c$, alors on démontre que $p_n^\mu c = E_n (\dd x_n^\mu /c \dd t)$. D'où l'écriture du tenseur énergie-impulsion en tant que tenseur symétrique :
 $$
-T^{\mu \nu}(t, \vec x) = c^2 \sum_n \frac{p_n^{\mu} p_n^{\nu}}{E_n} \delta^{(3)}(\vec x - \vec x_n(t))
+T^{\mu \nu}(t, \vec x) = c^2 \sum_n \frac{p_n^{\mu} p_n^{\nu}}{E_n} \delta^{(3)}(\vec x - \vec x_n(t))\label{eq:TmunuGaz}
 $$
 
 :::
