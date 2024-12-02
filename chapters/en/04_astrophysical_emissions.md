@@ -12,11 +12,11 @@ Astrophysical emissions on cosmic scales
 A homogeneous and isotropic universe?
 --------------------------------
 
-The cosmological models that we have discussed postulate that the universe is homogeneous and isotropic on large scales, i.e. typical distances greater than 100 Mpc. Below this characteristic scale, the galaxies observed in wide-field optical surveys are distributed according to the cosmic web. The large structures that weave this web formed as a result of the growth of the fluctuations in the CMB. Due to the properties of gravitation, an initially ellipsoidal overdensity collapses preferentially along its smallest axis, resulting in a sheet (so called Zel'dovich pancake). These sheets can collapse in the form of filaments, which themselves converge towards galaxy clusters. The areas not populated by the cosmic web constitute the cosmic voids, which occupy most of space.
+The cosmological models that we have discussed postulate that the universe is homogeneous and isotropic on large scales, i.e. distances typically greater than 100 Mpc. Below this characteristic scale, the galaxies observed in wide-field optical surveys are distributed according to the cosmic web. The large structures that weave this web formed as a result of the growth of the fluctuations in the CMB. Due to the properties of gravitation, an initially ellipsoidal overdensity collapses preferentially along its smallest axis, resulting in a sheet (so called Zel'dovich pancake). These sheets can collapse in the form of filaments, which themselves converge towards galaxy clusters. The areas not populated by the cosmic web constitute the cosmic voids, which occupy most of space.
 
 ### Distance from local large-scale structures
 
-These structures arrange themselves in a network resembling that of soap bubbles. A simplified crystallographic representation is given below, with $l$ the characteristic cell size and $w$ the typical diameter of clusters, or the cross-section of filaments. Cosmological simulations suggest a void occupancy rate of the order of $(1-w/l)³ = 75\%$ (see exercise below). Knowing that the characteristic radius of the clusters we observe is $w \approx 1\,$Mpc, we deduce a typical cell size of the order of $l \approx 10\,$Mpc.
+The structures that form the cosmic web arrange themselves in a network resembling that of soap bubbles. A simplified crystallographic representation is given below, with $l$ the characteristic cell size and $w$ the typical diameter of clusters, or the cross-section of filaments. Cosmological simulations suggest a void occupancy rate of the order of $(1-w/l)³ = 75\%$ (see exercise below). Knowing that the characteristic radius of the clusters we observe is $w \approx 1\,$Mpc, we deduce a typical cell size of the order of $l \approx 10\,$Mpc.
 
 
 :::{figure} ../../images/bubble_network_2019GReGr..51....9F_ 2022A&A...662A..87O.jpg
@@ -61,7 +61,7 @@ The following table, adapted from {cite}`2022A&A...662A..87O`, provides a compar
 Large-scale cosmological simulations indicate that at $z=0$, clusters and filaments encompass ${\sim}\,50\%$ and ${\sim}\,45\%$ of dark matter respectively. Taking into account feedback from galaxy winds and jets suggests a more diffuse baryon distribution: ${\sim}\,25\%$ of baryons would be found in clusters, ${\sim}\,45\%$ in filaments and sheets, ${\sim}\,30\%$ in voids {cite:p}`2016MNRAS.457.3024H`.
 :::
 
-These four types of structure are visible in the distribution of nearby galaxies. Our galaxy, its neighbour Andromeda at $0.75\,$Mpc and their satellites, such as the Large Magellanic Cloud at $50\,$kpc, form the Local Group. As illustrated in 
+The four types of structure (voids, sheets, filaments, clusters) are visible in the distribution of nearby galaxies. Our galaxy, its neighbour Andromeda at $0.75\,$Mpc and their satellites, such as the Large Magellanic Cloud at $50\,$kpc, form the Local Group. As illustrated in 
 [](#fig:council-giants), the Local Group is at the heart of the Local Sheet. This sheet is a planar structure with a diameter of ${\sim}\,10\,$Mpc, delimiting one side of the Local Void.
 
 
@@ -105,13 +105,14 @@ The local superclusters. Velocity streamlines of our supercluster, Laniakea, are
 
 ### Mass of local large-scale structures
 
-Not only can astronomers measure the position of galaxies in the sky, they can also measure the radial component of their velocity as well as their distance from the stars that calibrate the cosmic distance ladder. The velocity field of galaxies can thus be used to constrain the gravitational field of Laniakea or its companion supercluster Perseus-Pisces. The mass of the Laniakea supercluster is estimated at ${\sim}\,10^{17}\, M_\odot$ {cite:p}`2014Natur.513...71T` [^a]. On a smaller scale, the mass of the Virgo cluster is estimated at ${\sim}\,10^{14}\, M_\odot$ {cite:p}`2016A&A...596A.101P`. Such dynamical arguments also yield an estimate of the mass of the Local Group of galaxies at ${\sim}\,3 \times 10^{12}\, M_\odot$. The Local Group dynamical mass is dominated by that of the Milky Way, $(1. 2 \pm 0.2)  \times 10^{12}\, M_\odot$ and Andromeda, $(1.8 \pm 0.5) 10^{12}\, M_\odot$ {cite:p}`2022ApJ...928L...5B`.
+Not only can astronomers measure the position of galaxies in the sky, they can also measure the radial component of their velocity as well as their distance from the stars that calibrate the cosmic distance ladder. The velocity field of galaxies can thus be used to constrain the gravitational field of Laniakea or its companion supercluster Perseus-Pisces. The mass of the Laniakea supercluster is estimated at ${\sim}\,10^{17}\, M_\odot$ {cite:p}`2014Natur.513...71T` [^a]. On a smaller scale, the mass of the Virgo cluster is estimated at ${\sim}\,10^{15}\, M_\odot$ {cite:p}`2016A&A...596A.101P`. Such dynamical arguments also yield an estimate of the mass of the Local Group of galaxies at ${\sim}\,3 \times 10^{12}\, M_\odot$. The Local Group dynamical mass is dominated by that of the Milky Way, $(1. 2 \pm 0.2)  \times 10^{12}\, M_\odot$ and Andromeda, $(1.8 \pm 0.5) \times 10^{12}\, M_\odot$ {cite:p}`2022ApJ...928L...5B`.
 
 
 [^a]: The sun has a mass measured with better than $10^{-4}$ accuracy at  $M_\odot = 1.9885 \times 10^{30}\,$kg.
 
 
-These masses are deduced using dynamical arguments such as Viriel's theorem (|kinetic energy| = |potential energy|/2 for a system at equilibrium) or using the projected trajectories of the tracers. Using stars as tracers, astronomers estimate the mass of the central black hole of the Milky Way, Sgr A*, at $(4.15 \pm 0.01) \times 10^{6}\, M_\odot$ {cite:p}`2019A&A...625L..10G` (see [](#fig:S2-trajectory) ). The latter has a small contribution to the mass of our galaxy compared with the stars that make it up $(6 \pm 1)  \times 10^{10}\, M_\odot$ {cite:p}`2015ApJ...806...96L`. The mass of the Milky Way contained in the stars (and dust) is itself about 20 times less than its dynamic mass.
+These masses are deduced using dynamical arguments such as the virial theorem (|kinetic energy| = |potential energy|/2 for a system at equilibrium) or using the projected trajectories of the tracers. Using stars as tracers, astronomers estimate the mass of the central black hole of the Milky Way, Sgr A*, at $(4.15 \pm 0.01) \times 10^{6}\, M_\odot$ {cite:p}`2019A&A...625L..10G` (see [](#fig:S2-trajectory) ). The latter has a small contribution to the mass of our galaxy compared with the stars that make it up $(6 \pm 1)  \times 10^{10}\, M_\odot$ {cite:p}`2015ApJ...806...96L`. The mass of the Milky Way contained in the stars (and dust) is itself about 20 times less than its dynamic mass.
+
 
 :::{figure}  ../../images/S2_orbit.jpg
 :name: fig:S2-trajectory
@@ -131,19 +132,22 @@ Assuming that the mass (or associated luminosity) follows a distribution law acc
 $$f(M_\star) \dd M_\star= n_\star \left(\frac{M_\star}{M_0} \right)^{-\alpha} \exp\left(-\frac{M_\star}{M_0} \right) \dd M_\star,
 $$
 calculate the stellar-mass energy density using [](#fig:stellar_mass).
-:::
 
-:::{figure}  ../../images/stellar_mass_fun_2022MNRAS.513..439D.jpg
+```{figure}  ../../images/stellar_mass_fun_2022MNRAS.513..439D.jpg
 :name: fig:stellar_mass
 :align: center
 :width: 100%
 
 The stellar mass function of the galaxies in the local Universe ($z<0.1$). From  {cite}`2022MNRAS.513..439D`.
+```
+
+
 :::
+
 
 :::{solution} exo:stellar_mass
 
-The first panel represents the function $g(M_\star)$ such as $\int g(M_\star) \dd \log_{10}M_\star = 1/V$, where $V$ is the considered volume. Thus $f(M_\star) = g(M_\star)/(\ln(10)M_\star)$.
+The first panel represents the function $g(M_\star)$ such as $\int g(M_\star) \dd \log_{10}M_\star = 1/V$, where $V$ is the considered volume and where $\log_{10}(x) = \frac{\ln(x)}{\ln(10)}$. Thus $f(M_\star) = g(M_\star)/(\ln(10)M_\star)$.
 
 From the first panel, we estimate by eye a cut-off at $M_0 \approx 1 \times 10^{11}
 \,M_\odot$ where the density is $\ln(10) M_0 n_{\star}/e \approx 2  \times  10^{-3}\,\mathrm{Mpc}^{-3}\,\mathrm{dex}^{-1}$. We find $n_{\star} M_0 \approx 2 \times 10^{-3} \,\mathrm{Mpc}^{-3}$. The index is similarly estimated at $\alpha=1.5$.
@@ -155,9 +159,11 @@ $$
 \int f(M_\star) M_\star c^2 \dd M_\star &= n_\star M_0 \times M_0  c^2 \int \dd x \, x^{1-\alpha} \exp(-x) dx \nonumber\\
 							&=\Gamma(2-\alpha) \times n_\star M_0 \times M_0  c^2 \nonumber\\					
 							&\approx \sqrt{\pi} \times 2 \cdot 10^{-3} \times 10^{11} \times  1.1 \cdot 10^{66}/(3.1 \cdot 10^{22})^3\,\mathrm{eV\,m}^{-3} \nonumber\\
-														&\approx 13 \times 10^{6}\,\mathrm{eV\,m}^{-3} 
+														&\approx 13 \times 10^{6}\,\mathrm{eV\,m}^{-3},
 \end{align}
 $$
+where we used the following definition of the [Gamma function](https://en.wikipedia.org/wiki/Gamma_function): $\Gamma(x) = \int_0^\infty\dd t\, t^{x-1}\exp(-t)$.
+
 
 Estimation using the exact form of the mass distribution function gives a stellar matter density up to $z < 0. 1$  or $D_L < 500\,$Mpc of $\rho_{\star, 0}= (2.97 \pm 0.04) \times 10^8 \,h_{70}\, M_\odot \, \mathrm{Mpc}^{-3}$, where $h_{70} = H_0 / (70\,\mathrm{km}\,\mathrm{s}^{-1}\,\mathrm{Mpc}^{-1})$. This corresponds to an energy density comparable to our crude estimate, namely $\varepsilon_{\star, 0} \approx (11.0 \pm 0.1) \, h_{70} \times 10^{6}\,\mathrm{eV\,m}^{-3}$
 :::
@@ -169,7 +175,7 @@ The rest-mass energy of the sun is $M_\odot c^2 \approx 1.8\times 10^{47} \, \ma
 
 ### Cosmic energy inventory
 
-For an energy density today equal to the critical density $\rho_{c,0} = \frac{3 H_0^2  c^2}{8\pi G} = 1.36 \times 10^{11}\, h_{70}\, M_\odot\,\mathrm{Mpc}^{-3}$, i.e. $\varepsilon_{c,0} \approx 5.1\, h_{70}\,$GeV$\,$m$^{-3}$, where $h_{70} = H_0 / 70 \,\mathrm{km}\,\mathrm{s}^{-1}\,\mathrm{Mpc}^{-1}$, we can see that only two thousandths of the universe's energy budget is made up of stars. A detailed breakdown of the different energy budgets of the universe is shown below.
+For an energy density today equal to the critical density $\rho_{c,0} = \frac{3 H_0^2  c^2}{8\pi G} = 1.36 \times 10^{11}\, h_{70}^2\, M_\odot\,\mathrm{Mpc}^{-3}$, i.e. $\varepsilon_{c,0} \approx 5.1\, h_{70}^2\,$GeV$\,$m$^{-3}$, where $h_{70} = H_0 / 70 \,\mathrm{km}\,\mathrm{s}^{-1}\,\mathrm{Mpc}^{-1}$, we can see that only two thousandths of the universe's energy budget is made up of stars. A detailed breakdown of the different energy budgets of the universe is shown below.
 
 :::{figure}  ../../images/cosmic_inventory.png
 :name: fig:cosmic_inventory
@@ -180,7 +186,7 @@ The cosmic energy inventory of {cite}`2004ApJ...616..643F`. Adapted from this [p
 :::
 
 
-:::{important}
+:::{note}
 Most of what we know about the universe comes from  four messengers: photons, neutrinos, cosmic rays and gravitational waves. As shown in [](#fig:cosmic_inventory), the energy density associated with these tracers is only a few parts per million. Despite this, estimates of the amount of baryonic matter from radiation are increasingly precise. Of particular note is the potential resolution of a long-standing problem, the location of the missing half of the universe's baryons, which could be found in the warm/hot intergalactic plasma that makes up the cosmic web (see {cite}`2021NatAs...5..852D`).
 :::
 
@@ -203,7 +209,8 @@ The evolution of baryonic matter and light emission follows the cosmic history o
 The cosmic star-formation rate history. From {cite:p}`2014ARA&A..52..415M`.
 :::
 
-In this figure, the redshift is converted to cosmological age using a flat $\Lambda$CDM cosmology, with Hubble constant $H_0 = 70\,\mathrm{km}\,\mathrm{s}^{-1}\,\mathrm{Mpc}^{-1}$ and dark energy density $\Omega_\Lambda = 0.7$, i.e. with $\Omega_\mathrm{m} = 0.3$. The look-back time is the counterpart of the cosmic age, i.e. $t_{L}(z) = \frac{1}{H_0} -  t_\mathrm{age}(z) = \int_0^z \dd z' \left|\frac{\dd t}{\dd z'} \right|$, where 
+In this figure, the redshift is converted to cosmological age using a flat $\Lambda$CDM cosmology, with Hubble constant $H_0 = 70\,\mathrm{km}\,\mathrm{s}^{-1}\,\mathrm{Mpc}^{-1}$ and dark energy density $\Omega_\Lambda = 0.7$, i.e. with $\Omega_\mathrm{m} = 0.3$. The look-back time is the counterpart of the cosmic age, i.e. $t_{L}(z) = \int_0^z \dd z' \left|\frac{\dd t}{\dd z'} \right|$, where 
+
 
 $$
 \begin{align}
@@ -289,12 +296,22 @@ Matter accretion around supermassive black holes, in particular around active ga
 
 [^b]: The upper bound of this range is lower than the 42% expected for a maximally rotating Kerr black hole. The difference with the value estimated by Thorne is due to the capture of photons.
 
-:::{exercise} Cosmic energy density of photons from accretion
+### Ejection
+
+Around 10% of active galactic nuclei develop a jet on either side of the accretion disc {cite:p}`2019ARA&A..57..467B`. The presence of jets is deduced or observed in many astrophysical systems: collapse of a massive star leading to the formation of a long gamma-ray burst, binary of compact objects for a short gamma-ray burst, binary of a star and a white dwarf for a Nova, binary of a star and a compact object such as a black hole or a neutron star for a micro-quasar. Plasma ejection in the jets results from the conversion of electromagnetic energy at their base into kinetic energy at their termination. The kinetic energy of the jets can be estimated for some active galactic nuclei by the size of the radio cavities they form in the intracluster medium {cite:p}`2012ARA&A..50..455F`. Synthetic evolution models that attempt to reproduce these observations estimate that ${\sim}\,0.5\%$ of the mass energy associated with accretion is injected into the jets of active galactic nuclei {cite:p}`2008MNRAS.388.1011M`. However, the uncertainties surrounding the mechanisms of jet formation and the different accretion regimes mean that this ratio is merely a rough estimate of the blance between the kinetic energy and accreted energy.
+
+The conversion of the Poynting flux (electromagnetic energy) into global plasma motion (kinetic energy) is accompanied by the acceleration of charged particles, for example by shock waves in the jets or at its boundary (shear), or by magnetic reconnection. Accelerated particles lose energy through radiative processes: synchrotron and inverse Compton for electrons and positrons, as well as production of pairs and pions for protons and nuclei. It is these radiative losses that produce the emission of jets from radio waves to gamma rays. The efficiency of converting kinetic energy into radiation is estimated at $10\%$ for jets of active galactic nuclei, gamma-ray bursts and microquasars.
+
+
+
+:::{exercise} Cosmic energy density of photons from accretion and from jets
 :label: exo:photons_accr
 
 1. What is the fraction of mass energy that can be converted to radiation for a black hole accreting at the rate $\dot M$ for a radiative efficiency $\eta_\mathrm{accr}$?
 
 2. Estimate the energy density of photons from matter accreted by massive black holes.
+
+3. Estimate the energy density of photons from jets emitted in the vicinity of massive black holes.
 :::
 
 :::{solution} exo:photons_accr
@@ -307,30 +324,25 @@ $$\begin{align}
 & \approx 1.5 \times 10^{3}\mathrm{\,eV\,m}^{-3}
 \end{align}$$
 
-The emission produced by accretion is not negligible, especially if we realise that only 1% of galaxies have an active nucleus {cite:p}`2010ApJ...723.1447H`.
-:::
-
-### Ejection
-
-Around 10% of active galactic nuclei develop a jet on either side of the accretion disc {cite:p}`2019ARA&A..57..467B`. The presence of jets is deduced or observed in many astrophysical systems: collapse of a massive star leading to the formation of a long gamma-ray burst, binary of compact objects for a short gamma-ray burst, binary of a star and a white dwarf for a Nova, binary of a star and a compact object such as a black hole or a neutron star for a micro-quasar. Plasma ejection in the jets results from the conversion of electromagnetic energy at their base into kinetic energy at their termination. The kinetic energy of the jets can be estimated for some active galactic nuclei by the size of the radio cavities they form in the intracluster medium {cite:p}`2012ARA&A..50..455F`. Synthetic evolution models that attempt to reproduce these observations estimate that ${\sim}\,0.5\%$ of the mass energy associated with accretion is injected into the jets of active galactic nuclei {cite:p}`2008MNRAS.388.1011M`. However, the uncertainties surrounding the mechanisms of jet formation and the different accretion regimes mean that this ratio is merely a rough estimate of the blance between the kinetic energy and accreted energy.
-
-The conversion of the Poynting flux (electromagnetic energy) into global plasma motion (kinetic energy) is accompanied by the acceleration of charged particles, for example by shock waves in the jets or at its boundary (shear), or by magnetic reconnection. Accelerated particles lose energy through radiative processes: synchrotron and inverse Compton for electrons and positrons, as well as production of pairs and pions for protons and nuclei. It is these radiative losses that produce the emission of jets from radio waves to gamma rays. The efficiency of converting kinetic energy into radiation is estimated at $10\%$ for jets of active galactic nuclei, gamma-ray bursts and microquasars.
-
-:::{exercise} Cosmic energy density of photons from jets
-:label: exo:photons_jet
-
-Estimate the energy density of photons from jets emitted in the vicinity of massive black holes.
-:::
-
-:::{solution} exo:photons_jet
-Using the ratio of jet kinetic energy to accreted mass energy of $0.5\%$, we obtain an energy conversion factor between accreted mass and photon emission by the jets $\eta_\mathrm{jet} \approx 0.05\%$ on cosmic scales. The energy density of photons radiated by the jets should then be of the order of
+3. Using the ratio of jet kinetic energy to accreted mass energy of $0.5\%$, we obtain an energy conversion factor between accreted mass and photon emission by the jets $\eta_\mathrm{jet} \approx 0.05\%$ on cosmic scales. The energy density of photons radiated by the jets should then be of the order of
 
 $$\begin{align}
 \varepsilon_{\gamma, \mathrm{accr}} &=\eta_\mathrm{jet} c^2 \int \dd t \Psi_\mathrm{accr}(t) \nonumber \\
 	&=  f_\mathrm{accr} \frac{\eta_\mathrm{jet}}{\eta_\odot} \varepsilon_{\gamma, \mathrm{nucl}} \nonumber \\
 & \approx 3 \mathrm{\,eV\,m}^{-3}
 \end{align}$$
-:::
 
+The emission produced by accretion is not negligible, especially if we realise that only 1% of galaxies have an active nucleus {cite:p}`2010ApJ...723.1447H`.
+:::
+ 
 Now that we have estimated the energy densities associated with the photon fields emitted by the three major astrophysical processes, we can compare them with observations.
 
+
+:::{tip}
+**Notions from this chapter**
+
+_Star formation / Accretion / Ejection_
+- Can I define in a few lines these notions?
+- Can I give examples of classes of astrophysical sources powered by these processes? 
+
+:::

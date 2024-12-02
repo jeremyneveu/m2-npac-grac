@@ -89,7 +89,9 @@ The multi-messenger extragalactic spectrum. Adapted from this [page](https://zen
 
 The broadband emission from all galaxy populations is responsible for the spectrum of the universe shown in [](#fig:mm_spectrum). In particular, electromagnetic radiations include the cosmic radio background (CRB) from both active and star-forming galaxies, the cosmic infrared and optical backgrounds (CIB and COB) mostly from nucleosynthesis and dust emission, the cosmic X-ray background (CXB) from active galaxies and the cosmic gamma-ray background (CGB) from jetted active galaxies. The differential measurements of these cosmic backgrounds are of fundamental value: they reflect our knowledge of the distribution of light emitted by star formation, accretion and ejection integrated since the formation of the first astrophysical sources. Although these emissions are only a negligible part of the cosmic energy inventory, they provide us with a cosmological consistency test that is essential for understanding the content and evolution of the post-recombination universe  {cite:p}`2004ApJ...616..643F`. 
 
-These measurements also quantify the degree of darkness of the night sky once the foregrounds are subtracted. It is the history of their emission that provides the solution to the Olbers paradox and the present intensity of these backgrounds that determines the darkness (or rather grayness) of the night sky. We can understand the extragalactic backgrounds at all electromagnetic wavelengths, the so-called extragalactic background light, using synthetic models of galaxy populations. Some unknowns in the extraglactic background light, including tensions between measurements, are nonetheless still the subject of active research. Light emission is fundamentally the result of decay, heating and acceleration of matter. We will explore in the following lessons the knowledge established with photons, in particular through multi-wavelength observations of gamma-ray sources, and to which extent this multi-wavelength knowledge allows us to understand extragalactic backgrounds observed today with other messengers, in particular the extragalactic neutrino background (ENB) between $30\,$TeV and $3\,$PeV and the extragalactic cosmic-ray background (ECRB) between $200\,$PeV and $200\,$EeV.
+The values indicated by vertical text in [](#fig:mm_spectrum) correspond to the energy density of each component, i.e. the integral of the specific intensity multiplied by $4\pi/c$. In particular, it can be verified that the expected energy density from the nucleosynthesis and accretion processes calculated in the previous chapter, i.e. ${\sim}\,(13+1.5) \times 10^3\,\mathrm{eV}\,\mathrm{m^{-3}}$, is found in its entirety in the COB and CIB. The energy density from ejection processes around supermassive black holes,  expected at ${\sim}\,3 \,\mathrm{eV}\,\mathrm{m^{-3}}$, is found in the CGB.
+
+The measurements shown in [](#fig:mm_spectrum) also quantify the degree of darkness of the night sky once the foregrounds are subtracted. It is the history of their emission that provides the solution to the Olbers paradox and the present intensity of these backgrounds that determines the darkness (or rather grayness) of the night sky. We can understand the extragalactic backgrounds at all electromagnetic wavelengths, the so-called extragalactic background light, using synthetic models of galaxy populations. Some unknowns in the extraglactic background light, including tensions between measurements, are nonetheless still the subject of active research. Light emission is fundamentally the result of decay, heating and acceleration of matter. We will explore in the following lessons the knowledge established with photons, in particular through multi-wavelength observations of gamma-ray sources, and to which extent this multi-wavelength knowledge allows us to understand extragalactic backgrounds observed today with other messengers, in particular the extragalactic neutrino background (ENB) between $30\,$TeV and $3\,$PeV and the extragalactic cosmic-ray background (ECRB) between $200\,$PeV and $200\,$EeV.
 
 
 
@@ -169,16 +171,19 @@ Interestingly, the three components are close to equipartition.
 ### The spectrum, composition and arrival directions of cosmic rays
 
 
+The top panel in [](fig:cr_observables) shows the same cosmic ray spectrum as in [](fig:cr_spectrum) multiplied by a power law of index 2.7 in order to better see the different spectral breaks: $E^{2.7}J(E)$ is shown as a function of $E$. Between the hip at a few hundred GeV and the knee at $E \approx 3-5\,$PeV, the cosmic-ray flux is well described to first order by a power law $J(E) \propto E^{-2.7}$, followed by a break in slope around $E \approx 150\,$PeV corresponding to a softening of the spectrum (intensity decreasing more rapidly with energy), called the second knee. We will return to the link between the first and second knees in section 2.2. At higher energies, around $5\,$EeV, we observe a hardening of the spectrum (intensity decreasing less rapidly with energy) followed finally by a softening of the spectrum around $50\,$EeV in the cut-off region.
+
+The second panel in [](fig:cr_observables) shows the evolution of the mean logarithm of the atomic mass, $A$, of the observed cosmic rays as a function of energy. This logarithmic quantity is close to the observables reconstructed with the dedicated instruments. We observe that, on average, $\ln A \approx 0$ up to a few tens of GeV, i.e. the composition is dominated by protons. The composition is proton and helium up to the knee, then becomes heavier, possibly containing some iron at the second knee. The measurements between the second knee and the ankle are too sparse to be shown in the figure. Beyond the ankle, the composition becomes heavier again, ranging from helium to a mass close to that of the nuclei of carbon, nitrogen and oxygen.
 
 :::{figure}  ../../images/CR_observables_2020PhR...872....1B.png
 :name: fig:cr_observables
 :align: center
-:width: 60%
+:width: 70%
 
 Simplified view of the cosmic-ray observables. The local cosmic-ray spectrum is scaled to a power $E^{2.7}$ in panel (a) to enhance the features. The mean logarithmic of cosmic-rays is shown in panel (b). Note that $\ln A_\mathrm{H} = 0$, $\ln A_\mathrm{C} \approx 2.5$ and $\ln A_\mathrm{Fe} \approx 4$. The dipole amplitude and right-ascension are displayed in panels (c) and (d), which also includes the right ascension of the Galactic Center. Adapted from {cite}`2020PhR...872....1B`.
 :::
 
-
+The third and fourth panels show the amplitude and right-ascension direction (see [](fig:eq_coordinates)) of the dipolar component of the cosmic-ray flux as a function of energy. As shown in the third panel and in [](fig:cr_TeV_dipole), the amplitude of the dipole around $10\,$TeV relative to that of the monopole (isotropic component) is of the order of $10^{-3}$. This amplitude increases with energy in the range in which it is measured, reaching around ten per cent above the ankle.
 
 :::{note} Spherical coordinates for the observer
 
@@ -198,30 +203,23 @@ Schematic view of equatorial coordinates: right ascension (R.A. or $\alpha$) and
 The cosmic-ray relative flux, $\frac{\phi(\vec n)}{\phi_\mathrm{iso}}-1$ at energies above ${\sim}\,10 \,$TeV in equatorial coordinates, smoothed on a $5^\circ$ angular scale. Adapted by {cite}`2020PhR...872....1B` from {cite}`2017PrPNP..94..184A`.
 :::
 
+Observations of cosmic rays, dissected in terms of flux, composition and arrival direction, suggest the following paradigm. Cosmic rays are mainly of Galactic origin (i.e. from the Milky Way) up to the second knee. This is corroborated by the mean right ascension of their arrival directions aligned with that of the Galactic Centre around PeV energies. At lower energies, around $10\,$TeV, these cosmic rays are affected by local magnetic fields, in particular those of the Local Bubble that extends to a few hundred pc around the Sun and is thought to have originated in a past supernova explosion.
 
-:::{figure}  ../../images/dipole_EeV.jpeg
-:name: fig:cr_EeV_dipole
-:align: center
-:width: 90%
+Beyond the ankle, cosmic rays are too energetic to be confined by the Milky Way's magnetic field. These cosmic rays are extragalactic, i.e. they come from galaxies other than our own. This is supported by the large and increasing amplitude of the dipole above $5\,$EeV and by their arrival directions, which are in relatively good agreement with the direction expected from the distribution of galaxies within a few hundred Mpc. 
 
-The cosmic-ray flux at energies above ${\sim}\,10 \,$EeV in equatorial coordinates, smoothed on a $45^\circ$ angular scale. The Galactic plane and center are shown as a dashed black and white line and a white circle, respectively. The supergalactic plane is shown as a dotted line. From {cite}`2022icrc.confE.375T`.
-:::
-
-:::{figure}  ../../images/uhecr_skymap_40EeV.png
-:name: fig:cr_EeV_excess
-:align: center
-:width: 90%
-
-The cosmic-ray flux at energies above ${\sim}\,40 \,$EeV in equatorial coordinates, smoothed on a $25^\circ$ angular scale. The Galactic plane and center are shown as a dashed orange line and an orange star, respectively. The supergalactic plane is shown as a gray line.
-From {cite}`PierreAuger:2023mvf`.
-:::
-
+The origin of cosmic rays between the second knee and the ankle, whether Galactic or extragalactic, remains an unsolved problem to this day.
 
 Candidate sources for cosmic-ray production
 ----------------------------------
 
 ### Known gamma-ray emitters with and without jets
 
+
+
+#### Bestiary of sources
+
+It is difficult to see the sources of cosmic rays directly on the sky, as cosmic rays are charged nuclei and are therefore deflected by the magnetic fields they pass through. Only anisotropies on angular scales of more than ten degrees have been evidenced to date with cosmic rays. 
+However, we can search for such sources using the neutral messengers that are photons. Gamma rays are now observed up to the PeV energy range. The most complete gamma-ray sky map to date is that obtained by the Fermi-LAT satellite in the GeV range, which is shown in Galactic coordinates in [](fig:lat_skymap).
 
 :::{figure}  ../../images/Fermi_5_year_scaled.jpg
 :name: fig:lat_skymap
@@ -231,13 +229,11 @@ Candidate sources for cosmic-ray production
 Skymap in Galactic coordinates of the excess of gamma-rays with energies above $1\,$GeV from 5 years of observations with Fermi-LAT. From this [page](https://svs.gsfc.nasa.gov/11342).
 :::
 
-#### Bestiary of sources
+In this spherical coordinate system, the Galactic centre is in the middle of the map and the Galactic plane separates the northern and southern hemispheres. Most of the sources observed at GeV energies are located outside the Galactic Plane. They are mainly jetted active galactic nuclei, the brightest of which are blazars whose axis of emission is aligned with the line of sight, while the others are radio galaxies. The extragalactic universe in gamma rays is also populated by a dozen or so detected starburst galaxies, whose rate of star formation per unit stellar mass exceeds that of our Galaxy: more short-lived massive stars are formed there and end their lives in supernovae. Several hundred gamma-ray bursts have finally been detected in the extragalctic sky, mainly long gamma-ray bursts from explosions of massive stars, up to redshift $z>4$. 
 
-Main populations of extragalactic sources: jetted active galactic nuclei (blazars and radio galaxies), gamma-ray bursts (long and short), starburst galaxies.
+Diffuse emissions from our Galaxy can be seen firstly along the Galactic plane and secondly as peanut-shaped emissions on either side of the Galactic centre: the Fermi bubbles. These bubbles have a similar morphology to those observed in microwaves by the WMAP and Planck satellites and in X-rays by the eROSITA satellite. These large-scale structures are evidence of the past acceleration of cosmic rays in the Milky Way and of the diffusion of these charged particles in the Galactic magnetic field.
 
-Emission on Galactic scale: Fermi / eROSITA bubbles
-
-Galactic sources: supernova remnant (core-collapse, thermonuclear), pulsar wind nebula, pulsar, TeV halo; nova, X-ray binaries, microquasars
+Finally, our Galaxy is populated by a myriad of stellar-sized sources. Hollow shells are the remains of supernovae (of which there are two types: core-collapse and thermonuclear, also known as SN1a). Core-collapse supernovae can leave a highly magnetised neutron star in their core after their explosion, which is known as a pulsar. The winds from these pulsars, known as pulsar wind nebulae, fill the space left by the supernova explosion and accelerate electrons and positrons, which re-radiate gamma rays. In more advanced stages of their lives, the diffusion of particles around the pulsar can even lead to extended emission over several degrees, known as TeV halos. Our galaxies also contain numerous gamma-ray sources arising from binary systems: recurrent nova, X-ray binaries and even microquasars, which are the stellar-scale analogue of the jetted active galactic nuclei.
 
 
 #### Relativistic beaming 
@@ -417,12 +413,12 @@ The Hillas criterion states that accelerating a particle up to a given rigidity 
 $$
 \begin{align}
 R_\mathrm{obs} < \Gamma \beta r' B' c\\\
-&< 9 \times 10^{15}\,\mathrm{V} \times \Big(\frac{r'}{1\,\,\mathrm{pc}}\Big) \times \Big(\frac{B}{1\,\mu\mathrm{G}}\Big)^{-1}, \mathrm{\ or}\\
-&< 9 \times 10^{18}\,\mathrm{V} \times \Big(\frac{r'}{1\,\,\mathrm{pc}}\Big) \times \Big(\frac{B}{1\,\mathrm{mG}}\Big)^{-1}
+&< 0.9 \times 10^{15}\,\mathrm{V} \times \Big(\frac{r'}{1\,\,\mathrm{pc}}\Big) \Big(\frac{B}{1\,\mu\mathrm{G}}\Big) \Big(\frac{\Gamma\beta}{1}\Big), \mathrm{\ or}\\
+&< 3 \times 10^{18}\,\mathrm{V} \times \Big(\frac{r'}{1\,\,\mathrm{pc}}\Big) \Big(\frac{B}{1\,\mathrm{mG}}\Big)\Big(\frac{\Gamma\beta}{3}\Big)
 \end{align}
 $$
 
-The classes of Galactic sources satisfying this condition up to the magnetic rigidity corresponding to the knee and second knee of the cosmic-ray spectrum, i.e. a proton energy of $\approx 3 \times 10^{15}\,\mathrm{eV}$ and an energy of $\approx 10^{17}\,\mathrm{eV}$ for fully ionized iron are shown in [figure %s](#fig:cr_hillas). Extragalactic sources are also shown and can be compared to the Hillas criterion up to the ankle and cut-off of the cosmic-ray spectrum, i.e. for maximum proton energy of $\approx 5 \times 10^{18}\,\mathrm{eV}$ and iron energy of $\approx 10^{20}\,\mathrm{eV}$.
+The classes of Galactic sources satisfying this condition up to the magnetic rigidity corresponding to the knee and second knee of the cosmic-ray spectrum, i.e. a proton energy of $\approx 3-5 \times 10^{15}\,\mathrm{eV}$ and an energy of $\approx 10^{17}\,\mathrm{eV}$ for fully ionized iron are shown in [figure %s](#fig:cr_hillas). Extragalactic sources are also shown and can be compared to the Hillas criterion up to the ankle and cut-off of the cosmic-ray spectrum, i.e. for maximum proton energy of $\approx 5 \times 10^{18}\,\mathrm{eV}$ and iron energy of $\approx 10^{20}\,\mathrm{eV}$.
 
 ### Cosmic-ray production rate
 
@@ -452,3 +448,30 @@ If core-collapse supernovae are responsible for accelerating the majority of cos
 a reasonnable constraint suggesting that core-collapse supernovae may be responsible for accelerating the bulk of Galactic cosmic rays.
 
 
+:::{tip}
+**Notions from this chapter**
+
+_Galactic cosmic rays and the SNR paradigm_
+- What are Galactic cosmic rays? Which energy range do the cover?
+- What are SNRs? Why are they believed to be the main sources of Galactic cosmic rays?
+:::
+
+
+:::{tip}
+**Calculations / demonstrations**
+
+_Intensity and energy density_
+- What is the relation between these two quantities?
+
+_Doppler factor: $\delta = \frac{1}{\Gamma(1-\beta\cos\theta)}$_
+- What are $\delta$, $\Gamma$, $\beta$ and $\theta$?
+- How are the energy of a photon, time between arrival of two photons and intensity (or luminosity) of a photon field affected by Doppler boosting?
+
+_Optical depth: $\tau = n \sigma r$_
+- What are $\tau$, $n$, $\sigma$, $r$ and their units? 
+- What does $\tau \ll 1$ and $\tau \gg 1$ mean? 
+
+_Hillas criterion: $R<\Gamma\beta L' B' c$_
+- What are $R$, $\Gamma$, $\beta$, $L'$, $B'$ and their units? 
+- Can I prove this relation in the non-relativistic case?
+:::
