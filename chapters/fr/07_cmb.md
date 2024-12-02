@@ -676,7 +676,7 @@ Ainsi, lorsque l'Univers était âgé d'une seconde, l'énergie typique des part
 Histoire de la matière dans l'Univers jeune
 --------------------------------------
 
-Nous avons maintenant (presque) tout ce dont nous avons besoin pour discuter de l'évolution du plasma primordial. Lorsque la température est suffisamment élevée, le plasma primordial contient toutes les particules du modèle standard, sous forme relativiste (plus toutes les particules qui n'ont pas encore été découvertes, par exemple les particules hypothétiques qui constituraient la matière sombre froide aujourd'hui).
+Nous avons maintenant (presque) tout ce dont nous avons besoin pour discuter de l'évolution du plasma primordial. Lorsque la température est suffisamment élevée, le plasma primordial contient toutes les particules du modèle standard, sous forme relativiste (plus toutes les particules qui n'ont pas encore été découvertes, par exemple les particules hypothétiques qui constitueraient la matière sombre froide aujourd'hui).
 
 Dans l'Univers primordial, toutes les espèces de particules sont en équilibre thermique (cinétique et chimique, même température $T$).  Au fur et à mesure de l'expansion de l'Univers, la température diminue au rythme du taux d'expansion. L'une après l'autre, les différentes espèces massives deviennent non relativistes, s'anéantissent, et leurs densités d'énergie deviennent sous-dominantes par rapport aux espèces relativistes. 
 
@@ -687,14 +687,14 @@ Ainsi, l'équilibre thermique est maintenu si $ \Gamma \gg H$. Lorsque le taux d
 
 ### Découplage des neutrinos et annihilations électron-positron
 
-Le découplage des neutrinos est notre première illustration de l'effet de gel.  Les neutrinos n'interagissent que par le biais de l'interaction faible.  Autour de $\sim 1\,\MeV$, ils sont encore thermalisés avec le bain de photons par des interactions telles que :
+Le découplage des neutrinos est notre première illustration de l'effet de gel. Les neutrinos n'interagissent que par le biais de l'interaction faible.  Autour de $\sim 1\,\MeV$, ils sont encore thermalisés avec le bain de photons par des interactions telles que :
 \begin{equation}
   \begin{split}
     \nu_e + \bar{\nu_e} & \rightleftharpoons e^+ + e^- \\
     e^- + \nu_e & \rightleftharpoons e^- + \nu_e  
   \end{split}
 \end{equation}
-A ces énergies, la section efficace de l'interaction faible est $\sigma_w \sim G_F^2 T^2$. Par conséquent, le taux d'interaction $\Gamma = n_e \sigma_w c \propto G_F^2 T^5$ diminue beaucoup plus rapidement que le paramètre de Hubble ($\propto T^2$) :
+A ces énergies, la section efficace de l'interaction faible est $\sigma_w \sim G_F^2 T^2$ avec $G_F/(\hbar c)^3=1.166 378 7(6)\times 10^{−5}\,\GeV^{−2}$ la constante de couplage de Fermi {cite:p}`PDG2010`. Par conséquent, le taux d'interaction $\Gamma = n_e \sigma_w c \propto G_F^2 T^5$ diminue beaucoup plus rapidement que le paramètre de Hubble ($\propto T^2$) :
 $$
 \frac{\Gamma}{H} \sim \frac{n_e \sigma_w}{H} \sim \left(\frac{T}{1\,\MeV}\right)^3
 $$
@@ -704,6 +704,13 @@ Autour de $1\,\MeV$, $\Gamma \sim H$ et les interactions entre les neutrinos et 
 \end{equation}
 tant que l'évolution de la température des photons ne varie pas.
 
+
+:::{note} Couplage de Fermi
+La constante de couplage de Fermi est le couplage dans un diagramme à 4 fermions interagissant par interaction faible à basse énergie (bien inférieure à la masse des bosons de l'interaction faible). Il est lié à la masse du $W$ et à la valeur attendue du Higgs dans le vide $v$ :
+$$ G_F = \frac{\sqrt{2}}{8} \left(\frac{g_W}{m_W c ^2}\right)^2(\hbar c)^3, \quad v = (\sqrt{2}G_F)^{-1/2} \sim 246.22\,\GeV$$
+
+
+:::
 
 :::{note} Le spectre des espèces découplées sans interaction XXX DRAFT
 
