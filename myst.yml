@@ -37,6 +37,9 @@ project:
     '\GN': '\mathcal{G}'  # newton constant
     '\parsec': '\mathrm{pc}'  # parsec
     '\kelvin': '\mathrm{K}'
+    '\eV': '\mathrm{eV}'
+    '\keV': '\mathrm{keV}'
+    '\meV': '\mathrm{meV}'
     '\GeV': '\mathrm{GeV}'
     '\MeV': '\mathrm{MeV}'
   abbreviations:

@@ -9,14 +9,33 @@ Histoire thermique de l'Univers
 ===============================
 
 L'expansion de l'Univers est aujourd'hui bien décrite par le modèle $\Lambda$CDM plat ($\Omega_k^0=0$). Les proportions de chacune de ces composantes sont aujourd'hui évaluées à {cite}`Planck2018`:
-$$\Omega_\Lambda^0 = 0.685,\quad \Omega_m^0=315$$
+$$\Omega_\Lambda^0 = 0.685,\quad \Omega_m^0=0.315$$
 
 Dans ce chapitre, nous allons étudier l'histoire thermique de l'Univers ainsi que l'évolution de sa composition. Jusqu'à maintenant dans ce cours, la matière non-relativiste était traitée comme une seule entité, ralentissant l'expansion de l'Univers par son interaction gravitationnelle. Mais pour étudier son évolution avec la température et ses interactions avec les autres composantes, il faut séparer celles-ci en deux contributions: la matière sombre $\Omega_{c}^0$ et la matière baryonique[^baryons] $\Omega_b^0$. En effet, en 1933, en étudiant l'amas de Coma, l'astrophysicien Fred Zwicky montre que la masse déduite du mouvement des sept galaxies qui le composent est 400 fois plus grande que la masse déduite du comptage des objets lumineux. Cette mesure est répétée en 1936 sur l'amas de la Vierge et donne cette fois un facteur 200. Ces mesures toutefois un peu imprécises tombent dans l'oubli jusque dans les années 1970, lorsque l'astronome Vera Rubin constate que la vitesse de rotation des étoiles de la Galaxie d'Andromède est bien plus élevée que ne le suggère sa masse lumineuse observée {citep}`Rubin1970`. Le constat est vite répété sur de nombreuses galaxies: une partie de la matière constituant la galaxie est donc une matière sombre, échappant alors à toute détection, représentant souvent la majorité de la masse totale des galaxies. La présence de matière sombre abondante est même visible dans l'amplitude des anisotropies de températures du fond diffus cosmologique (voir fin de chapitre). Aujourd'hui, on estime que la proportion de ces deux formes de matière froide est {cite}`Planck2018`:
 $$\Omega_{c}^0=0.264,\quad \Omega_b^0=0.049$$
 
+Description de l'Univers primordial
+--------------------------
 
+### Le fond diffus cosmologique
 
-Si l'Univers est aujourd'hui en expansion, alors il était plus petit dans le passé. L'expansion cosmique réduit la quantité de mouvement des particules d'un facteur $\propto a^{-1}$ et la densité des particules d'un autre $a^{-3}$. Dans les premiers temps, l'Univers était donc un état chaud et dense, dans lequel les particules pouvaient échanger de l'énergie et de la quantité de mouvement de manière assez efficace, en d'autres termes, une sorte de plasma à température élevée en équilibre thermique (ou proche de l'équilibre thermique).
+Si l'Univers est aujourd'hui en expansion, alors il était plus petit dans le passé. L'expansion cosmique réduit la quantité de mouvement des particules d'un facteur $\propto a^{-1}$ et la densité des particules d'un autre $a^{-3}$. Dans les premiers temps, l'Univers était donc un état chaud et dense. Il doit donc il y avoir eu un moment où l'Univers était suffisamment chaud pour que les atomes soient ionisés, et donc dans un état de plasma où les photons interagissent avec les électrons libres. Par ces interactions fréquentes, si l'équilibre thermodynamique est atteint le rayonnement suit un spectre de corps noir défini par la température du milieu (<wiki:Planck's_law>). Lors de la transition de l'état plasma à l'état neutre, vers $3\,000\,\kelvin$ pour un gaz d'hydrogène, l'Univers devient subitement transparent et les photons se propagent librement. Ce rayonnement de corps noir à haute température libéré à cet instant. Ce rayonnement dit fossile a été refroidi par l’expansion de l'Universe. Ce fond diffus cosmologique micro-onde a été prédit en 1948 par Ralph Alpher, Robert Herman {cite:p}`Alpher1948` et George Gamow {cite:p}`Gamow1948` autour de $5\,\kelvin$, et découvert fortuitement par Arno Penzias et Robert Wilson en 1964 {cite:p}`Penzias1965a,Penzias1965b` à un température de $3.5\,\kelvin$ ([](#fig:cmb_antenna)). 
+
+:::{figure} ../../images/Horn_Antenna.jpg
+:name: fig:cmb_antenna
+:align: center
+:width: 80%
+
+L'antenne cornet Holmdel de 15 mètres des Bell Telephone Laboratories à Holmdel, avec Arno Penzias et Robert Wilson, qui a permis la découverte du CMB. Elle a été construite en 1959 dans le cadre d'un travail sur les satellites de communication pour la NASA ECHO I (By NASA, restored by Bammesk).
+:::
+
+Le spectre du fond diffus cosmologique a été caractérisé grâce au satellite COBE, et sa température est aujourd'hui établie à  {cite:p}`Mather1999`:
+$$T_0 = 2.725\pm 0.002\,\kelvin$$
+en modélisant ses données par la loi de rayonnement de Planck :
+\begin{equation}
+  I_\nu(\nu, T_0) = \frac{2 h \nu^3}{c^2}\frac{1}{\exp(h\nu/k_B T_0) - 1}
+\end{equation}
+C’est le meilleur rayonnement de corps noir jamais détecté ([](#fig:cmb_cn)). Le rayonnement de fonds diffus cosmologique (CMB) est probablement la preuve la plus directe que l'Univers a bien été sous forme d'un plasma chaud et dense à l'équilibre dans un passé lointain.
 
 :::{figure} ../../images/cmb_cn.jpg
 :name: fig:cmb_cn
@@ -26,25 +45,10 @@ Si l'Univers est aujourd'hui en expansion, alors il était plus petit dans le pa
 Ajustement d'un modèle de corps noir sur les diverses données mesurant le flux venant du fond diffus cosmologique {cite:p}`Mather1999`.
 :::
 
-Le rayonnement de fonds diffus cosmologique (CMB) est probablement la preuve la plus directe de cet état de fait : l'Univers est rempli d'un gaz de photons micro-ondes suivant un spectre du corps noir (<wiki:Planck's_law>) de température $T_0$ :
-\begin{equation}
-  I_\nu(\nu, T_0) = \frac{2 h \nu^3}{c^2}\frac{1}{\exp(h\nu/k_B T_0) - 1}
-\end{equation}
-Il a été prédit en 1948 par Ralph Alpher, Robert Herman {cite:p}`Alpher1948` et George Gamow {cite:p}`Gamow1948`, et découvert fortuitement par Arno Penzias et Robert Wilson en 1964 {cite:p}`Penzias1965a,Penzias1965b`. Ce rayonnement dit fossile a été refroidi par l’expansion et est aujourd’hui très bien observé, à une température $T_0 = 2.7256\pm 0.0006\,\kelvin$ {cite:p}`Mather1999,Fixsen2009`. C’est le meilleur rayonnement de corps noir jamais détecté ([](#fig:cmb_cn)).
-
-Les photons du CMB ne sont _pas_ en équilibre thermique avec quoi que ce soit d'autres aujourd'hui. En effet, l'équilibre thermique implique des échanges fréquents d'énergie et d'impulsion par le biais de collisions entre particules, alors que l'immense majorité des photons du CMB n'ont jamais été en contact avec des particules depuis leur émission. 
-Cependant, cette absence d'interactions a préservé la forme originale du spectre du CMB, qui n'a été affecté que par le décalage vers le rouge. Un photon détecté à la fréquence $\nu$ a été émis à l'origine à la fréquence $(1+z)\nu$. En d'autres termes, le spectre d'origine était le suivant {cite:p}`Condon2018` :
-\begin{equation}
-I_\nu(\nu, T_0, z) = \frac{2 h \nu^3}{c^2}\frac{1}{\exp(h\nu/(1+z)k_B T_0) - 1}
-\end{equation}
-c'est-à-dire toujours une forme de corps noir, avec une température $(1+z) T_0$.  Ceci suggère que les photons du CMB étaient en équilibre thermique lorsqu'ils ont été émis, et, plus généralement, que le plasma primordial chaud était en équilibre thermique.
-
-Description de l'Univers primordial
---------------------------
 
 ### Ordres de grandeurs
 
-Remontons bien au-delà du redshift de la dernière surface de diffusion, et considérons l'Univers à, disons, $z \sim 10 000$. Que pouvons-nous en dire ?
+Remontons bien au-delà du redshift de la dernière surface de diffusion, et considérons l'Univers à, disons, $z \sim 10\,000$. Que pouvons-nous en dire ?
 
 
 #### Température
@@ -66,7 +70,7 @@ La température des photons $T_\gamma$ peut donc être utilisée comme paramètr
 :::{exercise} Redshift du CMB
 :label: exo:Tdec
 
-Les photons se sont découplés de la matière à $z_{\mathrm{dec}} \approx 1090$ et forment maintenant ce que l'on appelle le fond diffus cosmologique. Quelle était la température $T_{\mathrm{dec}}$ des photons au moment du découplage ?
+Les photons se sont découplés de la matière lorsque l'Univers est passé de l'état plasma à l'état neutre, à $z_{\mathrm{dec}} \approx 1090$. Ils forment maintenant ce que l'on appelle le fond diffus cosmologique. Quelle était la température $T_{\mathrm{dec}}$ des photons au moment du découplage ?
 
 :::
 
@@ -106,7 +110,7 @@ Donc à $z> z_{\mathrm{eq}}$, le contenu de l'Univers est dominé par la matièr
 
 #### Photons
 
-Concentrons-nous maintenant sur les propriétés des photons.  Nous savons que $T_\gamma \propto a^{-1}$, donc à $z=10^4$ leur température est :
+Concentrons-nous maintenant sur les propriétés des photons. Nous savons que $T_\gamma \propto a^{-1}$, donc à $z=10^4$ leur température est :
 \begin{equation}
   T_\gamma(z=10\,000) = (1+z)T_0 \approx 2.726\times 10^{4}\,\kelvin
 \end{equation}
@@ -116,7 +120,7 @@ L'énergie moyenne des photons à $z=10^4$ est :
 \end{equation}
 Par analyze dimensionnelle, la densité des photons à un redshift z vaut, à des facteurs numériques près que nous verrons plus loin :
 \begin{equation}
-  n_\gamma(z) \sim \frac{\left[(1+z)k_B T_0\right]^3}{c^3 \hbar^3}\sim 
+  n_\gamma(z) \sim \epsilon_\gamma(z)/ (k_B T_\gamma(z)) \sim \frac{\left[(1+z)k_B T_0\right]^3}{c^3 \hbar^3}\sim 
 \left\lbrace
 \begin{array}{ll}
 10^{21}\ \gamma / \mathrm{m^3} & \text{à}\ z=10^4 \\
@@ -127,11 +131,11 @@ Par analyze dimensionnelle, la densité des photons à un redshift z vaut, à de
 
 #### Baryons
 
-Evaluons maintenant la densité de baryons (particules avec 3 quarks comme les protons et neutrons) à $z \sim 10\,000$. La densité de baryons est aujourd'hui $\Omega_b^0 = 0.049$. Avec une densité critique de $\rho_c^0 \sim 6\,m_p / m^{3}$,  cela donne environ $n_b^0 \approx 0.3\,\mathrm{baryons / m^{3}}$ aujourd'hui, puis à $z \sim 10\,000$ :
+Évaluons maintenant la densité de baryons (particules avec 3 quarks comme les protons et neutrons) à $z \sim 10\,000$. La densité de baryons est aujourd'hui $\Omega_b^0 = 0.049$. Avec une densité critique de $\rho_c^0 \sim 6\,m_p / m^{3}$,  cela donne environ $n_b^0 \approx 0.3\,\mathrm{baryons / m^{3}}$ aujourd'hui, puis à $z \sim 10\,000$ :
 \begin{equation}
-  n_b(z) \approx \Omega_b^0 \rho_c^0 (1+z)^3 \approx 3\times 10^{11} \ \mathrm{baryons} /  \mathrm{m^3}
+  n_b(z) \approx \Omega_b^0 \rho_c^0 (1+z)^3/m_p \approx 3\times 10^{11} \ \mathrm{baryons} /  \mathrm{m^3}
 \end{equation}
-L'univers est donc largement dominé par les photons en terme de densité de particules, et est constant avec le redshift :
+L'univers est donc largement dominé par les photons en terme de densité de particules, et cette proportion reste constante tout le long de l'histoire de l'Univers :
 \begin{equation}\label{eq:eta}
 \boxed{\eta= \frac{n_b(z)}{n_\gamma(z)} \sim \frac{\Omega_b^0 \rho_c^0 c^3 \hbar^3}{(k_B T_0)^3} \sim 10^{-9}}
 \end{equation}
@@ -139,11 +143,11 @@ L'univers est donc largement dominé par les photons en terme de densité de par
 
 #### Taux d'expansion
 
-La valeur du paramètre de Hubble peut être déduite de l'équation de Friedmann :
+La valeur du taux d'expansion de Hubble peut être déduite de l'équation de Friedmann :
 \begin{equation}
   H(z) = H_0 \left( \Omega_m^0(1+z)^3 + \Omega_r^0 (1+z)^4 + \Omega_\Lambda^0\right)^{1/2}
 \end{equation}
-Prenons les valeurs canoniques $\Omega_m^0 = 0.31$, $\Omega_\Lambda^0 = 0.68$ et $\Omega_r^0 \sim 9 \times 10^{-5}$ pour la densité de matière relativiste (photons et neutrinos). A $z \sim 10\,000$, cela donne  :
+Prenons les valeurs canoniques $\Omega_m^0 = 0.315$, $\Omega_\Lambda^0 = 0.685$ et $\Omega_r^0 \sim 9 \times 10^{-5}$ pour la densité de matière relativiste (photons et neutrinos). A $z \sim 10\,000$, cela donne  :
 \begin{equation}
   H(z) \approx 10^6 \times H_0
 \end{equation}
@@ -160,10 +164,17 @@ où $\sigma_T$ est la section efficace de diffusion de Thomson ($6.6529\times 10
 \begin{equation}
  \tau_T = \frac{l_T}{c} = \frac{1}{\sigma_T n_e c} \approx 5\times 10^{12}\,\mathrm{yr} \gg t_H = \frac{1}{H_0}
 \end{equation}
-aujourd'hui et à l'époque :
+aujourd'hui si la matière est dans un état ionisé, et à l'époque :
 \begin{equation}
 \tau_T=  \frac{1}{\sigma_T n_e(1+z)^3 c} \approx 5\,\mathrm{yr} \ll \frac{1}{H(z)} \sim 10^{-6} t_H \sim 10\,000\,\mathrm{yr}
 \end{equation}
+
+On voit donc que dans le passé les interactions entre matière et photons étaient suffisamment fréquences pour atteindre l'équilibre thermique en un temps court devant l'expansion de l'Univers. Mais aujourd'hui, même si toute la matière était ionisée, ces photons n'interagissent plus avec elle. Les photons du CMB ne sont donc _pas_ en équilibre thermique avec quoi que ce soit d'autres aujourd'hui. L'immense majorité des photons du CMB n'ont jamais été en contact avec des particules depuis leur émission. 
+Cependant, cette absence d'interactions a préservé la forme originale du spectre du CMB, qui n'a été affecté que par le décalage vers le rouge. Un photon détecté à la fréquence $\nu$ a été émis à l'origine à la fréquence $(1+z)\nu$. En d'autres termes, le spectre d'origine était le suivant {cite:p}`Condon2018` :
+\begin{equation}
+I_\nu(\nu, T_0, z) = \frac{2 h \nu^3}{c^2}\frac{1}{\exp(h\nu/(1+z)k_B T_0) - 1}
+\end{equation}
+c'est-à-dire toujours un rayonnement de corps noir, mais avec une température $(1+z) T_0$.
 
 
 ### Scénario du Big Bang
@@ -174,21 +185,21 @@ Enfin, les interactions entre photons et particules chargées étaient beaucoup 
 
 A partir de cette description, nous pouvons esquisser un scénario d'évolution du plasma primordial en cataloguant les différents phénomènes physiques qui peuvent se produire lorsque celui-ci se refroidit. En voici un résumé non exhaustif.
 
-Tout d'abord, au sortir de l'inflation (environ $10^{-34}\,$s après le Big Bang), il y a dû y avoir eu une phrase dite de _baryogénèse_, où l'ensemble des particules et antiparticules sont créées avec un léger avantage pour la matière face à l'antimatière. En dessous d'une température de $100\,\GeV$ environ ($t \sim 20\,$ps), la transition de phrase électrofaible a lieu, donnant la masse aux particules et faisant apparaître les bosons de jauge Z, W$^\pm$. Sous $150\,\MeV$ ($t\sim 20\,\mathrm{\mu s}$, c'est la transition de phase QCD :  l'interaction forte prend le dessus sur les effets thermiques. Les quarks et gluons coagulent pour former des baryons (trois quarks) et des mésons (deux quarks). Puis, $6\,\mathrm{s}$ plus tard, électrons et positrons s'annihilent car la température du bain de photons passe sous la masse de l'électron $T < 500\,\mathrm{keV}$. Pendant les trois minutes de l'Univers ($T > 100\,\mathrm{keV}$), les noyaux des éléments légers sont formés. Au bout de 380\,000 ans, les électrons se lient aux noyaux atomiques ($e^- + p \rightarrow \mathrm{H} + \gamma$), c'est la _recombinaison_, et les photons se découplent de la matière ($\tau_T \ll 1/H)$. Libre de se propager, ces photons forment le fond diffus cosmologique et fournissent une photographie du plasma primordial à la fin de la recombinaison.
+Tout d'abord, au sortir de l'inflation (environ $10^{-34}\,$s après le Big Bang), il y a dû y avoir une phase dite de _baryogénèse_, où l'ensemble des particules et antiparticules sont créées avec un léger avantage pour la matière face à l'antimatière menant à $\eta \sim 10^{-9}$. En dessous d'une température de $100\,\GeV$ environ ($t \sim 20\,$ps), la transition de phase électrofaible a lieu, donnant la masse aux particules et faisant apparaître les bosons de jauge Z, W$^\pm$. Sous $150\,\MeV$ ($t\sim 20\,\mathrm{\mu s}$, c'est la transition de phase QCD :  l'interaction forte prend le dessus sur les effets thermiques. Les quarks et gluons coagulent pour former des baryons (trois quarks) et des mésons (deux quarks). Puis, $6\,\mathrm{s}$ plus tard, électrons et positrons s'annihilent car la température du bain de photons passe sous la masse de l'électron $T < m_e=511\,\mathrm{keV}$. Pendant les trois premières minutes de l'Univers ($T > 100\,\mathrm{keV}$), les noyaux atomiques des éléments légers sont formés. Au bout de $380\,000\,$ans, les électrons se lient aux noyaux atomiques ($e^- + p \rightarrow \mathrm{H} + \gamma$), c'est la _recombinaison_, et les photons se découplent de la matière ($\tau_T \ll 1/H)$. Libre de se propager, ces photons forment le fond diffus cosmologique et fournissent une photographie du plasma primordial à la fin de la recombinaison.
 
 
 Thermodynamique statistique à l'équilibre
 -------------------------------
 
-Nous allons aborder maintenant une description plus fine de ce qu'il s'est passé dans l'Univers primordial. 
+Nous allons maintenant aborder une description plus fine de ce qu'il s'est passé dans l'Univers primordial en utilisant la physique statistique. 
 
 ### Description statistique
 
-Nous modélisons le contenu de l'Univers comme un gaz de particules interagissant faiblement. Nous utilisons le formalisme de la physique statistique et décrivons le gaz par les positions et les moments de toutes ses particules, définies sur l'espace $\{\vec{x}, \vec{p}\}$. 
+Modélisons le contenu de l'Univers comme un gaz de particules interagissant faiblement. Nous pouvons alors utiliser le formalisme de la physique statistique et décrire le gaz par les positions et les impulsions de toutes ses particules, définies sur l'espace $\{\vec{x}, \vec{p}\}$. 
 
-Les états d'énergie $E$ dans un gaz de particules _à l'équilibre thermodynamique_ suivent une fonction de distribution statistique $f(\vec{x}, \vec{p}, t)$. En cosmologie, en raison de l'homogénéité de l'Univers, $f$ ne peut pas varier en fonction de $\vec{x}$. De plus, en raison de l'isotropie, $f$ ne peut dépendre que de la norme de la quantité de mouvement  $p \equiv \Vert \vec{p}\Vert$.
+Dans un gaz de particules _à l'équilibre thermodynamique_, le nombre de particules pouvant occuper un état d'énergie $(\vec{x}, \vec{p})$ suit une fonction de distribution statistique $f(\vec{x}, \vec{p}, t)$. En cosmologie, en raison de l'homogénéité de l'Univers, $f$ ne peut pas dépendre de la position $\vec{x}$. De plus, en raison de l'isotropie, $f$ ne peut dépendre que de la norme de la quantité de mouvement $p \equiv \Vert \vec{p}\Vert$ et non de sa direction.
 
-Muni des fonctions de distribution, nous pouvons en déduire des propriétés macroscopiques du gaz en évaluant la probabilité d'occupation des états du système. Tout d'abord, la mécanique quantique nous impose que la densité des états dans l'espace des phases est finie. En effet, considérons une boîte de taille $L$, avec des conditions périodiques et résolvons l'équation de Schrodinger, nous obtenons que les valeurs possibles de la quantité de mouvement sont :
+Muni des fonctions de distribution, nous pouvons en déduire des propriétés macroscopiques du gaz en évaluant la probabilité d'occupation des états du système. Mais qu'elles sont-elles? Tout d'abord, la mécanique quantique nous impose que la densité des états dans l'espace des phases est finie. En effet, considérons une boîte de taille $L$, avec des conditions périodiques et résolvons l'équation de Schrodinger, nous obtenons que les valeurs possibles de la quantité de mouvement sont :
 \begin{equation}
   \vec{p} = \frac{h}{L}\left(n_x \vec{e}_x + n_y \vec{e}_y + n_z \vec{e}_z\right), \ \ \ n_i = 0, \pm 1, \pm 2, \ldots
 \end{equation}
@@ -206,25 +217,24 @@ Les propriétés macroscopiques (densité de nombre, densité d'énergie, pressi
 
 La densité volumique particulaire moyenne du gaz est:
 \begin{equation}\label{eqn:number_density_general}
-  \boxed{n = \frac{g}{(2\pi\hbar)^3} \int \dd^3\mathbf{p} f(p)}
+  \boxed{n = \frac{g}{(2\pi\hbar)^3} \int \dd^3\mathbf{p} f(p,t)}
 \end{equation}
 
-Pour la densité d'énergie moyenne, puisqu'on considère que les particules interagissent faiblement alors leurs énergies individuelles $E(p)$ sont celles d'une particule libre $E(p)=\sqrt{p^2c^2 + m^2 c^4}$. Pour obtenir l'énergie du gaz, il suffit de faire la somme des énergies des particules pondérées par la fonction de distribution : 
+Pour la densité d'énergie moyenne, puisqu'on considère que les particules interagissent faiblement et ne sont pas confinées, alors les niveaux d'énergie $E(p)$ sont ceux d'une particule libre $E(p)=\sqrt{p^2c^2 + m^2 c^4}$. Pour obtenir la densité d'énergie du gaz, il suffit de faire la somme des niveaux d'énergie pondérés par leur probabilité d'occupation : 
 \begin{equation}\label{eqn:energy_density_general}  
-  \boxed{\epsilon = \rho c^2 = \frac{g}{(2\pi\hbar)^3} \int \dd^3\mathbf{p} f(p) E(p) = \frac{g}{(2\pi\hbar)^3} \int \dd^3\mathbf{p} f(p) \sqrt{p^2c^2 + m^2 c^4}}
+  \boxed{\epsilon = \rho c^2 = \frac{g}{(2\pi\hbar)^3} \int \dd^3\mathbf{p} f(p,t) E(p) = \frac{g}{(2\pi\hbar)^3} \int \dd^3\mathbf{p} f(p,t) \sqrt{p^2c^2 + m^2 c^4}}
 \end{equation}
 
 Nous pouvons obtenir de la même manière la pression du gaz : 
 \begin{equation}\label{eqn:pression_generale}
-  \boxed{P = \frac{g}{(2\pi\hbar)^3} \int \dd^3\mathbf{p} f(p) \frac{p^2}{3E}}
+  \boxed{P = \frac{g}{(2\pi\hbar)^3} \int \dd^3\mathbf{p} f(p,t) \frac{p^2}{3E}}
 \end{equation}
-
 
 Au final, le tenseur énergie-impulsion pour un ensemble de particules quantiques peut s'écrire :
 \begin{equation}
-\boxed{T^{\mu\nu}=\frac{g}{(2\pi\hbar)^3}\int{\dd^3\mathbf{p} f(p) \frac{p^\mu p^\nu}{p^0}}}
+\boxed{T^{\mu\nu}=\frac{g}{(2\pi\hbar)^3}\int{\dd^3\mathbf{p} f(p,t) \frac{p^\mu p^\nu}{p^0}}}
 \end{equation}
-Remarquons que cette formule est la version quantique en limite continue de la formule [](#eq:TmunuGaz) obtenu pour un fluide parfait classique.
+Remarquons que cette formule est la version quantique en limite continue de la formule [](#eq:TmunuGaz) obtenu pour un gaz parfait classique.
 
 :::{note} Pourquoi $p^2/3E$ ?
 
@@ -254,26 +264,24 @@ Supposons que les interactions soient élastiques et que chaque particule  trans
 
 :::
 
-### L'équilibre cinétique
+#### L'équilibre cinétique
 
-Lorsque les particules peuvent échanger souvent de l'énergie et de la quantité de mouvement par des collisions élastiques, le gaz atteint un état d'entropie maximale, appelé équilibre cinétique. Les fonctions de distribution $f(p)$ peuvent être obtenues en évaluant l'entropie du gaz ($S = k_B \ln \Omega$) et en la maximisant, pour une énergie totale donnée et un nombre total de particules donné.
+Lorsque les particules peuvent échanger souvent de l'énergie et de la quantité de mouvement par des collisions élastiques, le gaz atteint un état d'entropie maximale, appelé équilibre cinétique. Les fonctions de distribution $f(p,t)$ peuvent être obtenues en évaluant l'entropie du gaz ($S = k_B \ln \Omega$) et en la maximisant, pour une énergie totale donnée et un nombre total de particules donné.
 
-Selon la nature fermionique ou bosonique des particules du gaz, les fonctions de distribution à l'équilibre thermodynamique à la température $T$ sont :
+Selon la nature fermionique ou bosonique des particules du gaz, la combinatoire donnant les probabilités d'occupation de l'ensemble des micro-états $\Omega$ est différente à cause du principe d'exclusion de Pauli. A énergie totale et nombre total de particules fixés, après usage des multiplicateurs de Lagrange, ces contraintes imposent que les fonctions de distribution à l'équilibre thermodynamique sont :
 \begin{equation}
   \boxed{\text{Fermi-Dirac:\ } f(p) = \frac{g}{\exp\left({\dfrac{E(p) - \mu}{k_B T}}\right) + 1}}
 \end{equation}
 \begin{equation}
   \boxed{\text{Bose-Einstein:\ } f(p) = \frac{g}{\exp\left({\dfrac{E(p) - \mu}{k_B T}}\right) - 1}}
 \end{equation}
-avec $\mu$ le potentiel chimique de l'espèce et $g$ son nombre de degrés de libertés interne (par exemple le nombre d'état de spin).
+avec  $T$ la température du gaz, $\mu$ le potentiel chimique de l'espèce et $g$ son nombre de degrés de libertés interne (par exemple le nombre d'état de spin). Elles donnent le nombre de particules pouvant occuper un état d'énergie $E$ selon que ce sont des bosons ou des fermions, à l'équilibre thermodynamique.
 
 A haute température, on retrouve la distribution de Maxwell-Boltzmann :
 \begin{equation}
   \boxed{\text{Maxwell-Boltzmann:\ }f(p) = g\exp\left(-{\frac{E(p) - \mu}{k_B T}}\right)}
 \end{equation}
 valable pour les fermions et les bosons.
-
-
 
 Les fonctions de distribution de Fermi-Dirac et de Bose-Einstein dépendent de deux paramètres : la température du gaz, $T$, et le potentiel chimique de l'espèce $\mu$, qui caractérise la variation d'entropie ou d'énergie lorsque le nombre de particules varie (voir l'encadré ci-dessous).
 
@@ -282,24 +290,24 @@ Si le gaz contient plusieurs espèces en interaction, chaque espèce $i$ est dé
 Si toutes les espèces sont en équilibre cinétique et partagent la même température : $T_i = T$, le système a atteint _l'équilibre thermique_.
 
 
-### Equilibre chimique
+#### L'équilibre chimique
 
 :::{note} Potentiel chimique
 
 Les variations d'énergie d'un système peuvent être exprimées en fonction de de son entropie, de son volume et de sa température :
 \begin{equation}
-\dd E = T \dd S - P \dd V + \mu \dd N
+\dd U = T \dd S - P \dd V + \mu \dd N
 \end{equation}
 ou encore :
 \begin{equation}
-\dd S = \frac{\dd E}{T} + \frac{P}{T} \dd V - \frac{\mu}{T} \dd N
+\dd S = \frac{\dd U}{T} + \frac{P}{T} \dd V - \frac{\mu}{T} \dd N
 \end{equation}
 
 Considérons deux systèmes $\mathcal{S}_1$ et $\mathcal{S}_2$ à des températures $T_1$ et $T_2$ mis en contact.  Si les deux systèmes sont isolés :
 1. l'énergie l'énergie totale de ($S_1+S_2$) est constante 
-$$\dd E = \dd E_1 + \dd E_2 = 0 \Rightarrow \dd E_1 = -\dd E_2$$
+$$\dd U = \dd U_1 + \dd U_2 = 0 \Rightarrow \dd U_1 = -\dd U_2$$
 2. l'entropie de ($S_1 + S_2$) atteint un maximum 
-$$\dd S = \dd S_1 + \dd S_2 = 0 \Rightarrow \dd E_1/T_1 + \dd E_2/T_2 = 0$$
+$$\dd S = \dd S_1 + \dd S_2 = 0 \Rightarrow \dd U_1/T_1 + \dd U_2/T_2 = 0$$
 ce qui donne $T_1 = T_2$ à l'équilibre.
 
 Considérons maintenant que $\mathcal{S}_1$ et $\mathcal{S}_2$ peuvent échanger des particules (en gardant le nombre total de particules constant). Nous avons :
@@ -316,8 +324,6 @@ c'est-à-dire le cas de quatre systèmes $S_1$, $S_2$, $S_3$ et $S_4$ mis en con
 $$\mu_1 + \mu_2 = \mu_3 + \mu_4$$
 
 :::
-
-
 
 Nous avons vu dans l'encadré ci-dessus que si plusieurs espèces interagissent par le biais d'une réaction, par exemple :
 \begin{equation}
@@ -343,12 +349,10 @@ On peut aussi utiliser la réaction $X + \bar{X} \rightleftharpoons \gamma + \ga
 
 En résumé: 
 - Un système composés de différentes espèces a atteint l'équilibre cinétique s'il a atteint un état d'entropie maximale décrit par une fonction de distribution de Fermi-Dirac ou de Bose-Einstein. 
-- Un système composés de différentes espèces a atteint l'équilibre cinétique s'il a atteint un état d'entropie maximale décrit par une fonction de distribution de Fermi-Dirac ou de Bose-Einstein. 
 - Un système composé de plusieurs espèces interagissant via une ou plusieurs réactions chimiques a atteint l'équilibre chimique s'il a atteint un état d'entropie maximale, où la somme des potentiels chimiques des réactifs est égale à la somme des potentiels chimiques des produits. 
 - Un système a atteint l'équilibre thermodynamique s'il a atteint l'équilibre chimique et si toutes les espèces partagent la même température $T$, la "température de l'Univers".
 
 ### Densité et pression des fermions et bosons
-
 
 Nous avons maintenant tout ce qu'il faut pour calculer la densité particulaire, la densité d'énergie et la pression des constituants de l'Univers. Les potentiels chimiques peuvent être négligés à haute température ($\mu \ll T$), et les équations [](#eqn:number_density_general), [](#eqn:energy_density_general) et [](#eqn:pression_generale) peuvent être réécrites :
 \begin{equation}
@@ -358,6 +362,7 @@ Nous avons maintenant tout ce qu'il faut pour calculer la densité particulaire,
     P &= \frac{g}{2\pi^2\hbar^3} \frac{1}{3} \int \dd p \frac{p^4}{\sqrt{p^2c^2 + m^2 c^4} \left[\exp\left(\sqrt{p^2c^2 + m^2c^4}/k_B T\right) \pm 1\right]}\\    
   \end{split}
 \end{equation}
+avec le signe $+$ pour les fermions et le signe $-$ pour les bosons.
 
 Dans le cas général, les intégrales ci-dessus doivent être calculées numériquement. Il existe cependant deux limites intéressantes, qui permettent de comprendre les processus physiques en cours : le cas où les particules sont relativiste ($k_B T \gg m c^2$) et le cas opposé d'espèces non relativistes ($k_B T \ll m c^2$). 
 
@@ -372,7 +377,15 @@ nous pouvons alors réécrire $n$ et $\rho$ ci-dessus comme :
 
 #### Limite relativiste
 
-Dans la limite relativiste, nous pouvons négliger $x$ et les intégrales $I_\pm(0)$ et $J_\pm(0)$ peuvent être calculées exactement. Nous trouvons :
+Dans la limite relativiste, nous avons $x\ll 1$ et les intégrales $I_\pm(0)$ et $J_\pm(0)$ peuvent être calculées exactement :
+$$
+J_-(0) = \frac{\pi^4}{15},\quad J_+(0) = \frac{7}{8}\frac{\pi^4}{15},\quad I_-(0) = 2 \zeta(3),\quad I_+(0) = \frac{3}{2}\zeta(3)
+$$
+avec $\zeta$ la fonction de Riemann.
+
+
+
+Nous trouvons :
 \begin{equation}
   \boxed{\begin{aligned}
            &        \mathrm{Bosons}                       &  \mathrm{Fermions} \\
@@ -381,7 +394,7 @@ Dans la limite relativiste, nous pouvons négliger $x$ et les intégrales $I_\pm
   \end{aligned}}
   \label{eqn:n_rho_relativistic_limit}
 \end{equation}
-Les photons sont des bosons avec $g_\gamma=2$ polarisations possibles, donc on a ici démontré la loi de Stefan-Boltzmann.
+On voit que les densités particulaires et d'énergie sont identiques pour les bosons et fermions relativistes à un facteur numérique près. De plus, les photons sont des bosons avec $g_\gamma=2$ polarisations possibles, donc on a ici redémontré la loi de Stefan-Boltzmann.
 
 Concernant le calcul de la pression, on a $p^2 / E \sim p$ pour les particules relativistes, donc :
 \begin{equation}
@@ -393,19 +406,13 @@ On retrouve l'équation d'état déjà introduite précédemment.
 
 :::{exercise}
 
-Using $T_0 = 2.726 K$, compute the photon number density (today) and
-the photon energy density (today). Show that:
+En utilisant $T_0 = 2,726 K$, calculez la densité de nombre de photons (aujourd'hui) et la densité d'énergie des photons (aujourd'hui). Montrez que :
 \begin{equation*}
   \begin{split}
     n_\gamma & = 411\ \mathrm{cm}^{-3}\\
     \epsilon_\gamma &= 4.6 \times 10^{-34}\ \mathrm{g/cm^{3}} \\
     \end{split}
   \end{equation*}
-  and recover the CMB photon density today (in units of the critical density):
-  \begin{equation*}
-    \Omega_\gamma = 2.5 h^{-2} 10^{-5}
-  \end{equation*}
-  To get the correct numerical answer, you will need to do a little bit of dimensional analysis.  Where did we drop the physical constant(s) you had to retrieve ?
 :::
 
 
@@ -415,12 +422,12 @@ the photon energy density (today). Show that:
 To compute $I_{-}(0)$ it is useful to know the definition of the Riemann-zeta function:
 $$
 \zeta(s) = \sum_{i=1}^\infty \frac{1}{n^s} = \frac{1}{\Gamma(s)} \int_0^\infty \frac{x^s}{e^x - 1} \dd x
-\ \ \mathrm{where}\ \ \ \Gamma(s) = \int_0^\infty x^{s-1} e^{-x} \dd x
+\ \ \mathrm{où}\ \ \ \Gamma(s) = \int_0^\infty x^{s-1} e^{-x} \dd x
 $$
 
 Pour les bosons, nous obtenons immédiatement 
 $$
-I_-(0) = 2 \zeta(3) \approx 
+I_-(0) = 2 \zeta(3) \approx 2.40411
 $$
 Pour les fermions, nous avons
 \begin{equation}
@@ -457,21 +464,19 @@ Lorsque la température descend en dessous de la masse au repos des particules, 
 :::{note} Calcul de la densité particulaire dans le régime non relativiste
 :class: dropdown
 
-Dans le régime non relativiste, seule la densité de particules est quelque peu délicate à calculer.  Avec les mêmes définitions que ci-dessus : $x\equiv m c^2 / k_B T$, $\xi \equiv p c /k_B T$ et $x \gg 1$, les intégrales $I_-$ et $I_+$ se réduisent à une seule expression :
+Avec les mêmes définitions que ci-dessus : $x\equiv m c^2 / k_B T$, $\xi \equiv p c /k_B T$ et avec $y = \mu/k_B T$ pour réintroduire le potentiel chimique, les intégrales $I_-$ et $I_+$ se réduisent à une seule expression si $x \gg 1$  :
 \begin{equation}
-  I_\pm = \int_0^\infty \frac{\xi^2 \dd \xi}{\exp(\sqrt(x^2 + \xi^2))}
+  I_\pm(x\gg 1) = \int_0^\infty \frac{\xi^2 \dd \xi}{\exp(\sqrt(x^2 + \xi^2) - y)}
 \end{equation}
 $\xi \ll x$ et nous pouvons développer : $(x^2 + \xi^2)^{1/2} \approx x (1 + \frac{1}{2}\frac{\xi^2}{x^2})$, et nous pouvons approximer l'intégrale ci-dessus avec :
 \begin{equation}
-  \begin{split}
-    I_\pm & \approx e^{-x} \int_0^\infty \xi^2 e^{-\frac{\xi^2}{2 x}} \dd \xi \\
-         & \approx e^{-x} (2x)^{3/2} \frac{1}{2} \underbrace{\Gamma\left(\frac{3}{2}\right)}_{\sqrt{\pi}/2}
-  \end{split}
+    I_\pm(x\gg 1) & \approx e^{-(x-y)} \int_0^\infty \xi^2 e^{-\frac{\xi^2}{2 x}} \dd \xi \approx e^{-(x-y)} (2x)^{3/2} \frac{1}{2} \underbrace{\Gamma\left(\frac{3}{2}\right)}_{\sqrt{\pi}/2}
 \end{equation}
 
 :::
 
 :::{note} Gaz moléculaire
+:class: dropdown
 
 Si la particule considérée est composée de plusieurs atomes, alors elles possèdent plus de degrés de libertés que les 3 translations dans l'espace. Suivant une statistique de Boltzmann, elle peut stocker de l'énergie dans des degrés de liberté de rotation ou de vibration si le milieu est assez chaud, chacun comptant pour $k_B T / 2$ dans son énergie interne. Si on note $g_m$ le nombre de degrés de liberté d'une molécule, alors la densité d'énergie s'écrit :
 $$ \epsilon \approx n m c^2 + \frac{g_m}{2} nk_B T = n m c^2 + \frac{1}{\gamma -1} n k_B T $$
@@ -479,10 +484,28 @@ avec $\gamma=C_p/C_V$ l'indice adiabatique, que l'on retrouve dans la loi de Lap
 :::
 
 
+:::{note} Ordre de grandeur des potentiels chimiques
+:class: dropdown
+
+Pour les fermions, montrons que leur potentiels chimiques sont négligeables. Comparons les densités particulaires avant et après l'annihilation de particules avec leurs antiparticules (voir {cite:p}`KolbTurner` p.89):
+
+\begin{align*}
+n_f - n_{\bar f} & = \frac{g}{2\pi^2\hbar^3} \int \dd p \left[ \frac{p^2}{\exp\left((\sqrt{p^2c^2 + m^2 c^4}-\mu)/k_B T\right) + 1} -  \frac{p^2}{\exp\left((\sqrt{p^2c^2 + m^2 c^4}+\mu)/k_B T\right) + 1}\right] \\
+& = \frac{g}{6\pi^2\hbar^3}(k_B T)^3 \left[\pi^2 \left(\frac{\mu}{k_B T}\right) + \left(\frac{\mu}{k_B T}\right)^3 \right] \text{ si } mc^2 \ll k_B T \\
+& = 2 g \left(\frac{m k_B T}{2\pi \hbar^2}\right)^{3/2} \sinh\left(\frac{\mu}{k_B T}\right) e^{-mc^2/(k_B T)} \text{ si } mc^2 \gg k_B T \\
+\end{align*}
+
+
+Or pour les baryons, aujourd'hui leur densité particulaire est $(n_b - n_{\bar b}) \approx  \eta n_\gamma \propto \eta (k_B T)^3$. Pour les cas relativistes et non relativistes, on a donc $\mu_b / k_B T \sim \eta \ll 1$ donc le potentiel chimique des baryons est bien négligeable. Pour les électrons, comme l'Univers est électriquement neutre[^neutrality] alors on a le même ordre de grandeur. Concernant les neutrinos, c'est plus ambigü car le fond diffus de neutrinos n'a pas encore été détecté, mais en première approximation on peut penser que là encore le potentiel chimique doit être négligeable ({cite}`Weinberg1989` p.531).
+
+:::
+
+
 ### Nombre effectif d'espèces relativistes
 
-Nous partons d'un plasma primordial en équilibre thermique et chimique, contenant des espèces $i$ à la température $T_i$.
+#### Définition
 
+Nous partons d'un plasma primordial en équilibre thermique et chimique, contenant des espèces $i$ à la température $T_i$.
 Avant l'équivalence, le taux d'expansion est une fonction directe de la densité massique de matière relativiste :
 \begin{equation}
   H^2 = \frac{8\pi G}{3} \rho_r(T)
@@ -491,10 +514,10 @@ où $\rho_r(T)$ est la somme des densités de chaque espèce relativiste présen
 \begin{equation}
   \rho_r(T) = \sum_i^{m_i \ll T} \rho_i(T)
 \end{equation}
-Nous avons vu dans la section précédente que $\rho_i \propto T_i^4$ tant que la particule reste relativiste, et chute exponentiellement quand la température tombe en dessous de la masse de la particule. Plus précisément, nous pouvons écrire
+Nous avons vu dans la section précédente que $\rho_i \propto T_i^4$ tant que la particule reste relativiste, alors que la densité chute exponentiellement quand la température tombe en dessous de la masse de la particule. Plus précisément, nous pouvons écrire :
 \begin{align*}
-\rho_r & = \sum_{i=\mathrm{bosons}}^{m_i \ll T} \frac{g_i\pi^2}{30}T_i^4 +   \sum_{i=\mathrm{fermions}}^{m_i \ll T} \frac{7}{8}\frac{g_i\pi^2}{30}T_i^4 \\
-& = T^4 \left(\frac{\pi^2}{30}\right) \sum_{i=\mathrm{bosons}} g_i \left(\frac{T_i}{T}\right)^4 +   \frac{7}{8} \sum_{i=\mathrm{fermions}} g_i \left(\frac{T_i}{T}\right)^4 
+\rho_r & = \sum_{i=\mathrm{bosons}}^{m_i \ll T} \frac{g_i\pi^2}{30\hbar^3c^3}(k_BT_i)^4 +   \sum_{i=\mathrm{fermions}}^{m_i \ll T} \frac{7}{8}\frac{g_i\pi^2}{30\hbar^3c^3}(k_BT_i)^4 \\
+& = (k_BT)^4 \left(\frac{\pi^2}{30\hbar^3c^3}\right) \sum_{i=\mathrm{bosons}} g_i \left(\frac{T_i}{T}\right)^4 +   \frac{7}{8} \sum_{i=\mathrm{fermions}} g_i \left(\frac{T_i}{T}\right)^4 
 \end{align*}
 On définit $g_\star(T)$ le nombre effectif de degrés de liberté _relativistes_ du plasma à la température $T$ : 
 \begin{equation}
@@ -503,31 +526,7 @@ On définit $g_\star(T)$ le nombre effectif de degrés de liberté _relativistes
 \begin{equation}
 g_\star(T) = \sum_{i=\mathrm{bosons}}^{m_i \ll T} g_i \left(\frac{T_i}{T}\right)^4 +   \frac{7}{8} \sum_{i=\mathrm{fermions}}^{m_i \ll T}  g_i \left(\frac{T_i}{T}\right)^4
 \end{equation}
-Lorsque l'espèce $i$ est encore à l'équilibre thermique avec les photons, alors $T_i=T$.
-Lorsque la température descend en dessous de la masse $m_i$ de l'une des espèces, elle devient relativiste et disparaît de la somme ci-dessus. 
-
-
-#### Expansion du plasma primordial
-
-La loi d'expansion obéit à la première équation de Friedmann :
-\begin{equation}
-  H^2 = \frac{8\pi G}{3} \rho_r = \frac{8\pi G}{3} \frac{\pi^2}{30\hbar^3 c^5} g_\star(T) T^4
-\end{equation}
-et donc :
-\begin{equation}
-  \boxed{H = \sqrt{\frac{8 \pi^3 G}{90 \hbar^3 c^5}} g_\star^{1/2}(T) (k_B T)^2}
-\end{equation}
-Ainsi, $H \propto T^2$ aux variations du nombre effectif de degrés de liberté dans le plasma primordial près. Gardez cela à l'esprit, cela sera utile lorsque vous comparerez le taux d'expansion avec les divers taux de réaction entre les différentes espèces.
-
-De plus, comme l'Univers est dominé par le rayonnement, nous avons [](#eq:a_rad_only) :
-\begin{equation}
- a \propto t^{1/2} \Rightarrow H = \frac{1}{2 t}
-\end{equation}
-ce qui donne :
-\begin{equation}
-  \boxed{T \approx \left[ 1.8 \times 10^{10} \mathrm{K}\right] \times  g_*(T)^{-1/4} \left(\frac{t}{\mathrm{1\ sec}}\right)^{-1/2}} 
-\end{equation}
-Ainsi, lorsque l'Univers était âgé d'une seconde, l'énergie typique des particules relativistes était de l'ordre de 0.9 MeV avec $g_*=10.75$.
+Lorsque l'espèce $i$ est encore à l'équilibre thermique avec les photons, alors $T_i=T$. Lorsque la température descend en dessous de la masse $m_i$ de l'une des espèces, elle devient relativiste et disparaît de la somme ci-dessus. Si elle se découple des photons avec une température $T_i$ différente des photons, tout en restant relativiste, alors elle reste présente dans $g_*(T)$ avec un poids $(T_i/T)^4$.
 
 
 #### Évolution de $g_\star(T)$
@@ -535,30 +534,33 @@ Ainsi, lorsque l'Univers était âgé d'une seconde, l'énergie typique des part
 
 :::{figure} #gtable
 :name: tab:gtable
+
+Caractéristiques des particules du modèle standard pour calculer $g_*(T)$. En l'absence de neutrinos droits, on ne compte qu'un état de spin pour les neutrinos. Les gluons pouvant porter 2 charges de couleurs de l'interaction forte parmi $\lbrace r, g, b\rbrace$, cela fait 9 états possibles mais la combinaison linéaire de couleur blanche  $r\bar r + g \bar g + b \bar b=0$ retire un degré de liberté à l'interaction forte donc il n'y a finalement que 8 états indépendants (<wiki:Gluon>).
+
 :::
 
-La dernière pièce manquante est l'évolution de $g_\star(T)$, qui raconte simplement l'évolution de la matière relativiste du plasma primordial au fur et à mesure qu'il se refroidit avec l'expansion. Commençons autour de $T \approx 300\,$GeV. Toutes les particules du modèle standard sont relativistes (voir [](#tab:gtable)). Lorsque toutes les particules sont relativistes, le nombre total de degrés de liberté est de :
+Etudions maintenant l'évolution de $g_\star(T)$, qui raconte simplement l'évolution de la matière relativiste du plasma primordial au fur et à mesure qu'il se refroidit avec l'expansion. Commençons autour de $T \approx 300\,$GeV. Toutes les particules du modèle standard sont relativistes (voir [](#tab:gtable)). Lorsque toutes les particules sont relativistes, le nombre total de degrés de liberté est de :
 \begin{equation}
-  g_f = \underbrace{6 \times 12}_{\mathrm{quarks}} + \underbrace{3 \times 4}_{\ell^\pm} + \underbrace{3 \times 2}_{\nu's} = 90
+  g_f = \underbrace{6}_{\mathrm{quarks}} \times \underbrace{2}_{q\bar q} \times \underbrace{2}_{\mathrm{spin}} \times \underbrace{3}_{\mathrm{couleur}} + \underbrace{3 \times 2 \times 2}_{\ell^\pm} + \underbrace{3 \times 2}_{\nu} = 90
 \end{equation}
 pour les fermions, et
 \begin{equation}
-  g_b = \underbrace{8 \times 2}_{gluons} + \underbrace{3 \times 3}_{W,Z} + \underbrace{2}_{\gamma} + \underbrace{1}_{H}  = 28
+  g_b = \underbrace{8 \times 2}_{\mathrm{gluons}} + \underbrace{3 \times 3}_{W,Z} + \underbrace{2}_{\gamma} + \underbrace{1}_{H}  = 28
 \end{equation}
 pour les bosons, ce qui donne
 \begin{equation}
   g_\star = g_b + \frac{7}{8} g_f = 106.75
 \end{equation}
 
-Pour voir ce qui va se passer ensuite, il suffit de regarder les masses des particules énumérées dans le [](#tab:gtable). Le quark top s'annihile en premier, réduisant le nombre de degrés de liberté à :
+Pour voir ce qui va se passer ensuite, il suffit de regarder les masses des particules énumérées dans le [](#tab:gtable). Le quark top s'annihile en premier car c'est la particule la plus lourde. Pour $k_BT<m_{\mathrm{top}}$, le plasma à l'équilibre ne peut plus produire de quarks top par annihilation de paires d'autres particules, réduisant le nombre de degrés de liberté à :
 \begin{equation}
   g_\star(T<m_{\mathrm{top}}) = 106.75 - \frac{7}{8} \times 12 = 96.25
 \end{equation}
 Puis, nous avons donc le boson de Higgs, suivi des bosons électrofaibles $W^\pm$ et $Z^0$ : ce qui réduit $g_\star$ à 86.25. Ensuite, $b$ et $c$ s'annihilent, et $g_\star$ est alors réduit à 61.75.
 
-L'événement suivant est la transition de phase QCD, qui se produit à $T \sim 150\ \mathrm{MeV}$.  Les quarks se combinent en baryons (protons, neutrons et mésons), tous sauf les pions étant relativistes. A ce stade, les seules espèces relativistes restantes sont les photons, les neutrinos, les électrons et les muons et les 3 pions de spin 0, d'où : $g_\pi = 3 \cdot 1 = 3$. Donc :
+L'événement suivant est la transition de phase QCD, qui se produit à $T \sim 150\ \mathrm{MeV}$.  Les quarks se combinent en hadrons (protons, neutrons et mésons). A cette température, tous sont non relativistes sauf les pions. A ce stade, les seules espèces relativistes restantes sont les photons, les neutrinos, les électrons et les muons et les 3 pions de spin 0 (avec donc  $g_\pi = 3 \cdot 1 = 3$ degrés de liberté internes). On en déduit le nombre de degrés de liberté relativiste restant :
 \begin{equation}
-  g_\star(T<T_{QCD}) = \underbrace{2}_{\gamma} + \underbrace{3}_{\pi} + \frac{7}{8} \times (\underbrace{4 + 4}_{e^{\pm}, \mu^\pm} + \underbrace{6}_{\nu's}) = 17.25
+  g_\star(T<T_{QCD}) = \underbrace{2}_{\gamma} + \underbrace{3}_{\pi^0,\pi^\pm} + \frac{7}{8} \times (\underbrace{4 + 4}_{e^{\pm}, \mu^\pm} + \underbrace{6}_{\nu}) = 17.25
 \end{equation}
 
 Ensuite, les pions et les muons s'annihilent, ce qui nous donne
@@ -570,102 +572,142 @@ Ensuite, les pions et les muons s'annihilent, ce qui nous donne
 :name: fig:ggstar_plot
 :::
 
-Les deux événements significatifs suivants sont le découplage des neutrinos autour de 1 MeV puis l'annihilation des électrons et des positrons ($m_e = 511 \mathrm{keV}$). 
+Les deux événements significatifs suivants sont le découplage des neutrinos autour de 1 MeV puis l'annihilation des électrons et des positrons ($m_e = 511\,\keV$). 
 
+### Entropie
 
-### Conservation de l'entropie
+#### Conservation de l'entropie
 
-
-L'entropie de l'Univers ne peut qu'augmenter ou rester constante. Nous savons qu'à l'équilibre, l'entropie est conservée (voir encadré).  Le plasma primordial n'est pas _exactement_ à l'équilibre\footnote{c'est heureux, sinon, nous ne serions pas là pour réfléchir à tout cela} : l'expansion n'en fait qu'un équilibre local, nous verrons de nombreux exemples de processus hors équilibre dans la suite de l'article.  Cependant, comme l'entropie est au premier ordre proportionnelle au nombre de particules, et que les photons sont de loin l'espèce la plus abondante dans l'Univers, nous pouvons supposer sans risque que l'entropie est conservée, et que, à une très grande précision, l'expansion cosmique est un processus adiabatique.
-
-Comment calculer l'entropie totale de l'Univers ? Nous pouvons commencer par :
+L'entropie de l'Univers $S(U,V,N_i)$ est une fonction des variables extensives énergie interne $U$, volume $V$ et des nombres $N_i$ de particules d'une espèce $i$. La variation d'entropie d'un volume comobile $V$ de plasma à l'équilibre thermodynamique obéit au seconde principe de la thermodynamique :
 \begin{equation}
-  E = TS -PV + \sum_i \mu_i N_i
+  \dd S(U, V, N) = \frac{\dd U}{T} + \frac{P}{T}\dd V - \sum_i \frac{\mu_i}{T} \dd N_i \geq 0
 \end{equation}
-ce qui donne :
-\begin{equation}
-  S = \frac{E}{T} + \frac{P}{T}V - \sum_i \frac{\mu_i}{T} N_i
-\end{equation}
-en négligeant les potentiels chimiques :
-\begin{equation}
-  S \approx \frac{E}{T} + \frac{P}{T}V
-\end{equation}
-Il est utile de prendre en compte l'entropie {\densité d'emprise} :
-\begin{equation}
-  s \equiv \frac{S}{V} \approx \frac{\rho + P}{T}
-\end{equation}
+Pour un volume d'Univers suffisamment grand pour être considéré homogène et isotrope, l'entropie ne peut qu'augmenter ou rester constante. De plus, les potentiels chimiques sont négligeables dans le plasma primordial ($\mu / (k_B T) \sim \eta$). Or, à l'équilibre thermodynamique on a : 
+$$U(V, T) = \epsilon(T) V,\quad P = P(T)$$
+où pression et densité d'énergie ne sont finalement que des fonctions que de la température d'équilibre, que les espèces soient relativistes ou non (voir formules précédentes). Dès lors, la variation d'entropie est une fonction du volume et de la température avec ({cite}`Weinberg1989` p.532):
+$$
+\dd S(V,T) = \frac{\dd(\epsilon(T) V)}{T} + \frac{P(T)}{T}\dd V = \frac{V}{T}\frac{\dd \epsilon}{\dd T} \dd T + \frac{P(T)+\epsilon(T)}{T} \dd V
+$$
+On identifie les dérivées partielles :
+$$
+\left.\frac{\partial S}{\partial T}\right\vert_V = \frac{V}{T}\frac{\dd \epsilon(T)}{\dd T}, \quad \left.\frac{\partial S}{\partial V}\right\vert_T = \frac{P(T)+\epsilon(T)}{T}
+$$
+et grâce aux relations de Maxwell (ou théorème de Schwartz), on a :
+$$ \frac{\partial^2 S}{\partial T\partial V} = \frac{\partial^2 S}{\partial V\partial T} $$
+\begin{align*}
+& \Leftrightarrow \frac{\partial}{\partial T}\left[ \frac{P(T)+\epsilon(T)}{T} \right] = \frac{\partial}{\partial V}\left[ \frac{V}{T}\frac{\dd \epsilon(T)}{\dd T} \right] \\
+& \Leftrightarrow \frac{1}{T} \frac{\dd ( P + \epsilon)}{\dd T} - \frac{1}{T^2}(P+\epsilon) = \frac{1}{T}
+\frac{\dd \epsilon}{\dd T} \\
+& \Leftrightarrow \frac{\dd P}{\dd T} = \frac{\epsilon + P}{T}
+\end{align*}
 
-Pour les espèces relativistes, en introduisant les expressions de la densité et de la pression (\ref{eqn:n_rho_relativistic_limit}, \ref{eqn:P_relativistic_limit}), nous trouvons :
+Avec cette dernière relation, on peut terminer le calcul de la variation d'entropie :
+\begin{align*}
+\dd S(V,T) & = \frac{P(T)+\epsilon(T)}{T} \dd V + \frac{V}{T}\frac{\dd \epsilon}{\dd T} \dd T \\
+& = \frac{P(T)+\epsilon(T)}{T} \dd V + \frac{V}{T}\left[\frac{\dd (\epsilon+P)}{\dd T} - \frac{\dd P}{\dd T} \right]\dd T \\
+& = \frac{1}{T} \dd \left[V(P+\epsilon)\right] - \frac{V}{T} \frac{\dd P}{\dd T}\dd T \\
+& = \frac{1}{T} \dd \left[V(P+\epsilon)\right] - \frac{V}{T^2}(\epsilon + P)\dd T \\
+& = \dd \left[\frac{V}{T}(P+\epsilon)\right]
+\end{align*}
+Si on considère une variation par rapport au temps $t$ :
+$$\frac{\dd S}{\dd t} = \frac{\dd}{\dd t}\left[ \frac{V}{T}(P+\epsilon)\right] = \frac{V}{T}\dot \epsilon + \frac{\epsilon + P}{T} \dot V + \frac{V}{T} \dot P - \frac{V}{T^2}(\epsilon + P)\dot T$$
+et enfin en se souvenant de la relation de conservation de l'énergie $\dot \epsilon = -3H(\epsilon + P)$,
+$$\boxed{\frac{\dd S}{\dd t} = 0}$$
+L'entropie dans un volume comobile est donc conservée et s'écrit[^Sconst] :
+$$\boxed{S(V, T) = \frac{V}{T}(P+\epsilon)}$$
+On définit l'entropie volumique, fonction de la température uniquement :
+$$\boxed{s(T) = \frac{P+\epsilon}{T}, \quad \dd(a^3 s) = 0}$$
+
+#### Entropie du plasma primordial
+
+Pour les espèces relativistes, comme $P=\epsilon/3$, nous obtenons les entropies volumiques :
 \begin{equation}
-  \boxed{\begin{split}
-    s &= \frac{2\pi^2}{45} g T^3 \ \ \ \mathrm{for\ bosons}\\
-    s &= \frac{7}{8} \frac{2\pi^2}{45} g T^3 \ \ \ \mathrm{for\ fermions}\\
-  \end{split}}
+  \boxed{s_r(T) = \frac{4}{3}{\epsilon_r}{T} =
+\left\lbrace
+\begin{array}{ll}
+     \dfrac{2\pi^2k_B^4}{45\hbar^3 c^3} T^3 & \text{pour les bosons}\\
+     \dfrac{7}{8} \dfrac{2\pi^2 k_B^4}{45\hbar^3 c^3} T^3 & \text{pour les fermions}
+  \end{array}
+\right.}
 \end{equation}
-Pour une collection d'espèces (fermions et bosons), nous avons :
+Pour une collection d'espèces (fermions et bosons) à l'équilibre aux températures $T_i$, nous avons :
 \begin{equation}
-    s = \frac{2\pi^2}{45} g_{\star S}(T) T^3
+    s_r(T) =  \sum_i^{m_i \ll T} \frac{\epsilon_i + P_i}{T_i} =  \frac{4}{3} \sum_i^{m_i \ll T} {\epsilon_i}{T_i} = \frac{2\pi^2 k_B^4}{45 \hbar^3 c^3} g_{\star S}(T) T^3
 \end{equation}
 avec
 \begin{equation}
   g_{\star S}(T) = \sum_{\mathrm{bosons}} g_b \left(\frac{T_b}{T}\right)^3 + \frac{7}{8} \sum_{\mathrm{fermions}} g_f \left(\frac{T_f}{T}\right)^3
 \end{equation}
-
-
-Si l'entropie $S$ est conservée, alors :
+Puisque l'entropie $S$ est conservée, alors :
 \begin{equation}
-  \dd S = 0 \Rightarrow \boxed{\dd(s a^3) = 0}
-\end{equation}
-ce qui donne
-\begin{equation}
-  \boxed{g_{\star S}(T) T^3 a^3 = \mathrm{constante}}
+\dd(s a^3) = 0 \Rightarrow   g_{\star S}(T) T^3 a^3 = \mathrm{constante}
 \end{equation}
 
 
+#### Température de l'Univers
 
-Dans les intervalles entre les masses des particules, $g_\star(T)$ reste pratiquement constant.  Puisque $\epsilon \propto g_\star(T) T^{4} \propto a^{-4}$, nous pouvons raffiner le lien entre température et facteur d'échelle dans le plasma primordial :
+Maintenant que nous avons une relation de conservation, on peut établir un lien entre l'expansion de l'Univers et sa température :
 \begin{equation}
-  \boxed{T \propto \left[g_\star^{1/3}(T) a\right]^{-1}}
+  \boxed{T \propto \left[g_{\star S}^{1/3}(T) a\right]^{-1}}
 \end{equation}
+Cette relation donne un lien entre température et facteur d'échelle à tout instant dans l'histoire de l'Univers. Elle varie bien avec le redshift en $(1+z)$ mais avec un facteur de proportionnalité $g_{\star S}^{1/3}(T)$ qui change par seuil selon la composition de l'Univers. 
+
+
+### Expansion du plasma primordial
+
+La loi d'expansion obéit à la première équation de Friedmann :
+\begin{equation}
+  H^2 = \frac{8\pi G}{3} \rho_r = \frac{8\pi G}{3} \frac{\pi^2}{30\hbar^3 c^5} g_\star(T) T^4
+\end{equation}
+et donc :
+\begin{equation}
+  \boxed{H = \sqrt{\frac{8 \pi^3 G}{90 \hbar^3 c^5}} g_\star^{1/2}(T) (k_B T)^2}
+\end{equation}
+Ainsi, $H \propto T^2$ aux variations du nombre effectif de degrés de liberté dans le plasma primordial près. Gardez cela à l'esprit, cela sera utile pour comparer le taux d'expansion avec les divers taux de réaction entre les différentes espèces.
+
+
+En injectant l'évolution de la température avec le facteur d'échelle, on retrouve que $a\propto t^{1/2}$ dans l'Univers primordial ([](#eq:a_rad_only)) mais le facteur de propotionalité change quand $g_{\star S}$ varie. Le taux d'expansion vaut donc $H = 1/(2t)$ ce qui donne :
+\begin{equation}\label{eq:Ttoa}
+  \boxed{T \approx \left[ 1.8 \times 10^{10} \mathrm{K}\right] \times  g_*(T)^{-1/4} \left(\frac{t}{\mathrm{1\ sec}}\right)^{-1/2}} 
+\end{equation}
+Ainsi, lorsque l'Univers était âgé d'une seconde, l'énergie typique des particules relativistes était de l'ordre de $0.9\,\MeV$ avec $g_*=10.75$.
 
 
 Histoire de la matière dans l'Univers jeune
 --------------------------------------
 
-Nous avons maintenant (presque) tout ce dont nous avons besoin pour discuter de l'évolution du plasma primordial. Lorsque la température est suffisamment élevée, le plasma primordial contient toutes les particules du modèle standard, sous forme relativiste (plus toutes les particules qui n'ont pas encore été découvertes, par exemple les particules hypothétiques qui constituent la matière noire froide).
+Nous avons maintenant (presque) tout ce dont nous avons besoin pour discuter de l'évolution du plasma primordial. Lorsque la température est suffisamment élevée, le plasma primordial contient toutes les particules du modèle standard, sous forme relativiste (plus toutes les particules qui n'ont pas encore été découvertes, par exemple les particules hypothétiques qui constituraient la matière sombre froide aujourd'hui).
 
-Dans l'Univers primitif, toutes les espèces de particules sont en équilibre thermique (cinétique et chimique, même température $T$).  Au fur et à mesure de l'expansion de l'Univers, la température diminue ($T \propto a^{-1}$). L'une après l'autre, les différentes espèces massives deviennent non relativistes, s'anéantissent, et leur densité d'énergie devient sous-dominante par rapport aux espèces relativistes.
+Dans l'Univers primordial, toutes les espèces de particules sont en équilibre thermique (cinétique et chimique, même température $T$).  Au fur et à mesure de l'expansion de l'Univers, la température diminue au rythme du taux d'expansion. L'une après l'autre, les différentes espèces massives deviennent non relativistes, s'anéantissent, et leurs densités d'énergie deviennent sous-dominantes par rapport aux espèces relativistes. 
 
-Si l'Univers était en parfait équilibre thermique, et si cet équilibre avait persisté jusqu'à aujourd'hui, les abondances observées de particules massives seraient bien inférieures à ce qu'elles sont, puisque chaque espèce massive est exponentiellement supprimée lorsqu'elle devient non relativiste.  En fait, les équilibres thermiques et chimiques ont besoin de taux de collision (et/ou de réaction) fréquents pour être maintenus. Avec l'expansion de l'Univers, les particules se diluent, ce qui rend plus difficile le maintien des taux de réaction. Une bonne règle empirique est qu'il faut plusieurs réactions par temps de Hubble pour maintenir l'équilibre thermique. Ainsi, si
-\begin{equation}
-  \Gamma \gg H
-\end{equation}
-l'équilibre est maintenu. Lorsque le taux de réaction chute en dessous de $H$, l'équilibre thermique n'est plus maintenu, les densités de particules sont gelées à leurs valeurs d'avant le découplage. Le gel est un mécanisme essentiel pour expliquer l'abondance actuelle des particules.
+Si l'Univers était en parfait équilibre thermique, et si cet équilibre avait persisté jusqu'à aujourd'hui, les abondances observées de particules massives seraient bien inférieures à ce qu'elles sont, puisque chaque espèce massive est exponentiellement supprimée lorsqu'elle devient non relativiste. En fait, les équilibres thermiques et chimiques ont besoin de taux de collision (et/ou de réaction) fréquents pour être maintenus. Avec l'expansion de l'Univers, les particules se diluent, ce qui rend plus difficile le maintien des taux de réaction. La règle empirique est qu'il faut plusieurs réactions par temps de Hubble pour maintenir l'équilibre thermique. En effet, puisque $T \propto a^{-1}$ [](#eq:Ttoa), le taux de variation de la température est le taux d'expansion :
+$$H = \frac{\dot a }{a} = \frac{\dot T}{T}$$
+Ainsi, l'équilibre thermique est maintenu si $ \Gamma \gg H$. Lorsque le taux de réaction $\Gamma$ chute en dessous de $H$, l'équilibre thermique n'est plus maintenu, les densités de particules sont gelées à leurs valeurs d'avant le découplage. Le gel est un mécanisme essentiel pour expliquer l'abondance actuelle des particules.
 
 
 ### Découplage des neutrinos et annihilations électron-positron
 
-
-Le découplage des neutrinos est notre première expérience de freeze-out.  Les neutrinos n'interagissent que par le biais de l'interaction faible.  Autour de $\sim$ 1 MeV, ils sont encore thermalisés par des interactions telles que :
+Le découplage des neutrinos est notre première illustration de l'effet de gel.  Les neutrinos n'interagissent que par le biais de l'interaction faible.  Autour de $\sim 1\,\MeV$, ils sont encore thermalisés avec le bain de photons par des interactions telles que :
 \begin{equation}
   \begin{split}
-    \nu_e + p & \rightleftharpoons p + e^- \\
     \nu_e + \bar{\nu_e} & \rightleftharpoons e^+ + e^- \\
-    e^- + \nu_e & \rightleftharpoons e^- + \nu_e \\    
+    e^- + \nu_e & \rightleftharpoons e^- + \nu_e  
   \end{split}
 \end{equation}
-Cependant, à ces énergies, la section efficace de l'interaction faible est $\sigma_w \sim G_F^2 T^2$, par conséquent, le taux d'interaction $\Gamma = n_e \sigma_w c \propto G_F^2 T^5$ diminue beaucoup plus rapidement que le paramètre de Hubble ($\propto T^2$).  Autour de 1 MeV, $\Gamma \sim H$ et les interactions entre les neutrinos et les autres particules du SM deviennent très improbables.  Les neutrinos se découplent et se déplacent librement le long des géodésiques.
-
-À ce stade, les neutrinos sont encore relativistes ($m_\nu \ll 1 MeV$). Même s'ils n'interagissent plus avec d'autres particules, ils conservent dans une excellente approximation leur fonction de distribution de Fermi-Dirac (voir encadré) avec une température qui n'est affectée que par le décalage vers le rouge. Ainsi, à ce stade :
+A ces énergies, la section efficace de l'interaction faible est $\sigma_w \sim G_F^2 T^2$. Par conséquent, le taux d'interaction $\Gamma = n_e \sigma_w c \propto G_F^2 T^5$ diminue beaucoup plus rapidement que le paramètre de Hubble ($\propto T^2$) :
+$$
+\frac{\Gamma}{H} \sim \frac{n_e \sigma_w}{H} \sim \left(\frac{T}{1\,\MeV}\right)^3
+$$
+Autour de $1\,\MeV$, $\Gamma \sim H$ et les interactions entre les neutrinos et les autres particules du modèle standard deviennent très improbables. Les neutrinos se découplent du plasma primordial mais restent relativistes ($m_\nu \ll 1\,\MeV$). Même s'ils n'interagissent plus avec d'autres particules, ils conservent dans une excellente approximation leur fonction de distribution de Fermi-Dirac (voir encadré) avec une température qui n'est affectée que par le décalage vers le rouge. Ainsi, à ce stade :
 \begin{equation}
   T_\nu = T_\gamma \propto a^{-1}
 \end{equation}
+tant que l'évolution de la température des photons ne varie pas.
 
 
+:::{note} Le spectre des espèces découplées sans interaction XXX DRAFT
 
-:::{note} Le spectre des espèces découplées sans interaction
-
-Pour les espèces ultra-relativistes, nous avons $p \sim E$. Le nombre de particules à $t_1$ dans le volume de l'espace des phases $d^3p_1 \dd V_1$ est :
+Pour les espèces ultra-relativistes, nous avons $pc \sim E$. Le nombre de particules à $t_1$ dans le volume de l'espace des phases $d^3p_1 \dd V_1$ est :
 \begin{equation}
 \dd N = \frac{g}{(2\pi)^3} \frac{d^3p_1 \dd V_1}{\exp((E(p_1) - \mu_1)/T_1) \pm 1}
 \end{equation}
@@ -682,67 +724,52 @@ avec $\mu_0 \equiv \frac{a_1}{a_0} \mu_1$ et $T_0 \equiv \frac{a_1}{a_0} T_1$.
 :::
 
 
-### Annihilation $e^+ + e^-$ 
+### Annihilation $e^+ + e^-$ et température du fond diffus de neutrinos
 
-Peu après le découplage des neutrinos vers 1 MeV, les électrons et les positrons s'annihilent (511 keV).  Naïvement, on pourrait dire que $g_\star(T)$ devient alors :
-$$
-2 + \frac{7}{8} \times 6 = 7.25
-$$
-mais la Nature est plus subtile.  En effet, l'annihilation électron-positron produit suffisamment d'énergie et d'entropie pour chauffer le bain de photons et modifier la température des photons.  Les neutrinos ne sont pas affectés et leur température varie toujours comme $a^-1$.  Par conséquent, après l'annihilation de $e^+ + e^-$, nous avons $T_\nu < T_\gamma$.
-
-Nous nous trouvons donc dans une nouvelle situation où nous avons plusieurs espèces relativistes avec des températures différentes.  Pour en tenir compte, nous pouvons modifier l'équation \ref{eqn:g_star_same_temp}, en permettant à chaque espèce d'avoir sa propre température :
+Mais peu après le découplage des neutrinos, lorsque $T < 511\,\keV$, les électrons et les positrons s'annihilent :
 \begin{equation}
-  g_\star(T) = \sum_{\mathrm{bosons}} g_i \left(\frac{T_i}{T}\right)^4 + \frac{7}{8} \sum_{\mathrm{fermions}} g_i \left(\frac{T_i}{T}\right)^4
+    e^- + e^+ \rightarrow \gamma + \gamma  
 \end{equation}
-Pour aller plus loin, nous devons déterminer $T_\nu$, ou plus exactement, relier $T_\nu$ et $T_\gamma$ (nous connaissons assez bien $T_\gamma$). La façon la plus simple de le faire est d'utiliser la conservation de l'entropie.
-
-### La température du fond diffus de neutrinos
-
-Revenons à la détermination de la relation entre la température des photons et la température du fond de neutrinos cosmiques.
-cosmique. Lors de l'annihilation, l'entropie et l'énergie du $e^\pm$ sont transférées au bain de photons. L'entropie étant conservée, nous avons, avant l'annihilation, démonté l'entropie des neutrinos (qui est conservée) :
+ce qui va produire suffisamment d'énergie et d'entropie pour chauffer le gaz de photons et mener à une différence entre la température des photons et ceux des neutrinos découplés $T_\nu < T_\gamma$. L'entropie étant conservée, nous avons avant l'annihilation :
 \begin{equation}
-  g^\gamma_{\star S, \mathrm{before}}(T) = 2 + \frac{7}{8} (4) = \underbrace{\frac{11}{2}}_{e^\pm, \gamma} 
+  g_{\star S}(T > m_e) = \underbrace{2}_{\gamma} + \frac{7}{8}\left[ \underbrace{2\times 2}_{e^\pm} + \underbrace{2}_{\nu, \bar \nu} \times \underbrace{3}_{e,\mu,\tau} \right] 
 \end{equation}
 après annihilation : 
 \begin{equation}
-  g^\gamma_{\star S, \mathrm{after}}(T) = 2 
+  g_{\star S}(T<m_e) = 2 + \frac{7}{8}\times 3 \times 2 \left(\frac{T_\nu}{T_\gamma}\right)^3
 \end{equation}
 En écrivant la conservation de l'entropie, nous avons :
 \begin{equation}
-  a^3_\mathrm{before}\ g^\gamma_{\star S \mathrm{before}}\ T^3_\mathrm{before} = a^3_\mathrm{after}\ 
-g^\gamma_{\star S \mathrm{after}}\ T^3_\mathrm{after}
+  g_{\star S }(T > m_e)\ a^3_\mathrm{before}\ T^3_\mathrm{\gamma,before} = g_{\star S}(T < m_e)\ a^3_\mathrm{after}\ T^3_\mathrm{\gamma,after}
 \end{equation}
-ce qui donne
+Or on a  $T_\mathrm{\gamma,before}=T_\mathrm{\nu,before}$ donc :
+\begin{align*}
+  \frac{7}{8}\left[ 2\times 2 + 2 \times 3 \right] \ a^3_\mathrm{before}\ T^3_\mathrm{\nu,before} & = & \left[ 2 + \frac{7}{8}\times 3 \times 2 \left(\frac{T_\mathrm{\nu,after}}{T_\mathrm{\gamma,after}}\right)^3 \right] \ a^3_\mathrm{after}\ T^3_\mathrm{\gamma,after} \\
+  \Leftrightarrow   \frac{7}{8}\left[ 2\times 2 + 2 \times 3 \right] \ a^3_\mathrm{before}\ T^3_\mathrm{\nu,before} & = & \left[ 2 \left(\frac{T_\mathrm{\gamma,after}}{T_\mathrm{\nu,after}}\right)^3  + \frac{7}{8}\times 3 \times 2 \right] \ a^3_\mathrm{after}\ T^3_\mathrm{\nu,after} \\
+\end{align*}
+Pour les neutrinos découplés, $a_\mathrm{after}T_\mathrm{\nu,after} = a_\mathrm{before}T_\mathrm{\nu,before}$ donc finalement :
 \begin{equation}
-  \underbrace{T^3_\mathrm{after}}_{T_\gamma} = \frac{g^\gamma_{\star S, \mathrm{before}}}{g^\gamma_{\star S, \mathrm{after}}} \underbrace{\left(\frac{a_{\mathrm{before}}}{a_{\mathrm{after}}}\right)^3 T^3_{\mathrm{before}}}_{T_\nu}
-\end{equation}
-et donc :
-\begin{equation}
-  \boxed{T_\nu = \left(\frac{4}{11}\right)^{1/3}\ T_\gamma}
+  \boxed{T_\mathrm{\nu,after}\ = \left(\frac{4}{11}\right)^{1/3}\ T_\mathrm{\gamma,after}}
 \end{equation}
 
-Nous constatons donc qu'après l'annihilation de $e^\pm$, la température du fond de neutrinos cosmiques est effectivement inférieure à la température du CMB. Aujourd'hui, en utilisant $T_0 = 2.726\,$K, nous trouvons :
+Nous constatons donc qu'après l'annihilation $e^\pm$, la température du fond cosmique de neutrinos est effectivement inférieure à la température du CMB. Aujourd'hui, en utilisant $T_0 = 2.725\,\kelvin$, nous trouvons :
 \begin{equation}
-  T_\nu \approx 1.95\,K
+  T_\nu^0 \approx 1.95\,K = 0.17\,\mathrm{meV}
 \end{equation}
 
-Nous pouvons en déduire la densité de neutrinos $n_\nu$ en fonction de $n_\gamma$. Les neutrinos sont des fermions donc : 
+Nous pouvons en déduire la densité de neutrinos $n_\nu$ en fonction de $n_\gamma$. Les neutrinos sont des fermions avec 3 saveurs donc si on les suppose sans masse, aujourd'hui leur densité serait : 
 \begin{equation}
-  n_\nu = \frac{3}{4} \times 3 \times \frac{4}{11} n_\gamma
+  n_\nu^0 = \frac{3}{4} \times 3 \times \frac{4}{11} n_\gamma^0
 \end{equation}
-ce qui donne $\approx 112 \mathrm{cm}^{-3}$ par saveur (336 cm$^{-3}$ au total).
-
-Pour la densité d'énergie du fond de neutrinos, nous trouvons :
+ce qui donne $112\,\mathrm{cm}^{-3}$ par saveur ($336 \,\mathrm{cm}^{-3}$ au total). Pour la densité d'énergie du fond de neutrinos, nous trouvons :
 \begin{equation}
-  \rho_\nu = \frac{7}{8} \times 3 \times \left(\frac{4}{11}\right)^{4/3} \rho_\gamma
+  \rho_\nu = \frac{7}{8}  \frac{g_\nu}{g_\gamma} \left(\frac{T_\nu}{T_\gamma}\right)^4 \rho_\gamma \frac{7}{8} \times \frac{3 \times 2}{2} \times \left(\frac{4}{11}\right)^{4/3} \rho_\gamma = 0.68 \rho_\gamma
 \end{equation}
-et numériquement, on trouve $\Omega_\nu h^2 \approx 1.7\times 10^{-5}$.
+et numériquement, on trouve $\Omega_\nu^0 h^2 \approx 1.7\times 10^{-5}$. On en déduit la proportion totale de matière relativiste dans l'Univers (si les neutrinos le sont) :
+$$\Omega_r^0 = \Omega_\gamma^0 + \Omega_\nu^0 = \Omega_\gamma^0 \left(1 + \frac{\rho_\nu^0}{\rho_\gamma^0 } \right) = 1.68 \Omega_\gamma^0$$
 
-En fait, les neutrinos ont des masses, avec deux conséquences importantes (1) nous ne savons pas s'ils sont encore relativistes aujourd'hui 
-(toutes espèces confondues) (2) $\Omega_\nu h^2$ est plus grand que la valeur citée ci-dessus.
 
-Une autre remarque est que le découplage des neutrinos s'est légèrement superposé à l'annihilation de $e^\pm$.  
-Comme les neutrinos interagissaient encore au moment de l'annihilation, le bruit de fond des neutrinos a été légèrement affecté par l'énorme énergie et l'entropie libérées par l'annihilation de $e^\pm$. Dans la littérature, cela est pris en compte en introduisant un "nombre effectif de neutrinos", $N_{\mathrm{eff}} \approx 3.046$. En tenant compte de cela, le nombre de neutrinos et la densité d'énergie sont :
+Le découplage des neutrinos s'est légèrement superposé à l'annihilation de $e^\pm$. Comme les neutrinos interagissaient encore au moment de l'annihilation, le bruit de fond des neutrinos a été légèrement affecté par l'énergie et l'entropie libérées par l'annihilation de $e^\pm$. Dans la littérature, cela est pris en compte en introduisant un _nombre effectif de neutrinos_ $N_{\mathrm{eff}}, évaluer numériquement à $3.046$. En tenant compte de cela, le nombre de neutrinos et la densité d'énergie sont :
 \begin{equation}
   \begin{split}
     n_\nu(T_\gamma) & = 2 \times \frac{3}{4} N_{\mathrm{eff}} \frac{4}{11} n_\gamma(T_\gamma) \\
@@ -757,6 +784,10 @@ Enfin, les valeurs correctes $g_\star$ et $g_{\star S}$ après l'annihilation $e
     g_{\star S} & = 2 + \frac{7}{8} 2 N_{\mathrm{eff}} \left(\frac{4}{11}\right) \approx 3.94 \\    
   \end{split}
 \end{equation}
+
+
+En fait, les neutrinos ont des masses, avec deux conséquences importantes (1) nous ne savons pas s'ils sont encore relativistes aujourd'hui 
+(toutes saveurs confondues) (2) $\Omega_\nu h^2$ est plus grand que la valeur citée ci-dessus. Les expériences observant les oscillations de neutrinos imposent que la somme des masses des neutrinos, notée $\sum_\nu m_\nu$ est supérieure à $60\,\meV$ donc au moins une saveur de neutrino serait non relativiste aujourd'hui si on compare à $T_\nu^0$. Du point de vue de la cosmologie, si on impose de façon très prudente que $\Omega_\nu^0 < 1$ alors on aboutit à une contrainte $\sum_\nu m_\nu < 15\,\eV$, et les relevés cosmologiques regardant l'effondrement gravitationnel des grandes structures de l'Univers imposent $\sum_\nu m_\nu < 0.1\,\eV$ (<doi:10.48550/arXiv.2404.03002>).
 
 
 ### Big Bang Nucleosynthesis (BBN)
@@ -1011,4 +1042,6 @@ The optical depth to reionization $\tau$ (d'après [](https://lambda.gsfc.nasa.g
 
 [^baryons]: les hadrons se scindent en deux familles : les mésons (2 quarks) et les baryons (3 quarks). on rappelle que parmi les baryons seuls les protons sont stables. Les neutrons liés dans les noyaux atomiques sont stables, mais libres ils se désintègrent en proton avec un temps de demie vie de 15 minutes. Les mésons sont tous instables avec des temps de demie vie plus courts que $10^{-7}\,$s. Les électrons sont 2000 fois plus légers que les protons. L'essentiel de la masse de la matière dite "ordinaire" est donc contenue dans les noyaux atomiques d'où le raccourci "matière baryonique".
 [^mp]: on rappelle que les masses des protons et neutrons sont d'environ 1\,GeV.
+[^neutrality]: puisque la charge électrique est associée aux forces de Coulomb et que l'expansion de l'univers n'est gouvernée que par les forces gravitationnelles, l'univers doit être globalement neutre.
+[^Sconst]: stricto sensus une constante d'intégration entropique $S_0$ doit apparaître mais celle-ci est nulle en vertu du troisième principe de la thermodynamique.
 [^Tfreeze]: dans un certains nombres de référence, ont trouve comme température de gel des neutrons $T_{\mathrm{freeze}} \approx 0.8\,\MeV$ ce qui correspond aussi à 1 neutron pour 5 protons si on suit la distribution d'équilibre [](#eq:np_eq) mais en admettant que cette température est un ordre de grandeur bien trouvé pour que ça marche à la fin.
