@@ -63,6 +63,7 @@ project:
         - file: chapters/en/05_astroparticle_sources
         - file: chapters/fr/06_supernovae
         - file: chapters/fr/07_cmb
+        - file: chapters/en/08_acceleration
         #- file: chapters/10_lss
         #- file: chapters/11_inflation
         #- file: chapters/12_lcdm_and_beyond
