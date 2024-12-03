@@ -57,9 +57,9 @@ Pour un gaz de photons, nous savons que :
 \begin{equation}
 \epsilon_\gamma \propto a^{-4}
 \end{equation}
-Or, à l'équilibre thermique, nous avons la loi de Stefan-Boltzmann :
+Or, à l'équilibre thermique, la densité d'énergie d'un gaz de photons est l'intégrale de la loi de Planck :
 \begin{equation}
-\epsilon_\gamma = \frac{4 \sigma_S T^4}{c}\text{ avec } \sigma_S = \frac{2 \pi^5 k_B^4}{15 h^3 c^2}
+\epsilon_\gamma = \frac{2 \pi^2 (k_B T)^4}{15 h^3 c^3}
 \end{equation}
 La température d'équilibre des photons $T_\gamma$ évolue donc comme suit :
 \begin{equation}
@@ -398,7 +398,7 @@ On voit que les densités particulaires et d'énergie sont identiques pour les b
 
 Concernant le calcul de la pression, on a $p^2 / E \sim p$ pour les particules relativistes, donc :
 \begin{equation}
-  P = \frac{1}{3} \frac{g}{2\pi^2\hbar^3 c^3} (k_BT)^4 \int \dd \xi \frac{\xi^3}{\exp\xi \pm 1} = \frac{1}{3} \frac{g}{2\pi^2\hbar^3} (k_BT)^4 J_\pm(0) = \frac{\epsilon}{3}
+  P = \frac{1}{3} \frac{g}{2\pi^2\hbar^3 c^3} (k_BT)^4 \int \dd \xi \frac{\xi^3}{\exp\xi \pm 1} = \frac{1}{3} \frac{g}{2\pi^2\hbar^3 c^3} (k_BT)^4 J_\pm(0) = \frac{\epsilon}{3}
   \label{eqn:P_relativistic_limit}
 \end{equation}
 On retrouve l'équation d'état déjà introduite précédemment. 
