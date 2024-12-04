@@ -9,6 +9,77 @@ Acceleration mechanisms
 =============================================
 
 
+
+Cosmic-ray accelerators
+--------------------------------
+
+### Maximum energy: the Hillas criterion
+
+
+A necessary condition for accelerating particles up to a given maximum energy is that their astrophysical source is large enough, or magnetised enough, to confine them for at least one radius of gyration. This relatively simple criterion, attributed to Michael Hillas, is used to classify astrophysical accelerators in a so-called Hillas diagram, as shown in [figure %s](#fig:cr_hillas).
+
+:::{figure}  ../../images/CR_Hillas.jpeg
+:name: fig:cr_hillas
+:align: center
+:width: 60%
+
+Magnetic field in Gauss vs size in km of candidate cosmic-ray sources. The Hillas limit, which provides the minimum magnetic field at a fixed size needed to accelerate cosmic rays to a given magnetic rigidity, is shown in blue for protons at the knee energy and in brown for protons at the ankle energy. Adapted from {cite}`2020PhR...872....1B`.
+:::
+
+The gyro-radius, $r_\mathrm{g}$, of a particle of four-velocity $(\gamma, \gamma\vec{\beta})$ derives from the equation of motion $\frac{\dd}{\dd t}\big(\gamma m \vec{v} \big) = Ze \vec{v}\times \vec{B}$, where $m$ and $Z$ are the mass and charge of the particle. As the magnetic field does no work, $\gamma m$ is constant so that the particle moves along an helicoidal trajectory characterized by $\gamma m \frac{v_\perp^2}{r_\mathrm{g}} = Z e B v_\perp$, where $p_\perp = \gamma m v_\perp$ is the momentum in the plane perpendicular to the $B$ field. Thus
+
+$$
+\begin{align}
+r_\mathrm{g} &= \frac{p_\perp}{Z e B}\\
+&= \frac{R}{Bc}\\
+&= 1.1\,\mathrm{pc} \times \Big(\frac{R}{10^{15}\,\mathrm{V}}\Big) \times \Big(\frac{B}{1\,\mu\mathrm{G}}\Big)^{-1},
+\end{align}
+$$
+where $R = \frac{p_\perp c}{Z e} \approx \frac{E}{Z e}$ is the magnetic rigidity in volts.
+
+
+The Hillas criterion states that accelerating a particle up to a given rigidity $R$ within a region of size $L$ is only possible if $r_\mathrm{g}<r$, which imposes $R < r B c$. Accounting for relativistic bulk motion of the emitting region $(\Gamma, \Gamma\vec{\beta})$, the relativistic Hillas criterion on the observed rigidity reads
+
+
+$$
+\begin{align}
+R_\mathrm{obs} < \Gamma \beta r' B' c\\\
+&< 0.9 \times 10^{15}\,\mathrm{V} \times \Big(\frac{r'}{1\,\,\mathrm{pc}}\Big) \Big(\frac{B}{1\,\mu\mathrm{G}}\Big) \Big(\frac{\Gamma\beta}{1}\Big), \mathrm{\ or}\\
+&< 3 \times 10^{18}\,\mathrm{V} \times \Big(\frac{r'}{1\,\,\mathrm{pc}}\Big) \Big(\frac{B}{1\,\mathrm{mG}}\Big)\Big(\frac{\Gamma\beta}{3}\Big)
+\end{align}
+$$
+
+The classes of Galactic sources satisfying this condition up to the magnetic rigidity corresponding to the knee and second knee of the cosmic-ray spectrum, i.e. a proton energy of $\approx 3-5 \times 10^{15}\,\mathrm{eV}$ and an energy of $\approx 10^{17}\,\mathrm{eV}$ for fully ionized iron are shown in [figure %s](#fig:cr_hillas). Extragalactic sources are also shown and can be compared to the Hillas criterion up to the ankle and cut-off of the cosmic-ray spectrum, i.e. for maximum proton energy of $\approx 5 \times 10^{18}\,\mathrm{eV}$ and iron energy of $\approx 10^{20}\,\mathrm{eV}$.
+
+### Cosmic-ray production rate
+
+Cosmic-ray accelerators must not only be able to achieve a given maximum rigidity, but must also be sufficiently luminous that their cumulative emission reproduces the observed intensity, $I_\mathrm{CR} = \frac{c}{4\pi} \varepsilon_\mathrm{CR}$.
+
+A particularly useful quantity for studying the origin of Galactic cosmic rays is the energy production rate:
+$w_\mathrm{GCR} = \varepsilon_\mathrm{GCR}({>}\,1\,\mathrm{GeV})/\tau_\mathrm{esc}$, where $\varepsilon_\mathrm{GCR}({>}\,1\,\mathrm{GeV})\approx 1.2 \times 10^6\,\mathrm{eV\,m}^{-3} \approx 6 \times 10^{45}\,\mathrm{J\,kpc}^{-3}$ was determined in [exercise %s](#exo:milky_way) and where $\tau_\mathrm{esc} \gtrsim 15\,$Myr is the residence time of cosmic rays in the Galaxy. This residence time is estimated from so called cosmic-ray clocks (see e.g. {cite}`2014arXiv1407.5223L`), e.g. through the ratio between $^{10}$Be ($t_{1/2} = 1.4\,$Myr) and its stable isotope $^{9}$Be, both formed by the fragmentation of carbon and oxygen nuclei confined in the Milky Way.
+
+If we model the Milky Way as a disk with diameter $2r_\mathrm{MW} = 25\,$kpc and height $h_\mathrm{MW} = 0.3\,$kpc, then the energy production rate of Galactic cosmic rays integrated over the volume of the Milky Way yields the cumulative luminosity of the cosmic-ray sources:
+\begin{align}
+\sum_{\mathrm{src} \in \mathrm{MW}} L_\mathrm{src}(> 1\,\mathrm{GeV}) &= w_\mathrm{GCR} \times \pi r_\mathrm{MW}^2 h_\mathrm{MW}\\
+&\lesssim 2 \times 10^{33}\,\mathrm{W}.
+\end{align}
+
+The kinetic energy of a core-collapse supernova can be estimated to 
+\begin{align}
+T_\mathrm{CC} &= \frac{1}{2}M_\mathrm{ejecta} v_\mathrm{shock}^2 \\
+&\approx 10^{44}\,\mathrm{J} \times \Big( \frac{M_\mathrm{ejecta}}{10\,M_\odot} \Big) \times \Big( \frac{v_\mathrm{shock}}{3\times 10^3 \,\mathrm{km\,s}^{-1}} \Big)^2
+\end{align}
+and their explosion rate in the Milky-Way is estimated as $\lambda_\mathrm{CC} = (1.6 \pm 0.5)\times 10^{-2}\,\mathrm{yr}^{-1}$ ({cite}`2021NewA...8301498R`).
+
+If core-collapse supernovae are responsible for accelerating the majority of cosmic rays to energies greater than 1 GeV, then the efficiency of the conversion of kinetic energy into cosmic rays, $\eta_\mathrm{GCR}$, should satisfy the relation
+\begin{align}
+\eta_\mathrm{GCR} &= \frac{\sum_{\mathrm{src} \in \mathrm{MW}} L_\mathrm{src}(> 1\,\mathrm{GeV})}{T_\mathrm{CC}\lambda_\mathrm{CC} } \\
+&\lesssim 2\%,
+\end{align}
+a reasonnable constraint suggesting that core-collapse supernovae may be responsible for accelerating the bulk of Galactic cosmic rays.
+
+
+
 Acceleration processes
 --------------------------------
 
@@ -138,7 +209,7 @@ $$
 
 That is a power-law spectrum of index $s=1 + \frac{t_\mathrm{acc}}{t_\mathrm{esc}}$.
 
-The value of the index can be determined with multiple approaches, depending on the considered astrophysical environment. In the case of shock acceleration or magnetic reconnection, one can use box models such as developped by {cite}`1999A&A...347..370D,2012MNRAS.422.2474D` and show that $\frac{t_\mathrm{acc}}{t_\mathrm{esc}} = \frac{3}{|r-1|}$, where $r=\rho_2/\rho_1$ is the compression ratio between the downstream medium and the upstream medium.
+The value of the index can be determined with multiple approaches, depending on the considered astrophysical environment. In the case of shock acceleration or magnetic reconnection, one can use box models such as developped by {cite}`1999A&A...347..370D,2012MNRAS.422.2474D` and show that $\frac{t_\mathrm{acc}}{t_\mathrm{esc}} = \frac{3}{|r-1|}$, where $r=\rho_2/\rho_1$ is the compression ratio between the shocked medium and the undisturbed medium.
 
 For a shock acceleration at high Mach number and assuming a plasma described as a perfect gaz of adiabatic index $\gamma = \frac{c_P}{c_V}$, the compression ratio is equal to $r = \frac{\gamma +1}{\gamma -1}$. As $\gamma = 5/3$ for a monoatomic gaz of protons or electrons, we get $r = \frac{\frac{5}{3} +1}{\frac{5}{3} -1} = 4$. In such a system, the power-law spectrum has an index $s = 1 + \frac{3}{|4-1|} = 2$, that is:
 
@@ -147,3 +218,113 @@ $$
 $$
 
 The universality of this power law of index 2, whose presence is inferred in many non-thermal astrophysical systems, is one of the great successes of diffusive shock acceleration theory.
+
+
+
+:::{exercise} Rankine-Hugoniot equations for a shock
+:label: exo:rankine_hugoniot
+
+The jump conditions of Rankine and Hugoniot are continuity equations at a shock front. The shock is due to a supersonic disturbance moving at supersonic speed, $v_\mathrm{sh}$, from the shocked medium, index as 2, towards the undisturbed medium, indexed as 1. In the shock frame, the undisturbed plasma is moving towards the shock at velocity $u_1 = -v_\mathrm{sh}$ while plasma in the shocked medium is moving away from the shock front at velocity $u_2$. The continuity equations at the shock front are the following:
+- $\rho_1 u_1 = \rho_2 u_2$ (mass conservation),
+- $P_1 + \rho_1 u_1^2 = P_2 + \rho_2 u_2^2$ (momentum conservation),
+- $\frac{1}{2}u_1^2 + \frac{\gamma}{\gamma-1} \frac{P_1}{\rho_1} = \frac{1}{2}u_2^2 + \frac{\gamma}{\gamma-1} \frac{P_2}{\rho_2}$ (energy conservation),
+where $u$, $\rho$ and $P$ are the velocity, mass density and pressure of each medium. The plasma has an adiabatic index $\gamma$.
+
+1. Show that 
+$$P_2 - P_1 + \rho_1u_1(u_2-u_1) = 0$$
+
+2. Using the mass-conservation equation and the equation above, show that 
+$$ \frac{P_2}{\rho_2} - \frac{P_1}{\rho_1} = (u_2 - u_1)\left( \frac{P_1}{\rho_1 u_1} -u_2\right) $$
+
+3. Using the equation above and the energy-conservation equation, show that
+$$\frac{u_2}{u_1} = \frac{\gamma-1}{\gamma+1} + \frac{2}{\gamma+1}\frac{\gamma P_1}{\rho_1 u_1^2}$$
+
+4. Assuming a highly supersonic shock with $\mathcal{M} = v_\mathrm{sh}/c_s = v_\mathrm{sh} / \sqrt{\frac{\gamma P_1}{\rho_1}} \gg 1$, determine the ratio of velocity and the ratio of density in the shocked and undisturbed media.
+
+:::
+
+:::{solution} exo:rankine_hugoniot
+:class: dropdown
+
+1.
+$$
+\begin{align}
+P_2 - P_1 &= - (\rho_2 u_2^2 - \rho_1 u_1^2 ) \text{ , from the momentum equation}\\
+ &= - (\rho_1 u_1 \times u_2 - \rho_1 u_1^2 ) \text{ , using the mass equation}\\
+&= - \rho_1 u_1(u_2-u_1)
+\end{align}
+$$
+
+2. As a hint, one should start by showing that $$ \frac{P_2}{\rho_2} - \frac{P_1}{\rho_1} = \frac{P_2 u_2 - P_1 u_1}{\rho_1 u_1},$$ which is clear when we write
+$$
+\frac{P_2}{\rho_2} - \frac{P_1}{\rho_1} = \frac{\frac{P_2}{\rho_2} \times \rho_2 u_2 - \frac{P_1}{\rho_1} \times \rho_1 u_1}{\rho_1 u_1}
+$$
+
+Then
+
+$$
+\begin{align}
+\frac{P_2}{\rho_2} - \frac{P_1}{\rho_1} &= \frac{P_2 u_2 - P_1 u_1}{\rho_1 u_1}\\
+ &= \frac{\left[P_1 - \rho_1 u_1(u_2-u_1)\right]  u_2 - P_1 u_1}{\rho_1 u_1} \text{ , using the equation demonstrated in question 1}\\
+&= \frac{u_2 - u_1}{\rho_1 u_1} \left( P_1 - \rho_1 u_1u_2\right)\\ 
+&= (u_2 - u_1)\left( \frac{P_1}{\rho_1 u_1} -u_2\right)
+\end{align}
+$$
+
+3. The energy-conservation equation can be rewritten as
+
+$$
+\begin{align}
+\frac{1}{2}(u_2-u_1)(u_2+u_1) + \frac{\gamma}{\gamma-1}\left( \frac{P_2}{\rho_2} - \frac{P_1}{\rho_1} \right) &=0 \\
+\frac{1}{2}(u_2-u_1)(u_2+u_1) + \frac{\gamma}{\gamma-1} (u_2 - u_1)\left( \frac{P_1}{\rho_1 u_1} -u_2\right) &=0 \\
+u_2+u_1 + \frac{2\gamma}{\gamma-1}\left( \frac{P_1}{\rho_1 u_1} -u_2\right) &=0 \\
+\frac{u_2}{u_1}\left(1 -  \frac{2\gamma}{\gamma-1}\right) + 1 + \frac{2}{\gamma-1} \frac{\gamma P_1}{\rho_1 u_1^2} &=0 \\
+\end{align}
+$$
+
+That is
+
+$$
+\frac{u_2}{u_1} = \frac{\gamma-1}{\gamma+1} + \frac{2}{\gamma+1}\frac{\gamma P_1}{\rho_1 u_1^2}
+$$
+
+4. The Mach number of the shock is such as $M^2 = \rho_1 v_\mathrm{sh}^2 / \gamma P_1 = \rho_1 u_1^2 / \gamma P_1 \gg 1$, thus
+
+$$
+\frac{u_2}{u_1} \approx \frac{\gamma-1}{\gamma+1} = 1/4
+$$
+
+and
+
+$$
+\frac{\rho_2}{\rho_1} \approx \frac{\gamma+1}{\gamma-1} = 4
+$$
+:::
+
+
+
+:::{tip}
+**Notions from this chapter**
+
+_Galactic cosmic rays and the SNR paradigm_
+- What are Galactic cosmic rays? Which energy range do the cover?
+- What are SNRs? Why are they believed to be the main sources of Galactic cosmic rays?
+
+_Acceleration processes_
+What are the two Fermi mechanisms? 
+
+:::
+
+
+:::{tip}
+**Calculations / demonstrations**
+
+_Hillas criterion: $R<\Gamma\beta L' B' c$_
+- What are $R$, $\Gamma$, $\beta$, $L'$, $B'$ and their units? 
+- Can I prove this relation in the non-relativistic case?
+
+_Charged particle acceleration: $\dd N / \dd E \propto E^{-(1+ t_\mathrm{acc} / t_\mathrm{esc})}$_
+- What are $t_\mathrm{acc}$ and $t_\mathrm{esc}$? 
+- Can I prove this from a simplified version of the Fokker-Planck equation? 
+- What is the value of the power-law index $1+ t_\mathrm{acc} / t_\mathrm{esc}$ for acceleration in a shock wave at high Mach number?
+:::
