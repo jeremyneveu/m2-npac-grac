@@ -49,7 +49,7 @@ R_\mathrm{obs} < \Gamma \beta r' B' c\\\
 \end{align}
 $$
 
-The classes of Galactic sources satisfying this condition up to the magnetic rigidity corresponding to the knee and second knee of the cosmic-ray spectrum, i.e. a proton energy of $\approx 3-5 \times 10^{15}\,\mathrm{eV}$ and an energy of $\approx 10^{17}\,\mathrm{eV}$ for fully ionized iron are shown in [figure %s](#fig:cr_hillas). Extragalactic sources are also shown and can be compared to the Hillas criterion up to the ankle and cut-off of the cosmic-ray spectrum, i.e. for maximum proton energy of $\approx 5 \times 10^{18}\,\mathrm{eV}$ and iron energy of $\approx 10^{20}\,\mathrm{eV}$.
+The classes of Galactic sources satisfying this condition up to the magnetic rigidity corresponding to the knee and second knee of the cosmic-ray spectrum, i.e. a proton energy of $\approx 4 \times 10^{15}\,\mathrm{eV}$ and an energy of $\approx 10^{17}\,\mathrm{eV}$ for fully ionized iron are shown in [figure %s](#fig:cr_hillas). Extragalactic sources are also shown and can be compared to the Hillas criterion up to the ankle and cut-off of the cosmic-ray spectrum, i.e. for maximum proton energy of $\approx 4 \times 10^{18}\,\mathrm{eV}$ and iron energy of $\approx 10^{20}\,\mathrm{eV}$.
 
 ### Cosmic-ray production rate
 
@@ -61,7 +61,7 @@ $w_\mathrm{GCR} = \varepsilon_\mathrm{GCR}({>}\,1\,\mathrm{GeV})/\tau_\mathrm{es
 If we model the Milky Way as a disk with diameter $2r_\mathrm{MW} = 25\,$kpc and height $h_\mathrm{MW} = 0.3\,$kpc, then the energy production rate of Galactic cosmic rays integrated over the volume of the Milky Way yields the cumulative luminosity of the cosmic-ray sources:
 \begin{align}
 \sum_{\mathrm{src} \in \mathrm{MW}} L_\mathrm{src}(> 1\,\mathrm{GeV}) &= w_\mathrm{GCR} \times \pi r_\mathrm{MW}^2 h_\mathrm{MW}\\
-&\lesssim 2 \times 10^{33}\,\mathrm{W}.
+&\approx 2 \times 10^{33}\,\mathrm{W} \times \left(\frac{\tau_\mathrm{esc}}{15\,\mathrm{Myr}} \right).
 \end{align}
 
 The kinetic energy of a core-collapse supernova can be estimated to 
@@ -74,7 +74,7 @@ and their explosion rate in the Milky-Way is estimated as $\lambda_\mathrm{CC} =
 If core-collapse supernovae are responsible for accelerating the majority of cosmic rays to energies greater than 1 GeV, then the efficiency of the conversion of kinetic energy into cosmic rays, $\eta_\mathrm{GCR}$, should satisfy the relation
 \begin{align}
 \eta_\mathrm{GCR} &= \frac{\sum_{\mathrm{src} \in \mathrm{MW}} L_\mathrm{src}(> 1\,\mathrm{GeV})}{T_\mathrm{CC}\lambda_\mathrm{CC} } \\
-&\lesssim 2\%,
+&\approx 2\% \times \left(\frac{\tau_\mathrm{esc}}{15\,\mathrm{Myr}} \right),
 \end{align}
 a reasonnable constraint suggesting that core-collapse supernovae may be responsible for accelerating the bulk of Galactic cosmic rays.
 
@@ -96,7 +96,7 @@ Neutrality on a large spatial scale, $L$, means $L \gg \lambda_\mathrm{D}$, wher
      &\approx 27\,\mathrm{km} \times \left(\frac{kT}{13.6\,\mathrm{eV}}\right)^{1/2} \left(\frac{n}{1\,\mathrm{m}^3}\right)^{-1/2} \\
 \end{align}
 
-This microphysics-relevant scale can be compared to the much larger astrophysical source sizes in [](05_astroparticle_sources.md#fig:cr_hillas) of chapter [](05_astroparticle_sources.md). 
+This microphysics-relevant scale can be compared to the much larger astrophysical source sizes in [](fig:cr_hillas). 
 
 In a rarefied plasma, it is improbable for a test particle to encounter another particle. The system is said to be colisionless, i.e. the motion of a charged particle is determined by its overall interaction with the plasma and the magnetic fields attached to it.
 
@@ -122,7 +122,9 @@ The case more generally found in astrophysical environments, for which $E^2 < (B
 
 The denomination of first- and second-order Fermi acceleration is more explicit when we consider the acceleration time, $t_\mathrm{acc}$, which depends on the mean free path between scattering centers, $l_\mathrm{mfp}$:
 \begin{align}
-t_\mathrm{acc}^{-1} &\approx \frac{c}{l_\mathrm{mfp}} \times \left\langle \frac{\Delta p}{p} \right\rangle\\
+t_\mathrm{acc}^{-1} &= \frac{\dd E/\dd t}{E}\\
+
+&\approx \frac{c}{l_\mathrm{mfp}} \times \left\langle \frac{\Delta p}{p} \right\rangle\\
 &\approx \left\{\begin{array}{lr}
         \frac{c}{l_\mathrm{mfp}} \times \left(\frac{v_\mathrm{A}}{c} \right), & \text{for first order Fermi acceleration}\\
         \frac{c}{l_\mathrm{mfp}} \times \left(\frac{v_\mathrm{A}}{c} \right)^2, & \text{for second order Fermi acceleration}
@@ -239,7 +241,7 @@ $$ \frac{P_2}{\rho_2} - \frac{P_1}{\rho_1} = (u_2 - u_1)\left( \frac{P_1}{\rho_1
 3. Using the equation above and the energy-conservation equation, show that
 $$\frac{u_2}{u_1} = \frac{\gamma-1}{\gamma+1} + \frac{2}{\gamma+1}\frac{\gamma P_1}{\rho_1 u_1^2}$$
 
-4. Assuming a highly supersonic shock with $\mathcal{M} = v_\mathrm{sh}/c_s = v_\mathrm{sh} / \sqrt{\frac{\gamma P_1}{\rho_1}} \gg 1$, determine the ratio of velocity and the ratio of density in the shocked and undisturbed media.
+4. Assuming a highly supersonic shock with $\mathcal{M} = v_\mathrm{sh}/c_s = v_\mathrm{sh} / \sqrt{\frac{\gamma P_1}{\rho_1}} \gg 1$, determine the velocity ratio and the density ratio in the shocked and undisturbed media.
 
 :::
 
@@ -307,11 +309,12 @@ $$
 **Notions from this chapter**
 
 _Galactic cosmic rays and the SNR paradigm_
-- What are Galactic cosmic rays? Which energy range do the cover?
+- What are Galactic cosmic rays? Which energy range do they cover?
 - What are SNRs? Why are they believed to be the main sources of Galactic cosmic rays?
 
 _Acceleration processes_
-What are the two Fermi mechanisms? 
+- What are the two Fermi mechanisms? 
+- What do the particles bounce off on either side of a shock front?
 
 :::
 
