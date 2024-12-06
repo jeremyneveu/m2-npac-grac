@@ -382,78 +382,12 @@ Injecting this lower bound on the Lorentz factor into the solution to question 1
 :::
 
 
-### Maximum energy: the Hillas criterion
-
-
-A necessary condition for accelerating particles up to a given maximum energy is that their astrophysical source is large enough, or magnetised enough, to confine them for at least one radius of gyration. This relatively simple criterion, attributed to Michael Hillas, is used to classify astrophysical accelerators in a so-called Hillas diagram, as shown in [figure %s](#fig:cr_hillas).
-
-:::{figure}  ../../images/CR_Hillas.jpeg
-:name: fig:cr_hillas
-:align: center
-:width: 60%
-
-Magnetic field in Gauss vs size in km of candidate cosmic-ray sources. The Hillas limit, which provides the minimum magnetic field at a fixed size needed to accelerate cosmic rays to a given magnetic rigidity, is shown in blue for protons at the knee energy and in brown for protons at the ankle energy. Adapted from {cite}`2020PhR...872....1B`.
-:::
-
-The gyro-radius, $r_\mathrm{g}$, of a particle of four-velocity $(\gamma, \gamma\vec{\beta})$ derives from the equation of motion $\frac{\dd}{\dd t}\big(\gamma m \vec{v} \big) = Ze \vec{v}\times \vec{B}$, where $m$ and $Z$ are the mass and charge of the particle. As the magnetic field does no work, $\gamma m$ is constant so that the particle moves along an helicoidal trajectory characterized by $\gamma m \frac{v_\perp^2}{r_\mathrm{g}} = Z e B v_\perp$, where $p_\perp = \gamma m v_\perp$ is the momentum in the plane perpendicular to the $B$ field. Thus
-
-$$
-\begin{align}
-r_\mathrm{g} &= \frac{p_\perp}{Z e B}\\
-&= \frac{R}{Bc}\\
-&= 1.1\,\mathrm{pc} \times \Big(\frac{R}{10^{15}\,\mathrm{V}}\Big) \times \Big(\frac{B}{1\,\mu\mathrm{G}}\Big)^{-1},
-\end{align}
-$$
-where $R = \frac{p_\perp c}{Z e} \approx \frac{E}{Z e}$ is the magnetic rigidity in volts.
-
-
-The Hillas criterion states that accelerating a particle up to a given rigidity $R$ within a region of size $L$ is only possible if $r_\mathrm{g}<r$, which imposes $R < r B c$. Accounting for relativistic bulk motion of the emitting region $(\Gamma, \Gamma\vec{\beta})$, the relativistic Hillas criterion on the observed rigidity reads
-
-
-$$
-\begin{align}
-R_\mathrm{obs} < \Gamma \beta r' B' c\\\
-&< 0.9 \times 10^{15}\,\mathrm{V} \times \Big(\frac{r'}{1\,\,\mathrm{pc}}\Big) \Big(\frac{B}{1\,\mu\mathrm{G}}\Big) \Big(\frac{\Gamma\beta}{1}\Big), \mathrm{\ or}\\
-&< 3 \times 10^{18}\,\mathrm{V} \times \Big(\frac{r'}{1\,\,\mathrm{pc}}\Big) \Big(\frac{B}{1\,\mathrm{mG}}\Big)\Big(\frac{\Gamma\beta}{3}\Big)
-\end{align}
-$$
-
-The classes of Galactic sources satisfying this condition up to the magnetic rigidity corresponding to the knee and second knee of the cosmic-ray spectrum, i.e. a proton energy of $\approx 3-5 \times 10^{15}\,\mathrm{eV}$ and an energy of $\approx 10^{17}\,\mathrm{eV}$ for fully ionized iron are shown in [figure %s](#fig:cr_hillas). Extragalactic sources are also shown and can be compared to the Hillas criterion up to the ankle and cut-off of the cosmic-ray spectrum, i.e. for maximum proton energy of $\approx 5 \times 10^{18}\,\mathrm{eV}$ and iron energy of $\approx 10^{20}\,\mathrm{eV}$.
-
-### Cosmic-ray production rate
-
-Cosmic-ray accelerators must not only be able to achieve a given maximum rigidity, but must also be sufficiently luminous that their cumulative emission reproduces the observed intensity, $I_\mathrm{CR} = \frac{c}{4\pi} \varepsilon_\mathrm{CR}$.
-
-A particularly useful quantity for studying the origin of Galactic cosmic rays is the energy production rate:
-$w_\mathrm{GCR} = \varepsilon_\mathrm{GCR}({>}\,1\,\mathrm{GeV})/\tau_\mathrm{esc}$, where $\varepsilon_\mathrm{GCR}({>}\,1\,\mathrm{GeV})\approx 1.2 \times 10^6\,\mathrm{eV\,m}^{-3} \approx 6 \times 10^{45}\,\mathrm{J\,kpc}^{-3}$ was determined in [exercise %s](#exo:milky_way) and where $\tau_\mathrm{esc} \gtrsim 15\,$Myr is the residence time of cosmic rays in the Galaxy. This residence time is estimated from so called cosmic-ray clocks (see e.g. {cite}`2014arXiv1407.5223L`), e.g. through the ratio between $^{10}$Be ($t_{1/2} = 1.4\,$Myr) and its stable isotope $^{9}$Be, both formed by the fragmentation of carbon and oxygen nuclei confined in the Milky Way.
-
-If we model the Milky Way as a disk with diameter $2r_\mathrm{MW} = 25\,$kpc and height $h_\mathrm{MW} = 0.3\,$kpc, then the energy production rate of Galactic cosmic rays integrated over the volume of the Milky Way yields the cumulative luminosity of the cosmic-ray sources:
-\begin{align}
-\sum_{\mathrm{src} \in \mathrm{MW}} L_\mathrm{src}(> 1\,\mathrm{GeV}) &= w_\mathrm{GCR} \times \pi r_\mathrm{MW}^2 h_\mathrm{MW}\\
-&\lesssim 2 \times 10^{33}\,\mathrm{W}.
-\end{align}
-
-The kinetic energy of a core-collapse supernova can be estimated to 
-\begin{align}
-T_\mathrm{CC} &= \frac{1}{2}M_\mathrm{ejecta} v_\mathrm{shock}^2 \\
-&\approx 10^{44}\,\mathrm{J} \times \Big( \frac{M_\mathrm{ejecta}}{10\,M_\odot} \Big) \times \Big( \frac{v_\mathrm{shock}}{3\times 10^3 \,\mathrm{km\,s}^{-1}} \Big)^2
-\end{align}
-and their explosion rate in the Milky-Way is estimated as $\lambda_\mathrm{CC} = (1.6 \pm 0.5)\times 10^{-2}\,\mathrm{yr}^{-1}$ ({cite}`2021NewA...8301498R`).
-
-If core-collapse supernovae are responsible for accelerating the majority of cosmic rays to energies greater than 1 GeV, then the efficiency of the conversion of kinetic energy into cosmic rays, $\eta_\mathrm{GCR}$, should satisfy the relation
-\begin{align}
-\eta_\mathrm{GCR} &= \frac{\sum_{\mathrm{src} \in \mathrm{MW}} L_\mathrm{src}(> 1\,\mathrm{GeV})}{T_\mathrm{CC}\lambda_\mathrm{CC} } \\
-&\lesssim 2\%,
-\end{align}
-a reasonnable constraint suggesting that core-collapse supernovae may be responsible for accelerating the bulk of Galactic cosmic rays.
-
-
 :::{tip}
 **Notions from this chapter**
 
-_Galactic cosmic rays and the SNR paradigm_
-- What are Galactic cosmic rays? Which energy range do the cover?
-- What are SNRs? Why are they believed to be the main sources of Galactic cosmic rays?
+_Galactic and extragalactic sources_
+- Can I cite one class type of Galactic sources of gamma-rays?
+- Can I cite one class type of extragalactic sources of gamma-rays?
 :::
 
 
@@ -471,7 +405,4 @@ _Optical depth: $\tau = n \sigma r$_
 - What are $\tau$, $n$, $\sigma$, $r$ and their units? 
 - What does $\tau \ll 1$ and $\tau \gg 1$ mean? 
 
-_Hillas criterion: $R<\Gamma\beta L' B' c$_
-- What are $R$, $\Gamma$, $\beta$, $L'$, $B'$ and their units? 
-- Can I prove this relation in the non-relativistic case?
 :::
