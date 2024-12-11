@@ -76,7 +76,7 @@ If core-collapse supernovae are responsible for accelerating the majority of cos
 \eta_\mathrm{GCR} &= \frac{\sum_{\mathrm{src} \in \mathrm{MW}} L_\mathrm{src}(> 1\,\mathrm{GeV})}{T_\mathrm{CC}\lambda_\mathrm{CC} } \\
 &\approx 2\% \times \left(\frac{\tau_\mathrm{esc}}{15\,\mathrm{Myr}} \right),
 \end{align}
-a reasonnable constraint suggesting that core-collapse supernovae may be responsible for accelerating the bulk of Galactic cosmic rays.
+a reasonable constraint suggesting that core-collapse supernovae may be responsible for accelerating the bulk of Galactic cosmic rays.
 
 
 
