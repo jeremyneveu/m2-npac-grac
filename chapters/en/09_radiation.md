@@ -103,7 +103,7 @@ each of them carries a fourth of the energy of their parent charged pion.
 :::
 
 :::{solution} exo:neutrino_gamma_thin_medium
-#:class: dropdown
+:class: dropdown
 
 The interaction of a proton leads to the production of charged and neutral pions with branching ratios of $K_\pi/
 (K_\pi+1)$ and $1/(K_\pi+1)$, respectively. This yields a number of neutrinos $N_\nu = \int\dd E_\nu \frac{\dd N_\nu}
@@ -255,7 +255,7 @@ cosmic rays and gamma rays propagating on cosmological scales.
 
 
 :::{solution} exo:threshold_energies
-#:class: dropdown
+:class: dropdown
 
 As a refresher, two properties of the invariant mass are used when computing a threshold energy. First, the norm of 
 the four-momentum is conserved in the reaction, i.e. it is the same in the initial and final states. Second, this 
