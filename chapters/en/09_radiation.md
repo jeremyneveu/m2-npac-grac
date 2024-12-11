@@ -103,7 +103,7 @@ each of them carries a fourth of the energy of their parent charged pion.
 :::
 
 :::{solution} exo:neutrino_gamma_thin_medium
-:class: dropdown
+#:class: dropdown
 
 The interaction of a proton leads to the production of charged and neutral pions with branching ratios of $K_\pi/
 (K_\pi+1)$ and $1/(K_\pi+1)$, respectively. This yields a number of neutrinos $N_\nu = \int\dd E_\nu \frac{\dd N_\nu}
@@ -130,8 +130,7 @@ Although individually the neutrinos are twice less energetic than gamma rays, th
 
 The relative energy loss of the primary nucleon is called the inelasticity of the reaction, $\kappa$. The average 
 inelasticity per pion is thus defined as $\langle E_\pi \rangle = \kappa_\pi E_p$, with $\kappa_\pi \approx 20\,\%$ 
-for $p$-$p$ interactions (also valid for $p$-$\gamma$ interactions discussed in the following, see {cite}`2018PrPNP.
-102...73A`).
+for $p$-$p$ interactions (also valid for $p$-$\gamma$ interactions discussed in the following, see {cite}`2018PrPNP.102...73A`).
 This means that a population of $10\,\text{PeV}$ protons will produce on average $2\,\text{PeV}$ pions, which will decay in 
 $1\,\text{PeV}$ gamma rays and $500\,\text{TeV}$ neutrinos. Note that while the neutrinos are likely to escape 
 interactions their environment and on their way to Earth, 
@@ -214,7 +213,7 @@ Note that the three pions are not produced in a ``democratic'' fashion in $p$-$\
 In the nucleon's rest frame the threshold for pair and pion production are about $1\,\text{MeV}$ and $140\,\text{MeV}
 $, respectively. The energy loss-length, $\lambda = \langle (\frac{1}{E}\frac{\dd dE}{\dd X})^{-1} \rangle$, depends on 
 the 
-product of the cross section and of the inelasticity (enery-loss fraction) of the reaction. This product, which is 
+product of the cross section and of the inelasticity (energy-loss fraction) of the reaction. This product, which is 
 nearly constant at energies larger than a few times the threshold energy, is two orders of magnitude larger for pion 
 production than for pair production, so that the former dominates over the latter at the highest energies.
 
@@ -256,7 +255,7 @@ cosmic rays and gamma rays propagating on cosmological scales.
 
 
 :::{solution} exo:threshold_energies
-:class: dropdown
+#:class: dropdown
 
 As a refresher, two properties of the invariant mass are used when computing a threshold energy. First, the norm of 
 the four-momentum is conserved in the reaction, i.e. it is the same in the initial and final states. Second, this 
