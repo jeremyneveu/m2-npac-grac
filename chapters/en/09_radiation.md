@@ -542,19 +542,19 @@ Using Equations [](eq:Lic) and [](eq:tcross), the SSC losses can then be written
 n_e (\gamma) \times \left.L_{\nu_1}\right|_\text{sync}\left(\frac{\nu}{2\gamma^2}\right).
 \end{align}
 
-The SSC luminosity of an electron population of density $n_0$ and Lorentz factor $\bar \gamma$ is simply its  
+The SSC luminosity of an electron population of density $n_0$ and Lorentz factor $\bar \gamma$ is simply its 
 synchrotron luminosity scaled by a factor $n_0 \sigma_\text{T} R/2$ and shifted to frequencies larger by a factor of 
 $2 {\bar \gamma}^2$. The same conclusion can be reached for a power-law distribution of the Lorentz boost of 
 the electrons as in Equation [](eq:pwl_e):
 
 \begin{align}
-\left.L_\nu\right|_\text{SSC} &= \frac{\sigma_\text{T} R}{2} \times \frac{4}{3}\pi R^3 \times  \frac{2}{3}
+\left.L_\nu\right|_\text{SSC} &= \frac{\sigma_\text{T} R}{2} \times \frac{4}{3}\pi R^3 n_0\times  \frac{2}{3}
 \sigma_\text{T}c \times \frac{u_B}{\nu_\text{ref}}   \times \int \dd \gamma\,  
 n_0 \gamma^{-s} \times \left(\frac{\nu}{2\gamma^2\nu_\text{ref}}\right)^{-(s-1)/2}\\
- &= \frac{\sigma_\text{T}^2 c R}{3} \times \frac{4}{3}\pi R^3 \times  \frac{u_B}{\nu_\text{ref}} \times  \left(\frac
+ &= \frac{\sigma_\text{T}^2 c R}{3} \times \frac{4}{3}\pi R^3n_0 \times  \frac{u_B}{\nu_\text{ref}} \times  \left(\frac
 {\nu}{2\nu_\text{ref}}\right)^{-(s-1)/2}
 \times \int \dd \gamma\, n_0 \gamma^{-1}\\
-&=\frac{4}{3}\pi R^3 \times n_0 \ln\left( \frac{\gamma_\text{max}}{\gamma_\text{min}}\right) \times \frac{\sigma_\text
+&=\frac{4}{3}\pi R^3 \times n_0^2 \ln\left( \frac{\gamma_\text{max}}{\gamma_\text{min}}\right) \times \frac{\sigma_\text
 {T}^2 c R}{3} \times \frac{u_B}{\nu_\text{ref}} \times  \left(\frac{\nu}{2\nu_\text{ref}}\right)^{-(s-1)/2}.
 \end{align}
 
