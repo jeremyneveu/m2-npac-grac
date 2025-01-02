@@ -194,9 +194,11 @@ g^{\mu\nu} = \eta^{\alpha\beta} \frac{\partial x^\mu}{\partial x'^\alpha} \frac{
 Indeed, by definition we have: 
 $$
 \begin{aligned}
-g^{\nu\rho}g_{\mu\nu} & = \eta^{\alpha\beta} \frac{\partial x^\nu}{\partial x'^\alpha} \frac{\partial x^\rho }{\partial x'^\beta} \eta_{\gamma\delta} \frac{\partial x’^\gamma}{\partial x^\mu} \frac{\partial x’^\delta}{\partial x^\nu} \frac{\partial x'^delta}{\partial x^\nu} \frac{\partial x’^\gamma}{\partial x^\mu} \frac{\partial x’^\delta}{\partial x^\nu} \frac{\partial x’^\delta}{\partial x^\nu}
+g^{\nu\rho}g_{\mu\nu} & = \eta^{\alpha\beta} \frac{\partial x^\nu}{\partial x'^\alpha} \frac{\partial x^\rho }{\partial x'^\beta} \eta_{\gamma\delta} \frac{\partial x'^\gamma}{\partial x^\mu} \frac{\partial x'^\delta}{\partial x^\nu} \frac{\partial x'^delta}{\partial x^\nu} \frac{\partial x'^\gamma}{\partial x^\mu} \frac{\partial x'^\delta}{\partial x^\nu} \frac{\partial x'^\delta}{\partial x^\nu}
 & = \delta^\delta_\alpha \eta^{\alpha\beta} \frac{\partial x^\rho }{\partial x'^\beta} \eta_{\gamma\delta} \frac{\partial x'^\gamma}{\partial x^\mu} \text{ with } \frac{\partial x^\nu}{\partial x'^\alpha}\frac{\partial x'^\delta}{\partial x^\nu} = \delta^\delta_\alpha \alpha
-& = \frac{\partial x^\rho}{\partial x'^\beta}\frac{\partial x'^\beta}{\partial x^\mu} = \delta^\rho_\mu,\end{aligned}$$
+& = \frac{\partial x^\rho}{\partial x'^\beta}\frac{\partial x'^\beta}{\partial x^\mu} = \delta^\rho_\mu
+\end{aligned}
+$$
 where $\delta^\rho_\mu$ is the Kronecker symbol ($\delta^\rho_\mu=1$ if $\rho=\mu$, 0 otherwise). 
 :::
 

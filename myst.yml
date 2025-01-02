@@ -54,17 +54,17 @@ project:
     - file: README
     - title: Lectures
       children:
-        - file: chapters/en/start
-        - file: chapters/en/00_introduction
-        - file: chapters/en/01_FLRW_metric
-        - file: chapters/en/02_friedmann_equations
-        - file: chapters/en/03_cosmological_models
-        - file: chapters/en/04_astrophysical_emissions
-        - file: chapters/en/05_astroparticle_sources
-        - file: chapters/fr/06_supernovae
-        - file: chapters/fr/07_cmb
-        - file: chapters/en/08_acceleration
-        - file: chapters/en/09_radiation
+        - file: chapters/en/start.md
+        - file: chapters/en/00_introduction.md
+        - file: chapters/en/01_FLRW_metric.md
+        - file: chapters/en/02_friedmann_equations.md
+        - file: chapters/en/03_cosmological_models.md
+        - file: chapters/en/04_astrophysical_emissions.md
+        - file: chapters/en/05_astroparticle_sources.md
+        - file: chapters/fr/06_supernovae.md
+        - file: chapters/fr/07_cmb.md
+        - file: chapters/en/08_acceleration.md
+        - file: chapters/en/09_radiation.md
         #- file: chapters/10_lss
         #- file: chapters/11_inflation
         #- file: chapters/12_lcdm_and_beyond

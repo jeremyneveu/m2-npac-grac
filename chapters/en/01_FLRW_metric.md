@@ -174,8 +174,8 @@ At this stage, we can now combine the result obtained for the two non-zero curva
 \label{K-def}
 k = \left\lbrace
 \begin{array}{rl}
- +1 & \text{3-sphere} \}
- 0 & \text{flat space} \text
+ +1 & \text{3-sphere} \\
+ 0 & \text{flat space} \\
  -1 & \text{3-hyperboloid} \\
 \end{array}\right.
 \end{equation}
@@ -341,7 +341,7 @@ The preceding equality is demonstrated in {cite:t}`hobson2006general`[p. 81]. He
 & = \frac{1}{2}\left( \frac{\partial g_{\lambda\kappa}}{\partial x^\mu} + \frac{\partial g_{\mu\lambda\kappa}}{\partial x^\kappa} - \frac{\partial g_{\mu\kappa}}{\partial x^\lambda\kappa}{\partial x^\lambda} \right) U^\lambda U^\kappa  
 = \frac{1}{2} \frac{\partial g_{\lambda\kappa}}{\partial x^\mu} U^\lambda U^\kappa
 \end{align*}
-because the metric is a symmetrical tensor so ${\partial_\kappa g_{\muambda}} - {\partial_\lambda g_{\mu\kappa}} = $0.
+because the metric is a symmetrical tensor so ${\partial_\kappa g_{\mu\lambda}} - {\partial_\lambda g_{\mu\kappa}} = 0$.
 :::
 
 From this form of the geodesic equation (see {cite:p}`hobson2006general`[p. 81] for a demonstration), let's calculate the form that the contravariant vector $U^\nu$ must take in a FLRW metric for a particle in free fall.
@@ -396,14 +396,13 @@ because along its geodesic $\theta$ and $\phi$ are constant ($\dd \theta = \dd \
 
 \int_{t_E}^{t_0} \frac{c\dd t}{a(t)} = -\int_{t_0}^{t_E} \frac{c\dd t}{a(t)} = \int_0^{\sigma_E}\frac{c\dd\sigma}{sqrt{1-k\sigma^2}} = \left\lbrace
 \begin{array}{cl}
-    \sigma_E & \text{ si } k=+1 \arcsin
-    \sigma_E & \text{ si } k=0 \\
-    \text{arcsh},\sigma_E & \text{ si } k=-1 
+    \arcsin\,\sigma_E & \text{ if } k=+1  \\
+    \sigma_E & \text{ if } k=0 \\
+    \text{arcsh},\sigma_E & \text{ if } k=-1 \\
 \end{array}
 \right. .
 ::: 
 with $\dd \sigma < 0$ for $\dd t > 0$ considering a photon going from the source to the observer in 0.
-
 
 For an electromagnetic wave with period $T$, the expression [](#eq:ds2_lumiere) being valid at any instant, we can calculate the same integral for the wave emitted at instant $t_E+T_E$ and received at instant $t_0+T_0$ (we assume that the period $T$ will vary with time): 
 $$

@@ -251,7 +251,7 @@ une équation très similaire à [](#eq:utopie). Le membre de gauche représente
 Malheureusement, la $K$-correction dépend d'un certain nombre d'ingrédients qu'il faut donc connaître pour la calculer :
 - le redshift $z$, à inférer depuis un spectre;
 - la densité spectrale $S_\lambda$ de la supernova, à construire par un modèle spectrophotométrique ajusté sur les séquences spectrales mesurées (comme dans la [](#fig:spectresIa)) comme SALT2 {cite:p}`Guy2007`;
-- la densité spectrale de référence $S_{\mathrm{ref}}(\lambda)$, à établir par mesure (<doi:10.1086/153547>, <doi:arXiv.2411.03256>)  ou modélisation d'atmosphère stellaire <doi:10.1086/677655>;
+- la densité spectrale de référence $S_{\mathrm{ref}}(\lambda)$, à établir par mesure (<doi:10.1086/153547>, <doi:10.48550/arXiv.2411.03256>)  ou modélisation d'atmosphère stellaire <doi:10.1086/677655>;
 - la transmission des filtres du télescope $T_b$, voire de la transmission atmosphérique du lieu $T_{\mathrm{atm}}(\lambda)$.
 
 Pour obtenir une mesure du paramètre d'état de l'énergie noire $w_{DE}$ au pourcent, il faut donc que chacun de ces ingrédients soit établi à mieux que le pourcent. Aujourd'hui, les incertitudes dominantes sur la mesure de $w_{DE}$ par les supernovae de type Ia sont les incertitudes systématiques de calibration photométrique, donc la connaissance de la bande passante des filtres des instruments ainsi que la connaissance des flux de références {cite:p}`Betoule2013,Scolnic2018` .
