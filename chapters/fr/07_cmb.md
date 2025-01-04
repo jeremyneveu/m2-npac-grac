@@ -669,12 +669,12 @@ La loi d'expansion obéit à la première équation de Friedmann :
 \end{equation}
 et donc :
 \begin{equation}
-  \boxed{H = \sqrt{\frac{8 \pi^3 G}{90 \hbar^3 c^5}} g_\star^{1/2}(T) (k_B T)^2}
+  \boxed{H(T) = \sqrt{\frac{8 \pi^3 G}{90 \hbar^3 c^5}} g_\star^{1/2}(T) (k_B T)^2}
 \end{equation}
 Ainsi, $H \propto T^2$ aux variations près du nombre effectif de degrés de liberté dans le plasma primordial. Gardez cela à l'esprit, cela sera utile pour comparer le taux d'expansion avec les divers taux de réaction entre les différentes espèces.
 
 
-En injectant l'évolution de la température avec le facteur d'échelle (équation [](#eq:Tagstar)), on retrouve que $a(t) \propto t^{1/2}$ dans l'Univers primordial (équation [](#eq:a_rad_only)) mais le facteur de proportionalité change quand $g_{\star S}$ varie. Le taux d'expansion vaut donc $H(t) = 1/(2t)$ ce qui donne :
+En injectant l'évolution de la température avec le facteur d'échelle (équation [](#eq:Tagstar)), on retrouve que $a(t) \propto t^{1/2}$ dans l'Univers primordial (équation [](#eq:a_rad_only)) avec le facteur de proportionalité qui change quand $g_{\star S}$ varie. Mais le taux d'expansion vaut alors simplement $H(t) = 1/(2t)$ ce qui donne :
 \begin{equation}\label{eq:Ttoa}
   \boxed{T \approx \left[ 1.8 \times 10^{10}\,\mathrm{K}\right] \times  g_*(T)^{-1/4} \left(\frac{t}{\mathrm{1\ sec}}\right)^{-1/2} \approx \left[ 1.6\,\mathrm{MeV}\right] \times  g_*(T)^{-1/4} \left(\frac{t}{\mathrm{1\ sec}}\right)^{-1/2} } 
 \end{equation}
@@ -960,7 +960,7 @@ En terme de masse, l'abondance d'hélium 4 dans l'Univers à la fin de la nuclé
 \begin{equation}
 \boxed{Y_p \equiv \frac{\rho(^4\mathrm{He})}{\rho_b} = \frac{4n_\mathrm{He}}{n_n + n_p} \approx 25\%}
 \end{equation}
-en bon accord avec les mesures (voir [](#fig:BBN_mes)). Des calculs plus précis prédisent $Y_p$ autour de 24%, et car une petite fraction des neutrons demeurent dans d'autres noyaux légers après $t_{\mathrm{nuc}}$ comme le deutérium, le lithium, etc ([](#fig:BBN)).
+en bon accord avec les mesures (voir [](#fig:BBN_mes)). Des calculs plus précis prédisent $Y_p$ autour de 24%, et car une petite fraction des neutrons demeurent dans d'autres noyaux légers après $t_{\mathrm{nuc}}$ comme le deutérium, le lithium, etc ([](#fig:BBN)). La synthèse des noyaux atomiques démarre environ 3 minutes après le Big Bang et se termine 20 minutes après.
 
 
 :::{figure} ../../images/bbn.png
@@ -1071,7 +1071,31 @@ X_e(T_\mathrm{dec}) (k_B T_\mathrm{dec})^{3/2} \approx  \frac{\pi^2}{2\zeta(3)}\
 \end{equation}
 Par une résolution numérique, on obtient :
 $$\boxed{T_{\mathrm{dec}} = 0.26\,\mathrm{eV} = 3055\,\mathrm{K}, \quad z_{\mathrm{dec}}\sim 1100,  \quad t_{\mathrm{dec}}=370\,000\,\mathrm{ans}}$$
-Le fond diffus cosmologique est donc un rayonnement de corps noir qui a été relaché il y a environ $370\,000\,$ans, quand l'Univers n'était quasiment plus ionisé puisque $X_e(T_{\mathrm{dec}}) = 6\times 10^{-3}$. _Avec l'expansion de l'Univers et la prédiction d'une abondance de $24\%$ d'hélium, l'existence de ce fonds diffus est un des trois piliers qui assoit la théorie du Big Bang._
+
+:::{tip} Libre parcours moyen des photons
+:class:dropdown
+
+Une autre façon de voir le découplage entre photon et matière et donc le moment où l'Univers devient transparent, est de regarder le libre parcours moyen des photons $\ell_T(z) = 1/(\sigma_T n_e(z)c)$. Loin dans le passé de l'Univers, celui-ci était opaque mais le libre parcours moyen des photons pouvait tout de même être de l'ordre de quelques années-lumières. Après le découplage, celui-ci devient supérieur à la taille typique de l'Univers. 
+
+```{figure} #photon_mean_free_path
+:name: fig:photon_mean_free_path
+:width: 70%
+
+Comparaison entre le temps de libre parcours moyen des photons $\tau_T$ et le temps de Hubble $1/H(z)$.
+```
+
+:::
+
+
+Le fond diffus cosmologique est donc un rayonnement de corps noir qui a été relaché il y a environ $370\,000\,$ans, quand l'Univers n'était quasiment plus ionisé puisque $X_e(T_{\mathrm{dec}}) = 6\times 10^{-3}$. 
+
+:::{attention} Les trois piliers du Big Bang
+
+**L'expansion de l'Univers, une abondance de $24\%$ d'hélium, et l'existence d'un fond diffus cosmologique micro-onde sont les trois piliers qui assoient la théorie du Big Bang.**
+
+Toute théorie alternative doit expliquer ces trois observations.
+
+:::
 
 
 :::{note} Profondeur optique
