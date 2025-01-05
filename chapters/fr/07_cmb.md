@@ -1109,38 +1109,6 @@ Toute théorie alternative doit expliquer ces trois observations.
 :::
 
 
-:::{note} Profondeur optique
-
-On définit la profondeur optique $\tau$ par le rapport du nombre de photons reçus sur Terre sans avoir subi aucune diffusion Thomson $N(t_0)$ sur le nombre de photons $N(t)$ émis à un instant $t$:
-$$\frac{N(t_0)}{N(t)} = e^{-\tau}$$
-avec
-$$\tau = \int_t^{t_0} \Gamma_\gamma(t) \mathrm{d}t$$
-Le temps $t_{\mathrm{ls}}$ pour lequel $\tau=1$ est appelé temps de dernière diffusion. C'est le temps depuis lequel un photon du CMB n'a plus interagi avec un électron. Plus précisément,
-\begin{equation}
-\tau(z) = \int_0^z \frac{\Gamma_\gamma(z)}{H(z)}\frac{\dd z}{1+z}
-\end{equation}
-C'est un des six paramètres du modèle standard $\Lambda$CDM. En effet, après l'émission du fond diffus cosmologique, on entre dans les Ages Sombres de l'Univers, où l'Univers est transparent mais aucun astre n'émet encore de lumière. Mais avec l'apparition des premières étoiles et galaxies, peut-être 150 millions d'années après le Big Bang, le milieu neutre est de nouveau ionisé. Bien que très peu dense, les photons du CMB interagissent de nouveau avec les électrons par diffusion Thomson, ce qui diminue l'amplitude des anisotropies de petites échelles dans le spectre de puissance du CMB, et introduit de nouvelles anisotropies dans les anisotropies de polarisation. C'est le paramètre le moins bien mesuré du modèle $\Lambda$CDM pour le moment ([](#fig:tau)) $\tau = 0.058 \pm 0.006$ {cite:p}`Planck2023`, mais il informe sur l'apparition des premiers astres lumineux ([](#fig:tau_reio)).
-
-```{figure} ../../images/tau_history.png
-:width: 80%
-:align: center
-:label: fig:tau
-
-The optical depth to reionization $\tau$ measured as a smearing of the CMB angular power spectrum (d'après [https://lambda.gsfc.nasa.gov/education/graphic_history/taureionzation.html](https://lambda.gsfc.nasa.gov/education/graphic_history/taureionzation.html), image credit: NASA / LAMBDA Archive Team).
-```
-
-```{figure} #tau_reio
-:width: 80%
-:align: center
-:label: fig:tau_reio
-
-En supposant que l'Univers est de nouveau complètement ionisé, le calcul de sa profondeur optique montre que si aujourd'hui on mesure $\tau=0.058$ alors la reionization de l'Univers devait être complète autour de $z_{\mathrm{reio}} \sim 7$ donnant un début de la formation des galaxies antérieure à 1 milliard d'années après le Big Bang.
-```
-
-:::
-
-
-
 [^baryons]: les hadrons se scindent en deux familles : les mésons (2 quarks) et les baryons (3 quarks). on rappelle que parmi les baryons seuls les protons sont stables. Les neutrons liés dans les noyaux atomiques sont stables, mais libres ils se désintègrent en proton avec un temps de demie vie de 15 minutes. Les mésons sont tous instables avec des temps de demie vie plus courts que $10^{-7}\,$s. Les électrons sont 2000 fois plus légers que les protons. L'essentiel de la masse de la matière dite "ordinaire" est donc contenue dans les noyaux atomiques d'où le raccourci "matière baryonique".
 [^mp]: on rappelle que les masses des protons et neutrons sont d'environ $1\,$GeV.
 [^neutrality]: puisque la charge électrique est associée aux forces de Coulomb et que l'expansion de l'univers n'est gouvernée que par les forces gravitationnelles, l'univers doit être globalement neutre.
