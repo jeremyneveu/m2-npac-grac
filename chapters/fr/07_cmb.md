@@ -856,7 +856,7 @@ Or $g_n=g_p=2$ et on peut supposer que $\mu_p=\mu_n$ si les potentiels chimiques
 \end{equation}
 On en déduit que tant que la température est telle que $k_B T \gg Q_n = 1.29\,$MeV, alors il y a autant de neutrons que de protons dans l'Univers. Mais en deçà de $1\,$MeV, la proportion de neutrons chute exponentiellement. Posons $X_n^{eq}$ le rapport neutron sur baryon si les espèces sont à l'équilibre à la température $T$. Alors :
 $$ X_n^{eq}(T) =  \frac{n_n^{eq} }{ n_b} = \frac{n_n^{eq}}{n_n^{eq} + n_p^{eq}} =\frac{1}{ 1 + \exp\left(-Q_n / k_B T\right)}.$$
-Donc la densité de neutrons devraient être quasi nulle aujourd'hui, mais cette équation est valable seulement *tant que les réactions ont lieu*. En effet, si le taux d'expansion de l'Universe devient comparable ou supérieur au taux d'interaction, alors les réactions s'arrêtent et la proportion neutron sur proton est gelée. 
+Donc la densité de neutrons devraient être quasi nulle aujourd'hui, mais cette équation est valable seulement *tant que les réactions ont lieu*. En effet, si le taux d'expansion de l'Universe devient comparable ou supérieur au taux d'interaction, alors les réactions s'arrêtent et la proportion neutron sur proton est gelée. Le _mécanisme de gel_ des réactions impliquant des particules massives est important en cosmologie pour comprendre l'abondance des particules massives aujourd'hui.
 
 Pour la réaction $p+e^- \rightarrow \nu_e + n$, le taux d'interaction est donné par ({cite}`KolbTurner` p.90, {cite}`Weinberg1989` p.547 et originellement dans {cite}`Peebles1966`) :
 $$
@@ -896,7 +896,7 @@ soit :
 \end{equation}
 
 Commençons par comparer le taux de disparition des neutrons au taux d'expansion de l'Univers ([](#fig:BBN_Gnp)).
-Après intégration numérique, on observe que $\Gamma_{n\to p}$ décroit en fonction du temps et converge vers un plateau correspondant à l'inverse du temps de demi vie du neutron $\tau_n^{-1}$ (indépendant de l'expansion). Le taux $\Gamma_{n\to p}$ est comparable au taux d'expansion $H$ à la température : 
+Après intégration numérique, on observe que $\Gamma_{n\to p}$ décroit en fonction du temps et converge vers un plateau correspondant à l'inverse du temps de demi vie du neutron $\tau_n^{-1}$ (indépendant de l'expansion). Il est supérieur au taux $\Gamma_{p\to n}$ donc c'est celui-qui compte dans le mécanisme de gel. Le taux $\Gamma_{n\to p}$ est comparable au taux d'expansion $H$ à la température : 
 $$\boxed{T_{\mathrm{freeze}}= 0.7\,\MeV = 8\times 10^9 \,\kelvin}$$
 C'est la température de gel des neutrons. 
 
@@ -966,7 +966,7 @@ p + n &\rightarrow &\mathrm{D} + \gamma \\
 car il est beaucoup plus improbable que deux protons et deux neutrons se rencontrent par hasard pour former un noyau d'hélium. Or l'énergie de liaison de l'hélium 4 est bien supérieure à celle du deutérium ($B_{\mathrm{He}} = 28.3\,\MeV$) donc c'est sa formation qui sera favorisée. On peut donc supposer que tous les neutrons disponibles à $t_\mathrm{nuc}$ vont terminer dans un noyau d'hélium. 
 
 Comme deux neutrons vont dans un noyau d'hélium 4, le nombre maximum de noyaux d'hélium formables est égal à la moitié des neutrons disponibles (qu'ils soient libres ou dans les noyaux de deutérium). On en déduit l'abondance en hélium 4 en nombre de noyaux comme étant :
-$$n_{\mathrm{He}} = \frac{1}{2} n_n(t_\mathrm{nuc}) \sim \frac{1}{14}$$
+$$n_{\mathrm{He}} = \frac{1}{2} n_n(t_\mathrm{nuc})$$
 En terme de masse, l'abondance d'hélium 4 dans l'Univers à la fin de la nucléosynthèse primordiale peut être au maximum de ([](#fig:BBN_Yp)):
 \begin{equation}
 \boxed{Y_p \equiv \frac{\rho(^4\mathrm{He})}{\rho_b} = \frac{4n_\mathrm{He}}{n_n + n_p} \approx 25\%}
@@ -1022,7 +1022,7 @@ La recombinaison correspond au moment où les électrons vont se combiner aux no
 
 La formation des atomes d'hydrogène se déroule par la réaction :
 $$ p + e^- \rightleftharpoons \mathrm{H} + \gamma$$
-et on rappelle que l'énergie de liaison de l'hydrogène vaut $B_\mathrm{H} = 13.6\,\eV$. Une rapide approximation nous donnerait que la température à laquelle a eu lieu la recombinaison est $T_\mathrm{rec} \approx B_\mathrm{H} / k_B \approx 1.5 \times 10^5\,$K, mais ce serait oublier qu'avec un milliard de photons pour un baryon, même à des températures plus basses l'Univers contient encore énormément de photons d'énergie assez haute pour ioniser les atomes d'hydrogène (queue de la distribution du corps noir). 
+et on rappelle que l'énergie de liaison de l'hydrogène vaut $B_\mathrm{H} = 13.6\,\eV$. Une rapide approximation nous donnerait que la température à laquelle a eu lieu la recombinaison est $T_\mathrm{rec} \approx B_\mathrm{H} / k_B \approx 1.5 \times 10^5\,$K, mais ce serait oublier qu'avec un milliard de photons pour un baryon, même à des températures plus basses l'Univers contient encore énormément de photons d'énergie assez haute pour ioniser les atomes d'hydrogène (queue de la distribution du corps noir). Ce qu'il faut c'est donc trouver la température pour laquelle l'intégrale de la distribution de corps à des énergies supérieures à $13.6\,\eV$ donne une densité de photons comparable à $n_b = \eta n_\gamma$. Le rapport $\eta$ est donc un paramètre important qui doit intervenir dans l'estimation de la température à la recombinaison.
 
 Une meilleure estimation doit donc reposer au moins sur le rapport baryon sur photon $\eta$ et $B_\mathrm{H}$. Comme pour l'abondance du deutérium, à l'équilibre on peut décrire :
 \begin{align}
