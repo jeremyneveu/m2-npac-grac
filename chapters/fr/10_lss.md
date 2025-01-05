@@ -258,6 +258,13 @@ On notera que même lorsqu'elle est appliquée à une quantité sans dimension, 
 Nous voyons que $\Delta^2$ quantifie la contribution à la variance (en quelque sorte la densité d'énergie) du signal de l'espace réel par cellule logarithmique.
 
 
+:::{figure} ../../notebooks/movie.mp4
+:name: fig:cmb_anisotropies
+:width: 100%
+
+Fraction d'ionisation $X_e$ en fonction du redshift pendant la recombinaison.
+:::
+
 
 #### BACKUP
 

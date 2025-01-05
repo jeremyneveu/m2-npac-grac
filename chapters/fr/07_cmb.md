@@ -773,6 +773,15 @@ Nous constatons donc qu'après l'annihilation $e^\pm$, la température du fond c
 \begin{equation}
   T_\nu^0 \approx 1.95\,K = 0.17\,\mathrm{meV}
 \end{equation}
+Le rapport entre les températures des photons et des neutrinos se retrouve sur la [](#fig:BBN_Tnu) obtenue après un calcul précis de l'évolution du milieu pendant l'annihilation $e^\pm$.
+
+:::{figure} #BBN_Tnu
+:name: fig:BBN_Tnu
+:align: center
+:width: 70%
+
+Evolution de la température des photons et des neutrinos au cours de l'annihilation $e^\pm$ (figure adaptée de {cite}`Weinberg1989` p. 529,540 et originellement de {cite}`Peebles1966`).
+:::
 
 Nous pouvons en déduire la densité de neutrinos $n_\nu$ en fonction de $n_\gamma$. Les neutrinos sont des fermions avec 3 saveurs donc si on les suppose sans masse, aujourd'hui leur densité serait : 
 \begin{equation}
@@ -808,8 +817,10 @@ En fait, les neutrinos ont des masses, avec deux conséquences importantes (1) n
 ### Big Bang Nucleosynthesis (BBN)
 
 Revenons environ $1\,$ms après le Big Bang lorsque le température de l'Univers est de quelques dizaines de MeV. L'Univers est alors essentiellement une soupe chaude de baryons, de photons, d'électrons et de neutrinos sur le point de se découpler des autres particules. On rappelle que le rapport baryon sur photon est une constante  [](#eq:eta) et vaut plus précisément :
-$$\eta = 6.2 \times 10^{-10}$$
-L'Univers continuant son expansion, il se refroidit et les protons et neutrons peuvent fusionner pour former les premiers noyaux atomiques. C'est ce qu'on appelle la _nucléosynthèse primordiale_ (BBN).
+$$\label{eq:etaToObh2}
+\eta = \frac{n_b}{n_\gamma} = \frac{\Omega_b^0 \rho_c^0}{m_p n^0_\gamma} = 2.73\times 10^{-8}\times \Omega_b^0 h^2 =  6.2 \times 10^{-10}
+$$
+avec la mesure de $\Omega_b^0 h^2$ sur le spectre de puissance des anisotropies de température du CMB {cite}`Planck2018`. L'Univers continuant son expansion, il se refroidit et les protons et neutrons peuvent fusionner pour former les premiers noyaux atomiques. C'est ce qu'on appelle la _nucléosynthèse primordiale_ (BBN).
 
 #### Rapport neutron sur proton
 
@@ -923,18 +934,18 @@ La question est donc: quand a lieu la formation du deutérium et combien y a-t-i
 
 Le deutérium possède une énergie de liaison :
 $$B_{\mathrm{D}} = (m_n + m_p - m_\mathrm{D})c^2 = 2.22\,\mathrm{MeV}$$
-A l'équilibre, 
+Il est donc plus favorable de former des atomes de deuterium que de garder des protons et des neutrons séparés. A l'équilibre, 
 \begin{align}
 \frac{n_\mathrm{D}}{n_pn_n} & = \frac{g_\mathrm{D}}{g_p g_n} \left(\frac{k_B T}{2\pi \hbar^2}\right)^{-3/2}\left(\frac{m_\mathrm{D}}{m_p m_n}\right)^{3/2} \exp \left( \frac{(m_p+m_n-m_\mathrm{D})c^2}{k_B T} \right) \\
  & \approx 6 \left(\frac{m_n k_B T}{2\pi \hbar^2}\right)^{-3/2}  \exp\left(\frac{B_\mathrm{D}}{k_B T}\right)
 \end{align}
-avec $g_\mathrm{D}=3$, $g_n=g_p=2$ et $\mu_p + \mu_n = \mu_D + \mu_\gamma = \mu_D$  ({cite}`ryden2017` p.219).
+avec $g_\mathrm{D}=3$ (car le deutérium est un boson massif de spin 1), $g_n=g_p=2$ et $\mu_p + \mu_n = \mu_D + \mu_\gamma = \mu_D$  ({cite}`ryden2017` p.219).
 
 On définit la température de démarrage de la nucléosynthèse $T_{\mathrm{nuc}}$ pour laquelle la moitié des neutrons ont été consommés pour former du deutérium, c'est-à-dire lorsque $n_\mathrm{D}=n_n$. Le rapport deutérium sur neutron s'écrit :
 \begin{equation}\label{eq:XD}
 \frac{n_\mathrm{D}}{n_n} \approx 6 n_p \left(\frac{m_n k_B T}{2\pi \hbar^2}\right)^{-3/2}  \exp\left(\frac{B_D}{k_B T}\right)
 \end{equation}
-Le nombre de protons au moment de la nucléosynthèse est donné par :
+En supposant que de toute façon le nombre de protons va peu diminuer au cours de la formation du deutérium, on peut estimer que la densité de protons à $T_{\mathrm{nuc}}$ est environ :
 $$n_p \approx (1-X_n(T_{\mathrm{nuc}})) n_b = (1-X_n(T_{\mathrm{nuc}})) \eta n_\gamma(T_{\mathrm{nuc}}) $$
 On en déduit alors la température $T_{\mathrm{nuc}}$ par l'inversion numérique de l'équation :
 $$ 6 (1-X_n(T_{\mathrm{nuc}})) \eta n_\gamma(T_{\mathrm{nuc}}) \left(\frac{m_n k_B T_{\mathrm{nuc}}}{2\pi \hbar^2}\right)^{-3/2}  \exp\left(\frac{B_D}{k_B T_{\mathrm{nuc}}}\right) = 1 $$
@@ -956,21 +967,11 @@ car il est beaucoup plus improbable que deux protons et deux neutrons se rencont
 
 Comme deux neutrons vont dans un noyau d'hélium 4, le nombre maximum de noyaux d'hélium formables est égal à la moitié des neutrons disponibles (qu'ils soient libres ou dans les noyaux de deutérium). On en déduit l'abondance en hélium 4 en nombre de noyaux comme étant :
 $$n_{\mathrm{He}} = \frac{1}{2} n_n(t_\mathrm{nuc}) \sim \frac{1}{14}$$
-En terme de masse, l'abondance d'hélium 4 dans l'Univers à la fin de la nucléosynthèse primordiale peut être au maximum de :
+En terme de masse, l'abondance d'hélium 4 dans l'Univers à la fin de la nucléosynthèse primordiale peut être au maximum de ([](#fig:BBN_Yp)):
 \begin{equation}
 \boxed{Y_p \equiv \frac{\rho(^4\mathrm{He})}{\rho_b} = \frac{4n_\mathrm{He}}{n_n + n_p} \approx 25\%}
 \end{equation}
-en bon accord avec les mesures (voir [](#fig:BBN_mes)). Des calculs plus précis prédisent $Y_p$ autour de 24%, et car une petite fraction des neutrons demeurent dans d'autres noyaux légers après $t_{\mathrm{nuc}}$ comme le deutérium, le lithium, etc ([](#fig:BBN)). La synthèse des noyaux atomiques démarre environ 3 minutes après le Big Bang et se termine 20 minutes après.
-
-
-:::{figure} ../../images/bbn.png
-:width: 80%
-:align: center
-:label: fig:BBN
-
-Synthèse des éléments légers dans l'Univers primordial (d'après {cite}`PospelovBBN2010`).
-:::
-
+le reste étant de l'hydrogène (à $75\%$ en masse).
 
 :::{figure} #BBN_Yp
 :name: fig:BBN_Yp
@@ -978,6 +979,16 @@ Synthèse des éléments légers dans l'Univers primordial (d'après {cite}`Posp
 :width: 70%
 
 Fraction massique des différentes noyaux légers dans l'Univers au cours du temps, calculée via le modèle simple détaillé dans ce chapitre.
+:::
+
+Des calculs plus précis montrent que la synthèse des noyaux atomiques démarre environ 3 minutes après le Big Bang et se termine 20 minutes après, et prédisent $Y_p$ autour de 24%, car une petite fraction des neutrons demeurent dans d'autres noyaux légers après $t_{\mathrm{nuc}}$ comme le deutérium, le lithium, etc ([](#fig:BBN)). Ces prédictions sont en bon accord avec les mesures (voir [](#fig:BBN_mes)). Avant la découverte des anisotropies de température du CMB dans les années 2000, la comparaison de la mesure des abondances des éléments légers (par l'observation du milieu interstellaire, des galaxies, etc: bandes grises horizontales de la [](#fig:BBN_mes)) avec ces prédictions était un moyen de mesurer $\eta$ et donc $\Omega_b^0h^2$ (voir équation [](#eq:etaToObh2)). La mesure de $\Omega_b^0h^2$ par les anisotropies de température (bande grise verticale  de la [](#fig:BBN_mes)) est plus précise mais en accord avec les prédictions de la BBN ce qui montre la robustesse du modèle standard de la cosmologie (sauf pour le lithium où un désaccord persiste).
+
+:::{figure} ../../images/bbn.png
+:width: 80%
+:align: center
+:label: fig:BBN
+
+Synthèse des éléments légers dans l'Univers primordial (d'après {cite}`PospelovBBN2010`).
 :::
 
 
@@ -1018,16 +1029,16 @@ Une meilleure estimation doit donc reposer au moins sur le rapport baryon sur ph
 \frac{n_\mathrm{H}}{n_pn_e} & =\frac{g_\mathrm{H}}{g_p g_e} \left(\frac{k_B T}{2\pi \hbar^2}\right)^{-3/2}\left(\frac{m_\mathrm{H}}{m_p m_e}\right)^{3/2} \exp \left(\frac{(m_p+m_e-m_\mathrm{H})c^2}{k_B T} \right) \\
 & \approx \left(\frac{m_e k_B T}{2\pi \hbar^2}\right)^{-3/2}  \exp\left(\frac{B_\mathrm{H}}{k_B T}\right)
 \end{align}
-avec $g_\mathrm{H}=4$ et $g_p=g_e=2$. C'est *l'équation de Saha*. Posons $X_e$ la fraction d'électron libre dans le plasma primordial :
+avec $g_\mathrm{H}=4$[^spinH] et $g_p=g_e=2$. C'est *l'équation de Saha*. Posons $X_e$ la fraction d'électron libre dans le plasma primordial :
 $$X_e = \frac{n_e}{n_b}$$
 Par des arguments de neutralité électrique et de conservation du nombre de particules, on a aussi :
-$$n_e=n_p,\quad X_e=\frac{n_p}{n_b}= \frac{n_p}{n_p + n_\mathrm{H}} $$
-en supposant qu'il n'y a que de l'hydrogène pour simplifier les calculs (pas d'hélium). Par conséquent, on a :
+$$n_e\approx n_p,\quad X_e=\frac{n_p}{n_b}\approx  \frac{n_p}{n_p + n_\mathrm{H}} $$
+en supposant qu'il n'y a que de l'hydrogène pour simplifier les calculs (pas d'hélium[^Heneglect]). Par conséquent, on a :
 \begin{equation}
 \frac{1-X_e}{X_e} = n_p \left(\frac{m_e k_B T}{2\pi \hbar^2}\right)^{-3/2}  \exp\left(\frac{B_\mathrm{H}}{k_B T}\right)
 \end{equation}
-et :
-$$n_p = X_e \eta  n_\gamma = \eta X_e  \frac{2\zeta(3)}{\pi^2}\left(\frac{k_B T}{\hbar c}\right)^3 $$
+et simplement :
+$$n_p \approx X_e \eta  n_\gamma = \eta X_e  \frac{2\zeta(3)}{\pi^2}\left(\frac{k_B T}{\hbar c}\right)^3 $$
 donc :
 \begin{equation}
 \frac{1-X_e}{X_e^2} = \frac{2\zeta(3)}{\pi^2}\eta \left(2\pi\frac{k_B T}{m_e c^2}\right)^{3/2}  \exp\left(\frac{B_\mathrm{H}}{k_B T}\right) \equiv a_\mathrm{H}
@@ -1063,7 +1074,7 @@ avec la section efficace de la diffusion Thomson :
 $$\sigma_T = 0.665\,\mathrm{barns} = 6.65\times 10^{-29}\,\mathrm{m}^2$$
 Le découplage a lieu lorsque ce taux d'interaction devient petit devant le taux d'expansion de l'Univers ([](#fig:rates_decoupling)), soit :
 $$\Gamma_\gamma(T_\mathrm{dec}) = H(T_\mathrm{dec})$$
-L'Univers étant alors dominé par la matière, on a :
+L'Univers étant alors dominé par la matière ($z<3000$), on a :
 $$H(T_\mathrm{dec}) = H_0 \sqrt{\Omega_m^0(1+z)^3} = H_0 \sqrt{\Omega_m^0} \left(\frac{T_\mathrm{dec}}{T_0}\right)^{3/2}$$
 On aboutit à :
 \begin{equation}
@@ -1108,20 +1119,32 @@ Le temps $t_{\mathrm{ls}}$ pour lequel $\tau=1$ est appelé temps de dernière d
 \begin{equation}
 \tau(z) = \int_0^z \frac{\Gamma_\gamma(z)}{H(z)}\frac{\dd z}{1+z}
 \end{equation}
-C'est un des six paramètres du modèle standard $\Lambda$CDM. En effet, après l'émission du fond diffus cosmologique, on entre dans les Ages Sombres de l'Univers, où l'Univers est transparent mais aucun astre n'émet encore de lumière. Mais avec l'apparition des premières étoiles et galaxies, peut-être 150 millions d'années après le Big Bang, le milieu neutre est de nouveau ionisé. Bien que très peu dense, les photons du CMB interagissent de nouveau avec les électrons par diffusion Thomsom, ce qui diminue l'amplitude des anisotropies de petites échelles dans le spectre de puissance du CMB, et introduit de nouvelles anisotropies dans les anisotropies de polarisation. C'est le paramètre le moins bien mesuré du modèle $\Lambda$CDM pour le moment, mais il informe sur l'apparition des premiers astres lumineux.
+C'est un des six paramètres du modèle standard $\Lambda$CDM. En effet, après l'émission du fond diffus cosmologique, on entre dans les Ages Sombres de l'Univers, où l'Univers est transparent mais aucun astre n'émet encore de lumière. Mais avec l'apparition des premières étoiles et galaxies, peut-être 150 millions d'années après le Big Bang, le milieu neutre est de nouveau ionisé. Bien que très peu dense, les photons du CMB interagissent de nouveau avec les électrons par diffusion Thomson, ce qui diminue l'amplitude des anisotropies de petites échelles dans le spectre de puissance du CMB, et introduit de nouvelles anisotropies dans les anisotropies de polarisation. C'est le paramètre le moins bien mesuré du modèle $\Lambda$CDM pour le moment ([](#fig:tau)) $\tau = 0.058 \pm 0.006$ {cite:p}`Planck2023`, mais il informe sur l'apparition des premiers astres lumineux ([](#fig:tau_reio)).
 
 ```{figure} ../../images/tau_history.png
 :width: 80%
 :align: center
 :label: fig:tau
 
-The optical depth to reionization $\tau$ (d'après [https://lambda.gsfc.nasa.gov/education/graphic_history/taureionzation.html](https://lambda.gsfc.nasa.gov/education/graphic_history/taureionzation.html), image credit: NASA / LAMBDA Archive Team).
+The optical depth to reionization $\tau$ measured as a smearing of the CMB angular power spectrum (d'après [https://lambda.gsfc.nasa.gov/education/graphic_history/taureionzation.html](https://lambda.gsfc.nasa.gov/education/graphic_history/taureionzation.html), image credit: NASA / LAMBDA Archive Team).
+```
+
+```{figure} #tau_reio
+:width: 80%
+:align: center
+:label: fig:tau_reio
+
+En supposant que l'Univers est de nouveau complètement ionisé, le calcul de sa profondeur optique montre que si aujourd'hui on mesure $\tau=0.058$ alors la reionization de l'Univers devait être complète autour de $z_{\mathrm{reio}} \sim 7$ donnant un début de la formation des galaxies antérieure à 1 milliard d'années après le Big Bang.
 ```
 
 :::
+
+
 
 [^baryons]: les hadrons se scindent en deux familles : les mésons (2 quarks) et les baryons (3 quarks). on rappelle que parmi les baryons seuls les protons sont stables. Les neutrons liés dans les noyaux atomiques sont stables, mais libres ils se désintègrent en proton avec un temps de demie vie de 15 minutes. Les mésons sont tous instables avec des temps de demie vie plus courts que $10^{-7}\,$s. Les électrons sont 2000 fois plus légers que les protons. L'essentiel de la masse de la matière dite "ordinaire" est donc contenue dans les noyaux atomiques d'où le raccourci "matière baryonique".
 [^mp]: on rappelle que les masses des protons et neutrons sont d'environ $1\,$GeV.
 [^neutrality]: puisque la charge électrique est associée aux forces de Coulomb et que l'expansion de l'univers n'est gouvernée que par les forces gravitationnelles, l'univers doit être globalement neutre.
 [^Sconst]: stricto sensus une constante d'intégration entropique $S_0$ doit apparaître mais celle-ci est nulle en vertu du troisième principe de la thermodynamique.
 [^Tfreeze]: dans un certain nombre de référence, ont trouve comme température de gel des neutrons $T_{\mathrm{freeze}} \approx 0.8\,\MeV$ ce qui correspond aussi à 1 neutron pour 6 protons si on suit la distribution d'équilibre [](#eq:np_eq) mais en admettant que cette température est un ordre de grandeur bien trouvé pour que ça marche à la fin.
+[^spinH]: un atome d'hydrogène peut avoir un spin 0 (spins inversés) ou 1 (spins alginés) donc 4 degrés de liberté internes.
+[^Heneglect]: avec un neutron pour 7 protons, $n_\mathrm{He} = n_\mathrm{H} / 12$ donc en nombre plus de $90\%$ des baryons sont des protons. 

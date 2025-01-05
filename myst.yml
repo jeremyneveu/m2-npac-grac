@@ -77,6 +77,7 @@ project:
       - file: notebooks/SNIa.ipynb
       - file: notebooks/CMB_Saha_equation.ipynb
       - file: notebooks/CMB_BBN.ipynb
+      - file: notebooks/CMB_anisotropies.ipynb
 
 site:
   template: book-theme
