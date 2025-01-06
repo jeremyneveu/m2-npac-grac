@@ -855,7 +855,7 @@ Or $g_n=g_p=2$ et on peut supposer que $\mu_p=\mu_n$ si les potentiels chimiques
 \left.\frac{n_n}{n_p}\right\vert_{eq} = \left(\frac{m_n}{m_p}\right)^{3/2} \exp \left(- \frac{(m_n-m_p)c^2}{k_B T} \right) \approx \exp\left(-Q_n / k_B T\right).
 \end{equation}
 On en déduit que tant que la température est telle que $k_B T \gg Q_n = 1.29\,$MeV, alors il y a autant de neutrons que de protons dans l'Univers. Mais en deçà de $1\,$MeV, la proportion de neutrons chute exponentiellement. Posons $X_n^{eq}$ le rapport neutron sur baryon si les espèces sont à l'équilibre à la température $T$. Alors :
-$$ X_n^{eq}(T) =  \frac{n_n^{eq} }{ n_b} = \frac{n_n^{eq}}{n_n^{eq} + n_p^{eq}} =\frac{1}{ 1 + \exp\left(-Q_n / k_B T\right)}.$$
+$$ X_n^{eq}(T) =  \frac{n_n^{eq} }{ n_b} = \frac{n_n^{eq}}{n_n^{eq} + n_p^{eq}} =\frac{\exp\left(-Q_n / k_B T\right)}{ 1 + \exp\left(-Q_n / k_B T\right)}.$$
 Donc la densité de neutrons devraient être quasi nulle aujourd'hui, mais cette équation est valable seulement *tant que les réactions ont lieu*. En effet, si le taux d'expansion de l'Universe devient comparable ou supérieur au taux d'interaction, alors les réactions s'arrêtent et la proportion neutron sur proton est gelée. Le _mécanisme de gel_ des réactions impliquant des particules massives est important en cosmologie pour comprendre l'abondance des particules massives aujourd'hui.
 
 Pour la réaction $p+e^- \rightarrow \nu_e + n$, le taux d'interaction est donné par ({cite}`KolbTurner` p.90, {cite}`Weinberg1989` p.547 et originellement dans {cite}`Peebles1966`) :
@@ -982,6 +982,8 @@ Fraction massique des différentes noyaux légers dans l'Univers au cours du tem
 :::
 
 Des calculs plus précis montrent que la synthèse des noyaux atomiques démarre environ 3 minutes après le Big Bang et se termine 20 minutes après, et prédisent $Y_p$ autour de 24%, car une petite fraction des neutrons demeurent dans d'autres noyaux légers après $t_{\mathrm{nuc}}$ comme le deutérium, le lithium, etc ([](#fig:BBN)). Ces prédictions sont en bon accord avec les mesures (voir [](#fig:BBN_mes)). Avant la découverte des anisotropies de température du CMB dans les années 2000, la comparaison de la mesure des abondances des éléments légers (par l'observation du milieu interstellaire, des galaxies, etc: bandes grises horizontales de la [](#fig:BBN_mes)) avec ces prédictions était un moyen de mesurer $\eta$ et donc $\Omega_b^0h^2$ (voir équation [](#eq:etaToObh2)). La mesure de $\Omega_b^0h^2$ par les anisotropies de température (bande grise verticale  de la [](#fig:BBN_mes)) est plus précise mais en accord avec les prédictions de la BBN ce qui montre la robustesse du modèle standard de la cosmologie (sauf pour le lithium où un désaccord persiste).
+
+Dans tous les cas, avec uniquement le mécanisme stellaire de fusion de l'hydrogène au coeur des étoiles en hélium (et ensuite la fusion de l'hélium en carbone, oxygène, etc), il n'est pas possible d'expliquer une telle abondance de l'hélium dans l'Univers. Seul le passage par un plasma chaud à des centaines de millions de degrés contenant des neutrons libres, même au plus 20 minutes en se refroidissant, permet d'expliquer les $24\%$ d'hélium présents dans l'Univers. C'est donc une preuve importante de l'existence d'un état où l'Univers était un plasma chaud et dense pendant au moins quelques minutes. 
 
 :::{figure} ../../images/bbn.png
 :width: 80%
