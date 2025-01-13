@@ -318,7 +318,7 @@ $$
    \begin{bmatrix} E \\ E \\ 0 \\ 0 \end{bmatrix}
 $$
 
-The first space-like component reads $p_x'c = \Gamma E(\cos\theta-\beta)$. Photons emitted in the forward direction $p_x'>0$ thus reach the observer within a cone defined by $\cos\theta > \beta$. In the ultra-relativistic limit, this inequality reads $1-\theta^2/2 > 1 - 1/(2\Gamma^2)$, which defines a cone of half-opening angle $\theta < 1 /\Gamma$. This corresponds to a half-opening angle $\theta_\mathrm{max} \approx 3^\circ \times \big( \frac{\Gamma}{5} \big)^{-1}$.
+The first space-like component reads $p_x'c = \Gamma E(\cos\theta-\beta)$. Photons emitted in the forward direction $p_x'>0$ thus reach the observer within a cone defined by $\cos\theta > \beta$. In the ultra-relativistic limit, this inequality reads $1-\theta^2/2 > 1 - 1/(2\Gamma^2)$, which defines a cone of half-opening angle $\theta < 1 /\Gamma$. This corresponds to a half-opening angle $\theta_\mathrm{max} = \frac{1}{\Gamma} \approx 6^\circ \times \big( \frac{\Gamma}{10} \big)^{-1}$.
 
 The time-like component equation reads $E' = \Gamma E (1-\beta\cos\theta)$. Thus, in the observer's frame, the energy is enhanced by a Doppler factor $\delta = E / E'$ i.e.
 $$
