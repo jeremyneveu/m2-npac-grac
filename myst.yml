@@ -34,6 +34,9 @@ project:
   math:
     # Note the 'single quotes'
     '\dd': '\mathrm{d}'
+    '\diverg': '\mathrm{div}\ '
+    '\grad': '\overrightarrow{\mathrm{grad}}\ '
+    '\rot': '\overrightarrow{\mathrm{rot}}\ '
     '\GN': '\mathcal{G}'  # newton constant
     '\parsec': '\mathrm{pc}'  # parsec
     '\kelvin': '\mathrm{K}'
@@ -42,6 +45,7 @@ project:
     '\meV': '\mathrm{meV}'
     '\GeV': '\mathrm{GeV}'
     '\MeV': '\mathrm{MeV}'
+    '\cst': '\text{constante}'
   abbreviations:
     CMB: Fond Diffus Cosmologique
     FLRW: Friedmann-Lemaître-Robertson-Walker
@@ -78,6 +82,7 @@ project:
       - file: notebooks/CMB_Saha_equation.ipynb
       - file: notebooks/CMB_BBN.ipynb
       - file: notebooks/CMB_anisotropies.ipynb
+      - file: notebooks/LSS.ipynb
 
 site:
   template: book-theme

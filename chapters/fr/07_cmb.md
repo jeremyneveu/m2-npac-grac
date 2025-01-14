@@ -479,7 +479,7 @@ $\xi \ll x$ et nous pouvons développer : $(x^2 + \xi^2)^{1/2} \approx x (1 + \f
 
 Si la particule considérée est composée de plusieurs atomes, alors elles possèdent plus de degrés de libertés que les 3 translations dans l'espace. Suivant une statistique de Boltzmann, elle peut stocker de l'énergie dans des degrés de liberté de rotation ou de vibration si le milieu est assez chaud, chacun comptant pour $k_B T / 2$ dans son énergie interne. Si on note $g_m$ le nombre de degrés de liberté d'une molécule, alors la densité d'énergie s'écrit :
 $$ \epsilon \approx n m c^2 + \frac{g_m}{2} nk_B T = n m c^2 + \frac{1}{\gamma -1} n k_B T $$
-avec $\gamma=C_p/C_V$ l'indice adiabatique, que l'on retrouve dans la loi de Laplace $pV^\gamma = cst$.
+avec $\gamma=C_p/C_V$ l'indice adiabatique, que l'on retrouve dans la loi de Laplace $PV^\gamma = \cst$.
 :::
 
 
@@ -623,7 +623,7 @@ $$\boxed{s(T) = \frac{P+\epsilon}{T}, \quad \dd(a^3 s) = 0}$$
 
 Pour les espèces relativistes, comme $P=\epsilon/3$, nous obtenons les entropies volumiques :
 \begin{equation}
-  \boxed{s_r(T) = \frac{4}{3}{\epsilon_r}{T} =
+  \boxed{s_r(T) = \frac{4}{3}\frac{\epsilon_r}{T} =
 \left\lbrace
 \begin{array}{ll}
      \dfrac{2\pi^2k_B^4}{45\hbar^3 c^3} T^3 & \text{pour les bosons}\\
@@ -641,7 +641,7 @@ avec
 \end{equation}
 Puisque l'entropie $S$ est conservée, alors :
 \begin{equation}
-\dd(s a^3) = 0 \Rightarrow   g_{\star S}(T) T^3 a^3 = \mathrm{constante}
+\dd(s a^3) = 0 \Rightarrow   g_{\star S}(T) T^3 a^3 = \cst
 \end{equation}
 
 
@@ -1020,7 +1020,9 @@ Energie de liaison par nucléons (source: Wikipedia <wiki:Nuclear_binding_energy
 
 ### Recombinaison
 
-La recombinaison correspond au moment où les électrons vont se combiner aux noyaux atomiques pour former les premiers atomes. A ce moment là, le plasma se transforme en gaz d'hydrogène et d'hélium (plus un peu de lithium etc) neutre, laissant les photons du bain thermique libre de se propager dans l'Univers. Cette première lumière correspond au fond diffus cosmologique et nous renseigne sur l'état de l'Univers jeune et la physique qui s'y est déroulée avant (et après). 
+La recombinaison se déroule en deux étapes comme nous allons le voir. D'abord il y a la formation des atomes d'hydrogène puis le découplage des électrons libres restants et des photons. A ce moment là, le plasma se transforme en gaz d'hydrogène et d'hélium (plus un peu de lithium etc) neutre. Après la recombinaison, les photons du bain thermique sont libres de se propager dans l'Univers puisque le milieu est (quasi) neutre. Cette première lumière correspond au fond diffus cosmologique et nous renseigne sur l'état de l'Univers jeune et la physique qui s'y est déroulée avant (et après). 
+
+#### Formation des atomes d'hydrogène
 
 La formation des atomes d'hydrogène se déroule par la réaction :
 $$ p + e^- \rightleftharpoons \mathrm{H} + \gamma$$
@@ -1059,7 +1061,7 @@ soit quand l'Univers avait $t_\mathrm{rec} = 250\,000$ ans et alors que son évo
 Fraction d'ionisation $X_e$ en fonction du redshift pendant la recombinaison.
 :::
 
-### Photon decoupling
+#### Photon decoupling
 
 :::{figure} #rates_decoupling
 :name: fig:rates_decoupling
@@ -1068,7 +1070,7 @@ Fraction d'ionisation $X_e$ en fonction du redshift pendant la recombinaison.
 Comparaison entre le taux d'interaction $\Gamma_\gamma$ et le taux d'expansion $H$ en fonction du redshift.
 :::
 
-Pendant encore un certain temps, les photons restent couplés à la petite fraction d'électrons libres par la diffusion Thomson :
+Pendant encore un certain temps après $z_{\mathrm{rec}}$, les photons restent couplés à la petite fraction d'électrons libres par la diffusion Thomson :
 $$ e^- + \gamma \rightleftharpoons e^- + \gamma $$
 Le taux d'interaction est donné par (voir équation [](#eq:lpm_thomson)) :
 $$\Gamma_\gamma = n_e \sigma_T c = n_b X_e \sigma_T c=  \frac{2\zeta(3)}{\pi^2} \eta  \sigma_T c\left(\frac{k_B T}{\hbar c}\right)^3$$
@@ -1083,7 +1085,7 @@ On aboutit à :
 X_e(T_\mathrm{dec}) (k_B T_\mathrm{dec})^{3/2} \approx  \frac{\pi^2}{2\zeta(3)}\frac{H_0 \sqrt{\Omega_m^0} } {\eta  \sigma_T c} \left(\frac{k_B T_0}{\hbar c}\right)^{-3/2}
 \end{equation}
 Par une résolution numérique, on obtient :
-$$\boxed{T_{\mathrm{dec}} = 0.26\,\mathrm{eV} = 3055\,\mathrm{K}, \quad z_{\mathrm{dec}}\sim 1100,  \quad t_{\mathrm{dec}}=370\,000\,\mathrm{ans}}$$
+$$\boxed{T_{\mathrm{dec}} = 0.26\,\eV = 3055\,\kelvin, \quad z_{\mathrm{dec}}\sim 1100,  \quad t_{\mathrm{dec}}=370\,000\,\mathrm{ans}}$$
 
 :::{tip} Libre parcours moyen des photons
 :class:dropdown
@@ -1099,8 +1101,7 @@ Comparaison entre le temps de libre parcours moyen des photons $\tau_T$ et le te
 
 :::
 
-
-Le fond diffus cosmologique est donc un rayonnement de corps noir qui a été relaché il y a environ $370\,000\,$ans, quand l'Univers n'était quasiment plus ionisé puisque $X_e(T_{\mathrm{dec}}) = 6\times 10^{-3}$. 
+Le fond diffus cosmologique est donc un rayonnement de corps noir qui a été libéré il y a environ $370\,000\,$ans, quand l'Univers n'était quasiment plus ionisé puisque $X_e(T_{\mathrm{dec}}) = 6\times 10^{-3}$. 
 
 :::{attention} Les trois piliers du Big Bang
 
