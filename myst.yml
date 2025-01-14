@@ -72,6 +72,7 @@ project:
         - file: chapters/fr/10_lss
         #- file: chapters/11_inflation
         #- file: chapters/12_lcdm_and_beyond
+        - file: chapters/en/13_astroparticles_bsm.md
     - title: Jupyter notebooks
       file: notebooks/start.md
       children:
