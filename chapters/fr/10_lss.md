@@ -305,7 +305,11 @@ Décrire la croissance des structures avant la recombinaison contredit l'hypoth�
 
 D'après la [](#fig:LSS_MJ), on voit qu'avant le découplage des structures ayant la masse d'une galaxie ou d'un amas de galaxie ne sont pas suffisamment lourdes pour s'effondrer (ou alors juste dans les premiers instants de l'Univers). Des ondes de pression les parcourent et elles oscillent. Toutefois après le découplage, la vitesse du son chute de 5 ordres de grandeur. Le découplage des photons gèl les ondes de pression et des structures de la masse de galaxies et même de galaxies naines peuvent commencer leur croissance.
 
-### Description statistique des perturbations
+
+
+
+
+### Description statistique des perturbations AWFUL DRAFT
 
 
 Nous définissons le spectre de puissance $P(k)$ à l'aide de la relation :
