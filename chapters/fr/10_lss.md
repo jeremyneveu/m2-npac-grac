@@ -96,7 +96,7 @@ Bien que le flot de Hubble (premier terme de [](#vel-rel)) ne doive pas être co
 
 Comment passer du système de coordonnées physiques au système de coordonnées comobiles ? La conversion des dérivées partielles spatiales est assez simple :
 \begin{equation}
-\nabla_\mathbf{r} = {\partial \over \partial r^i} = {1 \over a} {\partial \over \partial \sigma^i}  = \frac{1}{a} \nabla_\sigma,\qquad \nabla^2_\mathbf{r} = \frac{1}{a^2} \nabla^2_\mathbf{\sigma}
+\nabla_\mathbf{r} = {\partial \over \partial r^i} = {1 \over a} {\partial \over \partial \sigma^i}  = \frac{1}{a} \nabla_\sigma,\qquad \nabla^2_\mathbf{r} = \frac{1}{a^2} \nabla^2_{\sigma}
 \end{equation}
 
 La dérivée partielle temporelle nécessite un examen plus attentif. Écrivons la différentielle d'une fonction du temps et de l'espace quelconque $f(t,\vec{r})$ :
@@ -104,11 +104,11 @@ La dérivée partielle temporelle nécessite un examen plus attentif. Écrivons 
 \dd f&= \left. {\partial f\over \partial t} \right|_\mathbf{r} \dd t + \left.{\partial f\over \partial r^i}\right|_\mathbf{t} \dd r^i   \\
 &=  \left. {\partial f\over \partial t} \right|_\mathbf{r} \dd t + \left.{\partial f\over \partial r^i}\right|_\mathbf{t} \dd(a \sigma^i)  \\
 &=  \left. {\partial f\over \partial t} \right|_\mathbf{r} \dd t + {1 \over a}\left.{\partial f\over \partial \sigma^i}\right|_\mathbf{t} (\sigma^i \dd a + a \dd \sigma^i)\\
-&= \left( \left. {\partial f\over \partial t} \right|_\mathbf{r} + {\dot{a} \over a} (\vec{\sigma}\cdot \vec \nabla_\mathbf{\sigma})f \right) \dd t + \left.{\partial f\over \partial \sigma^i}\right|_\mathbf{t} \dd \sigma^i 
+&= \left( \left. {\partial f\over \partial t} \right|_\mathbf{r} + {\dot{a} \over a} (\vec{\sigma}\cdot \vec \nabla_{\sigma})f \right) \dd t + \left.{\partial f\over \partial \sigma^i}\right|_\mathbf{t} \dd \sigma^i 
 \end{align}
  Donc par identification :
 \begin{equation}
- \left. {\partial \over \partial t} \right|_\mathbf{r}= \left. {\partial \over \partial t} \right|_\mathbf{\sigma} - H (\vec{\sigma}\cdot \vec \nabla_\mathbf{\sigma})
+ \left. {\partial \over \partial t} \right|_\mathbf{r}= \left. {\partial \over \partial t} \right|_{\sigma} - H (\vec{\sigma}\cdot \vec \nabla_{\sigma})
 \end{equation}
 
 ### Conservation de la masse
@@ -118,15 +118,15 @@ Dans l'espace physique, l'équation de continuité s'écrit :
 \left.{\partial \rho \over \partial t}\right|_\mathbf{r} + \vec \nabla_\mathbf{r} \cdot (\rho \vec{v}_\mathbf{r})=0
 \end{equation} 
 
-En utilisant la densité comobile $\rho_\mathbf{\sigma}=\rho a^3$, nous pouvons exprimer cette équation dans l'espace comobile :
+En utilisant la densité comobile $\rho_{\sigma}=\rho a^3$, nous pouvons exprimer cette équation dans l'espace comobile :
 \begin{align}
-\left.{\partial \rho_\mathbf{\sigma}\, a^{-3} \over \partial t}\right|_\mathbf{\sigma} - H (\vec{\sigma}.\nabla_\mathbf{\sigma})(\rho_\mathbf{\sigma} \, a^{-3})+{1 \over a} \nabla_\mathbf{\sigma}\left[\rho_\mathbf{\sigma} \, a^{-3} (\dot{a}\vec{\sigma}+a \vec{v}_{\sigma})\right] &=&0
+\left.{\partial \rho_{\sigma}\, a^{-3} \over \partial t}\right|_{\sigma} - H (\vec{\sigma}.\nabla_{\sigma})(\rho_{\sigma} \, a^{-3})+{1 \over a} \nabla_{\sigma}\left[\rho_{\sigma} \, a^{-3} (\dot{a}\vec{\sigma}+a \vec{v}_{\sigma})\right] &=&0
 \end{align}
 En introduisant la formule classique du calcul vectoriel 
 $$\vec \nabla \cdot (\phi \vec{A})=\vec{A}\cdot \vec \nabla\phi+ \phi\  \vec  \nabla \cdot \vec{A}$$
 où $\phi$ est un scalaire et $\vec{A}$ un vecteur, l'équation ci-dessus se réduit à :
 \begin{equation}\label{Cont_comov}
-\boxed{\left.{\partial \rho_\mathbf{\sigma}\over \partial t}\right|_\mathbf{\sigma} + \vec \nabla_\mathbf{\sigma} \cdot (\rho_\mathbf{\sigma} \vec{v}_{\sigma})=0}
+\boxed{\left.{\partial \rho_{\sigma}\over \partial t}\right|_{\sigma} + \vec \nabla_{\sigma} \cdot (\rho_{\sigma} \vec{v}_{\sigma})=0}
 \end{equation}
 L'équation de continuité prend donc exactement la même forme dans l'espace comobile, en utilisant des variables comobile. Ce n'est toutefois pas le cas si l'on utilise la vitesse particulière $a \vec{v}_{\sigma}$.
 
@@ -139,14 +139,14 @@ Dans l'espace physique, l'équation d'Euler pour un fluide parfait (non visqueux
 \end{equation}
 Dans l'espace comobile, elle se transforme en :
 \begin{align*}
-\left. {\partial (\dot{a}\vec{\sigma}+a\vec{v}_{\sigma}) \over \partial t} \right|_\mathbf{\sigma} & - H \vec{\sigma}\cdot \vec \nabla_\mathbf{\sigma}(\dot{a}\vec{\sigma} + a\vec{v}_{\sigma}) + (\dot{a}\vec{\sigma}+a\vec{v}_{\sigma}) \cdot  {1 \over a}\vec \nabla_\mathbf{\sigma} (\dot{a}\vec{\sigma}+a\vec{v}_{\sigma}) \\
-& = -{1 \over a^2} \vec  \nabla_\mathbf{\sigma}\phi_\mathbf{\sigma} - \frac{1}{a \rho} \vec \nabla_\mathbf{\sigma} P
+\left. {\partial (\dot{a}\vec{\sigma}+a\vec{v}_{\sigma}) \over \partial t} \right|_{\sigma} & - H \vec{\sigma}\cdot \vec \nabla_{\sigma}(\dot{a}\vec{\sigma} + a\vec{v}_{\sigma}) + (\dot{a}\vec{\sigma}+a\vec{v}_{\sigma}) \cdot  {1 \over a}\vec \nabla_{\sigma} (\dot{a}\vec{\sigma}+a\vec{v}_{\sigma}) \\
+& = -{1 \over a^2} \vec  \nabla_{\sigma}\phi_{\sigma} - \frac{1}{a \rho} \vec \nabla_{\sigma} P
 \end{align*}
 avec $\phi_\sigma = a \phi$ le potentiel comobile. En veillant à ce que  :
-$$\left. {\partial (\dot{a}\vec{\sigma}+a\vec{v}_{\sigma}) \over \partial t} \right|_\mathbf{\sigma}=\ddot{a}\vec{\sigma}+\dot{a}\vec{v}_{\sigma}+a \left.{\partial \vec{v}_{\sigma} \over \partial t}\right|_\mathbf{\sigma}$$
+$$\left. {\partial (\dot{a}\vec{\sigma}+a\vec{v}_{\sigma}) \over \partial t} \right|_{\sigma}=\ddot{a}\vec{\sigma}+\dot{a}\vec{v}_{\sigma}+a \left.{\partial \vec{v}_{\sigma} \over \partial t}\right|_{\sigma}$$
 l'équation d'Euler en coordonnées comobiles se réduit à :
 \begin{equation}\label{Euler_comv}
-\boxed{\left.{\partial \vec{v}_{\sigma} \over \partial t} \right|_\mathbf{\sigma} + 2 H \vec{v}_{\sigma}+(\vec{v}_{\sigma}\cdot \vec \nabla_\mathbf{\sigma})\vec{v}_{\sigma}= -{1 \over a^3} \vec  \nabla_\mathbf{\sigma}\phi_\mathbf{\sigma} - \frac{1}{a^2 \rho} \vec\nabla_\mathbf{\sigma}P  - {\ddot{a} \over a} \vec{\sigma} }
+\boxed{\left.{\partial \vec{v}_{\sigma} \over \partial t} \right|_{\sigma} + 2 H \vec{v}_{\sigma}+(\vec{v}_{\sigma} \cdot \vec \nabla_{\sigma})\vec{v}_{\sigma}= -{1 \over a^3} \vec  \nabla_{\sigma}\phi_{\sigma} - \frac{1}{a^2 \rho} \vec\nabla_{\sigma}P  - {\ddot{a} \over a} \vec{\sigma} }
 \end{equation}
 
 Nous pouvons voir deux termes supplémentaires par rapport à la version de l'équation d'Euler écrite en coordonnées physiques. Le terme supplémentaire $2 H \vec{v}_{\sigma}$ est une force de traînée créée par l'expansion sur les vitesses comobiles.
@@ -161,9 +161,9 @@ Dans un univers sans constante cosmologique, de la relativité générale on en 
 \begin{equation}
 \triangle_\mathbf{r} \phi = 4 \pi \GN \rho
 \end{equation}
-où $\phi$ est le potentiel gravitationnel. Compte tenu de la relation entre le potentiel et la force newtonienne, le potentiel comobile est naturellement défini comme $\phi_\mathbf{\sigma}=\phi a$, et l'équation de Poisson est également inchangée dans l'espace comobile :
+où $\phi$ est le potentiel gravitationnel. Compte tenu de la relation entre le potentiel et la force newtonienne, le potentiel comobile est naturellement défini comme $\phi_{\sigma}=\phi a$, et l'équation de Poisson est également inchangée dans l'espace comobile :
 \begin{equation}
-\triangle_\mathbf{\sigma} \phi_\mathbf{\sigma} = 4 \pi \GN \rho_\mathbf{\sigma}
+\triangle_{\sigma} \phi_{\sigma} = 4 \pi \GN \rho_{\sigma}
 \label{Poisson_comov}
 \end{equation}
 
@@ -172,7 +172,7 @@ où $\phi$ est le potentiel gravitationnel. Compte tenu de la relation entre le 
 Si l'on considère une constante cosmologique, dans la limite du champ faible, la gravitation est régie par l'équation de Poisson modifiée 
 $$ \triangle_\mathbf{r} \phi = 4 \pi \GN \rho -c^2 \Lambda$$
 qui se transforme en 
-$$ \triangle_\mathbf{\sigma} \phi_\mathbf{\sigma} = 4 \pi \GN \rho_\mathbf{\sigma} -c^2 \Lambda a^3$$
+$$ \triangle_{\sigma} \phi_{\sigma} = 4 \pi \GN \rho_{\sigma} -c^2 \Lambda a^3$$
 :::
 
 
@@ -183,7 +183,7 @@ Théorie newtonienne des perturbations
 
 L'équation de conservation de la masse dans l'espace comobile [](#Cont_comov) admet la solution d'ordre 0 suivante pour un Univers homogène et isotrope :
 \begin{equation}
-\rho_{\mathbf{\sigma},0}= \cst, \qquad \vec{v}_{\mathbf{\sigma},0}= \vec 0
+\rho_{{\sigma},0}= \cst, \qquad \vec{v}_{{\sigma},0}= \vec 0
 \end{equation}
 A l'ordre 0, La densité massique reste donc stationnaire et homogène et il n'y a aucune vitesse particulière.
 L'intégration de l'équation de Poisson [](#Poisson_comov) en coordonnées sphériques[^LaplacienSphérique] donne :
@@ -202,29 +202,30 @@ $$P = \cst = P_0$$
 
 Considérons de petites perturbations autour de la solution d'ordre zéro :
 \begin{equation}
-\rho_\mathbf{\sigma}=\rho_0(1+\delta) \qquad \vec{v}_\mathbf{\sigma}=\vec{v}_0+\delta\vec{v} \qquad \phi_\mathbf{\sigma}=\phi_0 + \delta \phi_\mathbf{\sigma}, \qquad P = P_0 + \delta P
+\rho_{\sigma}=\rho_0(1+\delta) \qquad \vec{v}_\vec{\sigma}=\vec{v}_0+\delta\vec{v} \qquad \phi_\vec{\sigma}=\phi_0 + \delta \phi_{\sigma}, \qquad P = P_0 + \delta P
 \end{equation}
 La quantité $\delta$ est appelée contraste de densité et est très utilisée dans la théorie de la formation des structures. Notons qu'elle a la même valeur dans l'espace physique et dans l'espace comobile. En injectant ces expressions dans les équations de continuité, de Poisson et d'Euler, la solution d'ordre zéro s'annule (comme prévu) et en supprimant les termes d'ordre 2, nous obtenons l'ensemble d'équations linéarisé :
 $$
 \label{eq:lssMassOrder1}
-{\partial \delta \over \partial t} + \vec \nabla_\mathbf{\sigma}. \delta\vec{v}_r = 0$$
+{\partial \delta \over \partial t} + \vec \nabla_\vec{\sigma} \cdot \delta\vec{v}_r = 0
+$$
 $$
 \label{eq:lssEuler1}
-{\partial \delta\vec{v}_r \over \partial t} + 2 H \delta\vec{v}_r =  - {1 \over a^3} \vec \nabla_\mathbf{\sigma} \delta \phi_\mathbf{\sigma} - \frac{1}{a^2 \rho_0} \vec \nabla_\mathbf{\sigma} \delta P
+{\partial \delta\vec{v}_r \over \partial t} + 2 H \delta\vec{v}_r =  - {1 \over a^3} \vec \nabla_{\sigma} \delta \phi_{\sigma} - \frac{1}{a^2 \rho_0} \vec \nabla_{\sigma} \delta P
 $$
 $$
 \label{eq:lssPoissonOrder1}
-\triangle_\mathbf{\sigma}^2 \delta \phi_\mathbf{\sigma} = 4 \pi \GN \rho_{\sigma,0} \delta 
+\triangle_{\sigma}^2 \delta \phi_{\sigma} = 4 \pi \GN \rho_{\sigma,0} \delta 
 $$
 
 En prenant la divergence de l'équation d'Euler linéarisée [](#eq:lssEuler1), la dérivée temporelle de l'équation de conservation de la masse linéarisée [](#eq:lssMassOrder1) et en réinjectant l'équation de Poisson [](#eq:lssPoissonOrder1), nous obtenons finalement :
-$$\ddot{\delta}+ 2 H \dot{\delta}  - \frac{1}{a^2 \rho_0} \triangle_\mathbf{\sigma} \delta P = 4 \pi \GN {\rho_0 } \delta$$
+$$\ddot{\delta}+ 2 H \dot{\delta}  - \frac{1}{a^2 \rho_0} \triangle_{\sigma} \delta P = 4 \pi \GN {\rho_0 } \delta$$
 On introduit la vitesse du son $c_s$ dans le milieu pour des compressions adiabatiques :
 $$c_s^2 = \frac{1}{\rho_0 \chi_S} =  \left.\frac{\partial P}{\partial \rho}\right\vert_{S} \approx \frac{\delta P}{\delta \rho}\Rightarrow \delta P \approx c_s^2 \rho_0 \delta $$
 Alors on obtient l'équation de croissance des perturbations dans l'espace comobile :
 \begin{equation}\label{fluct_growth}
 \boxed{ 
-\ddot{\delta}+ 2 H \dot{\delta}  - \frac{c_s^2}{a^2} \triangle_\mathbf{\sigma} \delta = 4 \pi \GN \rho_0 \delta
+\ddot{\delta}+ 2 H \dot{\delta}  - \frac{c_s^2}{a^2} \triangle_{\sigma} \delta = 4 \pi \GN \rho_0 \delta
 }
 \end{equation}
 
@@ -237,14 +238,16 @@ $$c_s^2 = \left.\frac{\partial P_r}{\partial \rho_r}\right\vert_{S} \approx \fra
 \Rightarrow \boxed{c_s = \frac{c}{\sqrt{3}} \approx 0.58 c}$$
 
 Dans un Univers dominé par la matière non relativiste, les propriétés thermodynamiques des baryons sont :
-$$\rho_b = n_b m_b + \frac{n_b k_B T}{(\gamma_b -1)c^2},\quad P_b = n_b k_B T$$
+$$
+\rho_b = n_b m_b + \frac{n_b k_B T}{(\gamma_b -1)c^2},\quad P_b = n_b k_B T
+$$
 avec $m_b=(1-Y_p)m_\mathrm{H} + Y_p m_{\mathrm{He}} \approx 1.72 m_p$ la masse effective des baryons dans un mélange de gaz d'hydrogène atomique et d'hélium (notez la ressemblance avec [](#eq:mair)), et $\gamma_b=5/3$ l'indice adiabatique des baryons car l'hydrogène est sous forme atomique (et l'hélium bien sûr). Pour une transformation adiabatique réversible, avec la loi de Laplace on a $P_b \rho_b^{-\gamma_b}=\cst$, la température des baryons $T_b$ évolue en :
 $$P_b = n_b k_B T_b \propto a^{-3\gamma_b}$$
 Or $n_b \propto a^{-3}$ donc 
 $$T_b = T_{\mathrm{dec}} \left(\frac{a}{a_{\mathrm{dec}}}\right)^{-3(\gamma_b -1)}$$
 La vitesse du son dans le gaz de baryons est :
 $$c_s^2 = \left.\frac{\partial P_b}{\partial \rho_b}\right\vert_{S} \approx \gamma_b \rho^{\gamma_b-1} = \frac{\gamma_b n_b k_B T_b}{n_b m_b} \Rightarrow \boxed{c_s(T_b) = \sqrt{\frac{\gamma_b k_B T_b}{m_b}} \ll c}$$
-Juste après le découplage des photons et des électrons, la température des baryons est de $T_{\mathrm{dec}} = 3055\,\kelvin$ donc la vitesse du son dans le gaz de baryons est d'environ $1.5\times 10^{-5}c \approx 5\,\mathrm{km}/{s}$. Le changement est de plusieurs ordres de grandeur donc l'évolution des perturbations change drastiquement à cet instant. Puis la température des baryons décroît en $a^{-2}$, du moins tant que le chauffage par le rayonnement interstellaire ne change la donne (autour de $z\sim 10$), donc la vitesse du son décroît en $a^{-1}$. 
+Juste après le découplage des photons et des électrons, la température des baryons est de $T_{\mathrm{dec}} = 3055\,\kelvin$ donc la vitesse du son dans le gaz de baryons est d'environ $1.5 \times 10^{-5}c \approx 5\,\mathrm{km}/\mathrm{s}$. Le changement est de plusieurs ordres de grandeur donc l'évolution des perturbations change drastiquement à cet instant. Puis la température des baryons décroît en $a^{-2}$, du moins tant que le chauffage par le rayonnement interstellaire ne change la donne (autour de $z\sim 10$), donc la vitesse du son décroît en $a^{-1}$. 
 
 :::{figure} #LSS_cs
 :name: fig:LSS_cs

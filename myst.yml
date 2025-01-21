@@ -46,7 +46,7 @@ project:
     '\meV': '\mathrm{meV}'
     '\GeV': '\mathrm{GeV}'
     '\MeV': '\mathrm{MeV}'
-    '\cst': '\text{constante}'
+    '\cst': '\text{constant}'
   abbreviations:
     CMB: Fond Diffus Cosmologique
     FLRW: Friedmann-Lemaître-Robertson-Walker
@@ -70,7 +70,7 @@ project:
         - file: chapters/fr/07_cmb.md
         - file: chapters/en/08_acceleration.md
         - file: chapters/en/09_radiation.md
-        - file: chapters/fr/10_lss
+        - file: chapters/en/10_lss.md
         #- file: chapters/11_inflation
         #- file: chapters/12_lcdm_and_beyond
         - file: chapters/en/13_astroparticles_bsm.md
