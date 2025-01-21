@@ -125,7 +125,7 @@ Using the comoving density $\rho_{\sigma}=\rho a^3$, we can express this equatio
 \left.{\partial \rho_{\sigma}\, a^{-3} \over \partial t}\right|_{\sigma} - H (\vec{\sigma}.\nabla_{\sigma})(\rho_{\sigma} \, a^{-3})+{1 \over a} \nabla_{\sigma}\left[\rho_{\sigma} \, a^{-3} (\dot{a}\vec{\sigma}+a \vec{v}_{\sigma})\right] &=&0
 \end{align}
 By introducing the classic vector calculus formula 
-$$\vec \nabla \cdot (\phi \vec{A})=\vec{A}\cdot \vec \nabla \phi+ \phi\c \nabla \cdot \vec{A}$$
+$$\vec \nabla \cdot (\phi \vec{A})=\vec{A}\cdot \vec \nabla \phi+ \phi \nabla \cdot \vec{A}$$
 where $\phi$ is a scalar and $\vec{A}$ a vector, the above equation reduces to :
 \begin{equation}\label{Cont_comov}
 \boxed{\left.{\partial \rho_{\sigma}\over \partial t}\right|_{\sigma} + \vec \nabla_{\sigma} \cdot (\rho_{\sigma} \vec{v}_{\sigma})=0}

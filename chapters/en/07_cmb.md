@@ -245,7 +245,7 @@ between the radii $vt$ and $v(t + \delta t)$.
 
 Not all these particles reach the surface. Only those whose velocity is directed towards $\delta A$, i.e. those whose velocity vector is in the solid angle subtended by $\delta A$. Therefore :
 \begin{equation}
-    \dd N_{hit} & = \dd N \times \frac{|\hat{v}\cdot\hat{n}|}{4\pi R^2} = \frac{g}{(2\pi\hbar)^3} f(E) \frac{\hat{v}\cdot\hat{n}}{4\pi}\ \dd A\dd t\dd \dd \Omega
+    \dd N_{hit} = \dd N \times \frac{|\hat{v}\cdot\hat{n}|}{4\pi R^2} = \frac{g}{(2\pi\hbar)^3} f(E) \frac{\hat{v}\cdot\hat{n}}{4\pi}\ \dd A\dd t\dd \dd \Omega
 \end{equation}  
 Let's assume that the interactions are elastic and that each particle transfers a momentum $2|\vec{p}\vec{n}|$ to the surface. The resulting pressure is :
 \begin{equation}
@@ -322,7 +322,7 @@ $$\mu_1 + \mu_2 = \mu_3 + \mu_4$$
 
 We saw in the box above that if several species interact through a reaction, for example :
 \begin{equation}
-  \nu_1 X_1 + \nu_2 X_2 + \ldots \rightleftharpoons \nu‘_1 Y_1 + \nu’_2 Y_2 + \ldots
+  \nu_1 X_1 + \nu_2 X_2 + \ldots \rightleftharpoons \nu'_1 Y_1 + \nu'_2 Y_2 + \ldots
 \end{equation}
 and reach chemical equilibrium (i.e. the state of maximum entropy), the chemical potentials satisfy: 
 \begin{equation}
@@ -617,23 +617,23 @@ $$\boxed{s(T) = \frac{P+\epsilon}{T}, \quad \dd(a^3 s) = 0}$$
 
 #### Entropy of primordial plasma
 
-For relativistic species, such as $P=epsilon/3$, we obtain the volume entropies :
+For relativistic species, such as $P=\epsilon/3$, we obtain the volume entropies :
 \begin{equation}
-  \boxed{s_r(T) = \frac{4}{3}\frac{epsilon_r}{T} =
+  \boxed{s_r(T) = \frac{4}{3}\frac{\epsilon_r}{T} =
 \left\lbrace
 \begin{array}{ll}
-     \dfrac{2\pi^2k_B^4}{45\hbar^3 c^3} T^3 & \text{for bosons}\\}
-     \dfrac{7}{8} \dfrac{2\pi^2 k_B^4}{45\hbar^3 c^3} T^3 & \text{for fermions}
+     \dfrac{2\pi^2k_B^4}{45\hbar^3 c^3} T^3 & \text{pour les bosons}\\
+     \dfrac{7}{8} \dfrac{2\pi^2 k_B^4}{45\hbar^3 c^3} T^3 & \text{pour les fermions}
   \end{array}
-\right}
+\right.}
 \end{equation}
 For a collection of species (fermions and bosons) at equilibrium at temperatures $T_i$, we have :
 \begin{equation}
-    s_r(T) = \sum_i^{m_i \ll T} \frac{epsilon_i + P_i}{T_i} = \frac{4}{3} \sum_i^{m_i \ll T} {\epsilon_i}{T_i} = \frac{2\pi^2 k_B^4}{45 \hbar^3 c^3} g_{\star S}(T) T^3
+    s_r(T) = \sum_i^{m_i \ll T} \frac{\epsilon_i + P_i}{T_i} = \frac{4}{3} \sum_i^{m_i \ll T} {\epsilon_i}{T_i} = \frac{2\pi^2 k_B^4}{45 \hbar^3 c^3} g_{\star S}(T) T^3
 \end{equation}
 with
 \begin{equation}
-  g_{\star S}(T) = \sum_{\mathrm{bosons}} g_b \left(\frac{T_b}{T}\right)^3 + \frac{7}{8} \sum_{athrm{fermions}} g_f \left(\frac{T_f}{T}\right)^3
+  g_{\star S}(T) = \sum_{\mathrm{bosons}} g_b \left(\frac{T_b}{T}\right)^3 + \frac{7}{8} \sum_{\mathrm{fermions}} g_f \left(\frac{T_f}{T}\right)^3
 \end{equation}
 Since the entropy $S$ is conserved, then :
 \begin{equation}
@@ -885,13 +885,13 @@ A detailed assessment of the neutron density leads to the following Boltzmann eq
 \end{align}
 where $\Gamma_{p\to n}=\Gamma_{pe\to \nu n}$ is the interaction rate for the first reaction whereas $\Gamma_{n\to p}$ represents the sum of the other reactions forming protons. The last term in the equations corresponds to the dilution of the particles with expansion if their number is conserved in a comobile volume. On the other hand, the total number of protons and neutrons is conserved in a comobile volume:
 $$
-\frac{\dot (n_n+n_p)}{\dd t} = - 3\frac{\dot a}{a} (n_n + n_p) \Leftrightarrow \frac{\ddleft[a^3(n_n+n_p)\right]}{\dd t} = 0
+\frac{\dot (n_n+n_p)}{\dd t} = - 3\frac{\dot a}{a} (n_n + n_p) \Leftrightarrow \frac{\dd\left[a^3(n_n+n_p)\right]}{\dd t} = 0
 $$
 
 Let's define the proportion of neutrons $X_n = n_n / n_b = n_n / (n_n + n_p)$. The proportion of protons $X_p$ can be deduced by $X_p=1-X_n$. The differential equation for the neutron density is rewritten:
 $$ \frac{\dd n_n}{\dd t}= \frac{\dd X_n(n_n+n_p)}{\dd t} = (n_n+n_p)\frac{\dd X_n}{\dd t} - 3\frac{\dot a}{a} (n_n + n_p) X_n$$.
 or :
-\begin{equation}{label{eq:Xn}
+\begin{equation}\label{eq:Xn}
 \frac{\dd X_n}{\dd t} = - \Gamma_{n\to p}\,X_n + \Gamma_{p\to n}\,(1-X_n) 
 \end{equation}
 
