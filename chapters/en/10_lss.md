@@ -209,7 +209,7 @@ Consider small perturbations around the zeroth-order solution:
 The quantity $\delta$ is called the density contrast and is widely used in the theory of structure formation. Note that it has the same value in physical space as in comobile space. By injecting these expressions into the continuity, Poisson and Euler equations, the zeroth-order solution cancels out (as expected) and by removing the second-order terms, we obtain the linearised set of equations:
 $$
 \label{eq:lssMassOrder1}
-{\partial \delta \over \partial t} + \vec \nabla_{\sigma} \cdot \delta\vec{v}_r = 0
+{\partial \delta \over \partial t} + \vec{\nabla}_{\sigma} \cdot \delta\vec{v}_r = 0
 $$
 $$
 \label{eq:lssEuler1}

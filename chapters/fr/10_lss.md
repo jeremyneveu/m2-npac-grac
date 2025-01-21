@@ -201,13 +201,12 @@ $$P = \cst = P_0$$
 ### Solution linéaire d'ordre 1
 
 Considérons de petites perturbations autour de la solution d'ordre zéro :
-\begin{equation}
-\rho_{\sigma}=\rho_0(1+\delta) \qquad \vec{v}_\vec{\sigma}=\vec{v}_0+\delta\vec{v} \qquad \phi_\vec{\sigma}=\phi_0 + \delta \phi_{\sigma}, \qquad P = P_0 + \delta P
+\rho_{\sigma}=\rho_0(1+\delta) \qquad \vec{v}_{\sigma}=\vec{v}_0+\delta\vec{v} \qquad \phi_{\sigma}=\phi_0 + \delta \phi_{\sigma}, \qquad P = P_0 + \delta P
 \end{equation}
 La quantité $\delta$ est appelée contraste de densité et est très utilisée dans la théorie de la formation des structures. Notons qu'elle a la même valeur dans l'espace physique et dans l'espace comobile. En injectant ces expressions dans les équations de continuité, de Poisson et d'Euler, la solution d'ordre zéro s'annule (comme prévu) et en supprimant les termes d'ordre 2, nous obtenons l'ensemble d'équations linéarisé :
 $$
 \label{eq:lssMassOrder1}
-{\partial \delta \over \partial t} + \vec \nabla_\vec{\sigma} \cdot \delta\vec{v}_r = 0
+{\partial \delta \over \partial t} + \vec{\nabla}_{\sigma} \cdot \delta\vec{v}_r = 0
 $$
 $$
 \label{eq:lssEuler1}

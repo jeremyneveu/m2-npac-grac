@@ -108,9 +108,9 @@ site:
   title: Astroparticles and Cosmology
   nav:
     - title: English version
-      url: /chapters.en.start
+      url: /chapters/en/start
     - title: Version française
-      url: /chapters.fr.start
+      url: /chapters/fr/start
     - title: Jupyter notebooks
       url: /lite
   actions: []
