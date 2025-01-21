@@ -248,7 +248,7 @@ Dans le but d'alléger les notations, la dépendance temporelle des paramètres 
 
 La [](#fig:espaces) représente des surfaces 2D plongées dans des espaces 3D. Mais comment se représenter que nous vivrions dans une 3-sphère ? Et qu'est-ce que cela implique ? Vivre dans un espace courbé implique que la somme des angles d'un triangle n'est pas égale à 180°: elle est supérieure pour une 3-sphère et inférieure pour un 3-hyperboloid. C'est ainsi que les deux triangles bleus [](#fig:triangles_on_sphere) ont une somme de leurs angles supérieures à 180°. Dans une 3-sphère nous pouvons avoir l'impression que deux objets sont éloignés angulairement, alors qu'en en fait leur distance qui les sépare est plus petite que ce qu'elle serait dans un espace plat. Et ceci dans toutes les directions de l'espace. 
 
-En résumé, vivre dans un espace courbé signifie que la relation entre angles et longueurs est déformée par rapport à notre intuition euclidienne, en tous cas sur des distance cosmologiques.
+En résumé, vivre dans un espace courbé signifie que la relation entre angles et longueurs est déformée par rapport à notre intuition euclidienne, en tous cas sur des distances cosmologiques.
 
 
 ```{figure} ../../images/triangles_on_sphere.svg
