@@ -41,7 +41,7 @@ T^{00}= \text{energy density}\,\,\,\,
 \end{pmatrix}
 \label{stress-energy-tensor-meaning}
 \end{equation}
-Si le système physique étudié dans ce volume local n'est soumis à aucune force qui travaille hormis la gravitation, alors on l'équation de conservation $T^{\mu\nu}_{\;\;\;;\mu}=0$, C'est un jeu de quatre équations qui représentent l'équation de conservation locale de l'énergie et de l'impulsion. 
+Si le système physique étudié dans ce volume local n'est soumis à aucune force qui travaille hormis la gravitation, alors on a l'équation de conservation $T^{\mu\nu}_{\;\;\;;\mu}=0$, C'est un jeu de quatre équations qui représentent l'équation de conservation locale de l'énergie et de l'impulsion. 
 
 Quelques remarques sur les composantes de ce tenseur :
 * $T^{00}$ est la densité d'énergie $\epsilon$ locale, généralement c'est la composante dominante du tenseur énergie-impulsion;
