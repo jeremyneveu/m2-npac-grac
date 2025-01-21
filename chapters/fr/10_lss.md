@@ -9,7 +9,7 @@ keywords: fonds diffus cosmologique, CMB, neutrinos, nucléosynthèse
 Formation des grandes structures de l'Univers
 ===============================
 
-Jusqu'à présent, nous avons étudié l'évolution d'un Univers homogène, au moins aux très grandes échelles au-delà d'environ $100\,$Mpc. Or, aujourd'hui on observe que la matière est agglomérée sous forme de planètes, étoiles, galaxies, amas de galaxies et super-amas de galaxies. La question qui se pose alors dans ce chapitre est : comment se forment ces structures dans un Univers en expansion ? Si la formation des astres les plus petits impliquent beaucoup de processus physiques et sont très dépendants des conditions initiales locales, il est possible d'élaborer un modèle linéaire simple de l'évolution des structures de taille les plus grandes $\sim 50\,$Mpc, comme les amas ou super-amas de galaxies. Pour ce faire, on va simplement utiliser une théorie newtonienne des perturbations linéaires, et calculer l'évolution de ces perturbations dans un Univers en expansion.
+Jusqu'à présent, nous avons étudié l'évolution d'un Univers homogène, au moins aux très grandes échelles au-delà d'environ $100\,\Mpc$. Or, aujourd'hui on observe que la matière est agglomérée sous forme de planètes, étoiles, galaxies, amas de galaxies et super-amas de galaxies. La question qui se pose alors dans ce chapitre est : comment se forment ces structures dans un Univers en expansion ? Si la formation des astres les plus petits impliquent beaucoup de processus physiques et sont très dépendants des conditions initiales locales, il est possible d'élaborer un modèle linéaire simple de l'évolution des structures de taille les plus grandes $\sim 50\,\Mpc$, comme les amas ou super-amas de galaxies. Pour ce faire, on va simplement utiliser une théorie newtonienne des perturbations linéaires, et calculer l'évolution de ces perturbations dans un Univers en expansion.
 
 
 :::{figure} ../../images/universe_scales.svg
@@ -142,7 +142,7 @@ Dans l'espace comobile, elle se transforme en :
 \left. {\partial (\dot{a}\vec{\sigma}+a\vec{v}_{\sigma}) \over \partial t} \right|_\mathbf{\sigma} & - H \vec{\sigma}\cdot \vec \nabla_\mathbf{\sigma}(\dot{a}\vec{\sigma} + a\vec{v}_{\sigma}) + (\dot{a}\vec{\sigma}+a\vec{v}_{\sigma}) \cdot  {1 \over a}\vec \nabla_\mathbf{\sigma} (\dot{a}\vec{\sigma}+a\vec{v}_{\sigma}) \\
 & = -{1 \over a^2} \vec  \nabla_\mathbf{\sigma}\phi_\mathbf{\sigma} - \frac{1}{a \rho} \vec \nabla_\mathbf{\sigma} P
 \end{align*}
-avec $\phi_\sigma = a \phi$ le potentiel comobile[^Pcomobile]. En veillant à ce que  :
+avec $\phi_\sigma = a \phi$ le potentiel comobile. En veillant à ce que  :
 $$\left. {\partial (\dot{a}\vec{\sigma}+a\vec{v}_{\sigma}) \over \partial t} \right|_\mathbf{\sigma}=\ddot{a}\vec{\sigma}+\dot{a}\vec{v}_{\sigma}+a \left.{\partial \vec{v}_{\sigma} \over \partial t}\right|_\mathbf{\sigma}$$
 l'équation d'Euler en coordonnées comobiles se réduit à :
 \begin{equation}\label{Euler_comv}
@@ -282,12 +282,12 @@ $$\boxed{\omega^2 = c_s^2 \left( k_r^2 - \frac{4\pi \GN \rho_0}{c^2_s}\right) }$
 avec $k_\sigma = 2 \pi / \chi =  a k_r$. C'est la même relation de dispersion que celle des ondes électromagnétiques dans un plasma. On définit la longueur d'onde de Jeans (<doi:10.1098/rsta.1902.0012>) $k_J$ et la longueur de Jeans $\lambda_J$ par :
 $$\boxed{k_J = \sqrt{\frac{4\pi \GN \rho_0}{c^2_s}},\quad  \lambda_J = \frac{2\pi}{k_J} = c_s \sqrt{\frac{\pi}{\GN}}\rho_0 }$$
 * Si $k_r > k_J \Leftrightarrow \lambda < \lambda_J$, alors $\omega^2 > 0$ donc on a une solution oscillante i.e. une onde acoustique qui se propage : les perturbations de taille petite devant la longueur de Jeans oscillent grâce à la force de pression.
-* Si $k_r < k_J \Leftrightarrow $\lambda > \lambda_J$, $\omega^2 < 0$ donc on a une solution non oscillante en exponentielle : les grandes structures évoluent seulement sous l'effet de la gravité et s'accroissent (et les vides décroissent).
+* Si $k_r < k_J \Leftrightarrow \lambda > \lambda_J$, $\omega^2 < 0$ donc on a une solution non oscillante en exponentielle : les grandes structures évoluent seulement sous l'effet de la gravité et s'accroissent (et les vides décroissent).
 
 Comme l'échelle $\lambda$ évolue avec l'expansion ($\lambda \propto a$) ainsi que la longueur de Jeans, la discussion n'est pas aisée à mener le long de l'histoire de l'Univers. Définissons $M$ la masse dans une sphère de rayon $\lambda$, conservée avec l'expansion, et comparons-la à la masse de Jeans $M_J$
 $$M_J = \frac{4}{3} \pi \rho_0 \lambda_J^3 \propto \frac{c_s^3}{\GN^{3/2}n \rho_0^{1/2}}$$
 * Si $M < M_J$, alors la structure est trop légère et la pression peut compenser la force de gravité: la structure oscille.
-* Si $M > M_J, alors la structure est trop lourde et s'effondre gravitationnellement.
+* Si $M > M_J$, alors la structure est trop lourde et s'effondre gravitationnellement.
 
 Le tracé de la masse de Jeans en fonction du facteur d'échelle $a$ permet de prédire quelles sont les structures pouvant s'effondrer gravitationnellement et celles dont la croissance est empêchée [](#fig:LSS_MJ) ({cite}`Weinberg1989` p. 565).
 
@@ -303,14 +303,20 @@ Décrire la croissance des structures avant la recombinaison contredit l'hypoth�
 
 D'après la [](#fig:LSS_MJ), on voit qu'avant le découplage des structures ayant la masse d'une galaxie ou d'un amas de galaxie ne sont pas suffisamment lourdes pour s'effondrer (ou alors juste dans les premiers instants de l'Univers). Des ondes de pression les parcourent et elles oscillent. Toutefois après le découplage, la vitesse du son chute de 5 ordres de grandeur. Le découplage des photons gèl les ondes de pression et des structures de la masse de galaxies et même de galaxies naines peuvent commencer leur croissance.
 
-Avant le découplage, des ondes acoustiques parcourent le plasma primordial. Définissons l'horizon sonore comobile comme :
-$$r_s^c = \int_0^{t_\mathrm{dec}} \frac{c_s(t) \dd t}{a(t)} = \int_{z_\mathrm{dec}}^\infty \frac{c_s(z)}{H(z)}\dd z $$
-la distance comobile maximum parcouru par une onde acoustique depuis le début de l'Univers. Au moment du découplage, elle vaut $150\,\Mpc/a_\mathrm{dec}$ soit $r_s = a_\mathrm{dec} r_s^c \approx 0.13\,\Mpc$.
+### Description statistique des perturbations
 
 
-### Le champ de perturbation de la densité initiale
+Nous définissons le spectre de puissance $P(k)$ à l'aide de la relation :
+\begin{equation}
+\langle \hat{\delta}(\mathbf{k}) \hat{\delta}(\mathbf{k^\prime}) \rangle= P(k) (2 \pi)^3 \delta_D(\mathbf{k+k^\prime}) 
+\end{equation}
+où $\delta_D$ désigne la fonction delta de Dirac. En se rappelant que les parties réelles et imaginaires des coefficients de Fourier de $\delta$ sont des réalisations indépendantes d'une fonction de probabilité gaussienne, et que puisque $\delta$ est réel, $\hat{\delta}(\mathbf{k})$ et $\hat{\delta}(\mathbf{-k})$ sont des conjugués complexes, il est assez facile de montrer que $\P(k)$ est proportionnel à la variance de la distribution de probabilité gaussienne des coefficients de Fourier. En injectant cette relation dans [](#correl_transf) et en intégrant sur $k$, nous obtenons :
+\begin{equation}
+\xi(r)= {1 \over (2 \pi)^3} \int P(k^\prime) e^{i\mathbf{k^\prime.r}} d^3k\prime
+\end{equation}
 
-#### Champs aléatoires gaussiens
+$$\Delta^2(k)= {k^3 \over 2 \pi^2}. P(k)$$
+
 #### Champs aléatoires
 
 Un champ aléatoire 3D est un ensemble de variables aléatoires $Y(\vec{\sigma})$, une pour chaque emplacement (ou cube infinitésimal de volume $dx^3$) dans l'espace 3D. Un tel champ est caractérisé par une collection de fonctions de distribution de probabilités conjointes :
@@ -386,11 +392,30 @@ On notera que même lorsqu'elle est appliquée à une quantité sans dimension, 
 Nous voyons que $\Delta^2$ quantifie la contribution à la variance (en quelque sorte la densité d'énergie) du signal de l'espace réel par cellule logarithmique.
 
 
+
+### Ondes acoustiques dans l'Univers primordial 
+
+Avant le découplage, des ondes acoustiques parcourent le plasma primordial. Définissons l'horizon sonore comobile comme :
+$$r_s^c = \int_0^{t_\mathrm{dec}} \frac{c_s(t) \dd t}{a(t)} = \int_{z_\mathrm{dec}}^\infty \frac{c_s(z)}{H(z)}\dd z $$
+la distance comobile maximum parcouru par une onde acoustique depuis le début de l'Univers. Au moment du découplage, elle vaut $150\,\Mpc/a_\mathrm{dec}$ soit $r_s = a_\mathrm{dec} r_s^c \approx 0.13\,\Mpc$. C'est donc la distance qu'a pu parcourir une onde issue d'une surdensité présente au Big Bang.
+Cette propagation des ondes se traduit par une corrélation positive sur la présence de matière à cette échelle spatiale fondamentale. Cette échelle se convertit en séparation angulaire sur le ciel, imprimée sur la carte des anisotropies de température du CMB et donnée par :
+$$\boxed{ \theta_s = \frac{r_s}{D_A(z_{\mathrm{dec}})} }$$
+Une échelle dans l'espace des distances donne un spectre de puissance de forme sinusoïdale dans l'espace réciproque. La mesure de la position des maxima dans le spectre de puissance des anisotropie de température du CMB permet d'aboutir à une extrêmement précise de l'horizon sonore {cite:p}`Planck2018`:
+$$100 \theta_s = 1.04123 \pm 0.00046\,\mathrm{rad}, \quad \mathrm{i.e.}\quad \theta_s \sim 0.6\,\degree$$
+qui constitue un des 6 paramètres libres du modèle $\Lambda$CDM.
+
 :::{figure} ../../notebooks/movie.mp4
 :name: fig:cmb_anisotropies
 :width: 100%
 
-Fraction d'ionisation $X_e$ en fonction du redshift pendant la recombinaison.
+Evolution temporelle d'un champ Gaussien initial sous l'effet de la propagation acoustique.
+:::
+
+:::{note} Conditions initiales adiabatiques ou isocourbures?
+:class: dropdown
+
+TODO
+
 :::
 
 
@@ -436,5 +461,3 @@ En supposant que l'Univers est de nouveau complètement ionisé, le calcul de sa
 [^deltas]: avec les ordres de grandeurs de [](#fig:universe_scales) et $\rho_0\sim 6\text{ protons/m}^3$, pour une planète $\delta \sim 10^{32}$ alors que pour un super-amas $\delta \sim 6$
 
 [^LaplacienSphérique]: $$\triangle_\sigma = \frac{1}{\sigma^2} \frac{\partial}{\partial \sigma}\left( \sigma^2 \frac{\partial}{\partial \sigma}\right)$$.
-
-[^Pcomobile]: la pression est homogène est à $\mathsf{M}\cdot \mathsf{T}^{-2}$ donc elle ne dépend pas de $a(t)$, il n'y a donc pas lieu d'introduire une "pression comobile".

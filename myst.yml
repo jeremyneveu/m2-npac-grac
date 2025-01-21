@@ -38,6 +38,7 @@ project:
     '\grad': '\overrightarrow{\mathrm{grad}}\ '
     '\rot': '\overrightarrow{\mathrm{rot}}\ '
     '\GN': '\mathcal{G}'  # newton constant
+    '\Mpc': '\mathrm{Mpc}'  # parsec
     '\parsec': '\mathrm{pc}'  # parsec
     '\kelvin': '\mathrm{K}'
     '\eV': '\mathrm{eV}'
