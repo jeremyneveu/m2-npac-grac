@@ -2,7 +2,7 @@
 short_title: Supernovae type Ia
 authors:
   - jneveu
-keywords: supernovae, hubble diagram, H0
+keywords: supernovae, Hubble diagram, $H_0$
 ---
 
 Supernovæ de type Ia
@@ -70,7 +70,7 @@ Pour établir un diagramme de Hubble sur des distances cosmologiques, il faut di
 
 Les supernovæ sont classées en deux types: gravitationnelles ou thermonucléaires. Les premières sont les plus connues: elles correspondent à l'explosion d'une étoile massive (plus de 8 fois la masse du Soleil) en fin de vie, laissant un cœur stellaire dense et froid: une étoile à neutrons, voire un trou noir dans les cas extrêmes. Les supernovae de type I sont celles ne présentant pas de raies de l'hydrogène dans leur spectre, alors que les supernovae de type II en contiennent. Parmi les supernovae de type I, celles contenant du silicium sont de type Ia, puis les autres Ib ou Ic.
 
-Les étoiles de masse inférieure à $8\,M_\odot$ terminent leur vie sous forme de géante rouge. A la fin de la combustion de l'hélium, les couches externes sont dispersées dans le milieu interstellaire sous forme de nébuleuse planétaire (sans forcément produire une explosion intense), laissant le coeur stellaire nu. L'effondrement du coeur est stoppé à cause de la pression de dégénérescence des électrons (et non des neutrons comme dans pour les étoiles à neutrons) et de sa faible masse (typiquement $0.5\,M_\odot$. Sa température de surface reste longtemps très élevée (environ $10\,000\,$K), d'où son nom de naine blanche. Il est essentiellement composé de carbone et d'oxygène, l'hélium et l'hydrogène ayant été expulsé dans l'espace. Le rayon typique d'un tel objet est de quelques milliers de kilomètres (comme une planète telluriques). 
+Les étoiles de masse inférieure à $8\,M_\odot$ terminent leur vie sous forme de géante rouge. A la fin de la combustion de l'hélium, les couches externes sont dispersées dans le milieu interstellaire sous forme de nébuleuse planétaire (sans forcément produire une explosion intense), laissant le coeur stellaire nu. L'effondrement du coeur est stoppé à cause de la pression de dégénérescence des électrons (et non des neutrons comme dans pour les étoiles à neutrons) et de sa faible masse (typiquement $0.5\,M_\odot$. Sa température de surface reste longtemps très élevée (environ $10\,000\,\kelvin$), d'où son nom de naine blanche. Il est essentiellement composé de carbone et d'oxygène, l'hélium et l'hydrogène ayant été expulsé dans l'espace. Le rayon typique d'un tel objet est de quelques milliers de kilomètres (comme une planète telluriques). 
  
 :::{figure} ../../images/Type_Ia_Supernova_When_a_White_Dwarf_Steals_Material_from_Companion.mp4
 
@@ -178,21 +178,21 @@ On introduit la densité spectrale d'énergie d'un astre $S_\lambda(\lambda)$ ex
 \end{equation}
 où $\lambda$ est la longueur d'onde observée. Alors la définition de la magnitude apparente en bande $b$ devient :
 \begin{equation}
-m_b = -2.5 \log_{10} \left[ \frac{\int \lambda \dd \lambda S_\lambda(\lambda) T_b(\lambda) }{\int \lambda \dd \lambda S_{\mathrm{ref}}(\lambda) T_b(\lambda)}\right]
+m_b = -2.5 \log_{10} \left[ \frac{ \int \lambda \dd \lambda S_\lambda(\lambda) T_b(\lambda) }{\int \lambda \dd \lambda S_{\mathrm{ref}}(\lambda) T_b(\lambda)}\right]
 \end{equation}
 avec $S_{\mathrm{ref}}(\lambda)$ la densité spectrale de flux de la source de référence (Véga par exemple). La magnitude absolue en bande $b$ est la magnitude de l'astre en bande $b$ si on l'observait dans son référentiel au repos à $10\,\parsec$ :
 \begin{equation}
-M_b = -2.5\log_{10} \left[\frac{1}{4\pi (10\,\parsec)^2} \frac{\int \lambda \dd \lambda L_\lambda(\lambda) T_b(\lambda)}{\int \lambda \dd \lambda \Phi_{\mathrm{ref}}(\lambda)T_b(\lambda) } \right] 
+M_b = -2.5\log_{10} \left[\frac{1}{4\pi (10\,\parsec)^2} \frac{ \int \lambda \dd \lambda L_\lambda(\lambda) T_b(\lambda)}{ \int \lambda \dd \lambda \Phi_{\mathrm{ref}}(\lambda)T_b(\lambda) } \right] 
 \end{equation}
 avec $L_\lambda$ la luminosité spectrale (en W/nm). 
 
 On note $B(\lambda)$ la transmission de la bande B (dans le système photométrique de Johnson UBV). Alors on pose:
 \begin{equation}
-m_B^* = -2.5 \log_{10} \left[ \frac{\int \lambda \dd \lambda S_\lambda(\lambda) B(\lambda) }{\int \lambda \dd \lambda S_{\mathrm{ref}}(\lambda) B(\lambda)}\right]
+m_B^* = -2.5 \log_{10} \left[ \frac{ \int \lambda \dd \lambda S_\lambda(\lambda) B(\lambda) }{ \int \lambda \dd \lambda S_{\mathrm{ref}}(\lambda) B(\lambda)}\right]
 \end{equation}
 La magnitude absolue en bande $B$ est :
 \begin{equation}
-M_B = -2.5\log_{10} \left[\frac{1}{4\pi (10\,\parsec)^2} \frac{\int \lambda \dd \lambda L_\lambda(\lambda) B(\lambda)}{\int \lambda \dd \lambda S_{\mathrm{ref}}(\lambda) B(\lambda)}   \right] 
+M_B = -2.5\log_{10} \left[\frac{1}{4\pi (10\,\parsec)^2} \frac{ \int \lambda \dd \lambda L_\lambda(\lambda) B(\lambda)}{ \int \lambda \dd \lambda S_{\mathrm{ref}}(\lambda) B(\lambda)}   \right] 
 \end{equation}
  
 Cependant, les télescopes ne sont pas tous équipés d'un filtre B. De plus, et c'est la raison principale, le maximum d'émission se déplace en longueur d'onde avec le décalage vers le rouge donc il faudrait pouvoir décaler vers le rouge le filtre B pour capter la même portion de spectre ([](#fig:snIaB)). Comme nous voulons comparer l'effet de la distance uniquement pour cartographier $D_L(z)$, ces effets de décalage en longueur d'onde doivent pourtant être supprimés pour standardiser et comparer le flux observé au maximum d'émission. Historiquement, pour les supernovae de type Ia, les cosmologistes établissent les magnitudes apparentes en bande B _dans le référentiel au repos_. La magnitude $m_B^*$ est donc la magnitude apparente dans le référentiel au repos en bande B, _comme s'il n'y avait pas d'expansion mais seulement un effet de distance_.
