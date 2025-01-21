@@ -20,7 +20,7 @@ Principe cosmologique
 :align: center
 :width: 60%
 
-Galaxy distribution compiled by the eBOSS survey. Every dot in this "pie" diagram is a galaxy, color coded by type: green for nearby galaxies, magenta and red for old red galaxies, blue for young blue galaxies, yellow and white for quasars. Credit: A. Raichoor (EPFL) / A. Ross (Ohio State Univ.) / SDSS Collaboration
+Distribution des galaxies compilée par l'étude eBOSS. Chaque point de ce diagramme « circulaire » est une galaxie, codée par type : vert pour les galaxies proches, magenta et rouge pour les vieilles galaxies rouges, bleu pour les jeunes galaxies, jaune et blanc pour les quasars. Crédit : A. Raichoor (EPFL) / A. Ross (Ohio State Univ.) / Collaboration SDSS
 :::
 
 :::{figure} ../../images/CMB_planck.jpg
@@ -40,14 +40,14 @@ Pour être en mesure de construire un modèle de l'Univers, c'est-à-dire une co
 
 1.  l'Univers est homogène : la métrique ne dépend donc pas de la position d'un observateur dans l'espace, donc aucune position n'est particulière dans l'Univers. Cette affirmation, issue du principe Copernicien, n'est que statistiquement vraie car localement on observe bien que la matière a formé des grumeaux (planètes, étoiles, galaxies,\...) au milieu de larges vides. Cependant l'observation de l'Univers à grande échelle montre que l'Univers est bien globalement homogène à des échelles plus grandes que $100\,$Mpc[^pc] (voir [](#fig:sdss) et par exemple {cite:t}`Scrimgeour2012` pour une mesure de l'homogénéité de l'Univers par comptage de galaxies).
 
-2.  l'Univers est isotrope: aucune direction n'est privilégiée. Ainsi, des observations effectuées dans deux directions différentes du ciel sont équivalentes. Ceci est bien vérifié par l'observation du fond diffus cosmologique micro-onde (CMB) dont la température est mesurée identique  à $2.725\pm0.002\,$K dans toutes les directions de l'espace  {cite:p}`Mather1999`. Seules des fluctuations de température de l'ordre de $10^{-5}$\,K sont détectées sur cette image de l'Univers jeune (voir [](#fig:cmb_planck) et par exemple {cite:t}`ThePlanckCollaboration2013XIII` pour une vérification du principe d'isotropie utilisant l'effet Sunyaev-Zeldovich).
+2.  l'Univers est isotrope: aucune direction n'est privilégiée. Ainsi, des observations effectuées dans deux directions différentes du ciel sont équivalentes. Ceci est bien vérifié par l'observation du fond diffus cosmologique micro-onde (CMB) dont la température est mesurée identique  à $2.725\pm0.002\,\kelvin$ dans toutes les directions de l'espace  {cite:p}`Mather1999`. Seules des fluctuations de température de l'ordre de $10^{-5}\,\kelvin$ sont détectées sur cette image de l'Univers jeune (voir [](#fig:cmb_planck) et par exemple {cite:t}`ThePlanckCollaboration2013XIII` pour une vérification du principe d'isotropie utilisant l'effet Sunyaev-Zeldovich).
 
 Ignorer complètement ce qui se passe à des échelles "insuffisamment" grandes est la première étape pour construire une solution cosmologique à la Relativité Générale. Muni de ces faits observationnels, nous imposerons l'homogénéité et l'isotropie à la métrique et à la distribution de la matière (c'est-à-dire au tenseur énergie-impulsion).
 
 :::{note} A propos de l'homogénéité de l'Univers
 :class: dropdown 
 
-Avant de présenter cette solution cosmologique, il est intéressant de se demander pourquoi le principe cosmologique devrait s'appliquer. Alors que la gravité, la force dominante qui façonne les structures à grande échelle de l'univers, tend à détruire l'homogénéité (une région légèrement sur-dense dans un univers homogène attirera la matière et deviendra de plus en plus sur-dense), il faut plus de temps pour que la matière aux grandes échelles forment des grumeaux. Comme les grandes échelles semblent plus homogènes dans les observations, on peut supposer que l'univers était beaucoup plus homogène dans le passé à toutes les échelles et qu'il le devient de moins en moins sous l'action de la gravité. Mais pourquoi était-il homogène à l'origine ? Une réponse logique est qu'une interaction autre que la gravité y a contribué (comme, par exemple, la pression dans un gaz parfait). Cependant, la Relativité Générale stipule qu'aucune interaction ne peut se propager plus vite que la vitesse de la lumière. Nous verrons que dans une théorie où l'évolution de l'univers découle d'un Big Bang initial, cela crée une difficulté potentielle : l'homogénéisation ne devrait être possible que jusqu'à des échelles égales à la distance parcourue par un photon entre le Big Bang et aujourd'hui.
+Avant de présenter cette solution cosmologique, il est intéressant de se demander pourquoi le principe cosmologique devrait s'appliquer. Alors que la gravité, la force dominante qui façonne les structures à grande échelle de l'univers, tend à détruire l'homogénéité (une région légèrement sur-dense dans un univers homogène attirera la matière et deviendra de plus en plus sur-dense), il faut plus de temps pour que la matière aux grandes échelles forme des grumeaux. Comme les grandes échelles semblent plus homogènes dans les observations, on peut supposer que l'univers était beaucoup plus homogène dans le passé à toutes les échelles et qu'il le devient de moins en moins sous l'action de la gravité. Mais pourquoi était-il homogène à l'origine ? Une réponse logique est qu'une interaction autre que la gravité y a contribué (comme, par exemple, la pression dans un gaz parfait). Cependant, la Relativité Générale stipule qu'aucune interaction ne peut se propager plus vite que la vitesse de la lumière. Nous verrons que dans une théorie où l'évolution de l'univers découle d'un Big Bang initial, cela crée une difficulté potentielle : l'homogénéisation ne devrait être possible que jusqu'à des échelles égales à la distance parcourue par un photon entre le Big Bang et aujourd'hui.
 :::
 
 
@@ -65,7 +65,7 @@ Le diagramme d'espace-temps d'un Univers homogène et isotrope possède un axe t
 :::
 
 
-Tout d'abord, si l'univers est isotrope,  on peut vérifier que les composantes croisées $g_{i0}$ et $g_{i0}$ sont nulles. Si tel n'était pas le cas, on aurait une direction privilégiée dans le l'univers. On peut s'en convaincre en remarquant que ces composantes sont non nulles si on réalise une transformation de Lorentz [](#eq:lorentz)-[](#eq:lorentz2), justement lorsqu'on prend un référentiel en translation uniforme par rapport à un autre, donc se déplaçant dans une direction choisie. 
+Tout d'abord, si l'univers est isotrope,  on peut vérifier que les composantes croisées $g_{i0}$ et $g_{0i}$ sont nulles. Si tel n'était pas le cas, on aurait une direction privilégiée dans l'univers. On peut s'en convaincre en remarquant que ces composantes sont non nulles si on réalise une transformation de Lorentz [](#eq:lorentz)-[](#eq:lorentz2), justement lorsqu'on prend un référentiel en translation uniforme par rapport à un autre, donc se déplaçant dans une direction choisie. 
 
 Autre façon de se convaincre, prenons un espace-temps 2D. Si la métrique a la forme :
 \begin{equation}
@@ -77,7 +77,7 @@ $$
 On peut alors vérifier, en résolvant l'équation du second degré en $\dd t$ que si $g_{01} \neq 0$, deux $\dd x$ opposés donnent deux valeurs différentes de $\dd t$ positif. C'est-à-dire qu'un observateur recevra à des moments différents les impulsions lumineuses émises simultanément par deux sources situées à la même distance dans des directions opposées $\pm \dd x$. Cela rompt évidemment l'isotropie. Les termes $g_{0i}$ et $g_{i0}$ de la métrique sont donc nuls. Cela signifie que le vecteur temporel $\vec e_0$ est orthogonal aux vecteurs de base spatiaux $\vec e_i$.
 
 
-De plus, si l'Univers est homogène alors la composante $g_{00}(t,\vec x)$ ne peut dépendre que du temps $t$, de sorte que le battement des horloges ne dépendent pas de la position dans l'espace. Donc $g_{00}(t,\vec x) = g_{00}(t)$ {cite:p}`Weinberg1972`[p. 403]. Si nous appelons le paramètre $t$ le temps, nous voyons que nous avons un temps universel en tout point de l'espace, appelé temps cosmologique. Comme l'univers est homogène, alors cela signifie qu'à chaque date on peut associer une densité de matière ou d'énergie identique pour tous les observateurs, donc qu'avec un densimètre on peut construire une horloge commune à tous les observateurs présents dans l'Univers. 
+De plus, si l'Univers est homogène alors la composante $g_{00}(t,\vec x)$ ne peut dépendre que du temps $t$, de sorte que le battement des horloges ne dépende pas de la position dans l'espace. Donc $g_{00}(t,\vec x) = g_{00}(t)$ {cite:p}`Weinberg1972`[p. 403]. Si nous appelons le paramètre $t$ le temps, nous voyons que nous avons un temps universel en tout point de l'espace, appelé temps cosmologique. Comme l'univers est homogène, alors cela signifie qu'à chaque date on peut associer une densité de matière ou d'énergie identique pour tous les observateurs, donc qu'avec un densimètre on peut construire une horloge commune à tous les observateurs présents dans l'Univers. 
 
 En combinant les deux résultats précédents, l'intervalle espace-temps peut être écrit sous la forme suivante :
 \begin{equation}
@@ -180,7 +180,7 @@ k = \left\lbrace
  -1 & \text{3-hyperboloïde} \\
 \end{array}\right.
 \end{equation}
-On a ainsi pour les trois géométries possibles[^flat] d'un Univers maximallement symétrique :
+On a ainsi pour les trois géométries possibles d'un Univers maximallement symétrique :
 \begin{equation}
 \dd \vec l^2= \dd \vec r^2 + k\frac{ (\vec r \cdot \dd \vec r)^2}{a^2(t) - k r^2}
 \end{equation}
