@@ -9,10 +9,10 @@ Histoire thermique de l'Univers
 ===============================
 
 L'expansion de l'Univers est aujourd'hui bien décrite par le modèle $\Lambda$CDM plat ($\Omega_k^0=0$). Les proportions de chacune de ces composantes sont aujourd'hui évaluées à {cite}`Planck2018`:
-$$\Omega_\Lambda^0 = 0.685,\quad \Omega_m^0=0.315$$
+$$ \Omega_\Lambda^0 = 0.685,\quad \Omega_m^0=0.315$$
 
 Dans ce chapitre, nous allons étudier l'histoire thermique de l'Univers ainsi que l'évolution de sa composition. Jusqu'à maintenant dans ce cours, la matière non-relativiste était traitée comme une seule entité, ralentissant l'expansion de l'Univers par son interaction gravitationnelle. Mais pour étudier son évolution avec la température et ses interactions avec les autres composantes, il faut séparer celles-ci en deux contributions: la matière sombre $\Omega_{c}^0$ et la matière baryonique[^baryons] $\Omega_b^0$. En effet, en 1933, en étudiant l'amas de Coma, l'astrophysicien Fred Zwicky montre que la masse déduite du mouvement des sept galaxies qui le composent est 400 fois plus grande que la masse déduite du comptage des objets lumineux. Cette mesure est répétée en 1936 sur l'amas de la Vierge et donne cette fois un facteur 200. Ces mesures toutefois un peu imprécises tombent dans l'oubli jusque dans les années 1970, lorsque l'astronome Vera Rubin constate que la vitesse de rotation des étoiles de la Galaxie d'Andromède est bien plus élevée que ne le suggère sa masse lumineuse observée {cite:p}`Rubin1970`. Le constat est vite répété sur de nombreuses galaxies: une partie de la matière constituant la galaxie est donc une matière sombre, échappant alors à toute détection, représentant souvent la majorité de la masse totale des galaxies. La présence de matière sombre abondante est même visible dans l'amplitude des anisotropies de températures du fond diffus cosmologique (voir fin de chapitre). Aujourd'hui, on estime que la proportion de ces deux formes de matière froide est {cite}`Planck2018`:
-$$\Omega_{c}^0=0.264,\quad \Omega_b^0=0.049$$
+$$ \Omega_{c}^0=0.264,\quad \Omega_b^0=0.049$$
 
 Description de l'Univers primordial
 --------------------------
@@ -87,7 +87,7 @@ a_{\mathrm{dec}} T_{\mathrm{dec}} = a_0 T_0 \Rightarrow T_{\mathrm{dec}} = (1+z_
 
 Nous pouvons maintenant calculer la contribution actuelle des photons du CMB à la densité critique de l'univers en utilisant la température du corps noir :
 \begin{equation}
-\Omega_{\gamma}^0= {\epsilon_\gamma^0 \over c^2 \rho^0_c}= {4 \sigma_S T_0^4 \over c^3}{8 \pi \GN \over 3 H_0^2} \sim 5\times 10^{-5}
+\Omega_{\gamma}^0= {\epsilon_\gamma^0 \over c^2 \rho^0_c}= {4 \sigma_S T_0^4 \over c^3}{8 \pi \GN \over 3 H_0^2} \sim 5 \times 10^{-5}
 \end{equation}
 C'est donc une densité d'énergie négligeable comparée à la matière froide et à l'énergie sombre.
 Certes, d'autres particules ultra relativistes telles que les neutrinos contribuent à la partie restante de $\Omega_r^0$. Mais avec 3 neutrinos sans masse, on aboutirait seulement à $\Omega_r^0 \sim 9 \times 10^{-5}$ comme on pourra le voir en fin de chapitre.
@@ -184,7 +184,7 @@ Enfin, les interactions entre photons et particules chargées étaient beaucoup 
 
 A partir de cette description, nous pouvons esquisser un scénario d'évolution du plasma primordial en cataloguant les différents phénomènes physiques qui peuvent se produire lorsque celui-ci se refroidit. En voici un résumé non exhaustif.
 
-Tout d'abord, au sortir de l'inflation (environ $10^{-34}\,$s après le Big Bang), il y a dû y avoir une phase dite de _baryogénèse_, où l'ensemble des particules et antiparticules sont créées avec un léger avantage pour la matière face à l'antimatière menant à $\eta \sim 10^{-9}$. En dessous d'une température de $100\,\GeV$ environ ($t \sim 20\,$ps), la transition de phase électrofaible a lieu, donnant la masse aux particules et faisant apparaître les bosons de jauge Z, W$^\pm$. Sous $150\,\MeV$ ($t\sim 20\,\mathrm{\mu s}$, c'est la transition de phase QCD :  l'interaction forte prend le dessus sur les effets thermiques. Les quarks et gluons coagulent pour former des baryons (trois quarks) et des mésons (deux quarks). Puis, $6\,\mathrm{s}$ plus tard, électrons et positrons s'annihilent car la température du bain de photons passe sous la masse de l'électron $T < m_e=511\,\mathrm{keV}$. Pendant les trois premières minutes de l'Univers ($T > 100\,\mathrm{keV}$), les noyaux atomiques des éléments légers sont formés. Au bout de $380\,000\,$ans, les électrons se lient aux noyaux atomiques ($e^- + p \rightarrow \mathrm{H} + \gamma$), c'est la _recombinaison_, et les photons se découplent de la matière ($\tau_T \ll 1/H)$. Libre de se propager, ces photons forment le fond diffus cosmologique et fournissent une photographie du plasma primordial à la fin de la recombinaison.
+Tout d'abord, au sortir de l'inflation (environ $10^{-34}\,$s après le Big Bang), il y a dû y avoir une phase dite de _baryogénèse_, où l'ensemble des particules et antiparticules sont créées avec un léger avantage pour la matière face à l'antimatière menant à $\eta \sim 10^{-9}$. En dessous d'une température de $100\,\GeV$ environ ($t \sim 20\,$ps), la transition de phase électrofaible a lieu, donnant la masse aux particules et faisant apparaître les bosons de jauge Z, W$^\pm$. Sous $150\,\MeV$ ($t\sim 20\,\mathrm{\mu s}$, c'est la transition de phase QCD :  l'interaction forte prend le dessus sur les effets thermiques. Les quarks et gluons coagulent pour former des baryons (trois quarks) et des mésons (deux quarks). Puis, $6\,\mathrm{s}$ plus tard, électrons et positrons s'annihilent car la température du bain de photons passe sous la masse de l'électron $T < m_e=511\,\keV$. Pendant les trois premières minutes de l'Univers ($T > 100\,\keV$), les noyaux atomiques des éléments légers sont formés. Au bout de $380\,000\,$ans, les électrons se lient aux noyaux atomiques ($e^- + p \rightarrow \mathrm{H} + \gamma$), c'est la _recombinaison_, et les photons se découplent de la matière ($\tau_T \ll 1/H)$. Libre de se propager, ces photons forment le fond diffus cosmologique et fournissent une photographie du plasma primordial à la fin de la recombinaison.
 
 
 Thermodynamique statistique à l'équilibre
@@ -237,9 +237,7 @@ Remarquons que cette formule est la version quantique en limite continue de la f
 
 :::{note} Pourquoi $p^2/3E$ ?
 
-Considérons un élément de surface $\delta A$. Nous notons $\hat{n}$ son vecteur unitaire. Les particules de vitesse $v$ qui frappent $\delta A$ entre $t$ et $t + \delta t$ sont situées dans une coque sphérique autour de
-$\delta$, entre les rayons $vt$ et $v(t + \delta t)$.
-
+Considérons un élément de surface $\delta A$. Nous notons $\hat{n}$ son vecteur unitaire. Les particules de vitesse $v$ qui frappent $\delta A$ entre $t$ et $t + \delta t$ sont situées dans une coque sphérique autour de $\delta$, entre les rayons $vt$ et $v(t + \delta t)$ :
 \begin{equation}
   \dd N = \frac{g}{(2\pi\hbar)^3} f(E) R^2 v \dd t \dd\Omega 
 \end{equation}
@@ -339,8 +337,7 @@ Pour les photons, il n'y a pas de charge conservée. Même le nombre de photons 
   \mu_\gamma = 0
 \end{equation}
 
-Les particules et les antiparticules sont de charges opposées, d'où,
-_à l'équilibre_ :
+Les particules et les antiparticules sont de charges opposées, d'où, _à l'équilibre_ :
 \begin{equation}
   \mu_X = -\mu_{\bar{X}}
 \end{equation}
@@ -349,7 +346,7 @@ On peut aussi utiliser la réaction $X + \bar{X} \rightleftharpoons \gamma + \ga
 En résumé: 
 - Un système composés de différentes espèces a atteint l'équilibre cinétique s'il a atteint un état d'entropie maximale décrit par une fonction de distribution de Fermi-Dirac ou de Bose-Einstein. 
 - Un système composé de plusieurs espèces interagissant via une ou plusieurs réactions chimiques a atteint l'équilibre chimique s'il a atteint un état d'entropie maximale, où la somme des potentiels chimiques des réactifs est égale à la somme des potentiels chimiques des produits. 
-- Un système a atteint l'équilibre thermodynamique s'il a atteint l'équilibre chimique et si toutes les espèces partagent la même température $T$, la "température de l'Univers".
+- Un système a atteint l'équilibre thermodynamique s'il a atteint l'équilibre chimique et si toutes les espèces partagent la même température $T$, la _température de l'Univers_.
 
 ### Densité et pression des fermions et bosons
 
@@ -365,8 +362,7 @@ avec le signe $+$ pour les fermions et le signe $-$ pour les bosons.
 
 Dans le cas général, les intégrales ci-dessus doivent être calculées numériquement. Il existe cependant deux limites intéressantes, qui permettent de comprendre les processus physiques en cours : le cas où les particules sont relativiste ($k_B T \gg m c^2$) et le cas opposé d'espèces non relativistes ($k_B T \ll m c^2$). 
 
-Avant de poursuivre, définissons : $x \equiv m c^2/k_B T$ et $\xi \equiv pc/k_B T$,
-nous pouvons alors réécrire $n$ et $\rho$ ci-dessus comme :
+Avant de poursuivre, définissons : $x \equiv m c^2/k_B T$ et $\xi \equiv pc/k_B T$. Nous pouvons alors réécrire $n$ et $\rho$ ci-dessus comme :
 \begin{equation}
   \begin{split}
     n &= \frac{g(k_BT)^3}{2\pi^2\hbar^3 c^3}  I_\pm(x) \ \ \ \mathrm{with} \ \ I_\pm(x) = \int_0^\infty \dd \xi \frac{\xi^2}{\exp\left(\sqrt{\xi^2 + x^2}\right) \pm 1} \\
@@ -573,7 +569,7 @@ Ensuite, les pions et les muons s'annihilent, ce qui nous donne
 Evolution du nombre effectif d'espèces relativistes $g_\star(T)$.
 :::
 
-Les deux événements significatifs suivants sont le découplage des neutrinos autour de 1 MeV puis l'annihilation des électrons et des positrons ($m_e = 511\,\keV$). 
+Les deux événements significatifs suivants sont le découplage des neutrinos autour de $1\,\MeV$ puis l'annihilation des électrons et des positrons ($m_e = 511\,\keV$). 
 
 ### Entropie
 
@@ -726,12 +722,12 @@ $$ G_F = \frac{\sqrt{2}}{8} \left(\frac{g_W}{m_W c ^2}\right)^2(\hbar c)^3, \qua
 
 Pour les espèces ultra-relativistes, nous avons $pc \sim E$. Le nombre de particules à $t_1$ dans le volume de l'espace des phases $d^3p_1 \dd V_1$ est :
 \begin{equation}
-\dd N = \frac{g}{(2\pi)^3} \frac{d^3p_1 \dd V_1}{\exp((E(p_1) - \mu_1)/T_1) \pm 1}
+\dd N = \frac{g}{(2\pi)^3} \frac{\dd^3p_1 \dd V_1}{\exp((E(p_1) - \mu_1)/T_1) \pm 1}
 \end{equation}
-A $t_0$, un peu plus tard, les mêmes particules se trouvent dans le volume de l'espace des phases $d^3p_0 \dd V_0$.   Les moments s'échelonnent comme $a^{-1}$ et le volume comme $a^3$. On peut donc écrire
+A $t_0$, un peu plus tard, les mêmes particules se trouvent dans le volume de l'espace des phases $\dd^3p_0 \dd V_0$.   Les moments s'échelonnent comme $a^{-1}$ et le volume comme $a^3$. On peut donc écrire
 \begin{equation}
 \begin{split}
-  \dd N  & = \frac{g}{(2\pi)^3} \frac{d^3p_1 \dd V_1}{\exp((p_1 - \mu_1)/T_1) \pm 1} \\
+  \dd N  & = \frac{g}{(2\pi)^3} \frac{\dd^3p_1 \dd V_1}{\exp((p_1 - \mu_1)/T_1) \pm 1} \\
       & = \frac{g}{(2\pi)^3} \frac{d^3p_0 \left(\frac{a_0}{a_1}\right)^3 \dd V_0\left(\frac{a_1}{a_0}\right)^3}{\exp((p_0\left(\frac{a_1}{a_0}\right) - \mu_1)/T_1) \pm 1} \\
       & = \frac{g}{(2\pi)^3} \frac{d^3p_0 \dd V_0}{\exp((p_0 - \mu_0)/T_0) \pm 1} \\
 \end{split}
@@ -864,7 +860,7 @@ $$
 $$
 avec $f_i(E_i)$ les distributions de Fermi-Dirac des particules $i$ et :
 $$\vert \mathcal{M} \vert ^2 \propto G_F^2 ( 1+ 3g_A^2)$$
-avec $G_F = 1.16\times 10^{-5}  \,\GeV^{-2}$ la constante de Fermi et $g_A = 1.26$ le couplage axial-vecteur des nucléons ({cite}`KolbTurner` p.91). Malheureusement ces intégrales doivent être calculées précisément pour obtenir la bonne proportion d'hélium, car on va voir que la proportion de neutron gèle à une température proche de $Q_n$ et $m_e$, ce qui empêche de faire des approximations brutales pour se concentrer sur un régime de haute ou basse énergie. 
+avec $G_F = 1.16 \times 10^{-5}  \,\GeV^{-2}$ la constante de Fermi et $g_A = 1.26$ le couplage axial-vecteur des nucléons ({cite}`KolbTurner` p.91). Malheureusement ces intégrales doivent être calculées précisément pour obtenir la bonne proportion d'hélium, car on va voir que la proportion de neutron gèle à une température proche de $Q_n$ et $m_e$, ce qui empêche de faire des approximations brutales pour se concentrer sur un régime de haute ou basse énergie. 
 
 :::{tip} Approximation numérique des intégrales
 :class: dropdown
@@ -886,10 +882,14 @@ Un bilan détaillé de la densité de neutrons permet d'écrire l'équation de B
 \frac{\dd n_p}{\dd t} & = \;\;\;\Gamma_{n\to p}\,n_n -  \Gamma_{p\to n}\,n_p - 3\frac{\dot a}{a} n_p
 \end{align}
 où $\Gamma_{p\to n}=\Gamma_{pe\to \nu n}$ est le taux d'interaction pour la première réaction alors que $\Gamma_{n\to p}$ représente la somme des autres réactions formant des protons. Le dernier terme des équations correspond à la dilution des particules avec l'expansion si leur nombre est conservé dans un volume comobile. Le nombre total de protons et de neutrons est en revanche conservé dans un volume comobile :
-$$\frac{\dd (n_n+n_p)}{\dd t} = - 3\frac{\dot a}{a} (n_n + n_p) \Leftrightarrow \frac{\dd\left[a^3(n_n+n_p)\right]}{\dd t} = 0$$
+$$
+\frac{\dd (n_n+n_p)}{\dd t} = - 3\frac{\dot a}{a} (n_n + n_p) \Leftrightarrow \frac{\dd\left[a^3(n_n+n_p)\right]}{\dd t} = 0
+$$
 
 Définissons la proportion de neutrons $X_n = n_n / n_b = n_n / (n_n + n_p)$. La proportion de protons $X_p$ s'en déduit par $X_p=1-X_n$. L'équation différentielle pour la densité de neutrons se réécrit :
-$$ \frac{\dd n_n}{\dd t}= \frac{\dd X_n(n_n+n_p)}{\dd t} =  (n_n+n_p)\frac{\dd X_n}{\dd t} - 3\frac{\dot a}{a} (n_n + n_p) X_n$$
+$$
+\frac{\dd n_n}{\dd t}= \frac{\dd X_n(n_n+n_p)}{\dd t} =  (n_n+n_p)\frac{\dd X_n}{\dd t} - 3\frac{\dot a}{a} (n_n + n_p) X_n
+$$
 soit :
 \begin{equation}\label{eq:Xn}
 \frac{\dd X_n}{\dd t} = - \Gamma_{n\to p}\,X_n + \Gamma_{p\to n}\,(1-X_n) 
@@ -897,7 +897,9 @@ soit :
 
 Commençons par comparer le taux de disparition des neutrons au taux d'expansion de l'Univers ([](#fig:BBN_Gnp)).
 Après intégration numérique, on observe que $\Gamma_{n\to p}$ décroit en fonction du temps et converge vers un plateau correspondant à l'inverse du temps de demi vie du neutron $\tau_n^{-1}$ (indépendant de l'expansion). Il est supérieur au taux $\Gamma_{p\to n}$ donc c'est celui-qui compte dans le mécanisme de gel. Le taux $\Gamma_{n\to p}$ est comparable au taux d'expansion $H$ à la température : 
-$$\boxed{T_{\mathrm{freeze}}= 0.7\,\MeV = 8\times 10^9 \,\kelvin}$$
+$$
+\boxed{T_{\mathrm{freeze}}= 0.7\,\MeV = 8\times 10^9 \,\kelvin}
+$$
 C'est la température de gel des neutrons. 
 
 
@@ -910,9 +912,13 @@ Comparaison des taux de réaction $\Gamma_{n\to p}(T)$ et du taux d'expansion $H
 :::
 
 Étudions maintenant la densité relative de neutrons $X_n(t)$. Après intégration numérique avec comme condition initiale :
-$$X_n(t \approx 1\,\mathrm{ms}) = X_n^{eq}(t\approx 1\,\mathrm{ms}), \quad g_*=10.75$$
+$$
+X_n(t \approx 1\,\mathrm{ms}) = X_n^{eq}(t\approx 1\,\mathrm{ms}), \quad g_*=10.75
+$$
 on obtient la [](#fig:BBN_Xn). _Si la désintégration spontanée du neutron est omise_ (courbe tiretée), la fraction de neutron converge vers $X_n^{\mathrm{frozen}} = 0.15$, soit :
-$$\frac{n_n}{n_p}(100\,\mathrm{keV}) = \frac{X_n(100\,\mathrm{keV})}{1-X_n(100\,\mathrm{keV})} = 0.17 \sim 1/6$$
+$$
+\frac{n_n}{n_p}(100\,\keV) = \frac{X_n(100\,\keV)}{1-X_n(100\,\keV)} = 0.17 \sim 1/6
+$$
 i.e. 1 neutron pour 6 protons[^Tfreeze].
 
 :::{figure} #BBN_Xn
@@ -933,7 +939,9 @@ p + n \rightleftharpoons \mathrm{D} + \gamma
 La question est donc: quand a lieu la formation du deutérium et combien y a-t-il de neutrons restants à cet instant?
 
 Le deutérium possède une énergie de liaison :
-$$B_{\mathrm{D}} = (m_n + m_p - m_\mathrm{D})c^2 = 2.22\,\mathrm{MeV}$$
+$$
+B_{\mathrm{D}} = (m_n + m_p - m_\mathrm{D})c^2 = 2.22\,\mathrm{MeV}
+$$
 Il est donc plus favorable de former des atomes de deuterium que de garder des protons et des neutrons séparés. A l'équilibre, 
 \begin{align}
 \frac{n_\mathrm{D}}{n_pn_n} & = \frac{g_\mathrm{D}}{g_p g_n} \left(\frac{k_B T}{2\pi \hbar^2}\right)^{-3/2}\left(\frac{m_\mathrm{D}}{m_p m_n}\right)^{3/2} \exp \left( \frac{(m_p+m_n-m_\mathrm{D})c^2}{k_B T} \right) \\
@@ -946,12 +954,18 @@ On définit la température de démarrage de la nucléosynthèse $T_{\mathrm{nuc
 \frac{n_\mathrm{D}}{n_n} \approx 6 n_p \left(\frac{m_n k_B T}{2\pi \hbar^2}\right)^{-3/2}  \exp\left(\frac{B_D}{k_B T}\right)
 \end{equation}
 En supposant que de toute façon le nombre de protons va peu diminuer au cours de la formation du deutérium, on peut estimer que la densité de protons à $T_{\mathrm{nuc}}$ est environ :
-$$n_p \approx (1-X_n(T_{\mathrm{nuc}})) n_b = (1-X_n(T_{\mathrm{nuc}})) \eta n_\gamma(T_{\mathrm{nuc}}) $$
+$$
+n_p \approx (1-X_n(T_{\mathrm{nuc}})) n_b = (1-X_n(T_{\mathrm{nuc}})) \eta n_\gamma(T_{\mathrm{nuc}}) 
+$$
 On en déduit alors la température $T_{\mathrm{nuc}}$ par l'inversion numérique de l'équation :
-$$ 6 (1-X_n(T_{\mathrm{nuc}})) \eta n_\gamma(T_{\mathrm{nuc}}) \left(\frac{m_n k_B T_{\mathrm{nuc}}}{2\pi \hbar^2}\right)^{-3/2}  \exp\left(\frac{B_D}{k_B T_{\mathrm{nuc}}}\right) = 1 $$
+$$ 
+6 (1-X_n(T_{\mathrm{nuc}})) \eta n_\gamma(T_{\mathrm{nuc}}) \left(\frac{m_n k_B T_{\mathrm{nuc}}}{2\pi \hbar^2}\right)^{-3/2}  \exp\left(\frac{B_D}{k_B T_{\mathrm{nuc}}}\right) = 1 
+$$
 On en déduit :
-$$\boxed{T_{\mathrm{nuc}}  = 70\,\keV = 8 \times 10^8\,\kelvin}$$
-soit $t_{\mathrm{nuc}}\approx 280\,$s après le Big Bang, avec $g_* = 3.36$ dorénavant puisque l'Univers possède une température inférieure à $m_e$. A ce moment précis, la fraction de neutrons encore présente est environ de : 
+$$
+\boxed{T_{\mathrm{nuc}}  = 70\,\keV = 8 \times 10^8\,\kelvin}
+$$
+soit $t_{\mathrm{nuc}} \approx 280\,$s après le Big Bang, avec $g_* = 3.36$ dorénavant puisque l'Univers possède une température inférieure à $m_e$. A ce moment précis, la fraction de neutrons encore présente est environ de : 
 $$\boxed{\frac{n_n}{n_p}(T_{\mathrm{nuc}}) = \frac{X_n(T_{\mathrm{nuc}})}{1-X_n(T_{\mathrm{nuc}})} = 0.14 \sim 1/7}$$
 La désintégration spontanée du neutron est donc notable à cette échelle de temps.
 
@@ -966,7 +980,9 @@ p + n &\rightarrow &\mathrm{D} + \gamma \\
 car il est beaucoup plus improbable que deux protons et deux neutrons se rencontrent par hasard pour former un noyau d'hélium. Or l'énergie de liaison de l'hélium 4 est bien supérieure à celle du deutérium ($B_{\mathrm{He}} = 28.3\,\MeV$) donc c'est sa formation qui sera favorisée. On peut donc supposer que tous les neutrons disponibles à $t_\mathrm{nuc}$ vont terminer dans un noyau d'hélium. 
 
 Comme deux neutrons vont dans un noyau d'hélium 4, le nombre maximum de noyaux d'hélium formables est égal à la moitié des neutrons disponibles (qu'ils soient libres ou dans les noyaux de deutérium). On en déduit l'abondance en hélium 4 en nombre de noyaux comme étant :
-$$n_{\mathrm{He}} = \frac{1}{2} n_n(t_\mathrm{nuc})$$
+$$
+n_{\mathrm{He}} = \frac{1}{2} n_n(t_\mathrm{nuc})
+$$
 En terme de masse, l'abondance d'hélium 4 dans l'Univers à la fin de la nucléosynthèse primordiale peut être au maximum de ([](#fig:BBN_Yp)):
 \begin{equation}
 \boxed{Y_p \equiv \frac{\rho(^4\mathrm{He})}{\rho_b} = \frac{4n_\mathrm{He}}{n_n + n_p} \approx 25\%}
@@ -1075,17 +1091,25 @@ $$ e^- + \gamma \rightleftharpoons e^- + \gamma $$
 Le taux d'interaction est donné par (voir équation [](#eq:lpm_thomson)) :
 $$\Gamma_\gamma = n_e \sigma_T c = n_b X_e \sigma_T c=  \frac{2\zeta(3)}{\pi^2} \eta  \sigma_T c\left(\frac{k_B T}{\hbar c}\right)^3$$
 avec la section efficace de la diffusion Thomson :
-$$\sigma_T = 0.665\,\mathrm{barns} = 6.65\times 10^{-29}\,\mathrm{m}^2$$
+$$
+\sigma_T = 0.665\,\mathrm{barns} = 6.65\times 10^{-29}\,\mathrm{m}^2
+$$
 Le découplage a lieu lorsque ce taux d'interaction devient petit devant le taux d'expansion de l'Univers ([](#fig:rates_decoupling)), soit :
-$$\Gamma_\gamma(T_\mathrm{dec}) = H(T_\mathrm{dec})$$
+$$
+\Gamma_\gamma(T_\mathrm{dec}) = H(T_\mathrm{dec})
+$$
 L'Univers étant alors dominé par la matière ($z<3000$), on a :
-$$H(T_\mathrm{dec}) = H_0 \sqrt{\Omega_m^0(1+z)^3} = H_0 \sqrt{\Omega_m^0} \left(\frac{T_\mathrm{dec}}{T_0}\right)^{3/2}$$
+$$
+H(T_\mathrm{dec}) = H_0 \sqrt{\Omega_m^0(1+z)^3} = H_0 \sqrt{\Omega_m^0} \left(\frac{T_\mathrm{dec}}{T_0}\right)^{3/2}
+$$
 On aboutit à :
 \begin{equation}
 X_e(T_\mathrm{dec}) (k_B T_\mathrm{dec})^{3/2} \approx  \frac{\pi^2}{2\zeta(3)}\frac{H_0 \sqrt{\Omega_m^0} } {\eta  \sigma_T c} \left(\frac{k_B T_0}{\hbar c}\right)^{-3/2}
 \end{equation}
 Par une résolution numérique, on obtient :
-$$\boxed{T_{\mathrm{dec}} = 0.26\,\eV = 3055\,\kelvin, \quad z_{\mathrm{dec}}\sim 1100,  \quad t_{\mathrm{dec}}=370\,000\,\mathrm{ans}}$$
+$$
+\boxed{T_{\mathrm{dec}} = 0.26\,\eV = 3055\,\kelvin, \quad z_{\mathrm{dec}}\sim 1100,  \quad t_{\mathrm{dec}}=370\,000\,\mathrm{ans}}
+$$
 
 :::{tip} Libre parcours moyen des photons
 :class:dropdown
@@ -1113,7 +1137,7 @@ Toute théorie alternative doit expliquer ces trois observations.
 
 
 [^baryons]: les hadrons se scindent en deux familles : les mésons (2 quarks) et les baryons (3 quarks). on rappelle que parmi les baryons seuls les protons sont stables. Les neutrons liés dans les noyaux atomiques sont stables, mais libres ils se désintègrent en proton avec un temps de demie vie de 15 minutes. Les mésons sont tous instables avec des temps de demie vie plus courts que $10^{-7}\,$s. Les électrons sont 2000 fois plus légers que les protons. L'essentiel de la masse de la matière dite "ordinaire" est donc contenue dans les noyaux atomiques d'où le raccourci "matière baryonique".
-[^mp]: on rappelle que les masses des protons et neutrons sont d'environ $1\,$GeV.
+[^mp]: on rappelle que les masses des protons et neutrons sont d'environ $1\,\GeV$.
 [^neutrality]: puisque la charge électrique est associée aux forces de Coulomb et que l'expansion de l'univers n'est gouvernée que par les forces gravitationnelles, l'univers doit être globalement neutre.
 [^Sconst]: stricto sensus une constante d'intégration entropique $S_0$ doit apparaître mais celle-ci est nulle en vertu du troisième principe de la thermodynamique.
 [^Tfreeze]: dans un certain nombre de référence, ont trouve comme température de gel des neutrons $T_{\mathrm{freeze}} \approx 0.8\,\MeV$ ce qui correspond aussi à 1 neutron pour 6 protons si on suit la distribution d'équilibre [](#eq:np_eq) mais en admettant que cette température est un ordre de grandeur bien trouvé pour que ça marche à la fin.
