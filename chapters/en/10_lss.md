@@ -213,7 +213,7 @@ $$
 $$
 $$
 \label{eq:lssEuler1}
-{\partial \delta\vec{v}_r \over \partial t} + 2 H \delta\vec{v}_r = - {1 \over a^3} \vec \nabla_{\sigma} \delta \phi_{\sigma} - \frac{1}{a^2 \rho_0} \vec \nabla_{\sigma} \delta P
+{\partial \delta\vec{v}_\sigma \over \partial t} + 2 H \delta\vec{v}_\sigma = - {1 \over a^3} \vec \nabla_{\sigma} \delta \phi_{\sigma} - \frac{1}{a^2 \rho_0} \vec \nabla_{\sigma} \delta P
 $$
 $$
 \label{eq:lssPoissonOrder1}

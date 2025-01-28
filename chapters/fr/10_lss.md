@@ -210,7 +210,7 @@ $$
 $$
 $$
 \label{eq:lssEuler1}
-{\partial \delta\vec{v}_r \over \partial t} + 2 H \delta\vec{v}_r =  - {1 \over a^3} \vec \nabla_{\sigma} \delta \phi_{\sigma} - \frac{1}{a^2 \rho_0} \vec \nabla_{\sigma} \delta P
+{\partial \delta\vec{v}_\sigma \over \partial t} + 2 H \delta\vec{v}_\sigma =  - {1 \over a^3} \vec \nabla_{\sigma} \delta \phi_{\sigma} - \frac{1}{a^2 \rho_0} \vec \nabla_{\sigma} \delta P
 $$
 $$
 \label{eq:lssPoissonOrder1}
@@ -455,6 +455,12 @@ En supposant que l'Univers est de nouveau complètement ionisé, le calcul de sa
 :::
 
 
+:::{iframe} https://www.youtube.com/embed/AgX3lZEr240?si=Bz-eTpQWw3NxU_e3
+:name: fig:desi_growth_de
+:align: center
+:width: 60%
+
+Cette simulation montre comment la gravité affecte la position des galaxies observées, modifiant ainsi la façon dont la matière s’agglomère pour former les structures cosmiques. Comme différents modèles de gravité prédisent différentes formations des structures, les scientifiques de DESI peuvent comparer les observations avec les prédictions et ainsi tester la gravité aux échelles cosmiques. Credit: Claire Lamman et Michael Rashkovetskyi / DESI collaboration:::
 
 
 
