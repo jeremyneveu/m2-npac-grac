@@ -785,7 +785,7 @@ Nous pouvons en déduire la densité de neutrinos $n_\nu$ en fonction de $n_\gam
 \end{equation}
 ce qui donne $112\,\mathrm{cm}^{-3}$ par saveur ($336 \,\mathrm{cm}^{-3}$ au total). Pour la densité d'énergie du fond de neutrinos, nous trouvons :
 \begin{equation}
-  \rho_\nu = \frac{7}{8}  \frac{g_\nu}{g_\gamma} \left(\frac{T_\nu}{T_\gamma}\right)^4 \rho_\gamma \frac{7}{8} \times \frac{3 \times 2}{2} \times \left(\frac{4}{11}\right)^{4/3} \rho_\gamma = 0.68\,\rho_\gamma
+  \rho_\nu = \frac{7}{8}  \frac{g_\nu}{g_\gamma} \left(\frac{T_\nu}{T_\gamma}\right)^4 \rho_\gamma =\frac{7}{8} \times \frac{3 \times 2}{2} \times \left(\frac{4}{11}\right)^{4/3} \rho_\gamma = 0.68\,\rho_\gamma
 \end{equation}
 et numériquement, on trouve $\Omega_\nu^0 h^2 \approx 1.7\times 10^{-5}$. On en déduit la proportion totale de matière relativiste dans l'Univers (si les neutrinos le sont) :
 $$\Omega_r^0 = \Omega_\gamma^0 + \Omega_\nu^0 = \Omega_\gamma^0 \left(1 + \frac{\rho_\nu^0}{\rho_\gamma^0 } \right) = 1.68\,\Omega_\gamma^0$$
@@ -793,8 +793,8 @@ $$\Omega_r^0 = \Omega_\gamma^0 + \Omega_\nu^0 = \Omega_\gamma^0 \left(1 + \frac{
 Le découplage des neutrinos s'est légèrement superposé à l'annihilation de $e^\pm$. Comme les neutrinos interagissaient encore au moment de l'annihilation, le bruit de fond des neutrinos a été légèrement affecté par l'énergie et l'entropie libérées par l'annihilation de $e^\pm$. Dans la littérature, cela est pris en compte en introduisant un _nombre effectif de neutrinos_ $N_{\mathrm{eff}}$, évaluer numériquement à $3.046$. En tenant compte de cela, le nombre de neutrinos et la densité d'énergie sont :
 \begin{equation}
   \begin{split}
-    n_\nu(T_\gamma) & = 2 \times \frac{3}{4} N_{\mathrm{eff}}\times \frac{4}{11} n_\gamma(T_\gamma) \\
-    \rho_\nu(T_\gamma) & = 2 \times \frac{7}{8} N_{\mathrm{eff}}\times \frac{4}{11} n_\gamma(T_\gamma) \\
+n_\nu(T_\gamma) & = \frac{3}{4} N_{\mathrm{eff}}\times \frac{4}{11} n_\gamma(T_\gamma) \\
+\rho_\nu(T_\gamma) & = \frac{7}{8} N_{\mathrm{eff}}\times \left(\frac{4}{11}\right)^{4/3} \rho_\gamma(T_\gamma) \\
   \end{split}
 \end{equation}
 

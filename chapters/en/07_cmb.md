@@ -785,7 +785,7 @@ We can deduce the neutrino density $n_\nu$ as a function of $n_\gamma$. Neutrino
 \end{equation}
 which gives $112\,\mathrm{cm}^{-3}$ per flavour ($336 \,\mathrm{cm}^{-3}$ in total). For the energy density of the neutrino background, we find :
 \begin{equation}
-\rho_\nu = \frac{7}{8} \frac{g_\nu}{g_\gamma} \left(\frac{T_\nu}{T_\gamma}\right)^4 \rho_\gamma \frac{7}{8} \times \frac{3 \times 2}{2} \times \left(\frac{4}{11}\right)^{4/3} \rho_\gamma = 0.68\,\rho_\gamma
+\rho_\nu = \frac{7}{8} \frac{g_\nu}{g_\gamma} \left(\frac{T_\nu}{T_\gamma}\right)^4 \rho_\gamma = \frac{7}{8} \times \frac{3 \times 2}{2} \times \left(\frac{4}{11}\right)^{4/3} \rho_\gamma = 0.68\,\rho_\gamma
 \end{equation}
 and numerically we find $\Omega_\nu^0 h^2 \approx 1.7\times 10^{-5}$. From this we can deduce the total proportion of relativistic matter in the Universe (if neutrinos are relativistic):
 $$\Omega_r^0 = \Omega_\gamma^0 + \Omega_\nu^0 = \Omega_\gamma^0 \left(1 + \frac{\rho_\nu^0}{\rho_\gamma^0 } \right) = 1.68\,\Omega_\gamma^0$$
@@ -794,8 +794,8 @@ The decoupling of the neutrinos was slightly superimposed on the annihilation of
 Taking this into account, the number of neutrinos and the energy density are :
 \begin{equation}
 \begin{split}
-n_\nu(T_\gamma) & = 2 \times \frac{3}{4} N_{\mathrm{eff}}\times \frac{4}{11} n_\gamma(T_\gamma) \\
-\rho_\nu(T_\gamma) & = 2 \times \frac{7}{8} N_{\mathrm{eff}}\times \frac{4}{11} n_\gamma(T_\gamma) \\
+n_\nu(T_\gamma) & = \frac{3}{4} N_{\mathrm{eff}}\times \frac{4}{11} n_\gamma(T_\gamma) \\
+\rho_\nu(T_\gamma) & = \frac{7}{8} N_{\mathrm{eff}}\times \left(\frac{4}{11}\right)^{4/3} \rho_\gamma(T_\gamma) \\
 \end{split}
 \end{equation}
 
