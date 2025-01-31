@@ -757,8 +757,8 @@ En écrivant la conservation de l'entropie, nous avons :
 \end{equation}
 Or on a  $T_\mathrm{\gamma,before}=T_\mathrm{\nu,before}$ donc :
 \begin{align*}
-  \frac{7}{8}\left[ 2\times 2 + 2 \times 3 \right] \ a^3_\mathrm{before}\ T^3_\mathrm{\nu,before} & = & \left[ 2 + \frac{7}{8}\times 3 \times 2 \left(\frac{T_\mathrm{\nu,after}}{T_\mathrm{\gamma,after}}\right)^3 \right] \ a^3_\mathrm{after}\ T^3_\mathrm{\gamma,after} \\
-  \Leftrightarrow   \frac{7}{8}\left[ 2\times 2 + 2 \times 3 \right] \ a^3_\mathrm{before}\ T^3_\mathrm{\nu,before} & = & \left[ 2 \left(\frac{T_\mathrm{\gamma,after}}{T_\mathrm{\nu,after}}\right)^3  + \frac{7}{8}\times 3 \times 2 \right] \ a^3_\mathrm{after}\ T^3_\mathrm{\nu,after} \\
+  \left[2+\frac{7}{8}\left(2\times 2 + 2 \times 3  \right)\right] \ a^3_\mathrm{before}\ T^3_\mathrm{\nu,before} & = & \left[ 2 + \frac{7}{8}\times 3 \times 2 \left(\frac{T_\mathrm{\nu,after}}{T_\mathrm{\gamma,after}}\right)^3 \right] \ a^3_\mathrm{after}\ T^3_\mathrm{\gamma,after} \\
+  \Leftrightarrow   \left[2+\frac{7}{8}\left(2\times 2 + 2 \times 3  \right)\right] \ a^3_\mathrm{before}\ T^3_\mathrm{\nu,before} & = & \left[ 2 \left(\frac{T_\mathrm{\gamma,after}}{T_\mathrm{\nu,after}}\right)^3  + \frac{7}{8}\times 3 \times 2 \right] \ a^3_\mathrm{after}\ T^3_\mathrm{\nu,after} \\
 \end{align*}
 Pour les neutrinos découplés, $a_\mathrm{after}T_\mathrm{\nu,after} = a_\mathrm{before}T_\mathrm{\nu,before}$ donc finalement :
 \begin{equation}
