@@ -344,12 +344,12 @@ TODO
 The optical depth $\tau$ is defined as the ratio of the number of photons received on Earth without having undergone any Thomson scattering $N(t_0)$ to the number of photons $N(t)$ emitted at a time $t$:
 $$\frac{N(t_0)}{N(t)} = e^{-\tau}$$
 with
-$$\tau = \int_t^{t_0} \Gamma_\gamma(t) \mathrm{d}t$$
+$$\tau = \int_{t_{\mathrm{ls}}}^{t_0} \Gamma_\gamma(t) \mathrm{d}t$$
 The time $t_{\mathrm{ls}}$ for which $\tau=1$ is called the time of last diffusion. This is the time since which a CMB photon has not interacted with an electron. More precisely
 \begin{equation}
 \tau(z) = \int_0^z \frac{\Gamma_\gamma(z)}{H(z)}\frac{\dd z}{1+z}
 \end{equation}
-This is one of the six parameters of the standard $\Lambda$CDM model. After the emission of the cosmic microwave background, we enter the Dark Ages of the Universe, when the Universe is transparent but no stars are yet emitting light. But with the appearance of the first stars and galaxies, perhaps 150 million years after the Big Bang, the neutral medium is ionised once again. Although very sparse, CMB photons again interact with electrons by Thomson scattering, which reduces the amplitude of the small-scale anisotropies in the CMB power spectrum, and introduces new anisotropies in the polarisation anisotropies. It is the least well measured parameter of the $\Lambda$CDM model at the moment ([](#fig:tau)) $\tau = 0.058 \pm 0.006$ {cite:p}`Planck2023`, but it informs about the appearance of the first luminous stars ([](#fig:tau_reio)).
+This is one of the six parameters of the standard $\Lambda$CDM model. After the emission of the cosmic microwave background, we enter the Dark Ages of the Universe, when the Universe is transparent but no stars are yet emitting light. But with the birth of the first stars and galaxies, perhaps 150 million years after the Big Bang, the neutral medium is ionised once again. Although very sparse, CMB photons again interact with electrons by Thomson scattering, which reduces the amplitude of the small-scale anisotropies in the CMB power spectrum, and introduces new anisotropies in the polarisation anisotropies. It is the least well measured parameter of the $\Lambda$CDM model at the moment ([](#fig:tau)) $\tau = 0.058 \pm 0.006$ {cite:p}`Planck2023`, but it informs about the appearance of the first luminous stars ([](#fig:tau_reio)).
 
 :::{figure} ../../images/tau_history.png
 :width: 80%

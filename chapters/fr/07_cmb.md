@@ -1125,7 +1125,7 @@ Comparaison entre le temps de libre parcours moyen des photons $\tau_T$ et le te
 
 :::
 
-Le fond diffus cosmologique est donc un rayonnement de corps noir qui a été libéré il y a environ $370\,000\,$ans, quand l'Univers n'était quasiment plus ionisé puisque $X_e(T_{\mathrm{dec}}) = 6\times 10^{-3}$. 
+Le fond diffus cosmologique est donc un rayonnement de corps noir qui a été libéré environ $370\,000\,$ans après le Big Bang, quand l'Univers n'était quasiment plus ionisé puisque $X_e(T_{\mathrm{dec}}) = 6\times 10^{-3}$. 
 
 :::{attention} Les trois piliers du Big Bang
 

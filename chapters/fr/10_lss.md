@@ -431,12 +431,12 @@ TODO
 On définit la profondeur optique $\tau$ par le rapport du nombre de photons reçus sur Terre sans avoir subi aucune diffusion Thomson $N(t_0)$ sur le nombre de photons $N(t)$ émis à un instant $t$:
 $$\frac{N(t_0)}{N(t)} = e^{-\tau}$$
 avec
-$$\tau = \int_t^{t_0} \Gamma_\gamma(t) \mathrm{d}t$$
+$$\tau = \int_{t_{\mathrm{ls}}}^{t_0} \Gamma_\gamma(t) \mathrm{d}t$$
 Le temps $t_{\mathrm{ls}}$ pour lequel $\tau=1$ est appelé temps de dernière diffusion. C'est le temps depuis lequel un photon du CMB n'a plus interagi avec un électron. Plus précisément,
 \begin{equation}
 \tau(z) = \int_0^z \frac{\Gamma_\gamma(z)}{H(z)}\frac{\dd z}{1+z}
 \end{equation}
-C'est un des six paramètres du modèle standard $\Lambda$CDM. En effet, après l'émission du fond diffus cosmologique, on entre dans les Ages Sombres de l'Univers, où l'Univers est transparent mais aucun astre n'émet encore de lumière. Mais avec l'apparition des premières étoiles et galaxies, peut-être 150 millions d'années après le Big Bang, le milieu neutre est de nouveau ionisé. Bien que très peu dense, les photons du CMB interagissent de nouveau avec les électrons par diffusion Thomson, ce qui diminue l'amplitude des anisotropies de petites échelles dans le spectre de puissance du CMB, et introduit de nouvelles anisotropies dans les anisotropies de polarisation. C'est le paramètre le moins bien mesuré du modèle $\Lambda$CDM pour le moment ([](#fig:tau)) $\tau = 0.058 \pm 0.006$ {cite:p}`Planck2023`, mais il informe sur l'apparition des premiers astres lumineux ([](#fig:tau_reio)).
+C'est un des six paramètres du modèle standard $\Lambda$CDM. En effet, après l'émission du fond diffus cosmologique, on entre dans les Ages Sombres de l'Univers, où l'Univers est transparent mais aucun astre n'émet encore de lumière. Mais avec la naissance des premières étoiles et galaxies, peut-être 150 millions d'années après le Big Bang, le milieu neutre est de nouveau ionisé. Bien que très peu dense, les photons du CMB interagissent de nouveau avec les électrons par diffusion Thomson, ce qui diminue l'amplitude des anisotropies de petites échelles dans le spectre de puissance du CMB, et introduit de nouvelles anisotropies dans les anisotropies de polarisation. C'est le paramètre le moins bien mesuré du modèle $\Lambda$CDM pour le moment ([](#fig:tau)) $\tau = 0.058 \pm 0.006$ {cite:p}`Planck2023`, mais il informe sur l'apparition des premiers astres lumineux ([](#fig:tau_reio)).
 
 :::{figure} ../../images/tau_history.png
 :width: 80%
