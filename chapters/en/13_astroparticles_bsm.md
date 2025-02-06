@@ -347,7 +347,7 @@ A subluminal modification of the dispersion relation of photons, of energy $E$ (
 affected for the sake of simplicity) yields a modification of the infrared photon threshold energy as ({cite}`2008PhRvD..78l4010J`):
 \begin{align}
 \epsilon_\text{th} &= \frac{m_e^2c^4}{E} + \frac{1}{4} \left(\frac{E}{E_\text{LIV}} \right)^n E\\
-&= \frac{m_e^2c^4}{E} \times \left[ 1 + \left(\frac{E}{E_{\gamma\text{, mod}}} \right)^n  \right],
+&= \frac{m_e^2c^4}{E} \times \left[ 1 + \left(\frac{E}{E_{\gamma\text{, mod}}} \right)^{n+2}  \right],
 \end{align}
 where 
 \begin{align}
