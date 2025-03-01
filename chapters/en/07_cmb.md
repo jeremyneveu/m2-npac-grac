@@ -1110,7 +1110,7 @@ Comparison between the mean free path time of photons $\tau_T$ and the Hubble ti
 
 :::
 
-The cosmic microwave background is therefore black-body radiation that was released about $370,000\,$ years after the Big Bang, when the Universe was almost completely ionised, since $X_e(T_{\mathrm{dec}}) = 6\times 10^{-3}$. 
+The cosmic microwave background is therefore black-body radiation that was released about $380,000\,$ years after the Big Bang, when the Universe was almost completely neutral, since $X_e(T_{\mathrm{dec}}) = 6\times 10^{-3}$. 
 
 :::{attention} The three pillars of the Big Bang
 
