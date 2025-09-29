@@ -14,9 +14,11 @@ pages:
   stage: build
   script:
     - python -V               # Print out python version for debugging
-    - mamba install -y -c conda-forge nodejs pyyaml
-    - node -v
-    - npm install -g mystmd@latest
+    # - mamba install -y -c conda-forge nodejs pyyaml
+    - mamba install -c conda-forge mystmd
+    # - node -v
+    # - npm install -g mystmd@latest
+    - myst -v
     - cp myst.yml tmp_myst.yml
     #- python remove_toc.py
     - myst build --html
