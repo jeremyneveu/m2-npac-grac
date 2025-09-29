@@ -61,7 +61,7 @@ project:
       children:
         - file: chapters/en/start.md
           children:
-            #- file: chapters/en/00_introduction.md
+            - file: chapters/en/00_introduction.md
             #- file: chapters/en/01_FLRW_metric.md
             #- file: chapters/en/02_friedmann_equations.md
             #- file: chapters/en/03_cosmological_models.md
