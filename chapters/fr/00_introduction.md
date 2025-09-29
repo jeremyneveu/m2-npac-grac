@@ -11,20 +11,37 @@ Introduction succincte à la Relativité Générale
 Rappels de Relativité Restreinte
 --------------------------------
 
-:::{important} Principe de Relativité Restreinte
+### Principe de Relativité Restreinte
 
-Les lois de la physique sont identiques dans tous les référentiel galiléens. 
+A la fin du XIXe siècle, la théorie de l'électromagnétisme de Maxwell s'impose pour décrire les phénomènes électriques et magnétiques. Mieux, elle prédit l'existence des ondes électromagnétiques qui sont découvertes en 1888 par Heinrich Hertz. Leur étude montre qu'elles ont toutes les propriétés connues des ondes lumineuses (réflexion et réfraction, interférences, polarisation et diffraction) et surtout la même célérité $c = 1/\sqrt{\epsilon_0\mu_0}$ qui surgit des équations de Maxwell. Ondes hertziennes et lumineuses sont donc des ondes électromagnétiques, mais l'électromagnétisme de Maxwell ne dit rien du référentiel dans lequel cette célérité serait définie. Par ailleurs, l'expérience de Michelon et Morley (1887) <wiki:Expérience_de_Michelson_et_Morley> montre que la vitesse de la lumière ne semble pas se composer avec la vitesse de la Terre autour du Soleil, alors que celle de Fizeau (1849) <wiki:Expérience_de_Fizeau> montre qu'elle se compose partiellement avec celle d'un fluide en mouvement. On comprend donc que la théorie électromagnétique s'accorde mal avec la mécanique newtonienne et semble avoir besoin d'être rafistolée au gré de résultats expérimentaux contradictoires. 
+
+:::{figure} ../../images/michelson_morley_setup.svg
+:name: fig-michelson-morley
+:width: 100%
+
+Schéma de l'expérience de Michelson-Morley (1887). La lumière est divisée en deux faisceaux perpendiculaires qui parcourent des distances égales avant de se recombiner au détecteur. L'absence de franges d'interférence démontre l'invariance de la vitesse de la lumière.
 :::
 
-Si une loi physique semble vraie dans un référentiel inertiel, alors elle doit rester vraie dans un autre référentiel galiléen. C'est par exemple le cas de la seconde loi de Newton, mais imposer cela à la théorie de l'électromagnétisme a posé un sérieux problème, en remettant en cause la composition galiléenne des vitesses.
+Plutôt que d'entreprendre ce chemin hasardeux qui aurait fait perdre la puissance prédictive de la théorie lorsque des corps sont en mouvements, Albert Einstein propose une approche révolutionnaire dans son célèbre article de 1905 *Sur l'électrodynamique des corps en mouvement* {cite:p}`Einstein1905`. Il postule que la célérité de la lumière est la même en tout référentiel et remet donc en cause la composition galiléenne des vitesses, et même les notions d'espace et de temps. Le principe fondamental de cette nouvelle physique est le principe de relativité restreinte.
 
-Dans le cas spécial de la théorie de l'électromagnétisme de Maxwell, il apparaît une vitesse invariante par changement de système de coordonnées: cette vitesse s'identifie à la célérité de la lumière. Comme la lumière est véhiculée par le photon, particule de masse nulle, c'est aussi la vitesse maximale pouvant être atteinte dans notre Univers. Si la théorie électromagnétique n'avait pas été écrite en 1905, un argument aurait aussi pu être qu'il doit exister une vitesse maximale dans l'Univers si on pense qu'aucun transport d'information ne peut être instantané. A ce moment là, cette vitesse limite doit être la même dans tous les référentiels inertiels et la célérité pivot de la théorie de la Relativité Restreinte aurait été la vitesse de l'interaction qui se propage le plus rapidement. Ce qui dans notre Univers revient à l'interaction électromagnétique {cite:p}`landau1989theory`. Dans les deux approches, le principe de relativité restreinte impose qu'il existe une vitesse maximum $c$ invariante par changement de système de coordonnées. *Si la théorie électromagnétique est vérifiée dans un référentiel galiléen, quelles sont les transformations de coordonnées spatio-temporelles pouvant laisser cette célérité invariante?*
+:::{important} Principe de Relativité Restreinte
 
-Soit un quadri-vecteur de coordonnées $x^\alpha$, où la composante $\alpha=0$ correspond au temps[^2] $ct$ (avec $c$ la fameuse célérité maximale et $t$ le temps) et les composantes $\alpha=1,2,3$ correspondent aux coordonnées cartésiennes $x^1,x^2, x^3$. Dans ce cours, nous emploierons les lettres grecques pour les composantes allant de 0 à 3 et les lettres latines pour les composantes spatiales allant de 1 à 3. Pour passer à un autre système de coordonnées $x'^\alpha$, on introduit la transformation de Lorentz $\Lambda^\alpha_{\;\beta}$ ainsi :
-\begin{equation}\label{eq:boost}
-x'^{\alpha} = \Lambda^\alpha_{\;\beta} x^\beta + a^\alpha,
-\end{equation}
-où $a^\alpha$ est une simple translation temporelle et spatiale. On définit la métrique de Minkowski :
+Les lois de la physique sont identiques dans tous les référentiels galiléens. 
+:::
+
+Si une loi physique semble vraie dans un référentiel inertiel, aux incertitudes expérimentales près définissant son domaine de validité, alors elle doit rester vraie dans un autre référentiel galiléen. C'est par exemple le cas du principe fondamental de la dynamique de Newton. Cependant, imposer cela à la théorie de l'électromagnétisme pose un sérieux problème, car il faut remettre en cause la composition galiléenne des vitesses pour les ondes électromagnétiques.
+
+### Transformations de Lorentz
+
+*Si la théorie électromagnétique est vérifiée dans un référentiel galiléen, quelles sont les transformations de coordonnées spatio-temporelles pouvant laisser cette célérité invariante?*
+Soit deux évènements de coordonnées spatio-temporelles $(t_1,x_1,y_1,z_1)$ et $(t_2, x_2, y_2, z_2)$ dans un référentiel $\mathcal{R}$ liés entre eux par l'échange d'un signal lumineux, alors :
+$$ c^2(t_2-t_1)^2 = (x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2 $$
+Imposer la constance de la vitesse implique dans un autre référentiel $\mathcal{R}'$ galiléen on vérifie aussi : 
+$$ c^2(t'_2-t'_1)^2 = (x'_2-x'_1)^2 + (y'_2-y'_1)^2 + (z'_2-z'_1)^2 $$
+Il apparait donc judicieux de définir l'intervalle espace-temps pour un intervalle entre deux évènements infiniment proches :
+$$ \dd s^2 = -c^2 \dd t^2 + \dd x^2 + \dd y^2 + \dd z^2 $$
+
+Soit un quadri-vecteur de coordonnées $x^\alpha$, où la composante $\alpha=0$ correspond au temps[^2] $ct$ (avec $c$ la fameuse célérité maximale et $t$ le temps) et les composantes $\alpha=1,2,3$ correspondent aux coordonnées cartésiennes $x,y,z$. Dans ce cours, nous emploierons les lettres grecques pour les composantes allant de 0 à 3 et les lettres latines pour les composantes spatiales allant de 1 à 3. On définit la métrique de Minkowski :
 \begin{equation}\label{eq:minkowski}
 \eta_{\alpha\beta} = \begin{pmatrix}
 -1 & 0& 0& 0 \\
@@ -34,7 +51,20 @@ où $a^\alpha$ est une simple translation temporelle et spatiale. On définit la
 \end{equation}
 de telle sorte qu'en coordonnées cartésiennes on puisse définir l'intervalle espace-temps ainsi entre deux coordonnées spatio-temporelles proches :
 $$ \dd s^2 = - c^2 \dd t^2 + \dd \vec x^2 = \eta_{\alpha\beta}\dd x^\alpha \dd x^\beta $$
-Pour assurer que la vitesse de la lumière est invariante par changement de système de coordonnées $x'^{\alpha}$, on doit conserver $\vert \dd \vec x' / \dd t'\vert = c$ pour la propagation d'un rayon lumineux donc $\dd s'^2=\dd s^2 = 0$. La transformation de Lorentz doit donc assurer la conservation de l'intervalle espace-temps:
+
+:::{important} Conventions de ce cours
+- Signature métrique : $(-,+,+,+)$
+- Indices grecs : 0,1,2,3 (espace-temps)
+- Indices latins : 1,2,3 (espace seulement)
+:::
+
+Pour passer à un autre système de coordonnées $x'^\alpha$, on introduit la transformation de Lorentz $\Lambda^\alpha_{\;\beta}$ ainsi :
+\begin{equation}\label{eq:boost}
+x'^{\alpha} = \Lambda^\alpha_{\;\beta} x^\beta + a^\alpha,
+\end{equation}
+où $a^\alpha$ est une simple translation temporelle et spatiale. 
+
+Quelle forme doit prendre cette transformation ? Pour assurer que la vitesse de la lumière est invariante par changement de système de coordonnées $x'^{\alpha}$, on doit conserver $\vert \dd \vec x' / \dd t'\vert = c' = c$ pour la propagation d'un rayon lumineux donc $\dd s'^2=\dd s^2 = 0$. La transformation de Lorentz doit donc assurer la conservation de l'intervalle espace-temps:
 $$
 \dd s'^2 =  \eta_{\alpha\beta}\dd x'^\alpha \dd x'^\beta = \eta_{\alpha\beta} \Lambda^{\alpha}_{\;\gamma} \Lambda^{\beta}_{\;\delta}  \dd x'^\gamma \dd x'^\delta = \eta_{\gamma\delta} \dd x^\gamma \dd x^\beta = \dd s^2
 $$
@@ -44,7 +74,7 @@ $$
 \eta_{\alpha\beta} \Lambda^{\alpha}_{\;\gamma} \Lambda^{\beta}_{\;\delta} =  \eta_{\gamma\delta}
 $$
 
-A partir de la relation constitutive [](#eq:dscons), on peut démontrer que les transformations de Lorentz forment un groupe défini par $\Lambda^{0}_{\;0}\geqslant 1$ et $\mathrm{det}\;\Lambda=+1$. Quelques calculs plus tard (voir {cite:t}`raimond` par exemple), on peut montrer que la transformation de Lorentz entre deux référentiels dont l'un se déplace à la vitesse $\vec v = v \vec e_{1}$ s'écrit de façon unique :
+A partir de la relation constitutive [](#eq:dscons), on peut démontrer que les transformations de Lorentz forment un groupe défini par $\Lambda^{0}_{\;0}\geqslant 1$ et $\mathrm{det}\;\Lambda=+1$. Quelques calculs plus tard (voir {cite:t}`raimond` ou {cite:t}`langlois2013RG` par exemple), on montre que la transformation des coordonnées entre deux référentiels dont l'un se déplace à la vitesse $\vec v = v \vec e_{1}$ s'écrit de façon unique :
 \begin{equation}
 \label{eq:lorentz}
 \Lambda^{\alpha}_{\;\beta} = 
@@ -56,11 +86,18 @@ A partir de la relation constitutive [](#eq:dscons), on peut démontrer que les 
 \end{pmatrix},
 \quad \beta = \frac{v}{c},\quad \gamma = \frac{1}{\sqrt{1 - \beta^2}}
 \end{equation}
+pour garantir la constance de la célérité de la lumière dans tous les référentiels galiléens.
 
 Si on inclut des rotations de l'espace, avec un référentiel se déplaçant à la vitesse $\vec v$ constante par rapport à un autre référentiel, les composantes du tenseur $\Lambda^\alpha_{\;\beta}$ s'écrivent finalement :
 \begin{equation}\label{eq:lorentz2}
 \Lambda^0_{\;0} = \gamma,\quad \Lambda^i_{\;0} = -\gamma v_i / c,\quad \Lambda^0_{\;j} = -\gamma v_j / c,\quad \Lambda^i_{\;j} = \delta_{ij} +  (\gamma - 1)  \frac{v_i v_j}{v^2}
 \end{equation}
+
+:::{note} Lien entre lumière et relativité
+Pourquoi la vitesse de la lumière spécialement devrait être invariante ? Quel est le lien entre la lumière et une nouvelle écriture de la mécanique ? Comme la lumière est véhiculée par le photon, une particule de masse nulle, c'est aussi la vitesse maximale pouvant être atteinte dans notre Univers. Si la théorie électromagnétique n'avait pas été écrite en 1905, un argument aurait aussi pu être qu'il doit exister une vitesse maximale dans l'Univers si on pense qu'aucun transport d'information ne peut être instantané. A ce moment là, le principe de relativité impose que cette vitesse limite doit être la même dans tous les référentiels inertiels et la célérité pivot de la théorie de la Relativité Restreinte aurait été la vitesse de l'interaction qui se propage le plus rapidement. Ce qui dans notre Univers se trouve être l'interaction électromagnétique {cite:p}`landau1989theory`. Dans les deux approches, le principe de Relativité Restreinte impose qu'il existe une vitesse maximum $c$ invariante par changement de système de coordonnées. 
+:::
+
+Les transformations de Lorentz imposent que non seulement la vitesse de la lumière ne se compose pas avec la vitesse d'un observateur ou d'une source, mais aussi qu'elle est indépassable. Or la force de gravitation se propage instantanément à distance infinie dans la théorie newtonienne. Le déplacement d'une masse est instantanément ressenti gravitationnellement dans tout l'Univers. Après avoir dû réécrire les équations de la cinématique pour préserver les équations de Maxwell, Einstein s'attelle pendant les 10 années suivantes à reformuler la théorie de la gravitation newtonienne pour qu'elle rentre dans ce nouveau cadre. L'ingrédient principal de sa démarche est le constat que masse gravitationnelle et masse inertielle sont identiques, ce qui est indice du fait que la gravitation pourrait être décrite par un effet cinématique.
 
 De Newton à la Relativité Générale
 ----------------------------------
@@ -69,20 +106,19 @@ La Relativité Générale est la théorie de la gravitation à la base de la cos
 
 ### Le Principe d'Équivalence
 
-Dans le principe fondamental de la dynamique énoncé par Newton, pourquoi la masse intervenant dans le terme d'inertie est-elle rigoureusement la même que celle intervenant dans la gravitation newtonienne ? Cette égalité troublante entre masse inertielle et masse gravitationnelle, validée par des siècles d'expérimentations (pendules de Newton, balance d'Eötvös, etc.) singularise la gravitation par rapport aux autres interactions, comme la force de Coulomb qui dépend de la charge électrique donc des corps considérés. Cela suggère que le gravitation n'est pas une propriété des corps eux-mêmes mais de l'espace dans lequel ils se meuvent. 
+Dans le principe fondamental de la dynamique énoncé par Newton, pourquoi la masse intervenant dans le terme d'inertie est-elle rigoureusement la même que celle intervenant dans la gravitation newtonienne ? Cette égalité troublante entre masse inertielle et masse gravitationnelle, validée par des siècles d'expérimentations (pendules de Newton, balance d'Eötvös, etc.) singularise la gravitation par rapport aux autres interactions telles la force de Coulomb qui dépend de la charge électrique donc des corps considérés. Cela suggère que la gravitation n'est pas une propriété des corps eux-mêmes mais de l'espace dans lequel ils se meuvent. 
 
-Considérons une masse ponctuelle de masse $m$ soumise à un champ gravitationnel externe uniforme et constant $\vec g$ et à aucune autre force. Alors le principe fondamental de la dynamique appliqué dans un référentiel galiléen à cet objet nous permet de prédire sa position $\vec x$ à un instant $t$ par la résolution de l'équation différentielle :
-$$m\frac{\dd^2\vec x}{\dd t^2} = m\vec g$$ 
-Plaçons nous dans le référentiel (non galiléen) de l'objet par la transformation de coordonnées suivante :
-$$
-\vec x' = \vec x - \frac{1}{2}\vec g t^2, \qquad t'=t$$ 
-Alors dans ce référentiel la force gravitationnelle est comme \"absorbée\" par le terme inertiel :
-$$m\frac{\dd^2\vec x}{\dd t^2} = m\vec g \Leftrightarrow m\frac{\dd ^2\vec x'}{\dd t'^2} = 0.$$
-Les lois de la physique apparaissent donc identiques pour un observateur lié à un référentiel galiléen considérant que l'objet subit une force de gravité et pour un observateur lié à un référentiel uniformément accéléré et considérant que l'objet ne subit pas de force gravitationnelle. La force de gravité ressentie par une masse ponctuelle est donc équivalente au choix d'un référentiel uniformément accéléré par rapport à un référentiel galiléen, au moins localement dans une région où $\vec g$ est quasi-constant et pendant une durée d'expérience où $\vec g$ est quasi-stationnaire. Le Principe d'Équivalence formulé par Einstein prend acte d'équivalence entre gravitation et accélération due à l'égalité des masses inertielle et gravitationnelle, du moins pour des champs gravitationnels qui varient faiblement dans le temps et l'espace.
+Considérons une masse ponctuelle de masse $m$ soumise à un champ gravitationnel externe uniforme et constant $\vec g$ et à des forces non gravitationnelles $\vec f_{\rm ng}$. Alors le principe fondamental de la dynamique appliqué dans un référentiel galiléen $\mathcal{R}$ à cet objet nous permet de prédire sa position $\vec x$ à un instant $t$ par la résolution de l'équation différentielle :
+$$m\frac{\dd^2\vec x}{\dd t^2} = m\vec g + \vec f_{\rm ng}$$ 
+Plaçons nous dans un référentiel (non galiléen) accéléré $\mathcal{R}'$ par rapport au référentiel galiléen initial avec une accélération d'entrainement $\vec a_e$. Dans $\mathcal{R}'$ muni des coordonnées $(t, x')$, le principe fondamental de la dynamique s'écrit avec une force intertielle $-m\vec a_e$ (aussi appelée force fictive car venant d'un effet cinématique) due à l'accélération d'entrainement :
+$$m\frac{\dd^2\vec x'}{\dd t^2} = m\vec g  -m\vec a_e + \vec f_{\rm ng}$$
+Grâce à l'égalité entre masse intertielle et masse gravitationnelle, on remarque qu'on peut faire un choix *particulier* de référentiel $\mathcal{R}'$ tel que $\vec g = \vec a_e$, tel que le principe fondamental de la dynamique s'écrit comme s'il n'y avait ni accélération et ni gravitation :
+$$m\frac{\dd ^2\vec x'}{\dd t^2} = \vec f_{\rm ng}$$
+Les lois de la physique apparaissent donc identiques pour un observateur lié à un référentiel galiléen considérant que l'objet subit une force de gravité et pour un observateur lié à un référentiel uniformément accéléré et considérant que l'objet ne subit pas de force gravitationnelle. La force de gravité ressentie par une masse ponctuelle est donc équivalente au choix d'un référentiel uniformément accéléré par rapport à un référentiel galiléen, au moins localement dans une région où $\vec g$ est quasi-constant et pendant une durée d'expérience où $\vec g$ est quasi-stationnaire. Le Principe d'Équivalence formulé par Einstein prend acte de l'équivalence entre gravitation et accélération due à l'égalité des masses inertielle et gravitationnelle, du moins pour des champs gravitationnels qui varient faiblement dans le temps et l'espace.
 
 :::{important} Le Principe d'Équivalence
 
-*A chaque point de l'espace-temps dans un champ gravitationnel arbitraire il est possible de choisir un système local de coordonnées inertielles tel que, dans une région suffisamment petite autour du point en question, toutes les lois de la nature prennent la même forme que dans un système de coordonnées cartésien non accéléré et sans gravitation* {cite:p}`Weinberg1972`. 
+*A chaque point de l'espace-temps dans un champ gravitationnel arbitraire il est possible de choisir un système local particulier de coordonnées inertielles tel que, dans une région suffisamment petite autour du point en question, toutes les lois de la nature prennent la même forme que dans un système de coordonnées cartésien non accéléré et sans gravitation* {cite:p}`Weinberg1972`. 
 :::
 
 C'est donc une généralisation du principe de relativité restreinte à tous les référentiels, en présence de gravitation ou non. Ce principe est vérifié expérimentalement avec une très bonne précision, notamment par le *Lunar Laser Ranging* {cite:p}`Williams2004`.
@@ -206,7 +242,7 @@ g^{\nu\rho}g_{\mu\nu} & = \eta^{\alpha\beta} \frac{\partial x^\nu}{\partial x'^\
 \text{ avec } \frac{\partial x^\nu}{\partial x'^\alpha}\frac{\partial x'^\delta}{\partial x^\nu} = \delta^\delta_\alpha \\
 & = \frac{\partial x^\rho}{\partial x'^\beta}\frac{\partial x'^\beta}{\partial x^\mu} 
 = \delta^\rho_\mu,\end{aligned}$$
-où $\delta^\rho_\mu$ est le symbole de Kronecker ($\delta^\rho_\mu=1$ si $\rho=\mu$, 0 sinon). 
+où $\delta^\rho_\mu" est le symbole de Kronecker ($\delta^\rho_\mu=1$ si $\rho=\mu$, 0 sinon). 
 :::
 
 On pourrait par la suite montrer que  $\Gamma^\nu_{\ \mu\rho}$ peut ne s'écrire qu'à l'aide d'un seul système de coordonnées et du tenseur métrique : 
@@ -222,9 +258,9 @@ $$
 $$
 Si elles sont présentes, les forces autres que la gravitation s'appliquant à la particule test peuvent s'ajouter au membre de droite de l'équation [](#eq:eqm3) :
 $$\label{eq:eqm4}
-\boxed{\frac{\dd^2x^\nu}{\dd \lambda^2} + \Gamma^\nu_{\ \mu\rho}\frac{\dd x^\mu}{\dd \lambda}\frac{\dd x^\rho}{\dd \lambda}=\frac{f^\mu}{m}}
+\boxed{\frac{\dd^2x^\nu}{\dd \lambda^2} + \Gamma^\nu_{\ \mu\rho}\frac{\dd x^\mu}{\dd \lambda}\frac{\dd x^\rho}{\dd \lambda}=\frac{f_{\rm ng}^\mu}{m}}
 $$
-avec $m$ la masse de l'objet et $f^\mu$ le vecteur contravariant des forces non gravitationnelles s'appliquant à une particule massive[^2prime]. La bonne écriture du principe fondamental de la dynamique selon le Principe d'Equivalence est donc l'équation [](#eq:eqm4), car on peut montrer que cette dernière est bien invariante par une transformation locale de système de coordonnées (démonstration {cite:t}`Weinberg1972`[p. 102]). 
+avec $m$ la masse de l'objet et $f^\mu" le vecteur contravariant des forces non gravitationnelles s'appliquant à une particule massive[^2prime]. La bonne écriture du principe fondamental de la dynamique selon le Principe d'Equivalence est donc l'équation [](#eq:eqm4), car on peut montrer que cette dernière est bien invariante par une transformation locale de système de coordonnées (démonstration {cite:t}`Weinberg1972`[p. 102]). 
 
 ### Dérivée covariante
 

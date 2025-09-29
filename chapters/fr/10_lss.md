@@ -5,6 +5,7 @@ authors:
 keywords: fonds diffus cosmologique, CMB, neutrinos, nucléosynthèse
 ---
 
+https://youtu.be/jpXuYc-wzk4?feature=shared
 
 Formation des grandes structures de l'Univers
 ===============================

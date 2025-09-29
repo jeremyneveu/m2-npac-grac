@@ -61,36 +61,36 @@ project:
       children:
         - file: chapters/en/start.md
           children:
-            - file: chapters/en/00_introduction.md
-            - file: chapters/en/01_FLRW_metric.md
-            - file: chapters/en/02_friedmann_equations.md
-            - file: chapters/en/03_cosmological_models.md
-            - file: chapters/en/04_astrophysical_emissions.md
-            - file: chapters/en/05_astroparticle_sources.md
-            - file: chapters/en/06_supernovae.md
-            - file: chapters/en/07_cmb.md
-            - file: chapters/en/08_acceleration.md
-            - file: chapters/en/09_radiation.md
-            - file: chapters/en/10_lss.md
+            #- file: chapters/en/00_introduction.md
+            #- file: chapters/en/01_FLRW_metric.md
+            #- file: chapters/en/02_friedmann_equations.md
+            #- file: chapters/en/03_cosmological_models.md
+            #- file: chapters/en/04_astrophysical_emissions.md
+            #- file: chapters/en/05_astroparticle_sources.md
+            #- file: chapters/en/06_supernovae.md
+            #- file: chapters/en/07_cmb.md
+            #- file: chapters/en/08_acceleration.md
+            #- file: chapters/en/09_radiation.md
+            #- file: chapters/en/10_lss.md
             #- file: chapters/11_inflation
             #- file: chapters/12_lcdm_and_beyond
-            - file: chapters/en/13_astroparticles_bsm.md
+            #- file: chapters/en/13_astroparticles_bsm.md
         - file: chapters/fr/start.md
           children:
             - file: chapters/fr/00_introduction.md
-            - file: chapters/fr/01_FLRW_metric.md
-            - file: chapters/fr/02_friedmann_equations.md
-            - file: chapters/fr/03_cosmological_models.md
-            - file: chapters/en/04_astrophysical_emissions.md
-            - file: chapters/en/05_astroparticle_sources.md
-            - file: chapters/fr/06_supernovae.md
-            - file: chapters/fr/07_cmb.md
-            - file: chapters/en/08_acceleration.md
-            - file: chapters/en/09_radiation.md
-            - file: chapters/fr/10_lss.md
+            #- file: chapters/fr/01_FLRW_metric.md
+            #- file: chapters/fr/02_friedmann_equations.md
+            #- file: chapters/fr/03_cosmological_models.md
+            #- file: chapters/en/04_astrophysical_emissions.md
+            #- file: chapters/en/05_astroparticle_sources.md
+            #- file: chapters/fr/06_supernovae.md
+            #- file: chapters/fr/07_cmb.md
+            #- file: chapters/en/08_acceleration.md
+            #- file: chapters/en/09_radiation.md
+            #- file: chapters/fr/10_lss.md
             #- file: chapters/11_inflation
             #- file: chapters/12_lcdm_and_beyond
-            - file: chapters/en/13_astroparticles_bsm.md
+            #- file: chapters/en/13_astroparticles_bsm.md
     - title: Jupyter notebooks
       file: notebooks/start.md
       children:
