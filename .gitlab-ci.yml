@@ -11,7 +11,7 @@ stages:
   - build
 
 before_script:
-  - eval "$(micromamba shell hook --shell bash)"
+  - eval "$(mamba shell hook --shell bash)"
   - python -V               # Print out python version for debugging
  
 pages:
