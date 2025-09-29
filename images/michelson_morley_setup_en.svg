@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="700" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Definition of gradients and patterns -->
+    <linearGradient id="lightBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffff00;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#ffff00;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ffff00;stop-opacity:0.3" />
+    </linearGradient>
+    <!-- Colored arrows -->
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" 
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff0000" />
+    </marker>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" 
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0066cc" />
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" 
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00cc66" />
+    </marker>
+    <marker id="arrowhead-orange" markerWidth="10" markerHeight="7" 
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff6600" />
+    </marker>
+    <marker id="arrowhead-brown" markerWidth="8" markerHeight="6" 
+            refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#8B4513" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="700" height="500" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="20" font-weight="bold" fill="#333">
+    Michelson-Morley Experiment (1887)
+  </text>
+  
+  <!-- Rotating table (base) -->
+  <circle cx="250" cy="220" r="115" fill="none" stroke="#8B4513" 
+          stroke-width="3" stroke-dasharray="8,4" opacity="0.7"/>
+  <circle cx="250" cy="220" r="120" fill="none" stroke="#8B4513" 
+          stroke-width="1" opacity="0.5"/>
+  
+  <!-- Light source -->
+  <circle cx="130" cy="220" r="12" fill="#ffd700" stroke="#333" stroke-width="2"/>
+  <text x="130" y="200" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="11" fill="#333">Light</text>
+  <text x="130" y="250" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="11" fill="#333">source</text>
+  
+  <!-- Beam splitter -->
+  <g transform="rotate(45, 250, 220)">
+    <rect x="245" y="215" width="10" height="10" fill="#e6e6fa" 
+          stroke="#333" stroke-width="2"/>
+  </g>
+  <text x="275" y="190" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="10" fill="#333">Beam</text>
+  <text x="275" y="203" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="10" fill="#333">splitter</text>
+  
+  <!-- Mirror M1 (horizontal) -->
+  <rect x="345" y="215" width="10" height="10" fill="#c0c0c0" 
+        stroke="#333" stroke-width="2"/>
+  <text x="350" y="205" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="12" font-weight="bold" fill="#333">M₁</text>
+  
+  <!-- Mirror M2 (vertical) -->
+  <rect x="245" y="130" width="10" height="10" fill="#c0c0c0" 
+        stroke="#333" stroke-width="2"/>
+  <text x="230" y="125" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="12" font-weight="bold" fill="#333">M₂</text>
+  
+  <!-- Detector -->
+  <rect x="240" y="290" width="20" height="15" fill="#ff6b6b" 
+        stroke="#333" stroke-width="2" rx="3"/>
+  <text x="250" y="320" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="11" fill="#333">Detector</text>
+  
+  <!-- Light paths -->
+  <!-- Incident beam -->
+  <line x1="145" y1="220" x2="240" y2="220" stroke="url(#lightBeam)" 
+        stroke-width="6" opacity="0.7"/>
+  <line x1="145" y1="220" x2="240" y2="220" stroke="#ff0000" 
+        stroke-width="2" marker-end="url(#arrowhead-red)"/>
+  
+  <!-- Horizontal arm (to M1) -->
+  <line x1="260" y1="220" x2="340" y2="220" stroke="url(#lightBeam)" 
+        stroke-width="5" opacity="0.5"/>
+  <line x1="260" y1="220" x2="340" y2="220" stroke="#0066cc" 
+        stroke-width="2" marker-end="url(#arrowhead-blue)"/>
+  
+  <!-- Horizontal return (from M1) -->
+  <line x1="340" y1="225" x2="260" y2="225" stroke="url(#lightBeam)" 
+        stroke-width="5" opacity="0.5"/>
+  <line x1="340" y1="225" x2="260" y2="225" stroke="#0066cc" 
+        stroke-width="2" marker-end="url(#arrowhead-blue)"/>
+  
+  <!-- Vertical arm (to M2) -->
+  <line x1="250" y1="210" x2="250" y2="145" stroke="url(#lightBeam)" 
+        stroke-width="5" opacity="0.5"/>
+  <line x1="250" y1="210" x2="250" y2="145" stroke="#00cc66" 
+        stroke-width="2" marker-end="url(#arrowhead-green)"/>
+  
+  <!-- Vertical return (from M2) -->
+  <line x1="255" y1="145" x2="255" y2="210" stroke="url(#lightBeam)" 
+        stroke-width="5" opacity="0.5"/>
+  <line x1="255" y1="145" x2="255" y2="210" stroke="#00cc66" 
+        stroke-width="2" marker-end="url(#arrowhead-green)"/>
+  
+  <!-- Beam to detector -->
+  <line x1="250" y1="230" x2="250" y2="285" stroke="url(#lightBeam)" 
+        stroke-width="6" opacity="0.7"/>
+  <line x1="250" y1="230" x2="250" y2="285" stroke="#ff0000" 
+        stroke-width="2" marker-end="url(#arrowhead-red)"/>
+  
+  <!-- Distances L1 and L2 -->
+  <g stroke="#666" stroke-width="1" fill="none" stroke-dasharray="3,3">
+    <line x1="260" y1="250" x2="340" y2="250"/>
+    <line x1="340" y1="245" x2="340" y2="255"/>
+    <line x1="345" y1="245" x2="345" y2="255"/>
+  </g>
+  <text x="300" y="265" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="11" fill="#666">L₁</text>
+  
+  <g stroke="#666" stroke-width="1" fill="none" stroke-dasharray="3,3">
+    <line x1="275" y1="145" x2="275" y2="210"/>
+    <line x1="270" y1="145" x2="280" y2="145"/>
+    <line x1="270" y1="210" x2="280" y2="210"/>
+  </g>
+  <text x="290" y="180" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="11" fill="#666">L₂</text>
+  
+  <!-- Arrow indicating Earth's motion -->
+  <g transform="translate(480, 60)">
+    <rect x="0" y="0" width="180" height="100" fill="#fff" stroke="#333" 
+          stroke-width="2" rx="8"/>
+    <text x="90" y="25" text-anchor="middle" font-family="Arial, sans-serif" 
+          font-size="14" font-weight="bold" fill="#333">Earth's Motion</text>
+    
+    <line x1="30" y1="50" x2="150" y2="50" stroke="#ff6600" 
+          stroke-width="5" marker-end="url(#arrowhead-orange)"/>
+    <text x="90" y="70" text-anchor="middle" font-family="Arial, sans-serif" 
+          font-size="13" fill="#ff6600" font-weight="bold">v ≈ 30 km/s</text>
+    <text x="90" y="88" text-anchor="middle" font-family="Arial, sans-serif" 
+          font-size="11" fill="#666">(fixed direction in space)</text>
+  </g>
+  
+  <!-- Rotation arrows -->
+  <g transform="translate(250, 220)">
+    <!-- Circular arcs with arrows to indicate rotation -->
+    <path d="M -40 -90 A 90 90 0 0 1 -28 -95" fill="none" stroke="#8B4513" 
+          stroke-width="3" marker-end="url(#arrowhead-brown)"/>
+    <path d="M 40 90 A 90 90 0 0 1 28 95" fill="none" stroke="#8B4513" 
+          stroke-width="3" marker-end="url(#arrowhead-brown)"/>
+    
+    <!-- Indicative text -->
+    <text x="-70" y="-70" font-family="Arial, sans-serif" font-size="10" 
+          fill="#8B4513" font-weight="bold">Table</text>
+    <text x="-70" y="-58" font-family="Arial, sans-serif" font-size="10" 
+          fill="#8B4513" font-weight="bold">rotation</text>
+  </g>
+  
+  <!-- Explanatory note -->
+  <g transform="translate(20, 380)">
+    <rect x="0" y="0" width="400" height="115" fill="#f0f8ff" 
+          stroke="#4682b4" stroke-width="2" rx="8"/>
+    <text x="200" y="22" text-anchor="middle" font-family="Arial, sans-serif" 
+          font-size="13" font-weight="bold" fill="#4682b4">Experimental Principle</text>
+    
+    <text x="15" y="42" font-family="Arial, sans-serif" font-size="11" fill="#333">
+      • Table rotation → changing arm orientation relative to Earth's motion
+    </text>
+    <text x="15" y="58" font-family="Arial, sans-serif" font-size="11" fill="#333">
+      • Expected: interference fringe variation with orientation
+    </text>
+    <text x="15" y="76" font-family="Arial, sans-serif" font-size="11" fill="#333">
+      • Observed: no detectable variation → constant speed of light!
+    </text>
+    <text x="15" y="94" font-family="Arial, sans-serif" font-size="11" fill="#333">
+      • Impact: questioning of ether and birth of special relativity
+    </text>
+  </g>
+  
+  <!-- Color legend -->
+  <g transform="translate(440, 380)">
+    <rect x="0" y="0" width="250" height="115" fill="#f9f9f9" 
+          stroke="#999" stroke-width="1" rx="5"/>
+    <text x="15" y="20" font-family="Arial, sans-serif" font-size="12" 
+          font-weight="bold" fill="#333">Legend:</text>
+    
+    <line x1="15" y1="35" x2="35" y2="35" stroke="#0066cc" stroke-width="3"/>
+    <text x="42" y="40" font-family="Arial, sans-serif" font-size="10" 
+          fill="#333">Horizontal arm (// motion)</text>
+    
+    <line x1="15" y1="50" x2="35" y2="50" stroke="#00cc66" stroke-width="3"/>
+    <text x="42" y="55" font-family="Arial, sans-serif" font-size="10" 
+          fill="#333">Vertical arm (⊥ motion)</text>
+    
+    <line x1="15" y1="65" x2="35" y2="65" stroke="#ff0000" stroke-width="3"/>
+    <text x="42" y="70" font-family="Arial, sans-serif" font-size="10" 
+          fill="#333">Main beam</text>
+    
+    <circle cx="25" cy="85" r="8" fill="none" stroke="#8B4513" 
+            stroke-width="2" stroke-dasharray="3,2"/>
+    <text x="42" y="90" font-family="Arial, sans-serif" font-size="10" 
+          fill="#333">Rotating table</text>
+  </g>
+</svg>
