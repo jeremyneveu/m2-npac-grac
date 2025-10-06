@@ -18,13 +18,13 @@ pages:
   stage: build
   script:
     # - mamba install -y -c conda-forge nodejs pyyaml
-    - mamba install -c conda-forge mystmd==1.3.2
+    - mamba install -c conda-forge mystmd
     # - node -v
     # - npm install -g mystmd@latest
     - myst -v
     - cp myst.yml tmp_myst.yml
     #- python remove_toc.py
-    - export BASE_URL="/m2-npac-ac"  # "https://m2-npac-ac.pages.in2p3.fr/"  # "/m2-npac-ac"
+    # - export BASE_URL="/m2-npac-ac"  # "https://m2-npac-ac.pages.in2p3.fr/"  # "/m2-npac-ac"
     - myst build --html
     - mv _build/html/ public
     #- mv tmp_myst.yml myst.yml
