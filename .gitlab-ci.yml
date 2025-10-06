@@ -24,7 +24,7 @@ pages:
     - myst -v
     - cp myst.yml tmp_myst.yml
     #- python remove_toc.py
-    - export BASE_URL="https://m2-npac-ac.pages.in2p3.fr/"  # "/m2-npac-ac"
+    - export BASE_URL="/m2-npac-ac"  # "https://m2-npac-ac.pages.in2p3.fr/"  # "/m2-npac-ac"
     - myst build --html
     - mv _build/html/ public
     #- mv tmp_myst.yml myst.yml
