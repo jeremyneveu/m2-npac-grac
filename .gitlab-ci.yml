@@ -25,7 +25,7 @@ pages:
     - cp myst.yml tmp_myst.yml
     #- python remove_toc.py
     - myst build --site
-    - mv _build/html/ public
+    - mv _build/site/ public
     #- mv tmp_myst.yml myst.yml
     #- myst build --html
     #- mv _build/html/ public/fr
