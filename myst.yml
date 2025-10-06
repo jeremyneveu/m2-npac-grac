@@ -56,7 +56,7 @@ project:
     heading_2: true
     heading_3: true
   toc:
-    - file: README.md
+    - file: index.md
     - title: Lectures
       children:
         - file: chapters/en/start.md
