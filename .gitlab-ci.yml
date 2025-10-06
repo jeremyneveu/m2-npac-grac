@@ -1,7 +1,7 @@
 image: condaforge/mambaforge:latest
 
 #variables:
-#  BASE_URL: "https://m2-npac-ac.pages.in2p3.fr"  # "/m2-npac-ac"
+BASE_URL: "https://m2-npac-ac.pages.in2p3.fr/"  # "/m2-npac-ac"
 
 cache:
   paths:
@@ -18,14 +18,14 @@ pages:
   stage: build
   script:
     # - mamba install -y -c conda-forge nodejs pyyaml
-    - mamba install -c conda-forge mystmd  #==1.3.2
+    - mamba install -c conda-forge mystmd==1.3.2
     # - node -v
     # - npm install -g mystmd@latest
     - myst -v
     - cp myst.yml tmp_myst.yml
     #- python remove_toc.py
-    - myst build --site
-    - mv _build/site/ public
+    - myst build --html
+    - mv _build/html/ public
     #- mv tmp_myst.yml myst.yml
     #- myst build --html
     #- mv _build/html/ public/fr
