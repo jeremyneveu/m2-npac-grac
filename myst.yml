@@ -62,7 +62,7 @@ project:
         - file: chapters/en/start.md
           children:
             - file: chapters/en/00_introduction.md
-            #- file: chapters/en/01_FLRW_metric.md
+            - file: chapters/en/01_FLRW_metric.md
             #- file: chapters/en/02_friedmann_equations.md
             #- file: chapters/en/03_cosmological_models.md
             #- file: chapters/en/04_astrophysical_emissions.md
@@ -78,7 +78,7 @@ project:
         - file: chapters/fr/start.md
           children:
             - file: chapters/fr/00_introduction.md
-            #- file: chapters/fr/01_FLRW_metric.md
+            - file: chapters/fr/01_FLRW_metric.md
             #- file: chapters/fr/02_friedmann_equations.md
             #- file: chapters/fr/03_cosmological_models.md
             #- file: chapters/en/04_astrophysical_emissions.md
@@ -105,14 +105,14 @@ project:
 
 site:
   template: book-theme
-  title: Astroparticles and Cosmology
-  nav:
-    - title: English version
-      url: /chapters/en/start
-    - title: Version française
-      url: /chapters/fr/start
-    - title: Jupyter notebooks
-      url: /lite
+  title: General Relativity, Astroparticles and Cosmology
+  #nav:
+  #  - title: English version
+  #    url: /chapters/en/start
+  #  - title: Version française
+  #    url: /chapters/fr/start
+   # - title: Jupyter notebooks
+  #    url: /lite
   actions: []
   #   - title: m2-npac-ac
   #     url: https://gitlab.in2p3.fr/m2-npac-ac/m2-npac-ac

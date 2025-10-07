@@ -103,7 +103,7 @@ Dans ce cours, comme dans beaucoup de cours de cosmologie, la [signature](https:
 
 ### Géométrie d'un Univers maximallement symétrique
 
-Trouvons maintenant une forme explicite pour $\dd \vec l^2$. Un Univers de symétrie maximale (homogène et isotrope) doit posséder une courbure constante spatialement. Cela se comprend assez intuitivement mais aussi se démontre en Relativité Générale {cite:p}`Weinberg1972` [p. 381]. Notons $a$ le rayon de courbure associé, et soit $\vec \xi = (\xi^1, \xi^2, \xi^3)$ un vecteur position dans l'espace 3D :
+Trouvons maintenant une forme explicite pour $\dd \vec l^2$. Un Univers de symétrie maximale (homogène et isotrope) doit posséder la même courbure en tout point de l'espace et dans toutes les directions. Cela se comprend assez intuitivement mais aussi se démontre en Relativité Générale {cite:p}`Weinberg1972` [p. 381]. Notons $a$ le rayon de courbure associé, et soit $\vec \xi = (\xi^1, \xi^2, \xi^3)$ un vecteur position dans l'espace 3D :
 \begin{equation}
 \dd \vec l^2 = \gamma_{ij} \dd \xi^i \dd \xi^j, \quad \text{avec}\quad i=1,2,3
 \end{equation}
@@ -139,10 +139,12 @@ où on autorise ici le rayon $a(t)$ à dépendre du temps, car a priori $\gamma_
 :::{tip} Notion de courbure
 :class: dropdown
 
-Si ces raisonnements vous troublent, rappelez-vous que c'est comme décrire la courbure d'un cercle de rayon $R$. Un cercle est un objet à une dimension car il n'y a qu'une seule direction de déplacement sur cet objet, paramétré par un angle $\theta$ par exemple). Mais il peut aussi se décrire dans un plan 2D, avec deux coordonnées $x$ et $y$ liées par l'équation :
+Si ces raisonnements vous troublent, rappelez-vous que c'est comme décrire la courbure d'un cercle de rayon $R$. Un cercle est un objet à une dimension car il n'y a qu'une seule direction de déplacement sur cet objet, paramétré par un angle $\theta$ par exemple. Mais il peut aussi se décrire dans un plan 2D, avec deux coordonnées $x$ et $y$ liées par l'équation :
 \begin{equation*}
 x^2 + y^2 = R^2
 \end{equation*}
+Les deux coordonnées sont liées par une équation qui les contraint donc on n'a bien un seul degré de liberté au final.
+
 De même, une sphère (objet à deux dimensions) peut être étudiée dans un espace avec une troisième dimension, donc trois coordonnées $(x,y,z)$ liées par l'équation :
 \begin{equation*}
 x^2 + y^2 + z^2 = R^2
