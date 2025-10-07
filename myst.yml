@@ -106,16 +106,16 @@ project:
 site:
   template: book-theme
   title: General Relativity, Astroparticles and Cosmology
-  #nav:
-  #  - title: English version
-  #    url: /chapters/en/start
-  #  - title: Version française
-  #    url: /chapters/fr/start
-   # - title: Jupyter notebooks
-  #    url: /lite
+  nav:
+    - title: English version
+      url: /chapters/en/start
+    - title: Version française
+      url: /chapters/fr/start
+    - title: Jupyter notebooks
+      url: /lite
   actions: []
-  #   - title: m2-npac-ac
-  #     url: https://gitlab.in2p3.fr/m2-npac-ac/m2-npac-ac
+    # - title: m2-npac-ac
+    #   url: https://gitlab.in2p3.fr/m2-npac-ac/m2-npac-ac
   domains: []
   options:
     folders: true
