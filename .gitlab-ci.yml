@@ -30,15 +30,17 @@ pages:
     #- cd mystmd-quickstart
     #- myst init --site
     #- myst init --project
-    - export MYST_HEADLESS=1
-    - export CI=true 
-    - export NODE_ENV=production
-    - myst build --site
-    - ls _build/site/
-    # Alternative: build directement sans vérification de serveur
-    - (myst build --html &) && sleep 10 && pkill -f "myst" && sleep 5
+    # Approche alternative - build avec jupyter-book si MyST pose problème  
+    - pip install jupyter-book
+    # Créer un _config.yml minimal pour jupyter-book en cas de besoin
+    - echo 'title:' '"M2 NPAC Cosmology"' > _config.yml
+    - echo 'execute:' >> _config.yml
+    - echo '  execute_notebooks: off' >> _config.yml
+    # Essayer MyST d'abord, puis jupyter-book en fallback
+    - (timeout 60 myst build --html 2>/dev/null && echo "MyST build successful") || (echo "MyST failed, trying jupyter-book" && jupyter-book build . --path-output _build)
     - ls -la _build/
-    - mv _build/html/ ../public
+    # Trouver le répertoire de sortie HTML
+    - if [ -d "_build/html" ]; then mv _build/html/ ../public; elif [ -d "_build/_build/html" ]; then mv _build/_build/html/ ../public; else echo "No HTML build found" && find _build -name "*.html" && exit 1; fi
     #- mv tmp_myst.yml myst.yml
     #- myst build --html
     #- mv _build/html/ public/fr
