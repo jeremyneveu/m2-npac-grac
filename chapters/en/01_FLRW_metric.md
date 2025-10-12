@@ -471,6 +471,26 @@ z = \frac{\lambda_0-\lambda_E}{\lambda_E} = \frac{5000-4861}{4861} = 0.028
 
 :::
 
+:::{note} Tired light theory and time dilation
+:class: dropdown
+
+Tired light is a hypothesis proposed to explain the Hubble-Lemaître law without invoking an expansion of the Universe, introduced by <wiki:Fritz_Zwicky> in 1929 as a possible alternative explanation. Tired light models invoke a progressive loss of energy of photons as they traverse the cosmos to produce the redshift-distance law. This poses three main problems.
+- There is no known interaction capable of degrading the energy of a photon without also modifying its momentum, which would lead to a blurring of distant objects, which is not observed. 
+- The tired light model does not predict the observed time dilation of supernova light curves at large redshift. This time dilation is a consequence of the standard interpretation of redshift: a supernova that takes 20 days to decay will appear to take 40 days to decay when observed at redshift $z=1$ ([](#fig:SNIa_stretch)).
+
+```{figure} #SNIa_stretch
+:name: fig:SNIa_stretch
+:align: center
+:width: 70%
+
+Stretch factor of Type Ia supernovae $w$ (i.e. duration normalized to 1 today) as a function of $1+z$. Cosmological time dilation requires that this varies as $1+z$ whereas the tired light hypothesis predicts no time dilation. Sources: notebook [](../../notebooks/SNIa_stretch.ipynb) and {cite:p}`Goldhaber2001`.
+```
+
+We also observe that the supernova explosion rate evolves as $1/(1+z)$, another sign of time dilation.
+
+- If light reddens without being diluted by expansion, then an initial blackbody spectrum evolves into a spectrum that deviates from the blackbody assumption. Indeed, Planck's law (<wiki:Planck's_law>) combines a density of vibrational modes with a $\nu^3$ prefactor and the Bose-Einstein distribution containing an exponential $e^{h\nu/ k_B T}$. If light gets tired, only the exponential is affected because the number of modes does not change with redshift if there is no expansion. The prefactor then differs by a shift of $(1+z)^3$ compared to a Planck law undergoing the expansion of the Universe. However, we observe that the cosmic microwave background follows the blackbody radiation law extremely precisely {cite:p}`Mather1999`.
+
+:::
 
 
 Proper distance and comoving distance
@@ -565,26 +585,6 @@ Proper distance between the Earth and a distant galaxy with no apparent proper v
 :::
 
 
-:::{note} Tired light theory and time dilation
-:class: dropdown
-
-Tired light is a hypothesis proposed to explain the Hubble-Lemaître law without invoking an expansion of the Universe, introduced by <wiki:Fritz_Zwicky> in 1929 as a possible alternative explanation. Tired light models invoke a progressive loss of energy of photons as they traverse the cosmos to produce the redshift-distance law. This poses three main problems.
-- There is no known interaction capable of degrading the energy of a photon without also modifying its momentum, which would lead to a blurring of distant objects, which is not observed. 
-- The tired light model does not predict the observed time dilation of supernova light curves at large redshift. This time dilation is a consequence of the standard interpretation of redshift: a supernova that takes 20 days to decay will appear to take 40 days to decay when observed at redshift $z=1$ ([](#fig:SNIa_stretch)).
-
-:::{figure} #SNIa_stretch
-:name: fig:SNIa_stretch
-:align: center
-:width: 70%
-
-Stretch factor of Type Ia supernovae $w$ (i.e. duration normalized to 1 today) as a function of $1+z$. Cosmological time dilation requires that this varies as $1+z$ whereas the tired light hypothesis predicts no time dilation. Sources: notebook [](../../notebooks/SNIa_stretch.ipynb) and {cite:p}`Goldhaber2001`.
-:::
-
-We also observe that the supernova explosion rate evolves as $1/(1+z)$, another sign of time dilation.
-
-- If light reddens without being diluted by expansion, then an initial blackbody spectrum evolves into a spectrum that deviates from the blackbody assumption. Indeed, Planck's law (<wiki:Planck's_law>) combines a density of vibrational modes with a $\nu^3$ prefactor and the Bose-Einstein distribution containing an exponential $e^{h\nu/ k_B T}$. If light gets tired, only the exponential is affected because the number of modes does not change with redshift if there is no expansion. The prefactor then differs by a shift of $(1+z)^3$ compared to a Planck law undergoing the expansion of the Universe. However, we observe that the cosmic microwave background follows the blackbody radiation law extremely precisely {cite:p}`Mather1999`.
-
-:::
 
 
 :::{exercise} Comoving coordinates on the sphere
