@@ -97,7 +97,7 @@ project:
       - file: notebooks/mechanical_analogy.ipynb
       - file: notebooks/astropy_cosmo.ipynb
       - file: notebooks/CMB_degrees_of_freedom.ipynb
-      - file: notebooks/SNIa.ipynb
+      # - file: notebooks/SNIa.ipynb
       - file: notebooks/SNIa_stretch.ipynb
       - file: notebooks/CMB_Saha_equation.ipynb
       - file: notebooks/CMB_BBN.ipynb

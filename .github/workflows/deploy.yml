@@ -41,8 +41,7 @@ jobs:
           post-cleanup: 'all'
       - name: Install Node.js and MyST
         run: |
-          micromamba install -y -c conda-forge nodejs=18
-          npm install -g mystmd
+          micromamba install -y -c conda-forge mystmd
         shell: micromamba-shell {0}
       - name: Setup Python environment
         run: |
