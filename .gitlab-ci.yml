@@ -32,10 +32,10 @@ pages:
     #- myst init --project
     # Build MyST simple avec timeout
     - export CI=true
-    - timeout 180 myst build --html || echo "Build completed (timeout is normal in CI)"
+    - myst build --html
     - ls -la _build/
     # Trouver le répertoire de sortie HTML
-    - if [ -d "_build/html" ]; then mv _build/html/ ../public; elif [ -d "_build/_build/html" ]; then mv _build/_build/html/ ../public; else echo "No HTML build found" && find _build -name "*.html" && exit 1; fi
+    - mv _build/html/ ../public
     #- mv tmp_myst.yml myst.yml
     #- myst build --html
     #- mv _build/html/ public/fr
