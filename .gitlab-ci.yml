@@ -23,6 +23,7 @@ pages:
     # - npm install -g mystmd@latest
     - myst -v
     - cp myst.yml tmp_myst.yml
+    - rm myst.yml
     #- python remove_toc.py
     # - export BASE_URL="/m2-npac-ac"  # "https://m2-npac-ac.pages.in2p3.fr/"  # "/m2-npac-ac"
     - git clone https://github.com/jupyter-book/mystmd-quickstart.git
