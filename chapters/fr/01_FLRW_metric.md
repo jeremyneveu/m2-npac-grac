@@ -603,11 +603,11 @@ Pour se créer une intuition sur la géométrie courbe et les coordonnées comob
 :label: exo:sphere-comobile-sol
 :class: dropdown
 
-1. La coordonnée comobile $\chi$ est explicitement l'angle polaire entre l'observateur et la galaxie. La distance propre est la longueur de l'arc qui est $D_p = a(t) \chi$ comme dans la géométrie habituelle. La coordonnée $\sigma$ est liée à la longueur $b$ de la corde à cet angle $\chi$ par :
+1. La coordonnée comobile $\chi$ est explicitement l'angle polaire entre l'observateur et la galaxie. La distance propre est la longueur de l'arc qui est $D_p = a(t) \chi$ comme dans la géométrie habituelle. La coordonnée $\sigma$ est liée à l'angle $\chi$ par :
 \begin{equation}
 \sigma = \sin \chi = \frac{b}{a(t)}
 \end{equation}
-Notons également que $b$ est le rayon du cercle de colatitude $\chi$ : $b = a(t) \sin \chi$. 
+où $b$ est le rayon du cercle de colatitude $\chi$. 
 
 2. Avec la projection polaire [](#fig:projection_polaire), on voit que $\theta$ est l'angle délimitant un arc de taille $l$ et de rayon $b$, le rayon du cercle de latitude de $\chi$. Ainsi :
 \begin{equation}

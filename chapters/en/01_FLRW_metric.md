@@ -603,11 +603,11 @@ Let's consider that an observer is located at $(\chi,\theta)=(0, 0)$ and a galax
 :label: exo:sphere-comoving-sol
 :class: dropdown
 
-1. The comoving coordinate $\chi$ is explicitly the polar angle between the observer and the galaxy. The proper distance is the arc length, which is $D_p = a(t) \chi$ as in usual geometry. The coordinate $\sigma$ is related to the length $b$ of the chord at this angle $\chi$ by :
+1. The comoving coordinate $\chi$ is explicitly the polar angle between the observer and the galaxy. The proper distance is the arc length, which is $D_p = a(t) \chi$ as in usual geometry. The coordinate $\sigma$ is related to the angle $\chi$ by :
 \begin{equation}
 \sigma = \sin \chi = \frac{b}{a(t)}
 \end{equation}
-Note also that $b$ is the radius of the circle of colatitude $\chi$: $b = a(t) \sin \chi$. 
+with $b$ the radius of the circle of colatitude $\chi$. 
 
 2. Using polar projection [](#fig:projection_polaire), we see that $\theta$ is the angle delimiting an arc of size $l$ and radius $b$, the radius of $\chi$'s latitude circle. Thus :
 \begin{equation}
