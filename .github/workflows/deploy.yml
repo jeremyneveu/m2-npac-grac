@@ -28,35 +28,33 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    container:
-      image: mambaorg/micromamba:latest
     steps:
       - uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v3
-      - name: Setup Node.js
+      - name: Setup Micromamba
+        uses: mamba-org/setup-micromamba@v1
+        with:
+          micromamba-version: 'latest'
+          environment-name: build-env
+          cache-environment: true
+          post-cleanup: 'all'
+      - name: Install Node.js and MyST
         run: |
-          micromamba install -y -n base -c conda-forge nodejs=18
-          eval "$(micromamba shell hook --shell bash)"
-          micromamba activate base
-      - name: Install MyST
-        run: |
-          eval "$(micromamba shell hook --shell bash)"
-          micromamba activate base
+          micromamba install -y -c conda-forge nodejs=18
           npm install -g mystmd
+        shell: micromamba-shell {0}
       - name: Setup Python environment
         run: |
-          eval "$(micromamba shell hook --shell bash)"
-          micromamba activate base
           micromamba install -y -c conda-forge python pip
+        shell: micromamba-shell {0}
       - name: Build HTML Assets
         run: |
-          eval "$(micromamba shell hook --shell bash)"
-          micromamba activate base
           myst build --html
           pip install jupyterlite-core jupyterlite-xeus jupyterlab notebook ipympl ipywidgets
           rm -rf notebooks/TP_SN.ipynb
           jupyter lite build --XeusAddon.environment_file=jupyterlite-environment.yml --contents=notebooks --output-dir=public/lite
+        shell: micromamba-shell {0}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
