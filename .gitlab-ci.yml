@@ -26,10 +26,10 @@ pages:
     # Forcer le mode offline
     npm_config_prefer_offline: "true"
   script:
-    # - mamba install -y -c conda-forge nodejs pyyaml
-    - mamba install -c conda-forge mystmd
-    # - node -v
-    # - npm install -g mystmd@latest
+    # Installation alternative de MyST pour éviter les problèmes de serveur
+    - mamba install -y -c conda-forge nodejs=18
+    - npm install -g mystmd@1.1.49  # Version stable qui ne force pas le serveur
+    # - mamba install -c conda-forge mystmd
     - myst -v
     - cp myst.yml tmp_myst.yml
     #- rm myst.yml
@@ -39,15 +39,31 @@ pages:
     #- cd mystmd-quickstart
     #- myst init --site
     #- myst init --project
-    # Build MyST avec contournement des restrictions GitLab
-    - echo "127.0.0.1 localhost" >> /etc/hosts || true
+    # Solution alternative : utiliser une version de MyST sans serveur ou bypass complet
     - |
-      # Méthode alternative : build en arrière-plan avec kill automatique
-      (myst build --html &) 
-      MYST_PID=$!
-      sleep 30  # Laisser le temps au build de se faire
-      kill $MYST_PID 2>/dev/null || true
-      sleep 5   # Laisser le temps aux fichiers de se finaliser
+      # Essayer différentes approches de build
+      echo "Attempting MyST build with different strategies..."
+      
+      # Stratégie 1: Build avec redirection complète
+      echo "Strategy 1: Full redirect build"
+      if (myst build --html </dev/null &>/dev/null &) then
+        MYST_PID=$!
+        sleep 45
+        kill -9 $MYST_PID 2>/dev/null || true
+        wait $MYST_PID 2>/dev/null || true
+        echo "Strategy 1 completed"
+      fi
+      
+      # Vérifier si on a des fichiers
+      if [ -d "_build/html" ] && [ "$(ls -A _build/html)" ]; then
+        echo "Build successful with strategy 1"
+      else
+        echo "Strategy 1 failed, trying strategy 2: Build without server validation"
+        # Stratégie 2: Modifier temporairement la config pour désactiver le serveur
+        sed -i 's/template: book-theme/template: article-theme/g' myst.yml 2>/dev/null || true
+        timeout 120 myst build --html &>/dev/null || echo "Build timeout reached (expected)"
+        sed -i 's/template: article-theme/template: book-theme/g' myst.yml 2>/dev/null || true
+      fi
     - ls -la _build/
     - ls -la _build/html
     # Trouver le répertoire de sortie HTML
