@@ -31,7 +31,7 @@ Galaxy distribution compiled by the eBOSS survey. Every dot in this “pie” di
 Temperature map of the Cosmic Microwave Background (CMB) observed by the Planck satellite. The relative difference observed between the  temperature of hot (red) and cold (blue) spots relative to the mean the mean is of the order of $\delta \theta / \theta \approx 10^{-5}$.
 :::
 
-To be able to build a model of the Universe, i.e. a theoretical construct capable of describing the contents of the Universe and its evolution, we need to be able to Einstein's equation of General Relativity. But how much detail is needed to describe the Universe sufficiently well on large scales? Parametrizing Einstein's equation to include the scale of the solar system is both illusory and unnecessary. What is the the structure of the Universe on larger scales? Here, nature has given us a wonderful gift, which will considerably simplify the writing of a cosmological model based on the equations of General Relativity. of General Relativity.
+To be able to build a model of the Universe, i.e. a theoretical construct capable of describing the contents of the Universe and its evolution, we need to solve Einstein's equation of General Relativity. But to what level of detail is it necessary to describe the Universe sufficiently well on large scales? Parametrizing Einstein's equation to include the scale of the solar system is both illusory and unnecessary. What is the structure of the Universe on the largest scales? Here, nature has given us a wonderful gift, which will considerably simplify the writing of a cosmological model based on the equations of General Relativity.
 
 :::{important} Cosmological principle
 
@@ -40,7 +40,7 @@ At sufficiently large scales, the universe is spatially homogeneous and isotropi
 
 1. the Universe is homogeneous: the metric therefore does not depend on an observer's position in space, so no position is particular in the Universe. This assertion, based on the Copernican principle, is only statistically true, as we can observe that matter has formed lumps (planets, stars, galaxies, etc.) in the middle of large voids. However, observation of the Universe on large scales shows that the Universe is indeed globally homogeneous on scales larger than $100\,$Mpc[^pc] (see [](#fig:sdss) and for example {cite:t}`Scrimgeour2012` for a measure of the Universe's homogeneity by counting galaxies).
 
-2. the Universe is isotropic: no direction is privileged. This means that observations made in two different directions across the sky are equivalent. This is well verified by observations of the cosmic microwave background (CMB), whose temperature is measured to be identical at $2.725pm0.002\,$K in all directions of space {cite:p}`Mather1999`. Only temperature fluctuations of the order of $10^{-5}$\,K are detected in this image of the young Universe (see [](#fig:cmb_planck) and for example {cite:t}`ThePlanckCollaboration2013XIII` for a verification of the isotropy principle using the Sunyaev-Zeldovich effect).
+2. the Universe is isotropic: no direction is privileged. This means that observations made in two different directions across the sky are equivalent. This is well verified by observations of the cosmic microwave background (CMB), whose temperature is measured to be identical at $2.725\pm 0.002\,$K in all directions of space {cite:p}`Mather1999`. Only temperature fluctuations of the order of $10^{-5}\,$K are detected in this image of the young Universe (see [](#fig:cmb_planck) and for example {cite:t}`ThePlanckCollaboration2013XIII` for a verification of the isotropy principle using the Sunyaev-Zeldovich effect).
 
 Completely ignoring what happens at “insufficiently” large scales is the first step towards building a cosmological solution to General Relativity. Armed with these observational facts, we will impose homogeneity and isotropy on the metric and distribution of matter (i.e. the energy-impulsion tensor).
 
@@ -65,7 +65,7 @@ The space-time diagram of a homogeneous, isotropic Universe has a time axis orth
 :::
 
 
-First of all, if the Universe is isotropic, we can check that the crossed components $g_{i0}$ and $g_{i0}$ are zero. If this were not the case, we would have a privileged direction in the universe. We can convince ourselves of this by noticing that these components are non-zero if we perform a Lorentz transformation [](#eq:lorentz)-[](#eq:lorentz2), precisely when we take a frame of reference in uniform translation with respect to another, thus moving in a chosen direction. 
+First of all, if the Universe is isotropic, we can check that the crossed components $g_{i0}$ and $g_{0i}$ are zero. If this were not the case, we would have a privileged direction in the universe. We can convince ourselves of this by noticing that these components are non-zero if we perform a Lorentz transformation [](#eq:lorentz)-[](#eq:lorentz2), precisely when we take a frame of reference in uniform translation with respect to another, thus moving in a chosen direction. 
 
 Another way of convincing ourselves is to consider a 2D spacetime. If the metric has the form :
 \begin{equation}
@@ -73,7 +73,7 @@ g=\begin{pmatrix} g_{00} & g_{01} \\\ g_{01} & g_{11} \end{pmatrix}
 \end{equation}
 then the equation for light-like trajectories is :
 $$
-\dd s^2=0=g_{00}c^2\dd t^2+2g_{01},c\,\dd x\,\dd t+g_{11}\dd x^2.$$
+\dd s^2=0=g_{00}c^2\dd t^2+2g_{01} c\,\dd x\,\dd t+g_{11}\dd x^2.$$
 We can then check, by solving the second-degree equation in $\dd t$ that if $g_{01} \neq 0$, two opposite $\dd x$ give two different values of positive $\dd t$. In other words, an observer will receive at different times the light pulses emitted simultaneously by two sources located at the same distance in opposite $\pm \dd x$ directions. This obviously breaks isotropy. The $g_{0i}$ and $g_{i0}$ terms of the metric are therefore zero. This means that the time vector $\vec e_0$ is orthogonal to the spatial basis vectors $\vec e_i$.
 
 
@@ -157,10 +157,12 @@ The infinitesimal distance $\dd \vec l^2$ between two points of the hypersurface
 \end{equation}
 where the $+$ case corresponds to spherical geometry, the $-$ case to hyperbolic geometry {cite:p}`Weinberg1972` [p. 390-391].
 
-However, the closure equation [](#eq_hyp_sph) links $r, w$ and $a$, so we can replace $\dd w$ by an expression that is a function of $r$ and $a$ (i.e. without the fourth dimension). Differentiating equation [](#eq_hyp_sph) gives the relation 
+Now we need to eliminate the 4th dimension $w$ using the constraint equation to recover a 3-dimensional parameterization.
+
+Differentiating equation [](#eq_hyp_sph) gives the relation 
 $$
 (\vec r \cdot \dd \vec r) \pm w\dd w=0,$$
-so, injecting equation [](#eq_hyp_sph) again, we obtain :
+Now, the constraint equation [](#eq_hyp_sph) links $r, w$ and $a$, so we can replace $\dd w$ by an expression that is a function of $r$ and $a$ (i.e. without the fourth dimension):
 \begin{equation}
 (\vec r \cdot \dd \vec r)^2=(w\dd w)^2 \Rightarrow (\dd w)^2= \frac{(\vec r \cdot \dd \vec r)^2}{w^2} = \frac{(\vec r \cdot \dd \vec r)^2}{a^2(t) \mp r^2}
 \end{equation}
@@ -179,7 +181,7 @@ k = \left\lbrace
  -1 & \text{3-hyperboloid} \\
 \end{array}\right.
 \end{equation}
-For the three possible geometries[^flat] of a maximally symmetrical Universe, we have :
+For the three possible geometries of a maximally symmetrical Universe, we have :
 \begin{equation}
 \dd \vec l^2= \dd \vec r^2 + k\frac{ (\vec r \cdot \dd \vec r)^2}{a^2(t) - k r^2}
 \end{equation}
@@ -193,7 +195,7 @@ Finally, let's introduce the rescaled variable $\vec\sigma=\vec r/a(t)$, and we 
 The Friedmann-Lemaître-Robertson-Walker metric describing a homogeneous, isotropic Universe is finally written :
 \begin{equation}
 \label{FLRW-metric}
-\dd s^2=-c^2\dd t^2 + a^2(t) \left(\dd \sigma^2 + k\frac{(\sigma \cdot \dd \sigma)^2}{1 - k \sigma^2} \right)
+\dd s^2=-c^2\dd t^2 + a^2(t) \left(\dd \vec \sigma^2 + k\frac{(\vec \sigma \cdot \dd \vec \sigma)^2}{1 - k \sigma^2} \right)
 \end{equation}
 
 The Friedmann-Lemaître-Robertson-Walker (FLRW) metric is the basic framework of the Standard Cosmological Model. The assumptions of homogeneity and isotropy led directly to a metric describing a universe with only three possible geometries (flat, 3-sphere, 3-hyperboloid) and a scaling factor $a(t)$ affecting distances. Note that, thanks to the imposition of homogeneity and isotropy symmetries, we have reduced the writing of the metric $g_{\mu\nu}$ (which is a symmetric tensor) consisting a priori of 10 unknown independent components to a tensor with a single unknown function $a(t)$.
@@ -202,7 +204,7 @@ The Friedmann-Lemaître-Robertson-Walker (FLRW) metric is the basic framework of
 :::{important} Where are the units?
 The distance element $\dd s$ has the dimension of a length, so do all the terms in equation [](#FLRW-metric). 
 
-Some works propose that the scale factor is a dimensionless function of time, and that $\sigma$ retains the dimension of a length, normalized by $a(t)$. This makes it possible to define everything, in particular by assuming that today the scale factor is $a_0=1$, but then we need to redefine $k$ and give it the unit of curvature (inverse of distance squared).
+Some textbooks propose that the scale factor is a dimensionless function of time, and that $\sigma$ retains the dimension of a length, normalized by $a(t)$. This makes it possible to define everything in particular by assuming that today the scale factor is $a_0=1$, but then we need to redefine $k$ and give it the unit of curvature (inverse of distance squared).
 
 In this course, we'll be dealing extensively with distances in cosmology, and in this case it's more convenient to think of the scale factor as homogeneous to a length, and the spatial coordinates $\vec \sigma$ as a dimensionless vector. The curvature parameter $k$ is then also a dimensionless integer.
 
@@ -213,7 +215,7 @@ It's important to understand the physical significance of the expansion factor $
 $$
 \frac{\dd \vec r}{\dd t} = \frac{\dd a(t)\vec \sigma}{\dd t} = \dot a \vec \sigma + a \dot{\vec \sigma} = \frac{\dot a}{a} \vec r
 $$
-because $\dot{\vec \sigma} = \vec 0$ if the particle has no motion of its own, with the point $\;\dot{}\;$ expressing a derivative with respect to time $t$. We thus obtain a direct relationship between distance from a central observer and apparent velocity: this is Hubble's law. The distance rate is given by the Hubble parameter, which quantifies the rate of change of the scale factor: 
+because $\dot{\vec \sigma} = \vec 0$ if the galaxy has no proper motion[^vpec], with the point $\;\dot{}\;$ expressing a derivative with respect to time $t$. We thus obtain a direct relationship between distance from a central observer and apparent velocity: this is *Hubble's law*. The recession rate is given by the Hubble parameter, which quantifies the rate of change of the scale factor: 
 \begin{equation}
 \label{eq:H-def}
 \boxed{\displaystyle H(t) = \frac{\dot a(t)}{a(t)}}
@@ -260,16 +262,16 @@ Take two galaxies: they form a triangle with the Earth, which, in a 3-sphere, ha
 
 :::
 
-Comobiles coordinates
+Comoving coordinates
 ---------------------
 
-It's important to note that not all observers see the Universe as isotropic, but only so-called *mobile* observers, who are locally at rest with most of the matter in their vicinity. We, for example, are not mobile observers: when we observe the temperature of the CMB, the first feature we see is a large temperature dipole (warmer on one side, colder on the opposite side), which is the result of the particular motion of our solar system in the galaxy, and of our galaxy in the Universe (and of our group of galaxies). If we were to subtract this own motion from the CMB frame of reference, then we would be comoving observers. Thus, we can define a coordinate system associated with observers without proper motion, whose relative proper distances increase only with the scaling factor $a(t)$ {cite:p}`Weinberg1972`[p. 409].
+It's important to note that not all observers see the Universe as isotropic, but only so-called *comoving* observers, who are locally at rest with most of the matter in their vicinity. We, for example, are not comoving observers: when we observe the temperature of the CMB, the first feature we see is a large temperature dipole (warmer on one side, colder on the opposite side), which is the result of the proper motion of our solar system in the galaxy, and of our galaxy in the Universe (and of our group of galaxies). If we were to subtract this proper motion relative to the CMB frame of reference, then we would be comoving observers. Thus, we can define a coordinate system associated with observers without proper motions, whose relative proper distances increase only with the scale factor $a(t)$ {cite:p}`Weinberg1972`[p. 409].
 
 In the FLRW metric, where the expansion of the Universe is factorized by a scale factor $a(t)$, the spatial coordinates $\vec \sigma$ are called *comoving coordinates*. There is considerable freedom in the choice of comoving coordinates. 
 
-### Spherical coordinates
+### Spherical parameterization
 
-We often prefer spherical coordinates $(ct, \sigma, \theta, \phi)$ with the observer (ourselves) at the origin, such as :
+We often prefer the spherical parameterization $(ct, \sigma, \theta, \phi)$ with the observer (ourselves) at the origin, such as :
 \begin{equation}
 \begin{aligned}
 \sigma_1 &= \sigma \sin \theta \cos \phi \\
@@ -296,19 +298,19 @@ $$L(t) = 2 \pi a(t)$$
 :::
 
 
-### Cartesian coordinates
+### Cartesian parameterization
 
-The flat-universe case greatly simplifies the calculations that follow. Since the assumption of zero curvature is compatible with the ever-stricter constraints of cosmological observations, we will henceforth concentrate our analytical developments on the flat universe, mentioning results for the general case where necessary. In the case of zero curvature, it may be convenient to use Cartesian comoving coordinates $(ct, x, y, z)$, such as :
+The flat-universe case greatly simplifies the calculations that follow. Since the assumption of zero curvature is compatible with the increasingly stringent constraints of cosmological observations, we will henceforth concentrate our analytical developments on the flat universe, mentioning results for the general case where necessary. In the case of zero curvature, it may be convenient to use Cartesian comoving coordinates $(ct, x, y, z)$, such as :
 \begin{equation}
 \sigma_1 = x,\quad \sigma_2 = y,\quad \sigma_3 = z,\quad \sigma^2 = x^2 + y^2 + z^2
 \end{equation}
 The FLRW metric is written in a flat universe:
 \begin{equation}
-g_{pmatrix} = 
+g_{\mu\nu} = 
 \begin{pmatrix}
 -1 & 0 & 0 & 0 \\ 
-0 & a^2(t) & 0 & 0\\
-0 & 0 & a^2(t) & 0 \\
+0 & a^2(t) & 0 & 0 \\ 
+0 & 0 & a^2(t) & 0 \\ 
 0 & 0 & 0 & a^2(t)
 \end{pmatrix}
 \end{equation}
@@ -326,7 +328,7 @@ where $s$ is any parameter describing the position along the geodesic (e.g. prop
 \label{geodesic-cov}
 {\dd^2 x_\mu \over \dd s^2} -\Gamma^{\nu}_{\,\,\mu\kappa} {\dd x_\nu \over \dd s}{\dd x^\kappa \over \dd s}=0.
 \end{equation} 
-Let's define the quadri-velocity $U^\mu$ along a Universe line by $U^\mu = \dd x^\mu / \dd s$. Then :
+Let's define the four-velocity $U^\mu$ tangent to the trajectory $x^\mu(s)$ by $U^\mu = \dd x^\mu / \dd s$. Then :
 \begin{equation}
 {\dd U_\mu \over \dd s} = \Gamma^{\nu}_{\,\,\mu\kappa} U_\nu U^\kappa= \frac{1}{2} \frac{\partial g_{\alpha\beta}}{\partial x^\mu} U^\alpha U^\beta.
 \end{equation} 
@@ -338,7 +340,7 @@ The preceding equality is demonstrated in {cite:t}`hobson2006general`[p. 81]. He
 \begin{align*}
 \Gamma^{\nu}_{\,\,\mu\kappa} U_\nu U^\kappa
 & = \frac{1}{2}g^{\lambda\nu}\left( \frac{\partial g_{\lambda\kappa}}{\partial x^\mu} + \frac{\partial g_{\mu\lambda}}{\partial x^\kappa} - \frac{\partial g_{\mu\kappa}}{\partial x^\lambda} \right) U_\nu U^\kappa \\\\\
-& = \frac{1}{2}\left( \frac{\partial g_{\lambda\kappa}}{\partial x^\mu} + \frac{\partial g_{\mu\lambda\kappa}}{\partial x^\kappa} - \frac{\partial g_{\mu\kappa}}{\partial x^\lambda\kappa}{\partial x^\lambda} \right) U^\lambda U^\kappa  
+& = \frac{1}{2}\left( \frac{\partial g_{\lambda\kappa}}{\partial x^\mu} + \frac{\partial g_{\mu\lambda}}{\partial x^\kappa}  - \frac{\partial g_{\mu\kappa}}{\partial x^\lambda} \right) U^\lambda U^\kappa  
 = \frac{1}{2} \frac{\partial g_{\lambda\kappa}}{\partial x^\mu} U^\lambda U^\kappa
 \end{align*}
 because the metric is a symmetrical tensor so ${\partial_\kappa g_{\mu\lambda}} - {\partial_\lambda g_{\mu\kappa}} = 0$.
@@ -358,7 +360,7 @@ $$U^3 = \frac{\dd \phi }{ \dd s} = 0 \Rightarrow \phi = \text{constant}$$.
 
 Let's move on to the $\mu=2$ case. The only component of the metric depending on $\theta$ is 
 $g_{33}$ but $U_3$ is identically zero, so :
-$$frac{\dd U_2}{\dd s} = \frac{1}{2} \frac{\partial g_{\alpha\beta}}{\partial x^2} U^\alpha U^\beta = \frac{1}{2} \frac{\partial g_{33}}{\partial x^2} U^3 U^3 = 0.$$
+$$\frac{\dd U_2}{\dd s} = \frac{1}{2} \frac{\partial g_{\alpha\beta}}{\partial x^2} U^\alpha U^\beta = \frac{1}{2} \frac{\partial g_{33}}{\partial x^2} U^3 U^3 = 0.$$
 In the same way, we also have :
 $$U_2 = g_{22} U^2 = a^2(t) \sigma^2 U^2 $$
 which cancels out at $\sigma=0$, so $U^2$ is zero all along the trajectory. From this we deduce:
@@ -394,20 +396,22 @@ because along its geodesic $\theta$ and $\phi$ are constant ($\dd \theta = \dd \
 :::{math}
 :label: eq:comoving
 
-\int_{t_E}^{t_0} \frac{c\dd t}{a(t)} = -\int_{t_0}^{t_E} \frac{c\dd t}{a(t)} = \int_0^{\sigma_E}\frac{c\dd\sigma}{sqrt{1-k\sigma^2}} = \left\lbrace
+\int_{t_E}^{t_0} \frac{c\dd t}{a(t)} =  -\int_{t_0}^{t_E} \frac{c\dd t}{a(t)} 
+= \int_0^{\sigma_E}\frac{\dd\sigma}{\sqrt{1-k\sigma^2}}
+= \left\lbrace
 \begin{array}{cl}
-    \arcsin\,\sigma_E & \text{ if } k=+1  \\
+    \arcsin \sigma_E & \text{ if } k=+1 \\
     \sigma_E & \text{ if } k=0 \\
-    \text{arcsh},\sigma_E & \text{ if } k=-1 \\
+    \text{arcsh}\,\sigma_E & \text{ if } k=-1 
 \end{array}
-\right. .
+\right.
 ::: 
-with $\dd \sigma < 0$ for $\dd t > 0$ considering a photon going from the source to the observer in 0.
+with the minus sign coming from the fact that we consider a photon going from the source towards the observer at 0.
 
 For an electromagnetic wave with period $T$, the expression [](#eq:ds2_lumiere) being valid at any instant, we can calculate the same integral for the wave emitted at instant $t_E+T_E$ and received at instant $t_0+T_0$ (we assume that the period $T$ will vary with time): 
 $$
 \label{eq:comovingT}
-\int_{t_E+T_E}^{t_0+T_0} \frac{c \dd t}{a(t)}= \int_0^{\sigma_E}\frac{\dd \sigma}{1-k\sigma^2}.
+\int_{t_E+T_E}^{t_0+T_0} \frac{c \dd t}{a(t)}= \int_0^{\sigma_E}\frac{\dd\sigma}{\sqrt{1-k\sigma^2}}.
 $$
 Equating the expressions [](#eq:comoving) and [](#eq:comovingT), since the period $T$ is small compared to the variations in the scale factor $a(t)$ for usual electromagnetic waves, we obtain: 
 $$
@@ -422,9 +426,9 @@ Directly, if space is expanding, then $a(t_E) < a(t_0)$ and the received wavelen
 :::{math}
 :label: eq:redshift
 
- \fbox{$ \displaystyle{z = \frac{\lambda_0-\lambda_E}{\lambda_E} \Leftrightarrow 1+z = \frac{a_0}{a(t_E)}} $}.
+ \boxed{ \displaystyle{z = \frac{\lambda_0-\lambda_E}{\lambda_E} \Leftrightarrow 1+z = \frac{a_0}{a(t_E)} }}
 :::
-The spectral shift is both directly related to the scaling parameter $a(t)$, and to an experimental quantity that can be directly measured on the emission spectrum of distant objects. Indeed, by looking at the position of the absorption and emission lines of distant objects, we can deduce their spectral shifts relative to the same chemical elements located on Earth, at rest. This experimental data is therefore often associated with the definition of distances in cosmology.
+The spectral shift is both directly related to the scale parameter $a(t)$, and to an experimental quantity that can be directly measured on the emission spectrum of distant objects. Indeed, by looking at the position of the absorption and emission lines of distant objects, we can deduce their spectral shifts relative to the same chemical elements located on Earth, at rest. This experimental data is therefore often associated with the definition of distances in cosmology. The most distant galaxy observed to date has a redshift $z=14.32^{+0.08}_{-0.20}$ (JWST: <doi:10.1038/s41586-024-07860-9>).
 
 
 :::{exercise} Measuring redshift
@@ -480,14 +484,16 @@ Let a transmitting object be located at comoving coordinates $(\sigma_E, \theta_
 D_p(\sigma_E, t) = \int_0^{\sigma_E}
  \sqrt{g_{\sigma\sigma}}\dd\sigma' = \int_0^{\sigma_E}\frac{a(t)\dd\sigma'}{\sqrt{1-k\sigma'^2}} = a(t) \chi(\sigma_E)
 :::
-where $\chi(\sigma_E)$ is the _distance comoving_ between this object and the observer:
+where $\chi(\sigma_E)$ is the _comoving distance_ between this object and the observer:
 :::{math}
 :label: eq:dist-comoving
 
-\chi(\sigma_E) = \int_0^{\sigma_E}\frac{\dd\sigma'}{\sqrt{1-k\sigma'^2}} = \left\lbrace\begin{array}{cl}
-    \arcsin\sigma_E & \text{ si } k=+1 \\
-    \sigma_E & \text{ si } k=0 \\
-    \text{arcsh},\sigma_E & \text{ si } k=-1 
+\chi(\sigma_E) = \int_0^{\sigma_E}\frac{\dd\sigma'}{\sqrt{1-k\sigma'^2}}
+= \left\lbrace
+\begin{array}{cl}
+    \arcsin\sigma_E & \text{ if } k=+1  \\
+    \sigma_E  & \text{ if } k=0 \\
+    \text{arcsh}\,\sigma_E & \text{ if } k=-1 
 \end{array}
 \right.
 :::
@@ -495,10 +501,12 @@ We can see that the proper distance $D_p$ has the unit of a length, whereas the 
 
 Reciprocally, we define $f_k(\chi)$ as follows:
 \begin{equation}
-\sigma = f_k(\chi) = \left\lbrace\begin{array}{cl}
-    \sin\chi & \text{ si } k=+1 \\
-    \chi & \text{ si } k=0 \\
-    \sinh\chi & \text{ si } k=-1 
+\sigma = f_k(\chi) = 
+\left\lbrace
+\begin{array}{cl}
+    \sin\chi & \text{ if } k=+1  \\
+    \chi  & \text{ if } k=0 \\
+    \sinh\chi & \text{ if } k=-1 
 \end{array}
 \right.
 \end{equation}
@@ -557,7 +565,29 @@ Proper distance between the Earth and a distant galaxy with no apparent proper v
 :::
 
 
-:::{exercise} Comobiles coordinates on the sphere
+:::{note} Tired light theory and time dilation
+:class: dropdown
+
+Tired light is a hypothesis proposed to explain the Hubble-Lemaître law without invoking an expansion of the Universe, introduced by <wiki:Fritz_Zwicky> in 1929 as a possible alternative explanation. Tired light models invoke a progressive loss of energy of photons as they traverse the cosmos to produce the redshift-distance law. This poses three main problems.
+- There is no known interaction capable of degrading the energy of a photon without also modifying its momentum, which would lead to a blurring of distant objects, which is not observed. 
+- The tired light model does not predict the observed time dilation of supernova light curves at large redshift. This time dilation is a consequence of the standard interpretation of redshift: a supernova that takes 20 days to decay will appear to take 40 days to decay when observed at redshift $z=1$ ([](#fig:SNIa_stretch)).
+
+:::{figure} #SNIa_stretch
+:name: fig:SNIa_stretch
+:align: center
+:width: 70%
+
+Stretch factor of Type Ia supernovae $w$ (i.e. duration normalized to 1 today) as a function of $1+z$. Cosmological time dilation requires that this varies as $1+z$ whereas the tired light hypothesis predicts no time dilation. Sources: notebook [](../../notebooks/SNIa_stretch.ipynb) and {cite:p}`Goldhaber2001`.
+:::
+
+We also observe that the supernova explosion rate evolves as $1/(1+z)$, another sign of time dilation.
+
+- If light reddens without being diluted by expansion, then an initial blackbody spectrum evolves into a spectrum that deviates from the blackbody assumption. Indeed, Planck's law (<wiki:Planck's_law>) combines a density of vibrational modes with a $\nu^3$ prefactor and the Bose-Einstein distribution containing an exponential $e^{h\nu/ k_B T}$. If light gets tired, only the exponential is affected because the number of modes does not change with redshift if there is no expansion. The prefactor then differs by a shift of $(1+z)^3$ compared to a Planck law undergoing the expansion of the Universe. However, we observe that the cosmic microwave background follows the blackbody radiation law extremely precisely {cite:p}`Mather1999`.
+
+:::
+
+
+:::{exercise} Comoving coordinates on the sphere
 :label: exo:sphere-comoving 
 To get a feel for curved geometry and comoving coordinates, let's study a 2D sphere of radius $a(t)$.On this sphere, coordinates are given by the polar angle $\chi$ and the longitude $\theta$ (the $\phi$ coordinate is therefore omitted compared with the FLRW case). 
 Let's consider that an observer is located at $(\chi,\theta)=(0, 0)$ and a galaxy at $(\chi, 0)$. 
@@ -573,7 +603,7 @@ Let's consider that an observer is located at $(\chi,\theta)=(0, 0)$ and a galax
 :label: exo:sphere-comoving-sol
 :class: dropdown
 
-1. The comoving coordinates $\chi$ is explicitly the polar angle between the observer and the galaxy. The proper distance is the arc length, which is $D_p = a(t) \chi$ as in usual geometry. The coordinate $\sigma$ is related to the length $b$ of the chord at this angle $\chi$ by :
+1. The comoving coordinate $\chi$ is explicitly the polar angle between the observer and the galaxy. The proper distance is the arc length, which is $D_p = a(t) \chi$ as in usual geometry. The coordinate $\sigma$ is related to the length $b$ of the chord at this angle $\chi$ by :
 \begin{equation}
 \sigma = \sin \chi = \frac{b}{a(t)}
 \end{equation}
@@ -620,10 +650,45 @@ where $L$ is an object's intrinsic luminosity (in watts) and $l$ a physical size
 Cosmic time and conformal time
 --------------------------------
 
-Time deserves a special mention. In our ideal Universe, with no over- or under-densities of matter, all clocks that follow expansion (i.e. with no motion of their own) beat the second at the same rate. With infinite time at our disposal to set all the clocks in the Universe, we can propose a universal convention for synchronizing our clocks. For example, when the temperature of the CMB reaches a given value, all the civilizations in the Universe can decide that this corresponds to a certain date. It is therefore possible to define a cosmic time, common to all comoving observers {cite:p}`Weinberg1972` [p. 409]. 
+Time deserves a special mention. In our ideal Universe, with no over- or under-densities of matter, all clocks that follow expansion (i.e. with no proper motion of their own) beat the second at the same rate. With infinite time at our disposal to set all the clocks in the Universe, we can propose a universal convention for synchronizing our clocks. For example, when the temperature of the CMB reaches a given value, all the civilizations in the Universe can decide that this corresponds to a certain date. It is therefore possible to define a cosmic time, common to all comoving observers {cite:p}`Weinberg1972` [p. 409]. 
 
 
 
+
+:::{important} Key takeaways
+
+- The Cosmological Principle states that at sufficiently large scales, the universe is spatially homogeneous and isotropic. It then allows us to deduce the FLRW metric and the Hubble-Lemaître expansion law.
+- The FLRW metric has an unknown function of time $a(t)$ called the scale factor, and 3 possible geometries of constant curvature (flat, spherical, hyperbolic).
+- The scale factor is measurable by observing the dilation of spectra, commonly called redshift $z$:
+$$\frac{a}{a_0} = \frac{1}{1+z}$$
+- The expansion rate of the Universe is given by the Hubble parameter
+$$H(t) = \frac{1}{a} \frac{\dd a }{\dd t }$$
+- We can define a set of coordinates called comoving, related to physical distances by the scale factor $a(t)$.
+
+::: 
+
+
+:::{seealso}  To go further
+
+- Arguments against tired light theory: https://www.astro.ucla.edu/%7Ewright/tiredlit.htm and {cite:t}`Goldhaber2001`
+
+- Non-standard cosmologies: <wiki:Non-standard_cosmology>
+
+- Energy conservation in General Relativity: https://math.ucr.edu/home/baez/physics/Relativity/GR/energy_gr.html 
+
+- Frequently Asked Questions in Cosmology: https://www.astro.ucla.edu/%7Ewright/cosmology_faq.html#TD 
+
+:::
+
+
+
+[^gammat]: Nothing forbids it, since $\gamma_{ij}$ can depend on time
+
+[^g00]: We can introduce a new time variable $t'$ such that $\dd t' = \sqrt{\vert g_{00}\vert }\dd t$.
+
+[^pc]: 1 parsec (pc) $= 3.262$ light-years $= 3.086\times 10^{16}\,$m. $100\,\text{Mpc}\approx 3\times 10^8\;$ light-years.
+
+[^vpec]: The term $a\dot{\sigma}$ is called peculiar velocity. Galaxies have a peculiar velocity $v_{\rm pec}$ of the order of $200\,$km/s, which adds to the expansion effect. This is dominant in the local Universe up to $r \approx v_{\rm pec} / H_0 \approx 3\,$Mpc, equivalent to $z\approx v_{\rm pec}/c \approx 0.001$.
 
 % :::{exercise} Conformal time
 % :label: exo:conformal-time

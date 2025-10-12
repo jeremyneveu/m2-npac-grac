@@ -716,7 +716,7 @@ $$H(t) = \frac{1}{a} \frac{\dd a }{\dd t }$$
 
 - Arguments contre la théorie de la lumière fatiguée : https://www.astro.ucla.edu/%7Ewright/tiredlit.htm et {cite:t}`Goldhaber2001`
 
-- Cosmologies non standard : <wiki:Cosmologie_non_standard>
+- Cosmologies non standard : <wiki:Non-standard_cosmology>
 
 - Conservation de l'énergie en Relativité Générale : https://math.ucr.edu/home/baez/physics/Relativity/GR/energy_gr.html 
 

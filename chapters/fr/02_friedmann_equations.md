@@ -718,17 +718,20 @@ avec $cz$ la vitesse apparente de récession par rapport à la Terre.
 :::
 
 
-:::{note} Les mesures des paramètres cosmologiques
+:::{important} Les mesures des paramètres cosmologiques
 
 Dans le cadre d'un Univers plat, les mesures angulaires réalisées par le satellite _Planck_ sur le fond diffus cosmologique, combinées aux mesures de flux des supernovae de type Ia, et les distances angulaires des oscillations acoustiques de baryons permettent d'inférer le contenu en matière et énergie noire pour un univers plat aujourd'hui ([](doi:10.1051/0004-6361/201833910)) :
 $$
 \label{eq:omegas_planck}
 \Omega_m^0 = 0.3111 \pm 0.0056, \quad \Omega_\Lambda^0 = 0.6889 \pm 0.0056
 $$
+
 Si la courbure est un paramètre libre du modèle (on parle d'extension au modèle standard $\Lambda$CDM), on mesure :
 $$
 \Omega_k^0 = 0.0007\pm 0.0037
 $$
+ce qui est compatible avec un univers strictement plat[^flat], ou courbe mais avec avec un rayon de courbure très important puisque $\Omega_k^0 \approx k/a_0^2$.
+
 Si on propose un modèle à deux paramètres pour l'énergie noire, on obtient ([](doi:10.1051/0004-6361/201833910)) :
 $$
 w_0 = −0.957 \pm 0.080, \quad w_a = −0.29^{+0.32}_{ −0.26}
@@ -763,3 +766,5 @@ Transform Lambda into a length: Length = sqrt(1/Lambda) = ....
 
 
 [^epsP]: Le choix des notations pour ces fonctions mathématiques n'a pas été fait par hasard...
+
+[^flat]: On ne pourra _stricto sensus_ jamais mesuré que l'Univers est plat ($k=0$), mais que les mesures sont compatibles avec l'hypothèse d'un univers plat.
