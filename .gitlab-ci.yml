@@ -39,6 +39,65 @@ pages:
       execute:
         execute_notebooks: off
       EOF
+    # Générer _toc.yml automatiquement depuis myst.yml
+    - |
+      python3 << 'PYTHON_SCRIPT'
+      import yaml
+      import json
+      
+      # Lire le fichier myst.yml
+      with open('myst.yml', 'r', encoding='utf-8') as f:
+          myst_config = yaml.safe_load(f)
+      
+      def convert_myst_toc_to_jb(toc_items, is_root=False):
+          """Convertit une structure TOC MyST vers Jupyter Book"""
+          jb_items = []
+          
+          for item in toc_items:
+              if isinstance(item, dict):
+                  jb_item = {}
+                  
+                  if 'file' in item:
+                      # Supprimer l'extension .md pour jupyter-book
+                      file_path = item['file'].replace('.md', '').replace('.ipynb', '')
+                      jb_item['file'] = file_path
+                  
+                  if 'title' in item:
+                      jb_item['title'] = item['title']
+                  
+                  if 'children' in item and item['children']:
+                      jb_item['sections'] = convert_myst_toc_to_jb(item['children'])
+                  
+                  jb_items.append(jb_item)
+              elif isinstance(item, str):
+                  # Simple file reference
+                  file_path = item.replace('.md', '').replace('.ipynb', '')
+                  jb_items.append({'file': file_path})
+          
+          return jb_items
+      
+      # Extraire la TOC de MyST
+      myst_toc = myst_config.get('toc', [])
+      
+      # Créer la structure Jupyter Book
+      jb_config = {
+          'format': 'jb-book',
+          'root': 'README',
+          'chapters': []
+      }
+      
+      # Convertir chaque élément de la TOC MyST
+      if myst_toc:
+          # Le premier élément est généralement README, on le saute
+          toc_items = myst_toc[1:] if len(myst_toc) > 1 and myst_toc[0].get('file') == 'README.md' else myst_toc
+          jb_config['chapters'] = convert_myst_toc_to_jb(toc_items)
+      
+      # Écrire le fichier _toc.yml
+      with open('_toc.yml', 'w', encoding='utf-8') as f:
+          yaml.dump(jb_config, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+      
+      print("Generated _toc.yml from myst.yml structure")
+      PYTHON_SCRIPT
     # Essayer MyST d'abord, puis jupyter-book en fallback
     - (timeout 60 myst build --html 2>/dev/null && echo "MyST build successful") || (echo "MyST failed, trying jupyter-book" && jupyter-book build . --path-output _build)
     - ls -la _build/
