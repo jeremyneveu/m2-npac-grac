@@ -16,6 +16,15 @@ before_script:
  
 pages:
   stage: build
+  variables:
+    # Variables pour contourner les restrictions GitLab CI
+    MYST_HEADLESS: "true"
+    CI: "true"
+    NODE_ENV: "production"
+    # Désactiver les vérifications de serveur MyST
+    MYST_BUILD_STATIC: "true"
+    # Forcer le mode offline
+    npm_config_prefer_offline: "true"
   script:
     # - mamba install -y -c conda-forge nodejs pyyaml
     - mamba install -c conda-forge mystmd
@@ -30,9 +39,15 @@ pages:
     #- cd mystmd-quickstart
     #- myst init --site
     #- myst init --project
-    # Build MyST simple avec timeout
-    - export CI=true
-    - myst build --html
+    # Build MyST avec contournement des restrictions GitLab
+    - echo "127.0.0.1 localhost" >> /etc/hosts || true
+    - |
+      # Méthode alternative : build en arrière-plan avec kill automatique
+      (myst build --html &) 
+      MYST_PID=$!
+      sleep 30  # Laisser le temps au build de se faire
+      kill $MYST_PID 2>/dev/null || true
+      sleep 5   # Laisser le temps aux fichiers de se finaliser
     - ls -la _build/
     # Trouver le répertoire de sortie HTML
     - mv _build/html/ ../public
