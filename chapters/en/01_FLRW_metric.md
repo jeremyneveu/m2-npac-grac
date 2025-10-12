@@ -653,43 +653,6 @@ Cosmic time and conformal time
 Time deserves a special mention. In our ideal Universe, with no over- or under-densities of matter, all clocks that follow expansion (i.e. with no proper motion of their own) beat the second at the same rate. With infinite time at our disposal to set all the clocks in the Universe, we can propose a universal convention for synchronizing our clocks. For example, when the temperature of the CMB reaches a given value, all the civilizations in the Universe can decide that this corresponds to a certain date. It is therefore possible to define a cosmic time, common to all comoving observers {cite:p}`Weinberg1972` [p. 409]. 
 
 
-
-
-:::{important} Key takeaways
-
-- The Cosmological Principle states that at sufficiently large scales, the universe is spatially homogeneous and isotropic. It then allows us to deduce the FLRW metric and the Hubble-Lemaître expansion law.
-- The FLRW metric has an unknown function of time $a(t)$ called the scale factor, and 3 possible geometries of constant curvature (flat, spherical, hyperbolic).
-- The scale factor is measurable by observing the dilation of spectra, commonly called redshift $z$:
-$$\frac{a}{a_0} = \frac{1}{1+z}$$
-- The expansion rate of the Universe is given by the Hubble parameter
-$$H(t) = \frac{1}{a} \frac{\dd a }{\dd t }$$
-- We can define a set of coordinates called comoving, related to physical distances by the scale factor $a(t)$.
-
-::: 
-
-
-:::{seealso}  To go further
-
-- Arguments against tired light theory: https://www.astro.ucla.edu/%7Ewright/tiredlit.htm and {cite:t}`Goldhaber2001`
-
-- Non-standard cosmologies: <wiki:Non-standard_cosmology>
-
-- Energy conservation in General Relativity: https://math.ucr.edu/home/baez/physics/Relativity/GR/energy_gr.html 
-
-- Frequently Asked Questions in Cosmology: https://www.astro.ucla.edu/%7Ewright/cosmology_faq.html#TD 
-
-:::
-
-
-
-[^gammat]: Nothing forbids it, since $\gamma_{ij}$ can depend on time
-
-[^g00]: We can introduce a new time variable $t'$ such that $\dd t' = \sqrt{\vert g_{00}\vert }\dd t$.
-
-[^pc]: 1 parsec (pc) $= 3.262$ light-years $= 3.086\times 10^{16}\,$m. $100\,\text{Mpc}\approx 3\times 10^8\;$ light-years.
-
-[^vpec]: The term $a\dot{\sigma}$ is called peculiar velocity. Galaxies have a peculiar velocity $v_{\rm pec}$ of the order of $200\,$km/s, which adds to the expansion effect. This is dominant in the local Universe up to $r \approx v_{\rm pec} / H_0 \approx 3\,$Mpc, equivalent to $z\approx v_{\rm pec}/c \approx 0.001$.
-
 % :::{exercise} Conformal time
 % :label: exo:conformal-time
 
@@ -734,8 +697,40 @@ $$H(t) = \frac{1}{a} \frac{\dd a }{\dd t }$$
 % so we recognize the traditional relationship between distance and time, but in dimensionless comoving space.
 
 
+
+:::{important} Key Points
+
+- The Cosmological Principle states that at sufficiently large scales, the universe is spatially homogeneous and isotropic. It then allows us to deduce the FLRW metric and the Hubble-Lemaître expansion law.
+- The FLRW metric has an unknown function of time $a(t)$ called the scale factor, and 3 possible geometries of constant curvature (flat, spherical, hyperbolic).
+- The scale factor is measurable by observing the dilation of spectra, commonly called redshift $z$:
+$$\frac{a}{a_0} = \frac{1}{1+z}$$
+- The expansion rate of the Universe is given by the Hubble parameter
+$$H(t) = \frac{1}{a} \frac{\dd a }{\dd t }$$
+- We can define a set of coordinates called comoving, related to physical distances by the scale factor $a(t)$.
+
+::: 
+
+
+:::{seealso}  To Go Further
+
+- Frequently Asked Questions in Cosmology: https://www.astro.ucla.edu/%7Ewright/cosmology_faq.html#TD 
+
+- Energy conservation in General Relativity: https://math.ucr.edu/home/baez/physics/Relativity/GR/energy_gr.html 
+
+- Arguments against tired light theory: https://www.astro.ucla.edu/%7Ewright/tiredlit.htm and {cite:t}`Goldhaber2001`
+
+- Non-standard cosmologies: <wiki:Non-standard_cosmology>
+
+
+:::
+
+
+
 [^gammat]: Nothing forbids it, since $\gamma_{ij}$ can depend on time
 
 [^g00]: We can introduce a new time variable $t'$ such that $\dd t' = \sqrt{\vert g_{00}\vert }\dd t$.
 
 [^pc]: 1 parsec (pc) $= 3.262$ light-years $= 3.086\times 10^{16}\,$m. $100\,\text{Mpc}\approx 3\times 10^8\;$ light-years.
+
+[^vpec]: The term $a\dot{\sigma}$ is called peculiar velocity. Galaxies have a peculiar velocity $v_{\rm pec}$ of the order of $200\,$km/s, which adds to the expansion effect. This is dominant in the local Universe up to $r \approx v_{\rm pec} / H_0 \approx 3\,$Mpc, equivalent to $z\approx v_{\rm pec}/c \approx 0.001$.
+

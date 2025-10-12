@@ -714,13 +714,13 @@ $$H(t) = \frac{1}{a} \frac{\dd a }{\dd t }$$
 
 :::{seealso}  Pour approfondir
 
-- Arguments contre la théorie de la lumière fatiguée : https://www.astro.ucla.edu/%7Ewright/tiredlit.htm et {cite:t}`Goldhaber2001`
-
-- Cosmologies non standard : <wiki:Non-standard_cosmology>
+- Frequently Asked Questions in Cosmology : https://www.astro.ucla.edu/%7Ewright/cosmology_faq.html#TD 
 
 - Conservation de l'énergie en Relativité Générale : https://math.ucr.edu/home/baez/physics/Relativity/GR/energy_gr.html 
 
-- Frequently Asked Questions in Cosmology : https://www.astro.ucla.edu/%7Ewright/cosmology_faq.html#TD 
+- Arguments contre la théorie de la lumière fatiguée : https://www.astro.ucla.edu/%7Ewright/tiredlit.htm et {cite:t}`Goldhaber2001`
+
+- Cosmologies non standard : <wiki:Non-standard_cosmology>
 
 :::
 
