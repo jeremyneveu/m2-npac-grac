@@ -624,6 +624,51 @@ Time deserves a special mention. In our ideal Universe, with no over- or under-d
 
 
 
+
+% :::{exercise} Conformal time
+% :label: exo:conformal-time
+
+% Transform the spatial part of the FLRW metric from the comoving coordinate system $(\sigma,\theta,\phi)$ [](#eq:FLRW-metric-spherical) to the equivalent comoving coordinate system $(\chi,\theta,\phi )$ with $\chi$ the comoving distance. Extend this transformation to temporal coordinates and propose a definition of conformal time $\eta$ and write it in the form:
+% \begin{equation}
+% \dd s^2 = a^2(t) \left[ -c^2 \dd\eta^2 + \dd\chi^2 + f_k^2(\chi)\dd\theta^2 + f_k^2(\chi)\sin^2\theta \dd\phi^2 \right]
+% \end{equation}
+% with $f_k(\chi)$ a function of $k$ and $\chi$ to be defined. 
+
+% :::
+
+% :::{solution} exo:conformal-time
+% :label: exo:conformal-time-sol
+% :class: dropdown
+
+% We start with the definition of the FLRW metric:
+% \begin{align}
+% \dd s^2 & = -c^2\dd t^2 + a^2(t) \left[ \frac{\dd\sigma^2}{1-k\sigma^2} + \sigma^2\dd\theta^2 + \sigma^2 \sin^2\theta \dd\phi^2 \right]  \\
+% & = -c^2\dd t^2 + a^2(t) \left[ \dd\chi^2 + \sigma^2\dd\theta^2 + \sigma^2 \sin^2\theta \dd\phi^2 \right] \\
+% & = -c^2\dd t^2 + a^2(t) \left[ \dd\chi^2 + f_k^2(\chi)\dd\theta^2 +f_k^2(\chi) \sin^2\theta \dd\phi^2 \right]
+% \end{align}
+% with $\dd\chi = \dd\sigma/\sqrt{1-k\sigma^2}$ and:
+% \begin{equation}
+% \sigma = f_k(\chi) = \left\lbrace\begin{array}{cl}
+%     \sin\chi & \text{ if } k=+1  \\
+%     \chi  & \text{ if } k=0 \\
+%     \sinh\chi & \text{ if } k=-1 
+% \end{array}
+% \right.
+% \end{equation}
+% We define $\dd\eta =  \dd t / a(t)$ as conformal time, and we obtain:
+% \begin{equation}
+% \dd s^2 = a^2(t) \left[ -c^2 \dd\eta^2 + \dd\chi^2 + f_k^2(\chi)\dd\theta^2 + f_k^2(\chi)\sin^2\theta \dd\phi^2 \right]
+% \end{equation}
+% Conformal time $\eta$ has the dimension of duration. 
+
+% :::
+
+% Moreover, using conformal time $\eta$ defined by $\dd \eta = \dd t / a(t)$, for a photon we obtain:
+% $$
+% \chi = c \int_{\eta_E}^{\eta_0} \dd \eta = c (\eta_0 - \eta_E)$$
+% so we recognize the traditional relationship between distance and time, but in dimensionless comoving space.
+
+
 [^gammat]: Nothing forbids it, since $\gamma_{ij}$ can depend on time
 
 [^g00]: We can introduce a new time variable $t'$ such that $\dd t' = \sqrt{\vert g_{00}\vert }\dd t$.

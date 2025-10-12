@@ -42,7 +42,7 @@ Pour être en mesure de construire un modèle de l'Univers, c'est-à-dire une co
 
 2.  l'Univers est isotrope: aucune direction n'est privilégiée. Ainsi, des observations effectuées dans deux directions différentes du ciel sont équivalentes. Ceci est bien vérifié par l'observation du fond diffus cosmologique micro-onde (CMB) dont la température est mesurée identique  à $2.725\pm0.002\,\kelvin$ dans toutes les directions de l'espace  {cite:p}`Mather1999`. Seules des fluctuations de température de l'ordre de $10^{-5}\,\kelvin$ sont détectées sur cette image de l'Univers jeune (voir [](#fig:cmb_planck) et par exemple {cite:t}`ThePlanckCollaboration2013XIII` pour une vérification du principe d'isotropie utilisant l'effet Sunyaev-Zeldovich).
 
-Ignorer complètement ce qui se passe à des échelles "insuffisamment" grandes est la première étape pour construire une solution cosmologique à la Relativité Générale. Muni de ces faits observationnels, nous imposerons l'homogénéité et l'isotropie à la métrique et à la distribution de la matière (c'est-à-dire au tenseur énergie-impulsion).
+Ignorer complètement ce qui se passe à des échelles "insuffisamment" grandes est la première étape pour construire une solution cosmologique à la Relativité Générale. Munis de ces faits observationnels, nous imposerons l'homogénéité et l'isotropie à la métrique et à la distribution de la matière (c'est-à-dire au tenseur énergie-impulsion).
 
 :::{note} A propos de l'homogénéité de l'Univers
 :class: dropdown 
@@ -65,7 +65,7 @@ Le diagramme d'espace-temps d'un Univers homogène et isotrope possède un axe t
 :::
 
 
-Tout d'abord, si l'univers est isotrope,  on peut vérifier que les composantes croisées $g_{i0}$ et $g_{0i}$ sont nulles. Si tel n'était pas le cas, on aurait une direction privilégiée dans l'univers. On peut s'en convaincre en remarquant que ces composantes sont non nulles si on réalise une transformation de Lorentz [](#eq:lorentz)-[](#eq:lorentz2), justement lorsqu'on prend un référentiel en translation uniforme par rapport à un autre, donc se déplaçant dans une direction choisie. 
+Tout d'abord, si l'univers est isotrope, on peut vérifier que les composantes croisées $g_{i0}$ et $g_{0i}$ sont nulles. Si tel n'était pas le cas, on aurait une direction privilégiée dans l'univers. On peut s'en convaincre en remarquant que ces composantes sont non nulles si on réalise une transformation de Lorentz [](#eq:lorentz)-[](#eq:lorentz2), justement lorsqu'on prend un référentiel en translation uniforme par rapport à un autre, donc se déplaçant dans une direction choisie. 
 
 Autre façon de se convaincre, prenons un espace-temps 2D. Si la métrique a la forme :
 \begin{equation}
@@ -158,12 +158,12 @@ La distance infinitésimale $\dd \vec l^2$ entre deux points de l'hypersurface d
 \begin{equation}
 \dd \vec l^2= \gamma_{ij} \dd \xi^i \dd \xi^j =  \dd r^2 \pm \dd w^2
 \end{equation}
-où le cas $+$ correspond à une géométrie sphérique, le cas $-$ à une géométrie hyperbolique {cite:p}`Weinberg1972` [p. 390-391].
+où le cas $+$ correspond à une géométrie sphérique, le cas $-$ à une géométrie hyperbolique {cite:p}`Weinberg1972` [p. 390-391]. Il faut maintenant se débarasser de la 4e dimension $w$ avec l'équation de contrainte pour retrouver une paramétrisation à 3 dimensions.
 
-Or, l'équation de contrainte [](#eq_hyp_sph) lie $r, w$ et $a$ donc on peut remplacer $\dd w$ par une expression fonction de $r$ et $a$ (donc sans la quatrième dimension). La différentiation de l'équation [](#eq_hyp_sph) donne la relation 
+La différentiation de l'équation [](#eq_hyp_sph) donne la relation 
 $$
 (\vec r \cdot \dd \vec r) \pm w\dd w=0,$$
-donc, en injectant de nouveau l'équation [](#eq_hyp_sph), on obtient :
+Or, l'équation de contrainte [](#eq_hyp_sph) lie $r, w$ et $a$ donc on peut remplacer $\dd w$ par une expression fonction de $r$ et $a$ (donc sans la quatrième dimension) :
 \begin{equation}
 (\vec r \cdot \dd \vec r)^2=(w\dd w)^2 \Rightarrow (\dd w)^2= \frac{(\vec r \cdot \dd \vec r)^2}{w^2} = \frac{(\vec r \cdot \dd \vec r)^2}{a^2(t) \mp r^2}
 \end{equation}
@@ -182,7 +182,7 @@ k = \left\lbrace
  -1 & \text{3-hyperboloïde} \\
 \end{array}\right.
 \end{equation}
-On a ainsi pour les trois géométries possibles d'un Univers maximallement symétrique :
+On a ainsi, pour les trois géométries possibles d'un Univers maximallement symétrique :
 \begin{equation}
 \dd \vec l^2= \dd \vec r^2 + k\frac{ (\vec r \cdot \dd \vec r)^2}{a^2(t) - k r^2}
 \end{equation}
@@ -211,11 +211,11 @@ Dans ce cours, nous allons abondamment traiter des distances en cosmologie, et d
 
 :::
 
-Il est important de comprendre la signification physique du facteur d'expansion $a(t)$. Tout d'abord, d'après l'équation [](#FLRW-metric), ce facteur relie la distance physique $\vec r$ et la distance de coordonnées $\sigma$ par $\vec r=a(t)\vec \sigma$. Une particule dont les coordonnées spatiales $\vec \sigma$ sont fixes verra sa distance physique avec un observateur en $\vec \sigma=\vec 0$ augmenter (ou diminuer) avec le temps. Cette variation de la distance se réalise à la vitesse apparente :
+Il est important de comprendre la signification physique du facteur d'expansion $a(t)$. Tout d'abord, d'après l'équation [](#FLRW-metric), ce facteur relie la distance physique $\vec r$ et la distance de coordonnées $\sigma$ par $\vec r=a(t)\vec \sigma$. Une galaxie dont les coordonnées spatiales $\vec \sigma$ sont fixes verra sa distance physique avec un observateur en $\vec \sigma=\vec 0$ augmenter (ou diminuer) avec le temps. Cette variation de la distance se réalise à la vitesse apparente :
 $$
-\frac{\dd \vec r}{\dd t} = \frac{\dd a(t)\vec \sigma}{\dd t} = \dot a \vec \sigma + a \dot{\vec \sigma} = \frac{\dot a}{a} \vec r
+\frac{\dd \vec r}{\dd t} = \frac{\dd \left[ a(t)\vec \sigma\right] }{\dd t} = \dot a \vec \sigma + a \dot{\vec \sigma} = \frac{\dot a}{a} \vec r
 $$
-car $\dot{\vec \sigma} = \vec 0$ si la particule n'a pas de mouvement propre, avec le point $\;\dot{}\;$ exprimant une dérivée par rapport au temps $t$. On obtient donc une relation directe entre la distance à un observateur central et la vitesse apparente : c'est la *loi de Hubble*. Le taux d'éloignement est donné par le paramètre de Hubble, qui quantifie la vitesse de variation du facteur d'échelle : 
+car $\dot{\vec \sigma} = \vec 0$ si la galaxie n'a pas de mouvement propre[^vpec], avec le point $\;\dot{}\;$ exprimant une dérivée par rapport au temps $t$. On obtient donc une relation directe entre la distance à un observateur central et la vitesse apparente : c'est la *loi de Hubble*. Le taux d'éloignement est donné par le paramètre de Hubble, qui quantifie la vitesse de variation du facteur d'échelle : 
 \begin{equation}
 \label{eq:H-def}
 \boxed{\displaystyle H(t) = \frac{\dot a(t)}{a(t)}}
@@ -265,13 +265,13 @@ Prenons deux galaxies: elles forment un triangle avec la Terre, qui, dans une 3-
 Coordonnées comobiles
 ---------------------
 
-Il est important de noter que tous les observateurs ne voient pas l'Univers comme isotrope, mais seulement les observateurs dits *comobiles*, qui sont localement au repos avec l'essentiel de la matière dans leur voisinage. Nous, par exemple, ne sommes pas des observateurs mobiles : lorsque nous observons la température du CMB, la première caractéristique que nous voyons est un grand dipôle de température (plus chaud d'un côté, plus froid du côté opposé), qui est le résultat du mouvement particulier de notre système solaire dans la galaxie, et de notre galaxie dans l'Univers (et de notre groupe de galaxies). Si on retranche ce mouvement propre par rapport au référentiel du CMB, alors cela ferait de nous des observateurs comobiles. Ainsi, on peut définir un système de coordonnées associés à des observateurs sans mouvements propres, dont les distances propres relatives n'augmentent qu'avec le facteur d'échelle $a(t)$ {cite:p}`Weinberg1972`[p. 409].
+Il est important de noter que tous les observateurs ne voient pas l'Univers comme isotrope, mais seulement les observateurs dits *comobiles*, qui sont localement au repos avec l'essentiel de la matière dans leur voisinage. Nous, par exemple, ne sommes pas des observateurs mobiles : lorsque nous observons la température du CMB, la première caractéristique que nous voyons est un grand dipôle de température (plus chaud d'un côté, plus froid du côté opposé), qui est le résultat de l'effet Doppler dû au mouvement particulier de notre système solaire dans la galaxie, et de notre galaxie dans l'Univers (et de notre groupe de galaxies). Si on retranche ce mouvement propre par rapport au référentiel du CMB, alors cela ferait de nous des observateurs comobiles. Ainsi, on peut définir un système de coordonnées associés à des observateurs sans mouvements propres, dont les distances propres relatives n'augmentent qu'avec le facteur d'échelle $a(t)$ {cite:p}`Weinberg1972`[p. 409].
 
 Dans la métrique FLRW où l'expansion de l'Univers est factorisée par un facteur d'échelle $a(t)$, les coordonnées spatiales $\vec \sigma$ sont appelées *coordonnées comobiles*. Il existe une grande liberté dans le choix des coordonnées comobiles. 
 
-### Coordonnées sphériques
+### Paramétrisation sphérique
 
-On privilégie souvent les coordonnées sphériques $(ct, \sigma, \theta, \phi)$ avec l'observateur (nous-mêmes) à l'origine, telles que :
+On privilégie souvent la paramétrisation sphérique $(ct, \sigma, \theta, \phi)$ avec l'observateur (nous-mêmes) à l'origine, telles que :
 \begin{equation}
 \begin{aligned}
 \sigma_1 &= \sigma \sin \theta \cos \phi \\
@@ -298,7 +298,7 @@ $$L(t) = 2 \pi a(t)$$
 :::
 
 
-### Coordonnées cartésiennes
+### Paramétrisation cartésienne
 
 Le cas de l'univers plat simplifie beaucoup les calculs qui suivront. Étant donné que l'hypothèse d'une courbure nulle est compatible avec les contraintes de plus en plus fortes des observations cosmologiques, nous concentrerons désormais nos développements analytiques sur l'univers plat, en mentionnant des résultats pour le cas général lorsque cela est nécessaire. Dans le cas de courbure nulle, il peut être pratique d'utiliser les coordonnées comobiles cartésiennes $(ct, x, y, z)$, telles que :
 \begin{equation}
@@ -329,7 +329,7 @@ où $s$ est un paramètre quelconque décrivant la position le long de la géod�
 \label{geodesic-cov}
 {\dd^2 x_\mu \over \dd  s^2} -\Gamma^{\nu}_{\,\,\mu\kappa} {\dd x_\nu \over \dd  s}{\dd x^\kappa \over \dd  s}=0.
 \end{equation} 
-Définissons la quadri-vitesse $U^\mu$ le long d'une ligne d'Univers par $U^\mu = \dd x^\mu / \dd s$. Alors :
+Définissons la quadri-vitesse $U^\mu$ tangente à la trajectoire $x^\mu(s)$ par $U^\mu = \dd x^\mu / \dd s$. Alors :
 \begin{equation}
 {\dd U_\mu \over \dd  s} = \Gamma^{\nu}_{\,\,\mu\kappa} U_\nu U^\kappa=  \frac{1}{2} \frac{\partial g_{\alpha\beta}}{\partial x^\mu} U^\alpha U^\beta.
 \end{equation} 
@@ -356,7 +356,7 @@ $$
 donc $U_3$ est une constante du mouvement. Or, on a par ailleurs :
 $$
 U_3 = g_{33} U^3 = a^2(t) (\sigma \sin \theta)^2 U^3 $$
-dont l'expression s'annule à l'origine en $\sigma=0$, là nous observons. Comme la composante $U_3$ est constante alors elle est identiquement nulle le long de la trajectoire. On en déduit :
+dont l'expression s'annule à l'origine en $\sigma=0$, la coordonnée à laquelle nous observons ce photon. Comme la composante $U_3$ est constante, alors elle est identiquement nulle le long de la trajectoire. On en déduit :
 $$U^3 = \frac{\dd \phi }{ \dd s} = 0 \Rightarrow \phi = \text{constante}$$
 
 Passons au cas $\mu=2$. La seule composante de la métrique dépendant de $\theta$ est 
@@ -387,11 +387,11 @@ Le décalage spectral, ou redshift
 Notations pour le calcul du redshift et des distances cosmologiques en coordonnées comobiles.
 :::
 
-Pour mesurer l'histoire de l'expansion de l'Univers, il faut avoir accès au paramètre d'échelle $a(t)$. Ceci est possible par la mesure du décalage spectral de la lumière venant de sources distantes. Dans la métrique FLRW, plaçons-nous par convention au centre ($\sigma=0$), et considérons un objet situé aux coordonnées comobiles $\left(\sigma_E,\theta_E,\phi_E\right)$, émettant un photon à l'instant $t_E$ (voir [](#fig:distances_croquis)). Pour ce photon, voyageant à la vitesse de la lumière, dans la métrique FLRW on a, à tout instant:
+Pour mesurer l'histoire de l'expansion de l'Univers, il faut avoir accès au paramètre d'échelle $a(t)$. Ceci est possible par la mesure du décalage spectral de la lumière venant de sources distantes. Dans la métrique FLRW, plaçons-nous par convention au centre ($\sigma=0$), et considérons un objet situé aux coordonnées comobiles $\left(\sigma_E,\theta_E,\phi_E\right)$, émettant un photon à l'instant $t_E$ (voir [](#fig:distances_croquis)). Pour ce photon, voyageant à la vitesse de la lumière, à tout instant dans la métrique FLRW on a :
 :::{math}
 :label: eq:ds2_lumiere
 
-\dd s^2=0=-c^2 \dd t^2+\frac{a^2(t)}{1-k\sigma^2}\dd \sigma^2.
+\dd s^2=0=-c^2 \dd t^2+\frac{a^2(t)}{1-k\sigma^2}\dd \sigma^2
 :::
 car le long de sa géodésique $\theta$ et $\phi$ sont constants ($\dd \theta = \dd \phi=0$). Posons $t_0$ l'instant de la réception de cette onde en $\sigma=0$. Alors grâce à l'équation précédente on a la relation : 
 :::{math}
@@ -405,9 +405,9 @@ car le long de sa géodésique $\theta$ et $\phi$ sont constants ($\dd \theta = 
     \sigma_E & \text{ si } k=0 \\
     \text{arcsh}\,\sigma_E & \text{ si } k=-1 
 \end{array}
-\right. .
+\right. 
 ::: 
-avec $\dd \sigma < 0$ pour $\dd t > 0$ en considérant un photon allant de la source vers l'observateur en 0.
+avec le signe - venant du fait qu'on considère un photon allant de la source vers l'observateur en 0.
 
 
 Pour une onde électromagnétique de période $T$, l'expression [](#eq:ds2_lumiere) étant valable à tout instant, on peut calculer la même intégrale pour l'onde émise à l'instant $t_E+T_E$ et reçue à l'instant $t_0+T_0$ (on suppose donc que la période $T$ va varier au cours du temps): 
@@ -430,7 +430,7 @@ Directement, si l'espace est en expansion alors $a(t_E) < a(t_0)$ et la longueur
 
  \boxed{ \displaystyle{z = \frac{\lambda_0-\lambda_E}{\lambda_E} \Leftrightarrow 1+z = \frac{a_0}{a(t_E)} }}
 :::
-Le décalage spectral est à la fois directement lié au paramètre d'échelle $a(t)$, mais aussi à une grandeur expérimentale directement mesurable sur le spectre d'émission des objets distants. En effet, en regardant la position des raies d'absorption et d'émission des objets lointains, on peut en déduire leurs décalages spectraux par rapport aux mêmes éléments chimiques situés sur Terre, au repos. Cette donnée expérimentale est donc souvent associée à la définition des distances en cosmologie.
+Le décalage spectral est à la fois directement lié au paramètre d'échelle $a(t)$, mais aussi à une grandeur expérimentale directement mesurable sur le spectre d'émission des objets distants. En effet, en regardant la position des raies d'absorption et d'émission des objets lointains, on peut en déduire leurs décalages spectraux par rapport aux mêmes éléments chimiques situés sur Terre, au repos. Cette donnée expérimentale est donc souvent associée à la définition des distances en cosmologie. La galaxie la plus lointaine observée à ce jour possède un redshift $z=14.32^{+0.08}_{-0.20}$ (JWST: <doi:10.1038/s41586-024-07860-9>).
 
 
 :::{exercise} Mesure du redshift
@@ -474,12 +474,31 @@ z = \frac{\lambda_0-\lambda_E}{\lambda_E} = \frac{5000-4861}{4861} = 0.028
 :::
 
 
+```{note} Théorie de la lumière fatiguée et dilatation du temps
+:class: dropdown
 
+La lumière fatiguée est une hypothèse proposée pour expliquer la loi de Hubble-Lemaître sans faire intervenir une expansion de l'Univers, introduite par <wiki:Fritz_Zwicky> en 1929 comme explication alternative possible. Les modèles de lumière fatiguée invoquent une perte d'énergie progressive des photons lorsqu'ils traversent le cosmos pour produire la loi de décalage vers le rouge-distance. Cela pose trois problèmes principaux.
+- Il n'existe aucune interaction connue capable de dégrader l'énergie d'un photon sans modifier également son impulsion, ce qui conduirait à un flou des objets distants, qui n'est pas observé. 
+- Le modèle de la lumière fatiguée ne prédit pas la dilatation temporelle observée des courbes de lumière des supernovas à grand décalage vers le rouge. Cette dilatation temporelle est une conséquence de l'interprétation standard du décalage vers le rouge : une supernova qui met 20 jours à se désintégrer semblera mettre 40 jours à se désintégrer lorsqu'elle est observée à un décalage vers le rouge $z=1$ ([](#fig:SNIa_stretch)).
+
+:::{figure} #SNIa_stretch
+:name: fig:SNIa_stretch
+:align: center
+:width: 70%
+
+Facteur d'étirement des supernovae de type Ia $w$ (i.e. durée normalisée à 1 aujourd'hui) en fonction de $1+z$. La dilatation du temps cosmologique impose que celle-ci varie en $1+z$ alors que l'hypothèse de la lumière fatiguée ne prédit pas de dilatation temporelle. Sources: notebook [](../../notebooks/SNIa_stretch.ipynb) et {cite:p}`Goldhaber2001`.
+:::
+
+On observe également que le taux d'explosion des supernovae évolue en $1/(1+z)$, un autre signe de la dilatation du temps.
+
+- Si la lumière rougit sans se diluer par l'expansion, alors un spectre de corps noir initial évolue en un spectre qui s'écarte de l'hypothèse du corps noir. En effet, la loi de Planck (<wiki:Planck's_law>) combine une densité de modes vibratoires avec un préfacteur en $\nu^3$ et la ditribution de Bose-Einstein contenant une exponentielle $e^{h\nu/ k_B T}$. Si la lumière se fatigue, seule l'exponentiel est affectée car le nombre de mode ne change pas avec le redshift s'il n'y a pas d'expansion. Le préfacteur diffère alors avec un décalage en $(1+z)^3$ par rapport à une loi de Planck subissant l'expansion de l'Univers. Or, on observe que le fond diffus cosmologique suit la loi de rayonnement du corps noir extrêmement précisément {cite:p}`Mather1999`.
+
+```
 
 Distance propre et distance comobile
 ------------
 
-La *distance propre* définit la distance physique entre deux objets à un instant $t$. Soit un objet émetteur situé aux coordonnées comobiles $(\sigma_E, \theta_E, \phi_E)$. Par définition, la distance propre entre cet objet et un observateur situé à l'origine est le long d'une courbe à $\theta$ et $\phi$ constants et vaut :
+La *distance propre* définit la distance physique entre deux objets à un instant $t$. Soit un objet émetteur situé aux coordonnées comobiles $(\sigma_E, \theta_E, \phi_E)$. Par définition, la distance propre entre cet objet et un observateur situé à l'origine se mesure le long d'une courbe à $\theta$ et $\phi$ constants et vaut :
 :::{math}
 :label: eq:dist-prop
 
@@ -680,8 +699,37 @@ Le temps mérite une mention spéciale. Dans notre Univers idéal, sans surdensi
 % donc on reconnait la relation traditionnelle entre distance et temps, mais dans l'espace comobile sans dimension.
 
 
+:::{important} A retenir
+
+- Le Principe Cosmologique stipule qu'à des échelles suffisamment grandes, l’univers est spatialement homogène et isotrope. Il permet alors d'en déduire la métrique FLRW et la loi d'expansion de Hubble-Lemaître.
+- La métrique FLRW possède une fonction du temps inconnue $a(t)$ appelée facteur d'échelle, et 3 géométries possibles de courbure constante (plate, sphérique, hyperbolique).
+- Le facteur d'échelle est mesurable par l'observation de la dilatation des spectres, appelée communément redshift $z$:
+$$\frac{a}{a_0} = \frac{1}{1+z}$$
+- Le taux d'expansion de l'Univers est donné par le paramètre de Hubble
+$$H(t) = \frac{1}{a} \frac{\dd a }{\dd t }$$
+- On peut définir un jeu de coordonnées dites comobiles, reliées aux distances physiques par le facteur d'échelle $a(t)$.
+
+::: 
+
+
+:::{seealso}  Pour approfondir
+
+- Arguments contre la théorie de la lumière fatiguée : https://www.astro.ucla.edu/%7Ewright/tiredlit.htm et {cite:t}`Goldhaber2001`
+
+- Cosmologies non standard : <wiki:Cosmologie_non_standard>
+
+- Conservation de l'énergie en Relativité Générale : https://math.ucr.edu/home/baez/physics/Relativity/GR/energy_gr.html 
+
+- Frequently Asked Questions in Cosmology : https://www.astro.ucla.edu/%7Ewright/cosmology_faq.html#TD 
+
+:::
+
+
+
 [^gammat]: Rien ne l'interdit, puisque $\gamma_{ij}$ peut dépendre du temps
 
 [^g00]: On peut introduire une nouvelle variable temps $t'$ telle que $\dd t' = \sqrt{\vert g_{00}\vert }\dd t$.
 
 [^pc]: 1 parsec (pc) $= 3.262$ années-lumière $= 3.086\times 10^{16}\,$m. $100\,\text{Mpc}\approx 3\times 10^8\;$ années-lumière.
+
+[^vpec]: Le terme $a\dot{\sigma}$ est appelé vitesse péculière. Les galaxies possèdent une vitesse péculière $v_{\rm pec}$ de l'ordre de $200\,$km/s, qui s'additionne à l'effet d'expansion. Celle-ci est dominante dans l'Univers local jusqu'à $r \approx v_{\rm pec} / H_0 \approx 3\,$Mpc, équivalent à $z\approx v_{\rm pec}/c \approx 0.001$.

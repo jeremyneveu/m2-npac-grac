@@ -29,8 +29,8 @@ Si l'Univers est aujourd'hui en expansion, alors il était plus petit dans le pa
 L'antenne cornet Holmdel de 15 mètres des Bell Telephone Laboratories à Holmdel, avec Arno Penzias et Robert Wilson, qui a permis la découverte du CMB. Elle a été construite en 1959 dans le cadre d'un travail sur les satellites de communication pour la NASA ECHO I (By NASA, restored by Bammesk).
 :::
 
-Le spectre du fond diffus cosmologique a été caractérisé grâce au satellite COBE, et sa température est aujourd'hui établie à  {cite:p}`Mather1999`:
-$$T_0 = 2.725\pm 0.002\,\kelvin$$
+Le spectre du fond diffus cosmologique a été caractérisé grâce au satellite COBE, et sa température est aujourd'hui établie à (<doi:10.1088/0004-637X/707/2/916>):
+$$T_0 = 2.72548 \pm 0.00057 \,\kelvin$$
 en modélisant ses données par la loi de rayonnement de Planck :
 \begin{equation}
   I_\nu(\nu, T_0) = \frac{2 h \nu^3}{c^2}\frac{1}{\exp(h\nu/k_B T_0) - 1}
@@ -80,6 +80,22 @@ Les photons se sont découplés de la matière lorsque l'Univers est passé de l
 \begin{equation}
 a_{\mathrm{dec}} T_{\mathrm{dec}} = a_0 T_0 \Rightarrow T_{\mathrm{dec}} = (1+z_{\mathrm{dec}}) T_0 = 2972\,\kelvin
 \end{equation}
+
+:::
+
+:::{note} Évolution de $T_\gamma$ avec le redshift
+:class: dropdown
+
+Grâce aux interactions entre les photons du CMB et la matière à différent redshifts, les cosmologistes sont capables de mesurer l'évolution de la température de ce bain de photons ambiant avec l'expansion. Par exemple, on peut regarder l'interaction Compton des photons du CMB avec le plasma d'électrons chauds ($\approx 10^8\,\kelvin$) situé dans les amas de galaxies (effet Sunyaev-Zeldovich thermique <wiki:Sunyaev–Zeldovich_effect>). On peut également mesuré le chauffage des molécules CO du gaz interstellaire par les photons du CMB à différent redshift. Une des meilleures mesures de la décroissance de la température des photons avec l'expansion est  $T_\gamma(z) = (2.726 ± 0.001) × (1 + z)^{1−β}\,\kelvin$ avec $β = 0.006 ± 0.013$ (<doi:10.1051/0004-6361/201322632>).
+
+```{figure} ../../images/TCMBz.eps
+:name: fig:TCMBz
+:align: center
+:width: 80%
+
+Evolution de la température des photons du CMB en fonction du redshift, tiré de <doi:10.1051/0004-6361/201322632>.
+```
+
 
 :::
 
@@ -168,7 +184,7 @@ aujourd'hui si la matière est dans un état ionisé, et à l'époque :
 \tau_T=  \frac{1}{\sigma_T n_e(1+z)^3 c} \approx 5\,\mathrm{yr} \ll \frac{1}{H(z)} \sim 10^{-6} t_H \sim 10\,000\,\mathrm{yr}
 \end{equation}
 
-On voit donc que dans le passé les interactions entre matière et photons étaient suffisamment fréquences pour atteindre l'équilibre thermique en un temps court devant l'expansion de l'Univers. Mais aujourd'hui, même si toute la matière était ionisée, ces photons n'interagissent plus avec elle. Les photons du CMB ne sont donc _pas_ en équilibre thermique avec quoi que ce soit d'autres aujourd'hui. L'immense majorité des photons du CMB n'ont jamais été en contact avec des particules depuis leur émission. 
+On voit donc que dans le passé les interactions entre matière et photons étaient suffisamment fréquentes pour atteindre l'équilibre thermique en un temps court devant l'expansion de l'Univers. Mais aujourd'hui, même si toute la matière était ionisée, ces photons n'interagissent plus avec elle. Les photons du CMB ne sont donc _pas_ en équilibre thermique avec quoi que ce soit d'autres aujourd'hui. L'immense majorité des photons du CMB n'ont jamais été en contact avec des particules depuis leur émission. 
 Cependant, cette absence d'interactions a préservé la forme originale du spectre du CMB, qui n'a été affecté que par le décalage vers le rouge. Un photon détecté à la fréquence $\nu$ a été émis à l'origine à la fréquence $(1+z)\nu$. En d'autres termes, le spectre d'origine était le suivant {cite:p}`Condon2018` :
 \begin{equation}
 I_\nu(\nu, T_0, z) = \frac{2 h \nu^3}{c^2}\frac{1}{\exp(h\nu/(1+z)k_B T_0) - 1}
