@@ -38,7 +38,11 @@ jobs:
       - name: Install MyST
         run: npm install -g mystmd
       - name: Build HTML Assets
-        run: myst build --html
+        run: |
+          myst build --html
+          pip install jupyterlite-core jupyterlite-xeus jupyterlab notebook ipympl ipywidgets
+          rm -rf notebooks/TP_SN.ipynb
+          jupyter lite build --XeusAddon.environment_file=jupyterlite-environment.yml --contents=notebooks --output-dir=public/lite
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
