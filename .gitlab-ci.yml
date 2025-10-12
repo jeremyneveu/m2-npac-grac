@@ -33,9 +33,12 @@ pages:
     # Approche alternative - build avec jupyter-book si MyST pose problème  
     - pip install jupyter-book
     # Créer un _config.yml minimal pour jupyter-book en cas de besoin
-    - echo 'title:' '"M2 NPAC Cosmology"' > _config.yml
-    - echo 'execute:' >> _config.yml
-    - echo '  execute_notebooks: off' >> _config.yml
+    - |
+      cat > _config.yml << EOF
+      title: 'M2 NPAC Cosmology'
+      execute:
+        execute_notebooks: off
+      EOF
     # Essayer MyST d'abord, puis jupyter-book en fallback
     - (timeout 60 myst build --html 2>/dev/null && echo "MyST build successful") || (echo "MyST failed, trying jupyter-book" && jupyter-book build . --path-output _build)
     - ls -la _build/
