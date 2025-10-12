@@ -43,38 +43,51 @@ pages:
     - |
       python3 << 'PYTHON_SCRIPT'
       import yaml
-      import json
+      import re
       
       # Lire le fichier myst.yml
       with open('myst.yml', 'r', encoding='utf-8') as f:
           myst_config = yaml.safe_load(f)
       
-      def convert_myst_toc_to_jb(toc_items, is_root=False):
-          """Convertit une structure TOC MyST vers Jupyter Book"""
-          jb_items = []
+      def process_file_path(file_path):
+          """Nettoie le chemin de fichier pour Jupyter Book"""
+          if not file_path:
+              return None
+          # Supprimer l'extension pour Jupyter Book
+          clean_path = re.sub(r'\.(md|ipynb)$', '', file_path)
+          return clean_path
+      
+      def convert_myst_item_to_jb(item):
+          """Convertit un élément MyST vers Jupyter Book"""
+          if isinstance(item, str):
+              return {'file': process_file_path(item)}
           
-          for item in toc_items:
-              if isinstance(item, dict):
-                  jb_item = {}
-                  
-                  if 'file' in item:
-                      # Supprimer l'extension .md pour jupyter-book
-                      file_path = item['file'].replace('.md', '').replace('.ipynb', '')
-                      jb_item['file'] = file_path
-                  
-                  if 'title' in item:
-                      jb_item['title'] = item['title']
-                  
-                  if 'children' in item and item['children']:
-                      jb_item['sections'] = convert_myst_toc_to_jb(item['children'])
-                  
-                  jb_items.append(jb_item)
-              elif isinstance(item, str):
-                  # Simple file reference
-                  file_path = item.replace('.md', '').replace('.ipynb', '')
-                  jb_items.append({'file': file_path})
+          if not isinstance(item, dict):
+              return None
           
-          return jb_items
+          jb_item = {}
+          
+          # Traiter le fichier
+          if 'file' in item:
+              file_path = process_file_path(item['file'])
+              if file_path:
+                  jb_item['file'] = file_path
+          
+          # Traiter le titre
+          if 'title' in item:
+              jb_item['title'] = item['title']
+          
+          # Traiter les enfants
+          if 'children' in item and isinstance(item['children'], list) and item['children']:
+              sections = []
+              for child in item['children']:
+                  converted_child = convert_myst_item_to_jb(child)
+                  if converted_child:
+                      sections.append(converted_child)
+              if sections:
+                  jb_item['sections'] = sections
+          
+          return jb_item if jb_item else None
       
       # Extraire la TOC de MyST
       myst_toc = myst_config.get('toc', [])
@@ -86,17 +99,37 @@ pages:
           'chapters': []
       }
       
-      # Convertir chaque élément de la TOC MyST
-      if myst_toc:
-          # Le premier élément est généralement README, on le saute
-          toc_items = myst_toc[1:] if len(myst_toc) > 1 and myst_toc[0].get('file') == 'README.md' else myst_toc
-          jb_config['chapters'] = convert_myst_toc_to_jb(toc_items)
+      # Traiter les éléments de la TOC
+      if myst_toc and len(myst_toc) > 0:
+          # Chercher les chapitres (skip README s'il est en premier)
+          start_idx = 0
+          if len(myst_toc) > 0 and isinstance(myst_toc[0], dict) and myst_toc[0].get('file') == 'README.md':
+              start_idx = 1
+          
+          for item in myst_toc[start_idx:]:
+              converted_item = convert_myst_item_to_jb(item)
+              if converted_item:
+                  jb_config['chapters'].append(converted_item)
+      
+      # S'assurer qu'on a au moins un chapitre
+      if not jb_config['chapters']:
+          # Fallback : ajouter quelques fichiers de base
+          jb_config['chapters'] = [
+              {'file': 'start'},
+              {'file': 'chapters/fr/start'}
+          ]
       
       # Écrire le fichier _toc.yml
       with open('_toc.yml', 'w', encoding='utf-8') as f:
           yaml.dump(jb_config, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
       
       print("Generated _toc.yml from myst.yml structure")
+      print(f"Generated {len(jb_config['chapters'])} chapters")
+      
+      # Debug: afficher le contenu généré
+      with open('_toc.yml', 'r') as f:
+          print("Generated _toc.yml content:")
+          print(f.read())
       PYTHON_SCRIPT
     # Essayer MyST d'abord, puis jupyter-book en fallback
     - (timeout 60 myst build --html 2>/dev/null && echo "MyST build successful") || (echo "MyST failed, trying jupyter-book" && jupyter-book build . --path-output _build)
