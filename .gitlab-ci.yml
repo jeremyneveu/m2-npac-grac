@@ -30,9 +30,14 @@ pages:
     #- cd mystmd-quickstart
     #- myst init --site
     #- myst init --project
+    - export MYST_HEADLESS=1
+    - export CI=true 
+    - export NODE_ENV=production
     - myst build --site
     - ls _build/site/
-    - myst build --html
+    # Alternative: build directement sans vérification de serveur
+    - (myst build --html &) && sleep 10 && pkill -f "myst" && sleep 5
+    - ls -la _build/
     - mv _build/html/ ../public
     #- mv tmp_myst.yml myst.yml
     #- myst build --html
