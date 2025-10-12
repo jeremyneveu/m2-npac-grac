@@ -30,109 +30,30 @@ pages:
     #- cd mystmd-quickstart
     #- myst init --site
     #- myst init --project
-    # Approche alternative - build avec jupyter-book si MyST pose problème  
-    - pip install jupyter-book
-    # Créer un _config.yml minimal pour jupyter-book en cas de besoin
+    # Solution simplifiée : forcer MyST à fonctionner en mode statique
+    - export MYST_HEADLESS=true
+    - export CI=true
+    - export NODE_ENV=production  
+    # Essayer de tuer tout processus serveur existant
+    - pkill -f "myst" 2>/dev/null || true
+    - pkill -f "node.*3000" 2>/dev/null || true
+    # Build MyST avec plusieurs tentatives
     - |
-      cat > _config.yml << EOF
-      title: 'M2 NPAC Cosmology'
-      execute:
-        execute_notebooks: off
-      EOF
-    # Générer _toc.yml automatiquement depuis myst.yml
-    - |
-      python3 << 'PYTHON_SCRIPT'
-      import yaml
-      import re
-      
-      # Lire le fichier myst.yml
-      with open('myst.yml', 'r', encoding='utf-8') as f:
-          myst_config = yaml.safe_load(f)
-      
-      def process_file_path(file_path):
-          """Nettoie le chemin de fichier pour Jupyter Book"""
-          if not file_path:
-              return None
-          # Supprimer l'extension pour Jupyter Book
-          clean_path = re.sub(r'\.(md|ipynb)$', '', file_path)
-          return clean_path
-      
-      def convert_myst_item_to_jb(item):
-          """Convertit un élément MyST vers Jupyter Book"""
-          if isinstance(item, str):
-              return {'file': process_file_path(item)}
-          
-          if not isinstance(item, dict):
-              return None
-          
-          jb_item = {}
-          
-          # Traiter le fichier
-          if 'file' in item:
-              file_path = process_file_path(item['file'])
-              if file_path:
-                  jb_item['file'] = file_path
-          
-          # Traiter le titre
-          if 'title' in item:
-              jb_item['title'] = item['title']
-          
-          # Traiter les enfants
-          if 'children' in item and isinstance(item['children'], list) and item['children']:
-              sections = []
-              for child in item['children']:
-                  converted_child = convert_myst_item_to_jb(child)
-                  if converted_child:
-                      sections.append(converted_child)
-              if sections:
-                  jb_item['sections'] = sections
-          
-          return jb_item if jb_item else None
-      
-      # Extraire la TOC de MyST
-      myst_toc = myst_config.get('toc', [])
-      
-      # Créer la structure Jupyter Book
-      jb_config = {
-          'format': 'jb-book',
-          'root': 'README',
-          'chapters': []
-      }
-      
-      # Traiter les éléments de la TOC
-      if myst_toc and len(myst_toc) > 0:
-          # Chercher les chapitres (skip README s'il est en premier)
-          start_idx = 0
-          if len(myst_toc) > 0 and isinstance(myst_toc[0], dict) and myst_toc[0].get('file') == 'README.md':
-              start_idx = 1
-          
-          for item in myst_toc[start_idx:]:
-              converted_item = convert_myst_item_to_jb(item)
-              if converted_item:
-                  jb_config['chapters'].append(converted_item)
-      
-      # S'assurer qu'on a au moins un chapitre
-      if not jb_config['chapters']:
-          # Fallback : ajouter quelques fichiers de base
-          jb_config['chapters'] = [
-              {'file': 'start'},
-              {'file': 'chapters/fr/start'}
-          ]
-      
-      # Écrire le fichier _toc.yml
-      with open('_toc.yml', 'w', encoding='utf-8') as f:
-          yaml.dump(jb_config, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
-      
-      print("Generated _toc.yml from myst.yml structure")
-      print(f"Generated {len(jb_config['chapters'])} chapters")
-      
-      # Debug: afficher le contenu généré
-      with open('_toc.yml', 'r') as f:
-          print("Generated _toc.yml content:")
-          print(f.read())
-      PYTHON_SCRIPT
-    # Essayer MyST d'abord, puis jupyter-book en fallback
-    - (timeout 60 myst build --html 2>/dev/null && echo "MyST build successful") || (echo "MyST failed, trying jupyter-book" && jupyter-book build . --path-output _build)
+      echo "Attempting MyST build..."
+      for attempt in 1 2 3; do
+        echo "Build attempt $attempt/3"
+        if timeout 120 myst build --html --no-serve 2>&1; then
+          echo "MyST build successful on attempt $attempt"
+          break
+        elif [ $attempt -eq 3 ]; then
+          echo "All MyST attempts failed, trying basic build"
+          # Dernière tentative avec build minimal
+          timeout 60 myst build 2>&1 || echo "Basic build also failed, but continuing..."
+        else
+          echo "Attempt $attempt failed, retrying..."
+          sleep 5
+        fi
+      done
     - ls -la _build/
     # Trouver le répertoire de sortie HTML
     - if [ -d "_build/html" ]; then mv _build/html/ ../public; elif [ -d "_build/_build/html" ]; then mv _build/_build/html/ ../public; else echo "No HTML build found" && find _build -name "*.html" && exit 1; fi
