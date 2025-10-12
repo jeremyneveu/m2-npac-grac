@@ -28,6 +28,7 @@ pages:
     # - export BASE_URL="/m2-npac-ac"  # "https://m2-npac-ac.pages.in2p3.fr/"  # "/m2-npac-ac"
     - git clone https://github.com/jupyter-book/mystmd-quickstart.git
     - cd mystmd-quickstart
+    - myst init --site
     - myst build --html --debug
     - mv _build/html/ ../public
     #- mv tmp_myst.yml myst.yml
