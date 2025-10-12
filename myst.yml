@@ -1,6 +1,7 @@
 # See docs at: https://myst-tools.org/docs/mystjs/frontmatter
 version: 1
 project:
+  output-dir: _build
   # title:
   # description:
   keywords: []
@@ -119,6 +120,8 @@ site:
     #   url: https://gitlab.in2p3.fr/m2-npac-ac/m2-npac-ac
   domains: []
   options:
+    # Désactive le serveur de développement en CI
+    show_source: false
     folders: true
     hide_outline: false
     hide_toc: false
