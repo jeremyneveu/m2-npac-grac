@@ -49,6 +49,7 @@ pages:
       kill $MYST_PID 2>/dev/null || true
       sleep 5   # Laisser le temps aux fichiers de se finaliser
     - ls -la _build/
+    - ls -la _build/html
     # Trouver le répertoire de sortie HTML
     - mv _build/html/ ../public
     #- mv tmp_myst.yml myst.yml
