@@ -25,17 +25,19 @@ pages:
     - cp myst.yml tmp_myst.yml
     #- python remove_toc.py
     # - export BASE_URL="/m2-npac-ac"  # "https://m2-npac-ac.pages.in2p3.fr/"  # "/m2-npac-ac"
+    - git clone https://github.com/jupyter-book/mystmd-quickstart.git
+    - cd mystmd-quickstart
     - myst build --html --debug
-    - mv _build/html/ public
+    - mv _build/html/ ../public
     #- mv tmp_myst.yml myst.yml
     #- myst build --html
     #- mv _build/html/ public/fr
     #- sed -i 's@fr/@en/@g' myst.yml
     #- myst build --html
     #- mv _build/html/ public/en
-    - pip install jupyterlite-core jupyterlite-xeus jupyterlab notebook ipympl ipywidgets
-    - rm -rf notebooks/TP_SN.ipynb
-    - jupyter lite build --XeusAddon.environment_file=jupyterlite-environment.yml --contents=notebooks --output-dir=public/lite
+    #- pip install jupyterlite-core jupyterlite-xeus jupyterlab notebook ipympl ipywidgets
+    #- rm -rf notebooks/TP_SN.ipynb
+    #- jupyter lite build --XeusAddon.environment_file=jupyterlite-environment.yml --contents=notebooks --output-dir=public/lite
   artifacts:
     paths:
       - public
