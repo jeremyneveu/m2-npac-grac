@@ -18,7 +18,7 @@ pages:
   stage: build
   script:
     # - mamba install -y -c conda-forge nodejs pyyaml
-    - mamba install -c conda-forge mystmd=1.3.2
+    - mamba install -c conda-forge mystmd
     # - node -v
     # - npm install -g mystmd@latest
     - myst -v
