@@ -32,7 +32,7 @@ pages:
     - myst init --project
     - myst build --site
     - ls _build/site/
-    - myst build --html --ci
+    - myst build --html --ci --keep-host 
     - mv _build/html/ ../public
     #- mv tmp_myst.yml myst.yml
     #- myst build --html
