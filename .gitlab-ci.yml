@@ -41,6 +41,7 @@ pages:
     #- myst build --html
     #- mv _build/html/ public/en
     #- pip install jupyterlite-core jupyterlite-xeus jupyterlab notebook ipympl ipywidgets
+    #- mamba install micromamba -c conda-forge
     #- rm -rf notebooks/TP_SN.ipynb
     #- jupyter lite build --XeusAddon.environment_file=jupyterlite-environment.yml --contents=notebooks --output-dir=public/lite
   artifacts:
