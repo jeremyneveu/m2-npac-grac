@@ -427,6 +427,19 @@ TODO
 
 
 
+:::{note} Peut-on voir le CMB évoluer dans le temps ?
+:class: dropdown
+
+
+A retravailler : https://www.reddit.com/r/askscience/comments/100snke/is_any_movement_visible_in_the_fluctuations_of/
+
+Sur quelle échelle de temps devrions-nous alors nous attendre à voir le CMB changer ? Les plus petites échelles que nous pouvons résoudre, actuellement, sont d'environ 0,07 degré dans le ciel, ce qui correspond à environ 50 000 années-lumière (15 kpc) à la distance du CMB. (C'est en fait remarquablement petit grâce au renversement du diamètre angulaire !)
+
+Pour une structure de 50 000 années-lumière, la lumière de l'extrémité la plus éloignée met 50 000 ans de plus à nous atteindre que la lumière de l'extrémité la plus proche. Cela signifie-t-il que nous devrions nous attendre à ce que les fluctuations de température du CMB à ces échelles changent en environ 50 000 ans ? Eh bien, pas tout à fait. Le CMB est décalé vers le rouge d'un facteur de 1100, ce qui signifie qu'il est dilaté dans le temps par le même facteur. Nous nous attendons donc à ce que les fluctuations aux échelles (actuellement) les plus petites résolues changent sur une échelle de temps (1100 fois plus longue) d'environ 55 millions d'années. 
+
+:::
+
+
 ### Profondeur optique
 
 On définit la profondeur optique $\tau$ par le rapport du nombre de photons reçus sur Terre sans avoir subi aucune diffusion Thomson $N(t_0)$ sur le nombre de photons $N(t)$ émis à un instant $t$:

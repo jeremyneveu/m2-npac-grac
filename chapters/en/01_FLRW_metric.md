@@ -636,17 +636,6 @@ Geometry in a spherical universe.
 
 
 
-:::{warning}
-
-Neither proper distance nor comoving distance are measurable, since they presuppose the ability to free oneself from the expansion of the Universe. In cosmology, however, we want to measure distances and their evolution in order to deduce the behavior of $a(t)$ and thus the behavior of the contents of the Universe. Traditionally, cosmology uses photons as messengers from the most distant galaxies. The observation of luminous stars can lead us to determine distances according to at least two of their aspects: luminosity and apparent size. We can thus define two distances based on the observation of luminous flux $\Phi$ and angular size $\delta$ :
-$$
-\Phi = \frac{L}{4\pi D_L^2}, \qquad \delta = \frac{l}{D_A}
-$$
-where $L$ is an object's intrinsic luminosity (in watts) and $l$ a physical size (in meters).
-
-:::
-
-
 Cosmic time and conformal time
 --------------------------------
 

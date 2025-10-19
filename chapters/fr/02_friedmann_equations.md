@@ -8,18 +8,39 @@ keywords: cosmological distances, scale factor, dark energy
 L'Univers en expansion
 ======================
 
-Dans le chapitre précédent, par de simples considérations géométriques, nous sommes parvenus à écrire la forme de la métrique solution de l'équation d'Einstein pour un Univers homogène et isotrope. D'un tenseur inconnu à 10 composantes (car la métrique est un tenseur symétrique), par des arguments de symétrie nous avons abouti à la métrique FLRW qui ne contient qu'une seule fonction inconnue du temps $a(t)$. Pour maintenant décrire la dynamique de l'Univers, et non plus sa géométrie, il faut résoudre l'équation d'Einstein afin de comprendre comment le contenu en matière et en énergie agit sur l'expansion l'Univers via le facteur d'échelle $a(t)$.
+Dans le chapitre précédent, par de simples considérations géométriques, nous sommes parvenus à écrire la forme de la métrique solution de l'équation d'Einstein pour un Univers homogène et isotrope. D'un tenseur inconnu à 10 composantes (car la métrique est un tenseur symétrique), par des arguments de symétrie nous avons abouti à la métrique FLRW qui ne contient qu'une seule fonction inconnue du temps $a(t)$. Pour maintenant décrire la dynamique de l'Univers, et non plus sa géométrie, il faut résoudre l'équation d'Einstein afin de comprendre comment le contenu en matière et en énergie agit sur l'expansion de l'Univers via le facteur d'échelle $a(t)$.
 
 
 Le tenseur énergie-impulsion
 ----------------------------
 
+### Définition en Relativité Restreinte
+
+Pour un ensemble de $N$ particules, en interaction ou non entre elles ou avec l'extérieur, la densité de quadri-impulsion $p^\mu$ de cet ensemble est définie par {cite:p}`Weinberg1972`[p. 43]:
+$$
+\sum_n p_n^{\mu}c\ \delta^{(3)}(\vec x - \vec x_n(t)) = T^{\mu 0}(t, \vec x) 
+$$
+où $\vec x_n(t)$ et $p_n^{\mu}(t)=(E_n/c, \vec p_n)$ sont les positions et quadri-impulsions de la particule $n$ à l'instant $t$. Le courant volumique[^vecj] d'impulsion à travers une surface de normale $\vec e_i$ est quant à lui :
+$$
+\sum_n p_n^{\mu} \frac{\dd x_n^i(t)}{\dd t} \delta^{(3)}(\vec x - \vec x_n(t)) = T^{\mu i}(t, \vec x)
+$$
+Ces deux définitions peuvent être combinées pour obtenir un tenseur à deux indices :
+$$
+T^{\mu \nu}(t, \vec x) = \sum_n p_n^{\mu} \frac{\dd x_n^\nu(t)}{\dd t} \delta^{(3)}(\vec x - \vec x_n(t))
+$$
+avec $x_n^0(t)=ct$. Dans le référentiel où cet ensemble de particules est au repos, l'énergie d'une particule massive est $E_n= \gamma_n m^2 c^2$ (avec $\gamma_n$ son facteur de Lorentz) et son impulsion est $\vec p_n c = \gamma_n m \vec v_n c$: on démontre alors que $p_n^\mu c = E_n (\dd x_n^\mu /c \dd t)$[^pcphoton]. D'où l'écriture du tenseur énergie-impulsion en tant que tenseur symétrique en relativité restreinte :
+$$
+T^{\mu \nu}(t, \vec x) = c^2 \sum_n \frac{p_n^{\mu} p_n^{\nu}}{E_n} \delta^{(3)}(\vec x - \vec x_n(t))\label{eq:TmunuGaz}
+$$
+
+
+
 :::{figure} ../../images/tmunu_def.svg
 
-Le tenseur énergie-impulsion représente les flux de quadri-impulsions $p^\mu$ et la densité d'énergie $\epsilon$ dans un volume local d'espace-temps. Si le système physique étudié dans ce volume local n'est soumis à aucune force qui travaille hormis la gravitation, alors on a l'équation de conservation $T^{\mu\nu}_{\;\;\;;\mu}=0$.
+Le tenseur énergie-impulsion représente les courants volumiques de quadri-impulsions $p^\mu$ et la densité d'énergie $\epsilon$ dans un volume local d'espace-temps. Si le système physique étudié dans ce volume local n'est soumis à aucune force qui travaille hormis la gravitation, alors on a l'équation de conservation $T^{\mu\nu}_{\;\;\;;\mu}=0$.
 :::
 
-Le tenseur énergie-impulsion $T^{\mu\nu}$ de l'équation d'Einstein décrit la densité d'énergie et les flux de quantités de mouvements en mécanique relativiste. C'est un tenseur d'ordre 2, construit à partir du vecteur 4-impulsion, qui prend la forme suivante :
+Le tenseur énergie-impulsion $T^{\mu\nu}$ de l'équation d'Einstein décrit la densité d'énergie et les flux volumiques de quantité de mouvements en mécanique relativiste. C'est un tenseur d'ordre 2, construit à partir du vecteur 4-impulsion, qui prend la forme suivante :
 \begin{equation}
 T^{\mu\nu}=\begin{pmatrix} 
 T^{00}= \text{energy density}\,\,\,\,
@@ -41,43 +62,105 @@ T^{00}= \text{energy density}\,\,\,\,
 \end{pmatrix}
 \label{stress-energy-tensor-meaning}
 \end{equation}
-Si le système physique étudié dans ce volume local n'est soumis à aucune force qui travaille hormis la gravitation, alors on a l'équation de conservation $T^{\mu\nu}_{\;\;\;;\mu}=0$, C'est un jeu de quatre équations qui représentent l'équation de conservation locale de l'énergie et de l'impulsion. 
 
 Quelques remarques sur les composantes de ce tenseur :
 * $T^{00}$ est la densité d'énergie $\epsilon$ locale, généralement c'est la composante dominante du tenseur énergie-impulsion;
-* $T^{ii}$ représentent les flux de quantité de mouvement à travers une surface donc la pression cinétique $P$ exercée par le système physique dans la direction $\vec e_i$;
-* $T^{ij},\ i \neq j$ représentent les flux d'impulsions latéralement aux déplacements, donc des phénomènes de viscosité ou de cisaillement.
+* $T^{ii}$ représentent les flux de quantité de mouvement à travers une surface de normale colinéaire donc la pression cinétique $P$ exercée par le système physique dans la direction $\vec e_i$;
+* $T^{ij},\ i \neq j$ représentent les flux d'impulsions latéralement aux directions des impulsions, donc des phénomènes de viscosité ou de cisaillement.
 
-:::{note} Tenseur énergie-impulsion en Relativité Restreinte
+
+### Hydrodynamique en relativité
+
+
+Plaçons nous dans le référentiel où l'ensemble de particules est en moyenne au repos, et considérons-le comme un fluide. C'est-à-dire qu'on l'étudie à des échelles bien supérieures au libre parcours moyen des particules. Supposons maintenant que ce fluide est parfait (<wiki:perfect_fluid>) : il ne possède aucune viscosité et aucune conductivité thermique {cite:p}`Weinberg1972`[p. 48]. Étant donné la définition d'un tenseur énergie-impulsion, dans le référentiel $\mathcal{R}'$ où le fluide parfait est au repos on peut écrire que le tenseur doit prendre la forme :
+$$ T'^{\mu\nu}_{\rm PF} = \begin{pmatrix}
+\epsilon & 0 & 0 & 0 \\
+0 & P  & 0 & 0 \\ 
+0 & 0 & P  & 0 \\ 
+0 & 0 & 0 & P   \\ 
+\end{pmatrix}
+$$
+En effet, si sa viscosité est nulle alors il ne peut y avoir de transfert d'impulsion latéralement à la direction des impulsions (car un écoulement visqueux se caractérise par de la diffusion de quantité de mouvement), donc $T^{ij} = 0$ si $i\neq j$. De même, si le fluide n'a aucune conductivité thermique alors il n'y a pas de flux d'énergie donc $T'^{0i}=T'^{i0}=0$. Sur la diagonale de la partie spatiale du tenseur, on retrouve la pression cinétique (un flux de quantité de mouvement à travers une surface dans le sens de l'impulsion). Les trois termes sont égaux pour un fluide parfait car une anisotropie des pressions supposent des transferts de quantité de mouvements donc de la viscosité (dite de volume <wiki:Volume_viscosity>). L'hypothèse de fluide parfait simplifie donc fortement la structure du tenseur énergie-impulsion. 
+
+Ensuite, dans un référentiel inertiel quelconque, par exemple un laboratoire où l'on observe l'écoulement de ce fluide parfait, ce tenseur énergie-impulsion se réécrit :
+$$ T^{\mu\nu} = \Lambda^{\mu}_{\;\alpha} \Lambda^{\nu}_{\;\beta} T'^{\alpha\beta} $$
+avec $\Lambda^\mu_{\;\alpha}$ la transformation de Lorentz définie par l'équation [](#eq:lorentz2). Plus explicitement :
+$$ T^{ij}_{\rm PF} = P \delta^{ij} + (P + \rho c^2) \frac{v^i v^j}{c^2- v^2}, \quad T^{i0}_{\rm PF} = (P + \rho c^2) \frac{c v ^i}{c^2  - v^2}, \quad T^{00}_{\rm PF} = \frac{\rho c^4  + P v^2}{c^2  - v^2} \label{eq:TijV} $$
+Définissons la quadri-vitesse ainsi :
+$$ \vec U =\frac{\ \dd \vec x }{c \dd \tau} = \frac{\vec v / c }{ \sqrt{1-v^2}}, \quad U^0 = \frac{\dd t }{\dd  \tau} =  \frac{1 }{ \sqrt{1-v^2}}, \quad U_ \mu U ^\mu = -c^2  $$
+alors le tenseur s'écrit :
+$$ T^{\mu\nu}_{\rm PF} = (\rho c^2 + P) U^\mu U^\nu + P \eta^{\mu\nu}$$
+
+:::{note} Equation de Navier-Stokes
 :class: dropdown
 
-Pour un ensemble de $N$ particules, la densité de quadri-impulsion $p^\mu$ est définie par {cite:p}`Weinberg1972`[p. 43]:
+Pour simplifier, ramenons-nous au cas d'un fluide incompressible donc $\dd \rho / \dd t = 0$ et non relativiste donc $P / \rho c^2 \propto (v/c)^2 \ll 1$. Alors la dérivée de l'équation [](#eq:TijV) aboutit à :
+$$ 0 = \frac{\partial T^{\mu\nu}}{\partial x^\nu} \Rightarrow
+\left\lbrace\begin{align*}
+& \mu = i:\ & 0 = & \vec\nabla P + \rho \frac{\partial \vec v}{\partial t} +  \rho (\vec v \cdot \vec\nabla)(\vec v)  \\
+& \mu = 0:\ & 0 = & \rho \vec \nabla \vec v + \frac{\partial \rho}{\partial t} 
+\end{align*}\right.
 $$
-T^{\mu 0}(t, \vec x) = \sum_n p_n^{\mu}c \delta^{(3)}(\vec x - \vec x_n(t))
-$$
-où $x_n(t)$ et $p_n^{\mu}(t)=(E_n/c, \vec p_n)$ sont les positions et quadri-impulsions de la particule $n$ à l'instant $t$. Le flux d'impulsion à travers une surface de normale $\vec e_i$ est quant à lui :
-$$
-T^{\mu i}(t, \vec x) = \sum_n p_n^{\mu} \frac{\dd x_n^i(t)}{\dd t} \delta^{(3)}(\vec x - \vec x_n(t))
-$$
-Ces deux définitions peuvent être combinées pour obtenir :
-$$
-T^{\mu \nu}(t, \vec x) = \sum_n p_n^{\mu} \frac{\dd x_n^\nu(t)}{\dd t} \delta^{(3)}(\vec x - \vec x_n(t))
-$$
-avec $x_n^0(t)=ct$. Comme l'énergie d'une particule massive est $E=\sqrt{m^2\gamma^2 \vec v^2 c^2 + m^2 c^4}$ et celle d'une particule de masse nulle est $E=\vert \vec p \vert c$, alors on démontre que $p_n^\mu c = E_n (\dd x_n^\mu /c \dd t)$. D'où l'écriture du tenseur énergie-impulsion en tant que tenseur symétrique :
-$$
-T^{\mu \nu}(t, \vec x) = c^2 \sum_n \frac{p_n^{\mu} p_n^{\nu}}{E_n} \delta^{(3)}(\vec x - \vec x_n(t))\label{eq:TmunuGaz}
-$$
+La conservation du tenseur énergie-impulsion d'un fluide parfait permet de retrouver l'équation de Navier-Stokes sans viscosité et sans forces extérieures, et l'équation de conservation de la matière. 
+
+Dans le cas de la Relativité Générale, on utilise la dérivée covariante au lieu de la dérivée partielle. A ce moment-là, les symboles de Christofell qui apparaissent vont traduire les forces gravitationnelles et intertielles, l'équivalent du terme $\rho \vec g$ de l'équation de Navier-Stokes habituelle.
 
 :::
 
-Or dans notre hypothèse d'Univers de symétrie maximale, rappelons tout d'abord qu'on peut définir un temps cosmique, universel,  en utilisant l'évolution physique de l'Univers comme une horloge (densité de matière, température du CMB...). Les hypersurfaces de l'espace-temps paramétrées par ce temps universel sont alors elles-mêmes des sous-espaces de symétrie maximale. Les tenseurs $\mathcal{T}$ représentants des observables cosmologiques de tels sous-espaces de symétrie maximale doivent alors être de _forme invariante_ c'est-à-dire qu'ils restent les mêmes fonctions des coordonnées spatiales à une date $t$ quelque soit le choix du système de coordonnées choisi : si on passe d'un système $x^\rho$ à $x'^\rho$, on doit avoir $\mathcal{T}'_{\mu\nu\ldots}(x'^\rho) = \mathcal{T}_{\mu\nu\ldots}(x'^\rho)$. Intuitivement, si $\mathcal{T}$ est le tenseur énergie-impulsion cela revient entre autre à demander que la densité d'énergie soit identique en tout point pour tout choix de système de coordonnées {cite:p}`Weinberg1972`[p. 409]. On peut démontrer alors une propriété importante concernant la forme que doivent prendre les tenseurs de ces sous-espaces {cite:p}`Weinberg1972`[p. 392].
+On voit que $T^{\mu\nu}_{\rm PF}$ est bien un tenseur car il se transforme comme un tenseur par un changement de coordonnées. Toute équation physique qui s'exprime sous la forme de tenseurs en Relativité Restreinte prend exactement la même forme dans un référentiel local d'un espace-temps courbe. Par conséquent, le tenseur énergie-impulsion peut s'écrire dans n'importe quelle métrique et se définit ainsi en Relativité Générale :
+$$ \boxed{ T^{\mu\nu}_{\rm PF} = (\rho c^2 + P) U^\mu U^\nu + P g^{\mu\nu} }$$
+Si le système physique étudié dans ce volume local n'est soumis à aucune force qui travaille hormis la gravitation, alors on a l'équation de conservation $T^{\mu\nu}_{\;\;\;;\mu}=0$, C'est un jeu de quatre équations qui représentent l'équation de conservation locale de l'énergie et de l'impulsion. 
 
-:::{important} Structure des tenseurs de forme invariante
-Un tenseur de forme invariante dans un espace de symétrie maximale :
+
+### Tenseur énergie-impulsion cosmologique
+
+Après ce préambule sur la définition du tenseur énergie-impulsion et son expression pour un fluide parfait, recherchons quel est la forme de ce tenseur pour l'Univers aux grandes échelles, en appliquant le principe cosmologique. Si l'Univers est homogène et isotrope, alors les termes non diagonaux sont nuls car sinon ils sont à l'origine d'anisotropies. Sur la diagonale, les termes spatiaux doivent être égaux pour respecter l'isotropie de l'Univers (même pression cinétique dans toutes les directions). De plus l'homogénéité impose que le tenseur ne dépent pas de la position $\vec x$ mais seulement du temps. Par conséquent, le tenseur énergie-impulsion cosmologique s'écrit :
+$$ T^{\mu\nu}_{\rm COSMO} = \begin{pmatrix}
+\epsilon(t) & 0 & 0 & 0 \\
+0 & P(t)  & 0 & 0 \\ 
+0 & 0 & P(t)  & 0 \\ 
+0 & 0 & 0 & P(t)   \\ 
+\end{pmatrix} = T'^{\mu\nu}_{\rm PF} 
+$$
+Après application de ces hypothèses, on trouve que le tenseur énergie-impulsion cosmologique est le même que celui d'un fluide parfait homogène dans son référentiel au repos. Le comportement de la matière dans un Univers homogène et isotrope peut donc se décrire comme celle d'un fluide parfait, c'est-à-dire qu'on ne s'attend à observer aucun phénomène de viscosité ou de flux d'énergie. Cela implique que les transformations de la matière lors de l'évolution cosmologique de l'Univers sont _adiabatiques_. Le fluide étant au repos, on peut considérer que sa quadri-vitesse de la matière aux échelles cosmologiques dans le référentiel d'observateurs comobiles s'écrit $U^0=1,\ U^i = 0$ et on obtient :
+$$ \boxed{ T^{\mu\nu}_{\rm COSMO} = (\rho c^2 + P) U^\mu U^\nu + P g^{\mu\nu},\quad U^\mu=(1, 0,0,0) }\label{eq:def-Tmunu2}$$
+
+
+En utilisant la métrique FLRW, solution d'un univers homogène et isotrope également, le tenseur énergie-impulsion s'écrit :
+\begin{equation}
+\label{eq:def-Tmunu}
+T^{\mu\nu} = (\epsilon + P) U^\mu U^\nu + P g^{\mu\nu} = 
+\begin{pmatrix}
+\epsilon & 0 & 0 & 0 \\
+0 & P g^{11} & 0 & 0 \\ 
+0 & 0 & P g^{22} & 0 \\ 
+0 & 0 & 0 & P g^{33}  \\ 
+\end{pmatrix} 
+\end{equation}
+
+Dans une base cartésienne et un espace plat, le tenseur énergie-impulsion prend la forme simple :
+\begin{equation}
+\label{eq:tmunu_fluide}
+T^{\mu\nu}  =  
+\begin{pmatrix}
+\epsilon & 0 & 0 & 0 \\
+0 & P/a^2(t) & 0 & 0 \\ 
+0 & 0 & P/a^2(t) & 0 \\ 
+0 & 0 & 0 & P/a^2(t)  \\ 
+\end{pmatrix}.
+\end{equation}
+
+
+```{note} Démontration plus formelle
+:class: dropdown
+
+Dans notre hypothèse d'Univers de symétrie maximale, rappelons tout d'abord qu'on peut définir un temps cosmique, universel,  en utilisant l'évolution physique de l'Univers comme une horloge (densité de matière, température du CMB...). Les hypersurfaces de l'espace-temps paramétrées par ce temps universel sont alors elles-mêmes des sous-espaces de symétrie maximale. Les tenseurs $\mathcal{T}$ représentants des observables cosmologiques de tels sous-espaces de symétrie maximale doivent alors être de _forme invariante_ c'est-à-dire qu'ils restent les mêmes fonctions des coordonnées spatiales à une date $t$ quelque soit le choix du système de coordonnées choisi : si on passe d'un système $x^\rho$ à $x'^\rho$, on doit avoir $\mathcal{T}'_{\mu\nu\ldots}(x'^\rho) = \mathcal{T}_{\mu\nu\ldots}(x'^\rho)$. Intuitivement, si $\mathcal{T}$ est le tenseur énergie-impulsion cela revient entre autre à demander que la densité d'énergie soit identique en tout point pour tout choix de système de coordonnées {cite:p}`Weinberg1972`[p. 409]. 
+
+On peut démontrer alors une propriété importante concernant la forme que doivent prendre les tenseurs de ces sous-espaces {cite:p}`Weinberg1972`[p. 392]. Un tenseur de forme invariante dans un espace de symétrie maximale :
 - est indépendant de la position si c'est un scalaire,
 - est nul si c'est un vecteur,
 - est proportionnel au tenseur métrique si c'est un tenseur d'ordre 2.
-:::
+
 
 :::{tip} Démonstration pour un tenseur scalaire {cite:p}`Weinberg1972`[p. 392]
 :class: dropdown
@@ -104,8 +187,6 @@ $$
 \frac{\partial \mathcal{S}(x)}{\partial x^\lambda} = 0
 $$
 donc $\mathcal{S}$ de forme invariante n'est pas une fonction des coordonnées d'espaces.
-
-
 :::
 
 Par conséquent, mathématiquement on peut introduire $\epsilon(t)$ et $P(t)$ deux fonctions du temps telles que le tenseur énergie-impulsion se simplifie en :
@@ -115,72 +196,14 @@ T^{i0} & = T^{0i} = 0 & \quad  \text{(vecteur)} \\
 T^{ij} & =  P(t) \gamma^{ij}& \quad \text{(tenseur d'ordre 2)}
 \end{align} $$
 
-De manière plus élégante, on peut introduire le quadri-vecteur $U^\mu$ défini par :
-$$ U^0 = 1, \quad U^i = 0 $$
-et obtenir une écriture compacte pour le tenseur énergie-impulsion d'un Univers homogène et isotrope :
-\begin{equation}
-\label{eq:def-Tmunu2}
-T^{\mu\nu} = (\epsilon + P) U^\mu U^\nu + P g^{\mu\nu}
-\end{equation}
-En utilisant la métrique FLRW, solution d'un univers homogène et isotrope également, le tenseur énergie-impulsion s'écrit :
-\begin{equation}
-\label{eq:def-Tmunu}
-T^{\mu\nu} = (\epsilon + P) U^\mu U^\nu + P g^{\mu\nu} = 
-\begin{pmatrix}
--\epsilon g^{00} & 0 & 0 & 0 \\
-0 & P g^{11} & 0 & 0 \\ 
-0 & 0 & P g^{22} & 0 \\ 
-0 & 0 & 0 & P g^{33}  \\ 
-\end{pmatrix} 
-\end{equation}
+Comment interpréter ces considérations mathématiques ? Tout d'abord, si on compare ces termes avec [](#stress-energy-tensor-meaning) alors on identifie $\epsilon$ à la densité d'énergie et $P$ à la pression cinétique (flux de quantité de mouvement à travers une surface)[^epsP]. Le tenseur énergie-impulsion $T^{\mu\nu}$ obtenu s'identifie à celui d'un fluide parfait. 
 
-Dans une base cartésienne et un espace plat, le tenseur énergie-impulsion prend la forme simple :
-\begin{equation}
-\label{eq:tmunu_fluide}
-T^{\mu\nu}  =  
-\begin{pmatrix}
-\epsilon & 0 & 0 & 0 \\
-0 & P/a^2(t) & 0 & 0 \\ 
-0 & 0 & P/a^2(t) & 0 \\ 
-0 & 0 & 0 & P/a^2(t)  \\ 
-\end{pmatrix}.
-\end{equation}
-
-Comment interpréter ces considérations mathématiques ? Tout d'abord, si on compare l'équation [](#eq:def-Tmunu) avec [](#stress-energy-tensor-meaning) alors on identifie $\epsilon$ à la densité d'énergie et $P$ à la pression cinétique (flux de quantité de mouvement à travers une surface)[^epsP]. Ensuite, le tenseur énergie-impulsion $T^{\mu\nu}$ s'identifie à celui d'un <wiki:perfect_fluid>. Cela signifie que dans un Univers homogène et isotrope la matière peut être décrite comme un milieu continu, dont l'évolution peut être décrite sans prendre en compte des effets de viscosité et de conduction thermique. _L'évolution thermodynamique de l'Univers est donc adiabatique._ Enfin, $U^\mu$ s'identifie alors à la quadri-vitesse comoving du fluide, donc le fait que $U^i = 0$ montre que le système physique étudié est au repos dans les coordonnées comovings, comme attendu. 
-
-
-:::{note} Tenseur énergie-impulsion d'un fluide parfait {cite:p}`Weinberg1972`[p. 48]
-:class: dropdown
-
-Étudions un fluide parfait, c'est-à-dire un ensemble de particules dont le libre parcours moyen est petit devant les distances  auxquelles on l'étudie, et sans viscosité. Étant donné la définition d'un tenseur énergie-impulsion, dans le référentiel $\mathcal{R}'$ où le fluide parfait est au repos on peut écrire :
-$$ T'^{ij} = P \delta^{ij}, \quad T'^{i0} = T'^{0i} = 0, \quad T'^{00} = \rho c^2 $$
-où explicitement $\rho$ est la densité _massique_ propre du fluide et $P$ sa pression cinétique (donc un flux de quantité de mouvement à travers une surface). Dans un autre référentiel, celui d'un observateur de l'écoulement par exemple, ce tenseur énergie-impulsion se réécrit :
-$$ T^{\mu\nu} = \Lambda^{\mu}_{\;\alpha} \Lambda^{\nu}_{\;\beta} T^{\alpha\beta} $$
-avec $\Lambda^\mu_{\;\alpha}$ la transformation de Lorentz définie par l'équation [](#eq:lorentz2). Plus explicitement :
-$$ T^{ij} = P \delta^{ij} + (P + \rho c^2) \frac{v^i v^j}{c^2- v^2}, \quad T^{i0} = (P + \rho c^2) \frac{c v ^i}{c^2  - v^2}, \quad T^{00} = \frac{\rho c^4  + P v^2}{c^2  - v^2} $$
-
-Définissons la quadri-vitesse en coordonnées comovings ainsi :
-$$ \vec U =\frac{ \dd \vec x }{c \dd \tau} = \frac{\vec v / c }{ \sqrt{1-v^2}}, \quad U^0 = \frac{\dd t }{\dd  \tau} =  \frac{1 }{ \sqrt{1-v^2}}, \quad U_ \mu U ^\mu = -c^2  $$
-alors le tenseur s'écrit :
-$$ T^{\mu\nu} = (\rho c^2 + P) U^\mu U^\nu + P \eta^{\mu\nu}$$
-
-L'équation [](#eq:def-Tmunu) correspond donc bien à la définition d'un tenseur énergie-impulsion pour un fluide parfait dans le cadre relativiste.
-
-Remarquons que dans un espace-temps plat, la conservation du tenseur énergie-impulsion d'un fluide parfait permet de retrouver l'équation de Navier-Stokes sans viscosité et sans forces extérieures, et l'équation de conservation de la matière. Pour simplifier, ramenons-nous au cas d'un fluide incompressible donc $\dd \rho / \dd t = 0$ et non relativiste donc $P / \rho c^2 \propto (v/c)^2 \ll 1$. Alors :
-$$ 0 = \frac{\partial T^{\mu\nu}}{\partial x^\nu} \Rightarrow
-\left\lbrace\begin{align*}
-& \mu = i:\ & 0 = & \vec\nabla P + \rho \frac{\partial \vec v}{\partial t} +  \rho (\vec v \cdot \vec\nabla)(\vec v)  \\
-& \mu = 0:\ & 0 = & \rho \vec \nabla \vec v + \frac{\partial \rho}{\partial t} 
-\end{align*}\right.
-$$
-
-:::
-
+```
 
 Les équations de Friedmann
 ---------------------------
 
-Résoudre l'équation d'Einstein [](#eq:einstein2) consiste à en trouver une métrique solution, compte tenu de la répartition en matière et énergie codée dans $T^{\mu\nu}$. Supposer les principes d'homogénéité et d'isotropie pour ce tenseur, impose que la métrique est la métrique de Friedmann-Lemaître-Robertson-Walker (FLRW), utilisant le jeu de coordonnées comovings sphériques usuel $(ct, \sigma, \theta, \phi)$:
+Résoudre l'équation d'Einstein [](#eq:einstein2) consiste à en trouver une métrique solution, compte tenu de la répartition en matière et énergie codée dans $T^{\mu\nu}$. Supposer les principes d'homogénéité et d'isotropie pour ce tenseur, impose que la métrique est la métrique de Friedmann-Lemaître-Robertson-Walker (FLRW), utilisant le jeu de coordonnées comobiles sphériques usuel $(ct, \sigma, \theta, \phi)$:
 $$
 \begin{aligned}\label{eq:flrw}
 \displaystyle g_{\mu\nu} = \begin{pmatrix}
@@ -472,7 +495,7 @@ La densité d'énergie associée à la constante cosmologique est parfois appel�
 $$\epsilon_\Lambda(t) = \rho_\Lambda c^2 =  \frac{c^4 \Lambda}{8\pi \GN} = \text{ constante }.$$ 
 On voit que la densité d'énergie associée à la constante cosmologique étant constante dans le temps, cette dernière possède un comportement bien singulier : quelque soit la taille de l'Univers, il y a toujours autant d'énergie par unité de volume. Elle n'est donc pas diluée comme toute énergie ordinaire lorsque celui-ci est en expansion. De plus, grâce à la seconde équation de Friedmann, on voit que la pression associée à la constante cosmologique serait :
 $$P_\Lambda = - \epsilon_\Lambda,$$
-soit une pression négative ! Dans la physique ordinaire, un des rares phénomènes où interviennent des pressions négatives est la cavitation (<wiki:Pressure#Negative_pressures). En posant $\epsilon_{\mathrm{tot}}=\epsilon + \epsilon_\Lambda$ (et $P_{\mathrm{tot}}=P + P_\Lambda$) puis en combinant les deux équations de Friedmann [](#eq:friedmann) de façon à éliminer le terme de courbure, on  obtient :
+soit une pression négative ! Dans la physique ordinaire, un des rares phénomènes où interviennent des pressions négatives est la cavitation (<wiki:Pressure#Negative_pressures>). En posant $\epsilon_{\mathrm{tot}}=\epsilon + \epsilon_\Lambda$ (et $P_{\mathrm{tot}}=P + P_\Lambda$) puis en combinant les deux équations de Friedmann [](#eq:friedmann) de façon à éliminer le terme de courbure, on  obtient :
 \begin{equation}
 \label{eq:ddota}
 2\dot{H} + 2H^2 = \frac{2\ddot{a}}{a} = -\frac{8\pi \GN}{3}\left( \epsilon _{\mathrm{tot}} + 3P_{\mathrm{tot}}\right).
@@ -570,7 +593,17 @@ L'enjeu majeur pour les relevés cosmologiques actuels et futurs est de mesurer 
 Distances cosmologiques
 ------------
 
-La cosmologie est une science observationnelles. Il faut inférer les propriétés de l'Univers sans pouvoir se déplacer ou refaire l'expérience du Big Bang, mais à partir de nos observations seulement. Les paramètres cosmologiques sont liés au taux d'expansion de l'Univers $H(z)$. Donc pour pouvoir les estimer nous devons être capable de mesurer $H(z)$. Ce taux d'expansion est présent dans les distances propres et comovings définies [Sec. {number}](#distance-propre-et-distance-comoving), mais celles-ci ne sont pas mesurables. Par contre, avec des télescopes on peut mesurer des flux lumineux et des angles: si on connaît la luminosité de l'objet observé ou sa taille physique on peut en définir sa distance et la lier au taux d'expansion $H(z)$.
+La cosmologie est une science observationnelles. Il faut inférer les propriétés de l'Univers sans pouvoir se déplacer ou refaire l'expérience du Big Bang, mais à partir de nos observations seulement. Les paramètres cosmologiques sont liés au taux d'expansion de l'Univers $H(z)$. Donc pour pouvoir les estimer nous devons être capable de mesurer $H(z)$. Ce taux d'expansion est présent dans les distances propres et comobiles définies [Sec. {number}](#distance-propre-et-distance-comoving), mais celles-ci ne sont pas mesurables. 
+
+:::{warning}
+
+Ni la distance propre ni la distance comobile ne sont mesurables car elles supposent de pouvoir s'affranchir de l'expansion de l'Univers. Or, en cosmologie, on veut mesurer des distances et leur évolution pour en déduire le comportement de $a(t)$ et donc le comportement du contenu de l'Univers. Traditionnellement, la cosmologie utilise les photons comme messagers venant des galaxies les plus lointaines. L'observation des astres lumineux peut nous conduire à déterminer des distances selon au moins deux de leurs aspects: leur luminosité et leur taille apparente. On peut ainsi définir deux distances basées sur l'observation des flux lumineux $\Phi$ et des tailles angulaires $\delta$ :
+$$
+\Phi = \frac{L}{4\pi D_L^2}, \qquad \delta = \frac{l}{D_A}
+$$
+où $L$ est la luminosité intrinsèque d'un objet (en watts) et $l$ une taille physique (en mètres).
+
+:::
 
 
 ### Distance de Hubble
@@ -583,7 +616,7 @@ où $h$ est usuellement défini par :
 $$
 H_0 = 100\,h\,\text{km/s/Mpc}
 $$
-Donc pour $h=0.7$, on trouve $D_H \approx 4.3 \,\text{Gpc} \approx 14 \,\text{Gly}$. Cette valeur va apparaître pour toutes les distances (non comovings) définies ci-après.
+Donc pour $h=0.7$, on trouve $D_H \approx 4.3 \,\text{Gpc} \approx 14 \,\text{Gly}$. Cette valeur va apparaître pour toutes les distances (non comobiles) définies ci-après.
 
 
 ### Distance de luminosité 
@@ -675,11 +708,11 @@ $$
 
 Comment cette distance se modélise dans la métrique FLRW? Soit un objet de taille transverse physique $l$ situé en $\sigma=\sigma_E,t=t_E$ et observé aujourd'hui en $\sigma=0,t=t_0$. 
 
-Dans l'espace physique, l'angle $\delta$ est le même que dans l'espace comoving (on passe de l'un à l'autre par une homothétie), mais aussi le même à la réception et à l'émission. L'angle sous lequel est vu l'objet est donc dans tous les cas, et pour toute courbure (voir [](#fig:projection_polaire)) : 
+Dans l'espace physique, l'angle $\delta$ est le même que dans l'espace comobile (on passe de l'un à l'autre par une homothétie), mais aussi le même à la réception et à l'émission. L'angle sous lequel est vu l'objet est donc dans tous les cas, et pour toute courbure (voir [](#fig:projection_polaire)) : 
 $$
 \delta = \frac{l}{a_E \sigma_E} = \frac{l (a_0/a_E)}{a_0 \sigma_E}  = \frac{l_c}{\sigma_E}
 $$
-avec $l_c = l / a_E$ la taille comoving de l'objet à l'émission $t_E$. On propose de définir la distance angulaire comoving ou distance transverse comoving simplement par :
+avec $l_c = l / a_E$ la taille comobile de l'objet à l'émission $t_E$. On propose de définir la distance angulaire comobile ou distance transverse comobile simplement par :
 $$d_A(z) = \frac{l_c}{\delta} = \sigma_E = \left\lbrace\begin{array}{cl}
     \sin \chi(z) & \text{ si } k=+1 \\
     \chi(z) & \text{ si } k=0 \\
@@ -741,29 +774,50 @@ $$
 
 
 
-:::{exercise} Ordres de grandeur
-:label: exo:densities
 
-Transformer les valeurs de l'équation [](#eq:omegas_planck) en densité de masse et en densité d'énergie.
+
+
+
+:::{important} A retenir
+
+- Le Principe Cosmologique implique que la matière doit être décrite comme un fluide parfait, et donc que ses transformations sont adiabatiques.
+
+- L'évolution de l'Univers en fonction de son contenu en matière et de sa géoémtrie est codée dans les équations de Friedmann
+\begin{equation*}
+\left\lbrace
+\begin{array}{l}
+    \displaystyle{H^2 = \frac{8\pi \GN \rho}{3} + \frac{c^2 \Lambda}{3} - \frac{c^2 k}{a^2}},\\
+    \displaystyle{2\dot{H} + 3H^2 = - \frac{8\pi \GN}{c^2 } P + c^2 \Lambda - \frac{c^2 k}{a^2}}.
+\end{array}
+\right.
+\end{equation*}
+
+- Ces deux équations contiennent l'équation de conservation du tenseur énergie-impulsion
+\begin{equation*}
+\dot{\epsilon} = -3 H(\epsilon + P). 
+\end{equation*}
+
+- On définit le paramètere d'équation d'état pour une composante $X$ de l'Univers comme le rapport de sa pression et de sa densité d'énergie $w_X = P_X/\epsilon_X$. Son paramètre de densité est $\Omega_X = \rho_X / \rho_c$ avec $\rho_c = 3H^2/8\pi\GN$ la densité critique.
+
+- Les distances de luminosité et angulaire relie des observables physiques (flux lumineux et angles) aux propriétés intrinsèques de l'objet osbervé et à des distances intégrales de $1/H(a)$.
+
+::: 
+
+
+:::{seealso}  Pour approfondir
+
+- Démontration de la structure des tenseurs de forme invariante : {cite:p}`Weinberg1972`[p. 392]
+
+- Hydrodynamique en relativité : <wiki:Fluid_solution>
 
 :::
 
 
-:::{solution} exo:densities
-:class: dropdown
-
-Suppose that density of the dark energy as cosmological constant is equal to the present critical density, $\rho_\Lambda=\rho_c$. What is then the total amount of dark energy inside the Solar System? Compare this number with $M_\odot c^2$.
-
-$$\rho_c\approx 10^{-29}\,\text{g/cm}^3$$
-$$R\approx 50\,\text{A.U.}$$
-$$1\,\text{A.U.}\approx 1.5\times 1011m;EDESS/c2≃0.2⋅1014 kg;M⊙≃2⋅1030 kg;EDESSM⊙c2≃10−17.
-
-Transform Lambda into a length: Length = sqrt(1/Lambda) = ....
-
-:::
 
 
+[^vecj]: En électromagnétisme, la quantité de charge passant à travers une surface $\dd \vec S$ pendant une durée $\dd t$ est $\dd q = e n (\vec v \dd t)\cdot \dd \vec S$ avec $n$ la densité de particules: on définit alors le courant volumique de charge par $\vec j = e n \vec v$. La définition du courant volumique pour la quadri-impulsion (au lieu de la charge électrique) est identique.
 
+[^pcphoton]: Pour une particule sans masse, on a directement $E_n = \vert \vec p_n \vert c$.
 
 [^epsP]: Le choix des notations pour ces fonctions mathématiques n'a pas été fait par hasard...
 

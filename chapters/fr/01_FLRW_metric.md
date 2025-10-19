@@ -635,18 +635,6 @@ Géométrie dans un univers sphérique.
 :::
 
 
-
-:::{warning}
-
-Ni la distance propre ni la distance comobile ne sont mesurables car elles supposent de pouvoir s'affranchir de l'expansion de l'Univers. Or, en cosmologie, on veut mesurer des distances et leur évolution pour en déduire le comportement de $a(t)$ et donc le comportement du contenu de l'Univers. Traditionnellement, la cosmologie utilise les photons comme messagers venant des galaxies les plus lointaines. L'observation des astres lumineux peut nous conduire à déterminer des distances selon au moins deux de leurs aspects: leur luminosité et leur taille apparente. On peut ainsi définir deux distances basées sur l'observation des flux lumineux $\Phi$ et des tailles angulaires $\delta$ :
-$$
-\Phi = \frac{L}{4\pi D_L^2}, \qquad \delta = \frac{l}{D_A}
-$$
-où $L$ est la luminosité intrinsèque d'un objet (en watts) et $l$ une taille physique (en mètres).
-
-:::
-
-
 Temps cosmique et temps conforme
 --------------------------------
 

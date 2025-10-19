@@ -4,21 +4,41 @@ authors:
   - jneveu
 keywords: cosmological distances, scale factor, dark energy
 ---
+
 The expanding Universe
 ======================
 
-In the previous chapter, through simple geometrical considerations, we managed to write down the form of the metric solution to Einstein's equation for a homogeneous, isotropic Universe. From an unknown tensor with 10 components (because the metric is a symmetrical tensor), through symmetry arguments we have arrived at the FLRW metric, which contains just one unknown function of time $a(t)$. To describe the dynamics of the Universe, rather than its geometry, we need to solve Einstein's equation to understand how matter and energy content affect the expansion of the Universe via the scale factor $a(t)$.
+In the previous chapter, through simple geometrical considerations, we managed to write the form of the metric solution to Einstein's equation for a homogeneous and isotropic Universe. From an unknown tensor with 10 components (since the metric is a symmetric tensor), through symmetry arguments we arrived at the FLRW metric which contains only one unknown function of time $a(t)$. To now describe the dynamics of the Universe, and not just its geometry, we need to solve Einstein's equation in order to understand how the matter and energy content acts on the expansion of the Universe via the scale factor $a(t)$.
 
 
 The energy-momentum tensor
 ----------------------------
 
+### Definition in Special Relativity
+
+For a set of $N$ particles, interacting or not with each other or with the outside, the four-momentum density $p^\mu$ of this set is defined by {cite:p}`Weinberg1972`[p. 43]:
+$$
+\sum_n p_n^{\mu}c\ \delta^{(3)}(\vec x - \vec x_n(t)) = T^{\mu 0}(t, \vec x) 
+$$
+where $\vec x_n(t)$ and $p_n^{\mu}(t)=(E_n/c, \vec p_n)$ are the positions and four-momenta of particle $n$ at time $t$. The volume current[^vecj] of momentum through a surface with normal $\vec e_i$ is:
+$$
+\sum_n p_n^{\mu} \frac{\dd x_n^i(t)}{\dd t} \delta^{(3)}(\vec x - \vec x_n(t)) = T^{\mu i}(t, \vec x)
+$$
+These two definitions can be combined to obtain a tensor with two indices:
+$$
+T^{\mu \nu}(t, \vec x) = \sum_n p_n^{\mu} \frac{\dd x_n^\nu(t)}{\dd t} \delta^{(3)}(\vec x - \vec x_n(t))
+$$
+with $x_n^0(t)=ct$. In the reference frame where this set of particles is at rest, the energy of a massive particle is $E_n= \gamma_n m^2 c^2$ (with $\gamma_n$ its Lorentz factor) and its momentum is $\vec p_n c = \gamma_n m \vec v_n c$: we then demonstrate that $p_n^\mu c = E_n (\dd x_n^\mu /c \dd t)$[^pcphoton]. Hence the expression of the energy-momentum tensor as a symmetric tensor in special relativity:
+$$
+T^{\mu \nu}(t, \vec x) = c^2 \sum_n \frac{p_n^{\mu} p_n^{\nu}}{E_n} \delta^{(3)}(\vec x - \vec x_n(t))\label{eq:TmunuGaz}
+$$
+
 :::{figure} ../../images/tmunu_def.svg
 
-The energy-momentum tensor represents the flux of quadri-momentum $p^\mu$ and the energy density $\epsilon$ in a local volume of space-time. If the physical system studied in this local volume is not subject to any working force apart from gravitation, then we have the conservation equation $T^{\mu\nu}_{\;\;\;;\mu}=0$.
+The energy-momentum tensor represents the volume currents of four-momenta $p^\mu$ and the energy density $\epsilon$ in a local volume of space-time. If the physical system studied in this local volume is subject to no working force other than gravitation, then we have the conservation equation $T^{\mu\nu}_{\;\;\;;\mu}=0$.
 :::
 
-The energy-momentum tensor $T^{\mu\nu}$ in Einstein's equation describes the energy density and momentum fluxes in relativistic mechanics. It is a second-order tensor, constructed from the 4-momentum vector, and takes the following form:
+The energy-momentum tensor $T^{\mu\nu}$ of Einstein's equation describes the energy density and volume fluxes of momentum in relativistic mechanics. It is a second-order tensor, constructed from the 4-momentum vector, which takes the following form:
 \begin{equation}
 T^{\mu\nu}=\begin{pmatrix} 
 T^{00}= \text{energy density}\,\,\,\,
@@ -384,6 +404,45 @@ This is the same result as in the $T^{\beta \alpha}_{\,\,\,\,\,\,;\alpha}=0$ com
 
 :::
 
+:::{exercise} Evolution of entropy
+:label: exo:expansion_isentropique
+
+From the first principle of thermodynamics and equation [](#eq:conservation_energie), find that the expansion of the Universe is isentropic.
+
+:::
+
+:::{solution} exo:expansion_isentropique
+:class: dropdown
+
+$$\dd U = T \dd S - P \dd V $$
+$$U = a^3 \epsilon, \quad V = a^3$$
+$$ \dd(a^3 \epsilon) = - P \dd (a^3) + T \dd S \Rightarrow 3 \dot{a} a^2 \epsilon + a^3 \dot{\epsilon} = - 3 P \dot{a} a^2  + T \frac{\dd S}{\dd t}\Rightarrow \dot{\epsilon} = -3\frac{\dot{a}}{a}(P+\epsilon) +T \frac{\dd S}{\dd t} $$
+Therefore 
+$$\frac{\dd S}{\dd t} = 0$$
+and the expansion is isentropic. This is expected given that for a homogeneous and isotropic Universe the energy-momentum tensor is that of a perfect fluid therefore without viscosity or heat transfer. The evolution is therefore adiabatic ($\delta Q=0$).
+:::
+
+
+
+
+Cosmological inventory
+-----------------------
+
+The energy-momentum tensor includes non-relativistic and relativistic matter. Relativistic matter is generally called radiation because today the photon radiation from the CMB is largely dominant in this component. 
+
+### Matter
+
+Non-relativistic matter exerts no pressure so 
+$$P_m=0,$$
+then: 
+$$
+\label{eq:conservation_energie_matiere}
+\dot{\rho}_m = -3 H\rho_m \Rightarrow \rho_m = \rho_m^0 \left(\frac{a_0}{a}\right)^{3}.
+$$
+This last relation indeed translates the fact that if a box of side $a$ containing a certain quantity of matter sees the length of its sides double, then the matter density is indeed divided by $2^3$. 
+
+### Photons and neutrinos
+
 
 
 :::{exercise} Entropy evolution
@@ -430,22 +489,22 @@ This last relationship reflects the fact that if a box of side $a$ containing a 
 
 For relativistic matter (photons, neutrinos), 
 $$P_r = \frac{1}{3} \epsilon_r,$$
-therefore :
+therefore:
 $$
 \label{eq:conservation_energie_radiation}
 \dot{\epsilon}_r = -4 H\epsilon_r \Rightarrow \epsilon_r = \epsilon_r^0 \left(\frac{a_0}{a}\right)^{4}.
 $$ 
-The reasoning with a cubic box of side $a$ also applies here, but if all the lengths double, so does the wavelength of the radiation, so its energy is divided by 2. The radiation energy density decreases in $2^4$.
+The reasoning with a cubic box of side $a$ also applies here, but if all lengths double, then the wavelength of the radiation also doubles, so its energy is divided by 2. We indeed find a decrease in radiation energy density scaling as $2^4$.
 
 
-:::{note} Equation of state for a perfect gas
+:::{note} Equation of state of a perfect gas
 
-For a perfect gas, the equation of state is :
+For a perfect gas, we recall that the equation of state is:
 $$ P = \rho_n k_B T $$
-where $T$ is the temperature, $\rho_n$ is the particle density and $k_B$ is Boltzmann's constant.
-If it is at low temperature (i.e. non-relativistic), then we have $\epsilon \approx m c^2 \rho_n$ and we want $P / \epsilon = k_B T \ll 1/3$ or :
+with $T$ its temperature, $\rho_n$ the particle density and $k_B$ the Boltzmann constant.
+If it is at low temperature (i.e. non-relativistic) then we have $\epsilon \approx m c^2 \rho_n$ and we want $P / \epsilon = k_B T \ll 1/3$ namely:
 $$ T \ll m c^2 / 3 k_B $$
-For a hydrogen gas, $T \ll 10^{12}\,$K. So we see that matter as we know it is non-relativistic today and even long before the CMB.
+For a hydrogen gas, $T \ll 10^{12}\,$K. So we see that matter as we know it is non-relativistic today and even well before the CMB.
 
 :::
 
@@ -453,14 +512,14 @@ For a hydrogen gas, $T \ll 10^{12}\,$K. So we see that matter as we know it is n
 :::{note} Non-interaction hypothesis
 :class: dropdown
 
-We have used equation [](#eq:conservation_energie) to deduce that non-relativistic matter has a density that evolves in $a^{-3}$, whereas relativistic matter evolves in $a^{-4}$. The attentive reader may have noticed that the density and pressure in equation [](#eq:conservation_energie) are, however, the sum of relativistic and non-relativistic densities and pressures. In a Universe with these two components, are equations [](#eq:conservation_energie_matiere) and [](#eq:conservation_energie_radiation) still valid?
+We used equation [](#eq:conservation_energie) to deduce that non-relativistic matter has a density that evolves as $a^{-3}$ while relativistic matter evolves as $a^{-4}$. The attentive reader may have noticed that the density and pressure in equation [](#eq:conservation_energie) are however the sum of relativistic and non-relativistic densities and pressures. In a Universe possessing these two components, are equations [](#eq:conservation_energie_matiere) and [](#eq:conservation_energie_radiation) still valid?
 
-Equation [](#eq:conservation_energie) can be deduced from thermodynamic reasoning, which may be useful here. Since the expansion of the Universe is adiabatic, the entropy variation linked to expansion is zero, so $\dd S = 0$. The first principle of thermodynamics on a volume $V$ of Universe gives :
+Equation [](#eq:conservation_energie) can be derived from thermodynamic reasoning which may be useful here. Since the expansion of the Universe is adiabatic, the entropy variation linked to expansion is zero so $\dd S = 0$. The first principle of thermodynamics on a volume $V$ of Universe gives:
 $$\label{eq:conservation_energie_thermo}
-\dd U = -P \dd V + T \dd S \Leftrightarrow \dd \left(\epsilon_m V + \epsilon_r V \right) = -\frac{1}{3}\epsilon_r \dd V$$.
-If the two components do not interact with each other, then this last equation can be split into its two components, as two independent thermodynamic systems:
-$$\dd \left(\epsilon_m V \right) = 0, \quad \dd \left(\epsilon_r V \right) = -\frac{1}{3}\epsilon_r \dd V$$
-If they interacted, this would not be true. From these two equations, we again derive equations [](#eq:conservation_energie_matiere) and [](#eq:conservation_energie_radiation).
+\dd U = -P \dd V + T \dd S \Leftrightarrow \dd \left(\epsilon_m V + \epsilon_r V  \right) = -\frac{1}{3}\epsilon_r \dd V$$
+If the two components do not interact with each other, then this last equation can be split into its two components, like two independent thermodynamic systems:
+$$\dd \left(\epsilon_m V\right) = 0, \quad \dd \left(\epsilon_r V  \right) = -\frac{1}{3}\epsilon_r \dd V$$
+If they interacted, this would not be true. From these two equations, we deduce again equations [](#eq:conservation_energie_matiere) and [](#eq:conservation_energie_radiation).
 
 :::
 
@@ -469,15 +528,41 @@ If they interacted, this would not be true. From these two equations, we again d
 
 ### Cosmological constant
 
-In Friedmann's equations [](#eq:friedmann), the cosmological constant $\Lambda$ and curvature $k$ can be interpreted in terms of energy densities in the same way as the energy-momentum tensor $\rho$. 
+In Friedmann equations [](#eq:friedmann), it is possible to interpret the cosmological constant $\Lambda$ and curvature $k$ in terms of energy densities in the same way as the energy density $\rho$ of the energy-momentum tensor. 
 
-The energy density associated with the cosmological constant is sometimes called the dark energy density, because of the strange properties associated with it:
-$$\epsilon_\Lambda(t) = \rho_\Lambda c^2 = \frac{c^4 \Lambda}{8\pi \GN} = \text{ constant }.$$ 
-As we can see, the energy density associated with the cosmological constant is constant over time, so its behavior is quite unusual: whatever the size of the Universe, there is always as much energy per unit volume. It is therefore not diluted like ordinary energy when the Universe is expanding. What's more, thanks to Friedmann's second equation, we can see that the pressure associated with the cosmological constant would be :
+The energy density associated with the cosmological constant is sometimes called dark energy density, due to the strange properties associated with it:
+$$\epsilon_\Lambda(t) = \rho_\Lambda c^2 =  \frac{c^4 \Lambda}{8\pi \GN} = \text{ constant }.$$ 
+We see that the energy density associated with the cosmological constant being constant in time, it has a very singular behavior: whatever the size of the Universe, there is always as much energy per unit volume. It is therefore not diluted like any ordinary energy when the Universe expands. Moreover, thanks to the second Friedmann equation, we see that the pressure associated with the cosmological constant would be:
 $$P_\Lambda = - \epsilon_\Lambda,$$
-a negative pressure! In ordinary physics, one of the rare phenomena where negative pressures are involved is cavitation (<wiki:Pressure#Negative_pressures). By positing $\epsilon_{\mathrm{tot}}=\epsilon + \epsilon_\Lambda$ (and $P_{\mathrm{tot}}=P + P_\Lambda$) then combining the two Friedmann equations [](#eq:friedmann) so as to eliminate the curvature term, we obtain:
-\begin{equation}
-\label{eq:ddota}
+namely a negative pressure! In ordinary physics, one of the rare phenomena involving negative pressures is cavitation (<wiki:Pressure#Negative_pressures>). By setting $\epsilon_{\mathrm{tot}}=\epsilon + \epsilon_\Lambda$ (and $P_{\mathrm{tot}}=P + P_\Lambda$) then combining the two Friedmann equations [](#eq:friedmann) to eliminate the curvature term, we obtain:
+2\dot{H} + 2H^2 = \frac{2\ddot{a}}{a} = -\frac{8\pi \GN}{3}\left( \epsilon _{\mathrm{tot}} + 3P_{\mathrm{tot}}\right).
+\end{equation}
+We observe that the expansion of the Universe accelerates ($\ddot{a}>0$) if $P_{\mathrm{tot}}<-\epsilon_{\mathrm{tot}}/3$. Since the Universe consists essentially of non-relativistic matter and radiation, the previous condition becomes equivalent to:
+$$
+\ddot{a} > 0 \Leftrightarrow \epsilon_\Lambda > \epsilon_r + \epsilon_m/2$$
+In conclusion, if the cosmological constant dominates the energy content of the Universe, then it generates such negative pressure that the Universe enters _accelerated expansion_.
+
+:::{note} What unit for $\Lambda$?
+
+Since $\epsilon_\Lambda$ is an energy density, we deduce that $\Lambda$ has the dimension of the inverse of the square of a length. To summarize,
+$$
+\label{eq:dimensions}
+\left[a\right] = \mathsf{L},\quad \left[\rho \right] = \mathsf{M}\cdot \mathsf{L}^{-3}, \quad \left[\epsilon \right] = \left[p \right] = \mathsf{M}\cdot \mathsf{L}^{-1} \cdot \mathsf{T}^{-2}\quad \left[\Lambda \right] = \mathsf{L}^{-2} $$
+$$
+\left[ g_{\mu\nu} \right] = [1,\mathsf{L}^{2},\mathsf{L}^{2},\mathsf{L}^{2}] $$
+:::
+
+
+### Curvature
+
+The energy density associated with curvature energy is identified as: 
+$$
+\epsilon_k(t) =\rho_k(t) c^2 = - \frac{3 c^4 k  }{8\pi \GN a^2(t)}.$$
+Similarly, its effect in terms of pressure is:
+$$P_k = \frac{c^4 k}{8\pi \GN a^2(t)}.$$
+
+
+Cosmological parameters
 2\dot{H} + 2H^2 = \frac{2\ddot{a}}{a} = -\frac{8\pi \GN}{3}\left( \epsilon _{\mathrm{tot}} + 3P_{\mathrm{tot}}\right).
 \end{equation}
 We see that the expansion of the Universe accelerates ($\ddot{a}>0$) if $P_{\mathrm{tot}}<-\epsilon_{\mathrm{tot}}/3$. Since the Universe consists essentially of non-relativistic matter and radiation, the previous condition becomes equivalent to :
@@ -560,14 +645,14 @@ $$
 This model of the Universe, linking the prediction of its expansion $\bar H(z)$ to its contents of cosmological constant, matter and radiation, is called the $\Lambda$CDM model ($\Lambda$ for the cosmological constant and CDM for *Cold Dark Matter*) in the case $k=0$ (flat Universe). This is the standard model of cosmology.
 
 
-### Dark energy models
+### Dark energy modeling
 
-What is the true nature of dark energy? Is it the manifestation of vacuum energy? A second fundamental constant of gravitation? Or a new fifth force? The manifestation of additional spatial dimensions? These questions about the nature of dark energy remain unanswered for the moment, but since the discovery of accelerated expansion in 1998 {cite:p}`Riess1998,Perlmutter1999` new cosmological surveys are underway to precisely measure dark energy's equation of state $w_{DE}$: as long as we measure $w_{DE} = w_\Lambda=-1$ then the accelerating expansion can be explained with a single parameter, which is the value of $\Lambda$. If the measurements deviate significantly from $-1$, then more complex models will have to be tested.
+What is the true nature of dark energy? Is it the manifestation of vacuum energy? A second fundamental constant of gravitation? Or a new fifth force? The manifestation of additional spatial dimensions? These questions about the nature of dark energy do not have answers at the moment, but since the discovery of accelerated expansion in 1998 {cite:p}`Riess1998,Perlmutter1999` new cosmological surveys are underway to precisely measure the equation of state of dark energy $w_{DE}$: as long as we measure $w_{DE} = w_\Lambda=-1$ then the acceleration of expansion can be explained with a single parameter which is the value of $\Lambda$. If measurements deviate significantly from $-1$, then more complex models will have to be tested.
 
-This is why today, in addition to the standard $\Lambda$CDM model, cosmologists are testing empirical models that look for deviations from the standard model:
+This is why today, in addition to the standard $\Lambda$CDM model, cosmologists test empirical models that seek deviations from the standard model:
 - Flat $w$CDM: flat Universe model with free parameters $\Omega_m^0$, $\Omega_r^0$ and $w_{DE}$;
-- $w$CDM: any curvature model with free parameters $\Omega_m^0$, $\Omega_r^0$, $\Omega_\Lambda^0$ and $w_{DE}$;
-- $w_0w_a$CDM: model where the equation-of-state parameter for dark energy is given by two free parameters:
+- $w$CDM: arbitrary curvature model with free parameters $\Omega_m^0$, $\Omega_r^0$, $\Omega_\Lambda^0$ and $w_{DE}$;
+- $w_0w_a$CDM: model where the equation-of-state parameter of dark energy is given by two free parameters:
 $$
 w_{DE}(a) = w_0 + \left(1 - \frac{a}{a_0}\right)w_a$$
 
@@ -575,9 +660,19 @@ The major challenge for current and future cosmological surveys is to measure $w
 
 
 Cosmological distances
-------------
+------------------------
 
-Cosmology is an observational science. We need to infer the properties of the Universe without being able to move around or repeat the Big Bang experience, but from our observations alone. Cosmological parameters are linked to the expansion rate of the Universe $H(z)$. So, to estimate them, we need to be able to measure $H(z)$. This expansion rate is present in the defined proper distance and comobile distance [Sec. {number}](#proper-distance-and-comoving-distance), but these are not measurable. Telescopes, on the other hand, can measure luminous fluxes and angles: if we know the luminosity of the observed object or its physical size, we can define its distance and link it to the expansion rate $H(z)$.
+Cosmology is an observational science. We must infer the properties of the Universe without being able to move or redo the Big Bang experiment, but only from our observations. Cosmological parameters are linked to the expansion rate of the Universe $H(z)$. Therefore to be able to estimate them we must be capable of measuring $H(z)$. This expansion rate is present in the proper and comoving distances defined [Sec. {number}](#distance-propre-et-distance-comoving), but these are not measurable. 
+
+:::{warning}
+
+Neither proper distance nor comoving distance are measurable because they assume we can overcome the expansion of the Universe. However, in cosmology, we want to measure distances and their evolution to deduce the behavior of $a(t)$ and therefore the behavior of the Universe's content. Traditionally, cosmology uses photons as messengers coming from the most distant galaxies. Observation of luminous objects can lead us to determine distances according to at least two of their aspects: their luminosity and their apparent size. We can thus define two distances based on observation of luminous fluxes $\Phi$ and angular sizes $\delta$:
+$$
+\Phi = \frac{L}{4\pi D_L^2}, \qquad \delta = \frac{l}{D_A}
+$$
+where $L$ is the intrinsic luminosity of an object (in watts) and $l$ a physical size (in meters).
+
+:::
 
 
 ### Hubble distance
@@ -591,6 +686,19 @@ $$
 H_0 = 100\,h\,\text{km/s/Mpc}
 $$
 So for $h=0.7$, we find $D_H \approx 4.3 \,\text{Gpc} \approx 14 \,\text{Gly}$. This value will appear for all (non-moving) distances defined below.
+
+
+### Hubble distance
+
+With the parameters $c$ and $H_0$, it is possible to construct a quantity homogeneous to a length. This typical distance in cosmology is called the *Hubble distance* and is worth:
+$$
+D_H = \frac{c}{H_0} = 3000\,\text{Mpc/}h
+$$
+where $h$ is usually defined by:
+$$
+H_0 = 100\,h\,\text{km/s/Mpc}
+$$
+So for $h=0.7$, we find $D_H \approx 4.3 \,\text{Gpc} \approx 14 \,\text{Gly}$. This value will appear for all (non-comoving) distances defined below.
 
 
 ### Luminosity distance 
@@ -688,7 +796,7 @@ In physical space, the angle $\delta$ is the same as in comobile space (we pass 
 $$
 \delta = \frac{l}{a_E \sigma_E} = \frac{l (a_0/a_E)}{a_0 \sigma_E} = \frac{l_c}{\sigma_E}
 $$
-with $l_c = l / a_E$ the comoving size of the object at emission $t_E$.We propose to define the comoving angular distance or comoving transverse distance simply as:
+with $l_c = l / a_E$ the comoving size of the object at emission $t_E$. We propose to define the comoving angular distance or comoving transverse distance simply as:
 $$d_A(z) = \frac{l_c}{\delta} = \sigma_E = \left\lbrace\begin{array}{cl}
     \sin \chi(z) & \text{ if } k=+1 \\
     \chi(z) & \text{ if } k=0 \\
@@ -713,7 +821,7 @@ $$D_A(z) = \frac{1}{1+z} \left\lbrace
     \displaystyle \dfrac{c}{H_0 \sqrt{\Omega_k^0}} \sh\left[ H_0 \sqrt{\Omega_k^0} \int_0^z \dfrac{\dd z}{H(z)} \right] & \text{ if } k=-1 \\
 \end{array}
 \right. 
-.$$
+$$
 From exercise [](#exo:sphere-comoving), we can see that the use of $\sigma$ instead of $\chi$ is well suited to the three types of Universe curvatures in these distance definitions.
 
 :::{note} Hubble-Lemaître law
@@ -725,20 +833,23 @@ with $cz$ the apparent speed of recession relative to the Earth.
 :::
 
 
-:::{note} Cosmological parameter measurements
+:::{important} Measurements of cosmological parameters
 
-In the context of a flat Universe, angular measurements made by the _Planck_ satellite on the cosmological diffuse background, combined with flux measurements of type Ia supernovae, and angular distances of baryon acoustic oscillations allow us to infer the matter and dark energy content for a flat Universe today ([](doi:10.1051/0004-6361/201833910)) :
+In the framework of a flat Universe, angular measurements performed by the _Planck_ satellite on the cosmic microwave background, combined with flux measurements of type Ia supernovae, and angular distances of baryon acoustic oscillations allow to infer the matter and dark energy content for a flat universe today ([](doi:10.1051/0004-6361/201833910)):
 $$
 \label{eq:omegas_planck}
 \Omega_m^0 = 0.3111 \pm 0.0056, \quad \Omega_\Lambda^0 = 0.6889 \pm 0.0056
 $$
-If curvature is a free parameter of the model (we speak of an extension to the standard $\Lambda$CDM model), we measure :
+
+If curvature is a free parameter of the model (we speak of an extension to the standard $\Lambda$CDM model), we measure:
 $$
 \Omega_k^0 = 0.0007\pm 0.0037
 $$
-If we propose a two-parameter model for dark energy, we obtain ([](doi:10.1051/0004-6361/201833910)) :
+which is compatible with a strictly flat universe[^flat], or curved but with a very large radius of curvature since $\Omega_k^0 \approx k/a_0^2$.
+
+If we propose a two-parameter model for dark energy, we obtain ([](doi:10.1051/0004-6361/201833910)):
 $$
-w_0 = -0.957 \pm 0.080, \quad w_a = -0.29^{+0.32}_{ -0.26}
+w_0 = −0.957 \pm 0.080, \quad w_a = −0.29^{+0.32}_{ −0.26}
 $$ 
 
 :::
@@ -760,13 +871,56 @@ Suppose that density of the dark energy as cosmological constant is equal to the
 
 $$\rho_c\approx 10^{-29}\,\text{g/cm}^3$$
 $$R\approx 50\,\text{A.U.}$$
-$$1\,\text{A.U.}approx 1.5\times 1011m;EDESS/c2≃0.2⋅1014 kg;M⊙≃2⋅1030 kg;EDESSM⊙c2≃10-17.
+$$1\,\text{A.U.} \approx 1.5\times 10^{11}\,\text{m}; E_{DE}S.S./c^2 ≃ 0.2 \cdot 10^{14}\, \text{kg}; M_⊙ ≃ 2 \cdot 10^{30}\, \text{kg}; E_{DE}S.S./M_⊙c^2 ≃ 10^{-17}.$$
 
-Transform Lambda into a length: Length = sqrt(1/Lambda) = ....
+Transform Lambda into a length: Length = $\sqrt{1/\Lambda}$ = ....
 
 :::
 
 
 
 
+:::{important} Key Points
+
+- The Cosmological Principle implies that matter must be described as a perfect fluid, and therefore that its transformations are adiabatic.
+
+- The evolution of the Universe as a function of its matter content and geometry is encoded in the Friedmann equations
+\begin{equation*}
+\left\lbrace
+\begin{array}{l}
+    \displaystyle{H^2 = \frac{8\pi \GN \rho}{3} + \frac{c^2 \Lambda}{3} - \frac{c^2 k}{a^2}},\\
+    \displaystyle{2\dot{H} + 3H^2 = - \frac{8\pi \GN}{c^2 } P + c^2 \Lambda - \frac{c^2 k}{a^2}}.
+\end{array}
+\right.
+\end{equation*}
+
+- These two equations contain the conservation equation for the energy-momentum tensor
+\begin{equation*}
+\dot{\epsilon} = -3 H(\epsilon + P). 
+\end{equation*}
+
+- We define the equation-of-state parameter for a component $X$ of the Universe as the ratio of its pressure and energy density $w_X = P_X/\epsilon_X$. Its density parameter is $\Omega_X = \rho_X / \rho_c$ with $\rho_c = 3H^2/8\pi\GN$ the critical density.
+
+- The luminosity and angular distances relate physical observables (luminous fluxes and angles) to the intrinsic properties of the observed object and to integral distances of $1/H(a)$.
+
+::: 
+
+
+:::{seealso}  To go further
+
+- Demonstration of the structure of form-invariant tensors: {cite:p}`Weinberg1972`[p. 392]
+
+- Relativistic hydrodynamics: <wiki:Fluid_solution>
+
+:::
+
+
+
+
+[^vecj]: In electromagnetism, the amount of charge passing through a surface $\dd \vec S$ during a duration $\dd t$ is $\dd q = e n (\vec v \dd t)\cdot \dd \vec S$ with $n$ the particle density: we then define the volume current of charge by $\vec j = e n \vec v$. The definition of volume current for four-momentum (instead of electric charge) is identical.
+
+[^pcphoton]: For a massless particle, we have directly $E_n = \vert \vec p_n \vert c$.
+
 [^epsP]: The choice of notations for these mathematical functions was not made by chance...
+
+[^flat]: We will _stricto sensu_ never be able to measure that the Universe is flat ($k=0$), but that measurements are compatible with the hypothesis of a flat universe.
