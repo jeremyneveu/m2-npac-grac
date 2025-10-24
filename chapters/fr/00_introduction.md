@@ -338,9 +338,9 @@ Cette définition de la dérivée en Relativité Générale exprime correctement
 Pour illustrer toute sa profondeur, voici la définition de la dérivée covariante $DV^\mu/D\tau$ non pas par rapport à une coordonnée, mais le long d'une courbe quelconque paramétrée par le temps propre $\tau$ (invariant par changement de coordonnées) :
 $$
 \frac{DV^\mu}{D\tau} \equiv \frac{\dd V^\mu}{\dd\tau} + \Gamma^\mu_{\ \nu\lambda}\frac{\dd x^\lambda}{\dd\tau} V^\nu.$$
-Posons $U^\mu$ le vecteur vitesse $\dd x^\mu/\dd\tau$. L'équation du mouvement [](#eq:eqm4) s'écrit alors très simplement
+Posons $V^\mu$ la quadri-vitesse $\dd x^\mu/\dd\tau$. L'équation du mouvement [](#eq:eqm4) s'écrit alors très simplement
 $$
-\boxed{\frac{DU^\mu}{D\tau}=\frac{f_{\rm ng}^\mu}{m}}
+\boxed{\frac{DV^\mu}{D\tau}=\frac{f_{\rm ng}^\mu}{m}}
 $$ 
 Cette équation ainsi écrite rappelle fortement le principe fondamentale de la dynamique, mais place la mécanique dans un cadre relativiste, invariant par tout changement de systèmes de coordonnées et en présence de gravitation. La notion de dérivée covariante est donc bien appropriée aux calculs de Relativité Générale et remplace bien la dérivée usuelle dans ce cadre. 
 

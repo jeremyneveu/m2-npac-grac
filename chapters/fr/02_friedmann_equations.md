@@ -82,14 +82,22 @@ $$ T'^{\mu\nu}_{\rm PF} = \begin{pmatrix}
 $$
 En effet, si sa viscosité est nulle alors il ne peut y avoir de transfert d'impulsion latéralement à la direction des impulsions (car un écoulement visqueux se caractérise par de la diffusion de quantité de mouvement), donc $T^{ij} = 0$ si $i\neq j$. De même, si le fluide n'a aucune conductivité thermique alors il n'y a pas de flux d'énergie donc $T'^{0i}=T'^{i0}=0$. Sur la diagonale de la partie spatiale du tenseur, on retrouve la pression cinétique (un flux de quantité de mouvement à travers une surface dans le sens de l'impulsion). Les trois termes sont égaux pour un fluide parfait car une anisotropie des pressions supposent des transferts de quantité de mouvements donc de la viscosité (dite de volume <wiki:Volume_viscosity>). L'hypothèse de fluide parfait simplifie donc fortement la structure du tenseur énergie-impulsion. 
 
-Ensuite, dans un référentiel inertiel quelconque, par exemple un laboratoire où l'on observe l'écoulement de ce fluide parfait, ce tenseur énergie-impulsion se réécrit :
+Ensuite, dans un référentiel inertiel quelconque, par exemple un laboratoire où l'on observe ce fluide parfait s'écoulant localement à vitesse $\vec v$, son tenseur énergie-impulsion se réécrit :
 $$ T^{\mu\nu} = \Lambda^{\mu}_{\;\alpha} \Lambda^{\nu}_{\;\beta} T'^{\alpha\beta} $$
 avec $\Lambda^\mu_{\;\alpha}$ la transformation de Lorentz définie par l'équation [](#eq:lorentz2). Plus explicitement :
-$$ T^{ij}_{\rm PF} = P \delta^{ij} + (P + \rho c^2) \frac{v^i v^j}{c^2- v^2}, \quad T^{i0}_{\rm PF} = (P + \rho c^2) \frac{c v ^i}{c^2  - v^2}, \quad T^{00}_{\rm PF} = \frac{\rho c^4  + P v^2}{c^2  - v^2} \label{eq:TijV} $$
-Définissons la quadri-vitesse ainsi :
-$$ \vec U =\frac{\ \dd \vec x }{c \dd \tau} = \frac{\vec v / c }{ \sqrt{1-v^2}}, \quad U^0 = \frac{\dd t }{\dd  \tau} =  \frac{1 }{ \sqrt{1-v^2}}, \quad U_ \mu U ^\mu = -c^2  $$
+$$ T^{ij}_{\rm PF} = P \delta^{ij} + (P + \epsilon) \frac{v^i v^j}{c^2- v^2}, \quad T^{i0}_{\rm PF} = (P + \epsilon) \frac{c v ^i}{c^2  - v^2}, \quad T^{00}_{\rm PF} = \frac{\epsilon c^2  + P v^2}{c^2  - v^2} \label{eq:TijV} $$
+Définissons la quadri-vitesse adimensionée ainsi :
+$$ \vec U =\frac{\ \dd \vec x }{c\dd \tau} = \frac{\vec v/c }{ \sqrt{1-(v/c)^2}}, \quad U^0 = \frac{c\dd t }{c\dd  \tau} =  \frac{1}{ \sqrt{1-(v/c)^2}}, \quad U_ \mu U ^\mu = -1  $$
 alors le tenseur s'écrit :
-$$ T^{\mu\nu}_{\rm PF} = (\rho c^2 + P) U^\mu U^\nu + P \eta^{\mu\nu}$$
+$$ T^{\mu\nu}_{\rm PF} = (\epsilon + P) U^\mu U^\nu + P \eta^{\mu\nu}$$
+Si le fluide est au repos, $U^\mu=(1,0,0,0)$ et on retrouve :
+$$ T'^{\mu\nu}_{\rm PF} = \begin{pmatrix}
+\epsilon & 0 & 0 & 0 \\
+0 & P\eta^{11}  & 0 & 0 \\ 
+0 & 0 & P\eta^{22}  & 0 \\ 
+0 & 0 & 0 & P\eta^{33}   \\ 
+\end{pmatrix}
+$$
 
 :::{note} Equation de Navier-Stokes
 :class: dropdown
@@ -114,31 +122,18 @@ Si le système physique étudié dans ce volume local n'est soumis à aucune for
 
 ### Tenseur énergie-impulsion cosmologique
 
-Après ce préambule sur la définition du tenseur énergie-impulsion et son expression pour un fluide parfait, recherchons quel est la forme de ce tenseur pour l'Univers aux grandes échelles, en appliquant le principe cosmologique. Si l'Univers est homogène et isotrope, alors les termes non diagonaux sont nuls car sinon ils sont à l'origine d'anisotropies. Sur la diagonale, les termes spatiaux doivent être égaux pour respecter l'isotropie de l'Univers (même pression cinétique dans toutes les directions). De plus l'homogénéité impose que le tenseur ne dépent pas de la position $\vec x$ mais seulement du temps. Par conséquent, le tenseur énergie-impulsion cosmologique s'écrit :
+Après ce préambule sur la définition du tenseur énergie-impulsion et son expression pour un fluide parfait, recherchons quelle est la forme de ce tenseur pour l'Univers aux grandes échelles, en appliquant le principe cosmologique. Si l'Univers est homogène et isotrope, alors les termes non diagonaux sont nuls car sinon ils sont à l'origine d'anisotropies. Sur la diagonale, les termes spatiaux doivent être égaux pour respecter l'isotropie de l'Univers (même pression cinétique dans toutes les directions). De plus l'homogénéité impose que le tenseur ne dépent pas de la position $\vec x$ mais seulement du temps. Par conséquent, le tenseur énergie-impulsion cosmologique s'écrit :
 $$ T^{\mu\nu}_{\rm COSMO} = \begin{pmatrix}
 \epsilon(t) & 0 & 0 & 0 \\
-0 & P(t)  & 0 & 0 \\ 
-0 & 0 & P(t)  & 0 \\ 
-0 & 0 & 0 & P(t)   \\ 
-\end{pmatrix} = T'^{\mu\nu}_{\rm PF} 
+0 & P(t)g^{11}  & 0 & 0 \\ 
+0 & 0 & P(t)g^{22}  & 0 \\ 
+0 & 0 & 0 & P(t)g^{33}   \\ 
+\end{pmatrix} = T'^{\mu\nu}_{\rm PF} \label{eq:def-Tmunu}
 $$
-Après application de ces hypothèses, on trouve que le tenseur énergie-impulsion cosmologique est le même que celui d'un fluide parfait homogène dans son référentiel au repos. Le comportement de la matière dans un Univers homogène et isotrope peut donc se décrire comme celle d'un fluide parfait, c'est-à-dire qu'on ne s'attend à observer aucun phénomène de viscosité ou de flux d'énergie. Cela implique que les transformations de la matière lors de l'évolution cosmologique de l'Univers sont _adiabatiques_. Le fluide étant au repos, on peut considérer que sa quadri-vitesse de la matière aux échelles cosmologiques dans le référentiel d'observateurs comobiles s'écrit $U^0=1,\ U^i = 0$ et on obtient :
-$$ \boxed{ T^{\mu\nu}_{\rm COSMO} = (\rho c^2 + P) U^\mu U^\nu + P g^{\mu\nu},\quad U^\mu=(1, 0,0,0) }\label{eq:def-Tmunu2}$$
+Avec ces hypothèses, on en déduit que le tenseur énergie-impulsion cosmologique est le même que celui d'un fluide parfait homogène dans son référentiel au repos. Le comportement de la matière dans un Univers homogène et isotrope peut donc se décrire comme celle d'un fluide parfait, c'est-à-dire qu'on ne s'attend à observer aucun phénomène de viscosité ou de flux d'énergie. Cela implique que les transformations de la matière lors de l'évolution cosmologique de l'Univers sont _adiabatiques_. Le fluide étant au repos, on peut considérer que la quadri-vitesse de la matière aux échelles cosmologiques dans le référentiel d'observateurs comobiles s'écrit $U^0=1,\ U^i = 0$ et on obtient :
+$$ \boxed{ T^{\mu\nu}_{\rm COSMO} = (\epsilon + P) U^\mu U^\nu + P g^{\mu\nu},\quad U^\mu=(1, 0,0,0) }\label{eq:def-Tmunu2}$$
 
-
-En utilisant la métrique FLRW, solution d'un univers homogène et isotrope également, le tenseur énergie-impulsion s'écrit :
-\begin{equation}
-\label{eq:def-Tmunu}
-T^{\mu\nu} = (\epsilon + P) U^\mu U^\nu + P g^{\mu\nu} = 
-\begin{pmatrix}
-\epsilon & 0 & 0 & 0 \\
-0 & P g^{11} & 0 & 0 \\ 
-0 & 0 & P g^{22} & 0 \\ 
-0 & 0 & 0 & P g^{33}  \\ 
-\end{pmatrix} 
-\end{equation}
-
-Dans une base cartésienne et un espace plat, le tenseur énergie-impulsion prend la forme simple :
+En utilisant la métrique FLRW, solution d'un univers homogène et isotrope également, pour un univers plat avec une paramétrisation cartésienne, le tenseur énergie-impulsion prend la forme simple[^Punits] :
 \begin{equation}
 \label{eq:tmunu_fluide}
 T^{\mu\nu}  =  
@@ -154,7 +149,7 @@ T^{\mu\nu}  =
 ```{note} Démontration plus formelle
 :class: dropdown
 
-Dans notre hypothèse d'Univers de symétrie maximale, rappelons tout d'abord qu'on peut définir un temps cosmique, universel,  en utilisant l'évolution physique de l'Univers comme une horloge (densité de matière, température du CMB...). Les hypersurfaces de l'espace-temps paramétrées par ce temps universel sont alors elles-mêmes des sous-espaces de symétrie maximale. Les tenseurs $\mathcal{T}$ représentants des observables cosmologiques de tels sous-espaces de symétrie maximale doivent alors être de _forme invariante_ c'est-à-dire qu'ils restent les mêmes fonctions des coordonnées spatiales à une date $t$ quelque soit le choix du système de coordonnées choisi : si on passe d'un système $x^\rho$ à $x'^\rho$, on doit avoir $\mathcal{T}'_{\mu\nu\ldots}(x'^\rho) = \mathcal{T}_{\mu\nu\ldots}(x'^\rho)$. Intuitivement, si $\mathcal{T}$ est le tenseur énergie-impulsion cela revient entre autre à demander que la densité d'énergie soit identique en tout point pour tout choix de système de coordonnées {cite:p}`Weinberg1972`[p. 409]. 
+Dans notre hypothèse d'Univers de symétrie maximale, rappelons tout d'abord qu'on peut définir un temps cosmique, universel,  en utilisant l'évolution physique de l'Univers comme une horloge (densité de matière, température du CMB...). Les hypersurfaces de l'espace-temps paramétrées par ce temps universel sont alors elles-mêmes des sous-espaces de symétrie maximale. Les tenseurs $\mathcal{T}$ représentant des observables cosmologiques de tels sous-espaces de symétrie maximale doivent alors être de _forme invariante_ c'est-à-dire qu'ils restent les mêmes fonctions des coordonnées spatiales à une date $t$ quelque soit le choix du système de coordonnées choisi : si on passe d'un système $x^\rho$ à $x'^\rho$, on doit avoir $\mathcal{T}'_{\mu\nu\ldots}(x'^\rho) = \mathcal{T}_{\mu\nu\ldots}(x'^\rho)$. Intuitivement, si $\mathcal{T}$ est le tenseur énergie-impulsion cela revient entre autre à demander que la densité d'énergie soit identique en tout point pour tout choix de système de coordonnées {cite:p}`Weinberg1972`[p. 409]. 
 
 On peut démontrer alors une propriété importante concernant la forme que doivent prendre les tenseurs de ces sous-espaces {cite:p}`Weinberg1972`[p. 392]. Un tenseur de forme invariante dans un espace de symétrie maximale :
 - est indépendant de la position si c'est un scalaire,
@@ -463,12 +458,11 @@ Le raisonnement avec une boîte cubique de côté $a$ s'applique aussi ici, mais
 Pour un gaz parfait, on rappelle que l'équation d'état est :
 $$ P = \rho_n k_B T  $$
 avec $T$ sa température, $\rho_n$ la densité particulaire et $k_B$ la constante de Boltzmann.
-S'il est à basse température (i.e. non relativiste) alors on a $\epsilon \approx m c^2 \rho_n$ et on veut $P / \epsilon = k_B T \ll 1/3$ soit :
-$$ T \ll m c^2 / 3 k_B $$
-Pour un gaz d'hydrogène, $T \ll 10^{12}\,$K. Donc on voit que la matière telle qu'on la connait est non relativiste aujourd'hui et même bien avant le CMB.
+S'il est à basse température (i.e. non relativiste) alors on a $\epsilon \approx m c^2 \rho_n$ et on veut :
+$$\frac{P}{\epsilon} = \frac{k_B T}{mc^2} \ll \frac{1}{3}$$ 
+donc $ T \ll m c^2 / 3 k_B $. Pour un gaz d'hydrogène, $T \ll 10^{12}\,$K. Donc on voit que la matière telle qu'on la connait est non relativiste aujourd'hui et même bien avant le CMB.
 
 :::
-
 
 :::{note} Hypothèse de non interaction
 :class: dropdown
@@ -834,3 +828,5 @@ $$
 [^epsP]: Le choix des notations pour ces fonctions mathématiques n'a pas été fait par hasard...
 
 [^flat]: On ne pourra _stricto sensus_ jamais mesuré que l'Univers est plat ($k=0$), mais que les mesures sont compatibles avec l'hypothèse d'un univers plat.
+
+[^Punits]: Il ne faut pas être trop troublé par les unités physiques diverses présentes dans $T^{\mu\nu}, car ce n'est qu'un tenseur de rang 2 donc l'encodage d'une fonction vectorielle, comme la métrique $g_{\mu\nu}$ par ailleurs. La pression reste définie par $P=T^i_{\ i}/3$ malgré la présence du facteur d'échelle.

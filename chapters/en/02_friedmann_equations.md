@@ -33,6 +33,8 @@ $$
 T^{\mu \nu}(t, \vec x) = c^2 \sum_n \frac{p_n^{\mu} p_n^{\nu}}{E_n} \delta^{(3)}(\vec x - \vec x_n(t))\label{eq:TmunuGaz}
 $$
 
+
+
 :::{figure} ../../images/tmunu_def.svg
 
 The energy-momentum tensor represents the current densities of four-momenta $p^\mu$ and the energy density $\epsilon$ in a local volume of space-time. If the physical system studied in this local volume is subject to no working force other than gravitation, then we have the conservation equation $T^{\mu\nu}_{\;\;\;;\mu}=0$.
@@ -42,30 +44,60 @@ The energy-momentum tensor $T^{\mu\nu}$ of Einstein's equation describes the ene
 \begin{equation}
 T^{\mu\nu}=\begin{pmatrix} 
 T^{00}= \text{energy density}\,\,\,\,
-& T^{01}= \text{energy/c flux through }x_1\,\,\,\,\,
+& T^{01}=\text{energy/c flux through }x_1\,\,\,\,\,
 & T^{02}=\text{energy/c flux through }x_2\,\,\,\,\,
 & T^{03}=\text{energy/c flux through }x_3
-\\ T^{10}=c\times \text{density of }p_1,\,\,\,\,\,\,
+\\  T^{10}=c\times \text{density of }p_1\,\,\,\,\,\,\,
 & T^{11}= \text{flux of }p_1\text{ through }x_1\,\,\,\,\,\,\,
-& T^{12}= \text{flux of }p_1\text{ through }x_2\,\,\,\,\,\,\,
-& T^{13}= \text{flux of }p_1\text{ through }x_3
-\\ T^{20}= c\times\text{density of }p_2\,\,\,\,\,\,\,\,
+&  T^{12}= \text{flux of }p_1\text{ through }x_2\,\,\,\,\,\,\,
+&  T^{13}= \text{flux of }p_1\text{ through }x_3
+\\  T^{20}=c\times\text{density of }p_2\,\,\,\,\,\,\,
 & T^{21}= \text{flux of }p_2\text{ through }x_1\,\,\,\,\,\,\,
-& T^{22}= \text{flux of }p_2\text{ through }x_2\,\,\,\,\,\,\,
-& T^{31}= \text{flux of }p_2\text{ through }x_3
-\\ T^{30}= c\times\text{density of }p_3\,\,\,\,\,\,\,\,
+&  T^{22}= \text{flux of }p_2\text{ through }x_2\,\,\,\,\,\,\,
+&  T^{31}= \text{flux of }p_2\text{ through }x_3
+\\  T^{30}= c\times\text{density of }p_3\,\,\,\,\,\,\,
 & T^{31}= \text{flux of }p_3\text{ through }x_1\,\,\,\,\,\,\,
-& T^{32}= \text{flux of }p_3\text{ through }x_2\,\,\,\,\,\,\,\,
-& T^{33}= \text{flux of }p_3\text{ through }x_3
+&  T^{32}= \text{flux of }p_3\text{ through }x_2\,\,\,\,\,\,\,
+&  T^{33}= \text{flux of }p_3\text{ through }x_3
 \end{pmatrix}
 \label{stress-energy-tensor-meaning}
 \end{equation}
-If the physical system studied in this local volume is not subject to any working force other than gravitation, then we have the conservation equation $T^{\mu\nu}_{\;\;\;;\mu}=0$, a set of four equations representing the local conservation equation for energy and momentum. 
 
 A few remarks on the components of this tensor:
 * $T^{00}$ is the local energy density $\epsilon$, generally the dominant component of the energy-momentum tensor;
 * $T^{ii}$ represent the momentum flux through a surface with collinear normal, hence the kinetic pressure $P$ exerted by the physical system in the $\vec e_i$ direction;
 * $T^{ij},\ i \neq j$ represent momentum current densities perpendicular to momentum directions, hence viscosity or shear phenomena.
+
+
+### Relativistic hydrodynamics
+
+
+Let us place ourselves in the reference frame where the set of particles is on average at rest, and consider it as a fluid. That is, we study it at scales much larger than the mean free path of the particles. Now suppose that this fluid is perfect (<wiki:perfect_fluid>): it has no viscosity and no thermal conductivity {cite:p}`Weinberg1972`[p. 48]. Given the definition of an energy-momentum tensor, in the reference frame $\mathcal{R}'$ where the perfect fluid is at rest we can write that the tensor must take the form:
+$$ T'^{\mu\nu}_{\rm PF} = \begin{pmatrix}
+\epsilon & 0 & 0 & 0 \\
+0 & P  & 0 & 0 \\ 
+0 & 0 & P  & 0 \\ 
+0 & 0 & 0 & P   \\ 
+\end{pmatrix}
+$$
+Indeed, if its viscosity is zero then there can be no lateral momentum transfer to the direction of momentum (since viscous flow is characterized by momentum diffusion), so $T^{ij} = 0$ if $i\neq j$. Similarly, if the fluid has no thermal conductivity then there is no energy flux so $T'^{0i}=T'^{i0}=0$. On the diagonal of the spatial part of the tensor, we find the kinetic pressure (a momentum flux through a surface in the direction of momentum). The three terms are equal for a perfect fluid because anisotropy of pressures assumes momentum transfers and hence viscosity (called volume <wiki:Volume_viscosity>). The perfect fluid hypothesis therefore greatly simplifies the structure of the energy-momentum tensor.
+
+Then, in any inertial reference frame, for example a laboratory where we observe this perfect fluid flowing locally at velocity $\vec v$, its energy-momentum tensor is rewritten:
+$$ T^{\mu\nu} = \Lambda^{\mu}_{\;\alpha} \Lambda^{\nu}_{\;\beta} T'^{\alpha\beta} $$
+with $\Lambda^\mu_{\;\alpha}$ the Lorentz transformation defined by equation [](#eq:lorentz2). More explicitly:
+$$ T^{ij}_{\rm PF} = P \delta^{ij} + (P + \epsilon) \frac{v^i v^j}{c^2- v^2}, \quad T^{i0}_{\rm PF} = (P + \epsilon) \frac{c v ^i}{c^2  - v^2}, \quad T^{00}_{\rm PF} = \frac{\epsilon c^2  + P v^2}{c^2  - v^2} \label{eq:TijV} $$
+Let us define the dimensionless four-velocity as follows:
+$$ \vec U =\frac{\ \dd \vec x }{c\dd \tau} = \frac{\vec v/c }{ \sqrt{1-(v/c)^2}}, \quad U^0 = \frac{c\dd t }{c\dd  \tau} =  \frac{1}{ \sqrt{1-(v/c)^2}}, \quad U_ \mu U ^\mu = -1  $$
+then the tensor is written:
+$$ T^{\mu\nu}_{\rm PF} = (\epsilon + P) U^\mu U^\nu + P \eta^{\mu\nu}$$
+If the fluid is at rest, $U^\mu=(1,0,0,0)$ and we recover:
+$$ T'^{\mu\nu}_{\rm PF} = \begin{pmatrix}
+\epsilon & 0 & 0 & 0 \\
+0 & P\eta^{11}  & 0 & 0 \\ 
+0 & 0 & P\eta^{22}  & 0 \\ 
+0 & 0 & 0 & P\eta^{33}   \\ 
+\end{pmatrix}
+$$
 
 :::{note} Energy-momentum tensor in Special Relativity
 :class: dropdown
@@ -133,7 +165,7 @@ T^{i0} & = T^{0i} = 0 & \quad \text{(vector)} \\
 T^{ij} & = P(t) \gamma^{ij}& \quad \text{(second-order tensor)}
 \end{align} $$
 
-More elegantly, we can introduce the quadri-vector $U^\mu$ defined by :
+More elegantly, we can introduce the dimensionless quadri-vector $U^\mu$ defined by :
 $$ U^0 = 1, \quad U^i = 0 $$
 and obtain a compact expression for the energy-momentum tensor of a homogeneous, isotropic Universe:
 \begin{equation}
@@ -193,6 +225,27 @@ $$ 0 = \frac{\partial T^{\mu\nu}}{\partial x^\nu} \Rightarrow
 $$
 
 :::
+
+### Cosmological energy-momentum tensor
+
+Now let us suppose that we are considering a cosmological perfect fluid: the content of the Universe averages out to look like a perfect fluid (no viscosity, no heat conduction) on large scales ($> 100$ Mpc). The cosmological principle tells us that in comoving coordinates, the cosmological fluid is at rest and isotropic, i.e., it has the same properties in all directions. The energy-momentum tensor thus takes the same form as in the rest frame above:
+
+$$T^{\mu\nu} = \begin{pmatrix}
+\epsilon & 0 & 0 & 0 \\
+0 & P  & 0 & 0 \\ 
+0 & 0 & P  & 0 \\ 
+0 & 0 & 0 & P   \\ 
+\end{pmatrix} \label{eq:Tmu nu}$$
+
+In fact, more rigorously, in the FLRW metric, a cosmological perfect fluid is characterized by the four-velocity $U^\mu = (a^{-1}, 0, 0, 0)$ in comoving coordinates where $U_\mu U^\mu = -1$ (we check: $g_{00}=-a^2$ so $U_0 U^0 = g_{00} U^0 U^0 = -a^2 \times a^{-2} = -1$). The energy-momentum tensor for a cosmological fluid is therefore:
+$$T_{\mu\nu} = (\epsilon + P) U_\mu U_\nu + P g_{\mu\nu}$$
+and:
+$$T^{\mu\nu} = (\epsilon + P) U^\mu U^\nu + P g^{\mu\nu}$$
+
+By substituting the values of $U^\mu$ and $g^{\mu\nu}$ from the FLRW metric, we obtain the components of the energy-momentum tensor:
+$$T^{00} = \epsilon, \quad T^{ij} = P \delta^{ij}$$
+
+This result shows that on cosmological scales, the energy density $\epsilon$ and pressure $P$ are the only two independent parameters needed to characterize the content of the Universe.
 
 
 Friedmann equations

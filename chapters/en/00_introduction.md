@@ -290,9 +290,9 @@ This definition of the derivative in General Relativity correctly expresses the 
 To illustrate its full depth, here is the definition of the covariant derivative $DV^\mu/D\tau$ not with respect to a coordinate, but along any curve parameterized by proper time $\tau$ (invariant under coordinate changes):
 $$
 \frac{DV^\mu}{D\tau} \equiv \frac{\dd V^\mu}{\dd\tau} + \Gamma^\mu_{\ \nu\lambda}\frac{\dd x^\lambda}{\dd\tau} V^\nu.$$
-Let $U^\mu$ be the velocity vector $\dd x^\mu/\dd\tau$. The equation of motion [](#eq:eqm4) can then be written very simply as:
+Let $V^\mu$ be the 4-velocity vector $\dd x^\mu/\dd\tau$. The equation of motion [](#eq:eqm4) can then be written very simply as:
 $$
-\boxed{\frac{DU^\mu}{D\tau}=\frac{f_{\rm ng}^\mu}{m}}
+\boxed{\frac{DV^\mu}{D\tau}=\frac{f_{\rm ng}^\mu}{m}}
 $$ 
 This equation, written this way, strongly recalls the fundamental principle of dynamics, but places mechanics in a relativistic framework, invariant under any change of coordinate system and in the presence of gravitation. The notion of covariant derivative is therefore well suited to General Relativity calculations and properly replaces the usual derivative in this framework.
 

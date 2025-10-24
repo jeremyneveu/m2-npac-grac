@@ -330,7 +330,7 @@ where $s$ is any parameter describing the position along the geodesic (e.g. prop
 \label{geodesic-cov}
 {\dd^2 x_\mu \over \dd s^2} -\Gamma^{\nu}_{\,\,\mu\kappa} {\dd x_\nu \over \dd s}{\dd x^\kappa \over \dd s}=0.
 \end{equation} 
-Let's define the four-velocity $U^\mu$ tangent to the trajectory $x^\mu(s)$ by $U^\mu = \dd x^\mu / \dd s$. Then :
+Let's define the dimensionless[^Umu] four-velocity $U^\mu$ tangent to the trajectory $x^\mu(s)$ by $U^\mu = \dd x^\mu / \dd s$. Then :
 \begin{equation}
 {\dd U_\mu \over \dd s} = \Gamma^{\nu}_{\,\,\mu\kappa} U_\nu U^\kappa= \frac{1}{2} \frac{\partial g_{\alpha\beta}}{\partial x^\mu} U^\alpha U^\beta.
 \end{equation} 
@@ -725,3 +725,4 @@ $$H(t) = \frac{1}{a} \frac{\dd a }{\dd t }$$
 
 [^vpec]: The term $a\dot{\sigma}$ is called peculiar velocity. Galaxies have a peculiar velocity $v_{\rm pec}$ of the order of $200\,$km/s, which adds to the expansion effect. This is dominant in the local Universe up to $r \approx v_{\rm pec} / H_0 \approx 3\,$Mpc, equivalent to $z\approx v_{\rm pec}/c \approx 0.001$.
 
+[^Umu]: For a massive particle, we can write that $\dd s=c\dd\tau$.

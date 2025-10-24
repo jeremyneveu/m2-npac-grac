@@ -329,7 +329,7 @@ où $s$ est un paramètre quelconque décrivant la position le long de la géod�
 \label{geodesic-cov}
 {\dd^2 x_\mu \over \dd  s^2} -\Gamma^{\nu}_{\,\,\mu\kappa} {\dd x_\nu \over \dd  s}{\dd x^\kappa \over \dd  s}=0.
 \end{equation} 
-Définissons la quadri-vitesse $U^\mu$ tangente à la trajectoire $x^\mu(s)$ par $U^\mu = \dd x^\mu / \dd s$. Alors :
+Définissons la quadri-vitesse adimensionée[^Umu] $U^\mu$ tangente à la trajectoire $x^\mu(s)$ par $U^\mu = \dd x^\mu / \dd s$. Alors :
 \begin{equation}
 {\dd U_\mu \over \dd  s} = \Gamma^{\nu}_{\,\,\mu\kappa} U_\nu U^\kappa=  \frac{1}{2} \frac{\partial g_{\alpha\beta}}{\partial x^\mu} U^\alpha U^\beta.
 \end{equation} 
@@ -723,3 +723,5 @@ $$H(t) = \frac{1}{a} \frac{\dd a }{\dd t }$$
 [^pc]: 1 parsec (pc) $= 3.262$ années-lumière $= 3.086\times 10^{16}\,$m. $100\,\text{Mpc}\approx 3\times 10^8\;$ années-lumière.
 
 [^vpec]: Le terme $a\dot{\sigma}$ est appelé vitesse péculière. Les galaxies possèdent une vitesse péculière $v_{\rm pec}$ de l'ordre de $200\,$km/s, qui s'additionne à l'effet d'expansion. Celle-ci est dominante dans l'Univers local jusqu'à $r \approx v_{\rm pec} / H_0 \approx 3\,$Mpc, équivalent à $z\approx v_{\rm pec}/c \approx 0.001$.
+
+[^Umu]: Pour une particule massive, on peut écrire $\dd s=c\dd\tau$.
