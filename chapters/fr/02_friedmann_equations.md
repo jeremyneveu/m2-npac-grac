@@ -20,7 +20,7 @@ Pour un ensemble de $N$ particules, en interaction ou non entre elles ou avec l'
 $$
 \sum_n p_n^{\mu}c\ \delta^{(3)}(\vec x - \vec x_n(t)) = T^{\mu 0}(t, \vec x) 
 $$
-où $\vec x_n(t)$ et $p_n^{\mu}(t)=(E_n/c, \vec p_n)$ sont les positions et quadri-impulsions de la particule $n$ à l'instant $t$. Le courant volumique[^vecj] d'impulsion à travers une surface de normale $\vec e_i$ est quant à lui :
+où $\vec x_n(t)$ et $p_n^{\mu}(t)=(E_n/c, \vec p_n)$ sont les positions et quadri-impulsions de la particule $n$ à l'instant $t$. La densité de courant d'impulsion[^vecj] à travers une surface de normale $\vec e_i$ est quant à lui :
 $$
 \sum_n p_n^{\mu} \frac{\dd x_n^i(t)}{\dd t} \delta^{(3)}(\vec x - \vec x_n(t)) = T^{\mu i}(t, \vec x)
 $$
@@ -37,7 +37,7 @@ $$
 
 :::{figure} ../../images/tmunu_def.svg
 
-Le tenseur énergie-impulsion représente les courants volumiques de quadri-impulsions $p^\mu$ et la densité d'énergie $\epsilon$ dans un volume local d'espace-temps. Si le système physique étudié dans ce volume local n'est soumis à aucune force qui travaille hormis la gravitation, alors on a l'équation de conservation $T^{\mu\nu}_{\;\;\;;\mu}=0$.
+Le tenseur énergie-impulsion représente les densités de courants de quadri-impulsions $p^\mu$ et la densité d'énergie $\epsilon$ dans un volume local d'espace-temps. Si le système physique étudié dans ce volume local n'est soumis à aucune force qui travaille hormis la gravitation, alors on a l'équation de conservation $T^{\mu\nu}_{\;\;\;;\mu}=0$.
 :::
 
 Le tenseur énergie-impulsion $T^{\mu\nu}$ de l'équation d'Einstein décrit la densité d'énergie et les flux volumiques de quantité de mouvements en mécanique relativiste. C'est un tenseur d'ordre 2, construit à partir du vecteur 4-impulsion, qui prend la forme suivante :
@@ -66,7 +66,7 @@ T^{00}= \text{energy density}\,\,\,\,
 Quelques remarques sur les composantes de ce tenseur :
 * $T^{00}$ est la densité d'énergie $\epsilon$ locale, généralement c'est la composante dominante du tenseur énergie-impulsion;
 * $T^{ii}$ représentent les flux de quantité de mouvement à travers une surface de normale colinéaire donc la pression cinétique $P$ exercée par le système physique dans la direction $\vec e_i$;
-* $T^{ij},\ i \neq j$ représentent les flux d'impulsion volumique perpendiculairement aux directions des impulsions, donc des phénomènes de viscosité ou de cisaillement.
+* $T^{ij},\ i \neq j$ représentent les densités de courant d'impulsion perpendiculairement aux directions des impulsions, donc des phénomènes de viscosité ou de cisaillement.
 
 
 ### Hydrodynamique en relativité

@@ -20,7 +20,7 @@ For a set of $N$ particles, interacting or not with each other or with the outsi
 $$
 \sum_n p_n^{\mu}c\ \delta^{(3)}(\vec x - \vec x_n(t)) = T^{\mu 0}(t, \vec x) 
 $$
-where $\vec x_n(t)$ and $p_n^{\mu}(t)=(E_n/c, \vec p_n)$ are the positions and four-momenta of particle $n$ at time $t$. The volume current[^vecj] of momentum through a surface with normal $\vec e_i$ is:
+where $\vec x_n(t)$ and $p_n^{\mu}(t)=(E_n/c, \vec p_n)$ are the positions and four-momenta of particle $n$ at time $t$. The momentum current density[^vecj] through a surface with normal $\vec e_i$ is:
 $$
 \sum_n p_n^{\mu} \frac{\dd x_n^i(t)}{\dd t} \delta^{(3)}(\vec x - \vec x_n(t)) = T^{\mu i}(t, \vec x)
 $$
@@ -35,7 +35,7 @@ $$
 
 :::{figure} ../../images/tmunu_def.svg
 
-The energy-momentum tensor represents the volume currents of four-momenta $p^\mu$ and the energy density $\epsilon$ in a local volume of space-time. If the physical system studied in this local volume is subject to no working force other than gravitation, then we have the conservation equation $T^{\mu\nu}_{\;\;\;;\mu}=0$.
+The energy-momentum tensor represents the current densities of four-momenta $p^\mu$ and the energy density $\epsilon$ in a local volume of space-time. If the physical system studied in this local volume is subject to no working force other than gravitation, then we have the conservation equation $T^{\mu\nu}_{\;\;\;;\mu}=0$.
 :::
 
 The energy-momentum tensor $T^{\mu\nu}$ of Einstein's equation describes the energy density and volume fluxes of momentum in relativistic mechanics. It is a second-order tensor, constructed from the 4-momentum vector, which takes the following form:
@@ -63,9 +63,9 @@ T^{00}= \text{energy density}\,\,\,\,
 If the physical system studied in this local volume is not subject to any working force other than gravitation, then we have the conservation equation $T^{\mu\nu}_{\;\;\;;\mu}=0$, a set of four equations representing the local conservation equation for energy and momentum. 
 
 A few remarks on the components of this tensor:
- * $T^{00}$ is the local $\epsilon$ energy density, generally the dominant component of the energy-momentum tensor;
-* $T^{ii}$ represent the flux of momentum through a surface, and hence the kinetic pressure $P$ exerted by the physical system in the $\vec e_i$ direction;
-* $T^{ij},\ i \neq j$ represent volumic momentum flows orthogonally to displacements, i.e. viscosity or shear phenomena.
+* $T^{00}$ is the local energy density $\epsilon$, generally the dominant component of the energy-momentum tensor;
+* $T^{ii}$ represent the momentum flux through a surface with collinear normal, hence the kinetic pressure $P$ exerted by the physical system in the $\vec e_i$ direction;
+* $T^{ij},\ i \neq j$ represent momentum current densities perpendicular to momentum directions, hence viscosity or shear phenomena.
 
 :::{note} Energy-momentum tensor in Special Relativity
 :class: dropdown

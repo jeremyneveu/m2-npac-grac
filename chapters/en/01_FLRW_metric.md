@@ -28,7 +28,7 @@ Galaxy distribution compiled by the eBOSS survey. Every dot in this “pie” di
 :align: center
 :width: 70%
 
-Temperature map of the Cosmic Microwave Background (CMB) observed by the Planck satellite. The relative difference observed between the  temperature of hot (red) and cold (blue) spots relative to the mean the mean is of the order of $\delta \theta / \theta \approx 10^{-5}$.
+Temperature map of the Cosmic Microwave Background (CMB) observed by the Planck satellite. The relative difference observed between the temperature of hot (red) and cold (blue) spots relative to the mean is of the order of $\delta \theta / \theta \approx 10^{-5}$.
 :::
 
 To be able to build a model of the Universe, i.e. a theoretical construct capable of describing the contents of the Universe and its evolution, we need to solve Einstein's equation of General Relativity. But to what level of detail is it necessary to describe the Universe sufficiently well on large scales? Parametrizing Einstein's equation to include the scale of the solar system is both illusory and unnecessary. What is the structure of the Universe on the largest scales? Here, nature has given us a wonderful gift, which will considerably simplify the writing of a cosmological model based on the equations of General Relativity.
@@ -102,7 +102,7 @@ In this course, as in many cosmology courses, the [signature](https://en.wikiped
 
 ### Geometry of a maximally symmetrical Universe
 
-Now let's find an explicit form for $\dd \vec l^2$. A maximally symmetrical Universe (homogeneous and isotropic) must have spatially constant curvature. This is fairly intuitive, but can also be demonstrated in General Relativity {cite:p}`Weinberg1972` [p. 381]. Let $a$ be the associated radius of curvature, and let $\vec \xi = (\xi^1, \xi^2, \xi^3)$ be a position vector in 3D space:
+Now let's find an explicit form for $\dd \vec l^2$. A maximally symmetrical Universe (homogeneous and isotropic) must have the same curvature at all points in space and in all directions. This is fairly intuitive, but can also be demonstrated in General Relativity {cite:p}`Weinberg1972` [p. 381]. Let $a$ be the associated radius of curvature, and let $\vec \xi = (\xi^1, \xi^2, \xi^3)$ be a position vector in 3D space:
 \begin{equation}
 \dd \vec l^2 = \gamma_{ij} \dd \xi^i \dd \xi^j, \quad \text{with}\quad i=1,2,3
 \end{equation}
@@ -113,7 +113,7 @@ First of all, if this space has zero curvature, then the elementary distance $\d
 \dd \vec l^2 = \delta_{ij} \dd \xi^i \dd \xi^j,\quad \gamma_{ij} = \delta_{ij}
 \end{equation}
 
-Now let's work on the case where the curvature is non-zero. To describe the curvature of a surface with the usual geometric notions, let's study it in a space with an extra dimension. Let's place this non-Euclidean (curved) 3D space in a 4D space of metric $C_{AB}$ with Cartesian coordinates $(x, y, z, w)$. Let $r^2 = x^2 + y^2 + z^2$ be the Euclidean distance in the 3D subspace. We then have two possible 3D hyper-surfaces, of constant Gaussian curvature $1/a^2$ {cite:p}`Baumann` :
+Now let's work on the case where the curvature is non-zero. To describe the curvature of a surface with the usual geometric notions, let's study it in a space with an extra dimension. Let's place this non-Euclidean (curved) 3D space in a 4D space of metric $C_{AB}$ with Cartesian coordinates $(x, y, z, w)$. Let $r^2 = x^2 + y^2 + z^2$ be the Euclidean distance in the 3D subspace. According to the <wiki:Killing–Hopf_theorem>, we then have two possible 3D hyper-surfaces, of constant Gaussian curvature $1/a^2$ (see {cite:t}`Baumann`, {cite:t}`Weinberg1972`[p. 385] and <wiki:#Manifolds_with_constant_sectional_curvature>) :
 - a 3-sphere of radius $a$ if immersed in a 4D Euclidean space: 
 \begin{equation}
 \quad C_{AB} = \mathrm{diag}(1,1,1,1), \quad r^2 + w^2= a^2,\quad \dd \vec l^2 = \dd r^2 + \dd w^2
@@ -142,6 +142,8 @@ If you're confused by this reasoning, remember that it's like describing the cur
 \begin{equation*}
 x^2 + y^2 = R^2
 \end{equation*}
+The two coordinates are linked by an equation that constrains them, so we indeed have only one degree of freedom in the end.
+
 Similarly, a sphere (a two-dimensional object) can be studied in a space with a third dimension, i.e. three coordinates $(x,y,z)$ linked by the equation:
 \begin{equation*}
 x^2 + y^2 + z^2 = R^2
@@ -157,7 +159,7 @@ The infinitesimal distance $\dd \vec l^2$ between two points of the hypersurface
 \end{equation}
 where the $+$ case corresponds to spherical geometry, the $-$ case to hyperbolic geometry {cite:p}`Weinberg1972` [p. 390-391].
 
-Now we need to eliminate the 4th dimension $w$ using the constraint equation to recover a 3-dimensional parameterization.
+We now need to eliminate the 4th dimension $w$ using the constraint equation to recover a 3-dimensional parameterization.
 
 Differentiating equation [](#eq_hyp_sph) gives the relation 
 $$
@@ -171,7 +173,7 @@ The infinitesimal distance between 2 points in non-Euclidean 3D space of constan
 \dd \vec l^2= \dd \vec r^2 \pm \frac{(\vec r \cdot \dd \vec r)^2}{a^2(t)\mp r^2} 
 \end{equation}
 
-At this stage, we can now combine the result obtained for the two non-zero curvatures with the Euclidean case by introducing the *parameter of curvature* $k$ :
+At this stage, we can now combine the result obtained for the two non-zero curvatures with the Euclidean case by introducing the *curvature parameter* $k$ :
 \begin{equation}
 \label{K-def}
 k = \left\lbrace
@@ -181,7 +183,7 @@ k = \left\lbrace
  -1 & \text{3-hyperboloid} \\
 \end{array}\right.
 \end{equation}
-For the three possible geometries of a maximally symmetrical Universe, we have :
+We thus have, for the three possible geometries of a maximally symmetrical Universe :
 \begin{equation}
 \dd \vec l^2= \dd \vec r^2 + k\frac{ (\vec r \cdot \dd \vec r)^2}{a^2(t) - k r^2}
 \end{equation}

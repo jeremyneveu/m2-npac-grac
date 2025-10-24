@@ -114,7 +114,7 @@ Tout d'abord, si cet espace possède une courbure nulle, alors la distance élé
 \dd \vec l^2 =   \delta_{ij}\dd \xi^i \dd \xi^j,\quad \gamma_{ij} = \delta_{ij}
 \end{equation}
 
-Travaillons maintenant sur le cas où la courbure est non nulle. Pour décrire la courbure d'une surface avec des notions de géométries habituelles, étudions-la dans un espace avec une dimension supplémentaire. Plaçons cet espace 3D non euclidien (courbé) dans un espace 4D de métrique $C_{AB}$ avec des coordonnées cartésiennes $(x, y, z, w)$. Posons $r^2 = x^2 + y^2 + z^2$ la distance euclidienne dans le sous-espace 3D. On a alors deux hyper-surfaces 3D possibles, de courbure de Gauss constante $1/a^2$ {cite:p}`Baumann` :
+Travaillons maintenant sur le cas où la courbure est non nulle. Pour décrire la courbure d'une surface avec des notions de géométries habituelles, étudions-la dans un espace avec une dimension supplémentaire. Plaçons cet espace 3D non euclidien (courbé) dans un espace 4D de métrique $C_{AB}$ avec des coordonnées cartésiennes $(x, y, z, w)$. Posons $r^2 = x^2 + y^2 + z^2$ la distance euclidienne dans le sous-espace 3D. D'après le <wiki:Killing–Hopf_theorem>, on a alors deux hyper-surfaces 3D possibles, de courbure de Gauss constante $1/a^2$ (voir {cite:t}`Baumann`, {cite:t}`Weinberg1972`[p. 385] et  <wiki:#Manifolds_with_constant_sectional_curvature>) :
 - une 3-sphère de rayon $a$ si elle est plongée dans un espace Euclidien 4D : 
 \begin{equation}
 \quad  C_{AB} = \mathrm{diag}(1,1,1,1), \quad r^2 + w^2= a^2,\quad  \dd \vec l^2 = \dd r^2 + \dd w^2
@@ -231,17 +231,17 @@ Dans le but d'alléger les notations, la dépendance temporelle des paramètres 
 
 * - :::{image} ../../images/sphere.jpeg
     :alt: sphere
-    :width: 95%
+    :width: 90%
     :align: center
     :::
   - :::{image} ../../images/plan.jpeg
     :alt: plan
-    :width: 100%
+    :width: 80%
     :align: center
     :::
-  - :::{image} ../../images/hyperboloid.jpeg
+  - :::{image} ../../images/hyperboloid_2sheets.png
     :alt: hyperboloid
-    :width: 90%
+    :width: 100%
     :align: center
     :::
 :::
@@ -709,6 +709,8 @@ $$H(t) = \frac{1}{a} \frac{\dd a }{\dd t }$$
 - Arguments contre la théorie de la lumière fatiguée : https://www.astro.ucla.edu/%7Ewright/tiredlit.htm et {cite:t}`Goldhaber2001`
 
 - Cosmologies non standard : <wiki:Non-standard_cosmology>
+
+- Théorème de Cartan-Ambrose-Hicks et espaces Riemanniens de courbures constantes  <wiki:Cartan%E2%80%93Ambrose%E2%80%93Hicks_theorem> et modèle de l'hyperboloïde <wiki:Hyperboloid_model>
 
 :::
 
