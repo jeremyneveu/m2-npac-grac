@@ -66,7 +66,7 @@ T^{00}= \text{energy density}\,\,\,\,
 Quelques remarques sur les composantes de ce tenseur :
 * $T^{00}$ est la densité d'énergie $\epsilon$ locale, généralement c'est la composante dominante du tenseur énergie-impulsion;
 * $T^{ii}$ représentent les flux de quantité de mouvement à travers une surface de normale colinéaire donc la pression cinétique $P$ exercée par le système physique dans la direction $\vec e_i$;
-* $T^{ij},\ i \neq j$ représentent les flux d'impulsions latéralement aux directions des impulsions, donc des phénomènes de viscosité ou de cisaillement.
+* $T^{ij},\ i \neq j$ représentent les flux d'impulsion volumique perpendiculairement aux directions des impulsions, donc des phénomènes de viscosité ou de cisaillement.
 
 
 ### Hydrodynamique en relativité
@@ -621,11 +621,21 @@ Donc pour $h=0.7$, on trouve $D_H \approx 4.3 \,\text{Gpc} \approx 14 \,\text{Gl
 
 ### Distance de luminosité 
 
-Dans un espace statique et plat, la luminosité apparente d'une source au repos à distance $D_L$ serait $L_E/4\pi D_L^2$. On propose donc de définir la distance de luminosité d'une source $D_L(z)$ en cosmologie par :
+Dans un espace statique et plat, le flux lumineux apparent $\Phi_0$ d'une source au repos à distance $D_L$ serait $L_E/4\pi D_L^2$. On propose donc de définir la distance de luminosité d'une source $D_L(z)$ en cosmologie par :
 $$
 \Phi_0 \equiv \frac{L_E}{4 \pi D_L^2(z)}
 $$
-Considérons une source située en $\sigma_E$, émettant $\delta N_E$ photons de fréquence moyenne $\nu_E$ à l'instant $t_E$ pendant un temps $\delta t_E$ (se reporter encore à la [](#fig:distances_croquis)). Sa luminosité est :
+
+:::{figure} ../../images/distances3.svg
+:name: fig:distances_croquis_DL
+:align: center
+:width: 40%
+
+Notations pour le calcul de la distance de luminosité.
+:::
+
+
+Considérons une source située en $\sigma_E$, émettant $\delta N_E$ photons de fréquence moyenne $\nu_E$ à l'instant $t_E$ pendant un temps $\delta t_E$ (se reporter à la [](#fig:distances_croquis_DL)). Sa luminosité est :
 $$
 L_E = h\nu_E \frac{\delta N_E }{\delta t_E}.$$ 
 Alors le flux surfacique reçu par un observateur possédant un télescope d'ouverture $A$ est : 
@@ -633,7 +643,7 @@ $$
 \Phi_0 = h \nu_0\frac{\delta N_0 }{A \delta t_0}.$$ 
 La surface sur laquelle se répartit, à l'instant $t_0$, le flux émis est:
 $$
-S = \int_0^{2\pi} \int_0^\pi \sqrt{-g} \dd\theta \dd\phi = \int_0^{2\pi} \int_0^\pi a^2(t_0)\sigma^2(t_0)\sin^2\theta \dd\theta \dd\phi = 4 \pi a^2_0 \sigma^2_E.
+S = \int_0^{2\pi} \int_0^\pi \sqrt{-g} \dd\theta \dd\phi = \int_0^{2\pi} \int_0^\pi a^2(t_0)\sigma^2(t_0)\sin\theta \dd\theta \dd\phi = 4 \pi a^2_0 \sigma^2_E.
 $$
 avec $\sigma(t_0)=\sigma_E$.
 Le nombre de photons émis $\delta N_E$ intercepté par la surface collectrice de taille $A$ est donc :
@@ -806,9 +816,11 @@ $$
 
 :::{seealso}  Pour approfondir
 
-- Démontration de la structure des tenseurs de forme invariante : {cite:p}`Weinberg1972`[p. 392]
+- Démontration de la structure des tenseurs de forme invariante : {cite:t}`Weinberg1972`[p. 392]
 
 - Hydrodynamique en relativité : <wiki:Fluid_solution>
+
+- Fluides imparfaits (visqueux) : {cite:t}`Weinberg1972`[p. 53], {cite:t}`Weinberg1971Fluids`,  {cite:t}`LandauFluids`
 
 :::
 

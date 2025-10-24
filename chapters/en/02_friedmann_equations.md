@@ -65,7 +65,7 @@ If the physical system studied in this local volume is not subject to any workin
 A few remarks on the components of this tensor:
  * $T^{00}$ is the local $\epsilon$ energy density, generally the dominant component of the energy-momentum tensor;
 * $T^{ii}$ represent the flux of momentum through a surface, and hence the kinetic pressure $P$ exerted by the physical system in the $\vec e_i$ direction;
-* $T^{ij},\ i \neq j$ represent momentum flows lateral to displacements, i.e. viscosity or shear phenomena.
+* $T^{ij},\ i \neq j$ represent volumic momentum flows orthogonally to displacements, i.e. viscosity or shear phenomena.
 
 :::{note} Energy-momentum tensor in Special Relativity
 :class: dropdown
@@ -201,7 +201,7 @@ Friedmann equations
 Solving Einstein's equation [](#eq:einstein2) involves finding a solution metric, given the distribution of matter and energy encoded in $T^{\mu\nu}$. Assuming the principles of homogeneity and isotropy for this tensor, the metric is the Friedmann-Lemaître-Robertson-Walker (FLRW) metric, using the usual set of spherical comobile coordinates $(ct, \sigma, \theta, \phi)$:
 $$
 \begin{aligned}\label{eq:flrw}
-\displaystyle g_{mu\nu} = \begin{pmatrix}
+\displaystyle g_{\mu\nu} = \begin{pmatrix}
 -1 & 0 & 0 & 0 \\
 0 & \dfrac{a^2(t)}{1-k\sigma^2} & 0 & 0 \\
 0 & 0 & a^2(t)\sigma^2 & 0 \\
@@ -238,7 +238,7 @@ $$
 From Einstein's equation [](#eq:einstein2) and the energy-momentum tensor [](#eq:tmunu_fluid), we obtain for the coordinate $00$ and for the spatial coordinates $ij$: 
 $$
 \begin{aligned}
-G_{\mu\nu}-\Lambda g_{\mu\nu} & = -8\pi \GN T_{\mu\nu}/c^4 \GN
+G_{\mu\nu}-\Lambda g_{\mu\nu} & = -8\pi \GN T_{\mu\nu}/c^4 \\
 \Leftrightarrow & \left\lbrace
 \begin{array}{rl}
     \text{00: } & \displaystyle{3 \left( \frac{\dot{a}^2}{a^2}+ \frac{c^2 k}{a^2} \right) = 8\pi \GN \rho + c^2 \Lambda} \\
@@ -677,19 +677,6 @@ where $L$ is the intrinsic luminosity of an object (in watts) and $l$ a physical
 
 ### Hubble distance
 
-With the parameters $c$ and $H_0$, it's possible to construct a quantity homogeneous to a length. This distance, typical in cosmology, is called the Hubble distance and is equal to :
-$$
-D_H = \frac{c}{H_0} = 3000\,\text{Mpc/}h
-$$
-where $h$ is usually defined by :
-$$
-H_0 = 100\,h\,\text{km/s/Mpc}
-$$
-So for $h=0.7$, we find $D_H \approx 4.3 \,\text{Gpc} \approx 14 \,\text{Gly}$. This value will appear for all (non-moving) distances defined below.
-
-
-### Hubble distance
-
 With the parameters $c$ and $H_0$, it is possible to construct a quantity homogeneous to a length. This typical distance in cosmology is called the *Hubble distance* and is worth:
 $$
 D_H = \frac{c}{H_0} = 3000\,\text{Mpc/}h
@@ -698,6 +685,7 @@ where $h$ is usually defined by:
 $$
 H_0 = 100\,h\,\text{km/s/Mpc}
 $$
+So for $h=0.7$, we find $D_H \approx 4.3 \,\text{Gpc} \approx 14 \,\text{Gly}$. This value will appear for all (non-comoving) distances defined below.
 So for $h=0.7$, we find $D_H \approx 4.3 \,\text{Gpc} \approx 14 \,\text{Gly}$. This value will appear for all (non-comoving) distances defined below.
 
 
@@ -715,7 +703,7 @@ $$
 \Phi_0 = h \nu_0\frac{\delta N_0 }{A \delta t_0}.$$ 
 The surface over which the emitted flux is distributed at time $t_0$ is:
 $$
-S = \int_0^{2\pi} \int_0^\pi \sqrt{-g} \dd\theta \dd\phi = \int_0^{2\pi} \int_0^\pi a^2(t_0)\sigma^2(t_0)\sin^2\theta \dd\theta \dd\phi = 4 \pi a^2_0 \sigma^2_E.
+S = \int_0^{2\pi} \int_0^\pi \sqrt{-g} \dd\theta \dd\phi = \int_0^{2\pi} \int_0^\pi a^2(t_0)\sigma^2(t_0)\sin\theta \dd\theta \dd\phi = 4 \pi a^2_0 \sigma^2_E.
 $$
 with $\sigma(t_0)=\sigma_E$.
 The number of emitted photons $\delta N_E$ intercepted by the collecting surface of size $A$ is therefore :
@@ -880,7 +868,7 @@ Transform Lambda into a length: Length = $\sqrt{1/\Lambda}$ = ....
 
 
 
-:::{important} Key Points
+:::{important} Key points
 
 - The Cosmological Principle implies that matter must be described as a perfect fluid, and therefore that its transformations are adiabatic.
 
@@ -908,9 +896,11 @@ Transform Lambda into a length: Length = $\sqrt{1/\Lambda}$ = ....
 
 :::{seealso}  To go further
 
-- Demonstration of the structure of form-invariant tensors: {cite:p}`Weinberg1972`[p. 392]
+- Demonstration of the structure of form-invariant tensors: {cite:t}`Weinberg1972`[p. 392]
 
 - Relativistic hydrodynamics: <wiki:Fluid_solution>
+
+- Imperfect (viscous) fluids: {cite:t}`Weinberg1972`[p. 53], {cite:t}`Weinberg1971Fluids`, {cite:t}`LandauFluids`
 
 :::
 
