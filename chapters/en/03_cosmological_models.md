@@ -55,7 +55,7 @@ a(t) = a_0 H_0 t$$
 
 :::{important}
 
-The Hubble constant $H_0$ appears in the three previous Universe models. The expansion rate of the Universe today is not a prediction of the models but external data, when integrating Friedmann's differential equations.
+The Hubble constant $H_0$ appears in the three previous Universe models. This parameter is not a prediction of the models but external data. The interpretation of the previous $a(t)$ functions depends completely on this measurement, in particular its sign, which reflects the current state of an expanding universe.
 :::
 
 Multi-component models
@@ -307,5 +307,5 @@ Evolution of cosmological parameters.
 :::
 
 [^ksign]: The sign of $k$ is the inverse of the sign of $\Omega_k^0$.
-[^baryons]: Baryonic matter is ordinary matter composed of protons and neutrons.
+[^baryons]: Baryonic matter is ordinary matter composed of protons and neutrons. Electrons are as numerous as protons but 2000 times lighter, so they barely contributes to $\Omega_b^0$.
 [^Mach]: In theoretical physics, particularly in discussions of gravitational theories, Mach's principle is the name given by Einstein to an imprecise hypothesis often attributed to physicist and philosopher Ernst Mach. The idea is that local inertial frames are determined by the large-scale distribution of matter.

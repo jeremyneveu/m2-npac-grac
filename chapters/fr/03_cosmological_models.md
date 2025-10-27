@@ -55,7 +55,7 @@ a(t) = a_0 H_0 t$$
 
 :::{important}
 
-La constante de Hubble $H_0$ apparaît dans les trois modèles d'Univers précédents. Le taux d'expansion de l'Univers aujourd'hui n'est pas une prédiction des modèles mais une donnée externe, lors de l'intégration des équations différentielles de Friedmann.
+La constante de Hubble $H_0$ apparaît dans les trois modèles d'Univers précédents. Ce paramètre n'est pas une prédiction des modèles mais une donnée externe. L'interprétation des fonctions $a(t)$ précédentes dépend complètement de cette mesure, en particulier de son signe, qui reflète l'état actuel d'un univers en expansion. 
 :::
 
 
@@ -327,8 +327,6 @@ Evolution des paramètres cosmologiques.
 
 
 [^ksign]: Le signe de $k$ est l'inverse du signe de $\Omega_k^0$.
-[^Mach]: En physique théorique, en particulier dans les discussions sur les théories de la gravitation, le principe de Mach 
-est le nom donné par Einstein à une hypothèse imprécise souvent attribuée au physicien et philosophe Ernst Mach. 
-L'idée est que les cadres inertiels locaux sont déterminés par la distribution de la matière à grande échelle.
-
+[^Mach]: En physique théorique, en particulier dans les discussions sur les théories de la gravitation, le principe de Mach est le nom donné par Einstein à une hypothèse imprécise souvent attribuée au physicien et philosophe Ernst Mach. L'idée est que les référentiels inertiels locaux sont déterminés par la distribution de la matière à l'échelle de l'Univers.
+[^baryons]: La matière baryonique en cosmologie représente la matière ordinaire, faite de protons et de neutrons. Les électrons sont aussi nombreux que les protons mais 2000 fois plus légers, donc ils comptent à peine dans $\Omega_b^0$.
 
