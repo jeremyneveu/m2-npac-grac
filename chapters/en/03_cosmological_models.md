@@ -117,6 +117,7 @@ For the $\Lambda$CDM model with $\Omega_m^0\approx 0.3$ and $\Omega_\Lambda^0\ap
 The expansion of the Universe is today well described by the flat $\Lambda$CDM model ($\Omega_k^0=0$). The proportions of each of these components are today evaluated at {cite}`Planck2018`:
 $$\Omega_\Lambda^0 = 0.685,\quad \Omega_m^0=0.315$$
 Concerning cold matter, this can be separated into two contributions: dark matter $\Omega_{c}^0=0.264$ and baryonic matter[^baryons] $\Omega_b^0=0.049$.
+With the CMB temperature, the proportion of relativistic matter is evaluated to $\Omega_r^0 \approx 5\times 10^{-5}$ today (see CMB chapter).
 
 Mechanical analogy
 ------------------

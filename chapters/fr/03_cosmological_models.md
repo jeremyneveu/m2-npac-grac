@@ -122,7 +122,7 @@ Pour le modèle $\Lambda$CDM avec $\Omega_m^0\approx 0.3$ et $\Omega_\Lambda^0\a
 ### $\Lambda$CDM
 
 L'expansion de l'Univers est aujourd'hui bien décrite par le modèle $\Lambda$CDM plat ($\Omega_k^0=0$). Les proportions de chacune de ces composantes sont aujourd'hui évaluées à {cite}`Planck2018`:
-$$\Omega_\Lambda^0 = 0.685,\quad \Omega_m^0=315$$
+$$\Omega_\Lambda^0 = 0.685,\quad \Omega_m^0=0.315$$
 Concernant la matière froide, celle-ci peut être séparée en deux contributions: la matière sombre $\Omega_{c}^0=0.264$ et la matière baryonique[^baryons] $\Omega_b^0=0.049$.
 
 
