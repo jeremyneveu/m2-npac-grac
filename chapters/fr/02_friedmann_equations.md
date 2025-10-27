@@ -133,7 +133,7 @@ $$
 Avec ces hypothèses, on en déduit que le tenseur énergie-impulsion cosmologique est le même que celui d'un fluide parfait homogène dans son référentiel au repos. Le comportement de la matière dans un Univers homogène et isotrope peut donc se décrire comme celle d'un fluide parfait, c'est-à-dire qu'on ne s'attend à observer aucun phénomène de viscosité ou de flux d'énergie. Cela implique que les transformations de la matière lors de l'évolution cosmologique de l'Univers sont _adiabatiques_. Le fluide étant au repos, on peut considérer que la quadri-vitesse de la matière aux échelles cosmologiques dans le référentiel d'observateurs comobiles s'écrit $U^0=1,\ U^i = 0$ et on obtient :
 $$ \boxed{ T^{\mu\nu}_{\rm COSMO} = (\epsilon + P) U^\mu U^\nu + P g^{\mu\nu},\quad U^\mu=(1, 0,0,0) }\label{eq:def-Tmunu2}$$
 
-En utilisant la métrique FLRW, solution d'un univers homogène et isotrope également, pour un univers plat avec une paramétrisation cartésienne, le tenseur énergie-impulsion prend la forme simple[^Punits] :
+En utilisant la métrique FLRW, solution d'un univers homogène et isotrope également, pour un univers plat avec une paramétrisation cartésienne, le tenseur énergie-impulsion prend la forme simple :
 \begin{equation}
 \label{eq:tmunu_fluide}
 T^{\mu\nu}  =  
@@ -499,14 +499,16 @@ $$
 \ddot{a} > 0 \Leftrightarrow \epsilon_\Lambda > \epsilon_r + \epsilon_m/2$$
 En conclusion, si la constante cosmologique domine le contenu en énergie de l'Univers, alors elle engendre une telle pression négative que ce dernier entre en _expansion accélérée_.
 
-:::{note} Quelle unité pour $\Lambda$ ?
+:::{note} Un point sur les unités
 
-Comme $\epsilon_\Lambda$ est une densité d'énergie, on en déduit que $\Lambda$ a la dimension de l'inverse du carré d'une longueur. Pour résumé,
+Comme $\epsilon_\Lambda$ est une densité d'énergie, on en déduit que $\Lambda$ a la dimension de l'inverse du carré d'une longueur : 
 $$
 \label{eq:dimensions}
-\left[a\right] = \mathsf{L},\quad \left[\rho \right] = \mathsf{M}\cdot \mathsf{L}^{-3}, \quad \left[\epsilon \right] = \left[p \right] = \mathsf{M}\cdot \mathsf{L}^{-1} \cdot \mathsf{T}^{-2}\quad \left[\Lambda \right] = \mathsf{L}^{-2} $$
+\left[a\right] = \mathsf{L},\quad \left[\rho \right] = \mathsf{M}\cdot \mathsf{L}^{-3}, \quad \left[\epsilon \right] = \left[P \right] = \mathsf{M}\cdot \mathsf{L}^{-1} \cdot \mathsf{T}^{-2}\quad \left[\Lambda \right] = \mathsf{L}^{-2} $$
+Concernant le tenseur métrique FLRW, ses compostantes ont des unités diverses tout comme le vecteur position associé:
 $$
-\left[ g_{\mu\nu} \right] = [1,\mathsf{L}^{2},\mathsf{L}^{2},\mathsf{L}^{2}] $$
+\left[ g_{\mu\nu} \right] = [1,\mathsf{L}^{2},\mathsf{L}^{2},\mathsf{L}^{2}],\quad \left[(ct,\sigma,\theta,\phi)\right] = [(\mathsf{L},1,1,1)] $$
+Le tenseur énergie-impulsion $T^{\mu\nu}$ dans FLRW également contient des composantes homogènes à des densités d'énergie et d'autres en $\left[P/a^2 \right]$. Il ne faut pas être trop troublé par les unités physiques diverses présentes dans les tenseurs, car ce ne sont que des tenseurs donc l'encodage d'une fonction vectorielle. Les observables physiques doivent être des champs _scalaires_ issus de l'application de ses tenseurs, donc invariants par changement de système de coordonnées (contrairement aux composantes du tenseur). Par exemple, les longueurs sont définies par $\dd s = \sqrt{g_{\mu\nu}\dd x^\mu \dd x^\nu}$ pour des déplacements $\dd x^\mu$, la pression est définie par le bilan de flux de moment cinétique selon les 3 directions spatiales $P=T^i_{\ \ \ i}/3$, et les relations entre densité d'énergie et pression sont données par les équations de conservation _scalaires_ issues de  $T^{\mu \nu}_{\,\,\,\,\,\,;\mu}=0$.
 :::
 
 
@@ -541,7 +543,7 @@ $$
 
 ### Paramètres de densité d'énergie
 
-On peut définir une densité critique, qui correspondrait à la densité que l'on doit avoir dans un univers homogène et isotrope en expansion de courbure spatiale nulle (cf équation [](#eq:friedmann)) : 
+On peut définir une densité critique, qui correspondrait à la densité que l'on doit avoir dans un univers homogène et isotrope en expansion de courbure spatiale nulle et contenant seulement de la matière non relativiste (cf équation [](#eq:friedmann)) : 
 $$
 \rho_c(t) = \frac{3H^2(t)}{8\pi \GN}.$$ 
 Il est commode de définir aussi sa valeur actuelle :
@@ -829,4 +831,3 @@ $$
 
 [^flat]: On ne pourra _stricto sensus_ jamais mesuré que l'Univers est plat ($k=0$), mais que les mesures sont compatibles avec l'hypothèse d'un univers plat.
 
-[^Punits]: Il ne faut pas être trop troublé par les unités physiques diverses présentes dans $T^{\mu\nu}, car ce n'est qu'un tenseur de rang 2 donc l'encodage d'une fonction vectorielle, comme la métrique $g_{\mu\nu}$ par ailleurs. La pression reste définie par $P=T^i_{\ i}/3$ malgré la présence du facteur d'échelle.

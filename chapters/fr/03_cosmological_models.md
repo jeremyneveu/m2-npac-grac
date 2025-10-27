@@ -60,7 +60,7 @@ La constante de Hubble $H_0$ apparaît dans les trois modèles d'Univers précé
 
 
 
-Modèles à plusieurs compostantes
+Modèles à plusieurs composantes
 -------------------
 
 La cosmologie moderne est née avec la Relativité Générale. Depuis l'écriture de ces équations, les scientifiques ont commencé à décrire mathématiquement l'univers comme un système physique. De nombreux modèles ont été proposés pour décrire les différentes histoires de l'univers.

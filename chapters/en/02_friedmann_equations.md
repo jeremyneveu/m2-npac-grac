@@ -595,14 +595,16 @@ $$
 \ddot{a} > 0 \Leftrightarrow \epsilon_\Lambda > \epsilon_r + \epsilon_m/2$$
 In conclusion, if the cosmological constant dominates the energy content of the Universe, then it generates such negative pressure that the Universe enters _accelerated expansion_.
 
-:::{note} What unit for $\Lambda$?
+:::{note} A note on units
 
-Since $\epsilon_\Lambda$ is an energy density, we deduce that $\Lambda$ has the dimension of the inverse of the square of a length. To summarize,
+Since $\epsilon_\Lambda$ is an energy density, we deduce that $\Lambda$ has the dimension of the inverse of the square of a length:
 $$
 \label{eq:dimensions}
-\left[a\right] = \mathsf{L},\quad \left[\rho \right] = \mathsf{M}\cdot \mathsf{L}^{-3}, \quad \left[\epsilon \right] = \left[p \right] = \mathsf{M}\cdot \mathsf{L}^{-1} \cdot \mathsf{T}^{-2}\quad \left[\Lambda \right] = \mathsf{L}^{-2} $$
+\left[a\right] = \mathsf{L},\quad \left[\rho \right] = \mathsf{M}\cdot \mathsf{L}^{-3}, \quad \left[\epsilon \right] = \left[P \right] = \mathsf{M}\cdot \mathsf{L}^{-1} \cdot \mathsf{T}^{-2}\quad \left[\Lambda \right] = \mathsf{L}^{-2} $$
+Concerning the FLRW metric tensor, its components have various units just like the associated position vector:
 $$
-\left[ g_{\mu\nu} \right] = [1,\mathsf{L}^{2},\mathsf{L}^{2},\mathsf{L}^{2}] $$
+\left[ g_{\mu\nu} \right] = [1,\mathsf{L}^{2},\mathsf{L}^{2},\mathsf{L}^{2}],\quad \left[(ct,\sigma,\theta,\phi)\right] = [(\mathsf{L},1,1,1)] $$
+The energy-momentum tensor $T^{\mu\nu}$ in FLRW also contains components homogeneous to energy densities and others in $\left[P/a^2 \right]$. One should not be too troubled by the various physical units present in tensors, because they are only tensors, i.e., the encoding of a vectorial function. Physical observables must be _scalar_ fields resulting from the application of these tensors, thus invariant under coordinate system changes (unlike tensor components). For example, lengths are defined by $\dd s = \sqrt{g_{\mu\nu}\dd x^\mu \dd x^\nu}$ for displacements $\dd x^\mu$, pressure is defined by the balance of kinetic momentum flux along the 3 spatial directions $P=T^i_{\ \ \ i}/3$, and the relations between energy density and pressure are given by _scalar_ conservation equations from $T^{\mu \nu}_{\,\,\,\,\,\,;\mu}=0$.
 :::
 
 
@@ -669,7 +671,7 @@ $$
 
 ### Energy density parameters
 
-We can define a critical density, corresponding to the density we should have in a homogeneous, isotropic, expanding universe with zero spatial curvature (cf equation [](#eq:friedmann)): 
+We can define a critical density, corresponding to the density we should have in a homogeneous, isotropic, expanding matter-only universe with zero spatial curvature (cf equation [](#eq:friedmann)): 
 $$
 \rho_c(t) = \frac{3H^2(t)}{8\pi \GN}.$$ 
 It's also convenient to define its current value:
