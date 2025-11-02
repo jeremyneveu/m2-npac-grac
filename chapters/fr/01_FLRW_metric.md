@@ -221,6 +221,21 @@ car $\dot{\vec \sigma} = \vec 0$ si la galaxie n'a pas de mouvement propre[^vpec
 \boxed{\displaystyle H(t) = \frac{\dot a(t)}{a(t)}}
 \end{equation}
 
+
+:::{attention} Expansion de l'univers et physique locale
+
+Les objets gravitationnellement liés comme le Système Solaire ou les galaxies ne sont pas soumises à l'expansion de l'espace. En effet, considérons une situation initiale avec un champ de matière quasiment homogène en expansion. Les sur-densités vont croitre par attraction gravitationnelle. Si au départ la croissance est linéaire, petit à petit elle devient non-linéaire aux petites échelles (force centrale en $-\vec e_r/r^2$) et des mécanismes physiques supplémentaires à la gravitation se mettent en oeuvre à haute densité, comme la magnétohydrodynamique, les réactions chimiques et nucléaires, et la contre-réaction du rayonnement thermique. Un système physique ainsi régi par des équations non-linéaires oublie petit à petit ses conditions initiales, voire est chaotique (cf problème à N corps <wiki:N-body_problem>). C'est ainsi que les orbites des planètes ont oublié la phase de contraction de la boule de gaz qui a formé le Soleil, et que les galaxies et amas de galaxies ont oublié leur état d'expansion initial. 
+
+Toutefois, les systèmes gravitationnellement liés n'ont pas oublié leur dynamique globale par rapport aux autres systèmes liés, ce sont les conditions locales qui sont effacées par la physique non-linéaire. Le Soleil tourne autour du centre de la Voie Lactée tout comme la nébuleuse initiale le faisait, et les amas de galaxies suivent l'expansion de l'Univers telle qu'impulsée au Big Bang.
+
+Plus formellement, le raccordement d'une métrique locale statique comme celle de Schwarzschild à une métrique où l'espace est en expansion a été proposé en 1945 par {cite:t}`EinsteinStraus1945` (pour une approche moderne et une bibliographie complète, se référer aux revues {cite:t}`Mars2013` et <doi:10.13140/2.1.4972.5442>). C'est le modèle dit du "fromage suisse". L'espace inter-galactique s'étend, l'espace local reste statique, mais le rayon $R_v$ où se situe la frontière formelle de raccordement entre les deux se déplace dans le temps, selon {cite:p}`Schucking1954`:
+\begin{equation*}
+\frac{4}{3}\pi R_v^3 \rho_{\rm tot} = M_*
+\end{equation*}
+où $M_*$ est la masse de l'astre (dans la solution de Schwarzschild) et $\rho_{\rm tot}$ la densité de masse de l'Univers. Pour le Soleil avec un univers ayant la densité critique $3H_0^2/(8\pi \mathcal{G})$, cela donne environ 400 années-lumière, soit 100 fois plus que la distance interstellaire moyenne dans la Voie Lactée {cite:p}`Carrera2010`. Cette frontière entre espace en expansion et espace statique se situe vraisemblalement plutôt autour des amas de galaxies.
+
+:::
+
 Pour un univers sphérique, le facteur d'échelle $a(t)$ représente également son rayon de courbure. Un univers sphérique dynamique correspond donc à un univers possédant un rayon de courbure variable dans le temps. Un espace plat ne possède pas d'échelle caractéristique, la valeur de $a(t)$ n'est donc pas une observable physique. La quantité ayant un sens physique pour un tel univers est le paramètre de Hubble $H(t)$.
 
 Dans le but d'alléger les notations, la dépendance temporelle des paramètres ne sera pas toujours explicitée, de sorte que $a(t)=a$. On désignera les paramètres évalués au temps présent $t_0$ par l'indice ou l'exposant 0 si bien que $a(t_0)=a_0$. Dans la suite, nous travaillerons dans le système où $a_0$ *n'est pas fixé* à 1. 
@@ -430,7 +445,7 @@ Directement, si l'espace est en expansion alors $a(t_E) < a(t_0)$ et la longueur
 
  \boxed{ \displaystyle{z = \frac{\lambda_0-\lambda_E}{\lambda_E} \Leftrightarrow 1+z = \frac{a_0}{a(t_E)} }}
 :::
-Le décalage spectral est à la fois directement lié au paramètre d'échelle $a(t)$, mais aussi à une grandeur expérimentale directement mesurable sur le spectre d'émission des objets distants. En effet, en regardant la position des raies d'absorption et d'émission des objets lointains, on peut en déduire leurs décalages spectraux par rapport aux mêmes éléments chimiques situés sur Terre, au repos. Cette donnée expérimentale est donc souvent associée à la définition des distances en cosmologie. La galaxie la plus lointaine observée à ce jour possède un redshift $z=14.32^{+0.08}_{-0.20}$ (JWST: <doi:10.1038/s41586-024-07860-9>).
+Le décalage spectral est à la fois directement lié au paramètre d'échelle $a(t)$, mais aussi à une grandeur expérimentale directement mesurable sur le spectre d'émission des objets distants. En effet, en regardant la position des raies d'absorption et d'émission des objets lointains, on peut en déduire leurs décalages spectraux par rapport aux mêmes éléments chimiques situés sur Terre, au repos. Cette donnée expérimentale est donc souvent associée à la définition des distances en cosmologie. La galaxie la plus lointaine observée à ce jour possède un redshift $z=14.32^{+0.08}_{-0.20}$ (JWST: <doi:10.1038/s41586-024-07860-9>). Le redshift est un phénomène lié à la dilatation du temps en cosmologie.
 
 
 :::{exercise} Mesure du redshift

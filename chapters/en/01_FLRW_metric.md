@@ -223,6 +223,21 @@ because $\dot{\vec \sigma} = \vec 0$ if the galaxy has no proper motion[^vpec], 
 \boxed{\displaystyle H(t) = \frac{\dot a(t)}{a(t)}}
 \end{equation}
 
+
+:::{attention} Universe expansion and local physics
+
+Gravitationally bound objects such as the Solar System or galaxies are not subject to the expansion of space. Indeed, let us consider an initial situation with a nearly homogeneous matter field in expansion. Over-densities will grow through gravitational attraction. If initially the growth is linear, gradually it becomes non-linear at small scales (central force in $-\vec e_r/r^2$) and additional physical mechanisms to gravitation come into play at high density, such as magnetohydrodynamics, chemical and nuclear reactions, and the counter-reaction of thermal radiation. A physical system thus governed by non-linear equations gradually forgets its initial conditions, and may even be chaotic (cf. N-body problem <wiki:N-body_problem>). This is how planetary orbits have forgotten the contraction phase of the gas ball that formed the Sun, and how galaxies and galaxy clusters have forgotten their initial expansion state.
+
+However, gravitationally bound systems have not forgotten their global dynamics relative to other bound systems; it is the local conditions that are erased by non-linear physics. The Sun revolves around the center of the Milky Way just as the initial nebula did, and galaxy clusters follow the expansion of the Universe as initiated at the Big Bang.
+
+More formally, the matching of a local static metric such as Schwarzschild's to a metric where space is expanding was proposed in 1945 by {cite:t}`EinsteinStraus1945` (for a modern approach and complete bibliography, refer to the reviews {cite:t}`Mars2013` and <doi:10.13140/2.1.4972.5442>). This is called the "Swiss cheese" model. Intergalactic space expands, local space remains static, but the radius $R_v$ where the formal boundary between the two is located moves in time, according to {cite:p}`Schucking1954`:
+\begin{equation*}
+\frac{4}{3}\pi R_v^3 \rho_{\rm tot} = M_*
+\end{equation*}
+where $M_*$ is the mass of the celestial body (in the Schwarzschild solution) and $\rho_{\rm tot}$ the mass density of the Universe. For the Sun with a universe having critical density $3H_0^2/(8\pi \mathcal{G})$, this gives about 400 light-years, which is 100 times greater than the average interstellar distance in the Milky Way {cite:p}`Carrera2010`. This boundary between expanding space and static space is most likely located around galaxy clusters.
+
+:::
+
 For a spherical universe, the scale factor $a(t)$ also represents its radius of curvature. A dynamic spherical universe therefore corresponds to a universe with a time-varying radius of curvature. A flat space has no characteristic scale, so the value of $a(t)$ is not a physical observable. The physically meaningful quantity for such a universe is the Hubble parameter $H(t)$.
 
 To simplify notation, the time dependence of the parameters is not always made explicit, so $a(t)=a$. Parameters evaluated at the present time $t_0$ are designated by the subscript or exponent 0, so that $a(t_0)=a_0$. In the following, we'll work in the system where $a_0$ *isn't fixed* at 1. 
