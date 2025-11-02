@@ -119,6 +119,21 @@ $$\Omega_\Lambda^0 = 0.685,\quad \Omega_m^0=0.315$$
 Concerning cold matter, this can be separated into two contributions: dark matter $\Omega_{c}^0=0.264$ and baryonic matter[^baryons] $\Omega_b^0=0.049$.
 With the CMB temperature, the proportion of relativistic matter is evaluated to $\Omega_r^0 \approx 5\times 10^{-5}$ today (see CMB chapter).
 
+
+:::{attention} Influence of the cosmological constant on local physics
+
+While local space is not affected by the global expansion of the Universe, it is nevertheless subject to the influence of the cosmological constant, which is indeed present in Einstein's equation and whose cosmological value is non-zero. It brings a correction to the Schwarzschild metric and thus an additional repulsive term to the Newtonian gravitational attraction exerted on a test mass $m$ of the form {cite:p}`Balbinot1998,Martin2012`:
+\begin{equation*}
+\vec F = - \frac{\mathcal{G}M_*m}{r^2}\vec e_r + \frac{m c^2 \Lambda r}{3}\vec e_r
+\end{equation*}
+with $\vec e_r$ pointing outward from the central body. Currently, with $\Omega_\Lambda = c^2 \Lambda / 3 H_0^2 = 0.685$, we obtain:
+\begin{equation*}
+\Lambda = 0.23 h^2 \times \,\mathrm{Gpc}^{-2} 
+\end{equation*}
+i.e., a typical distance $\sqrt{3/\Lambda} \approx 17\,\mathrm{Gly}$ with $h=0.7$, commensurate with the size of the observable universe. The influence of $\Lambda$ is therefore invisible for reasonable terrestrial experiments, even with atomic clocks. Its effect is however detected at cosmological scales and poses serious problems if interpreted as quantum vacuum energy {cite:p}`Martin2012`.
+
+:::
+
 Mechanical analogy
 ------------------
 
@@ -304,8 +319,13 @@ Evolution of cosmological parameters.
 
 - Standard model of cosmology $\Lambda$CDM: <wiki:Lambda-CDM_model>
 
+- The cosmological constant: {cite:t}`Martin2012,Weinberg1989`
+
+
 :::
 
 [^ksign]: The sign of $k$ is the inverse of the sign of $\Omega_k^0$.
 [^baryons]: Baryonic matter is ordinary matter composed of protons and neutrons. Electrons are as numerous as protons but 2000 times lighter, so they barely contributes to $\Omega_b^0$.
 [^Mach]: In theoretical physics, particularly in discussions of gravitational theories, Mach's principle is the name given by Einstein to an imprecise hypothesis often attributed to physicist and philosopher Ernst Mach. The idea is that local inertial frames are determined by the large-scale distribution of matter.
+
+[^flat]: We will _stricto sensu_ never be able to measure that the Universe is flat ($k=0$), but that measurements are compatible with the hypothesis of a flat universe.

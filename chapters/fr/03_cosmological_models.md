@@ -121,9 +121,39 @@ Pour le modèle $\Lambda$CDM avec $\Omega_m^0\approx 0.3$ et $\Omega_\Lambda^0\a
 
 ### $\Lambda$CDM
 
-L'expansion de l'Univers est aujourd'hui bien décrite par le modèle $\Lambda$CDM plat ($\Omega_k^0=0$). Les proportions de chacune de ces composantes sont aujourd'hui évaluées à {cite}`Planck2018`:
-$$\Omega_\Lambda^0 = 0.685,\quad \Omega_m^0=0.315$$
-Concernant la matière froide, celle-ci peut être séparée en deux contributions: la matière sombre $\Omega_{c}^0=0.264$ et la matière baryonique[^baryons] $\Omega_b^0=0.049$.
+L'expansion de l'Univers est aujourd'hui bien décrite par le modèle $\Lambda$CDM plat ($\Omega_k^0=0$). Dans le cadre d'un Univers plat, les mesures angulaires réalisées par le satellite _Planck_ sur le fond diffus cosmologique, combinées aux mesures de flux des supernovae de type Ia, et les distances angulaires des oscillations acoustiques de baryons permettent d'inférer le contenu en matière et énergie noire pour un univers plat aujourd'hui ([](doi:10.1051/0004-6361/201833910), Table 2) :
+$$
+\label{eq:omegas_planck}
+\Omega_m^0 = 0.3111 \pm 0.0056, \quad \Omega_\Lambda^0 = 0.6889 \pm 0.0056
+$$
+
+Si la courbure est un paramètre libre du modèle (on parle d'extension au modèle standard $\Lambda$CDM), on mesure :
+$$
+\Omega_k^0 = 0.0007\pm 0.0037
+$$
+ce qui est compatible avec un univers strictement plat[^flat], ou courbe mais avec avec un rayon de courbure très important puisque $\Omega_k^0 \approx k/a_0^2$.
+Concernant la matière non relativiste, celle-ci peut être séparée en deux contributions: la matière sombre $\Omega_{c}^0=0.2607 \pm 0.0020$ et la matière baryonique[^baryons] $\Omega_b^0=0.0490 \pm 0.0003$.
+
+Si on propose un modèle à deux paramètres pour l'énergie noire, on obtient ([](doi:10.1051/0004-6361/201833910), Table 6) :
+$$
+w_0 = −0.957 \pm 0.080, \quad w_a = −0.29^{+0.32}_{ −0.26}
+$$ 
+
+
+
+:::{attention} Influence de la constante cosmologique sur la physique locale
+
+Si l'espace local n'est pas affecté par l'expansion globale de l'Univers, il est toutefois sujet à l'influence de la constante cosmologique, bel et bien présente dans l'équation d'Einstein et dont la valeur cosmologique est non nulle. Elle apporte une correction à la métrique de Schwarzschild et donc un terme supplémentaire répulsif à l'attraction gravitationnelle newtonienne exercée sur une masse test $m$ de la forme {cite:p}`Balbinot1998,Martin2012`:
+\begin{equation*}
+\vec F = - \frac{\mathcal{G}M_*m}{r^2}\vec e_r + \frac{m c^2 \Lambda r}{3}\vec e_r
+\end{equation*}
+avec $\vec e_r$ pointant vers l'extérieur du corps central. Actuellement, avec $\Omega_\Lambda = c^2 \Lambda / 3 H_0^2 = 0.685$, on obtient:
+\begin{equation*}
+\Lambda = 0.23 h^2 \times \,\mathrm{Gpc}^{-2} 
+\end{equation*}
+soit une distance typique $\sqrt{3/\Lambda} \approx 17\,\mathrm{Gly}$ avec $h=0.7$, comensurable à la taille de l'univers observable. L'influence de $\Lambda$ est donc invisible pour des expériences terrestres raisonnables, même avec des horloges atomiques. Son effet est toutefois détecté aux échelles cosmologiques et pose de sérieux problèmes si on l'interprète comme l'énergie du vide quantique {cite:p}`Martin2012`.
+
+:::
 
 
 Analogie mécanique
@@ -322,6 +352,8 @@ Evolution des paramètres cosmologiques.
 
 - Modèle standard de la cosmologie $\Lambda$CDM : <wiki:Lambda-CDM_model>
 
+- La constante cosmologique : {cite:t}`Martin2012,Weinberg1989`
+
 :::
 
 
@@ -330,3 +362,5 @@ Evolution des paramètres cosmologiques.
 [^Mach]: En physique théorique, en particulier dans les discussions sur les théories de la gravitation, le principe de Mach est le nom donné par Einstein à une hypothèse imprécise souvent attribuée au physicien et philosophe Ernst Mach. L'idée est que les référentiels inertiels locaux sont déterminés par la distribution de la matière à l'échelle de l'Univers.
 [^baryons]: La matière baryonique en cosmologie représente la matière ordinaire, faite de protons et de neutrons. Les électrons sont aussi nombreux que les protons mais 2000 fois plus légers, donc ils comptent à peine dans $\Omega_b^0$.
 
+
+[^flat]: On ne pourra _stricto sensus_ jamais mesuré que l'Univers est plat ($k=0$), mais que les mesures sont compatibles avec l'hypothèse d'un univers plat.
