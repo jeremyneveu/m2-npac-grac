@@ -29,8 +29,8 @@ $$
 T^{\mu \nu}(t, \vec x) = \sum_n p_n^{\mu} \frac{\dd x_n^\nu(t)}{\dd t} \delta^{(3)}(\vec x - \vec x_n(t))
 $$
 avec $x_n^0(t)=ct$. Dans le référentiel où cet ensemble de particules est au repos, l'énergie d'une particule massive est $E_n= \gamma_n m^2 c^2$ (avec $\gamma_n$ son facteur de Lorentz) et son impulsion est $\vec p_n c = \gamma_n m \vec v_n c$: on démontre alors que $p_n^\mu c = E_n (\dd x_n^\mu /c \dd t)$[^pcphoton]. D'où l'écriture du tenseur énergie-impulsion en tant que tenseur symétrique en relativité restreinte :
-$$
-T^{\mu \nu}(t, \vec x) = c^2 \sum_n \frac{p_n^{\mu} p_n^{\nu}}{E_n} \delta^{(3)}(\vec x - \vec x_n(t))\label{eq:TmunuGaz}
+$$\label{eq:TmunuGaz}
+T^{\mu \nu}(t, \vec x) = c^2 \sum_n \frac{p_n^{\mu} p_n^{\nu}}{E_n} \delta^{(3)}(\vec x - \vec x_n(t))
 $$
 
 
@@ -424,6 +424,28 @@ et l'expansion est isentropique. C'est attendu étant donné que pour un Univers
 
 
 
+:::{note} Newton, Einstein et la constante cosmologique
+:class: dropdown
+
+Dans certains ouvrages d'introduction à la cosmologie, les équations de Friedmann sont dérivées à partir d'une approche nextonienne, basée sur l'équation de Poisson de la gravitation ou le théorème de Gauss associé, appliqués à une distribution uniforme de matière. Cette approche est intéressante car elle permet de mettre en évidence quels sont les termes supplémentaires apportés par la Relativité Générale. Le premier d'entre eux est le terme de pression, car en gravitation newtonienne l'énergie cinétique des particules "ne pèse pas". La constante cosmologique, nécessaire pour expliquer l'accélération de l'expansion, est également absente d'une approche newtonienne, mais le terme constant de courbure peut survenir comme une constante d'intégration. 
+
+Par dessus tout, il s'avère qu'il n'est pas possible de définir une force de gravitation newtonienne en $-\vec e_r/r^2$ pour un univers avec une densité de matière uniforme, car l'intégrale de la force subie par une particule test serait infinie, donc donnerait une accélération infinie. Cette impossibilité de décrire un univers homogène avec la gravitation newtonienne a été pointé par l'astronome allemant Hugo von Seeliger (pour une revue des articles originaux {cite:t}`Seeliger1895,Seeliger1896`, voir {cite:t}`Norton1998`). 
+
+Ce blocage dans la théorie newtonienne constitue le préambule de l'article fondateur d'Einstein sur la cosmologie {cite:p}`Einstein1917`. Einstein commence par pointer le fait que, pour éviter les divergences de la théorie newtonienne, il faudrait que la matière soit concentrée dans un univers-île entouré par un vide infini. Mais si c'était le cas, d'après la physique statistique, si une quantité finie de matière est confinée dans un puits de potentiel fini avec des vitesses propres, alors nécessairement en un temps infini toute la matère finirait par avoir eu l'occasion de s'échapper du puits, lequel s'effacerait, et on convergerait vers une distribution uniforme de matière. Puisque la densité de matière ne peut être qu'homogène, il ose alors proposer une correction en $\lambda \Phi$ à l'équation de Poisson newtonienne permettant de calculer un potentiel newtonien fini et constant pour cet univers :
+```{image}../../images/einstein1917_poisson.png
+
+```
+
+Ceci a pour but de mieux faire admettre que cette nouvelle constant $\lambda$ serait tout autant légitime à rajouter en Relativité Générale dans sa quête d'une solution d'univers statique et sphérique :
+```{image}../../images/einstein1917_lambda.png
+
+```
+
+
+
+:::
+
+
 
 Inventaire cosmologique
 -----------------------
@@ -450,6 +472,7 @@ $$
 \label{eq:conservation_energie_radiation}
 \dot{\epsilon}_r = -4 H\epsilon_r \Rightarrow \epsilon_r = \epsilon_r^0 \left(\frac{a_0}{a}\right)^{4}.
 $$ 
+En effet, pour un gaz de photons, l'équation [](#eq:TmunuGaz) est de trace nulle puisque $\Vert p_n^\mu\Vert^2 = 0$ pour une particule de masse nulle. Or la trace du tenseur énergie-impulsion d'un fluide parfait vaut $\epsilon + 3P$ donc $P_r = \epsilon/3$.
 Le raisonnement avec une boîte cubique de côté $a$ s'applique aussi ici, mais si toutes les longueurs doublent, alors la longueur d'onde du rayonnement aussi donc son énergie est divisée par 2. On retrouve bien une diminution de la densité d'énergie de rayonnement en $2^4$.
 
 
@@ -510,6 +533,7 @@ $$
 \left[ g_{\mu\nu} \right] = [1,\mathsf{L}^{2},\mathsf{L}^{2},\mathsf{L}^{2}],\quad \left[(ct,\sigma,\theta,\phi)\right] = [(\mathsf{L},1,1,1)] $$
 Le tenseur énergie-impulsion $T^{\mu\nu}$ dans FLRW également contient des composantes homogènes à des densités d'énergie et d'autres en $\left[P/a^2 \right]$. Il ne faut pas être trop troublé par les unités physiques diverses présentes dans les tenseurs, car ce ne sont que des tenseurs donc l'encodage d'une fonction vectorielle. Les observables physiques doivent être des champs _scalaires_ issus de l'application de ses tenseurs, donc invariants par changement de système de coordonnées (contrairement aux composantes du tenseur). Par exemple, les longueurs sont définies par $\dd s = \sqrt{g_{\mu\nu}\dd x^\mu \dd x^\nu}$ pour des déplacements $\dd x^\mu$, la pression est définie par le bilan de flux de moment cinétique selon les 3 directions spatiales $P=T^i_{\ \ \ i}/3$, et les relations entre densité d'énergie et pression sont données par les équations de conservation _scalaires_ issues de  $T^{\mu \nu}_{\,\,\,\,\,\,;\mu}=0$.
 :::
+
 
 
 ### Courbure
@@ -757,33 +781,6 @@ avec $cz$ la vitesse apparente de récession par rapport à la Terre.
 :::
 
 
-:::{important} Les mesures des paramètres cosmologiques
-
-Dans le cadre d'un Univers plat, les mesures angulaires réalisées par le satellite _Planck_ sur le fond diffus cosmologique, combinées aux mesures de flux des supernovae de type Ia, et les distances angulaires des oscillations acoustiques de baryons permettent d'inférer le contenu en matière et énergie noire pour un univers plat aujourd'hui ([](doi:10.1051/0004-6361/201833910)) :
-$$
-\label{eq:omegas_planck}
-\Omega_m^0 = 0.3111 \pm 0.0056, \quad \Omega_\Lambda^0 = 0.6889 \pm 0.0056
-$$
-
-Si la courbure est un paramètre libre du modèle (on parle d'extension au modèle standard $\Lambda$CDM), on mesure :
-$$
-\Omega_k^0 = 0.0007\pm 0.0037
-$$
-ce qui est compatible avec un univers strictement plat[^flat], ou courbe mais avec avec un rayon de courbure très important puisque $\Omega_k^0 \approx k/a_0^2$.
-
-Si on propose un modèle à deux paramètres pour l'énergie noire, on obtient ([](doi:10.1051/0004-6361/201833910)) :
-$$
-w_0 = −0.957 \pm 0.080, \quad w_a = −0.29^{+0.32}_{ −0.26}
-$$ 
-
-:::
-
-
-
-
-
-
-
 :::{important} A retenir
 
 - Le Principe Cosmologique implique que la matière doit être décrite comme un fluide parfait, et donc que ses transformations sont adiabatiques.
@@ -818,6 +815,8 @@ $$
 
 - Fluides imparfaits (visqueux) : {cite:t}`Weinberg1972`[p. 53], {cite:t}`Weinberg1971Fluids`,  {cite:t}`LandauFluids`
 
+- Cosmologie newtonienne et cosmologies anisotropes : {cite:t}`Ellis_Maartens_MacCallum_2012`
+
 :::
 
 
@@ -828,6 +827,4 @@ $$
 [^pcphoton]: Pour une particule sans masse, on a directement $E_n = \vert \vec p_n \vert c$.
 
 [^epsP]: Le choix des notations pour ces fonctions mathématiques n'a pas été fait par hasard...
-
-[^flat]: On ne pourra _stricto sensus_ jamais mesuré que l'Univers est plat ($k=0$), mais que les mesures sont compatibles avec l'hypothèse d'un univers plat.
 

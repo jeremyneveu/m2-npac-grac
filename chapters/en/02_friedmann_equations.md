@@ -476,6 +476,24 @@ and the expansion is isentropic. This is expected given that for a homogeneous a
 :::
 
 
+:::{note} Newton, Einstein and the cosmological constant
+:class: dropdown
+
+In some introductory cosmology textbooks, the Friedmann equations are derived from a Newtonian approach, based on Poisson's equation of gravitation or the associated Gauss theorem, applied to a uniform distribution of matter. This approach is interesting because it allows highlighting what are the additional terms brought by General Relativity. The first of these is the pressure term, because in Newtonian gravitation the kinetic energy of particles "does not weigh". The cosmological constant, necessary to explain the acceleration of expansion, is also absent from a Newtonian approach, but the constant curvature term can arise as an integration constant.
+
+Above all, it turns out that it is not possible to define a Newtonian gravitational force in $-\vec e_r/r^2$ for a universe with uniform matter density, because the integral of the force experienced by a test particle would be infinite, thus giving infinite acceleration. This impossibility of describing a homogeneous universe with Newtonian gravitation was pointed out by German astronomer Hugo von Seeliger (for a review of the original articles {cite:t}`Seeliger1895,Seeliger1896`, see {cite:t}`Norton1998`).
+
+This blockage in Newtonian theory constitutes the preamble to Einstein's foundational article on cosmology {cite:p}`Einstein1917`. Einstein begins by pointing out that, to avoid the divergences of Newtonian theory, matter would have to be concentrated in an island universe surrounded by infinite void. But if that were the case, according to statistical physics, if a finite quantity of matter is confined in a finite potential well with proper velocities, then necessarily in infinite time all matter would eventually have had the opportunity to escape from the well, which would fade away, and we would converge towards a uniform distribution of matter. Since matter density can only be homogeneous, he then dares to propose a correction in $\lambda \Phi$ to the Newtonian Poisson equation allowing the calculation of a finite and constant Newtonian potential for this universe:
+```{image}../../images/einstein1917_poisson.png
+
+```
+
+This is intended to better make acceptable that this new constant $\lambda$ would be equally legitimate to add in General Relativity in his quest for a static and spherical universe solution:
+```{image}../../images/einstein1917_lambda.png
+
+```
+
+:::
 
 
 Cosmological inventory
@@ -876,51 +894,6 @@ with $cz$ the apparent speed of recession relative to the Earth.
 :::
 
 
-:::{important} Measurements of cosmological parameters
-
-In the framework of a flat Universe, angular measurements performed by the _Planck_ satellite on the cosmic microwave background, combined with flux measurements of type Ia supernovae, and angular distances of baryon acoustic oscillations allow to infer the matter and dark energy content for a flat universe today ([](doi:10.1051/0004-6361/201833910)):
-$$
-\label{eq:omegas_planck}
-\Omega_m^0 = 0.3111 \pm 0.0056, \quad \Omega_\Lambda^0 = 0.6889 \pm 0.0056
-$$
-
-If curvature is a free parameter of the model (we speak of an extension to the standard $\Lambda$CDM model), we measure:
-$$
-\Omega_k^0 = 0.0007\pm 0.0037
-$$
-which is compatible with a strictly flat universe[^flat], or curved but with a very large radius of curvature since $\Omega_k^0 \approx k/a_0^2$.
-
-If we propose a two-parameter model for dark energy, we obtain ([](doi:10.1051/0004-6361/201833910)):
-$$
-w_0 = −0.957 \pm 0.080, \quad w_a = −0.29^{+0.32}_{ −0.26}
-$$ 
-
-:::
-
-
-
-:::{exercise} Orders of magnitude
-:label: exo:densities
-
-Transform the values in equation [](#eq:omegas_planck) into mass density and energy density.
-
-:::
-
-
-:::{solution} exo:densities
-:class: dropdown
-
-Suppose that density of the dark energy as cosmological constant is equal to the present critical density, $\rho_\Lambda=\rho_c$. What is then the total amount of dark energy inside the Solar System? Compare this number with $M_\odot c^2$.
-
-$$\rho_c\approx 10^{-29}\,\text{g/cm}^3$$
-$$R\approx 50\,\text{A.U.}$$
-$$1\,\text{A.U.} \approx 1.5\times 10^{11}\,\text{m}; E_{DE}S.S./c^2 ≃ 0.2 \cdot 10^{14}\, \text{kg}; M_⊙ ≃ 2 \cdot 10^{30}\, \text{kg}; E_{DE}S.S./M_⊙c^2 ≃ 10^{-17}.$$
-
-Transform Lambda into a length: Length = $\sqrt{1/\Lambda}$ = ....
-
-:::
-
-
 
 
 :::{important} Key points
@@ -957,6 +930,8 @@ Transform Lambda into a length: Length = $\sqrt{1/\Lambda}$ = ....
 
 - Imperfect (viscous) fluids: {cite:t}`Weinberg1972`[p. 53], {cite:t}`Weinberg1971Fluids`, {cite:t}`LandauFluids`
 
+- Newtonian cosmology and anisotropic cosmologies: {cite:t}`Ellis_Maartens_MacCallum_2012`
+
 :::
 
 
@@ -967,5 +942,3 @@ Transform Lambda into a length: Length = $\sqrt{1/\Lambda}$ = ....
 [^pcphoton]: For a massless particle, we have directly $E_n = \vert \vec p_n \vert c$.
 
 [^epsP]: The choice of notations for these mathematical functions was not made by chance...
-
-[^flat]: We will _stricto sensu_ never be able to measure that the Universe is flat ($k=0$), but that measurements are compatible with the hypothesis of a flat universe.
