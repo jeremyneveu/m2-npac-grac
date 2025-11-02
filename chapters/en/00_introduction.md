@@ -415,6 +415,7 @@ $$
 :::{seealso} To Go Further
 
 - History of gravitation and founding experiments: {cite:t}`Weinberg1972`[chap.1]
+- Measurement of Mercury's perihelion advance by Urbain Le Verrier: https://gallica.bnf.fr/ark:/12148/bpt6k62906786?rk=21459;2#
 - Demonstration of Lorentz transformations: {cite:t}`raimond` or J.M Levi-Leblond <doi:10.1119/1.10490> https://web.physics.utah.edu/~lebohec/P3740/levy-leblond_ajp_44_271_76.pdf 
 - Metric and simple examples: {cite:t}`langlois2013RG`
 - Covariant derivative: {cite:t}`Weinberg1972`[chap.4]

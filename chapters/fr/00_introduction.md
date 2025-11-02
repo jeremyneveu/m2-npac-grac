@@ -464,6 +464,7 @@ $$
 :::{seealso}  Pour approfondir
 
 - Histoire de la gravitation et expériences fondatrices : {cite:t}`Weinberg1972`[chap.1]
+- Mesure de l'avance du périhélie de Mercure par Urbain Le Verrier : https://gallica.bnf.fr/ark:/12148/bpt6k62906786?rk=21459;2# 
 - Démonstration des transformations de Lorentz : {cite:t}`raimond` ou J.M Levi-Leblond <doi:10.1119/1.10490> https://web.physics.utah.edu/~lebohec/P3740/levy-leblond_ajp_44_271_76.pdf 
 - Métrique et exemples simples : {cite:t}`langlois2013RG`
 - Dérivée covariante : {cite:t}`Weinberg1972`[chap.4]
