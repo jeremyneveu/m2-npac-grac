@@ -1,5 +1,5 @@
 ---
-short_title: Jetted and non-jetted astroparticle sources
+short_title: Jetted and non-jetted astroparticle sources 
 authors:
   - jbiteau
 keywords: jet
