@@ -82,13 +82,15 @@ $$
 $$
 
 $\dd \mathcal{N}/\dd^3 x \dd^3 p$ is invariant under a Lorentz transformation. Indeed $\dd \mathcal{N}$ is countable 
-and thus invariant. Under a boost $(\beta, \gamma)$ along the x-axis from the comoving frame (K') towards the 
-observer's frame (K), one finds $\dd x = \gamma^{-1} \dd x'$ (length contraction) and $\dd p_x = \gamma (\dd p_{x'} + \beta \dd E') = \gamma \dd p_{x}'$ for particles with fixed energy (total momentum fixed between $p$ and $p + \dd p$). Thus $\dd^3 x \dd^3 p$ is invariant, *quod erat demonstrandum*.
+and thus invariant. Under a boost $(\beta, \gamma)$ along the x-axis from the 
+observer's frame (K) to the comoving frame (K') towards, one finds $\dd x = \gamma^{-1} \dd x'$ (length contraction) 
+and $\dd p_x = \gamma (\dd p_{x'} - \beta \dd E') = \gamma \dd p_{x}'$ for particles with fixed energy (total 
+momentum fixed between $p$ and $p + \dd p$). Thus $\dd^3 x \dd^3 p$ is invariant, *quod erat demonstrandum*.
  
  
 One finds
 $$
-I_\nu \dd \nu = \frac{h}{c} (h\nu)^3  \frac{\dd \mathcal{N}}{\dd^3 x \dd^3 p} \dd \nu
+I_\nu \dd \nu = hc \times (\frac{h\nu}{c})^3 \times  \frac{\dd \mathcal{N}}{\dd^3 x \dd^3 p} \dd \nu
 $$
 
 so that 
@@ -101,7 +103,7 @@ $$
 ### The multi-wavelength spectrum of the universe
 
 
-:::{figure}  ../../images/The_Fitted_MWL_EGAL_Background_2025.png
+:::{figure}  ../../images/The_Fitted_MWL_EGAL_Background_2025.jpg
 :name: fig:mm_spectrum
 :align: center
 :width: 100%
@@ -199,7 +201,7 @@ Nebula. The Crab Nebula is the result of a core-collapse supernova that exploded
 heart of the nebula has a period of about 33 milliseconds. The rotation of the neutron star powers the radiation 
 observed in the pulsar wind nebula.
 
-:::{figure}  ../../images/Crab_Nebula_in_Multiple_Wavelengths_2.png
+:::{figure}  ../../images/Crab_Nebula_in_Multiple_Wavelengths_2.jpg
 :name: fig:MWL_Crab
 :align: center
 :width: 80%
@@ -347,7 +349,7 @@ The right-hand-side equation has a solution if and only if $\beta/k - 1/\Gamma \
 $k = v_\mathrm{app}/c$ and $\beta < 1$, one gets $\Gamma > v_\mathrm{app}/c$ i.e. a Lorentz factor larger than $4$ 
 for the jet of the active galactic nucleus 3C 279.
 
-:::{figure}  ../../images/superluminal_calc.png
+:::{figure}  ../../images/superluminal_calc.jpg
 :name: fig:superluminal_sol
 :align: center
 :width: 30%
