@@ -108,7 +108,7 @@ $$
 :align: center
 :width: 100%
 
-The multi-messenger extragalactic spectrum. Adapted from this [page](https://zenodo.org/records/7842239).
+The multi-wavelength extragalactic spectrum. Adapted from this [page](https://zenodo.org/records/7842239).
 :::
 
 The broadband emission from all galaxy populations (and from sources within these galaxies) is responsible for the 
