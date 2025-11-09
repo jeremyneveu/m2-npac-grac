@@ -246,6 +246,11 @@ $Mpc and cross-correlations with multi-wavelength catalogs of nearby galaxies re
 5\sigma$ on an angular scale of ${\sim}\,10-20^\circ$ {cite:p}`2024JCAP...01..022A`. The most significant correlation 
 observed by the Pierre Auger Observatory corresponds to a contribution of ${\sim}\,10\%$ from nearby star-forming galaxies. 
 
+::::{tip} Optional part not to be considered for the exam
+
+Multi-messenger observational landscape
+--------------------------------
+
 ### Detection of cosmic-ray, neutrino and gamma-ray showers
 
 The detection of cosmic rays, neutrinos and gamma-rays by the Pierre Auger Observatory, IceCube or the future CTAO 
@@ -286,7 +291,7 @@ energy. For $E \gg I\lambda > IX_0 \approx 80\,$MeV, the ionisation losses are s
 :width: 50%
 
 Schematic development of an hadronic air shower. From {cite}`2018PrPNP..98...85M`.
-:::
+'''
 
 :::{exercise} Hadronic cascaes
 :label: exo:hadr_casc
@@ -315,9 +320,9 @@ We index the shower development by the step $n$, corresponding to charged pion i
    nucleons of energy $E/A$), relate the number of electrons and photons produced by a nucleus of $E_0$ to that of a 
    proton of the same energy. Similarly, relate the number of muons produced by a nucleus of $E_0$ to that of a 
    proton of the same energy.
-:class: dropdown
-:::{solution} exo:hadr_casc
 
+:::{solution} exo:hadr_casc
+:class: dropdown
 1. $E_\text{hadr} = \left(\frac{2}{3}\right)^n E_0$, $E_\text{emag} = E_0 - E_\text{hadr}$.
 2. $\lambda_{\pi-\text{air}} < \rho_\text{air} \gamma c\tau_{\pi^\pm}$, i.e.
    $E_\text{decay} = \gamma m_{\pi^\pm} c^2 > 20\,$GeV. Then, as $E_0 = (n_\pi)^n_\text{max} E_\text{decay}$,
@@ -332,10 +337,9 @@ We index the shower development by the step $n$, corresponding to charged pion i
    $N_{\mu}(E_0,A) = A \times N_{\mu}(E_0/A,A=1) = A^{1-\alpha} N_{\mu}(E_0,A=1)$.
 :::
 
-Multi-messenger observational landscape
---------------------------------
 
 ### GeV-TeV Gamma-rays
 ### TeV-PeV Neutrinos
 ### PeV - EeV Cosmic rays
-### Gravitational waves
+
+::::
