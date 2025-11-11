@@ -45,14 +45,17 @@ jobs:
         shell: micromamba-shell {0}
       - name: Setup Python environment
         run: |
-          micromamba install -y -c conda-forge python pip
+          micromamba install -y -c conda-forge python pip jupyter-packaging
+          pip install jupyterlite-core jupyterlite-xeus jupyterlab notebook ipympl ipywidgets
         shell: micromamba-shell {0}
       - name: Build HTML Assets
         run: |
           myst build --html
-          pip install jupyterlite-core jupyterlite-xeus jupyterlab notebook ipympl ipywidgets
+        shell: micromamba-shell {0}
+      - name: Build JupyterLite
+        run: |
           rm -rf notebooks/TP_SN.ipynb
-          jupyter lite build --XeusAddon.environment_file=jupyterlite-environment.yml --contents=notebooks --output-dir=public/lite
+          jupyter lite build --XeusAddon.environment_file=jupyterlite-environment.yml --contents=notebooks --output-dir=_build/html/lite
         shell: micromamba-shell {0}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
