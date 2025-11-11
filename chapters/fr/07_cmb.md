@@ -753,6 +753,8 @@ avec $\mu_0 \equiv \frac{a_1}{a_0} \mu_1$ et $T_0 \equiv \frac{a_1}{a_0} T_1$.
 :::
 
 
+XXXX TODO: voir fin de https://cmb.wintherscoming.no/milestone1.php 
+
 ### Annihilation $e^+ + e^-$ et température du fond diffus de neutrinos
 
 Mais peu après le découplage des neutrinos, lorsque $T < 511\,\keV$ environ $6\,$s après le Big Bang, les électrons et les positrons s'annihilent :

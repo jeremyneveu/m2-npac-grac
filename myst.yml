@@ -86,7 +86,7 @@ project:
             - file: chapters/en/04_astrophysical_emissions.md
             - file: chapters/en/05_astroparticle_sources.md
             - file: chapters/en/05b_astroparticle_searches.md       
-            #- file: chapters/fr/06_supernovae.md
+            - file: chapters/fr/06_supernovae.md
             #- file: chapters/fr/07_cmb.md
             #- file: chapters/en/08_acceleration.md
             #- file: chapters/en/09_radiation.md

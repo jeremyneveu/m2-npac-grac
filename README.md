@@ -1,17 +1,18 @@
 ---
-title: M2 NPAC AC
-subject: Astroparticles and Cosmology
+title: M2 NPAC GRAC
+subject: General Relativity, Astroparticles and Cosmology
 # subtitle: How can I estimate the state AND the parameters?
-short_title: M2 NPAC AC
+short_title: M2 NPAC GRAC
 keywords: cosmology, astroparticles, general relativity
 ---
 
-> Astroparticles and Cosmology lectures for M2 NPAC.
+> General Relativity, Astroparticles and Cosmology lectures for M2 NPAC.
 
 ---
 
 [![Made with MyST](https://img.shields.io/badge/made%20with-myst-orange)](https://myst.tools)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fgitlab.in2p3.fr%2Fjeremy.neveu%2Fm2-npac-cosmology/HEAD)
+[![JupyterLite](https://jupyterlite.rtfd.io/en/latest/_static/badge-launch.svg)](https://jeremyneveu.github.io/m2-npac-grac/lite)
 
 
 ### Planning 2025-2026
