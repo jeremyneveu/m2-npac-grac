@@ -350,8 +350,6 @@ Stratégies pour étalonner la mesure du flux lumineux des étoiles tertiaires (
 Mesure locale de $H_0$
 ------------------------
 
-TODO: Voir, lire et étudier https://arxiv.org/abs/2311.07552 
-
 Le module de distance $\mu(z)$ permet de mesurer la distance relative entre les SNe Ia, ce qui fournit des informations cruciales sur l'énergie noire. Cependant, la distance absolue des SNe Ia ne peut pas être obtenue par cette méthode : il y a une dégénérescence entre la luminosité de la SNe Ia $L$ et $H_0$ lors de l'estimation. Pour briser cette dégénérescence, l'échelle des distances cosmiques est utilisée. Cette méthode implique une série de mesures de distances qui se chevauchent en utilisant divers objets et techniques astronomiques, comme l'illustre la figure 12 de {cite:t}`Riess2022`. En ancrant les distances des SNe Ia à des distances mesurées indépendamment par l'échelle des distances cosmiques, nous pouvons démêler la magnitude absolue des SNe Ia de celle de H0. Dans ce qui suit, nous allons discuter des différentes étapes de cette échelle de distance.
 
 :::{figure} ../../images/distance_ladder.png
