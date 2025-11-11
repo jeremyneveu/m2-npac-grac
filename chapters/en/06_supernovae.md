@@ -147,7 +147,7 @@ In practice, we do not have spectral sequences as precise as the one presented i
 The main information available on a Type Ia supernova is therefore its light curve, i.e., the temporal sequence of luminous fluxes, measured by a telescope with different band-pass filters equipping the telescope's camera [](#fig:courbeslumiere). 
 
 
-It is therefore necessary to define an instant to compare the brightness of standard candles and a reference filter. For practical reasons, we use the magnitudes at maximum emission as a reference. For historical reasons, we use the Johnson B band as a reference filter. **The magnitude of the maximum luminosity of a Type Ia supernova observed in B band is therefore used as a standard candle, or at least standardizable.**
+It is therefore necessary to define an instant to compare the brightness of standard candles and a reference filter. For practical reasons, we use the magnitudes at maximum emission as a reference. For historical reasons, we use the Johnson B band as a reference filter. The magnitude of the maximum luminosity of a Type Ia supernova observed in B band is therefore used as a standard candle, or at least standardizable.
 
 
 :::{note} Photometric systems
@@ -187,7 +187,7 @@ m_f = -2.5 \log_{10} \left[ \frac{ \int \lambda \dd \lambda S_\lambda(\lambda) T
 \end{equation}
 with $S_{\mathrm{ref}}(\lambda)$ the spectral flux density of the reference source (Vega for example). The absolute magnitude in filter $f$ is the magnitude of the star in filter $f$ if observed in its rest frame at $10\,\parsec$:
 \begin{equation}
-M_f = -2.5\log_{10} \left[\frac{1}{4\pi (10\,\parsec)^2} \frac{ \int \lambda \dd \lambda L_\lambda(\lambda) T_f(\lambda)}{ \int \lambda \dd \lambda \Phi_{\mathrm{ref}}(\lambda)T_f(\lambda) } \right] 
+M_f = -2.5\log_{10} \left[\frac{1}{4\pi (10\,\parsec)^2} \frac{ \int \lambda \dd \lambda L_\lambda(\lambda) T_f(\lambda)}{ \int \lambda \dd \lambda S_{\mathrm{ref}}(\lambda)T_f(\lambda) } \right] 
 \end{equation}
 with $L_\lambda$ the spectral luminosity (in W/nm). 
 
@@ -447,28 +447,3 @@ With this sample, {cite:t}`Riess2022` reports a measurement of $H_0$ of $73.04 \
 [^bolo]: A bolometric sensor is capable of absorbing photons and measuring their energy regardless of their wavelength (for example by measuring the heating of a material). In contrast, a photonic sensor based on the photoelectric effect becomes transparent at long wavelengths, when the photon energy falls below the electron emission threshold.
 
 [^Sfreq]: Or in frequency $S_\nu(\nu)$ expressed in W/m$^2$/Hz.
-
-### Measuring parallax
-
-When a foreground star is observed from two opposite positions, A and B, in the Earth's orbit around the Sun, it appears to move relative to the background field of stars towards positions A‘ and B’. This apparent shift is called parallax. The distance between the Earth and the Sun is defined as an astronomical unit (AU), i.e. the average between the two half-axes of the Earth's elliptical orbit. Using this distance, and by measuring the apparent displacement of the star's position, we can trigonometrically calculate the distance between the observer and the star. This phenomenon is known as parallax. The parallax measurements made by Gaia reach an accuracy of 0.04 marcsec (Luri et al., 2018). This method constitutes the first rung of the cosmic distance scale.
-
-### Cepheids
-
-Cepheids are a type of star that pulses radially, undergoing regular variations in diameter and temperature. These pulsations result in changes in luminosity with a well-defined and stable period and amplitude. They were discovered by Henrietta Swan Leavitt (Leavitt, 1908), who demonstrated the correlation between the star's diameter and temperature.
-
-The luminosity of a cepheid and its pulsation period. This law is known as Leavitt's law, and Figure 1.16 from Leavitt and Pickering, 1912, illustrates this relationship.
-By observing the Cepheids close enough to use the parallax method for distance estimation, we can calibrate the absolute magnitude of the Cepheids, and hence their period-luminosity function. Because of the stability of their period-luminosity function, this calibration can then be applied to all Cepheids, allowing us to measure their luminosity distance in other galaxies where the parallax method is not feasible. As a result, Cepheids serve as the first standard candle in the cosmic distance scale, allowing us to determine the distance to other galaxies, as shown in the graph at bottom left of Figure 1.17.
-
-
-
-### Type Ia supernovae
-
-Once the period-luminosity function of Cepheids has been calibrated, we want to transfer this calibration to SNe Ia. To estimate the distance to a galaxy using a Cepheid, the Cepheid must be resolved with respect to the other light sources in the galaxy, and its photometry must be carried out. By measuring its period of variation, we can deduce its intrinsic luminosity, and therefore the distance to the host galaxy. 
-
-Then, by observing an SN Ia in the same galaxy, we can determine its intrinsic luminosity, since the distance is known via the cepheid. Riess et al, 2022 observed 42 SNe Ia in 37 calibrated hosts. These SNe Ia are represented in the middle graph of Figure 1.17, which makes it possible to calibrate the absolute magnitude of the SNe Ia. Finally, the top-right plot shows a Hubble diagram of the SNe Ia, which is directly related to the estimation of the geometric distance using the parallax method. With this sample, Riess et al. 2022 obtained a measurement of $H_0$ of $73.04 \pm 1,04\,$km/s/Mpc.
-
-
-
-[^bolo]: A bolometric sensor is capable of absorbing photons and measuring their energy regardless of their wavelength (for example by measuring the heating of a material). In contrast, a photonic sensor based on the photoelectric effect becomes transparent at long wavelengths, when the energy of the photon falls below the emission threshold of an electron.
-
-[^Sfreq]: Or frequency $S_\nu(\nu)$ expressed in W/m$^2$/Hz.
