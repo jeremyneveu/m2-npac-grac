@@ -68,7 +68,7 @@ To establish a Hubble diagram at cosmological distances, we need sources of iden
 
 ### Type Ia supernovae
 
-Supernovae are classified into two types: gravitational or thermonuclear. The former are the best known: they correspond to the explosion of a massive star (more than 8 times the mass of the Sun) at the end of its life, leaving a dense and cold stellar core: a neutron star, or even a black hole in extreme cases. Type I supernovae are those that do not present hydrogen lines in their spectrum, while Type II supernovae contain them. Among Type I supernovae, those containing silicon are Type Ia, then the others Ib or Ic.
+Supernovae are classified into two types: gravitational and thermonuclear. The former are the best known: they correspond to the explosion of a massive star (more than 8 times the mass of the Sun) at the end of its life, leaving a dense and cold stellar core: a neutron star, or even a black hole in extreme cases. Type I supernovae are those that do not present hydrogen lines in their spectrum, while Type II supernovae contain them. Among Type I supernovae, those containing silicon are Type Ia, then the others Ib or Ic.
 
 Stars with a mass less than $8\,M_\odot$ end their lives as red giants. At the end of helium burning, the outer layers are dispersed into the interstellar medium as planetary nebulae (without necessarily producing an intense explosion), leaving the stellar core bare. The collapse of the core is stopped because of the degeneracy pressure of electrons (and not neutrons as for neutron stars) and its low mass (typically $0.5\,M_\odot$). Its surface temperature remains very high for a long time (about $10\,000\,\kelvin$), hence its name of white dwarf. It is essentially composed of carbon and oxygen, the helium and hydrogen having been expelled into space. The typical radius of such an object is a few thousand kilometers (like a terrestrial planet). 
  
@@ -147,7 +147,7 @@ In practice, we do not have spectral sequences as precise as the one presented i
 The main information available on a Type Ia supernova is therefore its light curve, i.e., the temporal sequence of luminous fluxes, measured by a telescope with different band-pass filters equipping the telescope's camera [](#fig:courbeslumiere). 
 
 
-It is therefore necessary to define an instant to compare the brightness of standard candles and a reference filter. For practical reasons, we use the magnitudes at maximum emission as a reference. For historical reasons, we use the Johnson B band as a reference filter. The magnitude of the maximum luminosity of a Type Ia supernova observed in B band is therefore used as a standard candle, or at least standardizable.
+It is therefore necessary to define an instant at which to compare the brightness of standard candles and a reference filter. For practical reasons, we use the magnitudes at maximum emission as a reference. For historical reasons, we use the Johnson B band as a reference filter. **The magnitude of the maximum luminosity of a Type Ia supernova observed in the B band is therefore used as a standard candle, or at least as standardizable.**
 
 
 :::{note} Photometric systems
@@ -175,7 +175,7 @@ The UBV system is one of the oldest and most widely used standard photoelectric 
 
 The luminous fluxes $\Phi$ expressed in ($\gamma$/s/m$^2$) or (W/m$^2$) are called bolometric[^bolo] because they are integrated over the entire spectrum. Unfortunately, the ability to measure this quantity depends on the sensor used. In the visible and infrared, sensors are based on the photoelectric effect so they are transparent above a certain wavelength. In the visible and infrared, measured fluxes cannot be bolometric. 
 
-Moreover, much information can be derived from measuring the color of an object, such as the type of supernova: for this it must be observed through different band-pass filters and compare the fluxes. 
+Moreover, much information can be derived from measuring the color of an object, such as the type of supernova: for this it must be observed through different band-pass filters and to compare the fluxes. 
 
 We introduce the spectral energy density of a star $S_\lambda(\lambda)$ expressed[^Sfreq] in W/m$^2$/nm. Let us note $T_f(\lambda)$ the transmission of the instrument equipped with a filter $f$. The measured flux is then:
 \begin{equation}
@@ -202,7 +202,7 @@ M_B = -2.5\log_{10} \left[\frac{1}{4\pi (10\,\parsec)^2} \frac{ \int \lambda \dd
  
 However, not all telescopes are equipped with a B filter. Moreover, and this is the main reason, the emission maximum shifts in wavelength with the redshift so it would be necessary to redshift the B filter to capture the same portion of spectrum ([](#fig:snIaB)). Since we want to compare only the effect of distance to map $D_L(z)$, these wavelength shift effects must nevertheless be removed to standardize and compare the observed flux at maximum emission. Historically, for Type Ia supernovae, cosmologists establish apparent magnitudes in B band _in the supernova's rest frame_. The magnitude $m_B^*$ is therefore the apparent magnitude in the rest frame in B band, _as if there were no expansion but only a distance effect_.
 
-**The standard candle is the maximum emission of Type Ia supernovae in band $B$ as if observed in its rest frame.**
+**The standard candle is the maximum emission of Type Ia supernovae in the $B$ band as if observed in their rest frame.**
 
 
 :::{figure} ../../images/snIa_restframeB.png
@@ -292,7 +292,7 @@ Around the diagram, we observe that the residuals to the Hubble diagram have a d
 
 There is therefore a variability of supernovae that has not been taken into account in our spectrophotometric model so far.
 
-We observe that the longer the light curve lasts in time, the brighter it is at its maximum (*brighter-slower* rule). Moreover, the bluer the SNIa are, the brighter they are as well (*brighter-bluer* rule). There is also an environment effect that links the brightness of the supernova and the mass of the host galaxy.
+We observe that the longer the light curve lasts in time, the brighter it is at its maximum (*brighter-slower* rule). Moreover, the bluer the SNIa are, the brighter they are as well (*brighter-bluer* rule). There is also an environmental effect that links the brightness of the supernova and the mass of the host galaxy.
 
 :::{figure} ../../images/courbes_de_lumiere_x1c.png
 :name: fig:courbes_de_lumiere_x1c
@@ -367,7 +367,7 @@ Astrophysical distance ladder {cite:p}`Riess2022`. Measurements of orbital param
 
 ### Parallax measurement
 
-When a foreground star is observed from two opposite positions, A and B, on Earth's orbit around the Sun, it appears to move relative to the background star field toward positions A' and B'. This apparent shift is called parallax. The distance between Earth and the Sun is defined as an astronomical unit (AU), i.e., the average between the two semi-axes of Earth's elliptical orbit. With this distance, and by measuring the apparent displacement of the star's position, we can calculate by trigonometry the distance between the observer and the star. This phenomenon is known as parallax. Parallax measurements made by Gaia reach a precision of 0.04 arcsec <doi:10.1051/0004-6361/201832964>. This method constitutes the first rung of the cosmic distance ladder.
+When a foreground star is observed from two opposite positions, A and B, on Earth's orbit around the Sun, it appears to move relative to the background star field toward positions A' and B'. This apparent shift is called parallax. The distance between Earth and the Sun is defined as an astronomical unit (AU), i.e., the average between the two semi-axes of Earth's elliptical orbit. With this distance, and by measuring the apparent displacement of the star's position, we can calculate by trigonometry the distance between the observer and the star. This phenomenon is known as parallax. Parallax measurements made by Gaia reach a precision of 0.04 mas <doi:10.1051/0004-6361/201832964>. This method constitutes the first rung of the cosmic distance ladder.
 
 ###  Cepheids
 
