@@ -8,18 +8,18 @@ keywords: cosmological microwave background, CMB, neutrinos, nucleosynthesis
 Thermal history of the Universe
 ===============================
 
-The expansion of the Universe is now well described by the flat $\Lambda$CDM model ($\Omega_k^0=0$). The proportions of each of these components are now estimated at {cite}`Planck2018`:
-$$ \Omega_\Lambda^0 = 0.685,\quad \Omega_m^0=0.315$$
+The expansion of the Universe is now well described by the flat $\Lambda$CDM model ($\Omega_k^0=0$). The proportions of each of these components are today evaluated at {cite}`Planck2018`:
+$$ \Omega_m^0 = 0.3111 \pm 0.0056, \quad \Omega_\Lambda^0 = 0.6889 \pm 0.0056$$
 
-In this chapter, we will study the thermal history of the Universe and the evolution of its composition. Up to now in this course, non-relativistic matter has been treated as a single entity, slowing down the expansion of the Universe through its gravitational interaction. But to study its evolution with temperature and its interactions with the other components, we need to separate them into two contributions: dark matter $\Omega_{c}^0$ and baryonic matter [^baryons] $\Omega_b^0$. In 1933, while studying the Coma cluster, astrophysicist Fred Zwicky showed that the mass deduced from the motion of the seven galaxies that make up the cluster was 400 times greater than the mass deduced from counting luminous objects. This measurement was repeated in 1936 on the Virgo cluster, this time giving a factor of 200. However, these somewhat inaccurate measurements were forgotten until the 1970s, when astronomer Vera Rubin observed that the rotational speed of the stars in the Andromeda Galaxy was much higher than its observed luminous mass would suggest {cite:p}`Rubin1970`. The observation is quickly repeated for many galaxies: part of the matter making up the galaxy is therefore dark matter, escaping detection and often representing the majority of the total mass of galaxies. The presence of abundant dark matter can even be seen in the amplitude of the temperature anisotropies of the cosmic microwave background (see end of chapter). Today, it is estimated that the proportion of these two forms of cold matter is {cite}`Planck2018`:
-$$ \Omega_{c}^0=0.264,\quad \Omega_b^0=0.049$$
+In this chapter, we will study the thermal history of the Universe as well as the evolution of its composition. Until now in this course, non-relativistic matter was treated as a single entity, slowing down the expansion of the Universe through its gravitational interaction. But to study its evolution with temperature and its interactions with other components, it is necessary to separate these into two contributions: dark matter $\Omega_{c}^0$ and baryonic matter[^baryons] $\Omega_b^0$. Indeed, in 1933, while studying the Coma cluster, astrophysicist Fred Zwicky showed that the mass deduced from the motion of the seven galaxies composing it is 400 times greater than the mass deduced from counting luminous objects. This measurement was repeated in 1936 on the Virgo cluster and this time gave a factor of 200. These somewhat imprecise measurements fell into oblivion until the 1970s, when astronomer Vera Rubin observed that the rotation speed of stars in the Andromeda Galaxy is much higher than suggested by its observed luminous mass {cite:p}`Rubin1970`. The observation was quickly repeated on numerous galaxies: part of the matter constituting the galaxy is therefore dark matter, escaping all detection at the time, often representing the majority of the total mass of galaxies. The presence of abundant dark matter is even visible in the amplitude of temperature anisotropies in the cosmic microwave background (see end of chapter). Today, we estimate that the proportion of these two forms of cold matter is {cite:p}`Planck2018`:
+$$\Omega_{c}^0=0.2607 \pm 0.0020, \quad \Omega_b^0=0.0490 \pm 0.0003$$.
 
 Description of the primordial Universe
 --------------------------
 
 ### The Cosmic Microwave Background
 
-If the Universe is expanding today, then it was smaller in the past. Cosmic expansion reduces the momentum of particles by a factor $\propto a^{-1}$ and the density of particles by another $a^{-3}$. In the early days, the Universe was therefore hot and dense. There must therefore have been a moment when the Universe was hot enough for atoms to be ionised, and therefore in a plasma state where photons interact with free electrons. Through these frequent interactions, if thermodynamic equilibrium is reached the radiation follows a blackbody spectrum defined by the temperature of the medium (<wiki:Planck's_law>). During the transition from the plasma state to the neutral state, at around $3\,000\,\kelvin$ for a hydrogen gas, the Universe suddenly becomes transparent and photons propagate freely. This high-temperature black-body radiation is released at this instant. This so-called fossil radiation has been cooled by the expansion of the Universe. This cosmic microwave background was predicted in 1948 by Ralph Alpher, Robert Herman {cite:p}`Alpher1948` and George Gamow {cite:p}`Gamow1948` around $5,\kelvin$, and discovered fortuitously by Arno Penzias and Robert Wilson in 1964 {cite:p}`Penzias1965a,Penzias1965b` at a temperature of $3.5\,\kelvin$ ([](#fig:cmb_antenna)). 
+If the Universe is expanding today, then it was smaller in the past. Cosmic expansion reduces the momentum of particles by a factor $\propto a^{-1}$ and the density of particles by another $a^{-3}$. In the early times, the Universe was therefore in a hot and dense state. There must therefore have been a moment when the Universe was hot enough for atoms to be ionized, and therefore in a plasma state where photons interact with free electrons. Through these frequent interactions, if thermodynamic equilibrium is reached, the radiation follows a blackbody spectrum defined by the temperature of the medium (<wiki:Planck's_law>). During the transition from the plasma state to the neutral state, around $3\,000\,\kelvin$ for a hydrogen gas, the Universe suddenly becomes transparent and photons propagate freely. This high-temperature blackbody radiation was released at this instant. This so-called fossil radiation has been cooled by the expansion of the Universe. This cosmic microwave background was predicted in 1948 by Ralph Alpher, Robert Herman {cite:p}`Alpher1948` and George Gamow {cite:p}`Gamow1948` around $5\,\kelvin$, and discovered fortuitously by Arno Penzias and Robert Wilson in 1964 {cite:p}`Penzias1965a,Penzias1965b` at a temperature of $3.5\,\kelvin$ ([](#fig:cmb_antenna)). 
 
 :::{figure} ../../images/Horn_Antenna.jpg
 :name: fig:cmb_antenna
@@ -29,13 +29,13 @@ If the Universe is expanding today, then it was smaller in the past. Cosmic expa
 The 15-metre Holmdel horn antenna at Bell Telephone Laboratories in Holmdel, with Arno Penzias and Robert Wilson, which led to the discovery of the CMB. It was built in 1959 as part of work on communications satellites for NASA ECHO I (By NASA, restored by Bammesk).
 :::
 
-The spectrum of the cosmic microwave background has been characterised thanks to the COBE satellite, and its temperature has now been established at {cite:p}`Mather1999`:
-$$T_0 = 2.725\pm 0.002\,\kelvin$$
-by modelling its data by Planck's radiation law:
+The spectrum of the cosmic microwave background has been characterized thanks to the COBE satellite, and its temperature is now established at (<doi:10.1088/0004-637X/707/2/916>):
+$$T_0 = 2.72548 \pm 0.00057 \,\kelvin$$
+by modeling its data using Planck's radiation law:
 \begin{equation}
   I_\nu(\nu, T_0) = \frac{2 h \nu^3}{c^2}\frac{1}{\exp(h\nu/k_B T_0) - 1}
 \end{equation}
-This is the best black-body radiation ever detected ([](#fig:cmb_cn)). The cosmic microwave background radiation (CMB) is probably the most direct evidence that the Universe was indeed in the form of a hot, dense plasma at equilibrium in the distant past.
+This is the best blackbody radiation ever detected ([](#fig:cmb_cn)). As we will justify later, if photons interact little with matter, then we can demonstrate that the energy distribution of photons in the past is still a blackbody spectrum, at temperature $T_0(1+z)$ {cite:p}`Condon2018`. So if we go back in time to the last interaction of photons with matter, then at that moment the Universe was in a hotter state than today and at thermal equilibrium, since the radiation followed Planck's law. The cosmic microwave background radiation (CMB) is probably the most direct evidence that the Universe was indeed in the form of a hot, dense plasma at equilibrium in the distant past.
 
 :::{figure} ../../images/cmb_cn.jpg
 :name: fig:cmb_cn
@@ -45,36 +45,235 @@ This is the best black-body radiation ever detected ([](#fig:cmb_cn)). The cosmi
 Fitting a blackbody model to various data measuring the flux from the cosmic microwave background {cite:p}`Mather1999`.
 :::
 
+:::{note} Demonstration of the conservation of Planck's law with redshift
+:class: dropdown
 
-### Orders of magnitude
+```{figure} ../../images/distances4.svg
+:name: fig:distances4
+:align: center
+:width: 40%
 
-Let's go well beyond the redshift of the last scattering surface, and consider the Universe at, say, $z \sim 10\,000$. What can we say?
+Notations for calculating the evolution of Planck's law with redshift.
+```
 
+The energy radiance (<wiki:Radiance>) $I_0$ is expressed in W/m$^2$/sr. With the definitions of luminosity distance and angular distance, we show that it evolves as $(1+z)^4$. Indeed, with the notations of [](#fig:distances4), for a source of luminosity $L_E$ of size $l$, observed under a solid angle $\theta^2$, in the small angle approximation:
+\begin{equation*}
+I_0 = \frac{\Phi_0}{\theta^2} = \frac{L_E}{4\pi D_L^2(z)}\frac{D_A^2(z)}{l^2} =  \frac{L_E}{4\pi l^2}\frac{1}{(1+z)^4} = \frac{L_E}{4\pi (a_E \sigma_E)^2 \theta^2}\frac{1}{(1+z)^4} = \frac{I_E}{(1+z)^4}
+\end{equation*}
+with $I_E$ the radiance if there were no expansion of space.
+The observed spectral radiance $I_{\nu}$ is expressed in W/m$^2$/sr/Hz. All photons received in a small interval $\dd \nu$ around a frequency $\nu$ were emitted in an interval $(1+z)\dd \nu$ around a frequency $(1+z)\nu$. The received radiance is therefore:
+\begin{equation*}
+I_0 = \dd \nu I_{\nu,0}(\nu) = \frac{I_E}{(1+z)^4} =\frac{ [(1+z) \dd \nu] I_{\nu}[(1+z)\nu] }{(1+z)^4} 
+\end{equation*}
+We deduce the evolution of the spectral radiance:
+\begin{equation*}
+I_{\nu, 0}(\nu) =  \frac{I_{\nu}[(1+z)\nu] }{(1+z)^3} 
+\end{equation*}
+Therefore blackbody radiation evolves with redshift as follows:
+\begin{align*}\label{eq:BBz}
+I_{\nu}(\nu, T) & = (1+z)^3 I_{\nu, 0}[\nu/(1+z)] \notag \\
+ &  =  (1+z)^3 \frac{2 h}{c^2} \frac{\nu^3}{(1+z)^3} \frac{1}{\exp(h\nu/[k_B T_0(1+z)]) - 1} \notag \\ 
+ & = I_{\nu}(\nu, T_0(1+z))
+\end{align*}
+A blackbody spectrum remains a blackbody spectrum despite the expansion of the Universe but at an equilibrium temperature:
+\begin{equation*}
+T(z) = T_0(1+z)
+\end{equation*}
+
+:::
+
+
+### The Universe at redshift $10\,000$
+
+Let us go back well beyond the redshift of the last scattering surface, and consider the Universe at, say, $z \sim 10\,000$. What can we say about it?
 
 #### Temperature
 
-For a gas of photons, we know that :
+For a photon gas, we know that:
 \begin{equation}
 \epsilon_\gamma \propto a^{-4}
 \end{equation}
-At thermal equilibrium, the energy density of a gas of photons is the integral of Planck's law:
+Now, at thermal equilibrium, the energy density of a photon gas is the integral of Planck's law:
 \begin{equation}
-\epsilon_\gamma = \frac{2 \pi^2 (k_B T)^4}{15 h^3 c^3}
+\epsilon_\gamma =  \frac{4 \sigma_S T^4}{c} = \frac{8 \pi^5 (k_BT)^4}{15 h^3 c^3}  
 \end{equation}
-The equilibrium temperature of the photons $T_\gamma$ evolves as follows:
+with $\sigma_S = 5.67\times 10^{−8}\,$W/m$^2$/K$^4$ the Stefan-Boltzmann constant.
+The equilibrium temperature of photons $T_\gamma$ therefore evolves as follows:
 \begin{equation}
 T_\gamma \propto a^{-1}
 \end{equation}
-The photon temperature $T_\gamma$ can therefore be used as a time parameter like $a$ or $z$ if $T$ is isotropic.
+The photon temperature $T_\gamma$ can therefore be used as a temporal parameter like $a$ or $z$ if $T$ is isotropic.
+
+At redshift $10^4$, the photon temperature is therefore of the order of $30\,000\,$K. Hydrogen atoms (which are the majority in the Universe) are therefore necessarily in an ionized state, so the Universe is a plasma.
+
+:::{note} Evolution of $T_\gamma$ with redshift
+:class: dropdown
+
+Thanks to the few interactions between CMB photons and matter at different redshifts, cosmologists are able to measure the evolution of the temperature of this ambient photon bath with expansion. For example, we can look at the Compton interaction of CMB photons with hot electron plasma ($\approx 10^8\,\kelvin$) located in galaxy clusters (thermal Sunyaev-Zeldovich effect <wiki:Sunyaev–Zeldovich_effect>). We can also measure the heating of CO or CN molecules in the interstellar gas by CMB photons at different redshifts. One of the best measurements of the decrease in photon temperature with expansion is $T_\gamma(z) = (2.726 ± 0.001) × (1 + z)^{1−β}\,\kelvin$ with $β = 0.006 ± 0.013$ (<doi:10.1051/0004-6361/201322632>, see also <doi:10.1051/0004-6361/201016140>).
+
+```{figure} ../../images/TCMBz.eps
+:name: fig:TCMBz
+:align: center
+:width: 80%
+
+Evolution of CMB photon temperature as a function of redshift, taken from <doi:10.1051/0004-6361/201322632>. The green point corresponds to the COBE measurement. The red points come from tSZ emission from galaxy clusters in the Planck satellite catalog. The blue points come from the study of absorption by the interstellar medium.
+```
+
+:::
+
 
 :::{exercise} CMB redshift
 :label: exo:Tdec
 
-Photons decoupled from matter when the Universe shifted from plasma to neutral at $z_{athrm{dec}}. \approx 1090$. They now form what is known as the cosmic microwave background. What was the temperature $T_{mathrm{dec}}$ of the photons at the moment of decoupling?
+The photons decoupled from matter when the Universe shifted from plasma to neutral state, at $z_{\mathrm{dec}} \approx 1090$. They now form what we call the cosmic microwave background. What was the temperature $T_{\mathrm{dec}}$ of the photons at the moment of decoupling?
 
 :::
 
 :::{solution} exo:Tdec
+:class: dropdown
+
+\begin{equation}
+a_{\mathrm{dec}} T_{\mathrm{dec}} = a_0 T_0 \Rightarrow T_{\mathrm{dec}} = (1+z_{\mathrm{dec}}) T_0 = 2972\,\kelvin
+\end{equation}
+
+:::
+
+
+#### Densities
+
+We can now calculate the current contribution of CMB photons to the critical density of the universe using the blackbody temperature:
+\begin{equation}
+\Omega_{\gamma}^0= {\epsilon_\gamma^0 \over c^2 \rho^0_c}= {4 \sigma_S T_0^4 \over c^3}{8 \pi \GN \over 3 H_0^2} \sim 5 \times 10^{-5}
+\end{equation}
+This is therefore a negligible energy density compared to cold matter and dark energy.
+Certainly, other ultra-relativistic particles such as neutrinos contribute to the remaining part of $\Omega_r^0$. But with 3 massless neutrinos, we would only reach $\Omega_r^0 \sim 9 \times 10^{-5}$ as we will see at the end of the chapter.
+
+We define _matter-radiation equality_ as the moment when relativistic and non-relativistic matter are in equal proportion.
+Let us calculate the redshift $z_{\rm eq}$ at the moment when the proportions of matter and radiation are equal:
+\begin{equation}
+ \rho_r(z)= \rho_r^0 (1+z)^4\text{ and } \rho_m(z) = \rho_m^0(1+z)^3
+ \end{equation} 
+We deduce that:
+\begin{equation}
+\frac{\rho_r(z)}{\rho_m(z)} = \frac{\rho_r^0}{\rho_m^0}(1+z) = \frac{\Omega_r^0}{\Omega_m^0}(1+z)
+\end{equation}
+\begin{equation}
+\frac{\rho_r}{\rho_m} = 1 = \frac{\Omega_r^0}{\Omega_m^0}(1+z_{\rm eq}) \Rightarrow z_{\rm eq} = \frac{\Omega_m^0}{\Omega_r^0}-1 \approx \frac{0.3}{9\times 10^{-5}}-1 \approx 3332
+\end{equation}
+Therefore at $z> z_{\mathrm{eq}}$, the content of the Universe is dominated by relativistic matter.
+
+
+#### Photons
+
+Let us now focus on the properties of photons. We know that $T_\gamma \propto a^{-1}$, so at $z=10^4$ their temperature is:
+\begin{equation}
+  T_\gamma(z=10\,000) = (1+z)T_0 \approx 2.726\times 10^{4}\,\kelvin
+\end{equation}
+The average energy of photons at $z=10^4$ is:
+\begin{equation}
+  k_B T_\gamma(z) = (1+z)k_B T_0  \approx 2.34\,\mathrm{eV}
+\end{equation}
+By dimensional analysis, the density of photons at redshift z is, up to numerical factors that we will see later:
+\begin{equation}
+  n_\gamma(z) \sim \epsilon_\gamma(z)/ (k_B T_\gamma(z)) \sim \frac{\left[(1+z)k_B T_0\right]^3}{c^3 \hbar^3}\approx
+\left\lbrace
+\begin{array}{ll}
+10^{21}\ \gamma / \mathrm{m^3} & \text{at}\ z=10^4 \\
+10^{9}\ \gamma / \mathrm{m^3} & \text{at}\ z=0 \\
+\end{array}
+\right.
+\end{equation}
+
+
+#### Baryons
+
+Let us now evaluate the density of baryons (particles with 3 quarks like protons and neutrons) at $z \sim 10\,000$. The baryon density today is $\Omega_b^0 = 0.049$. With a critical density of $\rho_c^0 \sim 6\,m_p / m^{3}$, this gives approximately:
+\begin{equation}
+  n_b(z) \sim \Omega_b^0 \rho_c^0 (1+z)^3/m_p \approx
+\left\lbrace
+\begin{array}{ll}
+3\times 10^{11} \,\mathrm{baryons} /  \mathrm{m^3} & \text{at}\ z=10^4 \\
+0.3 \,\mathrm{baryons} /  \mathrm{m^3} & \text{at}\ z=0 \\
+\end{array}
+\right.
+\end{equation}
+
+The universe is therefore largely dominated by photons in terms of particle density, and this proportion remains remarkably _constant_ throughout the history of the Universe:
+\begin{equation}\label{eq:eta}
+\boxed{\eta= \frac{n_b(z)}{n_\gamma(z)} \sim \frac{\Omega_b^0 \rho_c^0 c^3 \hbar^3}{(k_B T_0)^3} \approx 10^{-9}}
+\end{equation}
+
+
+#### Expansion rate
+
+The value of the Hubble expansion rate can be deduced from Friedmann's equation:
+\begin{equation}
+  H(z) = H_0 \left( \Omega_m^0(1+z)^3 + \Omega_r^0 (1+z)^4 + \Omega_\Lambda^0\right)^{1/2}
+\end{equation}
+Taking the canonical values $\Omega_m^0 = 0.315$, $\Omega_\Lambda^0 = 0.685$ and $\Omega_r^0 \sim 9 \times 10^{-5}$ for the density of relativistic matter (photons and neutrinos). At $z =10^4$, this gives:
+\begin{equation}
+  H(z) \approx 10^6 \times H_0
+\end{equation}
+The expansion of the Universe was much faster than today!
+
+(lpm_photons)=
+#### Mean free path of photons
+
+Finally, we can wonder about the mean free path of photons. Photons interact preferentially with electrons by Thomson scattering $e^- + \gamma \rightarrow e^- + \gamma$, because scattering on protons is attenuated by a factor $m_p^2$. A good approximation of the mean free path of photons is given by:
+\begin{equation}\label{eq:lpm_thomson}
+ l_{T} =\frac{1}{\sigma_T n_e}
+\end{equation}
+where $\sigma_T$ is the Thomson scattering cross section ($6.6529\times 10^{-29}\ \mathrm{m^2}$). For the electron density, let us consider that since the Universe is neutral, there is one electron for each proton so $n_e = n_p \approx 0.3\,e^-/\mathrm{m^{3}}$. The typical time between two interactions $\tau_T$ is then:
+\begin{equation}
+ \tau_T = \frac{l_T}{c} = \frac{1}{\sigma_T n_e c} \approx 5\times 10^{12}\,\mathrm{yr} \gg t_H = \frac{1}{H_0}
+\end{equation}
+today if matter is in an ionized state, and at that time:
+\begin{equation}
+\tau_T=  \frac{1}{\sigma_T n_e(1+z)^3 c} \approx 5\,\mathrm{yr} \ll \frac{1}{H(z)} \sim 10^{-6} t_H \sim 10\,000\,\mathrm{yr}
+\end{equation}
+
+We see therefore that in the past interactions between matter and photons were frequent enough to reach thermal equilibrium in a short time compared to the expansion of the Universe. We can therefore justify that during their last interactions with matter, photons followed Planck's law. But since then, these photons no longer interact with it. CMB photons are therefore _not_ in thermal equilibrium with anything else today.
+Not only is the interaction rate low, but we count $10^9$ photons for one baryon. The vast majority of CMB photons have therefore never been in contact with particles since their emission, so their spectrum still follows the blackbody law [](#eq:BBz). Moreover, because of their number it is legitimate to equate the temperature of the Universe to that of photons, which we will often do thereafter.
+
+
+### Big Bang scenario
+
+The Universe at $z \approx 10\,000$ was much hotter and denser. At this temperature, atoms are ionized and we therefore have a plasma.
+Just like today, the number density of photons was significantly greater than that of baryons.
+Finally, interactions between photons and charged particles were much more frequent (several per Hubble time), so it is quite logical to consider the Universe as a plasma in thermal equilibrium.
+
+From this description, we can sketch an evolution scenario of the primordial plasma by cataloging the different physical phenomena that can occur when it cools down. Here is a non-exhaustive summary.
+
+:::{attention} A brief history of the young Universe
+
+First of all, at the end of inflation (about $10^{-34}\,$s after the Big Bang), there must have been a phase called _baryogenesis_, where all particles and antiparticles are created with a slight advantage for matter over antimatter leading to $\eta \sim 10^{-9}$. Below a temperature of about $100\,\GeV$ ($t \sim 20\,$ps), the electroweak phase transition takes place, giving mass to particles and making the gauge bosons Z, W$^\pm$ appear.
+
+Below $150\,\MeV$ ($t\sim 20\,\mathrm{\mu s}$), this is the QCD phase transition: the strong interaction takes over from thermal effects. Quarks and gluons coagulate to form baryons (three quarks) and mesons (two quarks). Then, $6\,\mathrm{s}$ later, electrons and positrons annihilate because the temperature of the photon bath drops below the electron mass $T < m_e=511\,\keV$.
+
+During the first three minutes of the Universe ($T > 100\,\keV$), the atomic nuclei of light elements are formed.
+
+After $380\,000\,$years, electrons bind to atomic nuclei ($e^- + p \rightarrow \mathrm{H} + \gamma$), this is _recombination_, and photons decouple from matter ($\tau_T \ll 1/H)$. Free to propagate, these photons form the cosmic microwave background and provide a photograph of the primordial plasma at the end of recombination.
+:::
+
+Statistical thermodynamics at equilibrium
+-------------------------------
+
+We will now address a more detailed description of what happened in the primordial Universe using statistical physics.
+
+### Statistical description
+
+Let us model the content of the Universe as a gas of weakly interacting particles. We can then use the formalism of statistical physics and describe the gas by the positions and momenta of all its particles, defined on phase space $\{\vec{x}, \vec{p}\}$.
+
+In a gas of particles _at thermodynamic equilibrium_, the number of particles that can occupy an energy state $(\vec{x}, \vec{p})$ follows a statistical distribution function $f(\vec{x}, \vec{p}, t)$. In cosmology, due to the homogeneity of the Universe, $f$ cannot depend on position $\vec{x}$. Moreover, due to isotropy, $f$ can only depend on the norm of the momentum $p \equiv \Vert \vec{p}\Vert$ and not on its direction.
+
+Equipped with the distribution functions, we can deduce macroscopic properties of the gas by evaluating the probability of occupation of the system states. But what are they? First of all, quantum mechanics imposes on us that the density of states in phase space is finite. Indeed, let us consider a box of size $L$, with periodic conditions and solve Schrödinger's equation, we obtain that the possible values of momentum are:
+\begin{equation}
+  \vec{p} = \frac{h}{L}\left(n_x \vec{e}_x + n_y \vec{e}_y + n_z \vec{e}_z\right), \ \ \ n_i = 0, \pm 1, \pm 2, \ldots
+\end{equation}
+where $\vec{e}_x, \vec{e}_y$ and $\vec{e}_z$ are the unit vectors and $h$ is Planck's constant. Consequently, in momentum space, there is one state per elementary cube of volume $h^3/L^3$. The density of states in momentum space is therefore $L^3/h^3$.
+Then, there is only one particle in the quantum box so only one position state: the density of states in position space is $1/L^3$. In total, if the particle has $g$ internal degrees of freedom, the density of states in phase space $\{\vec{x}, \vec{p}\}$ is:
+\begin{equation}
+ g \times  \frac{L^3}{h^3} \times \frac{1}{L^3} = \frac{g}{h^3} = \frac{g}{(2\pi\hbar)^3}
 :class: dropdown
 
 \begin{equation}

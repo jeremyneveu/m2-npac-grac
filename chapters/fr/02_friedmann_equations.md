@@ -663,7 +663,7 @@ $$
 \Phi_0 = h \nu_0\frac{\delta N_0 }{A \delta t_0}.$$ 
 La surface sur laquelle se répartit, à l'instant $t_0$, le flux émis est:
 $$
-S = \int_0^{2\pi} \int_0^\pi \sqrt{-g} \dd\theta \dd\phi = \int_0^{2\pi} \int_0^\pi a^2(t_0)\sigma^2(t_0)\sin\theta \dd\theta \dd\phi = 4 \pi a^2_0 \sigma^2_E.
+S = \int_0^{2\pi} \int_0^\pi \sqrt{-g} \dd\theta \dd\phi = \int_0^{2\pi} \int_0^\pi a^2(t_0)\sigma_E^2\sin\theta \dd\theta \dd\phi = 4 \pi a^2_0 \sigma^2_E.
 $$
 avec $\sigma(t_0)=\sigma_E$.
 Le nombre de photons émis $\delta N_E$ intercepté par la surface collectrice de taille $A$ est donc :
