@@ -71,7 +71,7 @@ project:
             - file: chapters/en/05b_astroparticle_searches.md       
             - file: chapters/en/06_supernovae.md
             - file: chapters/en/07_cmb.md
-            #- file: chapters/en/08_acceleration.md
+            - file: chapters/en/08_acceleration.md
             #- file: chapters/en/09_radiation.md
             #- file: chapters/en/10_lss.md
             #- file: chapters/11_inflation
@@ -88,7 +88,7 @@ project:
             - file: chapters/en/05b_astroparticle_searches.md       
             - file: chapters/fr/06_supernovae.md
             - file: chapters/fr/07_cmb.md
-            #- file: chapters/en/08_acceleration.md
+            - file: chapters/en/08_acceleration.md
             #- file: chapters/en/09_radiation.md
             #- file: chapters/fr/10_lss.md
             #- file: chapters/11_inflation
