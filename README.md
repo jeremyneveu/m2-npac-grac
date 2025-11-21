@@ -15,17 +15,6 @@ keywords: cosmology, astroparticles, general relativity
 [![JupyterLite](https://jupyterlite.rtfd.io/en/latest/_static/badge-launch.svg)](https://jeremyneveu.github.io/m2-npac-grac/lite)
 
 
-### Planning 2025-2026
-
-:::{image} images/planning_2025.png
-:name: fig:planning
-:align: center
-:width: 100%
-
-:::
-
-
-
 [Version française ici.](https://m2-npac-ac.pages.in2p3.fr/fr/start.html)
 
 [English version here.](https://m2-npac-ac.pages.in2p3.fr/en/start.html)
