@@ -167,15 +167,15 @@ Therefore at $z> z_{\mathrm{eq}}$, the content of the Universe is dominated by r
 
 Let us now focus on the properties of photons. We know that $T_\gamma \propto a^{-1}$, so at $z=10^4$ their temperature is:
 \begin{equation}
-  T_\gamma(z=10\,000) = (1+z)T_0 \approx 2.726\times 10^{4}\,\kelvin
+  T_\gamma(z=10\,000) = (1+z)T_0 \approx 2.725\times 10^{4}\,\kelvin
 \end{equation}
-The average energy of photons at $z=10^4$ is:
+According to Wien's law, the angular frequency $\omega_m$ for which Planck's spectral density is maximum evolves linearly with temperature: $\hbar \omega_m = 2.821 k_B T$. Therefore, the characteristic energy of photons $\hbar \omega_m \approx k_B T_\gamma$ at $z=10^4$ is:
 \begin{equation}
   k_B T_\gamma(z) = (1+z)k_B T_0  \approx 2.34\,\mathrm{eV}
 \end{equation}
-By dimensional analysis, the density of photons at redshift z is, up to numerical factors that we will see later:
+By dimensional analysis and up to numerical factors that we will see later, the density of photons at redshift $z$ is:
 \begin{equation}
-  n_\gamma(z) \sim \epsilon_\gamma(z)/ (k_B T_\gamma(z)) \sim \frac{\left[(1+z)k_B T_0\right]^3}{c^3 \hbar^3}\approx
+  n_\gamma(z) \sim  \epsilon_\gamma(z)/ (\hbar \omega_m) \sim  \epsilon_\gamma(z)/ (k_B T_\gamma(z)) \sim \frac{\left[(1+z)k_B T_0\right]^3}{c^3 \hbar^3}\approx
 \left\lbrace
 \begin{array}{ll}
 10^{21}\ \gamma / \mathrm{m^3} & \text{at}\ z=10^4 \\
@@ -274,13 +274,9 @@ where $\vec{e}_x, \vec{e}_y$ and $\vec{e}_z$ are the unit vectors and $h$ is Pla
 Then, there is only one particle in the quantum box so only one position state: the density of states in position space is $1/L^3$. In total, if the particle has $g$ internal degrees of freedom, the density of states in phase space $\{\vec{x}, \vec{p}\}$ is:
 \begin{equation}
  g \times  \frac{L^3}{h^3} \times \frac{1}{L^3} = \frac{g}{h^3} = \frac{g}{(2\pi\hbar)^3}
-:class: dropdown
+ \end{equation}
 
-\begin{equation}
-a_{\mathrm{dec}} T_{\mathrm{dec}} = a_0 T_0 \Rightarrow T_{\mathrm{dec}} = (1+z_{\mathrm{dec}}) T_0 = 2972\,\kelvin
-\end{equation}
 
-:::
 
 #### Densities
 
@@ -419,7 +415,7 @@ The mean particle density of the gas is:
 
 For the mean energy density, since we consider that the particles interact weakly and are not confined, then the energy levels $E(p)$ are those of a free particle $E(p)=\sqrt{p^2c^2 + m^2 c^4}$. To obtain the energy density of the gas, we simply sum the energy levels weighted by their probability of occupation: 
 \begin{equation}\label{eqn:energy_density_general}  
-  \boxed{\epsilon = \rho c^2 = \frac{g}{(2\pi\hbar)^3} \int \dd^3\mathbf{p} f(p,t) E(p) = \frac{g}{(2\pi\hbar)^3} \dd^3\mathbf{p} f(p,t) \sqrt{p^2c^2 + m^2 c^4}}
+  \boxed{\epsilon = \rho c^2 = \frac{g}{(2\pi\hbar)^3} \int \dd^3\mathbf{p} f(p,t) E(p) = \frac{g}{(2\pi\hbar)^3} \int \dd^3\mathbf{p} f(p,t) \sqrt{p^2c^2 + m^2 c^4}}
 \end{equation}
 
 We can obtain the gas pressure in the same way: 
@@ -427,33 +423,27 @@ We can obtain the gas pressure in the same way:
   \boxed{P = \frac{g}{(2\pi\hbar)^3} \int \dd^3\mathbf{p} f(p,t) \frac{p^2}{3E}}
 \end{equation}
 
-In the end, the energy-momentum tensor for a set of quantum particles can be written :
-\begin{equation}
-\boxed{T^{\mu\nu}=\frac{g}{(2\pi\hbar)^3}\int{\dd^3\mathbf{p} f(p,t) \frac{p^\mu p^\nu}{p^0}}}
+Finally, the energy-momentum tensor for a set of quantum particles can be written:
+\begin{equation}\label{eq:Tmunufp}
+\boxed{T^{\mu\nu}=\frac{g}{(2\pi\hbar)^3}\int{\dd^3\mathbf{p} f(p,t) \frac{p^\mu p^\nu c^2}{p^0}}}
 \end{equation}
-Note that this formula is the quantum version in the continuous limit of the formula [](#eq:TmunuGaz) obtained for a classical perfect gas.
+Note that this formula is the quantum version in the continuous limit of the formula [](#eq:TmunuGaz) obtained for a classical perfect gas, with the unit convention $p^\mu = (E/c, \vec p)$.
 
 :::{note} Why $p^2/3E$ ?
 
-Let's consider a surface element $\delta A$. We denote its unit vector $\hat{n}$. The particles of velocity $v$ which hit $\delta A$ between $t$ and $t + \delta t$ are located in a spherical shell around $\delta$.
-between the radii $vt$ and $v(t + \delta t)$.
-
-\begin{equation}
-  \dd N = \frac{g}{(2\pi\hbar)^3} f(E) R^2 v \dd t \dd\Omega 
-\end{equation}
-
-Not all these particles reach the surface. Only those whose velocity is directed towards $\delta A$, i.e. those whose velocity vector is in the solid angle subtended by $\delta A$. Therefore :
-\begin{equation}
-    \dd N_{hit} = \dd N \times \frac{|\hat{v}\cdot\hat{n}|}{4\pi R^2} = \frac{g}{(2\pi\hbar)^3} f(E) \frac{\hat{v}\cdot\hat{n}}{4\pi}\ \dd A\dd t\dd \dd \Omega
-\end{equation}  
-Let's assume that the interactions are elastic and that each particle transfers a momentum $2|\vec{p}\vec{n}|$ to the surface. The resulting pressure is :
-\begin{equation}
-  \begin{split}
-    \dd P(v) & = \int \frac{2|\vec{p}\cdot\vec{n}|}{\dd A\ \dd t} \dd N_A \\ & = \frac{2|\vec{p}\cdot\vec{n}|}{\dd A\ \dd t} \dd N_A \\
-    & = \frac{g}{(2\pi\hbar)^3} f(E) \frac{p^2}{2\pi E} \int \cos^2\theta \sin\theta \dd\theta \dd\phi \\ & = \frac{g}{(2\pi\hbar)^3} f(E) \\
-    & = \frac{g}{(2\pi\hbar)^3} f(E) \frac{p^2}{3E}
-  \end{split}  
-\end{equation}
+The kinetic pressure and mass density of a gas are related via a momentum balance by:
+\begin{equation*}
+\frac{\dd P}{\dd \rho} = \left\langle v_x^2\right\rangle   = \left\langle v_y^2\right\rangle  = \left\langle v_z^2\right\rangle  = \frac{v^2}{3}
+\end{equation*}
+if the velocity dispersion is isotropic. However, we recall that $v/c = pc / E$ for a massive particle or not (see [](#eq:TmunuGaz)). We therefore obtain:
+\begin{equation*}
+\dd P = \frac{v^2}{3} \dd \rho = \frac{p^2c^2}{3 E^2} \dd \rho c^2 =  \frac{p^2c^2}{3 E^2} \left[  \frac{g}{(2\pi\hbar)^3}f(p,t) E(p)  \dd^3\mathbf{p} \right] =    \frac{g}{(2\pi\hbar)^3}f(p,t)  \frac{p^2c^2}{3 E} \dd^3\mathbf{p} 
+\end{equation*}
+hence the integral formula for pressure [](#eqn:pression_generale). 
+Note that for a photon gas, according to [](#eq:Tmunufp), the trace of the tensor is zero since $p_\mu p ^\mu = 0$ for a massless particle (or considered ultra-relativistic) and:
+\begin{equation*}
+0 = T^\mu_{\ \ \mu} = T^0_{\ \ 0} + T^i_{\ \ i} = -\epsilon  + 3P \Rightarrow  P = \epsilon / 3
+\end{equation*}
 
 :::
 
@@ -471,7 +461,7 @@ Depending on the fermionic or bosonic nature of the particles in the gas, the co
 \end{equation}
 with $T$ the temperature of the gas, $\mu$ the chemical potential of the species and $g$ its number of internal degrees of freedom (for example the number of spin states). They give the number of particles that can occupy an energy state $E$, depending on whether they are bosons or fermions, at thermodynamic equilibrium.
 
-At high temperatures, we find the Maxwell-Boltzmann distribution:
+In the classical limit[^limclass], we find the Maxwell-Boltzmann distribution:
 \begin{equation}
   \boxed{\text{Maxwell-Boltzmann:\ }f(p) = g\exp\left(-{\frac{E(p) - \mu}{k_B T}}\right)}
 \end{equation}
@@ -529,21 +519,50 @@ and reach chemical equilibrium (i.e. the state of maximum entropy), the chemical
 \end{equation}
 plus any conservation equation imposed by a conserved charge (number of particles, electric charge, baryonic charge, etc.).
 
-For photons, there is no conserved charge. Even the number of photons is not conserved.  For example, we have Compton double scattering $e^- + \gamma \rightarrow e^- + \gamma + \gamma$ or Bremstrahlung $e^- + p \rightarrow e^- + p + \gamma$. Hence :
+:::{note} Reaction progress
+:class: dropdown
+
+For a reaction of the type:
+\begin{equation*}
+  \nu_1 X_1 + \nu_2 X_2 + \ldots \rightleftharpoons \nu'_1 Y_1 + \nu'_2 Y_2 + \ldots 
+\end{equation*}
+at fixed temperature and volume (thus during a time short compared to the inverse of the expansion rate of the Universe), the free energy is simply:
+\begin{equation*}
+\dd F = -S\dd T - P \dd V + \sum_i \mu_i \dd N_i = \left(\sum_{\text{products }j} \nu'_j \mu'_j -  \sum_{\text{reactants } i} \nu_i \mu_i \right)  \dd \xi
+\end{equation*}
+with $\dd \xi = \pm \dd N_i / \nu_i$ the progress of the reaction (+ for a product, - for a reactant). The minimization condition of the thermodynamic potential $F$ imposes:
+\begin{equation*}
+\left(\sum_{\text{products }j} \nu'_j \mu'_j -  \sum_{\text{reactants } i} \nu_i \mu_i \right)  \dd \xi = -\mathcal{A} \dd \xi < 0
+\end{equation*}
+with $\mathcal{A}$ the chemical affinity. Since $\mathcal{A}\dd \xi >0$, two cases are possible:
+1. $\mathcal{A} > 0,\ \dd \xi > 0$: the reaction proceeds in the direction of product formation and reactant consumption because there is more chemical potential on the reactant side than on the product side;
+2. $\mathcal{A} < 0,\ \dd \xi < 0$: the reaction proceeds in the direction of product consumption and reactant formation.
+At chemical equilibrium, $\mathcal{A} = 0$ thus neutralization of chemical potentials:
+\begin{equation*}
+  \sum_{\text{reactants } i} \nu_i \mu_i = \sum_{\text{products }j} \nu'_j \mu_j 
+\end{equation*}
+
+:::
+
+For photons, there is no conserved charge. Even the number of photons is not conserved.  For example, we have Compton double scattering $e^- + \gamma \rightarrow e^- + \gamma + \gamma$ or Bremstrahlung $e^- + p \rightarrow e^- + p + \gamma$. Hence:
 \begin{equation}
   \mu_\gamma = 0
 \end{equation}
 
-Particles and antiparticles have opposite charges, hence, _at equilibrium_ :
+Particles $X$ and their antiparticles $\bar X$ have opposite charges, hence, _at equilibrium_:
 \begin{equation}
   \mu_X = -\mu_{\bar{X}}
 \end{equation}
-The reaction $X + \bar{X} \rightleftharpoons \gamma + \gamma$ can also be used to reach the same conclusion.
+One can also use the reaction $X + \bar{X} \rightleftharpoons \gamma + \gamma$ to reach the same conclusion. Then, in the hot Universe at thermodynamic equilibrium, one can show that the chemical potentials of fermions satisfy $\mu / k_B T \sim \eta \ll 1$ due to their chemical equilibrium with their antiparticles.
 
-To summarise: 
-- A system composed of different species has reached kinetic equilibrium if it has reached a state of maximum entropy described by a Fermi-Dirac or Bose-Einstein distribution function. 
-- A system composed of several species interacting via one or more chemical reactions has reached chemical equilibrium if it has reached a state of maximum entropy, where the sum of the chemical potentials of the reactants is equal to the sum of the chemical potentials of the products. 
-- A system has reached thermodynamic equilibrium if it has reached chemical equilibrium and if all the species share the same temperature $T$, the _temperature of the Universe_.
+
+
+
+:::{important} Summary on equilibria
+- A system composed of different species has reached kinetic (thermal) equilibrium if it has reached a state of maximum entropy described by a Fermi-Dirac or Bose-Einstein distribution function. All species have the same temperatures and pressures.
+- A system composed of several species interacting via one or more chemical reactions has reached chemical equilibrium if it has reached a state of maximum entropy, where the sum of the chemical potentials of the reactants is equal to the sum of the chemical potentials of the products.
+- A system has reached thermodynamic equilibrium if it has reached chemical equilibrium and if all species share the same temperature $T$, the _temperature of the Universe_.
+::: 
 
 
 ### Density and pressure of fermions and bosons
@@ -560,8 +579,12 @@ with the sign $+$ for fermions and the sign $-$ for bosons.
 
 In the general case, the above integrals must be calculated numerically. However, there are two interesting limits, which help us to understand the physical processes involved: the case where the particles are relativistic ($k_B T \gg m c^2$) and the opposite case of non-relativistic species ($k_B T \ll m c^2$). 
 
-Before continuing, let us define: $x \equiv m c^2/k_B T$ and $\xi \equiv pc/k_B T$,
-we can then rewrite $n$ and $\rho$ above as :
+Before continuing, let us define: $x \equiv m c^2/k_B T$, $\xi \equiv pc/k_B T$ and $y \equiv \mu / k_B T$.
+
+#### Relativistic limit
+
+At very high temperature, fermions are in equilibrium with their anti-particles, so we have approximately the same density for both entities. Since $n_X \approx n_{\bar X}$, looking straight at the expression for particle density knowing that $\mu_X = - \mu_{\bar X}$, the only way for the two integrals to be equal with chemical potentials of opposite sign is for them to be zero. Therefore in the primordial Universe, for relativistic fermions[^bosons] $\mu_f = -\mu_{\bar f} = 0$.
+With $y =0$, we can then rewrite $n$ and $\epsilon$ as:
 \begin{equation}
   \begin{split}
     n &= \frac{g(k_BT)^3}{2\pi^2\hbar^3 c^3} I_\pm(x)\ \ \ \mathrm{with} \ I_\pm(x) = \int_0^\infty \dd \xi \frac{\xi^2}{\exp\left(\sqrt{\xi^2 + x^2}\right) \pm 1} \\
@@ -569,7 +592,6 @@ we can then rewrite $n$ and $\rho$ above as :
   \end{split}
 \end{equation}
 
-#### Relativistic limit
 
 In the relativistic limit, we have $x\ll 1$ and the integrals $I_\pm(0)$ and $J_\pm(0)$ can be calculated exactly:
 $$
@@ -610,31 +632,30 @@ Using $T_0 = 2.726 K$, calculate the photon number density (today) and the photo
 :::
 
 
-:::{note} $I_\pm(0)$ and $J_\pm(0)$ calculations
+:::{note} Calculations of $I_\pm(0)$ and $J_\pm(0)$
 :class: dropdown
 
-To compute $I_{-}(0)$ it is useful to know the definition of the Riemann-zeta function:
+To calculate $I_{-}(0)$, it is useful to know the definition of the Riemann zeta function:
 $$
-\zeta(s) = \sum_{i=1}^\infty \frac{1}{n^s} = \frac{1}{\Gamma(s)} \int_0^\infty \frac{x^s}{e^x - 1} \dd x
-\ \ \text{où}\ \ \ \Gamma(s) = \int_0^\infty x^{s-1} e^{-x} \dd x
+\zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = \frac{1}{\Gamma(s)} \int_0^\infty \frac{x^s}{e^x - 1} \dd x
+\ \ \text{ with }\ \ \ \Gamma(s) = \int_0^\infty x^{s-1} e^{-x} \dd x
 $$
 
-Pour les bosons, nous obtenons immédiatement 
+For bosons, we immediately obtain:
 $$
 I_-(0) = 2 \zeta(3) \approx 2.40411
 $$
-Pour les fermions, nous avons
+For fermions, we have:
 \begin{equation}
   \begin{split}
     I_+(0) & = \int_0^\infty \xi^2 \left(\frac{1}{e^\xi - 1} - \frac{2}{e^{2\xi} - 1}\right) \dd \xi \\
-    & = I_-(0) - 2 \int_0^\infty \frac{\xi^2}{e^{2\xi} - 1} \dd \xi \\
-    & = \frac{3}{4} I_-(0) \\
+    & = I_-(0) - 2 \int_0^\infty \frac{\xi^2}{e^{2\xi} - 1} \dd \xi = \frac{3}{4} I_-(0) \\
   \end{split}
 \end{equation}
 
-$J_\pm(0)$ peut aussi être exprimé comme une fonction de $\zeta$. Pour les bosons, on obtient immédiatement
+The integral $J_\pm(0)$ can also be expressed as a function of $\zeta$. For bosons, we immediately obtain:
 $$ J_-(0) = \underbrace{\Gamma(4)}_{3!}\ \underbrace{\zeta(4)}_{\pi^4/90} = \frac{\pi^4}{15}$$
-Pour le fermion, nous utilisons la même astuce que ci-dessus, et nous obtenons :
+For fermions, we use the same trick as above, and we obtain:
 $$
 J_+(0) = \frac{7}{8} J_-(0)
 $$
@@ -669,11 +690,23 @@ $xi \ll x$ and we can develop: $(x^2 + \xi^2)^{1/2} \approx x (1 + \frac{1}{2}\f
 :::
 
 :::{note} Molecular gas
-:class: dropdown
 
-If the particle under consideration is made up of several atoms, then they have more degrees of freedom than the 3 translations in space. According to Boltzmann statistics, it can store energy in rotational or vibrational degrees of freedom if the medium is hot enough, each of which counts as $k_B T / 2$ in its internal energy. If we denote $g_m$ the number of degrees of freedom of a molecule, then the energy density is written :
-$$ \epsilon \approx n m c^2 + \frac{g_m}{2} nk_B T = n m c^2 + \frac{1}{\gamma -1} n k_B T $$
-with $\gamma=C_p/C_V$ the adiabatic index, found in Laplace's law $PV^\gamma = \cst$.
+If the particle under consideration is composed of several atoms, then they have more degrees of freedom than the 3 translations in space. Following Boltzmann statistics, it can store energy in rotational or vibrational degrees of freedom if the medium is hot enough, each counting for $k_B T / 2$ in its internal energy according to the equipartition theorem (<wiki:Equipartition_theorem>). If we denote $N_{\rm dof}$ the number of degrees of freedom of a molecule, then the energy density is written:
+$$ \epsilon \approx n m c^2 + \frac{N_{\rm dof}}{2} nk_B T$$
+For a perfect gas, the enthalpy density is:
+$$ h = \epsilon + P = n m c^2 + \left(\frac{N_{\rm dof}}{2} + 1\right) n k_B T$$
+Thus, Mayer's relation links the heat capacity at constant pressure $C_P$ and at constant volume $C_V$ for perfect gases with:
+$$C_P-C_V= \left.\frac{\partial H}{\partial T}\right\vert_P - \left.\frac{\partial U}{\partial T}\right\vert_V  = N k_B$$
+Let $\gamma=C_P/C_V$ be the adiabatic index, which is notably found in Laplace's law $PV^\gamma = \cst$. The isochoric heat capacity is also defined by:
+$$
+C_{V} = \left.\frac{\partial U}{\partial T}\right\vert_V = \frac{N_{\rm dof}}{2} Nk_B T
+ = \frac{N k_B}{\gamma - 1}
+$$
+Therefore the adiabatic index is $\gamma = 1+(2/N_{\rm dof})$ and:
+$$
+\epsilon  = n m c^2 + \frac{1}{\gamma -1} n k_B T 
+$$
+For a single atom, $N_{\rm dof}=3$ because we only have 3 translational degrees of freedom and thus $\gamma  = 5/3$. For a diatomic molecule, there are two additional rotational degrees of freedom (rotation around the symmetry axis is neglected) so $N_{\rm dof}=5$ and $\gamma=7/5$ at temperatures above a few Kelvin. If the temperature is sufficiently high (beyond thousands of Kelvin), two vibrational degrees of freedom are activated (potential and kinetic energies of vibration) so $N_{\rm dof}=7$ and $\gamma = 9/7$.
 :::
 
 
@@ -911,27 +944,28 @@ as long as the evolution of the photon temperature does not vary.
 
 
 :::{note} Fermi coupling
-The Fermi coupling constant is the coupling in a diagram with 4 fermions interacting by weak interaction at low energy (well below the mass of the weak interaction bosons). It is related to the mass of the $W$ and the expected value of the Higgs in vacuum $v$ :
-$$G_F = \frac{sqrt{2}}{8} \left(\frac{g_W}{m_W c ^2}\right)^2(\hbar c)^3, \quad v = (\sqrt{2}G_F)^{-1/2} \sim 246.22\,\GeV$$
-
+The Fermi coupling constant is the coupling in a diagram with 4 fermions interacting by weak interaction at low energy (well below the mass of the weak interaction bosons). It is related to the mass of the W$^\pm$ bosons and the expected value of the Higgs in vacuum $v$:
+$$ G_F = \frac{\sqrt{2}}{8} \left(\frac{g_W}{m_W c ^2}\right)^2(\hbar c)^3, \quad v = (\sqrt{2}G_F)^{-1/2} \sim 246.22\,\GeV$$
+In a weak interaction with 4 leptons, the cross section is proportional to $\sigma \propto G_F^2 s$ with $s$ the Mandelstam variable $s=(p_1+p_2)^2$, the squared sum of the incoming particle momenta. For more information: https://lectures.lapth.cnrs.fr/standard_model/cours/chapitre2.pdf 
 
 :::
 
-:::{note} The spectrum of decoupled species without interaction XXX DRAFT
+:::{note} The spectrum of decoupled species without interaction
+:class: dropdown
 
-For ultra-relativistic species, we have $pc \sim E$. The number of particles at $t_1$ in the volume of phase space $d^3p_1 \dd V_1$ is :
+For ultra-relativistic species, we have $pc \sim E$. The number of particles at $t_1$ in the volume of phase space $\dd^3 p_1 \dd V_1$ is:
 \begin{equation}
-\dd N = \frac{g}{(2\pi)^3} \frac{d^3p_1 \dd V_1}{\exp((E(p_1) - \mu_1)/T_1) \pm 1}
+\dd N = \frac{g}{(2\pi)^3} \frac{\dd^3p_1 \dd V_1}{\exp((E(p_1) - \mu_1)/T_1) \pm 1}
 \end{equation}
-At $t_0$, a little later, the same particles are in the volume of phase space $\dd^3p_0 \dd V_0$.   The moments scale as $a^{-1}$ and the volume as $a^3$. We can therefore write
+At $t_0$, a little later, the same particles are in the volume of phase space $\dd^3 p_0 \dd V_0$. The momenta scale as $a^{-1}$ and the volume as $a^3$. We can therefore write:
 \begin{equation}
 \begin{split}
-\dd N & = \frac{g}{(2\pi)^3} \frac{\dd^3p_1 \dd V_1}{\exp((p_1 - \mu_1)/T_1) \pm 1} \\
-& = \frac{g}{(2\pi)^3} \frac{d^3p_0 \left(\frac{a_0}{a_1}\right)^3 \dd V_0\left(\frac{a_1}{a_0}\right)^3}{\exp((p_0\left(\frac{a_1}{a_0}\right) - \mu_1)/T_1) \pm 1} \\
-& = \frac{g}{(2\pi)^3} \frac{d^3p_0 \dd V_0}{\exp((p_0 - \mu_0)/T_0) \pm 1} \\
+  \dd N  & = \frac{g}{(2\pi)^3} \frac{\dd^3p_1 \dd V_1}{\exp((p_1c - \mu_1)/T_1) \pm 1} \\
+      & = \frac{g}{(2\pi)^3} \frac{d^3p_0 \left(\frac{a_0}{a_1}\right)^3 \dd V_0\left(\frac{a_1}{a_0}\right)^3}{\exp((p_0c\left(\frac{a_1}{a_0}\right) - \mu_1)/T_1) \pm 1} \\
+      & = \frac{g}{(2\pi)^3} \frac{\dd^3p_0 \dd V_0}{\exp((p_0c - \mu_0)/T_0) \pm 1} \\
 \end{split}
 \end{equation}
-with $\mu_0 \equiv \frac{a_1}{a_0} \mu_1$ and $T_0 \equiv \frac{a_1}{a_0} T_1$.   
+with $\mu_0 \equiv \frac{a_1}{a_0} \mu_1$ and $T_0 \equiv \frac{a_1}{a_0} T_1$. The spectrum of ultra-relativistic particles therefore remains unchanged with expansion, except for its average temperature.  
 
 :::
 
@@ -942,9 +976,9 @@ But shortly after the neutrinos decoupled, when $T < 511\,\keV$ about $6\,$s aft
 \begin{equation}
     e^- + e^+ \rightarrow \gamma + \gamma  
 \end{equation}
-which will produce enough energy and entropy to heat the photon gas and lead to a difference between the temperature of the photons and those of the decoupled neutrinos $T_\nu < T_\gamma$. Since entropy is conserved, before annihilation we have :
+which will produce enough energy and entropy to heat the photon gas and lead to a difference between the temperature of the photons and those of the decoupled neutrinos $T_\nu < T_\gamma$. Since entropy is conserved, before annihilation we have:
 \begin{equation}
-  g_{\star S}(T > m_e) = \underbrace{2}_{\gamma} + \frac{7}{8}\left[ \underbrace{2}_{e^pm} + \underbrace{2}_{\nu, \bar \nu} \times \underbrace{3}_{e,\mu,\tau} \right]. 
+  g_{\star S}(T > m_e) = \underbrace{2}_{\gamma} + \frac{7}{8}\left[ \underbrace{2\times 2}_{e^\pm} + \underbrace{2}_{\nu, \bar \nu} \times \underbrace{3}_{e,\mu,\tau} \right] 
 \end{equation}
 after annihilation : 
 \begin{equation}
@@ -1319,11 +1353,40 @@ Any alternative theory must explain these three observations.
 
 :::
 
+:::{important} Key points to remember
+
+- The primordial Universe is a hot plasma at thermodynamic equilibrium, largely dominated by the presence of photons since $\eta = n_b(z) / n_\gamma(z) \approx 10^{-9} = \cst$. The temperature of the Universe is therefore assimilated to that of photons and evolves as $(1+z)T_0$.
+
+- For relativistic species at equilibrium, $\epsilon \propto T^4$, $n \propto T^3$ and $P = \epsilon / 3$. Depending on the fermionic or bosonic nature of the particles, the numerical factors change slightly.
+
+- The density of non-relativistic species decreases exponentially with decreasing temperature. We recover the properties of perfect gas since we considered sets of particles without interactions.
+
+- Since photons dominate and relativistic species have a similar evolution with temperature to that of photons, we define functions giving the effective number of degrees of freedom counting in the energy density or entropy density of the Universe, which decreases as soon as a species becomes non-relativistic as the temperature drops.
+
+- The entropy of a comoving volume of Universe is conserved.
+
+- A species decouples from thermodynamic equilibrium with photons when its interaction rate $\Gamma$ with photons, directly or via another species, falls below the Hubble expansion rate: when $\Gamma \ll H$ we say that the species is _frozen_.
+
+
+::: 
+
+
+:::{seealso}  To learn more
+
+- History of the prediction of the CMB temperature: https://arxiv.org/pdf/1310.2146 
+
+- Numerical project on the primordial universe: https://cmb.wintherscoming.no/milestone1.php 
+
+
+::: 
+
 
 [^baryons]: hadrons are divided into two families: mesons (2 quarks) and baryons (3 quarks). among the baryons, only protons are stable. The neutrons bound in atomic nuclei are stable, but when free they disintegrate into a proton with a half-life of 15 minutes. Mesons are all unstable with half-lives shorter than $10^{-7}\,$s. Electrons are 2000 times lighter than protons. Most of the mass of so-called ‘ordinary’ matter is therefore contained in atomic nuclei, hence the shorthand ‘baryonic matter’.
+[^limclass]: the classical limit appears for very low occupation numbers of energy levels, where the bosonic or fermionic nature of particles no longer matters since $n(p) \ll 1$. It is valid at low density or high temperature, when the following condition is verified: $\lambda_{dB} \ll d$, where $d=(V/N)^{1/3}$ is the average distance between particles and $\lambda_{dB}=h/\sqrt{2\pi m k_B T}$ is the thermal de Broglie wavelength.
 [^mp]: remember that the masses of protons and neutrons are about $1\,\GeV$.
 [^neutrality]: since electric charge is associated with Coulomb forces and the expansion of the universe is governed only by gravitational forces, the universe must be globally neutral.
 [^Sconst]: stricto sensus an entropic integration constant $S_0$ must appear but this is zero by virtue of the third principle of thermodynamics.
 [^Tfreeze]: in a certain number of references, the neutron freezing temperature $T_{\mathrm{freeze}}$ is found. \approx 0.8\,\MeV$ which also corresponds to 1 neutron for 6 protons if we follow the equilibrium distribution [](#eq:np_eq) but admitting that this temperature is a good order of magnitude for it to work in the end.
 [^spinH]: a hydrogen atom can have a spin 0 (inverted spins) or 1 (alginate spins) so 4 internal degrees of freedom.
-[^Heneglect]: with one neutron for every 7 protons, $n_\mathrm{He} = n_\mathrm{H} / 12$ so more than $90\%$ of baryons are protons. 
+[^Heneglect]: with one neutron for every 7 protons, $n_\mathrm{He} = n_\mathrm{H} / 12$ so more than $90\%$ of baryons are protons.
+[^bosons]: as early as 20$\,$ps after the Big Bang, the only surviving boson is the photon because the $Z$, $W^\pm$ and $H$ bosons decay in times of the order of $10^{-26}\,$s after the electroweak symmetry breaking (around 100 GeV). They are also too heavy for the energy available in the plasma at that time to benefit from a Lorentz boost extending their apparent lifetime. Therefore, only photons should be considered in the list of relativistic bosons, whose chemical potential $\mu_\gamma$ is zero at thermodynamic equilibrium. 

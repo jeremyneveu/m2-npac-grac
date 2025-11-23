@@ -39,9 +39,15 @@ project:
     '\grad': '\overrightarrow{\mathrm{grad}}\ '
     '\rot': '\overrightarrow{\mathrm{rot}}\ '
     '\GN': '\mathcal{G}'  # newton constant
-    '\Mpc': '\mathrm{Mpc}'  # parsec
+    '\Mpc': '\mathrm{Mpc}'  # megaparsec
     '\parsec': '\mathrm{pc}'  # parsec
     '\kelvin': '\mathrm{K}'
+    '\meter': '\mathrm{m}'
+    '\second': '\mathrm{s}'
+    '\watt': '\mathrm{W}'
+    '\hertz': '\mathrm{Hz}'
+    '\joule': '\mathrm{J}'
+    '\steradian': '\mathrm{sr}'
     '\eV': '\mathrm{eV}'
     '\keV': '\mathrm{keV}'
     '\meV': '\mathrm{meV}'
