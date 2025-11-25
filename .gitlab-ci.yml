@@ -1,8 +1,9 @@
 image: condaforge/mambaforge:latest
 
-#variables:
-# BASE_URL: "https://m2-npac-ac.pages.in2p3.fr/"  # "/m2-npac-ac"
-
+variables:
+  HOST: "127.0.0.1"  # important for gitlab myst build 
+  # BASE_URL: "/m2-npac-ac"
+    
 cache:
   paths:
     - .cache/pip
@@ -16,70 +17,27 @@ before_script:
  
 pages:
   stage: build
-  variables:
-    # Variables pour contourner les restrictions GitLab CI
-    MYST_HEADLESS: "true"
-    CI: "true"
-    NODE_ENV: "production"
-    # Désactiver les vérifications de serveur MyST
-    MYST_BUILD_STATIC: "true"
-    # Forcer le mode offline
-    npm_config_prefer_offline: "true"
   script:
-    # Installation alternative de MyST pour éviter les problèmes de serveur
-    - mamba install -y -c conda-forge nodejs=18
-    - npm install -g mystmd@1.1.49  # Version stable qui ne force pas le serveur
-    # - mamba install -c conda-forge mystmd
+    # - mamba install -y -c conda-forge nodejs pyyaml
+    - mamba install -c conda-forge mystmd
+    # - node -v
+    # - npm install -g mystmd@latest
     - myst -v
     - cp myst.yml tmp_myst.yml
-    #- rm myst.yml
     #- python remove_toc.py
-    #- export BASE_URL="/m2-npac-ac"  # "https://m2-npac-ac.pages.in2p3.fr/"  # "/m2-npac-ac"
-    #- git clone https://github.com/jupyter-book/mystmd-quickstart.git
-    #- cd mystmd-quickstart
-    #- myst init --site
-    #- myst init --project
-    # MyST build les pages correctement mais échoue sur la validation serveur
-    # Solution : lancer en arrière-plan et tuer après la génération des fichiers
-    - |
-      echo "Starting MyST build in background..."
-      # Lancer MyST en arrière-plan
-      myst build --html &
-      MYST_PID=$!
-      echo "MyST started with PID: $MYST_PID"
-      
-      # Attendre que les fichiers soient générés (surveiller le répertoire _build)
-      for i in {1..60}; do
-        if [ -d "_build/html" ] && [ "$(find _build/html -name '*.html' | wc -l)" -gt 5 ]; then
-          echo "HTML files detected after ${i} seconds"
-          break
-        fi
-        sleep 1
-      done
-      
-      # Attendre encore 5 secondes pour que tous les fichiers soient finalisés
-      sleep 5
-      
-      # Tuer le processus MyST (il va échouer sur la validation serveur de toute façon)
-      kill $MYST_PID 2>/dev/null || true
-      sleep 2
-      
-      echo "MyST build completed, checking output..."
-      ls -la _build/html/ | head -10
-    - ls -la _build/
-    - ls -la _build/html
-    # Trouver le répertoire de sortie HTML
-    - mv _build/html/ ../public
+    # - export BASE_URL="/m2-npac-ac"  # "https://m2-npac-ac.pages.in2p3.fr/"  # "/m2-npac-ac"
+    - myst build --html
+    - mv _build/html/ public
     #- mv tmp_myst.yml myst.yml
     #- myst build --html
     #- mv _build/html/ public/fr
     #- sed -i 's@fr/@en/@g' myst.yml
     #- myst build --html
     #- mv _build/html/ public/en
-    #- pip install jupyterlite-core jupyterlite-xeus jupyterlab notebook ipympl ipywidgets
-    #- mamba install micromamba -c conda-forge
-    #- rm -rf notebooks/TP_SN.ipynb
-    #- jupyter lite build --XeusAddon.environment_file=jupyterlite-environment.yml --contents=notebooks --output-dir=public/lite
+    - mamba install micromamba jupyter-packaging -c conda-forge
+    - pip install jupyterlite-core jupyterlite-xeus jupyterlab notebook ipympl ipywidgets
+    - rm -rf notebooks/TP_SN.ipynb
+    - jupyter lite build --XeusAddon.environment_file=jupyterlite-environment.yml --contents=notebooks --output-dir=public/lite
   artifacts:
     paths:
       - public
@@ -102,5 +60,4 @@ pages:
 #  #rules:
 #  #  - changes:
 #  #      - docker/*
-
 
