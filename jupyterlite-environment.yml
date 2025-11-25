@@ -17,7 +17,7 @@ dependencies:
 - ipympl
 - astropy
 - sympy
-- pyccl
-#- pip:
+- pip:
+  - pyccl
   # - astropy-iers-data
 
