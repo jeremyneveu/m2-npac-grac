@@ -1,5 +1,5 @@
 # Logiciels requis pour utiliser et travailler sur les documents du cours MethNum
-name: npac-ac-jupyterlite
+name: npac-grac-jupyterlite
 
 channels:
 - conda-forge
