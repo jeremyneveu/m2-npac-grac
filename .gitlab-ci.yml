@@ -1,9 +1,8 @@
 image: condaforge/mambaforge:latest
 
-#variables:
+variables:
+  HOST: "127.0.0.1"
 # BASE_URL: "https://m2-npac-ac.pages.in2p3.fr/"  # "/m2-npac-ac"
-VARIABLES:
-    HOST: "127.0.0.1"
     
 cache:
   paths:
