@@ -725,7 +725,7 @@ This is indeed the order of magnitude of the magnetic field inferred in such env
 _Hadronic losses_
 - Through which processes do protons and nuclei lose energy in astrophysical environments?
 - What are the secondary particles produced in these processes?
-- 
+  
 _Leptonic losses_
 - Through which processes do electrons lose energy in astrophysical environments?
 - In which energy range do these electrons radiate away their energy?
