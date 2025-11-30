@@ -310,7 +310,7 @@ is one of the great successes of diffusive shock acceleration theory.
 :label: exo:rankine_hugoniot
 
 The jump conditions of Rankine and Hugoniot are continuity equations at a shock front. The shock is due to a 
-supersonic disturbance moving at supersonic speed, $v_\mathrm{sh}$, from the shocked medium, index as 2, towards the 
+supersonic disturbance moving at supersonic speed, $v_\mathrm{sh}$, from the shocked medium, indexed as 2, towards the 
 undisturbed medium, indexed as 1. In the shock frame, the undisturbed plasma is moving towards the shock at velocity 
 $u_1 = -v_\mathrm{sh}$ while plasma in the shocked medium is moving away from the shock front at velocity $u_2$. The 
 continuity equations at the shock front are the following:
