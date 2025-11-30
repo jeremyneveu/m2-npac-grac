@@ -1,5 +1,5 @@
 ---
-short_title: Supernovae type Ia
+short_title: Supernovae de type Ia
 authors:
   - jneveu
 keywords: supernovae, Hubble diagram, $H_0$
@@ -46,7 +46,7 @@ m_i & = -2.5\log_{10} \left[\frac{ \Phi_{0}^{(i)}}{\Phi_{\rm ref}}\right] \\
 \end{align*}
 On appelle module de distance $\mu(z)$ la quantité :
 \begin{equation}
-\mu(z) = 5 \log_{10}\left[ \frac{D_L(z)}{10\,\parsec}\right] = 5 \log_{10} \left[\frac{(1+z)}{10\,\parsec} \int_0^z \frac{\dd z}{H(z)}   \right]  \text{ si } k=0
+\mu(z) = 5 \log_{10}\left[ \frac{D_L(z)}{10\,\parsec}\right] = 5 \log_{10} \left[\frac{(1+z)}{10\,\parsec} \int_0^z \frac{c \dd z}{H(z)}   \right]  \text{ si } k=0
 \end{equation}
 C'est la baisse de luminosité en magnitude liée à la distance de l'astre. Si une chandelle standard est 2 fois plus loin alors elle apparait 4 fois moins brillante et son module de distance augmente de 1.5 magnitude. Par la mesure des flux, on peut ainsi estimer les distances relatives entre les chandelles standard.
 

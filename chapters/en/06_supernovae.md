@@ -46,7 +46,7 @@ m_i & = -2.5\log_{10} \left[\frac{ \Phi_{0}^{(i)}}{\Phi_{\rm ref}}\right] \\
 \end{align*}
 The quantity:
 \begin{equation}
-\mu = 5 \log_{10} \left[ \frac{D_L(z_i)}{10\,\parsec}\right] = 5 \log_{10} \left[\frac{(1+z)}{10\,\parsec} \int_0^z \frac{\dd z}{H(z)} \right] \text{ if } k=0
+\mu = 5 \log_{10} \left[ \frac{D_L(z_i)}{10\,\parsec}\right] = 5 \log_{10} \left[\frac{(1+z)}{10\,\parsec} \int_0^z \frac{c \dd z}{H(z)} \right] \text{ if } k=0
 \end{equation}
 is the decrease in luminosity in magnitude linked to the distance of the star. If a standard candle is 2 times further away, then it appears 4 times less bright and its distance modulus increases by 1.5 magnitudes. By measuring the fluxes, we can thus estimate the relative distances between the standard candles.
 

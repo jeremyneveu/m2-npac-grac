@@ -515,7 +515,7 @@ $$P_\Lambda = - \epsilon_\Lambda,$$
 soit une pression négative ! Dans la physique ordinaire, un des rares phénomènes où interviennent des pressions négatives est la cavitation (<wiki:Pressure#Negative_pressures>). En posant $\epsilon_{\mathrm{tot}}=\epsilon + \epsilon_\Lambda$ (et $P_{\mathrm{tot}}=P + P_\Lambda$) puis en combinant les deux équations de Friedmann [](#eq:friedmann) de façon à éliminer le terme de courbure, on  obtient :
 \begin{equation}
 \label{eq:ddota}
-2\dot{H} + 2H^2 = \frac{2\ddot{a}}{a} = -\frac{8\pi \GN}{3}\left( \epsilon _{\mathrm{tot}} + 3P_{\mathrm{tot}}\right).
+2\dot{H} + 2H^2 = \frac{2\ddot{a}}{a} = -\frac{8\pi \GN}{3 c^2}\left( \epsilon _{\mathrm{tot}} + 3P_{\mathrm{tot}}\right).
 \end{equation}
 On constate que l'expansion de l'Univers s'accélère ($\ddot{a}>0$) si $P_{\mathrm{tot}}<-\epsilon_{\mathrm{tot}}/3$. L'Univers étant constitué essentiellement de matière non relativiste et de rayonnement, la condition précédente devient équivalente à :
 $$

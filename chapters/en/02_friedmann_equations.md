@@ -606,7 +606,7 @@ $$\epsilon_\Lambda(t) = \rho_\Lambda c^2 =  \frac{c^4 \Lambda}{8\pi \GN} = \text
 We see that the energy density associated with the cosmological constant being constant in time, it has a very singular behavior: whatever the size of the Universe, there is always as much energy per unit volume. It is therefore not diluted like any ordinary energy when the Universe expands. Moreover, thanks to the second Friedmann equation, we see that the pressure associated with the cosmological constant would be:
 $$P_\Lambda = - \epsilon_\Lambda,$$
 namely a negative pressure! In ordinary physics, one of the rare phenomena involving negative pressures is cavitation (<wiki:Pressure#Negative_pressures>). By setting $\epsilon_{\mathrm{tot}}=\epsilon + \epsilon_\Lambda$ (and $P_{\mathrm{tot}}=P + P_\Lambda$) then combining the two Friedmann equations [](#eq:friedmann) to eliminate the curvature term, we obtain:
-2\dot{H} + 2H^2 = \frac{2\ddot{a}}{a} = -\frac{8\pi \GN}{3}\left( \epsilon _{\mathrm{tot}} + 3P_{\mathrm{tot}}\right).
+2\dot{H} + 2H^2 = \frac{2\ddot{a}}{a} = -\frac{8\pi \GN}{3 c^2}\left( \epsilon _{\mathrm{tot}} + 3P_{\mathrm{tot}}\right).
 \end{equation}
 We observe that the expansion of the Universe accelerates ($\ddot{a}>0$) if $P_{\mathrm{tot}}<-\epsilon_{\mathrm{tot}}/3$. Since the Universe consists essentially of non-relativistic matter and radiation, the previous condition becomes equivalent to:
 $$
